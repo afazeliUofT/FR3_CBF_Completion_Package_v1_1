@@ -1,0 +1,25 @@
+{
+  "claim_boundary": "Orbit geometry is model input. Selected pass points still require an independent spot check before paper use.",
+  "coarse_search_duration_s": 172800,
+  "coarse_search_start_utc": "2026-07-26T00:00:00+00:00",
+  "coarse_step_s": 10.0,
+  "created_utc": "2026-07-26T03:39:50.159390+00:00",
+  "detailed_duration_s": 820,
+  "detailed_max_elevation_deg": 35.92113233734308,
+  "detailed_start_utc": "2026-07-26T23:01:40+00:00",
+  "detailed_step_s": 1.0,
+  "engine": "skyfield",
+  "minimum_elevation_deg": 5.0,
+  "next_gate": "EARTH_STATION_PATTERN_AND_CELLULAR_LAYOUT_FREEZE",
+  "selected_pass": {
+    "complete_within_search_window": true,
+    "duration_s": 580.0,
+    "end_index": 8360,
+    "end_utc": "2026-07-26T23:13:20+00:00",
+    "max_elevation_deg": 35.893498649085224,
+    "peak_utc": "2026-07-26T23:08:30+00:00",
+    "start_index": 8302,
+    "start_utc": "2026-07-26T23:03:40+00:00"
+  },
+  "station_altitude_m_asl_nominal": 290.8760070800781
+}

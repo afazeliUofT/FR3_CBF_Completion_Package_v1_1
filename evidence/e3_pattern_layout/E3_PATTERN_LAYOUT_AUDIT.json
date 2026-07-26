@@ -1,0 +1,54 @@
+{
+  "claim_boundary": "The station coordinate, phase centre, aperture efficiency, antenna pattern, and cellular layout include explicit model decisions. The layout is not an operator deployment, and SA.509 is a reference pattern rather than an EESS-specific mandate.",
+  "config_sha256": "3f81d96279e3afb4fd6afa35accd15c3493ccb2aac27ddbd631a9b0ae95feda2",
+  "created_utc": "2026-07-26T04:20:39.401976+00:00",
+  "layout": {
+    "cluster_center_bearing_deg": 180.0,
+    "cluster_center_offset_from_station_m": 3000.0,
+    "deployment_status": "MODELLED_3GPP_UMA_REFERENCE_NOT_OPERATOR_DEPLOYMENT",
+    "lattice_rotation_deg": 30.0,
+    "maximum_site_to_station_m": 3999.9999999999577,
+    "minimum_site_to_station_m": 1999.9999999987501,
+    "sector_count": 57,
+    "site_count": 19
+  },
+  "layout_dem_sha256": "ebac60924462803a8c760f8e38739a924249df88686cce59faedc8f4502560a7",
+  "layout_dem_source_record_sha256": "b564f84b2ff86fb6c5eb9aa8a141cf4ecd6783d059a295069dbe2782616572a0",
+  "manual_confirmations": {
+    "efficiency_grid_is_model_sensitivity": true,
+    "layout_is_modelled_not_operator_deployment": true,
+    "layout_plot_and_geojson_reviewed": true,
+    "pattern_plot_reviewed": true,
+    "sa509_reference_use_not_mandate_understood": true,
+    "selected_pass_plot_reviewed": true,
+    "site_elevations_and_minimum_distance_reviewed": true,
+    "station_coordinate_limitations_understood": true
+  },
+  "next_gate": "FIRST_CELLULAR_SECTOR_TO_EARTH_STATION_P452_PATH",
+  "open_items": [
+    "Independent external spot-check of selected pass geometry before paper use.",
+    "First cellular-sector-to-earth-station P.452 path and gain-accounting audit.",
+    "Final BS composite antenna/beam model for the paper-grade controller."
+  ],
+  "pass_selection_sha256": "f79ffff5bb8c66d97f9505d45121500b0b4a65a7882a23cdbacced2f3586baa2",
+  "pattern": {
+    "carrier_ghz": 8.15,
+    "d_over_lambda": 353.4111588624421,
+    "diameter_m": 13.0,
+    "nominal_efficiency": 0.65,
+    "nominal_g0_dbi": 59.037736182688946,
+    "nominal_phi0_deg": 0.0980190219880998,
+    "recommendation": "ITU-R SA.509-3",
+    "sensitivity_efficiencies": [
+      0.55,
+      0.65,
+      0.75
+    ],
+    "use_status": "REFERENCE_MODEL_IN_ABSENCE_OF_MEASURED_PATTERN_NOT_EESS_MANDATE"
+  },
+  "sa509_pdf_sha256": "839e4caa705df483deca6f27aa398f9e4256ff6923a814fa616e5e969305d784",
+  "sa509_source_record_sha256": "764888ca91b657bc08eeac6eeaab0ff18db86869c7d9ba90b030b0db2cc5587a",
+  "selected_track_sha256": "938e0a8cbd52ff3bf20a0c4665a01aa58898d81d54578ea45aa0b2e18a7def7a",
+  "station_staging_sha256": "e2ae2cf77344b2752663f2ed9c180bdcd4528d87f1fecb90ea20d222cb1de33f",
+  "status": "FROZEN"
+}
