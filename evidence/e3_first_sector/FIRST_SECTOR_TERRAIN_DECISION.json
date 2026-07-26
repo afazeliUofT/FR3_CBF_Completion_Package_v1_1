@@ -1,0 +1,32 @@
+{
+  "actual_spacing_m": 29.959660457419115,
+  "claim_boundary": "Terrain accepted only for the first-sector P.452 pipeline audit; this is not yet a paper result.",
+  "created_utc": "2026-07-26T14:24:42.648592+00:00",
+  "distance_km": 3.774917217634808,
+  "evidence_sha256": {
+    "data/real/e3_first_sector_audit/selected_sector.json": "dc48c1a4e8f2d304044de3942744e7247b3f138a53a371ea4168a83b088d01f9",
+    "data/real/e3_first_sector_audit/terrain_review/TERRAIN_AUDIT.json": "043fc364d4dcde3245943cc5afeda3e4d2ed53e1dde9f9ff2e8d47bc73943eea",
+    "data/real/e3_first_sector_audit/terrain_review/first_sector_profile_review.pdf": "89ce42cad5029540fbaf58b7b5541a481bd7d620daf06b1e59e4baffbaad85c5",
+    "data/real/e3_first_sector_audit/terrain_review/terrain_profile_samples.csv.gz": "2bc1527f3e28136ea63bf2b19ad4380ac5adeba9c4be2a7372b748d840a0d1b8",
+    "data/real/e3_first_sector_audit/terrain_review/terrain_summary.csv": "d74532da2a1702fba30869689734360c4f0cb86d66561e1c676d788739670e60"
+  },
+  "flag_disposition": {
+    "inclusive_interior_mean_difference_gt_0p5m": "RETAINED_DOCUMENTED_NONBLOCKING_FOR_FULL_PROFILE_P452"
+  },
+  "inclusive_minus_interior_m": 0.5709455806702124,
+  "mean_terrain_inclusive_m_asl": 160.51390688438116,
+  "mean_terrain_interior_m_asl": 159.94296130371094,
+  "next_gate": "FIRST_SECTOR_P452_BASIC_LOSS_AND_GAIN_ACCOUNTING",
+  "p452_profile_rule": "The complete sampled terrain profile is the P.452 input. The auxiliary mean terrain value is not substituted for the P.452 terrain profile.",
+  "profile_sample_count": 127,
+  "retained_qc_flags": [
+    "inclusive_interior_mean_difference_gt_0p5m"
+  ],
+  "review_note": "Reviewed the complete first-sector MRDEM profile, both endpoint elevations, implied antenna heights, profile continuity, and the inclusive/interior mean difference. The only QC flag is the generic mean-convention difference flag; no terrain-profile defect remains.",
+  "reviewer": "Ali Fazeli",
+  "rx_implied_antenna_height_agl_m": 20.0,
+  "sector_id": "E3_SITE_11_SEC_1",
+  "site_id": "E3_SITE_11",
+  "status": "ACCEPTED_FOR_FIRST_SECTOR_P452_PIPELINE_AUDIT",
+  "tx_implied_antenna_height_agl_m": 25.0
+}
