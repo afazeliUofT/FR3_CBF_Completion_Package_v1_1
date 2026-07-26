@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-07-26T04:16:41.103871+00:00",
+  "official_url": "https://www.itu.int/dms_pubrec/itu-r/rec/sa/R-REC-SA.509-3-201312-I%21%21PDF-E.pdf",
+  "pdf_path": "data/external/itu/R-REC-SA.509-3-201312-I!!PDF-E.pdf",
+  "pdf_sha256": "839e4caa705df483deca6f27aa398f9e4256ff6923a814fa616e5e969305d784",
+  "pdf_size_bytes": 1422822,
+  "recommendation": "ITU-R SA.509-3",
+  "recommendation_status": "IN_FORCE_AT_WORKFLOW_DESIGN_TIME_VERIFY_BEFORE_SUBMISSION",
+  "response_headers": {},
+  "retrieval_mode": "existing_validated_copy",
+  "use_boundary": "Reference large-parabolic-antenna pattern used because measured station pattern is unavailable; this workflow does not claim SA.509 is an EESS-specific mandatory pattern."
+}

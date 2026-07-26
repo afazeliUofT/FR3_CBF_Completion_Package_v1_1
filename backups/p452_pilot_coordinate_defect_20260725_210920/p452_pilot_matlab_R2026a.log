@@ -1,0 +1,11 @@
+{Error using get_interp2 (line 23)
+Longitude must be within the range -180 to 180 degrees
+
+Error in tl_p452 (line 127)
+DN = get_interp2('DN50',phim_e,phim_n);
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_p452_pilot (line 71)
+        result_lb(row_index) = tl_p452( ...
+                               ^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

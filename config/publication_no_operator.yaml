@@ -1,0 +1,37 @@
+publication:
+  working_title: >-
+    Standards-Parametric Dynamic Interference-Safety Filtering
+    for FR3 Coexistence Under Rate-Limited RRM
+  primary_target: IEEE_TWC
+  jsac_policy: future_matching_call_only
+
+fixed_service:
+  role:
+    - public_data_continuity_case
+    - dynamic_rate_limited_rrm_case
+  operator_specific_short_term_cap: null
+  positive_19_db_always_on_status: rejected
+  conditional_s1_results: appendix_or_supplement_only
+  primary_reporting:
+    - confirmed_public_long_term_entry
+    - normalized_interference_I_over_Imax
+    - threshold_sensitivity
+  prohibited_claim:
+    - unique_telus_cap
+    - universal_canadian_short_term_cap
+
+eess:
+  role: headline_dynamic_geometry_case
+  protection_entries: use_regulatory_constants_yaml
+  required_evidence:
+    - archived_tle
+    - documented_station
+    - documented_antenna_pattern
+    - validated_p452_18_coupling
+    - multiple_passes
+    - zero_slack_certified_runs
+
+implementation:
+  central_beam_space: small_network_benchmark
+  layered_sector_budget: practical_main_architecture
+  architecture_wording: O-RAN-inspired

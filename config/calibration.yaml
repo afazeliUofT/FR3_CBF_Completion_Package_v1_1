@@ -1,0 +1,11 @@
+mode: demo
+seed: 4004
+input_csv:
+  demo: "data/demo/calibration_residuals.csv"
+  real: "data/real/calibration_residuals.csv"
+output_dir: "results/calibration"
+calibration_fraction: 0.6
+miscoverage_alpha: 0.05
+score_column: "absolute_error"
+stratum_column: "stress_stratum"
+minimum_test_points_per_stratum: 20

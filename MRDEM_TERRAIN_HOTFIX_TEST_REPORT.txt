@@ -1,0 +1,14 @@
+FR3 CBF v1.1 MRDEM Terrain Hotfix — Test Report
+
+Checks completed before packaging:
+- Python syntax compilation: PASS for all four scripts.
+- Offline metadata/VRT discovery using a synthetic CKAN package_show record: PASS.
+- VRT normalization and local GeoTIFF crop: PASS.
+- WGS84 geodesic profile construction: PASS.
+- Inclusive and interior terrain-mean calculation: PASS.
+- Terrain audit CSV/JSON and compressed profile output: PASS.
+- Multipage terrain-review PDF creation: PASS.
+- Terrain freeze preflight and confirmed freeze on a two-link synthetic fixture: PASS.
+
+The synthetic fixture is not included and is not scientific evidence. The real run must use the
+frozen 70-link TAFL table and the official NRCan MRDEM DTM selected by the fetch script.

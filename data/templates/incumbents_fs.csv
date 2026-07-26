@@ -1,0 +1,1 @@
+receiver_id,latitude_deg,longitude_deg,antenna_height_m_agl,ground_elevation_m_asl,channel_center_mhz,channel_bandwidth_mhz,antenna_azimuth_deg,antenna_gain_dbi,antenna_pattern_source,licence_id,source_record_id,source_date,provenance_note

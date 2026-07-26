@@ -1,0 +1,34 @@
+metadata:
+  version: "1.0.0"
+  purpose: >-
+    After the nominal +10 to +23 dB always-on candidate matrix has failed,
+    audit P.530 model warnings and bracket lower always-on I/N values without
+    selecting a final compliance allocation or freezing a cap.
+  evidence_status: "CONDITIONAL_SENSITIVITY_NOT_FINAL_COMPLIANCE"
+  claim_boundary: >-
+    The eight allocation scenarios are screening assumptions because TAFL does
+    not identify the operator network portion or prove an equipment-specific
+    BER-threshold-to-G.826 mapping. Threshold intervals from this run are
+    numerical engineering sensitivity results only.
+
+inputs:
+  allocation_matrix_config: "config/s1_allocation_matrix.yaml"
+  prior_matrix_result_dir: "results/s1_allocation_matrix"
+
+outputs:
+  result_dir: "results/s1_cap_reframe"
+
+mode: "real"
+expected_links: 70
+use_all_percentages_method: true
+require_real_p530_grids: true
+
+screen:
+  # This is a numerical bracketing interval, not a standards candidate range.
+  lower_i_over_n_db: -80.0
+  upper_i_over_n_db: 10.0
+  step_db: 0.25
+  maximum_grid_points: 1000
+  original_positive_candidates_db: [10.0, 13.0, 16.0, 19.0, 23.0]
+  require_original_positive_candidates_to_have_failed_prior_matrix: true
+  monotonicity_tolerance_pct: 1.0e-10

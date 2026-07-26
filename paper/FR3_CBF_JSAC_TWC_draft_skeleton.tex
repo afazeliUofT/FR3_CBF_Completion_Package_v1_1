@@ -1,0 +1,74 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs}
+\usepackage{cite}
+\newcommand{\W}{\bm W}
+\newcommand{\R}{\bm R}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\title{Certified Dynamic Interference-Safety Filters for Incumbent-Protected FR3 Spectrum Sharing}
+\author{Author names withheld in working skeleton}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study dynamic incumbent protection in FR3 cellular sharing when third-party receivers do not provide victim channel state information, their geometry or pointing changes, and radio-resource-management actions are rate limited. We propose a robust discrete-time safety filter that minimally changes a nominal beamforming or sector-budget action. Its physical-parameter uncertainty set is independent of the optimized beam, its exact exceedance budget controls time-percentage criteria on every declared prefix, and its reserve barrier anticipates harmful transitions. We instantiate the framework for terrestrial fixed service and tracking EESS earth stations using standards-native protection metrics. RESULT REQUIRED: insert validated E1--E3 utility, violation, coverage, and runtime findings.
+\end{abstract}
+\begin{IEEEkeywords}
+FR3, spectrum sharing, incumbent protection, control barrier function, robust beamforming, rate-limited RRM, fixed service, EESS.
+\end{IEEEkeywords}
+
+\section{Introduction}
+Explain FR3 opportunity, incumbent density, why static protection is insufficient under drift and rate limits, and the distinction from prior CBF/wireless, robust beamforming, conformal beamforming, and spectrum-sharing work. The final text should cite the foundational CBF-QP framework~\cite{ames2017cbf}, the WMMSE baseline~\cite{shi2011wmmse}, and the exact standards/model editions~\cite{3gpp38901,iturp452,iturp530,iturf758,itursa1027,ised3077}.
+
+\textbf{Contributions:}
+\begin{itemize}
+\item third-party-harm-defined robust discrete-time safety filter without victim CSI;
+\item beam-space and layered sector-budget formulations under rate-limited RRM;
+\item exact sample-path exceedance budget plus reserve-margin CBF;
+\item finite-epoch uncertainty guarantee uniform over adaptive beam choices;
+\item standards-aware Case T and Case S evaluation.
+\end{itemize}
+
+\section{System Model}
+At safety slot $k$, sector $b$ transmits $\bm x_{b,k}[t]=\W_{b,k}[t]\bm s_{b,k}[t]$. The incumbent interference is
+\begin{equation}
+ I^{\rm raw}_{\ell,k}(\W_k;\bm\zeta)=\sum_{b,t}\tr\big(\W_{b,k}[t]^H\R_{b,\ell,k}[t](\bm\zeta)\W_{b,k}[t]\big).
+\end{equation}
+Define the uniform robust functional
+\begin{equation}
+ \overline I_{\ell,k}(\W_k)=\sup_{\bm\zeta\in\mathcal Z_{\ell,e(k)}}I^{\rm raw}_{\ell,k}(\W_k;\bm\zeta).
+\end{equation}
+State slot timing, power reference, UMa/P.452/P.530/SA.1027 roles, and all bandwidth conversions.
+
+\section{Dynamic Safety Filter}
+Define power/slew constraints, always-on short cap, token budget, EMA reserve state, and the minimal-deviation QCQP/SOCP. State that positive emergency slack voids the strict certificate in that slot.
+
+\section{Guarantees}
+State and prove: robust forward invariance conditional on containment and feasibility; exact prefix exceedance bound; finite-horizon/epoch union-bound statement. Do not claim infinite-horizon safety from a fixed per-slot risk.
+
+\section{Practical Layered Architecture}
+Describe non-real-time model/calibration management, near-real-time aggregate allowance and sector-budget allocation, and local WMMSE/hybrid/learned beamforming. Report measured runtime before making a near-real-time claim.
+
+\section{Standards-Aware Cases}
+\subsection{Case T: Terrestrial Fixed Service}
+Use real GTA records, UMa cellular channels, P.452-18 coupling, F.758 long entry, and the separately audited S1 short-cap engineering decision. P.530-19 is used only for the wanted-link S1 gate.
+
+\subsection{Case S: Tracking EESS Earth Station}
+Use archived TLE/station information and SA.1027-6 absolute aggregate power at the antenna output in 10 MHz. Enforce the short entry as an always-on cap in the first paper and the long entry through the exact exceedance budget.
+
+\section{Evaluation}
+\subsection{E1: Static Continuity}
+RESULT REQUIRED: real baseline table and protection/rate tradeoff.
+\subsection{E2: Dynamic Aggregate Stress}
+RESULT REQUIRED: rate-limit trap trajectory, utility, violations, slack, and ablations.
+\subsection{E3: Drifting Geometry}
+RESULT REQUIRED: multiple passes/satellites, absolute-power trajectories, exceedance counts, and utility.
+\subsection{Calibration and Runtime}
+RESULT REQUIRED: held-out coverage by stratum, conservatism, central versus layered runtime, and control overhead.
+
+\section{Conclusion}
+Summarize only claims supported by the completed evidence.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

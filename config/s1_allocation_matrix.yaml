@@ -1,0 +1,96 @@
+metadata:
+  version: "1.0.0"
+  purpose: >-
+    Build and evaluate explicitly labelled ITU-R F.1565-1/G.826 SESR
+    allocation scenarios without pretending that TAFL metadata identifies the
+    operator's network portion or current regulatory sharing status.
+  evidence_boundary: >-
+    These scenarios are engineering sensitivity cases, not a final compliance
+    allocation. A final freeze requires operator/administration confirmation of
+    network role, performance basis, source class, and BER-threshold mapping.
+
+inputs:
+  links_before_allocation: "data/real/paired_fs_links_before_allocation.csv"
+  allocation_evidence: "data/real/s1_allocation_review/s1_allocation_review_unfinished.csv"
+  source_id_resolution: "data/real/s1_allocation_review/source_record_id_resolution.csv"
+  p530_products_dir: "data/external/p530"
+
+outputs:
+  scenario_input_dir: "data/real/s1_allocation_scenarios"
+  result_dir: "results/s1_allocation_matrix"
+
+expected_links: 70
+candidate_i_over_n_db: [10.0, 13.0, 16.0, 19.0, 23.0]
+use_all_percentages_method: true
+require_real_p530_grids: true
+
+# The P.530 exceedance at the TAFL BER=1e-3 receiver threshold is used only as
+# an engineering proxy for the F.1565 SESR degradation quantity. This mapping
+# is not asserted to be a formal equipment-specific compliance equivalence.
+threshold_event_mapping:
+  label: "P530_BER1e-3_exceedance_as_SESR_screening_proxy"
+  status: "MODEL_DECISION_REQUIRES_OPERATOR_CONFIRMATION"
+
+# F.1565-1 Tables 8 and 10: SESR degradation = 0.0002*B or 0.0002*C,
+# with provisional B/C in [0.075, 0.085]. F.1565 already incorporates the
+# F.1094 Y=10% co-primary allowance. For other-source Z=1%, F.1565 recommends
+# division by 10.
+# F.1565-1 Table 6: long-haul G.826 SESR = 0.0002*A, with
+# A=(A1+0.002)*L/100 for 50<=L<=100 km and A=A1+2e-5*L for L>100 km;
+# A1 is provisionally in [0.01, 0.02]. L<50 km is evaluated at Lmin=50 km.
+scenarios:
+  - id: "g826_nat_access_or_shorthaul_coprimary_BC075"
+    sharing_class: "co_primary_interservice_Y10"
+    network_portion: "national_access_or_shorthaul"
+    formula: "access_shorthaul"
+    block_allowance: 0.075
+    source_factor: 1.0
+
+  - id: "g826_nat_access_or_shorthaul_coprimary_BC085"
+    sharing_class: "co_primary_interservice_Y10"
+    network_portion: "national_access_or_shorthaul"
+    formula: "access_shorthaul"
+    block_allowance: 0.085
+    source_factor: 1.0
+
+  - id: "g826_nat_access_or_shorthaul_other_Z1_BC075"
+    sharing_class: "other_source_Z1"
+    network_portion: "national_access_or_shorthaul"
+    formula: "access_shorthaul"
+    block_allowance: 0.075
+    source_factor: 0.1
+
+  - id: "g826_nat_access_or_shorthaul_other_Z1_BC085"
+    sharing_class: "other_source_Z1"
+    network_portion: "national_access_or_shorthaul"
+    formula: "access_shorthaul"
+    block_allowance: 0.085
+    source_factor: 0.1
+
+  - id: "g826_nat_longhaul_coprimary_A1_001"
+    sharing_class: "co_primary_interservice_Y10"
+    network_portion: "national_longhaul"
+    formula: "longhaul"
+    a1: 0.01
+    source_factor: 1.0
+
+  - id: "g826_nat_longhaul_coprimary_A1_002"
+    sharing_class: "co_primary_interservice_Y10"
+    network_portion: "national_longhaul"
+    formula: "longhaul"
+    a1: 0.02
+    source_factor: 1.0
+
+  - id: "g826_nat_longhaul_other_Z1_A1_001"
+    sharing_class: "other_source_Z1"
+    network_portion: "national_longhaul"
+    formula: "longhaul"
+    a1: 0.01
+    source_factor: 0.1
+
+  - id: "g826_nat_longhaul_other_Z1_A1_002"
+    sharing_class: "other_source_Z1"
+    network_portion: "national_longhaul"
+    formula: "longhaul"
+    a1: 0.02
+    source_factor: 0.1

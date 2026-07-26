@@ -1,0 +1,11 @@
+S1 Allocation Evidence Hotfix - test report
+
+The script was syntax-checked and exercised on a synthetic 2-link dataset with:
+- frozen links and blank allocations;
+- matching terrain and pairing decision hashes;
+- unique TAFL TX/RX frequency-record identifiers;
+- digital capacity and bandwidth metadata;
+- source-role, frequency, authorization, service, and subservice checks.
+
+Expected result: S1 ALLOCATION EVIDENCE BUILD: PASS
+The script does not populate any outage allocation.

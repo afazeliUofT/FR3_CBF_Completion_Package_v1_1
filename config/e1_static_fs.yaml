@@ -1,0 +1,15 @@
+mode: demo
+seed: 1001
+output_dir: "results/e1_static_fs"
+input_bundle:
+  demo: "data/demo/experiment_bundle_template.npz"
+  real: "data/real/e1_bundle.npz"
+methods: [unprotected, hard_backoff, static_cap, cbf]
+protection:
+  threshold_linear: 1.0
+controller:
+  reserve_fraction: 0.10
+  max_scale_change_per_slot: 0.05
+notes: >-
+  Demo uses synthetic scalar sector-power control. Real evidence must use the Sionna
+  integration bundle and validated P.452 coupling.

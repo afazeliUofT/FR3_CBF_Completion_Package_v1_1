@@ -1,0 +1,48 @@
+project:
+  name: "Certified Dynamic Interference-Safety Filters for FR3 Spectrum Sharing"
+  package_version: "1.1.0"
+  random_seed: 20260723
+  primary_claim: >-
+    A robust discrete-time safety filter protects third-party non-cooperative incumbents
+    under drifting geometry and rate-limited RRM while minimally changing a nominal
+    beamforming or sector-budget policy.
+  prohibited_claims:
+    - "CBFs themselves are new."
+    - "A fixed per-slot risk gives an infinite-horizon probability guarantee."
+    - "Synthetic calibration certifies the physical world."
+    - "EMA alone proves a time-percentage rule."
+    - "+19 dB is an in-force 7-8 GHz fixed-service rule before S1 passes."
+    - "P.530 models the cellular-to-incumbent interference path."
+
+paths:
+  regulatory_yaml: "config/regulatory_constants.yaml"
+  real_fs_receivers: "data/real/incumbents_fs.csv"
+  real_paired_links: "data/real/paired_fs_links.csv"
+  p530_products_dir: "data/external/p530"
+  earth_station_file: "data/real/earth_station.csv"
+  tle_file: "data/external/tle/active_case.tle"
+  results_dir: "results"
+
+paper_baseline:
+  deployment: "3GPP UMa"
+  carrier_frequencies_ghz: [7.85, 8.0]
+  bandwidth_mhz: 100.0
+  sites: 19
+  sectors_per_site: 3
+  inter_site_distance_m: 500.0
+  bs_height_m: 25.0
+  ue_height_m: 1.5
+  users_per_sector: 8
+  array_rows: 16
+  array_cols: 16
+  tone_groups: 13
+  sector_conducted_power_dbm_per_100mhz: 46.0
+  power_status: MODEL_DECISION
+  ue_noise_figure_db: 9.0
+  indoor_probability: 0.8
+
+control_timing:
+  safety_slot_s: 1.0
+  nominal_rrm_update_s: 1.0
+  uncertainty_refresh_s: 60.0
+  status: MODEL_DECISION

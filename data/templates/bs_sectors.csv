@@ -1,0 +1,1 @@
+sector_id,site_id,latitude_deg,longitude_deg,ground_elevation_m_asl,antenna_height_m_agl,azimuth_deg,downtilt_deg,array_rows,array_cols,element_gain_dbi,conducted_power_dbm_per_100mhz,activity_factor,source_or_model_status,provenance_note

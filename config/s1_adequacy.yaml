@@ -1,0 +1,26 @@
+mode: demo  # demo or real
+input_links_csv:
+  demo: "data/demo/synthetic_paired_fs_links.csv"
+  real: "data/real/paired_fs_links.csv"
+p530_products_dir: "data/external/p530"
+output_dir: "results/s1_adequacy"
+
+candidate_i_over_n_db: [10.0, 13.0, 16.0, 19.0, 23.0]
+provisional_candidate_to_freeze_db: 19.0
+all_links_must_pass: true
+
+# Real mode requires either a per-link column allocated_incremental_outage_pct
+# or this explicit reviewed project-level value. Null prevents an invented PASS.
+allocated_incremental_outage_pct: null
+
+use_all_percentages_method: true
+strict_validity_checks: true
+require_real_p530_grids_for_real_mode: true
+
+sensitivity:
+  fade_margin_offsets_db: [-2.0, 0.0, 2.0]
+  mean_terrain_offsets_m: [-10.0, 0.0, 10.0]
+  dn75_scale: [0.9, 1.0, 1.1]
+  logk_offsets: [-0.1, 0.0, 0.1]
+
+freeze_output_yaml: "results/s1_adequacy/regulatory_constants_candidate.yaml"

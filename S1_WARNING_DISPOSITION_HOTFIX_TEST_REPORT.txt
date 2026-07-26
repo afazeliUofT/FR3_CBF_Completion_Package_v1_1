@@ -1,0 +1,15 @@
+S1 warning-disposition hotfix test report
+
+Test date: 2026-07-24 UTC
+Test input: uploaded cap-reframe evidence set
+Checks performed:
+- Python syntax compilation: PASS
+- Input output-hash verification against audit.json: PASS
+- 361-point grid and 70-link detail structure: PASS
+- Four warning records / one physical path: PASS
+- Warning distances in (5.0, 7.5) km: PASS
+- All eight scenario pass and fail edges set by non-warning link: PASS
+- Minimum binding/global-to-warning outage ratio: 123.228586
+- +10 dB independently rejected by non-warning link: PASS
+- Output generation: PASS
+- No cap or allocation selected: PASS

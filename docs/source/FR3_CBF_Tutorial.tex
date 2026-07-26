@@ -1,0 +1,568 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,longtable,array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\fancyhf{}
+\lhead{FR3 CBF Tutorial}
+\rhead{Plain-language completion guide v1.1}
+\cfoot{\thepage}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\setlist{nosep,leftmargin=*}
+\sloppy
+
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\keybox}[1]{\begin{center}\fbox{\parbox{0.90\textwidth}{#1}}\end{center}}
+
+\title{\textbf{How the FR3 Dynamic Interference-Safety Filter Works}\\
+\large A clean tutorial and exact guide to completing the research}
+\author{C1-level English technical tutorial}
+\date{Package v1.1 -- 23 July 2026}
+
+\begin{document}
+\maketitle
+
+\keybox{\textbf{Main idea in one sentence.} The cellular network first chooses a high-rate action, then a safety filter changes that action only as much as necessary so that a protected incumbent is not harmed, even when the incumbent geometry changes and the network cannot change its action instantly.}
+
+\tableofcontents
+\newpage
+
+\section{What problem are we solving?}
+
+FR3 is the upper-mid-band region between today's common sub-6 GHz cellular bands and millimetre-wave bands. It can offer more bandwidth than lower bands, while keeping better coverage than very high frequencies. However, many FR3 frequencies are already used by fixed microwave links, satellite earth stations, scientific services, and other incumbents.
+
+A cellular operator may be allowed to share a band only if it protects these incumbents. The difficult part is that an incumbent is not a cooperative cellular user:
+
+\begin{itemize}
+\item it does not send channel-state information to the cellular base station;
+\item its database entry may contain uncertainty;
+\item its antenna can be very directional;
+\item its geometry or pointing can change;
+\item many base stations can contribute interference at the same time;
+\item the cellular controller may need time to reduce power or change a beam.
+\end{itemize}
+
+The research asks:
+
+\begin{quote}
+Can we keep the incumbent safe over time, while changing the cellular action as little as possible?
+\end{quote}
+
+\section{The three actors}
+
+\subsection{The nominal cellular controller}
+
+This controller tries to serve cellular users well. It may use WMMSE, a scheduler, a learned policy, or another beamforming algorithm. It proposes a nominal action.
+
+\textbf{Example.} It may propose a beam and power that maximize weighted sum rate.
+
+\subsection{The incumbent}
+
+The incumbent is the receiver that must be protected. It may be a fixed-service microwave receiver or an EESS earth station. The cellular network usually knows only database information, propagation models, antenna patterns, and uncertainty ranges.
+
+\subsection{The safety filter}
+
+The safety filter sits between the nominal controller and the transmitter. It asks:
+
+\begin{quote}
+If I apply this action, can the incumbent remain safe now and in the next control step, considering uncertainty and the maximum speed at which I can later change the action?
+\end{quote}
+
+If yes, the filter passes the nominal action unchanged. If no, it finds the nearest safe action.
+
+\section{A driving analogy}
+
+Imagine driving toward a red traffic light.
+
+A \textbf{myopic controller} brakes only when the car reaches the stop line. If the brakes have a limit, it is already too late.
+
+A \textbf{safety-aware controller} knows the stopping distance. It starts braking earlier, so the car reaches the line safely.
+
+In the FR3 problem:
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Driving idea & FR3 meaning\\
+\midrule
+Distance to the line & Interference safety margin\\
+Car speed & How aggressively the network is transmitting\\
+Brake limit & Rate limit on power/beam/RRM changes\\
+Road uncertainty & Uncertain propagation and geometry\\
+Traffic light & Incumbent protection threshold\\
+Safety supervisor & CBF safety filter\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+This analogy explains why a dynamic safety filter can add value beyond a static constraint.
+
+\section{A scalar example before the matrix math}
+
+Suppose one power scale $q_k$ controls the network in slot $k$:
+\begin{equation}
+ 0\le q_k\le1.
+\end{equation}
+Let $g_k$ be the coupling to the incumbent. Interference is
+\begin{equation}
+ I_k=g_kq_k.
+\end{equation}
+The safe limit is $I_{\max}=1$.
+
+At first, let $g_k=0.75$ and $q_k=1$. Then
+\begin{equation}
+ I_k=0.75,
+\end{equation}
+so the network is safe.
+
+Now imagine a scheduled sector activation makes the next coupling $g_{k+1}=1.25$. If power can change by at most $0.1$ per slot, a myopic controller stays at $q_k=1$ because the present slot is safe. In the next slot it can reduce only to $0.9$:
+\begin{equation}
+ I_{k+1}=1.25\times0.9=1.125>1.
+\end{equation}
+It violates the limit.
+
+A safety filter that knows the one-step upper coupling starts earlier. It reduces to $0.9$ in the present safe slot, then to $0.8$ in the next slot:
+\begin{equation}
+ 1.25\times0.8=1.
+\end{equation}
+It remains safe.
+
+\keybox{\textbf{Important.} The CBF is not useful merely because it is called a CBF. It is useful when there is a real dynamic effect: drift, delay, action-rate limit, or a changing active network.}
+
+\section{What is a control barrier function?}
+
+A control barrier function is a mathematical description of a safe set.
+
+Let the safety margin be
+\begin{equation}
+ h_k=I_{\max}-I_k.
+\end{equation}
+If $h_k\ge0$, the system is safe. If $h_k<0$, the limit is exceeded.
+
+A simple discrete-time barrier condition is
+\begin{equation}
+ h_{k+1}\ge(1-\gamma)h_k,
+ \qquad 0\le\gamma\le1.
+\end{equation}
+This means the next safety margin cannot disappear too quickly. A positive reserve can also be required:
+\begin{equation}
+ h_{k+1}\ge\max\{(1-\gamma)h_k,h_{\min}\}.
+\end{equation}
+
+The condition is not magic. It works only if:
+
+\begin{itemize}
+\item the uncertainty bound is valid;
+\item the control problem is feasible;
+\item the condition is enforced at each stated step;
+\item emergency slack is zero;
+\item the timing convention matches the implementation.
+\end{itemize}
+
+\section{Why we use an uncertainty set}
+
+The cellular network does not know the exact incumbent coupling. It has an estimate plus uncertainty.
+
+Examples of uncertain physical quantities are:
+
+\begin{itemize}
+\item receiver location or height;
+\item antenna azimuth and pointing error;
+\item antenna-pattern mismatch;
+\item clutter and path-loss residuals;
+\item which sectors are active;
+\item spectral overlap;
+\item satellite ephemeris and one-step forecast error.
+\end{itemize}
+
+We collect plausible values in a set $\mathcal Z$. For every cellular action $W$, the filter uses the worst interference inside this set:
+\begin{equation}
+ \overline I(W)=\sup_{\zeta\in\mathcal Z}I(W;\zeta).
+\end{equation}
+
+The set is built \emph{before} the beam is optimized. Therefore, the optimizer cannot choose a beam that exploits a weak, beam-specific bound.
+
+\subsection{A simple uncertainty example}
+
+Suppose the estimated coupling is $0.8$, but validation shows an error up to $0.15$. Use
+\begin{equation}
+ g\in[0.65,0.95].
+\end{equation}
+The robust interference at power scale $q$ is
+\begin{equation}
+ \overline I(q)=0.95q.
+\end{equation}
+If the limit is 1, full power is still robustly safe because $0.95<1$.
+
+If the upper coupling were $1.2$, robust full power would not be safe, and the filter would limit $q$.
+
+\section{How time-percentage rules are handled}
+
+Some protection criteria allow a threshold to be exceeded for a small fraction of time. An exponential moving average does not exactly prove such a rule.
+
+The project uses an exceedance-token budget.
+
+Let $p=0.2$. This means at most 20\% of slots may exceed the long threshold in the stated engineering horizon. A balance $b_k$ receives $p$ token per slot. An exceedance costs one token:
+\begin{equation}
+ b_{k+1}=\min\{B_{\max},b_k+p-e_k\},
+\end{equation}
+where $e_k=1$ for an exceedance and $e_k=0$ otherwise. The controller may exceed only if
+\begin{equation}
+ e_k\le b_k+p.
+\end{equation}
+
+\subsection{Five-slot example}
+
+Start with $b_0=0$ and $p=0.2$.
+
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+Slot & Balance before & Exceed? & Balance after & Total exceedances\\
+\midrule
+1 & 0.0 & No & 0.2 & 0\\
+2 & 0.2 & No & 0.4 & 0\\
+3 & 0.4 & No & 0.6 & 0\\
+4 & 0.6 & No & 0.8 & 0\\
+5 & 0.8 & Yes & 0.0 & 1\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+After five slots, one exceedance is exactly 20\%. The rule is valid for every prefix, not only after a long average.
+
+The final paper must state how the token horizon or reset relates to the engineering reference period.
+
+\section{Why an EMA is still useful}
+
+The token budget controls the exact exceedance count. An exponential moving average is still useful as a reserve governor.
+
+Let
+\begin{equation}
+ Y_{k+1}=(1-\alpha)Y_k+\alpha I_k.
+\end{equation}
+If $Y_k$ is close to the long threshold, the filter becomes more cautious. If $Y_k$ is far below it, the filter can stay closer to the nominal action.
+
+So the two tools have different jobs:
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Tool & Job\\
+\midrule
+Token budget & Exact sample-path control of exceedance fraction\\
+EMA barrier & Proactive reserve and smoother control\\
+Always-on short cap & Prevent very high instantaneous interference\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{The matrix interference model}
+
+Real beamforming uses vectors and matrices. Let $W_{b,k}[t]$ be the beamformer of sector $b$ on tone group $t$. The incumbent coupling is represented by a positive-semidefinite matrix $R_{b,\ell,k}[t]$.
+
+The aggregate interference at incumbent $\ell$ is
+\begin{equation}
+ I_{\ell,k}=\sum_{b,t}\operatorname{tr}\left(W_{b,k}[t]^H R_{b,\ell,k}[t]W_{b,k}[t]\right).
+\end{equation}
+
+Why is this form useful?
+
+\begin{itemize}
+\item It supports many sectors and tone groups.
+\item It includes direction, path gain, receiver pattern, and spectral overlap.
+\item It is convex quadratic in $W$ when $R\succeq0$.
+\item A general $R$ can represent scattering or near-field coupling; a rank-one $R$ gives the familiar steering-vector model.
+\end{itemize}
+
+\section{What the safety filter solves}
+
+The nominal beamformer is $W^{\rm nom}$. The safety filter solves a nearest-safe-action problem:
+\begin{equation}
+ \min_W\;\norm{W-W^{\rm nom}}^2
+\end{equation}
+subject to:
+
+\begin{itemize}
+\item cellular transmit-power limits;
+\item a limit on how far the action can move from the previous action;
+\item robust incumbent short cap;
+\item time-percentage token allowance;
+\item EMA reserve allowance.
+\end{itemize}
+
+If the nominal action is already safe, the answer is exactly the nominal action. This is what \emph{minimally invasive} means.
+
+If emergency slack is used, strict safety is not certified in that slot. Slack is reported separately; it is not averaged away.
+
+\section{Why the practical version uses sector budgets}
+
+A full network beam-space optimization can contain millions of complex variables. It is useful as a small-network reference but may be too large for a near-real-time controller.
+
+The practical design has three layers:
+
+\begin{enumerate}
+\item A slow layer manages incumbent databases, standards versions, propagation models, and calibration.
+\item A coordinator computes how much aggregate interference is safe and divides it into sector leakage or power budgets.
+\item Each BS runs its local WMMSE, hybrid, or learned beamforming under its own budget.
+\end{enumerate}
+
+This is described as O-RAN-inspired until exact interfaces and measured runtime support a stronger claim.
+
+\section{Which channel model is used where?}
+
+A major source of error in spectrum-sharing studies is using one propagation model for the wrong link.
+
+\begin{longtable}{p{0.25\textwidth}p{0.28\textwidth}p{0.39\textwidth}}
+\toprule
+Link/problem & Model & Reason\\
+\midrule
+BS to cellular UE & 3GPP TR 38.901 UMa & Cellular stochastic channel and mobility baseline\\
+BS to terrestrial incumbent & ITU-R P.452-18 & Inter-system path between stations on the Earth's surface\\
+Extra clutter & ITU-R P.2108-1 & Only if not already counted in the P.452 treatment\\
+Wanted fixed microwave link & ITU-R P.530-19 & Fade/outage adequacy, including multipath\\
+Canadian 7.725--8.275 GHz channel plan & ISED SRSP-307.7 & Domestic fixed-service technical plan\\
+EESS earth-station threshold & ITU-R SA.1027-6 & Absolute aggregate power at antenna output in 10 MHz\\
+\bottomrule
+\end{longtable}
+
+P.530 is not used to calculate interference from the cellular BS to the incumbent. It checks whether the incumbent's own wanted fixed link still has acceptable fade/outage performance after interference reduces its fade margin.
+
+\section{The immediate S1 task}
+
+The project currently has a provisional fixed-service short cap of +19 dB I/N. It is not frozen and must not be called a mandatory rule.
+
+For a candidate I/N value $x$, interference reduces the wanted-link fade margin by
+\begin{equation}
+ \Delta A(x)=10\log_{10}(1+10^{x/10}).
+\end{equation}
+
+\subsection{Numerical intuition}
+
+At $x=-10$ dB,
+\begin{equation}
+ \Delta A\approx0.41\text{ dB}.
+\end{equation}
+At $x=19$ dB,
+\begin{equation}
+ \Delta A\approx19.05\text{ dB}.
+\end{equation}
+This is a large reduction, so +19 dB cannot be accepted just because it appears in an adjacent methodology. It must be tested on the wanted links. If the reduction is equal to or larger than a link's documented fade margin, the screen conservatively treats that always-on candidate as 100\% engineering outage rather than inserting zero fade depth into P.530.
+
+For each paired link:
+
+\begin{enumerate}
+\item obtain real TX/RX endpoints and altitudes;
+\item obtain mean terrain elevation along the path;
+\item obtain the wanted-link frequency and documented fade margin;
+\item declare an incremental worst-month outage allocation;
+\item use official P.530 $K$ and $dN_{75}$ grids at the path centre;
+\item compute baseline fade exceedance;
+\item reduce fade margin by $\Delta A(x)$;
+\item recompute fade exceedance;
+\item compare the increase with the allocation;
+\item repeat for candidate values and sensitivity cases.
+\end{enumerate}
+
+The package refuses to freeze a demo result.
+
+\section{What data cannot be guessed?}
+
+The following inputs require evidence or an explicit model decision:
+
+\begin{itemize}
+\item TX/RX pairing of fixed links;
+\item wanted-link fade margin;
+\item incremental-outage allocation;
+\item terrain profile/mean elevation;
+\item exact P.452 implementation and clutter treatment;
+\item cellular conducted power, loading, and activity;
+\item earth-station pattern and site data;
+\item uncertainty residual distribution;
+\item control timescale and slew limit.
+\end{itemize}
+
+The code has strict empty fields for these items because a convenient invented number would produce a misleading PASS.
+
+\section{The three paper experiments}
+
+\subsection{E1: static fixed-service continuity}
+
+Purpose: connect the new paper to the completed ICC/WMMSE baseline.
+
+Expected qualitative result:
+
+\begin{itemize}
+\item unprotected WMMSE can violate the incumbent limit;
+\item hard null/backoff protects but wastes rate;
+\item constrained/dual WMMSE uses the limit efficiently;
+\item robust protection trades more rate for uncertainty protection.
+\end{itemize}
+
+E1 is not enough to prove the dynamic CBF contribution.
+
+\subsection{E2: dynamic fixed-service stress}
+
+Purpose: show why rate-limited control needs anticipation.
+
+Use a real physical disturbance, such as scheduled activation of nearby sectors, traffic surge, delayed power control, or a beam-family transition. Plot the action and interference versus time. The CBF should act before the dangerous transition; the myopic method should violate or require a larger permanent backoff.
+
+\subsection{E3: tracking earth-station geometry}
+
+Purpose: provide a clearly drifting incumbent geometry.
+
+Use a real archived TLE, a documented earth-station site, and a justified antenna pattern. As the satellite moves, the station dish points in a changing direction. The gain from every cellular sector into the dish changes. The safety filter updates the network budget and keeps the absolute SA.1027 power entries under control.
+
+\section{How uncertainty calibration is tested}
+
+Split residual data into calibration and test sets before selecting the margin.
+
+For split conformal calibration:
+
+\begin{enumerate}
+\item compute nonconformity scores, such as absolute path-loss error;
+\item select the finite-sample corrected calibration quantile;
+\item build the uncertainty set using that quantile;
+\item evaluate coverage on untouched test data;
+\item repeat by stress strata, such as high clutter or pointing stress.
+\end{enumerate}
+
+A 95\% marginal coverage result does not guarantee 95\% in every rare stress condition. That is why stratified plots are required.
+
+\section{Exact next commands}
+
+From the package root:
+
+\begin{verbatim}
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements-core.txt
+python -m pip install -e . --no-build-isolation
+python scripts/00_validate_package.py
+python -m pytest
+python scripts/01_run_smoke_test.py
+\end{verbatim}
+
+Then obtain P.530 products:
+
+\begin{verbatim}
+python scripts/02_download_p530_products.py
+\end{verbatim}
+
+Prepare and validate the real paired links:
+
+\begin{verbatim}
+cp data/templates/paired_fs_links.csv data/real/paired_fs_links.csv
+# Fill real reviewed data.
+python scripts/03_validate_paired_links.py \
+  data/real/paired_fs_links.csv --mode real
+\end{verbatim}
+
+Run nominal and sensitivity S1:
+
+\begin{verbatim}
+python scripts/04_run_s1_adequacy.py \
+  --config config/s1_adequacy.yaml --mode real
+python scripts/04b_run_s1_sensitivity.py \
+  --config config/s1_adequacy.yaml --mode real
+\end{verbatim}
+
+Only after technical review:
+
+\begin{verbatim}
+python scripts/05_freeze_s1_candidate.py \
+  --candidate-db 19 \
+  --reviewer "Name" \
+  --decision-note "Detailed reviewed rationale" \
+  --confirm
+\end{verbatim}
+
+Then integrate and run E1--E3 using the instructions in \texttt{INTEGRATION\_CONTRACT.md}.
+
+\section{How to read the outputs}
+
+\subsection{S1}
+
+\texttt{link\_details.csv} is the evidence table. Check every link, warning, fade margin, baseline outage, post-interference outage, incremental outage, and allocation.
+
+\texttt{candidate\_summary.csv} is only a summary. Never accept a candidate from the summary without reviewing link-level provenance and sensitivity.
+
+\subsection{E2 and E3}
+
+The main evidence is the trajectory, not only an average. Look for:
+
+\begin{itemize}
+\item the exact time a disturbance begins;
+\item whether the method acts before or after the danger;
+\item the maximum interference;
+\item exceedance count/fraction;
+\item emergency slack;
+\item utility loss;
+\item action variation and runtime.
+\end{itemize}
+
+\section{What a strong final result looks like}
+
+A strong paper result would show all of the following:
+
+\begin{itemize}
+\item The method protects real or well-grounded incumbent scenarios.
+\item The dynamic controller prevents a reproducible transient failure that static/myopic approaches cannot avoid at the same rate limit.
+\item It loses much less cellular utility than permanent worst-case backoff.
+\item Its robust uncertainty set achieves declared held-out coverage.
+\item The practical layered version runs within its stated control timescale.
+\item All standards values, model decisions, and data sources are auditable.
+\end{itemize}
+
+\section{What would make the paper fail?}
+
+The paper would be weak if:
+
+\begin{itemize}
+\item it shows only a static fixed-service case;
+\item the CBF behaves like a renamed static cap;
+\item the uncertainty set is fitted after seeing the chosen beam;
+\item +19 dB is treated as a rule without passing S1;
+\item P.530 is used for the wrong path;
+\item an EMA is described as exact time-percentage compliance;
+\item demo coupling is labelled P.452;
+\item synthetic calibration is presented as physical certainty;
+\item runtime is asserted but not measured;
+\item emergency slack is hidden.
+\end{itemize}
+
+\section{Final project sequence in plain language}
+
+\begin{enumerate}
+\item Make the software run cleanly.
+\item Obtain the official P.530 grids.
+\item Build and review the real paired fixed links.
+\item Decide the outage allocation openly.
+\item Run and review S1; freeze or reject the short-cap candidate.
+\item Rebuild the static GTA case with consistent UMa and validated P.452 coupling.
+\item Create the dynamic fixed-service stress case.
+\item Create the drifting earth-station case.
+\item Calibrate and test uncertainty coverage.
+\item Implement and time the practical sector-budget controller.
+\item Run enough independent seeds/passes for confidence intervals.
+\item Populate the paper, run the readiness checker, and obtain an independent adversarial review.
+\end{enumerate}
+
+\keybox{\textbf{Current decision.} Continue this project. Do not add more conceptual branches before closing S1 and producing the first real E2 trajectory. The immediate scientific value now comes from evidence.}
+
+\section*{Primary sources}
+
+The package records exact source URLs and status in \texttt{config/regulatory\_constants.yaml}. The most important immediate source is ITU-R P.530-19: \url{https://www.itu.int/rec/R-REC-P.530-19-202509-I}.
+
+\end{document}

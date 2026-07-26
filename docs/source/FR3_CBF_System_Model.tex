@@ -1,0 +1,359 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=22mm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs,longtable,array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\fancyhf{}
+\lhead{FR3 Dynamic Interference-Safety Filter}
+\rhead{Canonical System Model v1.1}
+\cfoot{\thepage}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlist{nosep,leftmargin=*}
+\sloppy
+
+\newcommand{\W}{\bm W}
+\newcommand{\R}{\bm R}
+\newcommand{\Zset}{\mathcal Z}
+\newcommand{\E}{\mathbb E}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+
+\title{\textbf{Certified Dynamic Interference-Safety Filters for Incumbent-Protected FR3 Spectrum Sharing}\\
+\large Canonical paper-ready system model and completion specification}
+\author{Research working document}
+\date{Package v1.1 -- 23 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\fbox{\parbox{0.92\textwidth}{
+\textbf{Status.} The mathematical framework is ready for implementation. The work is not submission-ready until the real S1 gate, validated E1--E3 simulations, held-out uncertainty coverage, and runtime evidence are complete. A value marked \texttt{PROVISIONAL} or \texttt{MODEL\_DECISION} is not a mandatory regulatory rule.
+}}
+\end{center}
+
+\tableofcontents
+\newpage
+
+\section{Research objective and defensible novelty}
+
+The goal is to protect a third-party, non-cooperative incumbent while an FR3 cellular network changes beams, powers, schedules, and sector activity. The incumbent does not provide instantaneous victim-channel state information. Its geometry or antenna pointing can drift, and the radio resource-management action cannot change without limit.
+
+The paper does \emph{not} claim that control barrier functions (CBFs), weighted minimum mean-square error (WMMSE), robust beamforming, or interference constraints are new. The defensible contribution is their specific combination:
+
+\begin{quote}
+A robust discrete-time safety filter whose safe set is defined by harm to a third-party incumbent; whose uncertainty set is built on physical parameters and is independent of the optimized beam; whose action is rate-limited; whose time-percentage rule has an exact sample-path budget; and whose practical implementation minimally changes a nominal beamforming or sector-budget policy.
+\end{quote}
+
+The paper must demonstrate a dynamic case in which a controller that waits at the present boundary cannot recover quickly enough, while the proposed filter acts earlier using a valid drift/uncertainty bound.
+
+\section{Standards and model roles}
+
+Table~\ref{tab:models} prevents model-role mixing. Exact editions and source status are stored in \texttt{config/regulatory\_constants.yaml}.
+
+\begin{longtable}{p{0.24\textwidth}p{0.25\textwidth}p{0.43\textwidth}}
+\caption{Primary model roles.}\label{tab:models}\\
+\toprule
+Object & Primary source & Role and boundary\\
+\midrule
+\endfirsthead
+\toprule
+Object & Primary source & Role and boundary\\
+\midrule
+\endhead
+BS--UE channel & ETSI/3GPP TR 38.901 V19.4.0 & UMa is the main cellular baseline. Use spatial consistency when the time evolution requires it.\\
+Terrestrial BS--incumbent path & ITU-R P.452-18 & Primary inter-system propagation method between stations on the Earth's surface.\\
+Additional clutter & ITU-R P.2108-1 & Apply only when compatible with the selected P.452 implementation and not already represented.\\
+Wanted fixed link & ITU-R P.530-19 & Used for fade/outage adequacy in the S1 gate. It is not the BS--incumbent interference path.\\
+Fixed-service long entry & ITU-R F.758-8 & Engineering aggregate sharing criterion, with its scope stated explicitly.\\
+Canadian FS plan & ISED SRSP-307.7 Issue 6 & Channel plan and fixed-service parameters in 7725--8275 MHz.\\
+EESS earth station & ITU-R SA.1027-6 & Absolute aggregate interference power at the antenna output in 10 MHz; do not silently convert it to I/N.\\
+\bottomrule
+\end{longtable}
+
+The final implementation must label conducted power, total radiated power, and equivalent isotropically radiated power. Element gain appears once. Array gain is produced by the beam inner product and is not added again as a separate dB term.
+
+\section{Time axis and information pattern}
+
+Time is divided into safety-control slots indexed by $k$. A slot is an RRM-timescale interval, not an OFDM symbol. The default study value is one second and is a model decision that must be swept or replaced by an operator-supported value.
+
+At the start of slot $k$:
+
+\begin{enumerate}
+\item The network observes the cellular state and an incumbent-state estimate $\widehat{\bm\zeta}_{\ell,k}$.
+\item It constructs a physical uncertainty set $\Zset_{\ell,e(k)}$ that remains valid during uncertainty epoch $e(k)$ and covers one-step forecast error.
+\item A nominal controller produces $\W_k^{\rm nom}$, for example by WMMSE or a learned policy.
+\item The safety filter computes the applied action $\W_k^\star$ subject to power, slew, and incumbent constraints.
+\item The network transmits with $\W_k^\star$ and records incumbent interference, safety states, slack, utility, and runtime.
+\end{enumerate}
+
+A fair comparison gives every method the same observation delay, forecast information, action variable, and slew limit.
+
+\section{Cellular downlink}
+
+Let $b\in\mathcal B$ index sectors, $t\in\mathcal T$ index tone groups, and $k$ index the safety slot. A fully digital sector transmits
+\begin{equation}
+ \bm x_{b,k}[t]=\W_{b,k}[t]\bm s_{b,k}[t],
+ \qquad \E[\bm s_{b,k}[t]\bm s_{b,k}[t]^H]=\bm I.
+\end{equation}
+The conducted-power constraint is
+\begin{equation}
+ \sum_{t\in\mathcal T}\eta_t\norm{\W_{b,k}[t]}_F^2\le P_b^{\max},
+ \qquad b\in\mathcal B,
+ \label{eq:power}
+\end{equation}
+where $\eta_t$ is the tone-group bandwidth/activity weight. The same scaling is not applied again in the incumbent-coupling matrix.
+
+For a single-antenna reference UE $u$, the received signal is
+\begin{equation}
+ y_{u,k}[t]=\sum_{b\in\mathcal B}\bm h_{b,u,k}[t]^H\W_{b,k}[t]\bm s_{b,k}[t]+n_{u,k}[t].
+\end{equation}
+The nominal utility may be weighted sum rate,
+\begin{equation}
+ U_k(\W_k)=\sum_{u,t}\omega_u\log_2\!\left(1+\operatorname{SINR}_{u,k}[t]\right),
+\end{equation}
+but the safety filter can wrap another differentiable or black-box nominal policy.
+
+\section{Incumbent interference model}
+
+Let $\ell\in\mathcal L$ index protected incumbent receivers. The physical parameter vector $\bm\zeta_{\ell,k}$ can contain location, antenna pointing, gain-pattern parameters, clutter/path-loss residuals, activity factors, spectral overlap, and ephemeris/forecast error.
+
+For sector $b$, tone $t$, and incumbent $\ell$, define a positive-semidefinite coupling matrix
+\begin{equation}
+ \R_{b,\ell,k}[t](\bm\zeta)\succeq0.
+\end{equation}
+It includes the spectral-overlap factor, large-scale coupling, receiver pattern, polarization/loss factors, and the transmit spatial direction. The raw aggregate interference is
+\begin{equation}
+ I^{\rm raw}_{\ell,k}(\W_k;\bm\zeta)
+ =\sum_{b,t}\tr\!\left(\W_{b,k}[t]^H\R_{b,\ell,k}[t](\bm\zeta)\W_{b,k}[t]\right).
+ \label{eq:rawI}
+\end{equation}
+For a rank-one far-field direction, $\R=\beta\bm a\bm a^H$. With unit-modulus steering entries, $\norm{\bm a}^2=M$; element gain is included once in $\beta$, and coherent array gain arises through $|\bm a^H\bm w|^2$.
+
+Near-field or spatially non-stationary coupling is represented by a general PSD matrix or a spherical-wave construction when the aperture-distance check requires it.
+
+\section{Uniform robust uncertainty}
+
+The controller does not know the true $\bm\zeta_{\ell,k}$. It uses a set $\Zset_{\ell,e}$ constructed before optimizing $\W_k$. The robust interference functional is
+\begin{equation}
+ \overline I_{\ell,k}(\W_k)
+ =\sup_{\bm\zeta\in\Zset_{\ell,e(k)}}
+ I^{\rm raw}_{\ell,k}(\W_k;\bm\zeta).
+ \label{eq:robustI}
+\end{equation}
+Because the set is independent of $\W_k$, the bound is uniform over the adaptively selected action. A finite scenario approximation is a certificate only when it upper-bounds the continuous set. Acceptable methods include interval bounds, branch-and-bound, or a grid plus a proven Lipschitz covering-radius term $Lr_{\rm cov}$. Uncertified vertex sampling is not called a robust guarantee.
+
+If calibration is used, the project reports marginal and stress-stratified held-out coverage. Calibration on synthetic data certifies only the modelled data-generating world.
+
+\section{Protection states}
+
+\subsection{Always-on short cap}
+
+For an always-on cap $C_\ell^{\rm S}$,
+\begin{equation}
+ \overline I_{\ell,k}(\W_k)\le C_\ell^{\rm S}.
+ \label{eq:short}
+\end{equation}
+For Case S, the first implementation enforces the SA.1027 short entry as an always-on cap. This is stricter than allowing its small stated time percentage.
+
+\subsection{Exact sample-path exceedance budget}
+
+Let $C_\ell^{\rm L}$ be a long-entry threshold and
+\begin{equation}
+ e_{\ell,k}=\mathbf 1\{I_{\ell,k}>C_\ell^{\rm L}\}.
+\end{equation}
+For an allowed fraction $p_\ell$, maintain tokens
+\begin{align}
+ b_{\ell,k+1}&=\min\{B_\ell^{\max},\;b_{\ell,k}+p_\ell-e_{\ell,k}\},\\
+ e_{\ell,k}&\le b_{\ell,k}+p_\ell.
+ \label{eq:token}
+\end{align}
+With $b_{\ell,0}=0$ and nonnegative balance, summation gives
+\begin{equation}
+ \sum_{j=0}^{K-1}e_{\ell,j}\le p_\ell K
+\end{equation}
+for every prefix $K$. This is the time-percentage proof. The budget horizon/reset rule must match the declared engineering reference period.
+
+\subsection{EMA reserve-margin governor}
+
+Define
+\begin{align}
+ Y_{\ell,k+1}&=(1-\alpha_\ell)Y_{\ell,k}+\alpha_\ell\overline I_{\ell,k}(\W_k),\\
+ h_{\ell,k}&=C_\ell^{\rm L}-Y_{\ell,k}.
+\end{align}
+The reserve CBF condition is
+\begin{equation}
+ h_{\ell,k+1}\ge \max\{(1-\gamma_\ell)h_{\ell,k},h_\ell^{\min}\}.
+ \label{eq:cbf}
+\end{equation}
+It yields the explicit allowance
+\begin{equation}
+ \overline I_{\ell,k}(\W_k)\le
+ C_{\ell,k}^{\rm ema}
+ =\frac{C_\ell^{\rm L}-\max\{(1-\gamma_\ell)h_{\ell,k},h_\ell^{\min}\}-(1-\alpha_\ell)Y_{\ell,k}}{\alpha_\ell}.
+ \label{eq:allowance}
+\end{equation}
+The EMA is a proactive margin governor; it is not by itself a regulatory time-percentage certificate.
+
+\section{Rate-limited action}
+
+The applied action cannot jump arbitrarily:
+\begin{equation}
+ \sum_t\norm{\W_{b,k}[t]-\W_{b,k-1}^{\star}[t]}_F^2\le\Delta_b^2.
+ \label{eq:slew}
+\end{equation}
+In a practical layered implementation, the rate-limited variable may instead be a scalar sector power scale, leakage budget, active beam family, TCI-state transition, or hybrid analog setting. The selected variable must correspond to a real control timescale.
+
+A CBF is useful when an adverse coupling change can occur faster than the action can recover. If $\rho_b(\Delta_b)$ is the maximum one-slot interference reduction and $L_\zeta\nu$ is adverse drift, feasibility needs enough reserve. This condition is evaluated empirically and analytically; emergency slack is never hidden.
+
+\section{Minimal-deviation safety filter}
+
+Let $\W_k^{\rm nom}$ be the nominal action. A fully digital benchmark solves
+\begin{subequations}
+\begin{align}
+\min_{\W_k,\bm\sigma_k\ge0}\quad
+&\sum_{b,t}\omega_{b,t}\norm{\W_{b,k}[t]-\W_{b,k}^{\rm nom}[t]}_F^2
++\lambda_\sigma\sum_\ell\sigma_{\ell,k}\\
+\text{s.t.}\quad
+&\eqref{eq:power},\quad \eqref{eq:slew},\\
+&\overline I_{\ell,k}(\W_k)\le C_\ell^{\rm S}+\sigma_{\ell,k},\\
+&\overline I_{\ell,k}(\W_k)\le C_{\ell,k}^{\rm tok}+\sigma_{\ell,k},\\
+&\overline I_{\ell,k}(\W_k)\le C_{\ell,k}^{\rm ema}+\sigma_{\ell,k},\qquad\forall\ell.
+\end{align}
+\label{eq:filter}
+\end{subequations}
+Here $C_{\ell,k}^{\rm tok}$ equals the long threshold when an exceedance token is unavailable and may relax toward the short cap only when a token is available. A supremum of convex quadratic forms is convex. With a certified finite robust representation, the benchmark is a convex QCQP/SOCP.
+
+If $\sigma_{\ell,k}>0$, the strict certificate is void in that slot. The paper reports every slack event separately. When the nominal action is feasible, the projection returns it exactly; this is the precise meaning of minimally invasive. Rate loss is evaluated directly or bounded using local smoothness, not inferred automatically from the projection dual multiplier.
+
+\subsection{Layered deployable version}
+
+The full beam-space problem is an analysis benchmark for small systems. At network scale:
+
+\begin{enumerate}
+\item A non-real-time layer manages incumbent data, propagation/calibration models, and source versions.
+\item A near-real-time coordinator computes the total safe allowance and allocates scalar sector leakage/power budgets.
+\item Local BSs run WMMSE, hybrid, or learned beamforming under their budgets.
+\end{enumerate}
+
+The paper calls this architecture \emph{O-RAN-inspired} unless exact interfaces, timing, and measured runtime justify a stronger statement.
+
+\section{Safety statements and assumptions}
+
+\textbf{Robust forward invariance.} If $Y_{\ell,0}\le C_\ell^{\rm L}$, the robust upper bound is valid, zero slack is used, and \eqref{eq:cbf} is feasible and enforced, then $Y_{\ell,k}\le C_\ell^{\rm L}$ on the containment event for all evaluated slots. This follows by induction.
+
+\textbf{Prefix exceedance guarantee.} Under \eqref{eq:token}, the number of long-threshold exceedances in every prefix is at most $p_\ell K$. This is deterministic for the robust/control sequence, conditional on how the event is defined.
+
+\textbf{Finite-horizon uncertainty statement.} If the true physical parameters lie in each epoch set with probability at least $1-\delta_{\ell,e}$, then a union bound gives failure probability at most $\sum_{\ell,e}\delta_{\ell,e}$ over the declared finite experiment. Risk is budgeted by slowly varying uncertainty epochs, not by every short slot. No infinite-horizon statement is made from a fixed per-slot risk.
+
+\section{S1 fixed-link adequacy gate}
+
+The provisional fixed-service short cap cannot be frozen from a synthetic run. For candidate $x$ dB in I/N, the wanted-link fade-margin penalty is
+\begin{equation}
+ \Delta A(x)=10\log_{10}\left(1+10^{x/10}\right).
+ \label{eq:penalty}
+\end{equation}
+For each reviewed paired link, let $A$ be its documented fade margin and define the raw remaining margin
+\begin{equation}
+ A_{\rm rem}=A-\Delta A(x).
+\end{equation}
+If $A_{\rm rem}\le0$, the always-on candidate has exhausted the documented fade margin and the S1 screen conservatively assigns 100\% engineering outage; it does not evaluate P.530 at $A=0$, which would understate this condition. If $A_{\rm rem}>0$, set $A_{\rm eff}=A_{\rm rem}$ and use the P.530 fading distribution.
+
+Using P.530-19, compute path distance $d$, path inclination
+\begin{equation}
+ |\varepsilon_p|=|h_r-h_e|/d,
+\end{equation}
+and mean path terrain clearance
+\begin{equation}
+ h_c=(h_r+h_e)/2-d^2/102-h_t.
+\end{equation}
+Interpolate $\log_{10}K$ and $dN_{75}$ from the official integral grids at the path centre. Compute the baseline average-worst-month fade exceedance $p_w(A)$ using P.530-19 Section 2.3. For $A_{\rm rem}>0$, compute $p_w(A_{\rm rem})$; otherwise use the conservative 100\% value described above. The incremental outage is
+\begin{equation}
+ \Delta p_w(x)=\max\{0,p_{w,\rm after}(x)-p_w(A)\}.
+\end{equation}
+A candidate passes only if every reviewed link meets its explicit incremental-outage allocation and the predeclared sensitivity cases. The code records P.530 validity warnings and refuses to freeze a demo run.
+
+The included Recommendation PDF archive is not the integral-products ZIP. The package downloader obtains and hashes the separate official components.
+
+\section{Experiments}
+
+\subsection{E1: static GTA fixed-service continuity}
+
+Use real ISED/TAFL fixed-service records, UMa cellular channels, exact spectral overlap, validated P.452-18 coupling, and the existing nominal WMMSE simulator. Compare unprotected, hard null/backoff, static constrained WMMSE, static robust, and the safety wrapper. E1 shows continuity with the workshop baseline; it is not the main dynamic novelty.
+
+\subsection{E2: dynamic aggregate stress}
+
+Create a documented disturbance such as a scheduled sector activation, traffic surge, beam-family transition, or delayed action. Use the same rate limit for all methods. The decisive plot shows interference and action versus time: myopic control reaches the boundary too late, while the CBF backs off before the disturbance and preserves safety with less long-run loss than static worst-case backoff.
+
+\subsection{E3: drifting EESS earth-station geometry}
+
+Archive a real TLE and station assumptions. Generate topocentric geometry, update the tracking dish direction, and recompute sector off-axis coupling and uncertainty each slot. Use the SA.1027 8025--8400 MHz entries as absolute aggregate power at the earth-station antenna output in 10 MHz: the long entry uses a 20\% exceedance budget and the short entry is an always-on cap in the first paper.
+
+\section{Required outputs}
+
+Every main run saves:
+
+\begin{itemize}
+\item raw interference, action, reserve, token, utility, and slack trajectories;
+\item empirical exceedance fraction and maximum short-cap interference;
+\item held-out uncertainty coverage and stress-stratified coverage;
+\item rate/protection Pareto points and confidence intervals;
+\item active-filter fraction, action variation, infeasibility/slack count;
+\item central and layered runtime versus system size;
+\item exact configuration, input hashes, code hash, seeds, and environment.
+\end{itemize}
+
+\section{Claim boundaries}
+
+The final paper must not claim:
+
+\begin{itemize}
+\item that CBFs, WMMSE, or robust beamforming are individually new;
+\item that the method protects an incumbent absent from the data/model;
+\item infinite-horizon high-probability safety from a fixed per-slot risk;
+\item that synthetic calibration certifies physical deployment;
+\item that EMA alone proves a time-percentage rule;
+\item that +19 dB is a mandatory 7--8 GHz fixed-service rule before S1 passes;
+\item that P.530 is the BS--incumbent interference model;
+\item near-real-time O-RAN deployment without runtime/interface evidence;
+\item direct hybrid implementability before composite-precoder re-verification.
+\end{itemize}
+
+\section{Definition of completion}
+
+The research is ready for submission only when:
+
+\begin{enumerate}
+\item the S1 real evidence bundle and decision exist;
+\item E1 uses real incumbents and validated P.452 coupling;
+\item E2 demonstrates a reproducible rate-limit trap and CBF advantage;
+\item E3 uses archived TLE/station information and meets both stated entries;
+\item held-out uncertainty coverage is reported;
+\item runtime/scalability is measured for the practical layered method;
+\item all paper figures are generated from archived scripts/configurations;
+\item an independent adversarial review finds no unresolved mathematical, unit, standards, or provenance issue.
+\end{enumerate}
+
+\section*{Primary technical sources}
+
+\begin{itemize}
+\item ITU-R P.530-19, \emph{Propagation data and prediction methods required for the design of terrestrial line-of-sight systems}, September 2025: \url{https://www.itu.int/rec/R-REC-P.530-19-202509-I}.
+\item ITU-R P.452-18, \emph{Prediction procedure for the evaluation of interference between stations on the surface of the Earth}, October 2023.
+\item ITU-R P.2108-1, \emph{Prediction of clutter loss}, September 2021.
+\item ITU-R F.758-8, fixed-service sharing/compatibility system parameters, February 2025.
+\item ITU-R SA.1027-6, EESS/MetSat LEO space-to-Earth sharing criteria, August 2019.
+\item ISED Canada, SRSP-307.7 Issue 6, 7725--8275 MHz fixed line-of-sight systems.
+\item ETSI TR 138 901 V19.4.0, 3GPP channel model study.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,17 @@
+]633;E;echo "Canonical TAFL Fixed Service source";57edbacc-cb7d-47dc-a44b-75ee5a4cc814]633;CCanonical TAFL Fixed Service source
+Frozen at: 2026-07-24T11:44:34-04:00
+
+Original ZIP:
+/mnt/c/Users/alifa/Downloads/TAFL_LTAF_Fixe.zip
+
+Original extracted CSV:
+/mnt/c/Users/alifa/OneDrive/Projects/FR3_MainWork_For_Journal/TAFL_LTAF/TAFL_LTAF_Fixe.csv
+
+Comparison result:
+The original CSV and the CSV extracted from the ZIP were byte-identical.
+
+data/external/tafl_raw/canonical/TAFL_LTAF_Fixe_source.zip | bytes=12607912 | modified=2026-07-02 19:21:57.569717400 -0400
+data/external/tafl_raw/canonical/TAFL_LTAF_Fixe.csv | bytes=61350871 | modified=2026-06-01 22:06:46.000000000 -0400
+
+c936d7fabd8e45b1a9776eb0c94de2dff8b993387ac802681017f788a625882e  data/external/tafl_raw/canonical/TAFL_LTAF_Fixe_source.zip
+e9d6ebdbfd63dd68ead8a2ca12d53c5ed7c3262b6640e1f6ba639bc0bb8aaf90  data/external/tafl_raw/canonical/TAFL_LTAF_Fixe.csv

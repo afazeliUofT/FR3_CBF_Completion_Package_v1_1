@@ -1,0 +1,40 @@
+version: 1
+purpose: Project-specific P.452 pipeline pilot using one already-audited terrestrial
+  fixed-link path. This is a software/profile/accounting audit only. It is not a cellular-to-incumbent
+  paper result and must not be reported as one.
+inputs:
+  links_csv: data/real/paired_fs_links_before_allocation.csv
+  terrain_profiles_csv_gz: data/real/terrain_review/terrain_profile_samples.csv.gz
+  terrain_summary_csv: data/real/terrain_review/terrain_summary.csv
+  canonical_tafl_csv: data/external/tafl_raw/canonical/TAFL_LTAF_Fixe.csv
+  source_id_resolution_csv: data/real/s1_allocation_review/source_record_id_resolution.csv
+  p452_reference_commit_file: data/external/p452/reference_v18_commit.txt
+  p452_reference_evidence_file: results/p452_reference_validation/P452_REFERENCE_EVIDENCE_R2026a.sha256
+pilot:
+  link_id: 010031733-003__8100.000MHz
+  output_dir: data/real/p452_pilot
+  time_percentages:
+  - 50.0
+  - 20.0
+  - 10.0
+  - 1.0
+  - 0.1
+  export_time_percentage: 20.0
+  pressure_hpa: 1013.25
+  temperature_c: 15.0
+  terminal_gain_mode: isotropic_zero_dbi
+  tx_horizon_gain_dbi: 0.0
+  rx_horizon_gain_dbi: 0.0
+  clutter_mode: none
+  radio_climatic_zone_code: 2
+  dct_km: 5.0
+  dcr_km: 5.0
+  polarization_override: null
+  coordinate_tolerance_deg: 1.0e-07
+  endpoint_height_tolerance_m: 1.0e-06
+manual_confirmations:
+  profile_plot_reviewed: true
+  path_has_no_p452_sea_segment: true
+  tx_is_at_least_5km_from_sea_coast: true
+  rx_is_at_least_5km_from_sea_coast: true
+  understood_pipeline_only_status: true

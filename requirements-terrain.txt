@@ -1,0 +1,2 @@
+-r requirements-full.txt
+pyproj>=3.6,<4

@@ -1,0 +1,52 @@
+schema_version: 1
+purpose: >-
+  Freeze the public/model boundary for the operator-independent E3 headline case,
+  archive one current orbital element set, and generate one reproducible visible pass.
+
+station:
+  station_id: NRCAN_GATINEAU_REFERENCE
+  name: Gatineau Satellite Station
+  official_address: "75 McClelland Rd., Cantley, QC J8V 3E6, Canada"
+  official_facility_url: "https://natural-resources.canada.ca/science-data/science-research/research-centres/gatineau-satellite-station"
+  official_directory_url: "https://profils-profiles.science.gc.ca/en/research-centre/gatineau-satellite-station"
+  public_coordinate_latitude_deg: 45.58526
+  public_coordinate_longitude_deg: -75.80877
+  coordinate_source_url: "https://mapcarta.com/W1265370279"
+  coordinate_source_status: PUBLIC_OSM_BUILDING_CENTROID_NOT_OFFICIAL_SURVEY
+  horizontal_location_uncertainty_radius_m: 250.0
+  dish_diameter_m: 13.0
+  dish_band_public_description: S/X
+  public_equipment_status: PUBLIC_NRCAN
+  phase_center_height_agl_m_nominal: 20.0
+  phase_center_height_agl_m_sensitivity: [13.0, 30.0]
+  phase_center_status: MODEL_DECISION_NOT_MEASURED
+  minimum_elevation_deg: 5.0
+  minimum_elevation_status: STANDARDS_CASE_PARAMETER
+  mrdem_padding_deg: 0.02
+
+mission:
+  mission_label: RCM_1_GEOMETRY_REFERENCE
+  norad_catalog_number: 44322
+  station_support_source_status: PUBLIC_NRCAN_LISTS_RCM
+  geometry_only_claim: >-
+    The orbital record supplies changing geometry only. This workflow does not claim
+    that the archived orbital object uses the paper's modelled 8.15 GHz carrier at
+    the selected time or that the public station was tracking it during the pass.
+  celestrak_tle_url: "https://celestrak.org/NORAD/elements/gp.php?CATNR=44322&FORMAT=TLE"
+  maximum_tle_age_days: 14.0
+
+track:
+  start_utc: null
+  coarse_search_days: 2
+  coarse_step_s: 10.0
+  detailed_step_s: 1.0
+  detailed_margin_s: 120
+  minimum_elevation_deg: 5.0
+  engine: skyfield
+
+paper_model_decisions:
+  carrier_ghz: 8.15
+  carrier_status: MODEL_DECISION_WITHIN_8025_8400_MHZ_NOT_ACTUAL_MISSION_FREQUENCY_CLAIM
+  cellular_layout_status: NOT_CREATED_IN_THIS_STAGE
+  earth_station_pattern_status: NOT_SELECTED_IN_THIS_STAGE
+  p452_sector_coupling_status: NOT_CREATED_IN_THIS_STAGE

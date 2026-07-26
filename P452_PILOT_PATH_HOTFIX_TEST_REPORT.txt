@@ -1,0 +1,19 @@
+P.452 Pilot Path Hotfix Test Report
+
+Python syntax:
+- scripts/21_0_prepare_p452_pilot.py: PASS
+- scripts/21_1_validate_p452_pilot.py: PASS
+
+Synthetic integration:
+- unfrozen preparation: PASS; correctly reported REVIEW REQUIRED
+- confirmation/freeze gate: PASS
+- source-ID leading-zero resolution: PASS
+- profile/endpoint/height checks: PASS
+- synthetic MATLAB-output validator: PASS
+
+MATLAB script:
+- reviewed statically for the pinned tl_p452 v18.0 function signature
+- must be executed by the user under the already validated MATLAB R2026a/P.452 v18.0 environment
+
+Claim boundary:
+- pilot is explicitly marked as pipeline-only and not paper evidence

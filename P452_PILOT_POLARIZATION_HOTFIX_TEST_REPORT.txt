@@ -1,0 +1,16 @@
+P.452 Pilot Polarization Hotfix Test Report
+
+Checks completed:
+- Official-code mapping unit tests: 6 passed.
+- TAFL A -> P.452 H and TAFL B -> P.452 V.
+- TAFL G -> separate P.452 H and V branches with no hidden aggregation.
+- TAFL H (elliptical) is not misread as horizontal.
+- Endpoint-code mismatch is rejected.
+- Synthetic two-polarization strict-validator integration test: PASS.
+- Python syntax checks: PASS.
+- Archive contains no .pyc, .pyo, __pycache__, or .pytest_cache artifacts.
+
+MATLAB execution must be performed in the user's already validated
+P.452 v18.0 / MATLAB R2026a environment.  This package does not claim
+that a dual-polarization power combination has been defined; the pilot
+exports H and V propagation branches separately.

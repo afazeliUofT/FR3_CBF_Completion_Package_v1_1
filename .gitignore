@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+results/*
+!results/.gitkeep
+logs/*
+!logs/.gitkeep
+data/real/*
+!data/real/.gitkeep
+data/external/p530/*.csv
+data/external/p530/*.zip
+data/external/p530/*.json
+data/external/tle/*.tle

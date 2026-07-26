@@ -1,0 +1,5 @@
+-r requirements-core.txt
+cvxpy>=1.5,<2
+sgp4>=2.23,<3
+rasterio>=1.3,<2
+skyfield>=1.49,<2

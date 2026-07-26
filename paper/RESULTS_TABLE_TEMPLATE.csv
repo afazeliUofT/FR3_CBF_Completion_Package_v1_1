@@ -1,0 +1,4 @@
+experiment,method,seeds_or_passes,mean_utility,utility_ci_low,utility_ci_high,maximum_interference,violation_fraction,slack_count,filter_activity,runtime_ms,notes
+E1,,,,,,,,,,,
+E2,,,,,,,,,,,
+E3,,,,,,,,,,,

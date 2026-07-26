@@ -1,0 +1,21 @@
+mode: demo
+seed: 2002
+horizon_slots: 240
+slot_duration_s: 1.0
+output_dir: "results/e2_dynamic_fs"
+scenario:
+  sector_count: 12
+  disturbance_start_slot: 70
+  disturbance_peak_slot: 145
+  nominal_coupling: 0.75
+  peak_coupling: 1.55
+  uncertainty_drift_per_slot: 0.018
+protection:
+  threshold_linear: 1.0
+  allowed_exceedance_fraction: 0.20
+controller:
+  max_scale_change_per_slot: 0.10
+  cbf_gamma: 0.12
+  reserve_fraction: 0.12
+  ema_alpha: 0.04
+methods: [unprotected, hard_backoff, static_cap, myopic, virtual_queue, cbf]

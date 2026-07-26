@@ -1,0 +1,12 @@
+Package tests cover:
+- exact SA.509 parameter equations and breakpoint continuity;
+- single-entry and multiple-entry plateau values;
+- 19-site two-tier hexagonal count, 500 m nearest-neighbour spacing, and 2 km baseline station clearance;
+- known 3-D angular-separation cases;
+- rejection of invalid PDF payloads;
+- strict checksum-manifest formatting and exclusion of Zone.Identifier files.
+
+No frozen Python bytecode or cache directories are included.
+
+Focused package test result: 7 passed.
+The seventh test executes the prepare/review/freeze path end-to-end against a synthetic GeoTIFF and verifies 19 sites, 57 sectors, review status, and final freeze status.

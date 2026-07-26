@@ -1,0 +1,15 @@
+S1 Allocation-Matrix Hotfix Test Report
+
+Executed checks:
+- Python syntax compilation for both scripts: PASS
+- F.1565 scenario formula unit checks: PASS
+- Synthetic three-link scenario build: PASS
+- Synthetic nominal matrix run using explicit K/dN75 row overrides: PASS
+- Cross-scenario incremental-outage invariance check: PASS
+- Required-allocation envelope output: PASS
+- Scenario pass-matrix output: PASS
+- No final allocation or I/N candidate freeze: PASS
+
+Evidence boundary:
+The synthetic test verifies software logic only. It is not paper evidence and it
+does not validate the real 70-link model results.

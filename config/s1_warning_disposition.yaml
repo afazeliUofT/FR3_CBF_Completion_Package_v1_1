@@ -1,0 +1,29 @@
+metadata:
+  version: "1.0.0"
+  purpose: >-
+    Formally disposition the four P.530 regression-range warnings without deleting
+    links or changing any cap, then create a controlled operator/administration
+    classification request for the only remaining S1 decision gate.
+  claim_boundary: >-
+    This stage proves only that the retained warning links do not determine the
+    reported numerical threshold intervals. It does not turn any sensitivity
+    interval into a compliance cap and does not remove the documented P.530
+    regression-range limitation.
+
+inputs:
+  cap_reframe_dir: "results/s1_cap_reframe"
+  allocation_review_csv: "data/real/s1_allocation_review/s1_allocation_review_unfinished.csv"
+
+outputs:
+  result_dir: "results/s1_warning_disposition"
+  classification_template: "data/real/S1_OPERATOR_CLASSIFICATION_TEMPLATE.csv"
+  classification_request: "data/real/S1_OPERATOR_CLASSIFICATION_REQUEST.md"
+
+expected:
+  link_count: 70
+  candidate_count: 361
+  warning_record_count: 4
+  warning_physical_path_count: 1
+  p530_calculation_lower_length_km: 5.0
+  p530_regression_lower_length_km: 7.5
+  positive_reference_candidate_db: 10.0

@@ -1,0 +1,9 @@
+...                                                                      [100%]
+3 passed in 2.61s
+
+Scope:
+- Python syntax compilation passed.
+- Candidate-grid construction tests passed.
+- Monotone threshold-interval helper tests passed.
+- The real-data integration run must occur in the user's repository because the
+  real 70-link TAFL/P.530 evidence is not present in this build environment.

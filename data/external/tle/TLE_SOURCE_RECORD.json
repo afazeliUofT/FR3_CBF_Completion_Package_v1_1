@@ -1,0 +1,14 @@
+{
+  "geometry_only_claim": "The orbital record supplies changing geometry only. This workflow does not claim that the archived orbital object uses the paper's modelled 8.15 GHz carrier at the selected time or that the public station was tracking it during the pass.",
+  "maximum_tle_age_days": 14.0,
+  "name_line": "RCM-1",
+  "norad_catalog_number": 44322,
+  "provider": "CelesTrak",
+  "retrieved_utc": "2026-07-26T03:39:47.979134+00:00",
+  "source_mode": "celestrak_single_query",
+  "source_url": "https://celestrak.org/NORAD/elements/gp.php?CATNR=44322&FORMAT=TLE",
+  "tle_age_days_at_validation": 0.5198635873842592,
+  "tle_epoch_utc": "2026-07-25T15:11:11.765184+00:00",
+  "tle_sha256": "1a862dbeefb2191ddaf87f6b344ae82bfc94a71bcaa7033599de44e2069b8114",
+  "usage_note": "Archive and reuse this file; do not repeatedly query CelesTrak within one update interval."
+}

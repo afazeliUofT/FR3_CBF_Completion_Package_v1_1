@@ -1,0 +1,8 @@
+Content-Type: text/plain; charset=UTF-8
+Server: Microsoft-IIS/10.0
+X-Powered-By: PHP/8.2.20
+Content-Disposition: filename="44322.txt"
+Date: Sun, 26 Jul 2026 03:39:30 GMT
+Connection: close
+Content-Length: 168
+

@@ -1,0 +1,24 @@
+mode: demo
+seed: 3003
+horizon_slots: 600
+slot_duration_s: 1.0
+output_dir: "results/e3_tracking_eess"
+scenario:
+  sector_count: 10
+  carrier_ghz: 8.15
+  earth_station_file: "data/real/earth_station.csv"
+  tle_file: "data/external/tle/active_case.tle"
+  minimum_elevation_deg: 5.0
+  demo_pass_center_slot: 300
+  demo_pass_width_slots: 25
+protection:
+  long_term_threshold_dbw_per_10mhz: -150.0
+  short_term_threshold_dbw_per_10mhz: -133.0
+  long_term_exceedance_fraction: 0.20
+  short_term_policy_first_paper: "always_on_cap"
+controller:
+  ema_alpha: 0.03
+  cbf_gamma: 0.10
+  reserve_fraction: 0.12
+  max_scale_change_per_slot: 0.03
+methods: [unprotected, myopic, cbf]

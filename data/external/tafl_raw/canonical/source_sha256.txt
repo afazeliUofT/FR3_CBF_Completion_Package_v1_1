@@ -1,0 +1,2 @@
+c936d7fabd8e45b1a9776eb0c94de2dff8b993387ac802681017f788a625882e  data/external/tafl_raw/canonical/TAFL_LTAF_Fixe_source.zip
+e9d6ebdbfd63dd68ead8a2ca12d53c5ed7c3262b6640e1f6ba639bc0bb8aaf90  data/external/tafl_raw/canonical/TAFL_LTAF_Fixe.csv

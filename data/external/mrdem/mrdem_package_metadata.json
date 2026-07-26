@@ -1,0 +1,510 @@
+{
+  "help": "https://open.canada.ca/data/en/api/3/action/help_show?name=package_show",
+  "success": true,
+  "result": {
+    "association_type": [],
+    "audience": [],
+    "author": null,
+    "author_email": null,
+    "collection": "fgp",
+    "contact_information": "{\"en\": {\"organization_name\": \"Government of Canada; Natural Resources Canada;Geoscience and Earth Monitoring Sector (GEMS)\", \"electronic_mail_address\": \"geoinfo@nrcan-rncan.gc.ca\"}, \"fr\": {\"organization_name\": \"Gouvernement du Canada; Ressources naturelles Canada;Secteur des g\\u00e9osciences et de la surveillance de la Terre (SGST)\", \"electronic_mail_address\": \"geoinfo@nrcan-rncan.gc.ca\"}}",
+    "contributor": {},
+    "creator_user_id": "b88b9549-3a4b-43a9-9375-5f3fc20fe782",
+    "data_series_issue_identification": {},
+    "data_series_name": {},
+    "date_published": "2025-06-20 00:00:00",
+    "display_flags": [
+      "fgp_viewer"
+    ],
+    "distributor": "{\"en\": {\"organization_name\": \"Government of Canada; Natural Resources Canada;Geoscience and Earth Monitoring Sector (GEMS)\", \"electronic_mail_address\": \"geoinfo@nrcan-rncan.gc.ca\"}, \"fr\": {\"organization_name\": \"Gouvernement du Canada; Ressources naturelles Canada;Secteur des g\\u00e9osciences et de la surveillance de la Terre (SGST)\", \"electronic_mail_address\": \"geoinfo@nrcan-rncan.gc.ca\"}}",
+    "file_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+    "frequency": "unknown",
+    "geographic_region": [],
+    "hierarchy_level": "dataset; jeuDonnées",
+    "id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+    "imso_approval": "true",
+    "isopen": false,
+    "jurisdiction": "federal",
+    "keywords": {
+      "en": [
+        "Digital Elevation Model",
+        "Digital Surface Model",
+        "Digital Terrain Model",
+        "lidar",
+        "Shaded Relief",
+        "Aspect Map",
+        "Color Shaded Relief",
+        "Slope Map",
+        "Medium resolution Digital Elevation Model",
+        "Copernicus",
+        "Digital elevation data"
+      ],
+      "fr": [
+        "Modèle numérique d'élévation",
+        "Modèle numérique de surface",
+        "Modèle numérique de terrain",
+        "lidar",
+        "Relief ombré",
+        "Carte d'aspect",
+        "Relief ombré couleur",
+        "Carte de pente",
+        "Modèle numérique d'élévation à moyenne résolution",
+        "Copernicus",
+        "Données numériques d'élévation"
+      ]
+    },
+    "license_id": "ca-ogl-lgo",
+    "license_title": "Open Government Licence - Canada",
+    "license_url": "https://open.canada.ca/en/open-government-licence-canada",
+    "maintainer": null,
+    "maintainer_contact_form": {},
+    "maintainer_email": "geoinfo@nrcan-rncan.gc.ca",
+    "metadata_contact": {
+      "en": "Government of Canada; Natural Resources Canada;Geoscience and Earth Monitoring Sector (GEMS)",
+      "fr": "Gouvernement du Canada; Ressources naturelles Canada;Secteur des géosciences et de la surveillance de la Terre (SGST)"
+    },
+    "metadata_created": "2024-06-21T18:00:48.966449",
+    "metadata_modified": "2026-07-16T12:31:08.342917",
+    "name": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+    "notes": "**ATTENTION! The files in this dataset are designed for streaming, not downloading. For the best experience, please follow the instructions available in the resources.**\n\nIn replacement of the former Canadian Digital Elevation Model (CDEM) that is no longer supported, the Medium Resolution Digital Elevation Model (MRDEM) product is a multi-source product that integrates elevation data from the Copernicus DEM** acquired during the TanDEM-X Mission (AIRBUS, 2022), and the High Resolution Digital Elevation Model data derived from airborne lidar. This product provides a complete, 30 meters resolution, nationwide  coverage for Canada. It includes a Digital Terrain Model (DTM), a Digital Surface Model (DSM) and other derived products. The spatial coverage extends into the USA, where needed, to provide coverage for cross-border watersheds in support of hydrological studies and applications. \n\nThe MRDEM-30-DSM is partially based on the GLO-30 version of the Copernicus DEM** (hereafter named GLO-30). Since elevation values from the GLO-30 are referenced to the EGM2008 geoid model, they were transformed to the Canadian Height Reference System of 2013 (CGVD2013), using the CGG2013 geoid model. Where available, the MRDEM-30-DSM integrates surface data from the lidar-derived HRDEM mosaic, resampled from 1 m to 30 m. \n\nThe process to generate the MRDEM-30-DTM is more complex. Where available, the HRDEM Mosaic derived from lidar was used since it already provides reliable terrain elevation values. The HRDEM Mosaic data used was resampled from 1m to 30m. Elsewhere, the processing workflow combines a forest removal model and a settlement removal model that is applied to the GLO-30 values in order to estimate the terrain elevation values. \n\nBoth datasets are projected to Canada Atlas Lambert NAD83 (CSRS) (EPSG:3979).\n\nThe MRDEM is referenced to the CGVD2013 which is the reference standard for orthometric heights across Canada.\n\nThe product Medium Resolution Digital Elevation Model (MRDEM) is part of the CanElevation Series created in support to the National Elevation Data Strategy implemented by NRCan.\n\n** This product was in part produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014- 2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.\nThe organisations in charge of the Copernicus program by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+    "notes_translated": {
+      "en": "**ATTENTION! The files in this dataset are designed for streaming, not downloading. For the best experience, please follow the instructions available in the resources.**\n\nIn replacement of the former Canadian Digital Elevation Model (CDEM) that is no longer supported, the Medium Resolution Digital Elevation Model (MRDEM) product is a multi-source product that integrates elevation data from the Copernicus DEM** acquired during the TanDEM-X Mission (AIRBUS, 2022), and the High Resolution Digital Elevation Model data derived from airborne lidar. This product provides a complete, 30 meters resolution, nationwide  coverage for Canada. It includes a Digital Terrain Model (DTM), a Digital Surface Model (DSM) and other derived products. The spatial coverage extends into the USA, where needed, to provide coverage for cross-border watersheds in support of hydrological studies and applications. \n\nThe MRDEM-30-DSM is partially based on the GLO-30 version of the Copernicus DEM** (hereafter named GLO-30). Since elevation values from the GLO-30 are referenced to the EGM2008 geoid model, they were transformed to the Canadian Height Reference System of 2013 (CGVD2013), using the CGG2013 geoid model. Where available, the MRDEM-30-DSM integrates surface data from the lidar-derived HRDEM mosaic, resampled from 1 m to 30 m. \n\nThe process to generate the MRDEM-30-DTM is more complex. Where available, the HRDEM Mosaic derived from lidar was used since it already provides reliable terrain elevation values. The HRDEM Mosaic data used was resampled from 1m to 30m. Elsewhere, the processing workflow combines a forest removal model and a settlement removal model that is applied to the GLO-30 values in order to estimate the terrain elevation values. \n\nBoth datasets are projected to Canada Atlas Lambert NAD83 (CSRS) (EPSG:3979).\n\nThe MRDEM is referenced to the CGVD2013 which is the reference standard for orthometric heights across Canada.\n\nThe product Medium Resolution Digital Elevation Model (MRDEM) is part of the CanElevation Series created in support to the National Elevation Data Strategy implemented by NRCan.\n\n** This product was in part produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014- 2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.\nThe organisations in charge of the Copernicus program by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+      "fr": "**ATTENTION! Les fichiers de ce jeu de données sont conçus pour un usage en continu (streaming) et non à être téléchargés. Pour une expérience optimale, veuillez suivre les instructions disponibles dans les ressources.**\n\nEn remplacement de l'ancien Modèle numérique d'élévation du Canada (MNEC) qui n'est plus supporté, le Modèle numérique d'élévation de moyenne résolution (MNEMR) est un produit multisource intégrant les données d'élévation du MNE Copernicus** acquises lors de la mission TanDEM-X (AIRBUS, 2022), et les données du Modèle numérique d'élévation à haute résolution dérivées du lidar aéroporté (MNEHR). Ce produit offre une couverture nationale complète à une résolution de 30 mètres. Il comprend un modèle numérique de terrain (MNT), un modèle numérique de surface (MNS) ainsi que des produits dérivés. Afin de faciliter les applications hydrologiques, la couverture spatiale s'étend jusqu'aux États-Unis afin de couvrir les bassins versants transfrontaliers.\n\nLe MNEMR-30-MNS est basé, en partie, sur la version GLO-30 du MNE Copernicus** (ci-après GLO-30). Étant donné que les valeurs d’élévation du GLO-30 sont référencées par rapport au modèle de géoïde EGM2008, elles ont été transformées vers le Système canadien de référence altimétrique de 2013 (CGVD2013) à l’aide du modèle de géoïde CGG2013. Lorsque disponible, le MNEMR-30-MNS intègre les données de surface de la mosaïque MNEHR dérivée du lidar, rééchantillonnées de 1 m à 30 m. \n\nLe processus de génération du jeu de données MNT du MNEMR est plus complexe et implique différentes sources. Lorsque disponible, la mosaïque MNEHR dérivée du lidar a été utilisée, car elle fournit des valeurs d'élévation précises du terrain. Les données de la mosaïque MNEHR utilisées ont été rééchantillonnées à une résolution de 30 mètres. De plus, le processus de traitement combine un modèle d'élimination des forêts et un modèle d'élimination des éléments bâtis qui sont appliqués aux valeurs GLO-30 afin d'estimer les valeurs d'élévation du terrain. \n\nLes deux jeux de données sont livrés en projection Canada Atlas Lambert NAD83 (CSRS) (EPSG:3979).\n\nLe produit MRDEM est référencé au Système canadien de référence altimétrique de 2013 (CGVD2013) qui est le standard pour les hauteurs orthométriques au Canada\n\nLe produit Modèle numérique d'élévation de moyenne résolution (MNEMR) fait partie de la Série CanÉlévation créée pour appuyer la Stratégie nationale de données d’élévation mise en oeuvre par RNCan.\n\n** Ce produit a été partiellement réalisé à l'aide de Copernicus WorldDEM-30 © DLR e.V. 2010-2014 et © Airbus Defence and Space GmbH 2014- 2018 fourni dans le cadre de COPERNICUS par l'Union européenne et l'ESA ; tous droits réservés.\nLes organisations responsables du programme Copernicus par la loi ou par délégation n'encourent aucune responsabilité pour toute utilisation du Copernicus WorldDEM-30."
+    },
+    "num_resources": 13,
+    "num_tags": 0,
+    "org_section": {},
+    "org_title_at_publication": {
+      "en": "Natural Resources Canada",
+      "fr": "Ressources naturelles Canada"
+    },
+    "organization": {
+      "id": "9391E0A2-9717-4755-B548-4499C21F917B",
+      "name": "nrcan-rncan",
+      "title": "Natural Resources Canada | Ressources naturelles Canada",
+      "type": "organization",
+      "description": "",
+      "image_url": "",
+      "created": "2016-09-23T17:25:46.737130",
+      "is_organization": true,
+      "approval_status": "approved",
+      "state": "active"
+    },
+    "owner_org": "9391E0A2-9717-4755-B548-4499C21F917B",
+    "place_of_publication": [],
+    "position_name": {},
+    "private": false,
+    "program_page_url": {},
+    "ready_to_publish": "true",
+    "reference_system_information": "EPSG:3979,https://www.epsg-registry.org,",
+    "responsible_role": "pointOfContact; contact",
+    "restrictions": "unrestricted",
+    "spatial": "{\"type\": \"Polygon\", \"coordinates\": [[[-142, 41], [-52, 41], [-52, 84], [-142, 84], [-142, 41]]]}",
+    "spatial_representation_type": [
+      "grid"
+    ],
+    "state": "active",
+    "status": "ongoing",
+    "subject": [
+      "form_descriptors",
+      "nature_and_environment"
+    ],
+    "time_period_coverage_start": "2006-01-01 00:00:00",
+    "title": "Medium Resolution Digital Elevation Model (MRDEM) - CanElevation Series",
+    "title_translated": {
+      "en": "Medium Resolution Digital Elevation Model (MRDEM) - CanElevation Series",
+      "fr": "Modèle numérique d'élévation de moyenne résolution (MNEMR) - Série CanÉlévation"
+    },
+    "topic_category": [
+      "elevation"
+    ],
+    "type": "dataset",
+    "url": null,
+    "version": null,
+    "resources": [
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458173",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "PDF",
+        "hash": "",
+        "id": "c52f40a5-54b8-4a14-8e3e-3def544b2acf",
+        "language": [
+          "en"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.334733",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "Medium Resolution Digital Elevation Model (MRDEM) - CanElevation Series - Product access guide (English)",
+        "name_translated": {
+          "en": "Medium Resolution Digital Elevation Model (MRDEM) - CanElevation Series - Product access guide (English)",
+          "fr": "Modèle numérique d'élévation de moyenne résolution (MNEMR) - Série CanÉlévation - Guide d'utilisation (anglais)"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 0,
+        "resource_type": "guide",
+        "state": "active",
+        "url": "https://download-telecharger.services.geo.ca/pub/elevation/dem_mne/MRDEM_MNEMR/CanElevation-MRDEM-Usage-Guide.pdf",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458179",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "PDF",
+        "hash": "",
+        "id": "20c71979-6d3b-461c-ac2e-88fca81fe6ed",
+        "language": [
+          "fr"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.334837",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "Medium Resolution Digital Elevation Model (MRDEM) - CanElevation Series - Product access guide (French)",
+        "name_translated": {
+          "en": "Medium Resolution Digital Elevation Model (MRDEM) - CanElevation Series - Product access guide (French)",
+          "fr": "Modèle numérique d'élévation de moyenne résolution (MNEMR) - Série CanÉlévation - Guide d'utilisation (Français)"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 1,
+        "resource_type": "guide",
+        "state": "active",
+        "url": "https://download-telecharger.services.geo.ca/pub/elevation/dem_mne/MRDEM_MNEMR/CanElevation-MNEMR-Guide-Utilisation.pdf",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458180",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "JSON",
+        "hash": "",
+        "id": "85a00cb4-fa65-4fe5-9ab0-988406ecab8f",
+        "language": [
+          "en",
+          "fr"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.334916",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "SpatioTemporal Asset Catalog (STAC) Application Programming Interface (API)",
+        "name_translated": {
+          "en": "SpatioTemporal Asset Catalog (STAC) Application Programming Interface (API)",
+          "fr": "Interface de programmation (API) pour SpatioTemporal Asset Catalog (STAC)"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 2,
+        "resource_type": "api",
+        "state": "active",
+        "url": "https://datacube.services.geo.ca/stac/api/search?collections=mrdem-30",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458181",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "other",
+        "hash": "",
+        "id": "53afc2af-c489-4d3d-8042-3a7b02f53de0",
+        "language": [
+          "zxx"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.334993",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "DTM GDAL virtual format (VRT)",
+        "name_translated": {
+          "en": "DTM GDAL virtual format (VRT)",
+          "fr": "MNT en format virtuel de GDAL (VRT)"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 3,
+        "resource_type": "dataset",
+        "state": "active",
+        "url": "https://canelevation-dem.s3.ca-central-1.amazonaws.com/mrdem-30/mrdem-30-dtm.vrt",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458183",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "other",
+        "hash": "",
+        "id": "ba7baa7b-b337-4284-bc2b-5294018ed1a3",
+        "language": [
+          "zxx"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.335067",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "DTM hillshade GDAL virtual format (VRT)",
+        "name_translated": {
+          "en": "DTM hillshade GDAL virtual format (VRT)",
+          "fr": "Relief ombré MNT en format virtuel GDAL (VRT)"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 4,
+        "resource_type": "dataset",
+        "state": "active",
+        "url": "https://canelevation-dem.s3.ca-central-1.amazonaws.com/mrdem-30/mrdem-30-dtm-hillshade.vrt",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458185",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "other",
+        "hash": "",
+        "id": "ee93c108-dd9b-4862-9ef6-efe1ba6f80e2",
+        "language": [
+          "zxx"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.335142",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "DSM GDAL virtual format (VRT)",
+        "name_translated": {
+          "en": "DSM GDAL virtual format (VRT)",
+          "fr": "MNS Format virtuel de GDAL (VRT)"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 5,
+        "resource_type": "dataset",
+        "state": "active",
+        "url": "https://canelevation-dem.s3.ca-central-1.amazonaws.com/mrdem-30/mrdem-30-dsm.vrt",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458186",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "other",
+        "hash": "",
+        "id": "ad95ad33-609f-4e08-96f5-4408f119ab2e",
+        "language": [
+          "zxx"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.335215",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "DSM hillshade GDAL virtual format (VRT)",
+        "name_translated": {
+          "en": "DSM hillshade GDAL virtual format (VRT)",
+          "fr": "Relief ombré MNS Format virtuel de GDAL (VRT)"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 6,
+        "resource_type": "dataset",
+        "state": "active",
+        "url": "https://canelevation-dem.s3.ca-central-1.amazonaws.com/mrdem-30/mrdem-30-dsm-hillshade.vrt",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458187",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "other",
+        "hash": "",
+        "id": "8f31b9d7-6e6c-4f10-bfd2-a4d2d459a7df",
+        "language": [
+          "zxx"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.335288",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "MRDEM source GDAL virtual format (VRT)",
+        "name_translated": {
+          "en": "MRDEM source GDAL virtual format (VRT)",
+          "fr": "Source du MNEMR en format virtuel GDAL (VRT)"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 7,
+        "resource_type": "dataset",
+        "state": "active",
+        "url": "https://canelevation-dem.s3.ca-central-1.amazonaws.com/mrdem-30/mrdem-30-source.vrt",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458188",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "WMS",
+        "hash": "",
+        "id": "464c07c1-a862-4474-895d-94b801e4860e",
+        "language": [
+          "en"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.335361",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "Hillshade map of the Digital Terrain Model",
+        "name_translated": {
+          "en": "Hillshade map of the Digital Terrain Model",
+          "fr": "Carte de relief ombré du modèle numérique de terrain"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 8,
+        "resource_type": "web_service",
+        "state": "active",
+        "url": "https://datacube.services.geo.ca/wrapper/ramp/ogc/mrdem?request=GetCapabilities&service=WMS&version=1.3.0&layers=dtm-hillshade&legend_format=image%2Fpng&feature_info_type=text%2Fxml",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458189",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "WMS",
+        "hash": "",
+        "id": "6837768a-0470-40e2-896e-79d5a2397283",
+        "language": [
+          "fr"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.335433",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "Hillshade map of the Digital Terrain Model",
+        "name_translated": {
+          "en": "Hillshade map of the Digital Terrain Model",
+          "fr": "Carte de relief ombré du modèle numérique de terrain"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 9,
+        "resource_type": "web_service",
+        "state": "active",
+        "url": "https://datacube.services.geo.ca/wrapper/ramp/ogc/mrdem?request=GetCapabilities&service=WMS&version=1.3.0&layers=dtm-hillshade&legend_format=image%2Fpng&feature_info_type=text%2Fxml",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458191",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "WMS",
+        "hash": "",
+        "id": "f6f40897-d3b4-4596-8493-71a66d21f628",
+        "language": [
+          "en",
+          "fr"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.335505",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "MRDEM Web Map Service (WMS)",
+        "name_translated": {
+          "en": "MRDEM Web Map Service (WMS)",
+          "fr": "Service de cartographie web (WMS) du MNEMR"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 10,
+        "resource_type": "web_service",
+        "state": "active",
+        "url": "https://datacube.services.geo.ca/ows/mrdem?request=getcapabilities&service=wms",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458192",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "PDF",
+        "hash": "",
+        "id": "0366ddeb-a376-4be7-b391-349150e383e3",
+        "language": [
+          "en"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.335579",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "Medium Resolution Digital Elevation Model (MRDEM) - CanElevation Series - Product Specifications (English)",
+        "name_translated": {
+          "en": "Medium Resolution Digital Elevation Model (MRDEM) - CanElevation Series - Product Specifications (English)",
+          "fr": "Modèle numérique d'élévation de moyenne résolution (MNEMR) - Série CanÉlévation - Spécifications de produit (anglais)"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 11,
+        "resource_type": "guide",
+        "state": "active",
+        "url": "https://ftp.maps.canada.ca/pub/elevation/dem_mne/MRDEM_MNEMR/CanElevation-MRDEM-Product-Specifications.pdf",
+        "url_type": null
+      },
+      {
+        "cache_last_updated": null,
+        "cache_url": null,
+        "created": "2026-07-16T12:31:08.458193",
+        "data_quality": [],
+        "datastore_active": false,
+        "description": null,
+        "format": "PDF",
+        "hash": "",
+        "id": "8182f77d-60d2-4685-9788-3a6e6cfa9f16",
+        "language": [
+          "fr"
+        ],
+        "last_modified": null,
+        "metadata_modified": "2026-07-16T12:31:08.335663",
+        "mimetype": null,
+        "mimetype_inner": null,
+        "name": "Medium Resolution Digital Elevation Model (MRDEM) - CanElevation Series - Product Specifications (French)",
+        "name_translated": {
+          "en": "Medium Resolution Digital Elevation Model (MRDEM) - CanElevation Series - Product Specifications (French)",
+          "fr": "Modèle numérique d'élévation de moyenne résolution (MNEMR) - Série CanÉlévation - Spécifications de produit (français)"
+        },
+        "package_id": "18752265-bda3-498c-a4ba-9dfe68cb98da",
+        "position": 12,
+        "resource_type": "guide",
+        "state": "active",
+        "url": "https://ftp.maps.canada.ca/pub/elevation/dem_mne/MRDEM_MNEMR/CanElevation-MNEMR-Specification-Produit.pdf",
+        "url_type": null
+      }
+    ],
+    "tags": [],
+    "groups": [],
+    "relationships_as_subject": [],
+    "relationships_as_object": []
+  }
+}

@@ -1,0 +1,21 @@
+P.452 Pilot Coordinate Hotfix - test report
+
+Build-time checks completed:
+- Python syntax compilation: PASS
+- Role-code regression tests: PASS
+- Polarization regression tests: PASS
+- Coordinate regression tests: PASS
+- Combined test result: 20 passed
+- Source scan: no longitude '% 360' conversion in scripts or MATLAB
+- Archive scan: no .pyc, .pyo, __pycache__, or .pytest_cache artifacts
+
+The tests specifically verify:
+- negative western-hemisphere longitudes are preserved;
+- 0-to-360 wrapped longitudes are rejected;
+- terminal coordinates match profile endpoints;
+- the MATLAB runner calls tl_p452 in Tx lon, Tx lat, Rx lon, Rx lat order;
+- the strict pre-MATLAB gate catches the former 281-degree defect.
+
+The real Windows MATLAB run remains the required integration test in the
+user's validated P.452-18/R2026a environment.
+- Repair-wrapper Bash syntax check: PASS

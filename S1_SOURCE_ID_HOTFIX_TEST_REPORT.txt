@@ -1,0 +1,13 @@
+FR3 CBF v1.1 TAFL source-record ID hotfix test report
+
+Checks performed:
+1. Python syntax compilation: PASS for both scripts.
+2. Synthetic canonical TAFL file with zero-padded freq_rec_id values: PASS.
+3. Frozen links containing the same IDs with leading zeroes removed: PASS.
+4. Strict unique normalization restored each canonical ID and wrote an audit CSV: PASS.
+5. TX/RX role, frequency, authorization, service=2, and subservice=200 checks: PASS.
+6. Output allocation fields remained blank: PASS.
+
+The synthetic test used two directed links and four canonical source records.
+All four were recovered by unique numeric normalization, with no floating-point
+conversion.

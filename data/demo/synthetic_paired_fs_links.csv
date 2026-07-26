@@ -1,0 +1,4 @@
+link_id,tx_lat_deg,tx_lon_deg,rx_lat_deg,rx_lon_deg,tx_antenna_alt_m_asl,rx_antenna_alt_m_asl,mean_terrain_elevation_m_asl,frequency_ghz,fade_margin_db,allocated_incremental_outage_pct,k_override_percent,dn75_override_n_units,wanted_received_level_dbm,receiver_threshold_dbm,other_reserved_margin_db,tx_source_record_id,rx_source_record_id,provenance_note
+DEMO_LINK_01,43.6500,-79.3800,43.7500,-79.3000,165.0,175.0,105.0,8.000,42.0,0.500,0.00010,20.0,,,,D_TX1,D_RX1,Synthetic software test only
+DEMO_LINK_02,43.7000,-79.5000,43.8200,-79.4100,180.0,160.0,115.0,7.850,38.0,1.000,0.00020,24.0,,,,D_TX2,D_RX2,Synthetic software test only
+DEMO_LINK_03,43.5800,-79.2500,43.6900,-79.1800,150.0,155.0,95.0,8.100,45.0,0.250,0.00008,18.0,,,,D_TX3,D_RX3,Synthetic software test only

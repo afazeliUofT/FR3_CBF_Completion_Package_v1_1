@@ -1,0 +1,2 @@
+link_id,tx_lat_deg,tx_lon_deg,rx_lat_deg,rx_lon_deg,tx_antenna_alt_m_asl,rx_antenna_alt_m_asl,mean_terrain_elevation_m_asl,frequency_ghz,fade_margin_db,allocated_incremental_outage_pct,k_override_percent,dn75_override_n_units,wanted_received_level_dbm,receiver_threshold_dbm,other_reserved_margin_db,tx_source_record_id,rx_source_record_id,provenance_note
+EXAMPLE_REMOVE_ME,43.6500,-79.3800,43.7500,-79.3000,160.0,170.0,110.0,8.000,40.0,,0.0001,20.0,,,,TX_RECORD,RX_RECORD,Replace this example with a reviewed paired link
