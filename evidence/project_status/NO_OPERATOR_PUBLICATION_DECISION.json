@@ -1,0 +1,30 @@
+{
+  "decision_id": "FR3_CBF_NO_OPERATOR_PUBLICATION_SCOPE_V1",
+  "created_utc": "2026-07-24T22:07:01.923777+00:00",
+  "status": "FROZEN_FOR_OPERATOR_INDEPENDENT_PUBLICATION",
+  "primary_target": "IEEE_TWC",
+  "jsac_policy": "SUBMIT_ONLY_TO_A_FUTURE_MATCHING_CALL_FOR_PAPERS",
+  "fixed_service": {
+    "operator_specific_short_term_cap": "NOT_SELECTED",
+    "positive_19_db_always_on_candidate": "REJECTED_BY_AUDITED_ANALYSIS",
+    "conditional_f1565_scenarios": "RETAINED_AS_SENSITIVITY_ONLY",
+    "paper_role": "Public-data continuity and dynamic threshold-parametric case; no TELUS-specific or universal Canadian short-term-cap claim.",
+    "primary_public_protection_entry": "Use the confirmed public long-term aggregate criterion recorded in config/regulatory_constants.yaml."
+  },
+  "eess": {
+    "paper_role": "HEADLINE_DYNAMIC_DRIFTING_GEOMETRY_CASE",
+    "threshold_source": "Audited SA.1027 entries in regulatory_constants.yaml"
+  },
+  "prohibited_claims": [
+    "A unique operator-specific fixed-service short-term cap was identified.",
+    "-34.25 dB is a universal regulatory cap.",
+    "+19 dB is acceptable as a uniform always-on cap.",
+    "The study proves compliance with confidential operator policy."
+  ],
+  "evidence_sha256": {
+    "results/s1_cap_reframe/S1_CAP_REFRAME_DECISION.json": "8e0e7b49ad5e4d71df5759d56d7086836aaab88be6f7635575910eb19e7ef1a3",
+    "results/s1_cap_reframe/scenario_threshold_intervals.csv": "bd32b14910a49903ffcae90e677d919813341556cb41a796a2d3c63a2cf35bf0",
+    "results/s1_warning_disposition/P530_WARNING_DISPOSITION.json": "9ffaa46a82643022289738c2c7942f00a7770df5c86e52837d697c9679ea801a",
+    "config/regulatory_constants.yaml": "91f47f27651098ec24b02a8113a56befaf00096f1e454d5576f0585072dbffa2"
+  }
+}

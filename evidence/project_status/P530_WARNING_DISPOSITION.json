@@ -1,0 +1,50 @@
+{
+  "all_eight_sensitivity_interval_db": {
+    "first_failing": -34.0,
+    "highest_passing": -34.25
+  },
+  "all_reported_scenario_edges_set_by_nonwarning_links": true,
+  "binding_link_ids_at_all_scenario_edges": [
+    "010031733-003__8100.000MHz"
+  ],
+  "claim_boundary": "This disposition does not validate Equation (7) inside its regression dataset, does not delete the warning links, and does not select a compliance cap. It proves only that the warning records do not determine any reported scenario threshold edge.",
+  "created_utc": "2026-07-24T21:06:56.008715+00:00",
+  "distance_below_7_5_km_km": 0.2063621772410258,
+  "distance_below_7_5_km_pct": 2.7514956965470105,
+  "input_hashes": {
+    "audit": "4b0c1f816669fdc74535742c52c16f40de99e74c01335c5203f13124912b6c47",
+    "decision": "8e0e7b49ad5e4d71df5759d56d7086836aaab88be6f7635575910eb19e7ef1a3",
+    "details": "dff3cff15708578c2b53a0c411e76d84f58d7b34a76f5cda1d3c2524f96f0a30",
+    "positive_rejection": "6c0a7e6f29829963668d4fcec5336532053f4ef06124d2a7d0b31a84f6c3cd6a",
+    "summary": "2fc109744fe837cbf850badfbb04c11af96d2274e6efcc71ca147a59f6681e52",
+    "thresholds": "bd32b14910a49903ffcae90e677d919813341556cb41a796a2d3c63a2cf35bf0",
+    "warnings": "e5db4af89a6c77e7d7271b352beb2e96ef481c2fc1153858aec8c437ab483ef6"
+  },
+  "minimum_global_to_warning_outage_ratio_at_threshold_edges": 123.22858594789506,
+  "next_gate": "OPERATOR_OR_ADMINISTRATION_CLASSIFICATION",
+  "output_hashes": {
+    "classification_request": "240a52554cae5cc76796a24f446105cd608cbec231cc9b03c5c1d1210867fb89",
+    "classification_template": "7ace453bc57c584c84473321bf7d6c633737fdc2a1a5860ae7d03db1a158e308",
+    "markdown": "5b27531bab2b79805c5d9dd85791b59ca6af9bfc910106d5dd41687fa2282d49",
+    "threshold_edge_audit": "82875ec42d110cb1214c606fa78e4ddcf4b4d7dfa7cc95491489cc459a81e5ba",
+    "warning_links_retained": "5bf92ea116860cead8a09ae796c55a14e2dffdd31ed0c3122a6a9540ceacf608"
+  },
+  "p530_interpretation": {
+    "calculation_applicability_note": "P.530-19 says multipath fading need only be calculated for paths longer than 5 km; these paths are 7.293638 km.",
+    "regression_range_note": "P.530-19 Note 2 states that Equation (7) was derived from links of 7.5-300 km. The four records are retained as a slight extrapolation and reported as a limitation."
+  },
+  "positive_10_db_rejected_by_nonwarning_link": {
+    "incremental_outage_pct": 0.4871292741701727,
+    "largest_tested_scenario_allocation_pct": 0.0017,
+    "link_id": "010031733-003__8100.000MHz"
+  },
+  "status": "DISPOSITIONED_AS_RETAINED_NONBINDING_MODEL_RANGE_LIMITATION",
+  "warning_distance_km": [
+    7.293637822758974
+  ],
+  "warning_physical_path_count": 1,
+  "warning_physical_path_ids": [
+    "010072188-004"
+  ],
+  "warning_record_count": 4
+}

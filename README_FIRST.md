@@ -4,6 +4,32 @@
 
 **Certified Dynamic Interference-Safety Filters for Incumbent-Protected FR3 Spectrum Sharing**
 
+<!-- CURRENT_AUDITED_STATUS_START -->
+## Current audited status — 26 July 2026
+
+The original completion-package instructions below are preserved for
+provenance, but the project has advanced beyond the original S1 starting
+point.
+
+Completed since package creation:
+
+- public TAFL pairing and MRDEM terrain review;
+- conditional P.530/S1 analysis;
+- rejection of +19 dB as a uniform always-on FS cap;
+- operator-independent publication decision;
+- P.452-18 v18.0 reference validation;
+- project-specific P.452 pipeline pilot;
+- E3 station, TLE/pass, SA.509 reference pattern, and 19-site/57-sector
+  modelled layout freeze.
+
+**Current scientific gate:** one actual cellular-sector-to-earth-station
+P.452 path with reviewed terrain and explicit gain/power/time accounting.
+
+Read `PROJECT_STATUS.md`, `NEXT_IMMEDIATE_STEP.md`, and
+`config/current_audited_state.yaml` before following older instructions.
+
+<!-- CURRENT_AUDITED_STATUS_END -->
+
 This directory is the new working home for the project. It contains the canonical system model, a plain-language tutorial, the exact completion sequence, a standards-aware YAML file, executable reference code, strict real-data gates, tests, and the user-supplied official ITU-R P.530-19 archive.
 
 You do not need to reconstruct the project from earlier conversations.

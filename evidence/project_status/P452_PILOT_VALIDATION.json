@@ -1,0 +1,54 @@
+{
+  "claim_boundary": "Pipeline audit only; not paper evidence. Dual-polarization branches are exported separately and are not power-aggregated.",
+  "coordinate_convention": "longitude_degrees_east_signed_-180_to_180;latitude_degrees_north_-90_to_90",
+  "coordinates": {
+    "rx_latitude_deg": 44.31413889,
+    "rx_longitude_deg": -79.01522222,
+    "tx_latitude_deg": 44.11205556,
+    "tx_longitude_deg": -78.91669444
+  },
+  "created_utc": "2026-07-26T01:13:31.737262+00:00",
+  "diagnostic_lb_non_decreasing_with_p_by_polarization": {
+    "H": true,
+    "V": true
+  },
+  "export_path_gain_linear_by_polarization": {
+    "H": 1.9230755925337802e-14,
+    "V": 1.9230755925337802e-14
+  },
+  "export_time_percentage": 20.0,
+  "link_id": "010031733-003__8100.000MHz",
+  "matlab_release": "2026a",
+  "p452_polarization_codes": [
+    1,
+    2
+  ],
+  "p452_polarization_labels": [
+    "H",
+    "V"
+  ],
+  "p452_reference_commit": "86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe",
+  "path_distance_km": 23.79536875364529,
+  "polarization_aggregation": "none_pipeline_exports_each_branch",
+  "profile_point_count": 795,
+  "sha256": {
+    "coupling": "e5aac19eafe8a442d855272a459d2f8d6b0c615e1d0bd5d7ecc10db3a67c1b1c",
+    "geojson": "b8d34edf1a04a53658ad0cccf370ece5cb0ec3580a538c5a82cae0db07ffce08",
+    "matlab_audit": "3aaf17b7aaccb7807fe003e7a940016b69c24dbc8f8b6d2c1cfb84d6fd9b79c7",
+    "parameters": "61eb4da3579e9f776639cef1676a0e47f19697fa54ba8193c4b3048e07ee7200",
+    "plot": "6ab2db721fc9aa20286981f8ef232db133dfaf11774b3edbae187ee21b70149d",
+    "prep_audit": "0925b8fcad60fa915a1fa5991690569dbc4e3b0f1428d90be013f875c2a8e5a1",
+    "profile": "d4d95b915c551bcea8bc5d23ef3e1e5842a0da16d0941f9d78b3b34396dc5da8",
+    "results": "5073fd961061befec9ae6ebf710d7578f54c1fd269f23485eb2e3c1d114750fb"
+  },
+  "status": "PASS",
+  "tafl_polarization_code": "G",
+  "tafl_polarization_description": "Co-channel dual polarization",
+  "time_percentages": [
+    50.0,
+    20.0,
+    10.0,
+    1.0,
+    0.1
+  ]
+}

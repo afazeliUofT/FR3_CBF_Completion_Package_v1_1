@@ -1,0 +1,33 @@
+]633;E;echo "P.452-18 reference validation provenance";437f10ac-c788-4327-9ac6-a3a1d76ed91f]633;CP.452-18 reference validation provenance
+Recorded UTC: 2026-07-25T23:55:07Z
+
+MATLAB release used:
+R2026a
+
+MATLAB launcher:
+/mnt/c/Program Files/MATLAB/R2026a/bin/matlab.exe
+
+Canonical P.452 source:
+data/external/p452/reference_v18
+
+Windows execution copy:
+/mnt/c/Users/alifa/FR3_P452_Validation_v18_R2026a
+
+Reference tag:
+v18.0
+
+Reference commit:
+86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe
+
+Official source hashes:
+b2d25952e85fb60d3c57f0078c201f243767fd285e1371931509437dc92a0208  data/external/p452/R-REC-P.452-18-components.zip
+d27590ce5c7cf7ff7b4457ce31b9bf3591f0b97e367732195de0f1a98bd35f2a  data/external/p452/reference_v18/matlab/private/maps/N050.TXT
+4847bf9542b775850daab6f0fb1bdc933a4d9a28aff65549bcfc45e141cd230d  data/external/p452/reference_v18/matlab/private/maps/DN50.TXT
+
+Validation summary:
+MATLAB_RELEASE=2026a
+MATLAB_VERSION=26.1.0.3312084 (R2026a) Update 4
+MATLAB_ROOT=C:\Program Files\MATLAB\R2026a
+Validation results: 17 out of 17 tests passed successfully.
+The deviation from the reference results is smaller than 1e-06 dB.
+P452_REFERENCE_ASSERTION: PASS

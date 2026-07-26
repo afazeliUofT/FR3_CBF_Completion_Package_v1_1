@@ -1,0 +1,29 @@
+{
+  "all_eight_scenario_threshold_interval": {
+    "first_failing_candidate_db": -34.0,
+    "highest_passing_candidate_db": -34.25,
+    "status": "BRACKETED_ON_DECLARED_GRID",
+    "threshold_interval_lower_db": -34.25,
+    "threshold_interval_upper_db": -34.0
+  },
+  "created_utc": "2026-07-24T20:23:32.946180+00:00",
+  "lower_cap_screen_is_final_compliance_decision": false,
+  "model_warning_gate_open": true,
+  "model_warning_link_count": 4,
+  "positive_always_on_candidate_set": [
+    10.0,
+    13.0,
+    16.0,
+    19.0,
+    23.0
+  ],
+  "positive_always_on_candidates_rejected_under_all_eight_tested_scenarios": true,
+  "provisional_19_db_always_on_freeze_allowed": false,
+  "required_next_actions": [
+    "Review and disposition every P.530 model warning without deleting links merely to improve the threshold.",
+    "Obtain operator/administration evidence for network portion, source class, and event mapping before freezing a scenario-specific cap.",
+    "Only after the warning and classification gates close, run the predeclared P.530 parameter-sensitivity campaign around the supported threshold interval.",
+    "Treat +19 dB, if retained at all, only through a separately justified rare-transient/multi-threshold rule; this run rejects it as an always-on cap."
+  ],
+  "status": "CONDITIONAL_SENSITIVITY_NOT_FINAL_COMPLIANCE"
+}
