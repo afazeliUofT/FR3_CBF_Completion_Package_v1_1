@@ -1,0 +1,24 @@
+Distributed IA-RZF architecture drop-in v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Package SHA-256 manifest: PASS
+- No frozen bytecode or cache artifacts: PASS
+
+Focused tests
+- Local RZF exact power normalization
+- Closed-form leakage projection exactness
+- Transmit-power nonincrease
+- Inactive projection identity
+- Certified proportional budget sum
+- UPA array-factor convention
+
+Scientific scope
+- Replaces WMMSE as the main operational method
+- Local UE CSI only
+- No joint network precoder
+- Scalar slow leakage telemetry and budgets
+- Exact local projection and aggregate certificate
+- Deterministic seeded channel audit only
+- Next gate is standards-aligned paper-channel experimentation

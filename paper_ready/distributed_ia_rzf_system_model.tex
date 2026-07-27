@@ -1,0 +1,54 @@
+\subsection{Distributed Local Precoding with Certified Leakage Budgets}
+Each base station (BS) computes its nominal regularized zero-forcing precoder
+$\mathbf W_b^0[k]$ using only its locally estimated user channels.  The slow
+coordination layer does not collect user channel vectors or complex
+precoders.  It sends BS $b$ only a scalar received-interference budget
+$\beta_b[k]$ and a validity interval.
+
+Let $\mathbf a_b$ denote the local array steering vector toward the protected
+earth station and let $\kappa_b[k]$ collect the validated terrestrial
+propagation gain, spectral overlap, element response, and earth-station receive
+gain.  The received contribution of BS $b$ is
+\begin{equation}
+ I_b[k]=\kappa_b[k]\left\|\mathbf a_b^H\mathbf W_b[k]\right\|_2^2.
+\end{equation}
+The local transmit-domain leakage limit is
+$\gamma_b[k]=\beta_b[k]/\kappa_b[k]$.
+
+Define $\mathbf u_b=\mathbf a_b/\|\mathbf a_b\|_2$ and
+$\mathbf W_{b,\parallel}^0=\mathbf u_b\mathbf u_b^H\mathbf W_b^0$.  The
+minimum-Frobenius local safety repair is
+\begin{equation}
+ \mathbf W_b^{\mathrm safe}
+ =
+ \mathbf W_b^0-(1-s_b)\mathbf W_{b,\parallel}^0,
+ \quad
+ s_b=\min\!\left\{
+ 1,\sqrt{\frac{\gamma_b}
+ {\|\mathbf a_b^H\mathbf W_b^0\|_2^2}}
+ \right\}.
+\end{equation}
+The orthogonal component of the nominal precoder is unchanged.  Consequently,
+the repair is the Euclidean projection onto the local leakage set and cannot
+increase transmit power.
+
+\begin{proposition}[Distributed aggregate certificate]
+If each BS independently satisfies $I_b[k]\leq\beta_b[k]$, the budgets are
+nonnegative, and
+\begin{equation}
+ \sum_b\beta_b[k]\leq I_{\max}[k]-m[k],
+\end{equation}
+then
+\begin{equation}
+ \sum_b I_b[k]\leq I_{\max}[k]-m[k].
+\end{equation}
+\end{proposition}
+\begin{proof}
+Summing the local inequalities gives
+$\sum_b I_b[k]\leq\sum_b\beta_b[k]$, and the budget-sum condition gives the
+result.
+\end{proof}
+
+The budget layer operates more slowly than local precoding.  Between budget
+updates, each BS holds its last certified budget.  A stale-message fallback
+uses a preloaded geometry-indexed safe schedule or local power backoff.

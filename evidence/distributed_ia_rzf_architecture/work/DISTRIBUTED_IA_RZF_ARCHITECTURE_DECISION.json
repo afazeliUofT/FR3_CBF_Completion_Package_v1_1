@@ -1,0 +1,54 @@
+{
+  "aggregate_certificate": {
+    "conclusion": "The aggregate received interference satisfies sum_b I_b(t)<=I_max(t)-margin(t).",
+    "condition": "Every BS enforces I_b(t)<=beta_b(t), beta_b(t)>=0, and sum_b beta_b(t)<=I_max(t)-margin(t).",
+    "requires_inter_bs_ue_csi": false,
+    "requires_joint_beam_computation": false
+  },
+  "claim_boundary": "FROZEN_DISTRIBUTED_ARCHITECTURE_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T04:48:28.805293+00:00",
+  "information_partition": {
+    "local_bs_knows": [
+      "local UE CSI",
+      "local incumbent steering direction",
+      "local scalar leakage budget",
+      "local previous certified action"
+    ],
+    "slow_budget_layer_knows": [
+      "sector_id",
+      "predicted_or_measured_scalar_incumbent_leakage_w",
+      "optional_scalar_utility_cost",
+      "health_and_latency_status"
+    ],
+    "slow_budget_layer_never_knows": [
+      "instantaneous_ue_channel_vectors",
+      "instantaneous_ue_covariance_matrices",
+      "complex_precoder_matrices",
+      "user_payload_data"
+    ]
+  },
+  "local_precoder": {
+    "baseline": "local regularized zero forcing",
+    "computation": "one local RZF solve plus rank-one projection",
+    "power_property": "projection never increases BS transmit power",
+    "safety_action": "closed-form minimum-Frobenius projection of the incumbent-direction component"
+  },
+  "main_operational_method": "LOCAL_RZF_PLUS_CLOSED_FORM_CERTIFIED_LEAKAGE_PROJECTION",
+  "next_gate": "STANDARDS_ALIGNED_57_SECTOR_LOCAL_CHANNEL_EXPERIMENT",
+  "reference_screen_context": {
+    "global_maximum_interference_dbw_per_10mhz": -62.845495330764194,
+    "global_short_backoff_db": 70.1545046692358,
+    "interpretation": "The completed 57-sector full-load result remains a severe stress envelope used to size budgets and active sets."
+  },
+  "status": "FROZEN_DISTRIBUTED_ARCHITECTURE_NOT_PAPER_RESULT",
+  "timescales": {
+    "between_budget_updates": "hold the last certified local budget",
+    "budget_update_slots": 10,
+    "local_precoder_slots": 1
+  },
+  "wmmse_disposition": {
+    "main_operational_method": "REMOVED",
+    "optional_small_scale_role": "A centralized optimizer may be retained only as a labelled small-network upper bound, not as the proposed architecture.",
+    "reason": "The deployable architecture must not require network-wide instantaneous UE CSI, joint precoder computation, or iterative inter-BS beam exchange."
+  }
+}

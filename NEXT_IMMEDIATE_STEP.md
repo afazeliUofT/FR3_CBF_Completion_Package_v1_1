@@ -2,43 +2,33 @@
 
 ## Gate
 
-First actual modelled cellular-sector-to-EESS-earth-station P.452 path.
+Standards-aligned 57-sector local-channel and distributed IA-RZF experiment.
 
-## Inputs already frozen
+## Frozen architecture
 
-- `data/real/earth_station.csv`
-- `data/real/bs_sites.csv`
-- `data/real/bs_sectors.csv`
-- `data/real/e3_reference_case/e3_track_selected_pass_1s.csv`
-- `data/real/e3_pattern_layout_review/selected_pass_off_axis_summary.csv`
-- validated ITU-R P.452-18 v18.0 implementation
-- official P.452 digital products
-- archived MRDEM layout subset
+- Each BS uses only local UE CSI.
+- Nominal local beamforming is RZF or a standards-compatible hybrid/codebook
+  implementation.
+- A closed-form local projection enforces one scalar incumbent-leakage budget.
+- The slow layer exchanges scalar leakage/utility telemetry and scalar budgets,
+  never UE channel vectors or complex precoders.
+- Nonnegative local budgets sum to the aggregate protected-receiver allowance.
 
 ## Required sequence
 
-1. Select one audit sector using a deterministic rule independent of its final
-   P.452 result.
-2. Create a single site-to-station link-input CSV.
-3. Build and visually review its 30 m MRDEM terrain profile.
-4. Freeze propagation assumptions before running MATLAB:
-   - zero terminal gains inside P.452;
-   - explicit clutter treatment;
-   - signed coordinates;
-   - declared propagation time-percentage grid.
-5. Calculate P.452 basic transmission loss.
-6. Apply BS directional gain, earth-station off-axis gain, bandwidth
-   conversion, activity, and polarization terms outside P.452 exactly once.
-7. Validate all dB/linear conversions and hashes.
-8. Label the output as a one-sector accounting audit.
+1. Freeze a standards-aligned local channel/user model and exact software
+   versions.
+2. Generate local nominal RZF beams for the frozen 57 sectors.
+3. Independently reconstruct local rates and transmit powers.
+4. Apply the certified local leakage projection.
+5. Implement static, myopic, queue-based, and predictive/CBF budget schedules
+   with identical update periods, delays, and information.
+6. Include realistic activity/load cases rather than only all-sector full load.
+7. Re-verify the actual hybrid/codebook composite precoder when used.
+8. Repeat across passes, user seeds, load levels, and uncertainty epochs.
 
 ## Stop condition
 
-Do not scale to 57 sectors until the one-sector result has:
-
-- reviewed terrain;
-- validated P.452 output;
-- explicit gain accounting;
-- no clutter or antenna-gain double counting;
-- explicit time-percentage interpretation;
-- a complete audit and SHA-256 evidence manifest.
+Do not call E3 paper-grade until actual local channels, composite beams, UE
+rates, loading, rate-limited budget actions, zero-slack safety, runtime, and
+statistical repetitions are all present.

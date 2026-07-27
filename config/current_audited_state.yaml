@@ -1,53 +1,34 @@
-schema_version: 1
-as_of_date: "2026-07-26"
+schema_version: 3
+as_of_date: "2026-07-27"
 
 publication:
   primary_target: IEEE_TWC
-  jsac_policy: future_matching_call_only
   mode: operator_independent
 
-fixed_service:
-  public_data_case: enabled
-  operator_specific_short_term_cap: null
-  positive_19_db_uniform_always_on_cap:
-    status: rejected
-  conditional_s1_results:
-    status: sensitivity_only
-  primary_public_entry:
-    metric: I_over_N_dB
-    value_db: -10.0
-    interpretation: public_long_term_engineering_entry
-
-p452:
-  implementation:
-    status: validated
-    version: v18.0
-    commit: 86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe
-    matlab_release: R2026a
-    reference_tests_passed: 17
-    reference_tests_total: 17
-  project_pipeline_pilot:
-    status: passed
-    evidence_level: pipeline_audit_not_paper_result
+main_operational_architecture:
+  status: frozen_not_paper_result
+  name: distributed_local_rzf_with_certified_leakage_budgets
+  wmmse_main_method: removed
+  central_instantaneous_ue_csi: prohibited
+  central_joint_precoder: prohibited
+  local_precoder: regularized_zero_forcing
+  local_safety_action: closed_form_incumbent_leakage_projection
+  slow_coordination_payload: scalar_leakage_telemetry_and_scalar_budgets
+  aggregate_certificate: sum_of_local_budgets_not_above_aggregate_allowance
 
 e3:
-  role: headline_dynamic_geometry_case
-  station_pass_pattern_layout:
-    status: frozen
-  station_pattern:
-    recommendation: ITU-R SA.509-3
-    status: model_decision
-    claim_boundary: >-
-      Reference large-dish pattern used in the absence of measured station
-      pattern data; not asserted as an EESS-specific mandatory pattern.
-  cellular_layout:
+  propagation_and_reference_screen:
+    status: complete_reference_only
     sites: 19
     sectors: 57
-    status: modelled_reference_not_operator_deployment
-  next_gate: first_cellular_sector_to_earth_station_p452_path
+    protected_samples: 587
+    scenarios: 84
+    aggregate_rows: 49308
+    claim_boundary: severe_full_load_reference_not_paper_result
+  next_gate: standards_aligned_57_sector_local_channel_experiment
 
 remaining_major_paper_gates:
-  - full_e3_experiment
+  - full_e3_distributed_beam_dynamic_budget_experiment
   - e1_static_fixed_service
   - e2_dynamic_rate_limit
   - uncertainty_calibration

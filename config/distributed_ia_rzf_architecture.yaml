@@ -1,0 +1,103 @@
+schema_version: 1
+purpose: >-
+  Replace WMMSE as the main operational beamforming architecture with a
+  practical distributed design: local RZF at each BS, a closed-form local
+  incumbent-leakage projection, and slowly updated certified scalar leakage
+  budgets whose sum guarantees the aggregate earth-station limit.
+
+claim_boundary:
+  architecture: FROZEN_DISTRIBUTED_ARCHITECTURE_NOT_PAPER_RESULT
+  prototype: DETERMINISTIC_LOCAL_CHANNEL_AUDIT_NOT_3GPP_PAPER_EVIDENCE
+
+inputs:
+  reference_screen_decision_json: data/real/e3_57_sector_reference_screen/E3_57_SECTOR_REFERENCE_SCREEN_DECISION.json
+  reference_screen_validation_json: data/real/e3_57_sector_reference_screen/E3_57_SECTOR_REFERENCE_SCREEN_VALIDATION.json
+  sector_static_csv: data/real/e3_57_sector_reference_screen/sector_static_reference_accounting.csv
+  earth_station_gain_csv_gz: data/real/e3_57_sector_reference_screen/earth_station_site_gain_timeseries.csv.gz
+  bs_sectors_csv: data/real/bs_sectors.csv
+
+outputs:
+  work_dir: data/real/distributed_ia_rzf_architecture
+  review_dir: results/distributed_ia_rzf_architecture
+  log_dir: logs/distributed_ia_rzf_architecture
+  evidence_dir: evidence/distributed_ia_rzf_architecture
+
+expected:
+  branch: e3-first-sector-p452
+  required_ancestor_commit: 9d2a13a659b71708b1a590f876ae7e26985f350e
+  site_count: 19
+  sector_count: 57
+  protected_sample_count: 587
+  scenario_count: 84
+  aggregate_row_count: 49308
+
+distributed_architecture:
+  main_local_precoder: LOCAL_RZF_PLUS_CERTIFIED_LEAKAGE_PROJECTION
+  main_control_variable: per_bs_received_interference_budget_w
+  budget_update_period_slots: 10
+  local_precoder_update_period_slots: 1
+  coordinator_receives:
+    - sector_id
+    - predicted_or_measured_scalar_incumbent_leakage_w
+    - optional_scalar_utility_cost
+    - health_and_latency_status
+  coordinator_never_receives:
+    - instantaneous_ue_channel_vectors
+    - instantaneous_ue_covariance_matrices
+    - complex_precoder_matrices
+    - user_payload_data
+  bs_receives:
+    - its_scalar_leakage_budget_w
+    - validity_interval
+    - robustness_margin
+    - fallback_budget
+  fail_safe:
+    - hold_last_certified_budget
+    - use_preloaded_offline_budget_schedule
+    - local_power_backoff_if_leakage_verification_fails
+  optional_coordinator_free_mode: >-
+    Preload a conservative geometry/pass-indexed budget schedule whose
+    nonnegative sector budgets sum to the aggregate allowance at every epoch.
+
+local_precoder:
+  users_per_sector_prototype: 4
+  rzf_regularization: 0.10
+  array_spacing_lambda: 0.5
+  prototype_rician_k_db: 3.0
+  prototype_user_azimuth_span_deg: 55.0
+  prototype_user_elevation_span_deg: 16.0
+  prototype_target_single_user_snr_db: 10.0
+  random_seed: 271828
+  power_reference: >-
+    Conducted power in the protected 10 MHz obtained from the frozen
+    100 MHz conducted-power entry under the uniform-PSD assumption.
+
+budget:
+  protection_threshold: short
+  short_threshold_dbw_per_10mhz: -133.0
+  long_threshold_dbw_per_10mhz: -150.0
+  reserve_fraction: 0.10
+  allocation_rule: proportional_to_local_nominal_received_leakage
+  message_interpretation: >-
+    Each BS reports one scalar nominal leakage estimate. The slow allocator
+    returns one scalar budget. No inter-BS UE CSI or joint beam calculation is
+    used.
+
+prototype:
+  p452_time_percentage: 20.0
+  polarization_label: H
+  bs_reference_case_for_path_and_geometry: ELEMENT_PATTERN_REFERENCE
+  earth_station_pattern_type: multiple_entry_section_1_2
+  aperture_efficiency: 0.65
+  run_all_protected_samples: true
+  result_status: SOFTWARE_AND_ARCHITECTURE_AUDIT_ONLY
+
+next_gate:
+  name: STANDARDS_ALIGNED_57_SECTOR_LOCAL_CHANNEL_EXPERIMENT
+  requirements:
+    - standards_aligned_local_channel_model
+    - reproducible_user_layout_and_mobility
+    - local_rzf_and_local_leakage_projection
+    - static_myopic_queue_and_predictive_budget_controllers
+    - identical_information_and_rate_limits
+    - actual_rate_power_leakage_and_runtime_metrics

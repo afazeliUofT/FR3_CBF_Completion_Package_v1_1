@@ -1,0 +1,16 @@
+{
+  "aggregate_budget_sum_verified": true,
+  "aggregate_interference_certificate_verified": true,
+  "central_instantaneous_ue_csi_used": false,
+  "claim_boundary": "DETERMINISTIC_LOCAL_CHANNEL_AUDIT_NOT_3GPP_PAPER_EVIDENCE",
+  "created_utc": "2026-07-27T04:48:31.846568+00:00",
+  "joint_network_beamformer_used": false,
+  "local_budget_constraints_verified": true,
+  "maximum_budget_sum_error_w": 1.262177448353619e-29,
+  "minimum_rate_retention_fraction": 0.997729005553827,
+  "next_gate": "STANDARDS_ALIGNED_57_SECTOR_LOCAL_CHANNEL_EXPERIMENT",
+  "protected_sample_count": 587,
+  "sector_count": 57,
+  "status": "PASS_ARCHITECTURE_AND_SOFTWARE_PROTOTYPE_ONLY",
+  "transmit_power_nonincrease_verified": true
+}

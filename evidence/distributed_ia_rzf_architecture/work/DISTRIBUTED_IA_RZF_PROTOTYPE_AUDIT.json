@@ -1,0 +1,20 @@
+{
+  "aggregate_short_threshold_dbw_per_10mhz": -133.0,
+  "budget_rule": "proportional_to_local_nominal_received_leakage",
+  "central_instantaneous_ue_csi_used": false,
+  "claim_boundary": "DETERMINISTIC_LOCAL_CHANNEL_AUDIT_NOT_3GPP_PAPER_EVIDENCE",
+  "created_utc": "2026-07-27T04:48:31.358639+00:00",
+  "joint_network_beamformer_used": false,
+  "local_budget_violation_count": 0,
+  "maximum_aggregate_safe_minus_allowance_w": 7.699282434957075e-28,
+  "maximum_power_increase_w": -0.0012114577929169812,
+  "median_rate_retention_fraction": 0.9978005023623352,
+  "minimum_rate_retention_fraction": 0.997729005553827,
+  "next_gate": "STANDARDS_ALIGNED_57_SECTOR_LOCAL_CHANNEL_EXPERIMENT",
+  "protected_sample_count": 587,
+  "reserve_fraction": 0.1,
+  "sector_count": 57,
+  "sector_time_row_count": 33459,
+  "status": "PASS_PROTOTYPE_ONLY",
+  "synthetic_channel_warning": "The local channels are deterministic seeded Rician audit channels, not the standards-aligned paper channel experiment."
+}
