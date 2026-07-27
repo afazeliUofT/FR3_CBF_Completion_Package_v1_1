@@ -1,0 +1,14 @@
+{
+  "claim_boundary": "ONE_SECTOR_ACCOUNTING_AUDIT_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-26T23:43:16.688357+00:00",
+  "distance_km": 2.291287847477598,
+  "next_gate": "RUN_VALIDATED_P452_AND_GAIN_ACCOUNTING",
+  "profile_sample_count": 78,
+  "qc_flag_count": 0,
+  "review_confirmation": "Visual review confirmed by explicit command-line flag.",
+  "reviewer": "Ali Fazeli",
+  "sector_id": "E3_SITE_18_SEC_1",
+  "site_id": "E3_SITE_18",
+  "status": "ACCEPTED_FOR_FIRST_SECTOR_P452_ACCOUNTING_AUDIT",
+  "terrain_review_pdf_sha256": "bd65520a8df18a10d9cba99fff08996e31650a007449aa3abb576f1fd5459e9f"
+}

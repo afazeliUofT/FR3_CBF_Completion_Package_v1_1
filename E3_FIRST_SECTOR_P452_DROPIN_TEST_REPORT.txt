@@ -1,0 +1,70 @@
+E3 Site-18 First-Sector P.452 Accounting Drop-In v1
+Test report
+
+Input review
+------------
+- Corrected Site-18 terrain review ZIP external SHA-256: PASS.
+- Corrected protected-window selection: E3_SITE_18_SEC_1.
+- Protected samples: 587 at earth-station elevation >= 5 degrees.
+- Terrain profile: 78 points, 2.291287847 km, TX/RX AGL 25/20 m, zero QC flags.
+- Protected-window minimum ES off-axis angle: 8.035691596 degrees.
+- Maximum nominal SA.509 aggregate-pattern gain: 6.374418487 dBi.
+
+Static tests
+------------
+- All Python files parsed with ast.parse: PASS.
+- All Bash wrappers passed bash -n: PASS.
+- Focused unit tests: 7 passed.
+- No .pyc, .pyo, __pycache__, or pytest-cache artifacts included.
+
+End-to-end integration test
+---------------------------
+A clean integration tree was assembled from the actual attached E3 review
+bundle, the actual corrected Site-18 terrain bundle, and this drop-in.
+
+The following real-input stages passed:
+- focused tests;
+- 78-point profile preparation and freezing;
+- protected-window count and geometry checks;
+- signed-coordinate and endpoint checks;
+- P.452 input preflight;
+- export-schema validation;
+- external BS/ES gain and power accounting;
+- strict accounting validation;
+- review-folder, HTML index, upload ZIP, internal manifest, and external
+  checksum generation.
+
+Integration counts:
+- expected P.452 rows: 42 = 7 time percentages x 2 polarizations x 3
+  coast-distance sensitivity cases;
+- protected samples: 587;
+- conditional accounting rows: 49,308;
+- review-required files: 22;
+- review upload bundle source files: 48.
+
+The integration test used deterministic MOCK P.452 loss rows solely to exercise
+the Python post-processing and packaging paths in this Linux container. Those
+mock values are explicitly not scientific evidence and are not distributed as
+results. The Windows MATLAB wrapper and MATLAB source passed syntax/interface
+review, but the actual pinned P.452-18 calculation must be executed by the user
+against the already validated Windows MATLAB R2026a/P.452 v18.0 installation.
+The drop-in fails closed if the expected MATLAB outputs are absent.
+
+Required user command
+---------------------
+source .venv/bin/activate
+REVIEWER_NAME="Ali Fazeli" \
+  bash RUN_E3_FIRST_SECTOR_P452_DROPIN.sh --confirm-terrain-reviewed
+
+Required user PASS markers
+--------------------------
+- WRAPPER 00 PREPARE: PASS
+- WRAPPER 10 MATLAB: PASS
+- FIRST-SECTOR P.452 BASIC-LOSS VALIDATION: PASS
+- FIRST-SECTOR GAIN-ACCOUNTING VALIDATION: PASS
+- FIRST-SECTOR REVIEW PACKAGE: PASS
+- E3 FIRST-SECTOR P.452 DROP-IN: PASS
+
+Claim boundary
+--------------
+ONE_SECTOR_ACCOUNTING_AUDIT_NOT_PAPER_RESULT

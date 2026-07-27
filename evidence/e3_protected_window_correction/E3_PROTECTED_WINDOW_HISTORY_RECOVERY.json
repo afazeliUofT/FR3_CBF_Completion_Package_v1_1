@@ -1,0 +1,32 @@
+{
+  "claim_boundary": "This recovers superseded historical inputs after a wrapper sequencing defect. It does not change the corrected protected-window geometry.",
+  "created_utc": "2026-07-26T22:40:57.125098+00:00",
+  "historical_sector_id": "E3_SITE_11_SEC_1",
+  "historical_site_id": "E3_SITE_11",
+  "next_gate": "REBUILD_PROTECTED_WINDOW_OFF_AXIS_SUMMARY",
+  "rejected_selection_candidates": [],
+  "rejected_summary_candidates": [],
+  "selection_recovery_source": "data/real/e3_first_sector_audit_superseded_unprotected_window_20260726_221721/selected_sector.json",
+  "stable_selection_path": "data/real/e3_selection_history/selected_sector_unprotected_window.json",
+  "stable_selection_sha256": "dc48c1a4e8f2d304044de3942744e7247b3f138a53a371ea4168a83b088d01f9",
+  "stable_summary_path": "data/real/e3_selection_history/selected_pass_off_axis_summary_unprotected.csv",
+  "stable_summary_sha256": "1de888bef3ba05a2faf09325af7fb73502dc0d9d0e28edba6b61c6a2555dec2e",
+  "status": "PASS",
+  "summary_recovery_source": "data/real/e3_pattern_layout_review/selected_pass_off_axis_summary.csv",
+  "valid_selection_candidates": [
+    {
+      "path": "data/real/e3_first_sector_audit_superseded_unprotected_window_20260726_221721/selected_sector.json",
+      "sha256": "dc48c1a4e8f2d304044de3942744e7247b3f138a53a371ea4168a83b088d01f9"
+    },
+    {
+      "path": "evidence/e3_first_sector/selected_sector.json",
+      "sha256": "dc48c1a4e8f2d304044de3942744e7247b3f138a53a371ea4168a83b088d01f9"
+    }
+  ],
+  "valid_summary_candidates": [
+    {
+      "path": "data/real/e3_pattern_layout_review/selected_pass_off_axis_summary.csv",
+      "sha256": "1de888bef3ba05a2faf09325af7fb73502dc0d9d0e28edba6b61c6a2555dec2e"
+    }
+  ]
+}

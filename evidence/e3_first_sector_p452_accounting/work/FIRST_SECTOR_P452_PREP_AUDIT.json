@@ -1,0 +1,36 @@
+{
+  "claim_boundary": "ONE_SECTOR_ACCOUNTING_AUDIT_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-26T23:43:16.690210+00:00",
+  "distance_km": 2.291287847477598,
+  "generated_sha256": {
+    "FIRST_SECTOR_TERRAIN_DECISION.json": "220a28c8f176b31fd2f99c40af57964e1fe4e797bbbc3eabe1ddaf1ee7fb780d",
+    "p452_parameters.json": "f51b094e239abe763b6b4887f8e23c120a299a568e6e11f4c927c72c5779e83a",
+    "p452_profile.csv": "bae1e6d7ecc540c2f29bad113b03b7257e3a6b54c66909ae899fb25c15aeff04"
+  },
+  "input_sha256": {
+    "data/external/p452/reference_v18_commit.txt": "b5d497355914527732ddd7d28dd086d6922631ff514f1f87825487313f93207a",
+    "data/real/E3_PROTECTED_WINDOW_CORRECTION.json": "5cea37610a5743ac6ea137cb3a62fc557c23877f4904e3cc22afea7d17ed47be",
+    "data/real/E3_PROTECTED_WINDOW_SELECTION_AUDIT.json": "f9aa64d8c5113393468ad06bb02b111ab34792b662eb90659f49766c246fe531",
+    "data/real/bs_sectors.csv": "ce004abb263864812e59b8cc8c76f9c0d7881f61732d19cad63281ccd7dbb1a6",
+    "data/real/bs_sites.csv": "9cd34443d1f53eef1b7efbb6eaa19799c039d9b55245fe5ae1d95d4de5e5f2bb",
+    "data/real/e3_first_sector_audit/first_sector_link_with_terrain.csv": "e66e80be469a8961c34637bff1cc2be2ebacfbe4f06444bb63f3ca08edd3778a",
+    "data/real/e3_first_sector_audit/selected_sector.json": "c3a14dc15c679d4447fbc336dac33c3cdaaf1a2ae749ce08476def495a8c766c",
+    "data/real/e3_first_sector_audit/terrain_review/TERRAIN_AUDIT.json": "ac0e2c2dbdcb0d58fa92209d67e468dc1bed14f81ed82acff62569be54159b52",
+    "data/real/e3_first_sector_audit/terrain_review/first_sector_profile_review.pdf": "bd65520a8df18a10d9cba99fff08996e31650a007449aa3abb576f1fd5459e9f",
+    "data/real/e3_first_sector_audit/terrain_review/terrain_profile_samples.csv.gz": "5778f7493bf0ffb581e865035e954231535cdc55fc7cf1c9da788a704e79206b",
+    "data/real/e3_first_sector_audit/terrain_review/terrain_summary.csv": "65823d2812f7354d4488ce70b7e0ee9c391ff49727b4f85082678cbd311ce135",
+    "data/real/e3_pattern_layout_review/earth_station_pattern_parameters.csv": "f1a6212d42c0181e2579fa45a1ed9a50c6a4c5ca4e5a073f36c098af49041e26",
+    "data/real/e3_pattern_layout_review/earth_station_pattern_samples.csv": "725ae9988b184b99ca54d4f7fbb6ac5bf25f0faa4d9264e285d51b02c2ae5f74",
+    "data/real/e3_pattern_layout_review/selected_pass_off_axis_summary_protected.csv": "ef4c613593ce1b33432a3b1b8c8ce2ec0ddb72154d0beda22fa65702495a474b",
+    "data/real/e3_reference_case/e3_track_selected_pass_1s.csv": "938e0a8cbd52ff3bf20a0c4665a01aa58898d81d54578ea45aa0b2e18a7def7a",
+    "data/real/earth_station.csv": "bb7b21a8ee9761a35bbbae7dea933d6cca92acde116360064113ac2194298df1",
+    "results/p452_reference_validation/P452_REFERENCE_PROVENANCE_R2026a.txt": "f63ffe423469d1239d31c1209b787620cff541eca237beb6933f5c8aa837e237"
+  },
+  "next_gate": "MATLAB_P452_BASIC_LOSS",
+  "p452_output_row_count_expected": 42,
+  "profile_sample_count": 78,
+  "protected_window_sample_count": 587,
+  "reviewer": "Ali Fazeli",
+  "sector_id": "E3_SITE_18_SEC_1",
+  "status": "MATLAB_READY_FROZEN"
+}

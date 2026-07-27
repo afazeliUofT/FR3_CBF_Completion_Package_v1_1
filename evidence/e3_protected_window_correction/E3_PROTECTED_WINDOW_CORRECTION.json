@@ -1,0 +1,28 @@
+{
+  "claim_boundary": "This correction changes the deterministic audit-sector selection only. It does not invalidate the frozen station, pass, antenna-pattern model, cellular layout, or the terrain quality of the historical site-11 path.",
+  "corrected_site_winner": "E3_SITE_18",
+  "corrected_summary_sha256": "ef4c613593ce1b33432a3b1b8c8ce2ec0ddb72154d0beda22fa65702495a474b",
+  "created_utc": "2026-07-26T22:40:57.463264+00:00",
+  "detailed_track_sample_count": 821,
+  "historical_selected_sector": "E3_SITE_11_SEC_1",
+  "historical_selected_site": "E3_SITE_11",
+  "historical_site_winner_from_summary": "E3_SITE_11",
+  "historical_summary_status": "SUPERSEDED_FOR_PROTECTED_WINDOW_SELECTION_ONLY",
+  "inputs_sha256": {
+    "data/real/E3_PATTERN_LAYOUT_DECISION.json": "b1a6ed414e37eb91f23f3eee19112b32197422e3b2ba9f693a994c200f8c6a94",
+    "data/real/bs_sectors.csv": "ce004abb263864812e59b8cc8c76f9c0d7881f61732d19cad63281ccd7dbb1a6",
+    "data/real/bs_sites.csv": "9cd34443d1f53eef1b7efbb6eaa19799c039d9b55245fe5ae1d95d4de5e5f2bb",
+    "data/real/e3_pattern_layout_review/earth_station_pattern_parameters.csv": "f1a6212d42c0181e2579fa45a1ed9a50c6a4c5ca4e5a073f36c098af49041e26",
+    "data/real/e3_reference_case/e3_track_selected_pass_1s.csv": "938e0a8cbd52ff3bf20a0c4665a01aa58898d81d54578ea45aa0b2e18a7def7a",
+    "data/real/e3_selection_history/selected_pass_off_axis_summary_unprotected.csv": "1de888bef3ba05a2faf09325af7fb73502dc0d9d0e28edba6b61c6a2555dec2e",
+    "data/real/e3_selection_history/selected_sector_unprotected_window.json": "dc48c1a4e8f2d304044de3942744e7247b3f138a53a371ea4168a83b088d01f9",
+    "data/real/earth_station.csv": "bb7b21a8ee9761a35bbbae7dea933d6cca92acde116360064113ac2194298df1"
+  },
+  "minimum_elevation_deg": 5.0,
+  "next_gate": "RESELECT_FIRST_SECTOR_USING_PROTECTED_WINDOW",
+  "protected_window_end_utc": "2026-07-26T23:13:20+00:00",
+  "protected_window_sample_count": 587,
+  "protected_window_start_utc": "2026-07-26T23:03:34+00:00",
+  "reason": "The historical off-axis summary included detailed-track margins below the declared earth-station minimum elevation.  Site/sector selection for the protected E3 case must use only samples with earth-station elevation at or above the minimum elevation.",
+  "status": "CORRECTED_PROTECTED_WINDOW_SUMMARY_READY"
+}

@@ -1,0 +1,37 @@
+{
+  "activity_factor": 1.0,
+  "bandwidth_adjustment_db": -10.0,
+  "bs_gain_cases": [
+    {
+      "bs_gain_dbi": 0.0,
+      "gain_case": "ZERO_DBI_PROPAGATION_REFERENCE"
+    },
+    {
+      "bs_gain_dbi": 7.183227347738755,
+      "gain_case": "ELEMENT_PATTERN_REFERENCE"
+    },
+    {
+      "bs_gain_dbi": 31.26562700085725,
+      "gain_case": "COHERENT_ARRAY_UPPER_ENVELOPE"
+    }
+  ],
+  "claim_boundary": "ONE_SECTOR_ACCOUNTING_AUDIT_NOT_PAPER_RESULT",
+  "conducted_power_dbw_per_100mhz": 16.0,
+  "created_utc": "2026-07-26T23:43:38.258702+00:00",
+  "earth_station_maximum_aggregate_gain_dbi": 6.374418487486857,
+  "earth_station_minimum_off_axis_deg": 8.035691596201186,
+  "gain_timeseries_row_count": 49308,
+  "nominal_coast_distance_km": 5.0,
+  "open_items": [
+    "Final composite WMMSE beam gain is not available.",
+    "Exact coast distances are not frozen; sensitivity scenarios are retained.",
+    "Propagation-time and operational-exceedance composition is not frozen.",
+    "Physical polarization/XPD model is not frozen."
+  ],
+  "p452_row_count": 42,
+  "polarization_mismatch_loss_db": 0.0,
+  "protected_sample_count": 587,
+  "sector_id": "E3_SITE_18_SEC_1",
+  "status": "ACCOUNTING_READY_FOR_VALIDATION",
+  "time_accounting_status": "NOT_FROZEN. P.452 propagation time percentage, SA.1027 criterion time percentage, and controller operational token budget are reported separately. This audit does not compose them into one compliance claim."
+}

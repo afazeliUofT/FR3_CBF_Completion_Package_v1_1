@@ -1,0 +1,53 @@
+{
+  "claim_boundary": "ONE_SECTOR_ACCOUNTING_AUDIT_NOT_PAPER_RESULT",
+  "climatic_zone_code": 2,
+  "clutter_mode": "g_equals_h_no_separate_p2108",
+  "coast_distance_scenarios_km": [
+    5.0,
+    50.0,
+    200.0
+  ],
+  "coast_distance_status": "Declared inland sensitivity grid. The 5 km case is a conservative lower bound, not an asserted exact coast distance. No final coast distance is selected by this audit.",
+  "config_sha256": "f174cc4bdce4fac27eb8616a4f65dc47590a121a2b85310a4364536e930e36c2",
+  "coordinate_convention": "longitude_degrees_east_signed_-180_to_180",
+  "created_utc": "2026-07-26T23:43:16.688594+00:00",
+  "expected_matlab_release": "2026a",
+  "frequency_ghz": 8.15,
+  "hrg_m": 20.0,
+  "htg_m": 25.0,
+  "no_separate_p2108_baseline": true,
+  "nominal_coast_distance_km": 5.0,
+  "p452_polarization_codes": [
+    1,
+    2
+  ],
+  "p452_polarization_labels": [
+    "H",
+    "V"
+  ],
+  "p452_reference_commit": "86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe",
+  "pressure_hpa": 1013.25,
+  "profile_sha256": "bae1e6d7ecc540c2f29bad113b03b7257e3a6b54c66909ae899fb25c15aeff04",
+  "rx_horizon_gain_dbi": 0.0,
+  "rx_latitude_deg": 45.58526,
+  "rx_longitude_deg": -75.80877,
+  "sector_id": "E3_SITE_18_SEC_1",
+  "selected_sector_sha256": "c3a14dc15c679d4447fbc336dac33c3cdaaf1a2ae749ce08476def495a8c766c",
+  "site_id": "E3_SITE_18",
+  "station_id": "NRCAN_GATINEAU_REFERENCE",
+  "temperature_c": 15.0,
+  "terrain_summary_sha256": "65823d2812f7354d4488ce70b7e0ee9c391ff49727b4f85082678cbd311ce135",
+  "time_percentages": [
+    50.0,
+    20.0,
+    10.0,
+    1.0,
+    0.1,
+    0.01,
+    0.005
+  ],
+  "tx_horizon_gain_dbi": 0.0,
+  "tx_latitude_deg": 45.56501567850536,
+  "tx_longitude_deg": -75.81431660498814,
+  "zero_terminal_gains_inside_p452": true
+}

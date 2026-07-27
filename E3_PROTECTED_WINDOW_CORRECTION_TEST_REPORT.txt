@@ -1,0 +1,37 @@
+E3 Protected-Window Selection Correction v1 - Test Report
+
+Build date: 2026-07-26
+
+Static checks:
+- All packaged Python files parsed successfully with ast.parse.
+- No .pyc, .pyo, __pycache__, or pytest cache artifacts are included.
+
+Focused unit tests:
+- 3 passed.
+- Covers identical-direction angular separation, SA.509 gain branch, and
+  protected-window source patch content.
+
+Real-bundle integration test:
+- Input bundle SHA-256:
+  bcf8465e7801dc98863476175f1532ba783f1d1c0f63a538fb37ad7fe330896d
+- Detailed track samples: 821.
+- Protected samples (earth-station elevation >= 5 deg): 587.
+- Protected interval:
+  2026-07-26T23:03:34+00:00 to 2026-07-26T23:13:20+00:00.
+- Historical selected sector: E3_SITE_11_SEC_1.
+- Corrected selected site: E3_SITE_18.
+- Corrected selected sector: E3_SITE_18_SEC_1.
+- Historical global minimum off-axis: 1.575895514 deg
+  (occurred below the protected elevation window).
+- Corrected protected-window minimum off-axis: 8.035691596 deg.
+- Corrected maximum nominal SA.509 section 1.2 gain: 6.374418487 dBi.
+- Corrected site-to-station distance: 2291.287847 m.
+- Rebuild, selection, and independent validation all returned PASS.
+
+Scientific boundary:
+- This package corrects only the protected-window summary and deterministic
+  audit-sector selection.
+- It does not calculate P.452 loss.
+- It does not create a paper result.
+- The old E3_SITE_11 terrain profile remains valid terrain evidence but is
+  superseded for protected-window sector selection.

@@ -1,0 +1,31 @@
+
+=== STEP 20: validate P.452 export schema ===
+P.452 EXPORT VALIDATION: PASS (42 rows)
+This validates interchange structure/provenance, not numerical correctness of the external implementation.
+
+=== STEP 20: build external gain/power accounting ===
+FIRST-SECTOR GAIN-ACCOUNTING BUILD: PASS
+Protected samples: 587
+P.452 rows: 42
+Accounting rows: 49308
+Conducted power (dBW/100 MHz): 16.0
+Bandwidth adjustment (dB): -10.0
+BS gain cases:
+                     gain_case  bs_gain_dbi
+ZERO_DBI_PROPAGATION_REFERENCE     0.000000
+     ELEMENT_PATTERN_REFERENCE     7.183227
+ COHERENT_ARRAY_UPPER_ENVELOPE    31.265627
+Minimum ES off-axis (deg): 8.035691596201186
+Maximum nominal ES gain (dBi): 6.374418487486857
+Time-accounting status: NOT_FROZEN. P.452 propagation time percentage, SA.1027 criterion time percentage, and controller operational token budget are reported separately. This audit does not compose them into one compliance claim.
+
+=== STEP 20: strict validation ===
+FIRST-SECTOR P.452 BASIC-LOSS VALIDATION: PASS
+FIRST-SECTOR GAIN-ACCOUNTING VALIDATION: PASS
+Sector: E3_SITE_18_SEC_1
+P.452 rows: 42
+Gain-accounting rows: 49308
+Protected samples: 587
+Claim boundary: ONE_SECTOR_ACCOUNTING_AUDIT_NOT_PAPER_RESULT
+Next gate: HUMAN_REVIEW_OF_ONE_SECTOR_ACCOUNTING_AUDIT
+WRAPPER 20 POSTPROCESS/VALIDATE: PASS

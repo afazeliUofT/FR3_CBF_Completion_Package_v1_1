@@ -1,0 +1,29 @@
+
+=== STEP 00: focused tests ===
+.......                                                                  [100%]
+
+=== STEP 00: prepare/freeze inputs ===
+FIRST-SECTOR P.452 INPUT PREPARATION: PASS
+Sector: E3_SITE_18_SEC_1
+Site: E3_SITE_18
+Station: NRCAN_GATINEAU_REFERENCE
+Profile samples: 78
+Distance: 2.291287847 km
+TX/RX AGL: 25.0 20.0
+Protected track samples: 587
+Time percentages: [50.0, 20.0, 10.0, 1.0, 0.1, 0.01, 0.005]
+Coast-distance scenarios (km): [5.0, 50.0, 200.0]
+Polarization branches: [('H', 1), ('V', 2)]
+P.452 terminal horizon gains inside model: 0 dBi / 0 dBi
+Baseline clutter: g=h; separate P.2108 loss: 0 dB
+Expected MATLAB output rows: 42
+Output directory: /home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/data/real/e3_first_sector_p452
+FIRST-SECTOR P.452 PRE-MATLAB PREFLIGHT: PASS
+Profile points: 78
+Distance (km): 2.291287847477598
+Expected MATLAB rows: 42
+Signed TX lon/lat: -75.81431660498814 45.56501567850536
+Signed RX lon/lat: -75.80877 45.58526
+P.452 commit: 86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe
+Expected MATLAB release: 2026a
+WRAPPER 00 PREPARE: PASS

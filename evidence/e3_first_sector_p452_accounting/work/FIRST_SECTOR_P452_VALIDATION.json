@@ -1,0 +1,18 @@
+{
+  "basic_loss_conversion_verified": true,
+  "claim_boundary": "ONE_SECTOR_ACCOUNTING_AUDIT_NOT_PAPER_RESULT",
+  "external_gain_identity_verified": true,
+  "gain_accounting_rows": 49308,
+  "h_v_branches_separate_verified": true,
+  "matlab_release": "2026a",
+  "next_gate": "HUMAN_REVIEW_OF_ONE_SECTOR_ACCOUNTING_AUDIT",
+  "no_separate_p2108_baseline_verified": true,
+  "p452_basic_loss_rows": 42,
+  "p452_reference_commit": "86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe",
+  "protected_samples": 587,
+  "review_required": true,
+  "sector_id": "E3_SITE_18_SEC_1",
+  "status": "PASS",
+  "time_accounting_not_frozen_verified": true,
+  "zero_terminal_gains_inside_p452_verified": true
+}

@@ -1,0 +1,30 @@
+{
+  "claim_boundary": "This validates corrected selection only. It does not produce P.452 loss or a paper-grade E3 interference result.",
+  "corrected_global_minimum_off_axis_deg": 8.035691596201232,
+  "corrected_sector_id": "E3_SITE_18_SEC_1",
+  "corrected_site_id": "E3_SITE_18",
+  "created_utc": "2026-07-26T22:40:58.099235+00:00",
+  "detailed_track_sample_count": 821,
+  "historical_sector_id": "E3_SITE_11_SEC_1",
+  "historical_sector_status": "SUPERSEDED_UNPROTECTED_TRACK_WINDOW_SELECTION",
+  "input_sha256": {
+    "data/real/E3_PROTECTED_WINDOW_CORRECTION.json": "5cea37610a5743ac6ea137cb3a62fc557c23877f4904e3cc22afea7d17ed47be",
+    "data/real/bs_sectors.csv": "ce004abb263864812e59b8cc8c76f9c0d7881f61732d19cad63281ccd7dbb1a6",
+    "data/real/bs_sites.csv": "9cd34443d1f53eef1b7efbb6eaa19799c039d9b55245fe5ae1d95d4de5e5f2bb",
+    "data/real/e3_first_sector_audit/first_sector_link_input.csv": "544297cf4f9a04ec023b3b54b5e8161d7a9bbf95265170b834656c8471196616",
+    "data/real/e3_first_sector_audit/sector_candidates.csv": "5bd174096558b20fd615edf7b5221f170f6373e612531a9571c8d4a6d7525592",
+    "data/real/e3_first_sector_audit/selected_sector.json": "c3a14dc15c679d4447fbc336dac33c3cdaaf1a2ae749ce08476def495a8c766c",
+    "data/real/e3_pattern_layout_review/selected_pass_off_axis_summary_protected.csv": "ef4c613593ce1b33432a3b1b8c8ce2ec0ddb72154d0beda22fa65702495a474b",
+    "data/real/e3_reference_case/e3_track_selected_pass_1s.csv": "938e0a8cbd52ff3bf20a0c4665a01aa58898d81d54578ea45aa0b2e18a7def7a",
+    "data/real/e3_selection_history/selected_pass_off_axis_summary_unprotected.csv": "1de888bef3ba05a2faf09325af7fb73502dc0d9d0e28edba6b61c6a2555dec2e",
+    "data/real/e3_selection_history/selected_sector_unprotected_window.json": "dc48c1a4e8f2d304044de3942744e7247b3f138a53a371ea4168a83b088d01f9",
+    "data/real/earth_station.csv": "bb7b21a8ee9761a35bbbae7dea933d6cca92acde116360064113ac2194298df1"
+  },
+  "minimum_elevation_deg": 5.0,
+  "next_gate": "BUILD_CORRECTED_FIRST_SECTOR_TERRAIN_PROFILE",
+  "old_global_minimum_off_axis_deg": 1.5758955144300562,
+  "protected_window_end_utc": "2026-07-26T23:13:20+00:00",
+  "protected_window_sample_count": 587,
+  "protected_window_start_utc": "2026-07-26T23:03:34+00:00",
+  "status": "PASS"
+}

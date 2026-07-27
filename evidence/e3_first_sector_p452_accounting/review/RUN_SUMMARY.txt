@@ -1,0 +1,24 @@
+E3 FIRST-SECTOR P.452 DROP-IN SUMMARY
+Status: PASS
+Sector: E3_SITE_18_SEC_1
+P.452 rows: 42
+P.452 basic-loss range: 115.733600600 to 117.863252559 dB
+Gain-accounting rows: 49308
+Protected samples: 587
+MATLAB release: 2026a
+P.452 commit: 86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe
+Minimum ES off-axis: 8.035691596 deg
+Maximum nominal aggregate ES gain: 6.374418487 dBi
+Highest conditional accounting value: -69.093555112 dBW/10 MHz
+Highest-value BS case: COHERENT_ARRAY_UPPER_ENVELOPE
+Highest-value ES pattern: single_entry_section_1_1
+Highest-value P.452 p: 0.005 %
+Highest-value polarization: H
+Claim boundary: ONE_SECTOR_ACCOUNTING_AUDIT_NOT_PAPER_RESULT
+Next gate: HUMAN_REVIEW_OF_ONE_SECTOR_ACCOUNTING_AUDIT
+
+Open items:
+ - Final composite WMMSE beam gain is not available.
+ - Exact coast distances are not frozen; sensitivity scenarios are retained.
+ - Propagation-time and operational-exceedance composition is not frozen.
+ - Physical polarization/XPD model is not frozen.

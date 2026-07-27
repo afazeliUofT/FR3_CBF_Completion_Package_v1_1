@@ -1,0 +1,9 @@
+# BEGIN FR3 EVIDENCE TEXT NORMALIZATION
+evidence/**/*.log text eol=lf
+evidence/**/*.csv text eol=lf
+evidence/**/*.json text eol=lf
+evidence/**/*.md text eol=lf
+evidence/**/*.txt text eol=lf
+evidence/**/*.html text eol=lf
+evidence/**/*.sha256 text eol=lf
+# END FR3 EVIDENCE TEXT NORMALIZATION

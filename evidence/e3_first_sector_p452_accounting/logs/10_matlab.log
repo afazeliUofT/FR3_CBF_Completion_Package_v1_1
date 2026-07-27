@@ -1,0 +1,23 @@
+MATLAB_EXE: /mnt/c/Program Files/MATLAB/R2026a/bin/matlab.exe
+P452_WINDOWS_ROOT: /mnt/c/Users/alifa/FR3_P452_Validation_v18_R2026a
+MATLAB COPY PROFILE: MATCH
+MATLAB COPY PARAMETERS: MATCH
+MATLAB folder (Windows): C:/Users/alifa/FR3_P452_Validation_v18_R2026a/matlab
+Work folder (Windows): C:/Users/alifa/FR3_P452_Validation_v18_R2026a/e3_first_sector_p452
+
+=== STEP 10: MATLAB R2026a / validated P.452 v18.0 ===
+FIRST-SECTOR P.452 MATLAB RUN: PASS
+Sector: E3_SITE_18_SEC_1
+Profile points: 78
+Distance: 2.291287847 km
+Rows: 42
+Time percentages: 50 20 10 1 0.1 0.01 0.005
+Coast scenarios (km): 5 50 200
+Polarizations: H V
+Basic loss range: 115.733600600 to 117.863252559 dB
+Terminal horizon gains inside P.452: 0 dBi / 0 dBi
+Separate P.2108 baseline loss: 0 dB
+COPIED MATLAB OUTPUT: p452_basic_loss.csv
+COPIED MATLAB OUTPUT: p452_coupling_export.csv
+COPIED MATLAB OUTPUT: P452_FIRST_SECTOR_MATLAB_AUDIT.json
+WRAPPER 10 MATLAB: PASS

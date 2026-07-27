@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>E3 first-sector review</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 28px; max-width: 1300px; }
+img { max-width: 100%; border: 1px solid #bbb; margin: 10px 0; }
+table { border-collapse: collapse; font-size: 12px; }
+th, td { border: 1px solid #bbb; padding: 4px; }
+pre { background: #f4f4f4; padding: 12px; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h1>E3 Site-18 first-sector P.452 accounting review</h1>
+<pre>E3 FIRST-SECTOR P.452 DROP-IN SUMMARY
+Status: PASS
+Sector: E3_SITE_18_SEC_1
+P.452 rows: 42
+P.452 basic-loss range: 115.733600600 to 117.863252559 dB
+Gain-accounting rows: 49308
+Protected samples: 587
+MATLAB release: 2026a
+P.452 commit: 86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe
+Minimum ES off-axis: 8.035691596 deg
+Maximum nominal aggregate ES gain: 6.374418487 dBi
+Highest conditional accounting value: -69.093555112 dBW/10 MHz
+Highest-value BS case: COHERENT_ARRAY_UPPER_ENVELOPE
+Highest-value ES pattern: single_entry_section_1_1
+Highest-value P.452 p: 0.005 %
+Highest-value polarization: H
+Claim boundary: ONE_SECTOR_ACCOUNTING_AUDIT_NOT_PAPER_RESULT
+Next gate: HUMAN_REVIEW_OF_ONE_SECTOR_ACCOUNTING_AUDIT
+
+Open items:
+ - Final composite WMMSE beam gain is not available.
+ - Exact coast distances are not frozen; sensitivity scenarios are retained.
+ - Propagation-time and operational-exceedance composition is not frozen.
+ - Physical polarization/XPD model is not frozen.
+</pre>
+<h2>BS gain cases</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>gain_case</th>
+      <th>bs_gain_dbi</th>
+      <th>status</th>
+      <th>target_azimuth_deg</th>
+      <th>target_elevation_deg</th>
+      <th>sector_azimuth_deg</th>
+      <th>sector_boresight_elevation_deg</th>
+      <th>horizontal_offset_deg</th>
+      <th>vertical_offset_deg</th>
+      <th>horizontal_attenuation_db</th>
+      <th>vertical_attenuation_db</th>
+      <th>array_element_count</th>
+      <th>coherent_array_gain_upper_db</th>
+      <th>peak_element_gain_dbi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ZERO_DBI_PROPAGATION_REFERENCE</td>
+      <td>0</td>
+      <td>pure propagation accounting reference</td>
+      <td>10.8894</td>
+      <td>2.9997</td>
+      <td>0</td>
+      <td>-10</td>
+      <td>10.8894</td>
+      <td>12.9997</td>
+      <td>-0.336795</td>
+      <td>-0.479978</td>
+      <td>256</td>
+      <td>24.0824</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>ELEMENT_PATTERN_REFERENCE</td>
+      <td>7.18323</td>
+      <td>Reference accounting cases only; not the final composite WMMSE beam gain.</td>
+      <td>10.8894</td>
+      <td>2.9997</td>
+      <td>0</td>
+      <td>-10</td>
+      <td>10.8894</td>
+      <td>12.9997</td>
+      <td>-0.336795</td>
+      <td>-0.479978</td>
+      <td>256</td>
+      <td>24.0824</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>31.2656</td>
+      <td>conservative total-power coherent upper envelope; not final composite beam gain</td>
+      <td>10.8894</td>
+      <td>2.9997</td>
+      <td>0</td>
+      <td>-10</td>
+      <td>10.8894</td>
+      <td>12.9997</td>
+      <td>-0.336795</td>
+      <td>-0.479978</td>
+      <td>256</td>
+      <td>24.0824</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Highest conditional interference scenarios</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>coast_distance_km</th>
+      <th>p452_time_percentage</th>
+      <th>polarization_label</th>
+      <th>bs_gain_case</th>
+      <th>earth_station_pattern_type</th>
+      <th>max_interference_dbw_per_10mhz</th>
+      <th>min_interference_dbw_per_10mhz</th>
+      <th>mean_interference_dbw_per_10mhz</th>
+      <th>long_exceedance_fraction</th>
+      <th>short_exceedance_fraction</th>
+      <th>minimum_off_axis_deg</th>
+      <th>maximum_earth_station_gain_dbi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5</td>
+      <td>0.005</td>
+      <td>H</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-69.0936</td>
+      <td>-88.468</td>
+      <td>-83.9702</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0.005</td>
+      <td>V</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-69.0936</td>
+      <td>-88.468</td>
+      <td>-83.9702</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0.01</td>
+      <td>H</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-69.2538</td>
+      <td>-88.6282</td>
+      <td>-84.1305</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0.01</td>
+      <td>V</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-69.2538</td>
+      <td>-88.6282</td>
+      <td>-84.1305</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0.1</td>
+      <td>V</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-69.7862</td>
+      <td>-89.1607</td>
+      <td>-84.6629</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0.1</td>
+      <td>H</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-69.7862</td>
+      <td>-89.1607</td>
+      <td>-84.6629</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1</td>
+      <td>H</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-70.3187</td>
+      <td>-89.6931</td>
+      <td>-85.1953</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1</td>
+      <td>V</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-70.3187</td>
+      <td>-89.6931</td>
+      <td>-85.1953</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>10</td>
+      <td>V</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-70.8453</td>
+      <td>-90.2198</td>
+      <td>-85.722</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>10</td>
+      <td>H</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-70.8453</td>
+      <td>-90.2198</td>
+      <td>-85.722</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>20</td>
+      <td>V</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-70.9751</td>
+      <td>-90.3496</td>
+      <td>-85.8518</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>20</td>
+      <td>H</td>
+      <td>COHERENT_ARRAY_UPPER_ENVELOPE</td>
+      <td>single_entry_section_1_1</td>
+      <td>-70.9751</td>
+      <td>-90.3496</td>
+      <td>-85.8518</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.03569</td>
+      <td>9.37442</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Figures</h2>
+<h3>P.452 loss</h3><img src="p452_basic_loss_vs_time_percentage.png">
+<h3>Earth-station geometry/gain</h3><img src="earth_station_off_axis_and_gain.png">
+<h3>Conditional interference</h3><img src="conditional_interference_p20_H.png">
+<h3>Peak accounting terms</h3><img src="peak_accounting_components.png">
+<h2>Files requiring review</h2>
+<pre>data/real/e3_first_sector_p452/FIRST_SECTOR_TERRAIN_DECISION.json
+data/real/e3_first_sector_p452/p452_profile.csv
+data/real/e3_first_sector_p452/p452_parameters.json
+data/real/e3_first_sector_p452/FIRST_SECTOR_P452_PREP_AUDIT.json
+data/real/e3_first_sector_p452/p452_basic_loss.csv
+data/real/e3_first_sector_p452/p452_coupling_export.csv
+data/real/e3_first_sector_p452/P452_FIRST_SECTOR_MATLAB_AUDIT.json
+data/real/e3_first_sector_p452/bs_gain_accounting.csv
+data/real/e3_first_sector_p452/earth_station_gain_timeseries.csv
+data/real/e3_first_sector_p452/gain_accounting_timeseries.csv.gz
+data/real/e3_first_sector_p452/conditional_threshold_summary.csv
+data/real/e3_first_sector_p452/p452_coast_distance_sensitivity.csv
+data/real/e3_first_sector_p452/peak_accounting_components.csv
+data/real/e3_first_sector_p452/FIRST_SECTOR_P452_AUDIT.json
+data/real/e3_first_sector_p452/FIRST_SECTOR_P452_AUDIT.md
+data/real/e3_first_sector_p452/FIRST_SECTOR_P452_VALIDATION.json
+data/real/e3_first_sector_p452/FIRST_SECTOR_P452_VALIDATION.md
+results/e3_first_sector_p452_review/p452_basic_loss_vs_time_percentage.png
+results/e3_first_sector_p452_review/earth_station_off_axis_and_gain.png
+results/e3_first_sector_p452_review/conditional_interference_p20_H.png
+results/e3_first_sector_p452_review/peak_accounting_components.png
+data/real/e3_first_sector_audit/terrain_review/first_sector_profile_review.pdf</pre>
+</body>
+</html>

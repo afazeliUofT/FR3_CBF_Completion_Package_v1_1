@@ -1,0 +1,47 @@
+RUN_UTC=2026-07-26T23:43:15Z
+REPOSITORY_ROOT=/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1
+GIT_BRANCH=e3-first-sector-p452
+GIT_COMMIT=0582e94c9edc41aebb0c85cf05506518756c9bb7
+PYTHON=Python 3.12.3
+PYTHON_EXECUTABLE=/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/.venv/bin/python3
+VIRTUAL_ENV=/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/.venv
+MATLAB_EXE=/mnt/c/Program Files/MATLAB/R2026a/bin/matlab.exe
+P452_WINDOWS_ROOT=/mnt/c/Users/alifa/FR3_P452_Validation_v18_R2026a
+
+## e3-first-sector-p452...origin/e3-first-sector-p452
+ M scripts/23_2_prepare_e3_pattern_layout.py
+ M scripts/24_0_select_e3_first_sector.py
+?? E3_FIRST_SECTOR_P452_DROPIN_MANIFEST.sha256
+?? E3_FIRST_SECTOR_P452_DROPIN_TEST_REPORT.txt
+?? E3_PROTECTED_WINDOW_CORRECTION_MANIFEST.sha256
+?? E3_PROTECTED_WINDOW_CORRECTION_TEST_REPORT.txt
+?? E3_PROTECTED_WINDOW_RECOVERY_MANIFEST.sha256
+?? E3_PROTECTED_WINDOW_RECOVERY_TEST_REPORT.txt
+?? E3_SITE18_TERRAIN_REVIEW_2026-07-26.zip
+?? E3_SITE18_TERRAIN_REVIEW_2026-07-26.zip.sha256
+?? FR3_CBF_v1_1_E3_First_Sector_P452_Accounting_DropIn_v1.zip
+?? FR3_CBF_v1_1_E3_Protected_Window_Correction_v1.zip
+?? FR3_CBF_v1_1_E3_Protected_Window_Recovery_Hotfix_v2.zip
+?? README_E3_FIRST_SECTOR_P452_DROPIN.md
+?? README_E3_PROTECTED_WINDOW_RECOVERY.md
+?? README_E3_PROTECTED_WINDOW_SELECTION_CORRECTION.md
+?? RUN_E3_FIRST_SECTOR_P452_DROPIN.sh
+?? RUN_E3_PROTECTED_WINDOW_SELECTION_CORRECTION.sh
+?? backups/e3_protected_window_source_patch_20260726_221721/
+?? backups/e3_protected_window_v1_wrapper_failure_20260726_223849/
+?? config/e3_first_sector_p452.yaml
+?? config/e3_protected_window_correction.yaml
+?? matlab/run_e3_first_sector_p452.m
+?? scripts/23_2_apply_protected_window_patch.py
+?? scripts/23_3_rebuild_e3_protected_off_axis.py
+?? scripts/23_4_recover_protected_window_history.py
+?? scripts/24_0_validate_e3_protected_selection.py
+?? scripts/24_1_prepare_e3_first_sector_p452.py
+?? scripts/24_2_preflight_e3_first_sector_p452.py
+?? scripts/24_3_build_e3_first_sector_gain_accounting.py
+?? scripts/24_4_validate_e3_first_sector_p452.py
+?? scripts/24_5_package_e3_first_sector_review.py
+?? tests/test_e3_first_sector_p452_dropin.py
+?? tests/test_e3_protected_window_correction.py
+?? tests/test_e3_protected_window_recovery.py
+?? wrappers/

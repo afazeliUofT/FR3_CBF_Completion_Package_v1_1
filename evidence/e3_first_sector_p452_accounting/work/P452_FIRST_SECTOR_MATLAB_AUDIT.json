@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-07-26T23:43:36.214Z",
+  "status": "PASS",
+  "claim_boundary": "ONE_SECTOR_ACCOUNTING_AUDIT_NOT_PAPER_RESULT",
+  "matlab_release": "2026a",
+  "matlab_version": "26.1.0.3312084 (R2026a) Update 4",
+  "p452_reference_commit": "86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe",
+  "sector_id": "E3_SITE_18_SEC_1",
+  "profile_point_count": 78,
+  "distance_km": 2.2912878474775979,
+  "time_percentages": [
+    50,
+    20,
+    10,
+    1,
+    0.1,
+    0.01,
+    0.005
+  ],
+  "polarization_codes": [
+    1,
+    2
+  ],
+  "coast_distance_scenarios_km": [
+    5,
+    50,
+    200
+  ],
+  "row_count": 42,
+  "minimum_basic_loss_db": 115.73360060041045,
+  "maximum_basic_loss_db": 117.86325255934095,
+  "zero_terminal_horizon_gains_inside_p452": true,
+  "clutter_mode": "g_equals_h_no_separate_p2108",
+  "separate_p2108_loss_db": 0
+}

@@ -1,0 +1,28 @@
+{
+  "boresight_to_station_angle_deg": 16.929721748331094,
+  "claim_boundary": "Corrected protected-window pipeline-audit sector only. It is not yet called the globally worst-coupled sector because P.452 loss and the final composite BS beam gain have not yet been evaluated.",
+  "distance_m": 2291.287847477598,
+  "input_sha256": {
+    "data/real/E3_PROTECTED_WINDOW_CORRECTION.json": "5cea37610a5743ac6ea137cb3a62fc557c23877f4904e3cc22afea7d17ed47be",
+    "data/real/bs_sectors.csv": "ce004abb263864812e59b8cc8c76f9c0d7881f61732d19cad63281ccd7dbb1a6",
+    "data/real/bs_sites.csv": "9cd34443d1f53eef1b7efbb6eaa19799c039d9b55245fe5ae1d95d4de5e5f2bb",
+    "data/real/e3_pattern_layout_review/selected_pass_off_axis_summary_protected.csv": "ef4c613593ce1b33432a3b1b8c8ce2ec0ddb72154d0beda22fa65702495a474b",
+    "data/real/earth_station.csv": "bb7b21a8ee9761a35bbbae7dea933d6cca92acde116360064113ac2194298df1"
+  },
+  "maximum_reference_earth_station_gain_dbi": 6.374418487486793,
+  "minimum_earth_station_off_axis_deg": 8.035691596201232,
+  "minimum_elevation_deg": 5.0,
+  "protected_window_end_utc": "2026-07-26T23:13:20+00:00",
+  "protected_window_sample_count": 587,
+  "protected_window_start_utc": "2026-07-26T23:03:34+00:00",
+  "sector_azimuth_deg": 0.0,
+  "sector_boresight_elevation_deg": -10.0,
+  "sector_id": "E3_SITE_18_SEC_1",
+  "selection_rule": "Within samples where earth-station elevation is at or above the declared minimum elevation, select the site with the minimum earth-station off-axis angle; tie-break by shorter distance and site_id. At that site select the sector with minimum 3-D boresight-to-station angle.",
+  "selection_window": "earth_station_elevation_ge_minimum_elevation",
+  "site_id": "E3_SITE_18",
+  "site_to_station_azimuth_deg": 10.889433435686737,
+  "site_to_station_elevation_deg": 2.9997029748142587,
+  "station_id": "NRCAN_GATINEAU_REFERENCE",
+  "supersedes_sector_id": "E3_SITE_11_SEC_1"
+}

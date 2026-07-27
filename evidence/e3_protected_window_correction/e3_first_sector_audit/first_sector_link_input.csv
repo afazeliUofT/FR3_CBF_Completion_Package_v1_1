@@ -1,0 +1,2 @@
+link_id,tx_lat_deg,tx_lon_deg,rx_lat_deg,rx_lon_deg,tx_antenna_alt_m_asl,rx_antenna_alt_m_asl,mean_terrain_elevation_m_asl,provenance_note
+E3_SITE_18_SEC_1,45.56501567850536,-75.81431660498814,45.58526,-75.80877,170.80661010742188,290.8760070800781,,"Corrected protected-window E3 first-sector P.452 pipeline audit; uses the frozen station, protected pass, pattern, and layout; not a paper result."

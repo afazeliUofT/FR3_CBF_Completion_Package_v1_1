@@ -1,0 +1,29 @@
+schema_version: 2
+purpose: >-
+  Correct E3 off-axis/sector selection to use only the protected tracking
+  window, while preserving the superseded unprotected-window evidence in a
+  stable history location.
+inputs:
+  station_csv: data/real/earth_station.csv
+  sites_csv: data/real/bs_sites.csv
+  sectors_csv: data/real/bs_sectors.csv
+  selected_track_csv: data/real/e3_reference_case/e3_track_selected_pass_1s.csv
+  pattern_parameters_csv: data/real/e3_pattern_layout_review/earth_station_pattern_parameters.csv
+  old_off_axis_summary_csv: data/real/e3_selection_history/selected_pass_off_axis_summary_unprotected.csv
+  old_selected_sector_json: data/real/e3_selection_history/selected_sector_unprotected_window.json
+  layout_decision_json: data/real/E3_PATTERN_LAYOUT_DECISION.json
+outputs:
+  protected_summary_csv: data/real/e3_pattern_layout_review/selected_pass_off_axis_summary_protected.csv
+  correction_json: data/real/E3_PROTECTED_WINDOW_CORRECTION.json
+  correction_md: data/real/E3_PROTECTED_WINDOW_CORRECTION.md
+pattern:
+  nominal_aperture_efficiency: 0.65
+  nominal_pattern_type: multiple_entry_section_1_2
+expected:
+  site_count: 19
+  sector_count: 57
+  sectors_per_site: 3
+  superseded_site_id: E3_SITE_11
+  superseded_sector_id: E3_SITE_11_SEC_1
+  corrected_selected_site_id: E3_SITE_18
+  corrected_selected_sector_id: E3_SITE_18_SEC_1

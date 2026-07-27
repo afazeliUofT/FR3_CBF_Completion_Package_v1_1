@@ -1,0 +1,37 @@
+E3 protected-window recovery hotfix test report
+
+Static checks:
+- All Python sources parsed successfully.
+- Shell wrapper passed `bash -n`.
+- No .pyc, .pyo, __pycache__, or pytest cache artifacts are included.
+
+Focused test result:
+- 8 passed.
+
+Real-bundle integration test:
+- Input: E3_FIRST_SECTOR_REVIEW_BUNDLE_2026-07-26.zip
+- Simulated state: historical first-sector directory already archived and the
+  active first-sector directory recreated empty, matching the reported v1
+  wrapper failure.
+- Historical selection recovery: PASS.
+- Historical off-axis summary recovery: PASS.
+- Protected-window summary rebuild: PASS.
+- Detailed samples: 821.
+- Protected samples: 587.
+- Protected interval: 2026-07-26T23:03:34+00:00 to
+  2026-07-26T23:13:20+00:00.
+- Corrected site: E3_SITE_18.
+- Corrected sector: E3_SITE_18_SEC_1.
+- Minimum protected off-axis: 8.035691596 degrees.
+- Maximum protected SA.509 reference gain: 6.374418487 dBi.
+- Corrected site-to-station distance: 2291.287847 m.
+- Independent selection validator: PASS.
+- Final wrapper record check: PASS.
+- Cache cleanup: PASS.
+
+Idempotency test:
+- The complete recovery wrapper was run a second time.
+- Existing source patch was detected as already applied.
+- Stable historical inputs were reused.
+- Corrected selection was regenerated and independently revalidated.
+- Result: PASS.

@@ -1,0 +1,111 @@
+schema_version: 1
+purpose: >-
+  One-sector P.452 basic-loss and explicit gain/power accounting audit for the
+  corrected protected-window E3 sector. This is a pipeline/accounting audit,
+  not a paper result and not a compliance determination.
+claim_boundary: ONE_SECTOR_ACCOUNTING_AUDIT_NOT_PAPER_RESULT
+
+inputs:
+  selected_sector_json: data/real/e3_first_sector_audit/selected_sector.json
+  terrain_profile_csv_gz: data/real/e3_first_sector_audit/terrain_review/terrain_profile_samples.csv.gz
+  terrain_summary_csv: data/real/e3_first_sector_audit/terrain_review/terrain_summary.csv
+  terrain_audit_json: data/real/e3_first_sector_audit/terrain_review/TERRAIN_AUDIT.json
+  terrain_review_pdf: data/real/e3_first_sector_audit/terrain_review/first_sector_profile_review.pdf
+  first_sector_link_csv: data/real/e3_first_sector_audit/first_sector_link_with_terrain.csv
+  protected_window_correction_json: data/real/E3_PROTECTED_WINDOW_CORRECTION.json
+  protected_window_selection_audit_json: data/real/E3_PROTECTED_WINDOW_SELECTION_AUDIT.json
+  earth_station_csv: data/real/earth_station.csv
+  bs_sites_csv: data/real/bs_sites.csv
+  bs_sectors_csv: data/real/bs_sectors.csv
+  pattern_parameters_csv: data/real/e3_pattern_layout_review/earth_station_pattern_parameters.csv
+  pattern_samples_csv: data/real/e3_pattern_layout_review/earth_station_pattern_samples.csv
+  selected_pass_track_csv: data/real/e3_reference_case/e3_track_selected_pass_1s.csv
+  protected_off_axis_summary_csv: data/real/e3_pattern_layout_review/selected_pass_off_axis_summary_protected.csv
+  p452_reference_commit_file: data/external/p452/reference_v18_commit.txt
+  p452_reference_provenance_file: results/p452_reference_validation/P452_REFERENCE_PROVENANCE_R2026a.txt
+
+outputs:
+  work_dir: data/real/e3_first_sector_p452
+  review_dir: results/e3_first_sector_p452_review
+  log_dir: logs/e3_first_sector_p452
+
+expected:
+  sector_id: E3_SITE_18_SEC_1
+  site_id: E3_SITE_18
+  station_id: NRCAN_GATINEAU_REFERENCE
+  superseded_sector_id: E3_SITE_11_SEC_1
+  protected_window_sample_count: 587
+  minimum_elevation_deg: 5.0
+  profile_sample_count: 78
+  distance_km_min: 2.0
+  distance_km_max: 2.6
+  tx_height_agl_m: 25.0
+  rx_height_agl_m: 20.0
+  p452_reference_commit: 86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe
+  matlab_release: 2026a
+
+propagation:
+  frequency_ghz: 8.15
+  time_percentages: [50.0, 20.0, 10.0, 1.0, 0.1, 0.01, 0.005]
+  polarization_codes: [1, 2]
+  polarization_labels: [H, V]
+  climatic_zone_code: 2
+  clutter_mode: g_equals_h_no_separate_p2108
+  terminal_horizon_gain_tx_dbi: 0.0
+  terminal_horizon_gain_rx_dbi: 0.0
+  coast_distance_scenarios_km: [5.0, 50.0, 200.0]
+  nominal_coast_distance_km: 5.0
+  coast_distance_status: >-
+    Declared inland sensitivity grid. The 5 km case is a conservative lower
+    bound, not an asserted exact coast distance. No final coast distance is
+    selected by this audit.
+  pressure_hpa: 1013.25
+  temperature_c: 15.0
+  coordinate_convention: longitude_degrees_east_signed_-180_to_180
+  p2108_separate_loss_db: 0.0
+
+power_accounting:
+  reference_bandwidth_mhz: 100.0
+  protected_bandwidth_mhz: 10.0
+  uniform_psd_assumption: true
+  spectral_overlap_fraction: 1.0
+  activity_factor_source: bs_sectors_csv
+  polarization_mismatch_loss_db: 0.0
+  polarization_status: >-
+    Zero-dB mismatch is a conservative co-polar reference. H and V P.452
+    branches remain separate. No branch powers are aggregated.
+
+bs_gain_reference:
+  model_status: >-
+    Reference accounting cases only; not the final composite WMMSE beam gain.
+  element_pattern:
+    peak_element_gain_dbi_source: bs_sectors_csv
+    horizontal_3db_beamwidth_deg: 65.0
+    vertical_3db_beamwidth_deg: 65.0
+    front_back_limit_db: 30.0
+    vertical_sidelobe_limit_db: 30.0
+    source_note: >-
+      Declared 3GPP-like sharing-study reference element pattern. The final
+      paper must replace/re-verify this with the exact composite beam gain.
+  gain_cases:
+    - ZERO_DBI_PROPAGATION_REFERENCE
+    - ELEMENT_PATTERN_REFERENCE
+    - COHERENT_ARRAY_UPPER_ENVELOPE
+
+earth_station_gain_reference:
+  nominal_efficiency: 0.65
+  nominal_pattern_type: multiple_entry_section_1_2
+  sensitivity_pattern_type: single_entry_section_1_1
+  status: >-
+    ITU-R SA.509-3 reference large-dish patterns used in the absence of a
+    measured station pattern; not asserted as an EESS-specific mandate.
+
+protection:
+  long_threshold_dbw_per_10mhz: -150.0
+  long_threshold_allowed_fraction: 0.20
+  short_threshold_dbw_per_10mhz: -133.0
+  short_threshold_policy_for_first_paper: always_on_cap
+  time_accounting_status: >-
+    NOT_FROZEN. P.452 propagation time percentage, SA.1027 criterion time
+    percentage, and controller operational token budget are reported
+    separately. This audit does not compose them into one compliance claim.
