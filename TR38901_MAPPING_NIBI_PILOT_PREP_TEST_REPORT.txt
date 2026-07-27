@@ -1,0 +1,23 @@
+TR 38.901 mapping and Nibi DLP-RZF pilot preparation v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Package manifest: PASS
+- No cache/bytecode artifacts included
+
+Focused tests
+- 57-sector / 228-user / 128-port pilot dimensions
+- Nine frequency weights sum to one
+- Protected-frequency index frozen
+- Dual-polarization proportional split-budget identity
+- Nibi pilot and validation sources parse
+
+Scientific boundary
+- Used-subset V19.4.0 mapping is sufficient for a non-paper pilot only
+- Exact Release-19 7-24 GHz delta certification remains open
+- One seed, finite network, 8x8 dual-polarized array, nine frequency samples
+- Instantaneous proportional budgets; dynamic controller comparison is later
+- Sionna 2.0.1 PanelArray live signature/construction probe
+- CPU port audit and Nibi GPU source use identical element-spacing keywords
+- Regression test rejects PanelArray vertical_spacing/horizontal_spacing

@@ -1,0 +1,28 @@
+{
+  "claim_boundary": "ONE_SEED_GPU_PILOT_PACKAGE_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T19:22:17.766866+00:00",
+  "dimensions": {
+    "ports_per_bs": 128,
+    "sectors": 57,
+    "sites": 19,
+    "users": 228,
+    "users_per_sector": 4
+  },
+  "input_sha256": {
+    "input/SIONNA_8X8_DUAL_PORT_ORDER.csv": "f9e42eb1002068b7172f2cd873f5ad67930af2d9b2481328094c022d1ef69a02",
+    "input/SIONNA_DUAL_POL_PORT_ORDER_AUDIT.json": "ca9a1b7cd63987a4a1952a6b8348538dd3ad05136e8a826aab3d521b0fd25062",
+    "input/TR38901_USED_SUBSET_MAPPING_DECISION.json": "2aa67ca92e96077a242d15b1c95f07eb327a4aedb273507ad20200b6bb51f528",
+    "input/TR38901_V19_4_USED_SUBSET_MAPPING.csv": "4a01daf0084c03b6e6d648dd9e80af3be7f3f48ac6ebc298be7d8db388c80c3c",
+    "input/bs_sectors.csv": "ce004abb263864812e59b8cc8c76f9c0d7881f61732d19cad63281ccd7dbb1a6",
+    "input/bs_sites.csv": "9cd34443d1f53eef1b7efbb6eaa19799c039d9b55245fe5ae1d95d4de5e5f2bb",
+    "input/earth_station_site_gain_timeseries.csv.gz": "e507e1516813c75bbf07047f1632b35802d5b9f60dcec655cb847f7b8ab9d950",
+    "input/sector_static_reference_accounting.csv": "6d1277d66c5e178267210909779fa211e3698dcfcef2631a9ee55254bcebd7e1"
+  },
+  "manifest_entries": 16,
+  "next_gate": "INDEPENDENT_REVIEW_THEN_RUN_NIBI_ONE_SEED_GPU_PILOT",
+  "source_commit_required": "16dfe8e267bc7ea8005da8f8cc03d4143519d7c8",
+  "status": "READY_FOR_NIBI_ONE_SEED_GPU_PILOT_REVIEW",
+  "zip_bytes": 731325,
+  "zip_path": "results/tr38901_nibi_dlp_pilot_prep/upload/FR3_DLP_RZF_NIBI_ONE_SEED_GPU_PILOT_v1.zip",
+  "zip_sha256": "a6ad7c3e202b57ff002b330b1d2c4e0f5b58a90b10fb7e64d6ae86c7069bef69"
+}

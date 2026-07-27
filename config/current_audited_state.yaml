@@ -1,14 +1,24 @@
-schema_version: 5
+schema_version: 6
 as_of_date: '2026-07-27'
 main_method: DLP_RZF
 sionna:
   version: 2.0.1
   torch_base_version: 2.9.1
-  qualification: cpu_api_passed
-  delay_audit: PASS_ENERGY_WEIGHTED_DELAY_SANITY
-  topology_readiness: PASS_TO_GPU_4USER_PILOT_WITH_STANDARDS_MAPPING_OPEN
+  cpu_qualification: passed
+  custom_57_sector_adapter: passed_nonpaper
+  dual_pol_port_order: passed
 standards:
   reference: ETSI_TR_138_901_V19_4_0
-  source_sha256: b0cbf2b55c91c6c10a2086f642194ebf26cdd27f48b88ee3f5bd40ad184f3701
-  exact_mapping_complete: false
-next_gate: COMPLETE_TR38901_V19_4_MAPPING_AND_RUN_GPU_4USER_DLP_RZF_PILOT
+  used_subset_mapping: USED_SUBSET_READY_FOR_NONPAPER_GPU_PILOT_WITH_RELEASE19_GAPS
+  full_v19_4_certification: false
+  release19_delta_sensitivities: open
+nibi_gpu_pilot:
+  status: prepared_not_executed
+  sites: 19
+  sectors: 57
+  users_per_sector: 4
+  users: 228
+  ports_per_bs: 128
+  frequency_samples: 9
+  bundle_sha256: a6ad7c3e202b57ff002b330b1d2c4e0f5b58a90b10fb7e64d6ae86c7069bef69
+next_gate: INDEPENDENT_REVIEW_THEN_RUN_NIBI_ONE_SEED_GPU_PILOT

@@ -6,23 +6,30 @@
 
 ## Status in one sentence
 
-The validated propagation/E3 foundation, distributed DLP-RZF architecture,
-and clean Sionna 2.0.1 CPU API qualification are complete as non-paper
-evidence. The current hardening stage records `PASS_TO_GPU_4USER_PILOT_WITH_STANDARDS_MAPPING_OPEN`. The exact ETSI
-TR 138 901 V19.4.0 clause/parameter mapping and the four-user-per-sector GPU
-DLP-RZF pilot remain open.
+The propagation/E3 foundation, distributed DLP-RZF architecture, Sionna 2.0.1
+CPU qualification, custom 57-sector adapter, used-subset V19.4.0 mapping, and
+exact dual-polarized Sionna port-order audit are complete as non-paper evidence.
+A self-contained Nibi H100 bundle for the one-seed 57-sector/four-user DLP-RZF
+pilot is prepared but has not yet been executed or independently accepted.
 
 ## Current gate
 
-`COMPLETE_TR38901_V19_4_MAPPING_AND_RUN_GPU_4USER_DLP_RZF_PILOT`
+`INDEPENDENT_REVIEW_THEN_RUN_NIBI_ONE_SEED_GPU_PILOT`
+
+## Completed in the preparation stage
+
+- Clause-level used-subset ETSI TR 138 901 V19.4.0 mapping for a non-paper pilot.
+- Explicit Release-19 delta gaps retained; no full V19.4 certification claim.
+- 8x8 dual-cross Sionna port positions and polarization index sets audited.
+- Far-field justification for the reduced pilot array.
+- Reviewable Nibi H100 source bundle with 57 sectors, four users per sector,
+  nine frequency samples, local RZF, all inter-cell interference, and protected-
+  tone dual-polarization DLP projection.
 
 ## Immediate requirements
 
-1. Review the energy-weighted delay audit rather than the misleading raw
-   maximum delay alone.
-2. Complete the V19.4.0 mapping checklist.
-3. Freeze Sionna antenna-port ordering for the DLP incumbent steering vector.
-4. Run four users per sector with inter-cell interference on GPU.
-5. Reconstruct rates, powers, and leakage independently.
-6. Keep the finite-network/no-wraparound pilot as non-paper evidence and add
-   an edge/wraparound sensitivity for the final campaign.
+1. Independently review the generated GitHub source and bundle manifest.
+2. Run the one-seed Nibi H100 pilot only after that review.
+3. Validate power, SINR, rate, leakage, port order, runtime, and GPU memory.
+4. Keep the result explicitly non-paper evidence.
+5. Complete Release-19 delta patches/sensitivities before the final campaign.

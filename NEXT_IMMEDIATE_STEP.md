@@ -2,19 +2,20 @@
 
 ## Gate
 
-`COMPLETE_TR38901_V19_4_MAPPING_AND_RUN_GPU_4USER_DLP_RZF_PILOT`
+Independent review, then Nibi execution of the one-seed 57-sector/four-user
+DLP-RZF GPU pilot.
 
-## Completed in the readiness stage
+## Review before execution
 
-- Energy-weighted Sionna delay/source audit.
-- Official ETSI TR 138 901 V19.4.0 source record and SHA-256.
-- Release-19 mapping checklist scaffold.
-- Deterministic custom 19-site/57-sector geometry adapter.
-- One-user-per-sector finite-network inter-cell rate adapter audit, when the
-  delay gate passes.
+- `evidence/tr38901_nibi_dlp_pilot_prep/TR38901_USED_SUBSET_MAPPING_DECISION.json`
+- `evidence/tr38901_nibi_dlp_pilot_prep/TR38901_V19_4_USED_SUBSET_MAPPING.csv`
+- `evidence/tr38901_nibi_dlp_pilot_prep/SIONNA_DUAL_POL_PORT_ORDER_AUDIT.json`
+- `nibi/dlp_rzf_pilot_v1/run_gpu_pilot.py`
+- `nibi/dlp_rzf_pilot_v1/validate_gpu_pilot.py`
+- `evidence/tr38901_nibi_dlp_pilot_prep/NIBI_BUNDLE_METADATA.json`
 
-## Stop condition before the paper campaign
+## Pilot claim boundary
 
-Do not launch the final campaign until the exact V19.4.0 mapping, Sionna port
-ordering, four-user GPU pilot, DLP leakage verification, and independent
-power/SINR/rate reconstruction pass.
+One seed, finite network, 8x8 dual-polarized array, nine frequency samples,
+and instantaneous proportional budgets. It is a GPU/accounting gate, not the
+dynamic-controller paper experiment.

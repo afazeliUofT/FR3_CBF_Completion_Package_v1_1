@@ -1,0 +1,31 @@
+{
+  "claim_boundary": "USED_SUBSET_MAPPING_FOR_NONPAPER_PILOT_NOT_FULL_V19_4_CERTIFICATION",
+  "created_utc": "2026-07-27T19:02:16.214621+00:00",
+  "etsi_source": {
+    "bytes": 2788641,
+    "document": "ETSI TR 138 901 V19.4.0 Release 19",
+    "sha256": "b0cbf2b55c91c6c10a2086f642194ebf26cdd27f48b88ee3f5bd40ad184f3701"
+  },
+  "full_v19_4_certification": false,
+  "mandatory_before_paper": [
+    "Review/patch the exact 7-24 GHz Release-19 pathloss, O2I, and LSP deltas used by the selected scenario.",
+    "Run larger-array and frequency-grid sensitivity.",
+    "Add finite-network edge/wraparound sensitivity.",
+    "Run mobility/spatial-consistency, uncertainty, multi-seed, and multi-pass campaigns."
+  ],
+  "next_gate": "SIONNA_DUAL_POLARIZATION_PORT_ORDER_AUDIT",
+  "paper_claim_allowed": false,
+  "pilot_allowed": true,
+  "pilot_array": {
+    "aperture_diagonal_m": 0.182073246626096,
+    "cols": 8,
+    "fraunhofer_distance_m": 1.8024331830674842,
+    "minimum_uma_distance_m": 35.0,
+    "polarization": "dual",
+    "ports": 128,
+    "rows": 8,
+    "wavelength_m": 0.03678435067484662
+  },
+  "status": "USED_SUBSET_READY_FOR_NONPAPER_GPU_PILOT_WITH_RELEASE19_GAPS",
+  "used_subset_mapping_csv": "data/real/tr38901_nibi_dlp_pilot_prep/TR38901_V19_4_USED_SUBSET_MAPPING.csv"
+}
