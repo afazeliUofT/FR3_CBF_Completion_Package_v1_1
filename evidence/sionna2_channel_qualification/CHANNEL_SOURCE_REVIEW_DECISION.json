@@ -1,0 +1,14 @@
+{
+  "binary_candidate_count": 0,
+  "claim_boundary": "SOURCE_REVIEW_ONLY_NOT_EXECUTION_EVIDENCE",
+  "created_utc": "2026-07-27T05:44:22.788381+00:00",
+  "documentation_or_string_mentions_count": 11,
+  "executable_channel_candidate_count": 0,
+  "executable_channel_candidates": [],
+  "finding": "The reviewed source root contains the current completion package, documentation, regulatory files, and reference runners, but no runnable Sionna UMa/UMi channel generator or archived channel-result bundle.",
+  "inventory_file_count": 75,
+  "next_gate": "SIONNA_2_0_1_ENVIRONMENT_AND_API_QUALIFICATION",
+  "selected_next_path": "QUALIFY_CLEAN_SIONNA_2_0_1_IMPLEMENTATION",
+  "snapshot_root": "evidence/fr3_channel_baseline_snapshot",
+  "status": "NO_REUSABLE_EXECUTABLE_CHANNEL_BASELINE_FOUND"
+}

@@ -1,0 +1,24 @@
+Clean Sionna 2.0.1 channel qualification drop-in v1
+
+Static verification
+- Python source syntax: PASS
+- Bash wrapper syntax: PASS
+- Package SHA-256 manifest: PASS
+- No frozen bytecode/cache artifacts: PASS
+
+Pinned top-level environment
+- torch==2.9.1
+- sionna-no-rt==2.0.1
+- official Sionna no-RT wheel SHA-256 checked
+
+Qualification scope
+- Reviewed source snapshot closure
+- One-ring, 21-sector UMa API pilot at 8.15 GHz
+- One-ring, 21-sector UMi API pilot at 8.15 GHz
+- 2x2 dual-polarized BS array and single-polarized UT
+- Finite coefficient/delay checks
+- Seeded CPU UMa reproducibility
+- UMa 25 m and UMi 10 m scenario-height verification
+- Exact TR 38.901 V19.4.0 mapping remains open
+- Sionna 2.0.1 UMa/UMi `num_time_samples` channel-call API checked
+- PyTorch CPU local-version suffix handled while base version stays pinned

@@ -1,0 +1,88 @@
+{
+  "array": {
+    "bs_num_ant": 8,
+    "ut_num_ant": 1
+  },
+  "carrier_frequency_hz": 8150000000.0,
+  "channel_shapes": {
+    "coefficients": [
+      1,
+      21,
+      1,
+      21,
+      8,
+      23,
+      1
+    ],
+    "delays": [
+      1,
+      21,
+      21,
+      23
+    ]
+  },
+  "channel_statistics": {
+    "nonzero_path_energy_fraction": 1.0,
+    "path_count": 23,
+    "path_energy_max": 9.262006717136728e-10,
+    "path_energy_median": 1.174711793361068e-14,
+    "path_energy_min": 2.995683185221777e-19,
+    "valid_delay_count": 10143,
+    "valid_delay_max_s": 2.6569433212280273,
+    "valid_delay_min_s": 0.0
+  },
+  "fingerprints": {
+    "bs_locations_sha256": "354f6979b7a761aa4cc113d042c21fcbbdecf7a3e53f2e57339f4f20a3bc2bd8",
+    "coefficients_sha256": "652aebda8431bab8be0fdfcb90fda93da91a63227ab556174475b64ca237c448",
+    "delays_sha256": "e585fa1d882821ef0e02867f8e92335d1b4fab376a133a963c2f08c1aea58113",
+    "ut_locations_sha256": "13076c2ea6c6a84ccab739da56917dfb52930465523383cedd13ef86b0e33666"
+  },
+  "scenario": "umi",
+  "topology_shapes": {
+    "bs_loc": [
+      1,
+      21,
+      3
+    ],
+    "bs_orientations": [
+      1,
+      21,
+      3
+    ],
+    "bs_virtual_loc": [
+      1,
+      21,
+      21,
+      3
+    ],
+    "in_state": [
+      1,
+      21
+    ],
+    "los": null,
+    "ut_loc": [
+      1,
+      21,
+      3
+    ],
+    "ut_orientations": [
+      1,
+      21,
+      3
+    ],
+    "ut_velocities": [
+      1,
+      21,
+      3
+    ]
+  },
+  "topology_statistics": {
+    "bs_height_unique_m": [
+      10.0
+    ],
+    "indoor_fraction": 0.9523809552192688,
+    "ut_height_unique_m": [
+      1.5
+    ]
+  }
+}

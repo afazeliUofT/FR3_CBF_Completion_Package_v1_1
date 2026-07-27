@@ -1,0 +1,13 @@
+{
+  "claim_boundary": "QUALIFIED_IMPLEMENTATION_CANDIDATE_NOT_TR_V19_4_0_CERTIFICATION",
+  "created_utc": "2026-07-27T05:45:03.676151+00:00",
+  "exact_tr_138_901_v19_4_0_mapping_complete": false,
+  "next_gate": "FROZEN_57_SECTOR_SIONNA2_DLP_RZF_PILOT",
+  "no_reusable_legacy_channel_engine_found": true,
+  "paper_scale_gpu_execution_complete": false,
+  "seeded_reproducibility_verified": true,
+  "sionna_2_0_1_cpu_api_qualification": true,
+  "status": "PASS_CLEAN_SIONNA_2_0_1_IMPLEMENTATION_CANDIDATE",
+  "uma_25m_topology_verified": true,
+  "umi_10m_topology_verified": true
+}

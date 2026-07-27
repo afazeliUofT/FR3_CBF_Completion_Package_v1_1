@@ -1,0 +1,41 @@
+{
+  "claim_boundary": "QUALIFIED_IMPLEMENTATION_CANDIDATE_NOT_TR_V19_4_0_CERTIFICATION",
+  "created_utc": "2026-07-27T05:45:03.704480+00:00",
+  "legacy_baseline_disposition": "No reusable executable Sionna UMa/UMi channel engine or archived channel bundle was found in the reviewed FR3 source root.",
+  "next_gate": "FROZEN_57_SECTOR_SIONNA2_DLP_RZF_PILOT",
+  "open_before_paper_evidence": [
+    "Exact ETSI TR 138 901 V19.4.0 clause-and-parameter mapping.",
+    "Frozen custom 19-site/57-sector topology and sector/user ordering.",
+    "Paper-scale GPU environment and deterministic seed controls.",
+    "Inter-cell UE interference and independently reconstructed rates.",
+    "DLP-RZF controller comparisons under identical rate limits and delays.",
+    "Uncertainty, runtime, multi-pass, and multi-seed evidence."
+  ],
+  "pilot_device": "cpu",
+  "qualification": {
+    "environment": {
+      "created_utc": "2026-07-27T05:45:03.022596+00:00",
+      "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+      "python_executable": "/home/afazeli2006/.venvs/fr3-sionna2-2.0.1-cpu/bin/python",
+      "sionna_distribution": "sionna-no-rt",
+      "sionna_version": "2.0.1",
+      "torch_base_version": "2.9.1",
+      "torch_cuda_available": false,
+      "torch_device_used": "cpu",
+      "torch_version": "2.9.1+cpu"
+    },
+    "seeded_cpu_reproducibility_passed": true,
+    "uma_api_passed": true,
+    "umi_api_passed": true
+  },
+  "scenario_correction": {
+    "primary_uma_bs_height_m": 25.0,
+    "reason": "UMa and UMi use their scenario-consistent default BS heights; the prior global 25 m value must not be applied to the UMi street-canyon sensitivity.",
+    "umi_sensitivity_bs_height_m": 10.0
+  },
+  "selected_distribution": "sionna-no-rt",
+  "selected_sionna_version": "2.0.1",
+  "selected_torch_version": "2.9.1",
+  "status": "CLEAN_SIONNA_2_0_1_SELECTED_FOR_PILOT"
+}

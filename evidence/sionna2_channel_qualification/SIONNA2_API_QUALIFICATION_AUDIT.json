@@ -1,0 +1,210 @@
+{
+  "claim_boundary": "ENVIRONMENT_AND_API_QUALIFICATION_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T05:45:03.024674+00:00",
+  "environment": {
+    "created_utc": "2026-07-27T05:45:03.022596+00:00",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "python_executable": "/home/afazeli2006/.venvs/fr3-sionna2-2.0.1-cpu/bin/python",
+    "sionna_distribution": "sionna-no-rt",
+    "sionna_version": "2.0.1",
+    "torch_base_version": "2.9.1",
+    "torch_cuda_available": false,
+    "torch_device_used": "cpu",
+    "torch_version": "2.9.1+cpu"
+  },
+  "next_gate": "FROZEN_57_SECTOR_SIONNA2_DLP_RZF_PILOT",
+  "seeded_uma_reproducibility": {
+    "maximum_coefficient_absolute_error": 0.0,
+    "maximum_delay_absolute_error_s": 0.0,
+    "passed": true
+  },
+  "standards_boundary": {
+    "library_documentation_claim": "Sionna 2.0.1 implements TR 38.901 UMa/UMi models but does not, by that statement alone, certify exact V19.4.0 clause coverage.",
+    "primary_reference": "ETSI TR 138 901 V19.4.0 Release 19",
+    "required_before_paper_run": [
+      "Complete a clause-and-parameter mapping from the selected Sionna implementation to the exact V19.4.0 assumptions used by the experiment.",
+      "Verify the 7-24 GHz Release-19 changes that affect the chosen UMa/UMi use case.",
+      "Freeze the custom 19-site/57-sector topology adapter and sector/user ordering.",
+      "Include inter-cell interference and independently reconstructed rates.",
+      "Run the paper-scale experiment on a pinned GPU environment after the CPU API pilot passes."
+    ]
+  },
+  "status": "PASS_ENVIRONMENT_AND_API_QUALIFICATION",
+  "uma": {
+    "array": {
+      "bs_num_ant": 8,
+      "ut_num_ant": 1
+    },
+    "carrier_frequency_hz": 8150000000.0,
+    "channel_shapes": {
+      "coefficients": [
+        1,
+        21,
+        1,
+        21,
+        8,
+        24,
+        1
+      ],
+      "delays": [
+        1,
+        21,
+        21,
+        24
+      ]
+    },
+    "channel_statistics": {
+      "nonzero_path_energy_fraction": 1.0,
+      "path_count": 24,
+      "path_energy_max": 1.5609604275823585e-08,
+      "path_energy_median": 6.391691561739637e-16,
+      "path_energy_min": 1.0172424188872197e-19,
+      "valid_delay_count": 10584,
+      "valid_delay_max_s": 4.048565864562988,
+      "valid_delay_min_s": 0.0
+    },
+    "fingerprints": {
+      "bs_locations_sha256": "0e4407836445c3e6df7f4a1acbe73badc05551b6b134f4c38440eb86f1044ee3",
+      "coefficients_sha256": "7cc4f7b08faec7ef8bff949046a89af51c357d070ac1aadcd05305bf1691b838",
+      "delays_sha256": "70fe626ed06671ca565aae2163adaf028e18c604ae208e539cd85707e75fd929",
+      "ut_locations_sha256": "b01e76918a5e36b41882e999f4f6ff5010c6e0d0e9c0c892cadcf25d887b6fa7"
+    },
+    "scenario": "uma",
+    "topology_shapes": {
+      "bs_loc": [
+        1,
+        21,
+        3
+      ],
+      "bs_orientations": [
+        1,
+        21,
+        3
+      ],
+      "bs_virtual_loc": [
+        1,
+        21,
+        21,
+        3
+      ],
+      "in_state": [
+        1,
+        21
+      ],
+      "los": null,
+      "ut_loc": [
+        1,
+        21,
+        3
+      ],
+      "ut_orientations": [
+        1,
+        21,
+        3
+      ],
+      "ut_velocities": [
+        1,
+        21,
+        3
+      ]
+    },
+    "topology_statistics": {
+      "bs_height_unique_m": [
+        25.0
+      ],
+      "indoor_fraction": 0.8095238208770752,
+      "ut_height_unique_m": [
+        1.5
+      ]
+    }
+  },
+  "umi": {
+    "array": {
+      "bs_num_ant": 8,
+      "ut_num_ant": 1
+    },
+    "carrier_frequency_hz": 8150000000.0,
+    "channel_shapes": {
+      "coefficients": [
+        1,
+        21,
+        1,
+        21,
+        8,
+        23,
+        1
+      ],
+      "delays": [
+        1,
+        21,
+        21,
+        23
+      ]
+    },
+    "channel_statistics": {
+      "nonzero_path_energy_fraction": 1.0,
+      "path_count": 23,
+      "path_energy_max": 9.262006717136728e-10,
+      "path_energy_median": 1.174711793361068e-14,
+      "path_energy_min": 2.995683185221777e-19,
+      "valid_delay_count": 10143,
+      "valid_delay_max_s": 2.6569433212280273,
+      "valid_delay_min_s": 0.0
+    },
+    "fingerprints": {
+      "bs_locations_sha256": "354f6979b7a761aa4cc113d042c21fcbbdecf7a3e53f2e57339f4f20a3bc2bd8",
+      "coefficients_sha256": "652aebda8431bab8be0fdfcb90fda93da91a63227ab556174475b64ca237c448",
+      "delays_sha256": "e585fa1d882821ef0e02867f8e92335d1b4fab376a133a963c2f08c1aea58113",
+      "ut_locations_sha256": "13076c2ea6c6a84ccab739da56917dfb52930465523383cedd13ef86b0e33666"
+    },
+    "scenario": "umi",
+    "topology_shapes": {
+      "bs_loc": [
+        1,
+        21,
+        3
+      ],
+      "bs_orientations": [
+        1,
+        21,
+        3
+      ],
+      "bs_virtual_loc": [
+        1,
+        21,
+        21,
+        3
+      ],
+      "in_state": [
+        1,
+        21
+      ],
+      "los": null,
+      "ut_loc": [
+        1,
+        21,
+        3
+      ],
+      "ut_orientations": [
+        1,
+        21,
+        3
+      ],
+      "ut_velocities": [
+        1,
+        21,
+        3
+      ]
+    },
+    "topology_statistics": {
+      "bs_height_unique_m": [
+        10.0
+      ],
+      "indoor_fraction": 0.9523809552192688,
+      "ut_height_unique_m": [
+        1.5
+      ]
+    }
+  }
+}

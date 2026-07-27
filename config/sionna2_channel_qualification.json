@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "purpose": "Close the channel-source review, qualify a clean Sionna 2.0.1 PyTorch channel implementation candidate, and preserve the exact remaining standards-mapping boundary before the frozen 57-sector paper pilot.",
+  "claim_boundary": {
+    "snapshot_review": "SOURCE_REVIEW_ONLY_NOT_EXECUTION_EVIDENCE",
+    "api_qualification": "ENVIRONMENT_AND_API_QUALIFICATION_NOT_PAPER_RESULT",
+    "implementation_decision": "QUALIFIED_IMPLEMENTATION_CANDIDATE_NOT_TR_V19_4_0_CERTIFICATION"
+  },
+  "expected": {
+    "branch": "e3-first-sector-p452",
+    "required_ancestor_commit": "871a3da5b5136e62c2d554ad9516b3a80986fb2c",
+    "snapshot_selected_text_files": 75,
+    "snapshot_binary_candidates": 0,
+    "sionna_distribution": "sionna-no-rt",
+    "sionna_version": "2.0.1",
+    "sionna_wheel_sha256": "62e919c8db9e6c046ba2abb96345bbb3ff0385318c4a54d5b1a413a6b8da8b01",
+    "torch_version": "2.9.1",
+    "carrier_frequency_hz": 8150000000.0,
+    "pilot_num_rings": 1,
+    "pilot_users_per_sector": 1,
+    "pilot_bs_sectors": 21,
+    "pilot_users": 21,
+    "pilot_bs_array_rows": 2,
+    "pilot_bs_array_cols": 2,
+    "pilot_bs_array_polarization": "dual",
+    "pilot_bs_array_polarization_type": "cross",
+    "pilot_bs_antenna_count": 8,
+    "pilot_ut_antenna_count": 1
+  },
+  "environment": {
+    "venv_path": "~/.venvs/fr3-sionna2-2.0.1-cpu",
+    "torch_index_url": "https://download.pytorch.org/whl/cpu",
+    "wheel_cache": "data/external/sionna2_qualification/wheels",
+    "work_dir": "data/real/sionna2_channel_qualification",
+    "evidence_dir": "evidence/sionna2_channel_qualification",
+    "log_dir": "logs/sionna2_channel_qualification"
+  },
+  "pilot_scenarios": {
+    "uma": {
+      "scenario": "uma",
+      "isd_m": 500.0,
+      "bs_height_m": 25.0,
+      "ut_height_m": 1.5,
+      "minimum_bs_ut_distance_m": 35.0,
+      "indoor_probability": 0.8
+    },
+    "umi": {
+      "scenario": "umi",
+      "isd_m": 200.0,
+      "bs_height_m": 10.0,
+      "ut_height_m": 1.5,
+      "minimum_bs_ut_distance_m": 10.0,
+      "indoor_probability": 0.8
+    }
+  },
+  "standards_boundary": {
+    "primary_reference": "ETSI TR 138 901 V19.4.0 Release 19",
+    "library_documentation_claim": "Sionna 2.0.1 implements TR 38.901 UMa/UMi models but does not, by that statement alone, certify exact V19.4.0 clause coverage.",
+    "required_before_paper_run": [
+      "Complete a clause-and-parameter mapping from the selected Sionna implementation to the exact V19.4.0 assumptions used by the experiment.",
+      "Verify the 7-24 GHz Release-19 changes that affect the chosen UMa/UMi use case.",
+      "Freeze the custom 19-site/57-sector topology adapter and sector/user ordering.",
+      "Include inter-cell interference and independently reconstructed rates.",
+      "Run the paper-scale experiment on a pinned GPU environment after the CPU API pilot passes."
+    ]
+  },
+  "next_gate": "FROZEN_57_SECTOR_SIONNA2_DLP_RZF_PILOT"
+}
