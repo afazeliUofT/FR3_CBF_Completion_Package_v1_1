@@ -1,0 +1,77 @@
+schema_version: 1
+purpose: >-
+  After explicit human review of all 19 MRDEM terrain profiles, freeze those
+  profiles and run the validated ITU-R P.452-18 v18.0 implementation once per
+  unique modelled BS site. This stage computes site-level basic transmission
+  loss only. It does not create the final 57-sector composite-beam coupling or
+  a paper/compliance result.
+
+claim_boundary:
+  terrain: FROZEN_FOR_19_SITE_P452_BASIC_LOSS_AUDIT
+  p452: ALL_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT
+
+inputs:
+  terrain_root: data/real/e3_all_site_terrain_review
+  terrain_summary_csv: data/real/e3_all_site_terrain_review/terrain_review/terrain_summary.csv
+  terrain_profiles_csv_gz: data/real/e3_all_site_terrain_review/terrain_review/terrain_profile_samples.csv.gz
+  terrain_audit_json: data/real/e3_all_site_terrain_review/terrain_review/TERRAIN_AUDIT.json
+  terrain_review_audit_json: data/real/e3_all_site_terrain_review/ALL_SITE_TERRAIN_REVIEW_AUDIT.json
+  terrain_review_pdf: data/real/e3_all_site_terrain_review/terrain_review/all_19_site_profiles_review.pdf
+  site_links_with_terrain_csv: data/real/e3_all_site_terrain_review/site_links_with_terrain.csv
+  earth_station_csv: data/real/earth_station.csv
+  bs_sites_csv: data/real/bs_sites.csv
+  p452_reference_commit_file: data/external/p452/reference_v18_commit.txt
+  p452_reference_provenance_file: results/p452_reference_validation/P452_REFERENCE_PROVENANCE_R2026a.txt
+
+outputs:
+  work_dir: data/real/e3_all_site_p452
+  review_dir: results/e3_all_site_p452_review
+  log_dir: logs/e3_all_site_p452
+  evidence_dir: evidence/e3_all_site_p452_basic_loss
+
+expected:
+  branch: e3-first-sector-p452
+  required_ancestor_commit: 9d2a18bdaa9168844e279085a51eaad943feae0a
+  site_count: 19
+  sector_count: 57
+  terrain_profile_sample_count: 1963
+  tx_height_agl_m: 25.0
+  rx_height_agl_m: 20.0
+  distance_km_min: 1.9
+  distance_km_max: 4.1
+  matlab_release: "2026a"
+  p452_reference_commit: 86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe
+  manual_confirmation_phrase: I REVIEWED ALL 19 TERRAIN PROFILES
+
+terrain:
+  allowed_nonblocking_flags:
+    - inclusive_interior_mean_difference_gt_0p5m
+  minimum_elevation_m_asl: -500.0
+  maximum_elevation_m_asl: 9000.0
+
+propagation:
+  frequency_ghz: 8.15
+  time_percentages: [50.0, 20.0, 10.0, 1.0, 0.1, 0.01, 0.005]
+  polarization_codes: [1, 2]
+  polarization_labels: [H, V]
+  climatic_zone_code: 2
+  clutter_mode: g_equals_h_no_separate_p2108
+  terminal_horizon_gain_tx_dbi: 0.0
+  terminal_horizon_gain_rx_dbi: 0.0
+  coast_distance_scenarios_km: [5.0, 50.0, 200.0]
+  nominal_coast_distance_km: 5.0
+  coast_distance_status: >-
+    Inland sensitivity grid only. The exact terminal-to-coast distances are
+    not frozen by this audit.
+  pressure_hpa: 1013.25
+  temperature_c: 15.0
+  p2108_separate_loss_db: 0.0
+  coordinate_convention: longitude_degrees_east_signed_-180_to_180
+
+review:
+  next_gate: HUMAN_REVIEW_OF_19_SITE_P452_BASIC_LOSS_BEFORE_57_SECTOR_EXPANSION
+  prohibited_claims:
+    - final composite beam coupling
+    - final E3 interference result
+    - compliance
+    - frozen propagation/operational time composition

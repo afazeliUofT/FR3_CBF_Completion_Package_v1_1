@@ -1,0 +1,302 @@
+{
+  "blocking_flags": [],
+  "claim_boundary": "FROZEN_FOR_19_SITE_P452_BASIC_LOSS_AUDIT",
+  "created_utc": "2026-07-27T02:03:54.785242+00:00",
+  "input_sha256": {
+    "data/real/bs_sites.csv": "9cd34443d1f53eef1b7efbb6eaa19799c039d9b55245fe5ae1d95d4de5e5f2bb",
+    "data/real/e3_all_site_terrain_review/ALL_SITE_TERRAIN_REVIEW_AUDIT.json": "b42f1d955820966b4bbe0048e5c11ad3fef14fc28af2a0649145f93ffff3688f",
+    "data/real/e3_all_site_terrain_review/site_links_with_terrain.csv": "809fed3392f82698c9fde9f2668959783e1e1212307f2431c5be5b02607f462a",
+    "data/real/e3_all_site_terrain_review/terrain_review/TERRAIN_AUDIT.json": "03d0e03e3e8ec75cc2b3b2a6a3a3456b9ccfa12eab2e5d12054a0a325ee3350b",
+    "data/real/e3_all_site_terrain_review/terrain_review/all_19_site_profiles_review.pdf": "121205af30c38cfeff651a9316a9dc0b7092473fd130a145d608604f4c153ccd",
+    "data/real/e3_all_site_terrain_review/terrain_review/terrain_profile_samples.csv.gz": "4d1139cd29a1935870fcdd393ae4310c6a9bb41206589d8b36bd5fc87e5bb573",
+    "data/real/e3_all_site_terrain_review/terrain_review/terrain_summary.csv": "d9bfc49111b45c192ba97b92389c4ef671db0b9b96df33a34de88c2d03330c8d",
+    "data/real/earth_station.csv": "bb7b21a8ee9761a35bbbae7dea933d6cca92acde116360064113ac2194298df1"
+  },
+  "manual_confirmation": "I REVIEWED ALL 19 TERRAIN PROFILES",
+  "next_gate": "ALL_SITE_P452_BASIC_LOSS_AUDIT",
+  "profile_rule": "P.452 uses each complete sampled terrain profile. The inclusive and interior scalar terrain means are retained only as audit data.",
+  "retained_nonblocking_flags": [
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_01"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_02"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_03"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_05"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_07"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_10"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_11"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_12"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_14"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_16"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_19"
+    }
+  ],
+  "reviewer": "Ali Fazeli",
+  "site_count": 19,
+  "site_records": [
+    {
+      "distance_km": 2.9999999999992144,
+      "inclusive_minus_interior_m": 0.5561772623184993,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 123.19112396240234,
+      "profile_sample_count": 101,
+      "retained_flags": [
+        "inclusive_interior_mean_difference_gt_0p5m"
+      ],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_01",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 3.4999999999997597,
+      "inclusive_minus_interior_m": 0.8557590816816685,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 123.42076110839844,
+      "profile_sample_count": 118,
+      "retained_flags": [
+        "inclusive_interior_mean_difference_gt_0p5m"
+      ],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_02",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 3.2787192621517285,
+      "inclusive_minus_interior_m": 0.7282020107893459,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 146.7145233154297,
+      "profile_sample_count": 111,
+      "retained_flags": [
+        "inclusive_interior_mean_difference_gt_0p5m"
+      ],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_03",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 3.2787192621517285,
+      "inclusive_minus_interior_m": 0.3367881973535134,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 96.99227142333984,
+      "profile_sample_count": 111,
+      "retained_flags": [],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_04",
+      "tx_height_agl_m": 25.00000000000001
+    },
+    {
+      "distance_km": 2.783882181415529,
+      "inclusive_minus_interior_m": 0.9413092663506576,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 149.2821502685547,
+      "profile_sample_count": 94,
+      "retained_flags": [
+        "inclusive_interior_mean_difference_gt_0p5m"
+      ],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_05",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 2.783882181415174,
+      "inclusive_minus_interior_m": 0.2580879433744201,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 104.81266784667967,
+      "profile_sample_count": 94,
+      "retained_flags": [],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_06",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 2.499999999999975,
+      "inclusive_minus_interior_m": 0.5156862471139334,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 123.50308227539062,
+      "profile_sample_count": 85,
+      "retained_flags": [
+        "inclusive_interior_mean_difference_gt_0p5m"
+      ],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_07",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 3.999999999998896,
+      "inclusive_minus_interior_m": 0.3490296272738646,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 102.62879180908205,
+      "profile_sample_count": 135,
+      "retained_flags": [],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_08",
+      "tx_height_agl_m": 25.00000000000001
+    },
+    {
+      "distance_km": 3.774917217635162,
+      "inclusive_minus_interior_m": 0.321675785094726,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 108.56697082519533,
+      "profile_sample_count": 127,
+      "retained_flags": [],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_09",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 3.60555127546406,
+      "inclusive_minus_interior_m": 0.5647234265270242,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 141.08274841308594,
+      "profile_sample_count": 122,
+      "retained_flags": [
+        "inclusive_interior_mean_difference_gt_0p5m"
+      ],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_10",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 3.774917217634808,
+      "inclusive_minus_interior_m": 0.5709455806702124,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 97.16216278076172,
+      "profile_sample_count": 127,
+      "retained_flags": [
+        "inclusive_interior_mean_difference_gt_0p5m"
+      ],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_11",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 3.122498999199693,
+      "inclusive_minus_interior_m": 0.6850716655935969,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 147.44906616210938,
+      "profile_sample_count": 106,
+      "retained_flags": [
+        "inclusive_interior_mean_difference_gt_0p5m"
+      ],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_12",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 3.6055512754640593,
+      "inclusive_minus_interior_m": 0.2727044777792002,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 96.9805679321289,
+      "profile_sample_count": 122,
+      "retained_flags": [],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_13",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 2.645751311064232,
+      "inclusive_minus_interior_m": 0.7041755059752859,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 150.7854766845703,
+      "profile_sample_count": 90,
+      "retained_flags": [
+        "inclusive_interior_mean_difference_gt_0p5m"
+      ],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_14",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 3.1224989992000487,
+      "inclusive_minus_interior_m": 0.1687307108642244,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 96.97103118896484,
+      "profile_sample_count": 106,
+      "retained_flags": [],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_15",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 2.291287847476537,
+      "inclusive_minus_interior_m": 1.206851804787334,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 149.50205993652344,
+      "profile_sample_count": 78,
+      "retained_flags": [
+        "inclusive_interior_mean_difference_gt_0p5m"
+      ],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_16",
+      "tx_height_agl_m": 24.99999999999997
+    },
+    {
+      "distance_km": 2.645751311064232,
+      "inclusive_minus_interior_m": 0.0959096041592602,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 125.3018798828125,
+      "profile_sample_count": 90,
+      "retained_flags": [],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_17",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 2.291287847477598,
+      "inclusive_minus_interior_m": 0.4350782798530304,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 145.80661010742188,
+      "profile_sample_count": 78,
+      "retained_flags": [],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_18",
+      "tx_height_agl_m": 25.0
+    },
+    {
+      "distance_km": 1.99999999999875,
+      "inclusive_minus_interior_m": 0.7564428468863866,
+      "maximum_terrain_m_asl": 270.8760070800781,
+      "minimum_terrain_m_asl": 152.40003967285156,
+      "profile_sample_count": 68,
+      "retained_flags": [
+        "inclusive_interior_mean_difference_gt_0p5m"
+      ],
+      "rx_height_agl_m": 20.0,
+      "site_id": "E3_SITE_19",
+      "tx_height_agl_m": 25.0
+    }
+  ],
+  "status": "FROZEN_FOR_19_SITE_P452_BASIC_LOSS_AUDIT",
+  "total_profile_samples": 1963,
+  "visual_review_statement": "Reviewer explicitly confirmed review of every page in the 19-page terrain-profile PDF."
+}

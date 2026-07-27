@@ -1,0 +1,26 @@
+E3 all-site P.452 MATLAB table-construction recovery v1
+
+Confirmed failure
+- Terrain review/freeze: PASS
+- P.452 input preparation/preflight: PASS
+- MATLAB failure occurred at results table construction.
+- Cause: double-quoted "VariableNames" was treated as a scalar table variable,
+  causing unequal table-variable row counts.
+
+Repair
+- Use character-vector 'VariableNames' name-value syntax in both table calls.
+- Add explicit n_rows x 1 assertions for every result column.
+- Assert resulting table dimensions.
+- Run a minimal MATLAB table-construction probe before the propagation run.
+- Reuse the existing frozen 19-site terrain decision and prepared inputs.
+
+Post-run independent checks
+- 798 unique P.452 rows.
+- 42 rows per site.
+- Every path-gain conversion.
+- Monotonic loss versus time percentage.
+- Exact Site-18 regression against the accepted one-sector result.
+- Zero direct antenna-gain accounting in the site-level coupling export.
+
+Claim boundary
+ALL_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT

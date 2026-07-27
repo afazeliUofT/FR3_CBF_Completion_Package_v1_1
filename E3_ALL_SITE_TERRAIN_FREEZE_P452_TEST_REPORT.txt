@@ -1,0 +1,20 @@
+E3 all-site terrain freeze + P.452 basic-loss drop-in v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Package SHA-256 manifest: PASS
+- No frozen bytecode/cache artifacts: PASS
+
+Focused tests
+- Expected 19 x 7 x 2 x 3 = 798 output rows
+- Free-space-reference formula
+
+Runtime scope
+- Requires the user's already validated MATLAB R2026a/P.452 v18.0 installation.
+- Requires explicit interactive review of all 19 terrain-PDF pages.
+- Fails closed when terrain, MATLAB, row-count, path-gain, provenance, or Git
+  checks do not pass.
+
+Claim boundary
+ALL_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT

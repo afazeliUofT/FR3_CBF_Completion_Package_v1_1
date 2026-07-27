@@ -1,0 +1,15 @@
+{
+  "claim_boundary": "ALL_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT",
+  "coupling_row_count": 798,
+  "created_utc": "2026-07-27T02:17:31.383134+00:00",
+  "maximum_relative_path_gain_error": 1.14286422945594e-13,
+  "monotonic_time_percentage_check": true,
+  "next_gate": "HUMAN_REVIEW_OF_19_SITE_P452_BASIC_LOSS_BEFORE_57_SECTOR_EXPANSION",
+  "p452_row_count": 798,
+  "review_required": true,
+  "site18_regression_gain_error": 0.0,
+  "site18_regression_loss_error_db": 0.0,
+  "site_count": 19,
+  "status": "PASS_WITH_HUMAN_REVIEW_REQUIRED",
+  "zero_external_gain_inside_export_verified": true
+}

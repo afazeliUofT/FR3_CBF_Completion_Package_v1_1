@@ -1,0 +1,13 @@
+OK      data/real/e3_all_site_p452/ALL_SITE_TERRAIN_DECISION.json
+OK      data/real/e3_all_site_p452/p452_all_site_profiles.csv
+OK      data/real/e3_all_site_p452/p452_all_site_site_parameters.csv
+OK      data/real/e3_all_site_p452/p452_all_site_parameters.json
+OK      data/real/e3_all_site_p452/ALL_SITE_P452_PREP_AUDIT.json
+OK      data/real/e3_first_sector_p452/p452_basic_loss.csv
+RECOVERY STATE CHECK: PASS
+Terrain freeze reviewer: Ali Fazeli
+Sites: 19
+Profile samples: 1963
+Expected rows: 798
+....                                                                     [100%]
+WRAPPER 00 RECOVERY PREFLIGHT: PASS

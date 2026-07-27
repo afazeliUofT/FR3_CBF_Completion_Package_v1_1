@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-07-27T02:17:29.712Z",
+  "status": "PASS",
+  "claim_boundary": "ALL_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT",
+  "matlab_release": "2026a",
+  "matlab_version": "26.1.0.3312084 (R2026a) Update 4",
+  "p452_reference_commit": "86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe",
+  "site_count": 19,
+  "profile_sample_count": 1963,
+  "row_count": 798,
+  "minimum_basic_loss_db": 114.79538843982809,
+  "maximum_basic_loss_db": 162.18359145629171,
+  "zero_terminal_horizon_gains_inside_p452": true,
+  "clutter_mode": "g_equals_h_no_separate_p2108",
+  "separate_p2108_loss_db": 0,
+  "time_percentages": [
+    50,
+    20,
+    10,
+    1,
+    0.1,
+    0.01,
+    0.005
+  ],
+  "polarization_codes": [
+    1,
+    2
+  ],
+  "coast_distance_scenarios_km": [
+    5,
+    50,
+    200
+  ]
+}

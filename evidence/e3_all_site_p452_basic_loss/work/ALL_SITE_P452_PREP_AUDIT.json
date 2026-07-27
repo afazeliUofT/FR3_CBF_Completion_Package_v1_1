@@ -1,0 +1,14 @@
+{
+  "claim_boundary": "ALL_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T02:03:55.066788+00:00",
+  "expected_output_row_count": 798,
+  "generated_sha256": {
+    "p452_all_site_parameters.json": "3cfdd309d3fe726ddf344eaa6a4413588d7bd74eb58920ab0a3f28de5eb1e545",
+    "p452_all_site_profiles.csv": "c6c7b042cc083a6819fd3c398af45d061d61927efc526949b8a758e17d904a52",
+    "p452_all_site_site_parameters.csv": "e47c007dc20e314395d6c0bec715e48c3690a512ec03aa5e6b38728dead1bc34"
+  },
+  "next_gate": "MATLAB_ALL_SITE_P452_BASIC_LOSS",
+  "profile_sample_count": 1963,
+  "site_count": 19,
+  "status": "MATLAB_READY_FROZEN"
+}

@@ -1,0 +1,46 @@
+{
+  "claim_boundary": "ALL_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT",
+  "clutter_mode": "g_equals_h_no_separate_p2108",
+  "coast_distance_scenarios_km": [
+    5.0,
+    50.0,
+    200.0
+  ],
+  "coast_distance_status": "Inland sensitivity grid only. The exact terminal-to-coast distances are not frozen by this audit.",
+  "config_sha256": "f06488413091bf02ff8b5dc09a7fa7bbb904ff9c9bba9ab1b700e8760981de5e",
+  "coordinate_convention": "longitude_degrees_east_signed_-180_to_180",
+  "created_utc": "2026-07-27T02:03:55.066376+00:00",
+  "expected_matlab_release": "2026a",
+  "expected_output_row_count": 798,
+  "frequency_ghz": 8.15,
+  "no_separate_p2108_baseline": true,
+  "p452_reference_commit": "86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe",
+  "polarization_codes": [
+    1,
+    2
+  ],
+  "polarization_labels": [
+    "H",
+    "V"
+  ],
+  "pressure_hpa": 1013.25,
+  "profiles_sha256": "c6c7b042cc083a6819fd3c398af45d061d61927efc526949b8a758e17d904a52",
+  "separate_p2108_loss_db": 0.0,
+  "site_count": 19,
+  "site_parameters_sha256": "e47c007dc20e314395d6c0bec715e48c3690a512ec03aa5e6b38728dead1bc34",
+  "station_id": "NRCAN_GATINEAU_REFERENCE",
+  "temperature_c": 15.0,
+  "terminal_horizon_gain_rx_dbi": 0.0,
+  "terminal_horizon_gain_tx_dbi": 0.0,
+  "terrain_decision_sha256": "f9227426ff2aba23d4230aea4210a31c92841b17669ce56685c952818bf070f5",
+  "time_percentages": [
+    50.0,
+    20.0,
+    10.0,
+    1.0,
+    0.1,
+    0.01,
+    0.005
+  ],
+  "zero_terminal_horizon_gains_inside_p452": true
+}

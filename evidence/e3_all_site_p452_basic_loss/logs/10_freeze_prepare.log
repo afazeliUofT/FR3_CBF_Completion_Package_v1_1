@@ -1,0 +1,22 @@
+E3 ALL-SITE TERRAIN FREEZE: PASS
+Reviewer: Ali Fazeli
+Sites: 19
+Total profile samples: 1963
+Retained nonblocking flags: 11
+Output: /home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/data/real/e3_all_site_p452/ALL_SITE_TERRAIN_DECISION.json
+Next gate: ALL_SITE_P452_BASIC_LOSS_AUDIT
+E3 ALL-SITE P.452 INPUT PREPARATION: PASS
+Sites: 19
+Profile samples: 1963
+Expected MATLAB rows: 798
+Output directory: /home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/data/real/e3_all_site_p452
+E3 ALL-SITE P.452 INPUT PREFLIGHT: PASS
+Sites: 19
+Profile samples: 1963
+Expected MATLAB rows: 798
+Time percentages: [50.0, 20.0, 10.0, 1.0, 0.1, 0.01, 0.005]
+Polarizations: ['H', 'V']
+Coast scenarios: [5.0, 50.0, 200.0]
+Terminal horizon gains inside P.452: 0 dBi / 0 dBi
+Baseline clutter: g=h; separate P.2108: 0 dB
+WRAPPER 10 TERRAIN FREEZE/PREPARE: PASS

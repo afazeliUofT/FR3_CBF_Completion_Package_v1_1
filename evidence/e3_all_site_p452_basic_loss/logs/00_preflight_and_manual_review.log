@@ -1,0 +1,44 @@
+OK      data/real/e3_all_site_terrain_review/terrain_review/terrain_summary.csv
+OK      data/real/e3_all_site_terrain_review/terrain_review/terrain_profile_samples.csv.gz
+OK      data/real/e3_all_site_terrain_review/terrain_review/TERRAIN_AUDIT.json
+OK      data/real/e3_all_site_terrain_review/ALL_SITE_TERRAIN_REVIEW_AUDIT.json
+OK      data/real/e3_all_site_terrain_review/terrain_review/all_19_site_profiles_review.pdf
+OK      data/real/earth_station.csv
+OK      data/real/bs_sites.csv
+OK      data/external/p452/reference_v18_commit.txt
+..                                                                       [100%]
+
+ALL-SITE TERRAIN NUMERICAL SUMMARY
+   link_id  distance_km_wgs84  total_sample_count  min_profile_terrain_m_asl  max_profile_terrain_m_asl  tx_implied_antenna_height_agl_m  rx_implied_antenna_height_agl_m  inclusive_minus_interior_m                                   qc_flags
+E3_SITE_01           3.000000                 101                 123.191124                 270.876007                             25.0                             20.0                    0.556177 inclusive_interior_mean_difference_gt_0p5m
+E3_SITE_02           3.500000                 118                 123.420761                 270.876007                             25.0                             20.0                    0.855759 inclusive_interior_mean_difference_gt_0p5m
+E3_SITE_03           3.278719                 111                 146.714523                 270.876007                             25.0                             20.0                    0.728202 inclusive_interior_mean_difference_gt_0p5m
+E3_SITE_04           3.278719                 111                  96.992271                 270.876007                             25.0                             20.0                    0.336788                                        NaN
+E3_SITE_05           2.783882                  94                 149.282150                 270.876007                             25.0                             20.0                    0.941309 inclusive_interior_mean_difference_gt_0p5m
+E3_SITE_06           2.783882                  94                 104.812668                 270.876007                             25.0                             20.0                    0.258088                                        NaN
+E3_SITE_07           2.500000                  85                 123.503082                 270.876007                             25.0                             20.0                    0.515686 inclusive_interior_mean_difference_gt_0p5m
+E3_SITE_08           4.000000                 135                 102.628792                 270.876007                             25.0                             20.0                    0.349030                                        NaN
+E3_SITE_09           3.774917                 127                 108.566971                 270.876007                             25.0                             20.0                    0.321676                                        NaN
+E3_SITE_10           3.605551                 122                 141.082748                 270.876007                             25.0                             20.0                    0.564723 inclusive_interior_mean_difference_gt_0p5m
+E3_SITE_11           3.774917                 127                  97.162163                 270.876007                             25.0                             20.0                    0.570946 inclusive_interior_mean_difference_gt_0p5m
+E3_SITE_12           3.122499                 106                 147.449066                 270.876007                             25.0                             20.0                    0.685072 inclusive_interior_mean_difference_gt_0p5m
+E3_SITE_13           3.605551                 122                  96.980568                 270.876007                             25.0                             20.0                    0.272704                                        NaN
+E3_SITE_14           2.645751                  90                 150.785477                 270.876007                             25.0                             20.0                    0.704176 inclusive_interior_mean_difference_gt_0p5m
+E3_SITE_15           3.122499                 106                  96.971031                 270.876007                             25.0                             20.0                    0.168731                                        NaN
+E3_SITE_16           2.291288                  78                 149.502060                 270.876007                             25.0                             20.0                    1.206852 inclusive_interior_mean_difference_gt_0p5m
+E3_SITE_17           2.645751                  90                 125.301880                 270.876007                             25.0                             20.0                    0.095910                                        NaN
+E3_SITE_18           2.291288                  78                 145.806610                 270.876007                             25.0                             20.0                    0.435078                                        NaN
+E3_SITE_19           2.000000                  68                 152.400040                 270.876007                             25.0                             20.0                    0.756443 inclusive_interior_mean_difference_gt_0p5m
+
+Blocking flags: []
+Nonblocking flag count: 11
+Maximum adjacent terrain step (m): 20.16802978515622
+Maximum segment slope: 0.6777578361301577
+
+MANUAL REVIEW REQUIRED
+Review every page of:
+  /home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/data/real/e3_all_site_terrain_review/terrain_review/all_19_site_profiles_review.pdf
+Check all 19 profiles for DEM voids, isolated spikes, tile seams,
+misplaced endpoints, implausible discontinuities, and incorrect phase-centre heights.
+
+After reviewing every page, type exactly 'I REVIEWED ALL 19 TERRAIN PROFILES': WRAPPER 00 PREFLIGHT/MANUAL REVIEW: PASS

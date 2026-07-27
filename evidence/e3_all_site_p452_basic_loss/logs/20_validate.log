@@ -1,0 +1,86 @@
+P.452 EXPORT VALIDATION: PASS (798 rows)
+This validates interchange structure/provenance, not numerical correctness of the external implementation.
+E3 ALL-SITE P.452 BASIC-LOSS VALIDATION: PASS
+{
+  "created_utc": "2026-07-27T02:17:31.081533+00:00",
+  "status": "PASS_REVIEW_REQUIRED",
+  "claim_boundary": "ALL_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT",
+  "site_count": 19,
+  "p452_row_count": 798,
+  "coupling_export_row_count": 798,
+  "maximum_relative_path_gain_error": 1.14286422945594e-13,
+  "basic_loss_min_db": 114.795388439828,
+  "basic_loss_max_db": 162.183591456292,
+  "p50_minus_free_space_min_db": -0.018460602174869223,
+  "p50_minus_free_space_max_db": 43.05945888135106,
+  "maximum_coast_span_db": 0.0,
+  "maximum_hv_span_db": 0.0,
+  "zero_terminal_horizon_gains_inside_p452_verified": true,
+  "no_separate_p2108_baseline_verified": true,
+  "direct_antenna_gains_not_included": true,
+  "review_required": true,
+  "next_gate": "HUMAN_REVIEW_OF_19_SITE_P452_BASIC_LOSS_BEFORE_57_SECTOR_EXPANSION"
+}
+
+SITE SUMMARY
+   site_id  distance_km  profile_sample_count  loss_p50_db  loss_p20_db  loss_p0p005_db  free_space_reference_db  p50_minus_free_space_db  maximum_coast_span_db  maximum_hv_span_db
+E3_SITE_01     3.000000                   101   120.209471   119.894555      117.513977               120.215577                -0.006107                    0.0                 0.0
+E3_SITE_02     3.500000                   118   121.548670   121.189097      118.477424               121.554513                -0.005843                    0.0                 0.0
+E3_SITE_03     3.278719                   111   120.979700   120.639643      118.072433               120.987237                -0.007536                    0.0                 0.0
+E3_SITE_04     3.278719                   111   120.986760   120.646703      118.079493               120.987237                -0.000477                    0.0                 0.0
+E3_SITE_05     2.783882                    94   119.553041   119.258060      117.025869               119.566169                -0.013128                    0.0                 0.0
+E3_SITE_06     2.783882                    94   148.129892   147.832237      145.014126               119.566169                28.563723                    0.0                 0.0
+E3_SITE_07     2.500000                    85   118.624160   118.355962      116.323685               118.631952                -0.007792                    0.0                 0.0
+E3_SITE_08     4.000000                   135   161.205388   160.845148      157.742623               122.714352                38.491036                    0.0                 0.0
+E3_SITE_09     3.774917                   127   162.104203   161.762800      158.806467               122.211301                39.892902                    0.0                 0.0
+E3_SITE_10     3.605551                   122   121.809563   121.440816      118.661368               121.812586                -0.003022                    0.0                 0.0
+E3_SITE_11     3.774917                   127   122.211439   121.828154      118.941457               122.211301                 0.000138                    0.0                 0.0
+E3_SITE_12     3.122499                   106   120.555249   120.229204      117.765952               120.563198                -0.007949                    0.0                 0.0
+E3_SITE_13     3.605551                   122   121.813932   121.445185      118.665737               121.812586                 0.001346                    0.0                 0.0
+E3_SITE_14     2.645751                    90   119.112916   118.830879      116.695245               119.124133                -0.011217                    0.0                 0.0
+E3_SITE_15     3.122499                   106   120.562135   120.236090      117.772838               120.563198                -0.001064                    0.0                 0.0
+E3_SITE_16     2.291288                    78   117.856285   117.608220      115.726633               117.874745                -0.018461                    0.0                 0.0
+E3_SITE_17     2.645751                    90   162.183591   161.940124      159.801301               119.124133                43.059459                    0.0                 0.0
+E3_SITE_18     2.291288                    78   117.863253   117.615188      115.733601               117.874745                -0.011493                    0.0                 0.0
+E3_SITE_19     2.000000                    68   116.680593   116.461273      114.795388               116.693752                -0.013160                    0.0                 0.0
+E3 ALL-SITE P.452 INDEPENDENT REVIEW: PASS
+{
+  "created_utc": "2026-07-27T02:17:31.383134+00:00",
+  "status": "PASS_WITH_HUMAN_REVIEW_REQUIRED",
+  "claim_boundary": "ALL_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT",
+  "site_count": 19,
+  "p452_row_count": 798,
+  "coupling_row_count": 798,
+  "maximum_relative_path_gain_error": 1.14286422945594e-13,
+  "monotonic_time_percentage_check": true,
+  "site18_regression_loss_error_db": 0.0,
+  "site18_regression_gain_error": 0.0,
+  "zero_external_gain_inside_export_verified": true,
+  "review_required": true,
+  "next_gate": "HUMAN_REVIEW_OF_19_SITE_P452_BASIC_LOSS_BEFORE_57_SECTOR_EXPANSION"
+}
+
+# E3 all-site P.452 basic-loss validation
+
+- Status: `PASS_REVIEW_REQUIRED`
+- Unique sites: `19`
+- P.452 rows: `798`
+- Basic-loss range: `114.795388` to `162.183591` dB
+- Maximum coast-distance span: `0.000000e+00` dB
+- Maximum H/V span: `0.000000e+00` dB
+- Next gate: `HUMAN_REVIEW_OF_19_SITE_P452_BASIC_LOSS_BEFORE_57_SECTOR_EXPANSION`
+
+This is a 19-site basic-loss audit. No sector beam gain, earth-station tracking gain, aggregate network interference, controller action, or paper/compliance claim has been produced.
+
+# Independent E3 19-site P.452 review
+
+- Status: `PASS_WITH_HUMAN_REVIEW_REQUIRED`
+- Sites: `19`
+- Rows: `798`
+- Maximum path-gain relative error: `1.143e-13`
+- Site-18 regression loss error: `0.000e+00` dB
+- Site-18 regression gain error: `0.000e+00`
+- Next gate: `HUMAN_REVIEW_OF_19_SITE_P452_BASIC_LOSS_BEFORE_57_SECTOR_EXPANSION`
+
+This remains a site-level basic-loss audit. It does not include final sector beam gains, tracking earth-station gain expansion, aggregate interference, controller action, paper result, or compliance claim.
+WRAPPER 20 VALIDATION: PASS

@@ -1,0 +1,20 @@
+{
+  "basic_loss_max_db": 162.183591456292,
+  "basic_loss_min_db": 114.795388439828,
+  "claim_boundary": "ALL_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT",
+  "coupling_export_row_count": 798,
+  "created_utc": "2026-07-27T02:17:31.081533+00:00",
+  "direct_antenna_gains_not_included": true,
+  "maximum_coast_span_db": 0.0,
+  "maximum_hv_span_db": 0.0,
+  "maximum_relative_path_gain_error": 1.14286422945594e-13,
+  "next_gate": "HUMAN_REVIEW_OF_19_SITE_P452_BASIC_LOSS_BEFORE_57_SECTOR_EXPANSION",
+  "no_separate_p2108_baseline_verified": true,
+  "p452_row_count": 798,
+  "p50_minus_free_space_max_db": 43.05945888135106,
+  "p50_minus_free_space_min_db": -0.018460602174869223,
+  "review_required": true,
+  "site_count": 19,
+  "status": "PASS_REVIEW_REQUIRED",
+  "zero_terminal_horizon_gains_inside_p452_verified": true
+}

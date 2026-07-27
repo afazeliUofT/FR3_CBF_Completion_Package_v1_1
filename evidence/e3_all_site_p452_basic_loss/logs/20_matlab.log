@@ -1,0 +1,14 @@
+MATLAB COPY PROFILES: MATCH
+MATLAB COPY PARAMETERS: MATCH
+{Error using table (line 57)
+All table variables must have the same number of rows.
+
+Error in run_e3_all_site_p452 (line 106)
+results = table( ...
+          ^^^^^^^^^^
+Caused by:
+    If you intended "VariableNames" to specify a parameter name, the recommended syntax is table(..., VariableNames=value).
+
+    Alternatively, for backwards compatibility use the syntax table(..., 'VariableNames', value) with the parameter name specified as a character vector.
+}
+ERROR: MATLAB error Exit Status: 0x00000001
