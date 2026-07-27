@@ -1,0 +1,22 @@
+{
+  "claim_boundary": "PASS_AS_19_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T03:13:02.719443+00:00",
+  "diffraction_dominated_sites": [
+    "E3_SITE_06",
+    "E3_SITE_08",
+    "E3_SITE_09",
+    "E3_SITE_17"
+  ],
+  "findings": {
+    "all_coast_distance_spans_zero": true,
+    "all_hv_spans_zero": true,
+    "external_direct_gain_factorization_not_yet_certified": true,
+    "high_loss_sites_supported_by_profile_geometry": true
+  },
+  "maximum_relative_path_gain_error": 1.14286422945594e-13,
+  "near_free_space_site_count": 15,
+  "next_gate": "P452_TROPOSCATTER_MECHANISM_ISOLATION_AUDIT",
+  "p452_row_count": 798,
+  "site_count": 19,
+  "status": "PASS_WITH_REQUIRED_MECHANISM_AUDIT"
+}

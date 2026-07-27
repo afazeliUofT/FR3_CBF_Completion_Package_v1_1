@@ -1,0 +1,20 @@
+{
+  "aggregate_row_count": 49308,
+  "claim_boundary": "57_SECTOR_REFERENCE_FEASIBILITY_SCREEN_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T03:13:32.138429+00:00",
+  "global_maximum_aggregate_interference_dbw_per_10mhz": -62.845495330764194,
+  "global_maximum_required_long_backoff_db": 87.1545046692358,
+  "global_maximum_required_short_backoff_db": 70.1545046692358,
+  "mechanism_factorization_status": "PASS_EXTERNAL_DIRECT_GAIN_FACTORIZATION_SUPPORTED",
+  "next_gate": "HUMAN_REVIEW_OF_57_SECTOR_REFERENCE_FEASIBILITY_BEFORE_COMPOSITE_BEAM_IMPORT",
+  "open_items": [
+    "Final composite WMMSE beam gains are not available.",
+    "Propagation-time and operational-exceedance composition is not frozen.",
+    "Physical polarization/XPD model is not frozen.",
+    "This close-in synthetic layout may be intentionally severe and needs a non-degeneracy decision."
+  ],
+  "protected_sample_count": 587,
+  "sector_count": 57,
+  "site_count": 19,
+  "status": "REFERENCE_SCREEN_READY_FOR_HUMAN_REVIEW"
+}

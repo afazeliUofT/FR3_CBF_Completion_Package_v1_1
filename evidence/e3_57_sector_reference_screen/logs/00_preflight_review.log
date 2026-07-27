@@ -1,0 +1,56 @@
+OK      data/real/e3_all_site_p452/p452_all_site_basic_loss.csv
+OK      data/real/e3_all_site_p452/p452_all_site_profiles.csv
+OK      data/real/e3_all_site_p452/p452_all_site_site_parameters.csv
+OK      data/real/e3_all_site_p452/ALL_SITE_P452_VALIDATION.json
+OK      data/real/e3_all_site_p452/ALL_SITE_P452_INDEPENDENT_REVIEW.json
+OK      data/real/bs_sites.csv
+OK      data/real/bs_sectors.csv
+OK      data/real/earth_station.csv
+OK      data/real/e3_reference_case/e3_track_selected_pass_1s.csv
+...                                                                      [100%]
+E3 19-SITE P.452 HUMAN REVIEW: PASS
+{
+  "created_utc": "2026-07-27T03:13:02.719443+00:00",
+  "status": "PASS_WITH_REQUIRED_MECHANISM_AUDIT",
+  "claim_boundary": "PASS_AS_19_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT",
+  "site_count": 19,
+  "p452_row_count": 798,
+  "maximum_relative_path_gain_error": 1.14286422945594e-13,
+  "diffraction_dominated_sites": [
+    "E3_SITE_06",
+    "E3_SITE_08",
+    "E3_SITE_09",
+    "E3_SITE_17"
+  ],
+  "near_free_space_site_count": 15,
+  "findings": {
+    "all_coast_distance_spans_zero": true,
+    "all_hv_spans_zero": true,
+    "high_loss_sites_supported_by_profile_geometry": true,
+    "external_direct_gain_factorization_not_yet_certified": true
+  },
+  "next_gate": "P452_TROPOSCATTER_MECHANISM_ISOLATION_AUDIT"
+}
+
+SITE CLASSIFICATION
+   site_id  distance_km  profile_sample_count  loss_p50_db  loss_p20_db  loss_p0p005_db  free_space_reference_db  p50_minus_free_space_db  maximum_terrain_above_effective_los_m  minimum_60pct_fresnel_clearance_m               propagation_class
+E3_SITE_01     3.000000                   101   120.209471   119.894555      117.513977               120.215577                -0.006107                              -4.347782                           2.739605       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_02     3.500000                   118   121.548670   121.189097      118.477424               121.554513                -0.005843                             -20.000000                          19.264923       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_03     3.278719                   111   120.979700   120.639643      118.072433               120.987237                -0.007536                              -3.204702                           1.832172       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_04     3.278719                   111   120.986760   120.646703      118.079493               120.987237                -0.000477                              -8.597032                           5.368980       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_05     2.783882                    94   119.553041   119.258060      117.025869               119.566169                -0.013128                             -19.919432                          19.038665       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_06     2.783882                    94   148.129892   147.832237      145.014126               119.566169                28.563723                               6.411732                          -9.167732 DIFFRACTION_DOMINATED_REFERENCE
+E3_SITE_07     2.500000                    85   118.624160   118.355962      116.323685               118.631952                -0.007792                             -18.056148                          16.988380       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_08     4.000000                   135   161.205388   160.845148      157.742623               122.714352                38.491036                              17.314545                         -19.736831 DIFFRACTION_DOMINATED_REFERENCE
+E3_SITE_09     3.774917                   127   162.104203   161.762800      158.806467               122.211301                39.892902                              21.213673                         -23.743755 DIFFRACTION_DOMINATED_REFERENCE
+E3_SITE_10     3.605551                   122   121.809563   121.440816      118.661368               121.812586                -0.003022                             -19.808014                          18.927022       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_11     3.774917                   127   122.211439   121.828154      118.941457               122.211301                 0.000138                             -19.535279                          18.457377       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_12     3.122499                   106   120.555249   120.229204      117.765952               120.563198                -0.007949                             -19.684022                          18.805044       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_13     3.605551                   122   121.813932   121.445185      118.665737               121.812586                 0.001346                              -3.687154                           0.319341       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_14     2.645751                    90   119.112916   118.830879      116.695245               119.124133                -0.011217                              -6.839722                           4.248509       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_15     3.122499                   106   120.562135   120.236090      117.772838               120.563198                -0.001064                              -4.358436                           1.425238       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_16     2.291288                    78   117.856285   117.608220      115.726633               117.874745                -0.018461                             -19.854258                          18.978110       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_17     2.645751                    90   162.183591   161.940124      159.801301               119.124133                43.059459                              28.002380                         -30.427835 DIFFRACTION_DOMINATED_REFERENCE
+E3_SITE_18     2.291288                    78   117.863253   117.615188      115.733601               117.874745                -0.011493                              -3.904452                           1.976927       NEAR_FREE_SPACE_REFERENCE
+E3_SITE_19     2.000000                    68   116.680593   116.461273      114.795388               116.693752                -0.013160                             -17.962901                          16.898578       NEAR_FREE_SPACE_REFERENCE
+WRAPPER 00 PREFLIGHT/HUMAN REVIEW: PASS

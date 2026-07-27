@@ -1,0 +1,104 @@
+schema_version: 1
+purpose: >-
+  Close the human review of the 19-site P.452 basic-loss audit, certify that
+  troposcatter is negligible enough for the declared external direct-gain
+  factorization, and build a 57-sector reference aggregate-interference and
+  feasibility screen. This is not the final WMMSE/composite-beam result and
+  not a compliance or paper result.
+
+claim_boundary:
+  all_site_review: PASS_AS_19_SITE_BASIC_LOSS_AUDIT_NOT_PAPER_RESULT
+  mechanism: NUMERICAL_MECHANISM_ISOLATION_AUDIT
+  sector_screen: 57_SECTOR_REFERENCE_FEASIBILITY_SCREEN_NOT_PAPER_RESULT
+
+inputs:
+  all_site_work_dir: data/real/e3_all_site_p452
+  all_site_basic_loss_csv: data/real/e3_all_site_p452/p452_all_site_basic_loss.csv
+  all_site_profiles_csv: data/real/e3_all_site_p452/p452_all_site_profiles.csv
+  all_site_site_parameters_csv: data/real/e3_all_site_p452/p452_all_site_site_parameters.csv
+  all_site_parameters_json: data/real/e3_all_site_p452/p452_all_site_parameters.json
+  all_site_validation_json: data/real/e3_all_site_p452/ALL_SITE_P452_VALIDATION.json
+  all_site_independent_review_json: data/real/e3_all_site_p452/ALL_SITE_P452_INDEPENDENT_REVIEW.json
+  all_site_loss_summary_csv: data/real/e3_all_site_p452/all_site_loss_summary.csv
+  earth_station_csv: data/real/earth_station.csv
+  bs_sites_csv: data/real/bs_sites.csv
+  bs_sectors_csv: data/real/bs_sectors.csv
+  pattern_parameters_csv: data/real/e3_pattern_layout_review/earth_station_pattern_parameters.csv
+  selected_pass_track_csv: data/real/e3_reference_case/e3_track_selected_pass_1s.csv
+
+outputs:
+  work_dir: data/real/e3_57_sector_reference_screen
+  review_dir: results/e3_57_sector_reference_screen
+  log_dir: logs/e3_57_sector_reference_screen
+  evidence_dir: evidence/e3_57_sector_reference_screen
+
+expected:
+  branch: e3-first-sector-p452
+  required_ancestor_commit: 7eb23f2cb2c0769572b66242566e29603a5fb31e
+  site_count: 19
+  sector_count: 57
+  protected_sample_count: 587
+  p452_row_count: 798
+  p452_rows_per_site: 42
+  matlab_release: "2026a"
+  p452_reference_commit: 86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe
+  minimum_elevation_deg: 5.0
+  nominal_coast_distance_km: 5.0
+  expected_aggregate_rows: 49308
+  expected_static_sector_rows: 2394
+  expected_es_gain_rows: 22306
+
+human_review:
+  free_space_excess_threshold_db: 3.0
+  effective_earth_radius_factor: 1.3333333333333333
+  expected_diffraction_dominated_sites:
+    - E3_SITE_06
+    - E3_SITE_08
+    - E3_SITE_09
+    - E3_SITE_17
+
+mechanism_probe:
+  suppress_troposcatter_horizon_gain_dbi: 100.0
+  maximum_allowed_troposcatter_contribution_db: 0.10
+  tolerance_db: 1.0e-8
+  next_gate_if_failed: MECHANISM_SPECIFIC_GAIN_MODEL_REQUIRED
+  next_gate_if_passed: BUILD_57_SECTOR_REFERENCE_FEASIBILITY_SCREEN
+
+power_accounting:
+  protected_bandwidth_mhz: 10.0
+  reference_bandwidth_mhz: 100.0
+  uniform_psd_assumption: true
+  polarization_mismatch_loss_db: 0.0
+  nominal_aperture_efficiency: 0.65
+  earth_station_pattern_types:
+    - multiple_entry_section_1_2
+    - single_entry_section_1_1
+  bs_gain_cases:
+    - ZERO_DBI_PROPAGATION_REFERENCE
+    - ELEMENT_PATTERN_REFERENCE
+    - COHERENT_ARRAY_UPPER_ENVELOPE
+
+bs_element_pattern:
+  horizontal_3db_beamwidth_deg: 65.0
+  vertical_3db_beamwidth_deg: 65.0
+  front_back_limit_db: 30.0
+  vertical_sidelobe_limit_db: 30.0
+  status: >-
+    Declared reference element pattern only. It is not the final composite
+    WMMSE beam gain.
+
+protection:
+  long_threshold_dbw_per_10mhz: -150.0
+  short_threshold_dbw_per_10mhz: -133.0
+  time_accounting_status: >-
+    NOT_FROZEN. P.452 propagation percentage, SA.1027 percentage, and
+    controller operational token accounting remain separate.
+
+review:
+  top_sector_count_per_scenario: 10
+  next_gate: HUMAN_REVIEW_OF_57_SECTOR_REFERENCE_FEASIBILITY_BEFORE_COMPOSITE_BEAM_IMPORT
+  prohibited_claims:
+    - final_composite_beam_result
+    - dynamic_cbf_result
+    - paper_result
+    - compliance

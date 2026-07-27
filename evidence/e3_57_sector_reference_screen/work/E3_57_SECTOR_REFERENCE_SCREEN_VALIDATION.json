@@ -1,0 +1,16 @@
+{
+  "aggregate_row_count": 49308,
+  "claim_boundary": "57_SECTOR_REFERENCE_FEASIBILITY_SCREEN_NOT_PAPER_RESULT",
+  "common_scale_identity_verified": true,
+  "created_utc": "2026-07-27T03:13:32.530315+00:00",
+  "maximum_scenario_reaggregation_error": 1.4210854715202004e-14,
+  "mechanism_factorization_supported": true,
+  "next_gate": "HUMAN_REVIEW_OF_57_SECTOR_REFERENCE_FEASIBILITY_BEFORE_COMPOSITE_BEAM_IMPORT",
+  "protected_sample_count": 587,
+  "required_backoff_identity_verified": true,
+  "review_required": true,
+  "scenario_count": 84,
+  "sector_count": 57,
+  "site_count": 19,
+  "status": "PASS_REVIEW_REQUIRED"
+}

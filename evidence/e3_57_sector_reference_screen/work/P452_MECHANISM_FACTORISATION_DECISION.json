@@ -1,0 +1,11 @@
+{
+  "allowed_maximum_delta_db": 0.1,
+  "claim_boundary": "NUMERICAL_MECHANISM_ISOLATION_AUDIT",
+  "created_utc": "2026-07-27T03:13:29.978652+00:00",
+  "external_direct_gain_factorization_supported": true,
+  "interpretation": "The probe numerically suppresses the P.452 troposcatter branch by using a very large horizon-gain coupling-loss input. It is an audit device, not a physical antenna scenario.",
+  "maximum_troposcatter_contribution_delta_db": 0.0624552473036317,
+  "next_gate": "BUILD_57_SECTOR_REFERENCE_FEASIBILITY_SCREEN",
+  "row_count": 798,
+  "status": "PASS_EXTERNAL_DIRECT_GAIN_FACTORIZATION_SUPPORTED"
+}

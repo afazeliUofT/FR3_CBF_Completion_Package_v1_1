@@ -1,0 +1,41 @@
+E3 P.452 MECHANISM-ISOLATION MATLAB PROBE: PASS
+Rows: 798
+Probe horizon gain: 100.000 dBi / 100.000 dBi
+Troposcatter contribution delta range: 4.36699565398e-11 to 0.0624552473036 dB
+COPIED MECHANISM OUTPUT: p452_troposcatter_suppressed_probe.csv
+COPIED MECHANISM OUTPUT: P452_MECHANISM_PROBE_MATLAB_AUDIT.json
+E3 P.452 MECHANISM-ISOLATION VALIDATION: PASS
+{
+  "created_utc": "2026-07-27T03:13:29.978652+00:00",
+  "status": "PASS_EXTERNAL_DIRECT_GAIN_FACTORIZATION_SUPPORTED",
+  "claim_boundary": "NUMERICAL_MECHANISM_ISOLATION_AUDIT",
+  "row_count": 798,
+  "maximum_troposcatter_contribution_delta_db": 0.0624552473036317,
+  "allowed_maximum_delta_db": 0.1,
+  "external_direct_gain_factorization_supported": true,
+  "interpretation": "The probe numerically suppresses the P.452 troposcatter branch by using a very large horizon-gain coupling-loss input. It is an audit device, not a physical antenna scenario.",
+  "next_gate": "BUILD_57_SECTOR_REFERENCE_FEASIBILITY_SCREEN"
+}
+
+SITE SUMMARY
+   site_id  maximum_troposcatter_contribution_delta_db  median_troposcatter_contribution_delta_db
+E3_SITE_06                                    0.062455                               5.339029e-04
+E3_SITE_08                                    0.003280                               3.215334e-05
+E3_SITE_09                                    0.001912                               1.796431e-05
+E3_SITE_17                                    0.000026                               1.939927e-07
+E3_SITE_19                                    0.000004                               2.582590e-08
+E3_SITE_18                                    0.000004                               2.460931e-08
+E3_SITE_16                                    0.000004                               2.453150e-08
+E3_SITE_07                                    0.000003                               2.381860e-08
+E3_SITE_14                                    0.000003                               2.322734e-08
+E3_SITE_05                                    0.000003                               2.270411e-08
+E3_SITE_01                                    0.000003                               2.201872e-08
+E3_SITE_15                                    0.000003                               2.165824e-08
+E3_SITE_12                                    0.000003                               2.158765e-08
+E3_SITE_04                                    0.000002                               2.115533e-08
+E3_SITE_03                                    0.000002                               2.108740e-08
+E3_SITE_02                                    0.000002                               2.041996e-08
+E3_SITE_13                                    0.000002                               2.017181e-08
+E3_SITE_10                                    0.000002                               2.012912e-08
+E3_SITE_11                                    0.000002                               1.967226e-08
+WRAPPER 10 MECHANISM PROBE: PASS

@@ -1,0 +1,22 @@
+E3 57-sector reference feasibility-screen drop-in v1
+
+Static verification
+- All Python files parsed successfully.
+- All Bash wrappers passed `bash -n`.
+- Package SHA-256 manifest constructed.
+- No frozen bytecode/cache files included.
+
+Focused tests
+- Expected row counts: 2,394 static sector rows; 22,306 ES-gain rows;
+  49,308 aggregate rows.
+- Reference element-pattern geometry.
+- SA.509 single/multiple-entry 3 dB far-sidelobe difference.
+
+Scientific gates
+- Human classification of all 19 P.452 paths.
+- Numerical troposcatter-isolation probe.
+- External direct-gain factorization threshold: 0.10 dB.
+- 57-sector linear-power aggregation.
+- Required common power/backoff feasibility envelopes.
+- No final composite WMMSE, dynamic CBF, paper, or compliance claim.
+- Conditional scientific-stop packaging when the mechanism threshold fails

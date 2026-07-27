@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-07-27T03:13:29.043Z",
+  "status": "PASS",
+  "claim_boundary": "NUMERICAL_MECHANISM_ISOLATION_AUDIT",
+  "matlab_release": "2026a",
+  "p452_reference_commit": "86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe",
+  "row_count": 798,
+  "probe_horizon_gain_dbi": 100,
+  "maximum_troposcatter_contribution_delta_db": 0.062455247303631722,
+  "minimum_troposcatter_contribution_delta_db": 4.3669956539815757E-11
+}
