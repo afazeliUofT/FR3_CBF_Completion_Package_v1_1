@@ -1,0 +1,23 @@
+Sionna 2.0.1 topology-readiness drop-in v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Package SHA-256 manifest: PASS
+- No frozen bytecode/cache artifacts: PASS
+
+Focused tests
+- 19-site / 57-sector / 57-user adapter counts
+- Geographic-bearing to Sionna-yaw convention
+- Energy-weighted delay support rejects a negligible multi-second raw outlier
+
+Scientific boundaries
+- Raw maximum delay alone is not treated as a physical channel metric
+- Exact ETSI TR 138 901 V19.4.0 mapping remains open
+- Finite network without wraparound is adapter evidence only
+- One user per sector, 8-port array, CPU execution only
+- DLP-RZF and four-user GPU pilot remain the next gate
+- Main-venv preflight test does not import Torch/Sionna
+- ETSI HTTP-403 browser/manual-download fallback
+- Exact 2,788,641-byte PDF/header/EOF validation
+- Resume-after-delay-audit recovery master

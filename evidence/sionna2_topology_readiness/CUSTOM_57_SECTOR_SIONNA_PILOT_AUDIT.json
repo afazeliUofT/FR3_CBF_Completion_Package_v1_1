@@ -1,0 +1,74 @@
+{
+  "claim_boundary": "ONE_USER_PER_SECTOR_CPU_ADAPTER_AUDIT_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T17:28:02.859380+00:00",
+  "delay_sanity": {
+    "maximum_energy_support_delay_s": 8.647378854220733e-05,
+    "maximum_rms_delay_spread_s": 6.6825568193136795e-06
+  },
+  "dimensions": {
+    "bs_antennas": 8,
+    "bs_sectors": 57,
+    "coefficients": [
+      1,
+      57,
+      1,
+      57,
+      8,
+      24,
+      1
+    ],
+    "delays": [
+      1,
+      57,
+      57,
+      24
+    ],
+    "frequency_response": [
+      1,
+      57,
+      1,
+      57,
+      8,
+      1,
+      1
+    ],
+    "users": 57,
+    "ut_antennas": 1
+  },
+  "environment": {
+    "device": "cpu",
+    "sionna_version": "2.0.1",
+    "torch_version": "2.9.1+cpu"
+  },
+  "fingerprints": {
+    "beamformers_sha256": "474e766e1af8699ea5b465055aaaa9b6efceed64f2cdc3213a08dd73508f8300",
+    "coefficients_sha256": "c8b9d60fd28ad9915c4f27019482d580b541ab093f153a4894691736bd6dcea3",
+    "delays_sha256": "889487e46d787c3659a13a339ec0e911337025148e68ab56f247bd9778949281",
+    "frequency_response_sha256": "c664f4695974e1d283e126b11c5bc337d159d372c8834c2106ba4136eace60c4"
+  },
+  "limitations": [
+    "One user per sector only.",
+    "2x2 dual-polarized 8-port BS array only.",
+    "Finite 19-site network without wraparound.",
+    "Center-frequency flat response only.",
+    "MRT/local one-user RZF equivalence; DLP projection not yet applied.",
+    "Not the four-user GPU paper pilot."
+  ],
+  "next_gate": "COMPLETE_TR38901_V19_4_MAPPING_AND_RUN_GPU_4USER_DLP_RZF_PILOT",
+  "rate_accounting": {
+    "maximum_user_spectral_efficiency_bps_hz": 13.846364867961388,
+    "median_user_spectral_efficiency_bps_hz": 1.9623105667241805,
+    "minimum_sinr_db": -19.12199108673171,
+    "minimum_user_spectral_efficiency_bps_hz": 0.017552172828832053,
+    "network_sum_spectral_efficiency_bps_hz": 168.58418247161003,
+    "noise_dbm_over_100mhz": -87.0,
+    "noise_w": 1.9952623149688827e-12,
+    "power_w_per_sector": 39.810717055349734
+  },
+  "reproducibility": {
+    "maximum_coefficient_error": 0.0,
+    "maximum_delay_error_s": 0.0,
+    "maximum_frequency_response_error": 0.0
+  },
+  "status": "PASS_CUSTOM_57_SECTOR_CPU_ADAPTER_AUDIT"
+}

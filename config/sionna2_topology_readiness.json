@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "purpose": "Harden the Sionna 2.0.1 qualification, resolve the raw multi-second delay statistic, archive the official ETSI TR 138 901 V19.4.0 source record, and qualify a custom finite 19-site/57-sector topology and inter-cell rate adapter before the four-user GPU DLP-RZF pilot.",
+  "claim_boundary": {
+    "delay_audit": "CHANNEL_DELAY_SANITY_AUDIT_NOT_PAPER_RESULT",
+    "standards_mapping": "SOURCE_ARCHIVE_AND_MAPPING_SCAFFOLD_NOT_EXACT_CERTIFICATION",
+    "topology_adapter": "ONE_USER_PER_SECTOR_CPU_ADAPTER_AUDIT_NOT_PAPER_RESULT"
+  },
+  "expected": {
+    "branch": "e3-first-sector-p452",
+    "required_ancestor_commit": "95ba554e31b7505b97f09cb6ed23c6ba115ad653",
+    "sionna_version": "2.0.1",
+    "torch_base_version": "2.9.1",
+    "carrier_frequency_hz": 8150000000.0,
+    "site_count": 19,
+    "sector_count": 57,
+    "adapter_users_per_sector": 1,
+    "adapter_user_count": 57,
+    "adapter_bs_antenna_count": 8,
+    "adapter_ut_antenna_count": 1
+  },
+  "environment": {
+    "qualified_venv": "~/.venvs/fr3-sionna2-2.0.1-cpu",
+    "work_dir": "data/real/sionna2_topology_readiness",
+    "evidence_dir": "evidence/sionna2_topology_readiness",
+    "log_dir": "logs/sionna2_topology_readiness",
+    "etsi_pdf_path": "data/external/etsi/tr_138901v190400p.pdf"
+  },
+  "delay_audit": {
+    "qualification_seed_uma": 29001,
+    "qualification_seed_umi": 29002,
+    "relative_path_energy_floor": 1e-12,
+    "cumulative_energy_fraction": 0.999999999,
+    "maximum_energy_supported_delay_s": 0.001,
+    "maximum_rms_delay_spread_s": 0.001,
+    "raw_delay_outlier_threshold_s": 0.001
+  },
+  "etsi": {
+    "directory_url": "https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/19.04.00_60/",
+    "pdf_url": "https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/19.04.00_60/tr_138901v190400p.pdf",
+    "document": "ETSI TR 138 901 V19.4.0 Release 19",
+    "expected_bytes": 2788641
+  },
+  "adapter": {
+    "scenario": "uma",
+    "bs_height_m": 25.0,
+    "ut_height_m": 1.5,
+    "minimum_user_radius_m": 50.0,
+    "maximum_user_radius_m": 200.0,
+    "sector_half_width_deg": 30.0,
+    "indoor_probability": 0.8,
+    "random_seed": 30001,
+    "bs_array_rows": 2,
+    "bs_array_cols": 2,
+    "bs_array_polarization": "dual",
+    "bs_array_polarization_type": "cross",
+    "ut_array_polarization": "single",
+    "ut_array_polarization_type": "V",
+    "o2i_model": "low",
+    "conducted_power_dbm_per_100mhz": 46.0,
+    "bandwidth_hz": 100000000.0,
+    "noise_figure_db": 7.0,
+    "thermal_noise_density_dbm_per_hz": -174.0,
+    "finite_network_no_wraparound": true
+  },
+  "next_gate": "COMPLETE_TR38901_V19_4_MAPPING_AND_RUN_GPU_4USER_DLP_RZF_PILOT"
+}

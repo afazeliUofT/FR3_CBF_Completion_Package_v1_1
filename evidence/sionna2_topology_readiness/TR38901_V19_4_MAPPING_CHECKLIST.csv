@@ -1,0 +1,19 @@
+model_item,standards_role,current_implementation,status
+carrier_frequency,0.5-100 GHz scope / experiment at 8.15 GHz,8.15 GHz API verified,USED_API_VERIFIED
+primary_scenario,UMa,UMa class and 25 m qualification verified,USED_API_VERIFIED
+sensitivity_scenario,UMi street canyon,UMi class and 10 m qualification verified,QUALIFICATION_VERIFIED_NOT_IN_PRIMARY_PILOT
+pathloss,TR 38.901 UMa/UMi pathloss,enable_pathloss=True,USED_LIBRARY_REQUIRES_CLAUSE_MAPPING
+shadow_fading,TR 38.901 large-scale shadowing,enable_shadow_fading=True,USED_LIBRARY_REQUIRES_CLAUSE_MAPPING
+los_probability,TR 38.901 scenario-dependent LoS state,Library-generated because los=None,USED_LIBRARY_REQUIRES_CLAUSE_MAPPING
+o2i_penetration,Low-loss O2I model,o2i_model=low,USED_LIBRARY_REQUIRES_CLAUSE_MAPPING
+large_scale_parameters,"Delay/angle spreads, K-factor, correlations",Sionna-generated,USED_LIBRARY_REQUIRES_PARAMETER_TABLE_AUDIT
+small_scale_clusters,Cluster/ray generation,Sionna-generated,USED_LIBRARY_REQUIRES_PARAMETER_TABLE_AUDIT
+bs_antenna,TR 38.901 element pattern,"2x2 dual cross, 8 ports for adapter pilot",PILOT_ONLY
+ut_antenna,Omnidirectional single-polarized UT,One port,PILOT_ONLY
+release19_7_24ghz_changes,V19.4.0 additions/validations in 7-24 GHz,Not certified by library version label,OPEN_MANDATORY_BEFORE_PAPER
+near_field,Release-19 near-field framework,Not enabled,NOT_USED_OPEN_SENSITIVITY
+spatial_nonstationarity,Release-19 SNS framework,Not enabled,NOT_USED_OPEN_SENSITIVITY
+realistic_ut_antenna_and_blockage,Release-19 UT antenna/blockage enhancements,Not enabled,NOT_USED_OPEN_SENSITIVITY
+custom_57_sector_topology,Frozen 19-site/57-sector layout,"Finite custom adapter, no wraparound",ADAPTER_AUDIT_ONLY_EDGE_SENSITIVITY_OPEN
+inter_cell_rate,All 57 sectors included,One UE/sector center-frequency rate reconstructed,ADAPTER_AUDIT_ONLY
+dlp_rzf,Distributed leakage-projected RZF,Not applied in adapter pilot,NEXT_GPU_PILOT

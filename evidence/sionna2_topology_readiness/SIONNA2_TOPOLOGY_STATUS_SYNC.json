@@ -1,0 +1,18 @@
+{
+  "as_of_date": "2026-07-27",
+  "main_method": "DLP_RZF",
+  "next_gate": "COMPLETE_TR38901_V19_4_MAPPING_AND_RUN_GPU_4USER_DLP_RZF_PILOT",
+  "schema_version": 5,
+  "sionna": {
+    "delay_audit": "PASS_ENERGY_WEIGHTED_DELAY_SANITY",
+    "qualification": "cpu_api_passed",
+    "topology_readiness": "PASS_TO_GPU_4USER_PILOT_WITH_STANDARDS_MAPPING_OPEN",
+    "torch_base_version": "2.9.1",
+    "version": "2.0.1"
+  },
+  "standards": {
+    "exact_mapping_complete": false,
+    "reference": "ETSI_TR_138_901_V19_4_0",
+    "source_sha256": "b0cbf2b55c91c6c10a2086f642194ebf26cdd27f48b88ee3f5bd40ad184f3701"
+  }
+}

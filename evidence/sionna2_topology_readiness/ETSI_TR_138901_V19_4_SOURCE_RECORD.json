@@ -1,0 +1,10 @@
+{
+  "bytes": 2788641,
+  "created_utc": "2026-07-27T17:28:03.489952+00:00",
+  "directory_url": "https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/19.04.00_60/",
+  "document": "ETSI TR 138 901 V19.4.0 Release 19",
+  "git_policy": "PDF_NOT_COMMITTED; source record and hash only",
+  "local_path": "data/external/etsi/tr_138901v190400p.pdf",
+  "pdf_url": "https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/19.04.00_60/tr_138901v190400p.pdf",
+  "sha256": "b0cbf2b55c91c6c10a2086f642194ebf26cdd27f48b88ee3f5bd40ad184f3701"
+}

@@ -1,0 +1,126 @@
+{
+  "claim_boundary": "CHANNEL_DELAY_SANITY_AUDIT_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T06:18:51.397875+00:00",
+  "maximum_energy_supported_delay_s": 1.898179471027106e-05,
+  "maximum_rms_delay_spread_s": 3.5940555262105485e-06,
+  "next_gate": "CUSTOM_57_SECTOR_TOPOLOGY_ADAPTER_AUDIT",
+  "raw_delay_interpretation": "The raw maximum is retained but is not accepted as a physical delay metric without considering path energy.",
+  "scenario_summaries": [
+    {
+      "coefficient_shape": [
+        1,
+        21,
+        1,
+        21,
+        8,
+        24,
+        1
+      ],
+      "delay_shape": [
+        1,
+        21,
+        21,
+        24
+      ],
+      "link_count": 441,
+      "maximum_energy_support_delay_s": 1.898179471027106e-05,
+      "maximum_relative_floor_active_delay_s": 1.898179471027106e-05,
+      "maximum_rms_delay_spread_s": 3.5940555262105485e-06,
+      "raw_delay_outlier_count": 2880,
+      "raw_max_delay_s": 4.048565864562988,
+      "scenario": "uma"
+    },
+    {
+      "coefficient_shape": [
+        1,
+        21,
+        1,
+        21,
+        8,
+        23,
+        1
+      ],
+      "delay_shape": [
+        1,
+        21,
+        21,
+        23
+      ],
+      "link_count": 441,
+      "maximum_energy_support_delay_s": 1.3469945770339109e-05,
+      "maximum_relative_floor_active_delay_s": 1.3469945770339109e-05,
+      "maximum_rms_delay_spread_s": 2.015133889250301e-06,
+      "raw_delay_outlier_count": 2954,
+      "raw_max_delay_s": 2.6569433212280273,
+      "scenario": "umi"
+    }
+  ],
+  "settings": {
+    "cumulative_energy_fraction": 0.999999999,
+    "maximum_energy_supported_delay_s": 0.001,
+    "maximum_rms_delay_spread_s": 0.001,
+    "qualification_seed_uma": 29001,
+    "qualification_seed_umi": 29002,
+    "raw_delay_outlier_threshold_s": 0.001,
+    "relative_path_energy_floor": 1e-12
+  },
+  "source_provenance": {
+    "cir_to_ofdm_channel_signature": "(frequencies: torch.Tensor, a: torch.Tensor, tau: torch.Tensor, normalize: bool = False) -> torch.Tensor",
+    "module_files": [
+      {
+        "bytes": 4677,
+        "module": "sionna.phy.channel.tr38901.uma",
+        "path": "/home/afazeli2006/.venvs/fr3-sionna2-2.0.1-cpu/lib/python3.12/site-packages/sionna/phy/channel/tr38901/uma.py",
+        "sha256": "bd96abea3a1682d740c6a93b7a0384c9f5857c262c05c1e749d170049247bbca"
+      },
+      {
+        "bytes": 5077,
+        "module": "sionna.phy.channel.tr38901.umi",
+        "path": "/home/afazeli2006/.venvs/fr3-sionna2-2.0.1-cpu/lib/python3.12/site-packages/sionna/phy/channel/tr38901/umi.py",
+        "sha256": "a7998c006232f9f38a7893c9fa92f5cf1b00485038f3d4dcb8a39dead488319e"
+      },
+      {
+        "bytes": 20016,
+        "module": "sionna.phy.channel.tr38901.system_level_channel",
+        "path": "/home/afazeli2006/.venvs/fr3-sionna2-2.0.1-cpu/lib/python3.12/site-packages/sionna/phy/channel/tr38901/system_level_channel.py",
+        "sha256": "d6eb309b4f9db5eda27ac2e5100706e0c5add7d8af0f61f32d77292184ba1d84"
+      },
+      {
+        "bytes": 44476,
+        "module": "sionna.phy.channel.tr38901.system_level_scenario",
+        "path": "/home/afazeli2006/.venvs/fr3-sionna2-2.0.1-cpu/lib/python3.12/site-packages/sionna/phy/channel/tr38901/system_level_scenario.py",
+        "sha256": "77b0834152a6bdc8561651a22e303a004c24043c6e89b9441044ba483f539759"
+      },
+      {
+        "bytes": 41912,
+        "module": "sionna.phy.channel.tr38901.channel_coefficients",
+        "path": "/home/afazeli2006/.venvs/fr3-sionna2-2.0.1-cpu/lib/python3.12/site-packages/sionna/phy/channel/tr38901/channel_coefficients.py",
+        "sha256": "16f7fdf22cc331e5ab57f2c6954cdc87a4b33def66929ce169ac29d53aed91b4"
+      },
+      {
+        "bytes": 30238,
+        "module": "sionna.phy.channel.tr38901.rays",
+        "path": "/home/afazeli2006/.venvs/fr3-sionna2-2.0.1-cpu/lib/python3.12/site-packages/sionna/phy/channel/tr38901/rays.py",
+        "sha256": "f0201d8ee5adbf1933ad2bc5c1c0b48078244f27f047c11773ec1f9ba8312771"
+      },
+      {
+        "bytes": 65163,
+        "module": "sionna.phy.channel.utils",
+        "path": "/home/afazeli2006/.venvs/fr3-sionna2-2.0.1-cpu/lib/python3.12/site-packages/sionna/phy/channel/utils.py",
+        "sha256": "aaa9e44304fa1429e3e52e962f358ea81e5ddb9e839d771124cf1824b1cb79ac"
+      },
+      {
+        "bytes": 50440,
+        "module": "sionna.sys.topology",
+        "path": "/home/afazeli2006/.venvs/fr3-sionna2-2.0.1-cpu/lib/python3.12/site-packages/sionna/sys/topology.py",
+        "sha256": "2b9272c22edf9154e6d1e02dc645f8921ac76996b326339d3a9d882ef0be1010"
+      }
+    ],
+    "sionna_no_rt_version": "2.0.1",
+    "torch_version": "2.9.1+cpu",
+    "uma_call_signature": "(self, num_time_samples: int, sampling_frequency: float, foo: Optional[float] = None) -> Union[Tuple[torch.Tensor, torch.Tensor], Tuple[torch.Tensor, torch.Tensor, sionna.phy.channel.tr38901.rays.Rays]]",
+    "uma_set_topology_signature": "(self, ut_loc: Optional[torch.Tensor] = None, bs_loc: Optional[torch.Tensor] = None, ut_orientations: Optional[torch.Tensor] = None, bs_orientations: Optional[torch.Tensor] = None, ut_velocities: Optional[torch.Tensor] = None, in_state: Optional[torch.Tensor] = None, los: Optional[bool] = None, bs_virtual_loc: Optional[torch.Tensor] = None) -> None",
+    "umi_call_signature": "(self, num_time_samples: int, sampling_frequency: float, foo: Optional[float] = None) -> Union[Tuple[torch.Tensor, torch.Tensor], Tuple[torch.Tensor, torch.Tensor, sionna.phy.channel.tr38901.rays.Rays]]"
+  },
+  "status": "PASS_ENERGY_WEIGHTED_DELAY_SANITY"
+}

@@ -2,32 +2,19 @@
 
 ## Gate
 
-Frozen 57-sector Sionna 2.0.1 DLP-RZF pilot.
+`COMPLETE_TR38901_V19_4_MAPPING_AND_RUN_GPU_4USER_DLP_RZF_PILOT`
 
-## Qualified foundation
+## Completed in the readiness stage
 
-- Clean `sionna-no-rt==2.0.1` candidate.
-- `torch==2.9.1`.
-- CPU UMa and UMi API qualification passed.
-- UMa model-consistent BS height: 25 m.
-- UMi model-consistent BS height: 10 m.
-- Distributed local RZF plus exact local leakage projection.
-- No network-wide UE CSI or joint precoder.
+- Energy-weighted Sionna delay/source audit.
+- Official ETSI TR 138 901 V19.4.0 source record and SHA-256.
+- Release-19 mapping checklist scaffold.
+- Deterministic custom 19-site/57-sector geometry adapter.
+- One-user-per-sector finite-network inter-cell rate adapter audit, when the
+  delay gate passes.
 
-## Required sequence
+## Stop condition before the paper campaign
 
-1. Map the exact experiment parameters to ETSI TR 138 901 V19.4.0.
-2. Adapt the frozen 19-site/57-sector IDs and geometry to the Sionna topology.
-3. Generate one reproducible UMa seed with four users per sector.
-4. Compute local RZF from local UE CSI only.
-5. Include all inter-cell UE interference in SINR/rate metrics.
-6. Reconstruct transmit power and rates independently from exported tensors.
-7. Apply and verify DLP-RZF local leakage constraints.
-8. Measure CPU/GPU memory and runtime.
-9. Preserve the pilot as non-paper evidence before scaling.
-
-## Stop condition
-
-Do not launch the final campaign until the topology mapping, channel version
-mapping, inter-cell rate reconstruction, leakage verification, and one-seed
-GPU pilot all pass.
+Do not launch the final campaign until the exact V19.4.0 mapping, Sionna port
+ordering, four-user GPU pilot, DLP leakage verification, and independent
+power/SINR/rate reconstruction pass.

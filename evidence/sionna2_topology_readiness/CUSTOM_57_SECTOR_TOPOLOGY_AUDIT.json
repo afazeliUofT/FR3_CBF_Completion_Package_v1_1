@@ -1,0 +1,21 @@
+{
+  "claim_boundary": "ONE_USER_PER_SECTOR_CPU_ADAPTER_AUDIT_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T17:27:51.927264+00:00",
+  "edge_effect_boundary": "The adapter pilot is a finite 19-site network without wraparound. Paper-scale edge sensitivity remains required.",
+  "finite_network_no_wraparound": true,
+  "indoor_fraction": 0.7368421052631579,
+  "local_crs_wkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"World Geodetic System 1984\",ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1]],ID[\"EPSG\",6326]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8901]]],CONVERSION[\"unknown\",METHOD[\"Azimuthal Equidistant\",ID[\"EPSG\",1125]],PARAMETER[\"Latitude of natural origin\",45.558267505858,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",-75.80877,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+  "next_gate": "CUSTOM_57_SECTOR_SIONNA_CPU_API_AND_RATE_AUDIT",
+  "orientation_mapping": "Local x=east, y=north; Sionna yaw=90deg-geographic azimuth; positive pitch equals declared mechanical downtilt.",
+  "origin_latitude_deg": 45.55826750585789,
+  "origin_longitude_deg": -75.80877,
+  "radius_range_m": [
+    51.75966410509575,
+    195.20896616095897
+  ],
+  "sector_count": 57,
+  "site_count": 19,
+  "status": "PASS_CUSTOM_TOPOLOGY_GEOMETRY_READY",
+  "user_count": 57,
+  "users_per_sector": 1
+}

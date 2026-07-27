@@ -1,50 +1,14 @@
-schema_version: 4
-as_of_date: "2026-07-27"
-
-publication:
-  primary_target: IEEE_TWC
-  mode: operator_independent
-
-main_operational_architecture:
-  name: distributed_leakage_projected_rzf
-  acronym: DLP_RZF
-  wmmse_main_method: removed
-  central_instantaneous_ue_csi: prohibited
-  central_joint_precoder: prohibited
-
-channel_implementation:
-  selected_candidate:
-    distribution: sionna-no-rt
-    version: 2.0.1
-    framework: PyTorch
-    torch_version: 2.9.1
-    qualification_device: CPU
-    status: api_qualified_not_paper_evidence
-  legacy_executable_baseline:
-    status: not_found_in_reviewed_source_root
-  standards_mapping:
-    reference: ETSI_TR_138_901_V19_4_0
-    exact_clause_mapping_status: open
-  scenarios:
-    uma_primary:
-      bs_height_m: 25.0
-      isd_m: 500.0
-    umi_sensitivity:
-      bs_height_m: 10.0
-      isd_m: 200.0
-
-e3:
-  propagation_and_reference_screen:
-    status: complete_reference_only
-  distributed_architecture:
-    status: software_audit_passed_not_paper_result
-  next_gate: frozen_57_sector_sionna2_dlp_rzf_pilot
-
-remaining_major_paper_gates:
-  - full_e3_distributed_beam_dynamic_budget_experiment
-  - e1_static_fixed_service
-  - e2_dynamic_rate_limit
-  - uncertainty_calibration
-  - layered_runtime_scalability
-  - statistical_campaign
-  - final_manuscript_and_release
+schema_version: 5
+as_of_date: '2026-07-27'
+main_method: DLP_RZF
+sionna:
+  version: 2.0.1
+  torch_base_version: 2.9.1
+  qualification: cpu_api_passed
+  delay_audit: PASS_ENERGY_WEIGHTED_DELAY_SANITY
+  topology_readiness: PASS_TO_GPU_4USER_PILOT_WITH_STANDARDS_MAPPING_OPEN
+standards:
+  reference: ETSI_TR_138_901_V19_4_0
+  source_sha256: b0cbf2b55c91c6c10a2086f642194ebf26cdd27f48b88ee3f5bd40ad184f3701
+  exact_mapping_complete: false
+next_gate: COMPLETE_TR38901_V19_4_MAPPING_AND_RUN_GPU_4USER_DLP_RZF_PILOT

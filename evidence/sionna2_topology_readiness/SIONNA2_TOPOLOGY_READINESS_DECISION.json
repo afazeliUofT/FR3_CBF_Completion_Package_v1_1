@@ -1,0 +1,29 @@
+{
+  "claim_boundary": "ONE_USER_PER_SECTOR_CPU_ADAPTER_AUDIT_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T17:28:03.492436+00:00",
+  "delay_audit_status": "PASS_ENERGY_WEIGHTED_DELAY_SANITY",
+  "etsi_source_record": {
+    "bytes": 2788641,
+    "created_utc": "2026-07-27T17:28:03.489952+00:00",
+    "directory_url": "https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/19.04.00_60/",
+    "document": "ETSI TR 138 901 V19.4.0 Release 19",
+    "git_policy": "PDF_NOT_COMMITTED; source record and hash only",
+    "local_path": "data/external/etsi/tr_138901v190400p.pdf",
+    "pdf_url": "https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/19.04.00_60/tr_138901v190400p.pdf",
+    "sha256": "b0cbf2b55c91c6c10a2086f642194ebf26cdd27f48b88ee3f5bd40ad184f3701"
+  },
+  "exact_tr_138_901_v19_4_mapping_complete": false,
+  "four_user_gpu_pilot_complete": false,
+  "mapping_checklist": "data/real/sionna2_topology_readiness/TR38901_V19_4_MAPPING_CHECKLIST.csv",
+  "next_gate": "COMPLETE_TR38901_V19_4_MAPPING_AND_RUN_GPU_4USER_DLP_RZF_PILOT",
+  "required_before_paper_evidence": [
+    "Complete and review the V19.4.0 clause/parameter mapping.",
+    "Run four users per sector on a pinned GPU environment.",
+    "Apply local RZF and DLP-RZF using the actual Sionna port ordering.",
+    "Include inter-cell interference on the declared tone/resource grid.",
+    "Independently reconstruct powers, SINRs, rates, and incumbent leakage.",
+    "Run load, delay, uncertainty, multi-seed, and multi-pass campaigns."
+  ],
+  "status": "PASS_TO_GPU_4USER_PILOT_WITH_STANDARDS_MAPPING_OPEN",
+  "topology_adapter_status": "PASS_CUSTOM_57_SECTOR_CPU_ADAPTER_AUDIT"
+}
