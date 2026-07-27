@@ -1,0 +1,46 @@
+{
+  "checks": {
+    "all_path_gain_conversions_verified": true,
+    "max_coast_distance_loss_span_db": 0.0,
+    "max_full_accounting_identity_error_db": 2.842170943040401e-14,
+    "max_hv_loss_span_db": 0.0,
+    "max_relative_path_gain_error": 1.066180594429553e-13,
+    "max_sa509_recomputation_error_db": 8.881784197001252e-15,
+    "max_summary_reaggregation_error": 1.4210854715202004e-14,
+    "p452_grid_unique": true,
+    "p50_minus_free_space_reference_db": -0.01149264951688167
+  },
+  "claim_boundary": "PASS_AS_ACCOUNTING_AUDIT_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T01:20:54.223767+00:00",
+  "findings": {
+    "all_declared_full_power_cases_exceed_long_for_all_protected_samples": true,
+    "all_declared_full_power_cases_exceed_short_for_all_protected_samples": true,
+    "coast_distance_sensitivity_for_this_path": "ZERO_TO_NUMERICAL_PRECISION",
+    "existing_peak_accounting_components_file_disposition": "It is the nominal p=20%, H, coherent-array, multiple-entry-pattern peak, not the global conditional peak. Superseding precisely named files were generated.",
+    "h_v_p452_sensitivity_for_this_path": "ZERO_TO_NUMERICAL_PRECISION"
+  },
+  "input_sha256": {
+    "data/real/e3_first_sector_p452/FIRST_SECTOR_P452_AUDIT.json": "c69236a3edfa46e9323a7afb8afa8d09f86ca51d2cd3123f999c1336f8446022",
+    "data/real/e3_first_sector_p452/FIRST_SECTOR_P452_VALIDATION.json": "bf90d0d6221de011243ac6e2fa47f78769b57da547f18bf0596050186bd08bcb",
+    "data/real/e3_first_sector_p452/bs_gain_accounting.csv": "1567d1bd0b5b7f6327711ebb6df2da5338803a5207df2f7dbc2acaf1fdd34f1a",
+    "data/real/e3_first_sector_p452/conditional_threshold_summary.csv": "503e59f1d23b23d207043510952162bf53050b35eaffe45cba4ee16499cbd1c3",
+    "data/real/e3_first_sector_p452/earth_station_gain_timeseries.csv": "23e94136b720b7fbeeb2541ff25ecc21c1f8367ab0a99527d62e58e54e48c6da",
+    "data/real/e3_first_sector_p452/gain_accounting_timeseries.csv.gz": "635e1278840351a0e6cfe8c47cbea21b1507d8b557e11e17c502f8c52c1708af",
+    "data/real/e3_first_sector_p452/p452_basic_loss.csv": "e79880b950b470ae5b15a79d4142f504a65ab111844b34ef33514908eb9fca43",
+    "data/real/e3_first_sector_p452/peak_accounting_components.csv": "fa22db7c63baf403bf423b50a2f8562ec5d868e9c33865a9f49cdd58f506f8d9",
+    "data/real/e3_pattern_layout_review/earth_station_pattern_parameters.csv": "f1a6212d42c0181e2579fa45a1ed9a50c6a4c5ca4e5a073f36c098af49041e26"
+  },
+  "next_gate": "HUMAN_REVIEW_OF_ALL_19_SITE_TERRAIN_BEFORE_P452_SCALING",
+  "required_next_stage_constraints": [
+    "Do not call this a compliance result or paper result.",
+    "Do not use the coherent-array upper envelope as the final composite WMMSE beam gain.",
+    "Use the required effective-BS-gain/backoff envelopes when assessing feasibility.",
+    "Build 19 unique site propagation paths before duplicating them across 57 sectors.",
+    "Freeze propagation-time and operational-exceedance composition before the dynamic E3 paper run.",
+    "Retain zero-dB polarization mismatch only as an explicitly conservative co-polar reference.",
+    "Independently spot-check the selected satellite pass before paper use."
+  ],
+  "review_scope": "Independent full-row audit of basic loss and external accounting.",
+  "sector_id": "E3_SITE_18_SEC_1",
+  "status": "PASS_WITH_REQUIRED_NEXT_STAGE_CONSTRAINTS"
+}

@@ -1,0 +1,19 @@
+E3 one-sector human review + all-site terrain drop-in v1
+
+Static checks:
+- Python source syntax: PASS
+- Bash wrapper syntax: PASS
+- Package manifest construction: PASS
+- No frozen bytecode/cache artifacts: PASS
+
+Focused unit tests:
+- SA.509 far-sidelobe formula and 3 dB single/multiple difference
+- Required package files present
+
+Scientific scope:
+- Independent full-row one-sector accounting review
+- Required BS-gain/backoff envelope generation
+- Existing peak-component file clarification
+- One terrain profile per 19 unique modelled sites
+- Human review required before all-site P.452 scaling
+- Uncompressed all-site profile review CSV and per-site slope/step QC output

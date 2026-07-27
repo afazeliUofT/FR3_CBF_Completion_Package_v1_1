@@ -1,0 +1,53 @@
+schema_version: 1
+purpose: >-
+  Close the independent human review of the validated Site-18 one-sector
+  P.452 accounting audit, then prepare and validate the 19 unique
+  site-to-earth-station MRDEM terrain profiles before all-site P.452 scaling.
+claim_boundary:
+  one_sector: PASS_AS_ACCOUNTING_AUDIT_NOT_PAPER_RESULT
+  all_site_terrain: REVIEW_REQUIRED_NOT_P452_RESULT
+
+inputs:
+  one_sector_work_dir: data/real/e3_first_sector_p452
+  one_sector_review_dir: results/e3_first_sector_p452_review
+  pattern_parameters_csv: data/real/e3_pattern_layout_review/earth_station_pattern_parameters.csv
+  earth_station_csv: data/real/earth_station.csv
+  bs_sites_csv: data/real/bs_sites.csv
+  dem_tif: data/external/mrdem_e3_layout/mrdem_dtm_study_subset.tif
+
+outputs:
+  one_sector_review_dir: data/real/e3_first_sector_human_review
+  all_site_root: data/real/e3_all_site_terrain_review
+  all_site_links_input_csv: data/real/e3_all_site_terrain_review/site_links_input.csv
+  all_site_links_with_terrain_csv: data/real/e3_all_site_terrain_review/site_links_with_terrain.csv
+  all_site_terrain_dir: data/real/e3_all_site_terrain_review/terrain_review
+  all_site_review_pdf: data/real/e3_all_site_terrain_review/terrain_review/all_19_site_profiles_review.pdf
+
+expected:
+  branch: e3-first-sector-p452
+  required_ancestor_commit: ca8d9784d38eea7b6334377f5cd5161b4f5de11b
+  sector_id: E3_SITE_18_SEC_1
+  site_count: 19
+  protected_samples: 587
+  p452_rows: 42
+  earth_station_gain_scenarios: 6
+  earth_station_gain_rows: 3522
+  accounting_rows: 49308
+  matlab_release: "2026a"
+  p452_commit: 86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe
+
+terrain:
+  spacing_m: 30.0
+  mean_convention: inclusive
+  allowed_nonblocking_flags:
+    - inclusive_interior_mean_difference_gt_0p5m
+
+review_policy:
+  verdict: PASS_WITH_REQUIRED_NEXT_STAGE_CONSTRAINTS
+  next_gate: HUMAN_REVIEW_OF_ALL_19_SITE_TERRAIN_BEFORE_P452_SCALING
+  do_not_claim:
+    - compliance
+    - paper_result
+    - final_composite_beam_gain
+    - frozen_time_percentage_composition
+    - final_physical_polarization_model

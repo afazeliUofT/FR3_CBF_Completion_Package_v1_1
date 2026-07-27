@@ -1,0 +1,14 @@
+{
+  "accounting_rows": 49308,
+  "all_long_exceedance_fractions_equal_one": true,
+  "all_short_exceedance_fractions_equal_one": true,
+  "earth_station_gain_rows": 3522,
+  "maximum_long_backoff_db": 80.9064448879341,
+  "maximum_short_backoff_db": 63.9064448879341,
+  "minimum_long_backoff_db": 25.136747440658993,
+  "minimum_short_backoff_db": 8.136747440658993,
+  "next_gate": "HUMAN_REVIEW_OF_ALL_19_SITE_TERRAIN_BEFORE_P452_SCALING",
+  "p452_rows": 42,
+  "sector": "E3_SITE_18_SEC_1",
+  "verdict": "PASS_WITH_REQUIRED_NEXT_STAGE_CONSTRAINTS"
+}

@@ -1,0 +1,64 @@
+{
+  "blocking_flags": [],
+  "claim_boundary": "REVIEW_REQUIRED_NOT_P452_RESULT",
+  "created_utc": "2026-07-27T01:20:56.964515+00:00",
+  "distance_km_max": 3.999999999998896,
+  "distance_km_min": 1.99999999999875,
+  "maximum_absolute_adjacent_step_m": 20.16802978515622,
+  "maximum_absolute_segment_slope": 0.6777578361301577,
+  "next_gate": "MANUAL_REVIEW_OF_ALL_19_SITE_TERRAIN_PROFILES",
+  "nonblocking_flags": [
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_01"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_02"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_03"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_05"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_07"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_10"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_11"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_12"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_14"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_16"
+    },
+    {
+      "flag": "inclusive_interior_mean_difference_gt_0p5m",
+      "site_id": "E3_SITE_19"
+    }
+  ],
+  "profile_qc_metrics_csv": "data/real/e3_all_site_terrain_review/all_site_profile_qc_metrics.csv",
+  "review_pdf": "data/real/e3_all_site_terrain_review/terrain_review/all_19_site_profiles_review.pdf",
+  "site_count": 19,
+  "status": "REVIEW_REQUIRED",
+  "terrain_max_m_asl": 270.8760070800781,
+  "terrain_min_m_asl": 96.97103118896484,
+  "total_profile_samples": 1963,
+  "uncompressed_profile_review_csv": "data/real/e3_all_site_terrain_review/terrain_profile_samples_review.csv"
+}
