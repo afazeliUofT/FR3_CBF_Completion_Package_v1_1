@@ -1,0 +1,258 @@
+schema_version: 1
+purpose: >-
+  Independently close the distributed leakage-projected RZF architecture
+  prototype, repair its package manifest, freeze the exact next experiment
+  contract, and collect a bounded text-only snapshot of the existing FR3
+  channel/topology implementation for code-level reuse without adopting WMMSE
+  as the operational method.
+
+claim_boundary:
+  architecture_review: PASS_ARCHITECTURE_MATH_ONLY_NOT_PAPER_RESULT
+  channel_snapshot: SOURCE_REVIEW_ONLY_NOT_EXECUTION_EVIDENCE
+  experiment_freeze: PAPER_EXPERIMENT_SPECIFICATION_NOT_RESULT
+
+inputs:
+  architecture_decision_json: data/real/distributed_ia_rzf_architecture/DISTRIBUTED_IA_RZF_ARCHITECTURE_DECISION.json
+  prototype_audit_json: data/real/distributed_ia_rzf_architecture/DISTRIBUTED_IA_RZF_PROTOTYPE_AUDIT.json
+  prototype_validation_json: data/real/distributed_ia_rzf_architecture/DISTRIBUTED_IA_RZF_VALIDATION.json
+  prototype_time_summary_csv: data/real/distributed_ia_rzf_architecture/prototype_time_summary.csv
+  architecture_manifest: DISTRIBUTED_IA_RZF_ARCHITECTURE_MANIFEST.sha256
+  architecture_source: src/fr3_cbf/distributed_precoding.py
+  prototype_source: scripts/27_1_run_distributed_ia_rzf_prototype.py
+  bs_sites_csv: data/real/bs_sites.csv
+  bs_sectors_csv: data/real/bs_sectors.csv
+  earth_station_csv: data/real/earth_station.csv
+
+outputs:
+  work_dir: data/real/distributed_channel_readiness
+  evidence_dir: evidence/distributed_channel_readiness
+  source_snapshot_dir: evidence/fr3_channel_baseline_snapshot
+  log_dir: logs/distributed_channel_readiness
+
+expected:
+  branch: e3-first-sector-p452
+  required_ancestor_commit: 6d6a589ad0dc08c052f51eb669aeeb9a37c77b14
+  sector_count: 57
+  site_count: 19
+  protected_sample_count: 587
+  prototype_sector_time_rows: 33459
+  minimum_rate_retention_fraction: 0.997729005553827
+
+method_naming:
+  previous_name: distributed_ia_rzf
+  paper_name: DISTRIBUTED_LEAKAGE_PROJECTED_RZF
+  acronym: DLP_RZF
+  reason: >-
+    The operational safety action is an exact rank-one Euclidean leakage
+    projection applied after local RZF. This is more precise than implying that
+    the incumbent constraint enters only through RZF regularization.
+
+architecture_review:
+  accepted:
+    - local_rzf_power_normalization
+    - exact_single_direction_euclidean_projection
+    - local_leakage_budget_enforcement
+    - aggregate_budget_sum_certificate
+    - transmit_power_nonincrease
+    - no_network_wide_ue_csi
+    - no_joint_network_precoder
+  not_tested_by_prototype:
+    - 3gpp_bs_ue_channel_model
+    - inter_cell_ue_interference
+    - real_ue_geometry_and_mobility
+    - rate_limited_budget_updates
+    - control_message_delay
+    - channel_estimation_error
+    - array_calibration_error
+    - hybrid_or_codebook_factorization
+    - physical_layer_bler
+    - multi_seed_statistics
+    - runtime_and_messaging_overhead
+  prototype_interpretation: >-
+    The 99.77% rate-retention value is a deterministic local-channel,
+    intra-cell-only software result. It is not evidence of paper-level cellular
+    utility.
+
+source_snapshot:
+  default_root: /mnt/c/Users/alifa/OneDrive/Projects/FR3_MainWork_For_Journal
+  fallback_parent: /mnt/c/Users/alifa/OneDrive/Projects
+  maximum_text_file_bytes: 2097152
+  maximum_total_snapshot_bytes: 31457280
+  maximum_selected_files: 900
+  excluded_directory_names:
+    - .git
+    - .venv
+    - venv
+    - __pycache__
+    - .pytest_cache
+    - node_modules
+    - data
+    - results
+    - logs
+    - output
+    - outputs
+    - checkpoints
+    - checkpoint
+    - cache
+    - build
+    - dist
+    - TAFL_LTAF
+    - p530
+    - mrdem
+  text_extensions:
+    - .py
+    - .m
+    - .ipynb
+    - .yaml
+    - .yml
+    - .json
+    - .toml
+    - .ini
+    - .cfg
+    - .txt
+    - .md
+    - .tex
+    - .bib
+    - .sh
+    - .ps1
+    - .csv
+  binary_inventory_extensions:
+    - .mat
+    - .npz
+    - .npy
+    - .h5
+    - .hdf5
+    - .pkl
+    - .pickle
+    - .parquet
+    - .mlx
+  relevance_keywords:
+    - sionna
+    - tr 38.901
+    - tr38901
+    - 38.901
+    - uma
+    - umi
+    - channel model
+    - channel generation
+    - topology
+    - user drop
+    - panelarray
+    - antenna array
+    - ofdm
+    - resource grid
+    - subcarrier
+    - pathloss
+    - shadow fading
+    - noise figure
+    - sinr
+    - sum rate
+    - rzf
+    - zero forcing
+    - beamforming
+    - precoding
+    - fr3
+    - gta
+    - fixed service
+  common_secret_names:
+    - api_key
+    - password
+    - passwd
+    - secret
+    - private_key
+    - access_token
+    - aws_access_key_id
+    - aws_secret_access_key
+
+paper_experiment:
+  standards:
+    channel_report:
+      document: ETSI_TR_138_901
+      version: V19.4.0
+      release: 19
+      publication_date: 2026-07
+      role: primary_bs_ue_stochastic_channel_reference
+    implementation:
+      status: TO_BE_SELECTED_AFTER_SOURCE_AND_ENVIRONMENT_REVIEW
+      legacy_candidate:
+        sionna_version: 0.19.2
+        framework: TensorFlow
+        limitation: >-
+          Existing reproducible baseline stack; it must be mapped against the
+          Release-19 V19.4.0 parameter set before use as paper evidence.
+      current_candidate:
+        sionna_version: 2.0.1
+        framework: PyTorch
+        limitation: >-
+          Current official library line; environment and exact TR 38.901
+          parameter-version coverage must be verified before freezing.
+  primary_scenario: UMa
+  sensitivity_scenario: UMi_street_canyon
+  carrier_frequency_ghz: 8.15
+  bandwidth_mhz: 100.0
+  protected_reference_bandwidth_mhz: 10.0
+  sites: 19
+  sectors: 57
+  bs_height_m: 25.0
+  user_height_m: 1.5
+  users_per_sector:
+    pilot: 4
+    final_sensitivity: [2, 4, 8]
+  sector_activity_cases: [0.25, 0.5, 0.75, 1.0]
+  indoor_probability_cases: [0.0, 0.5, 0.8]
+  local_precoders:
+    - local_rzf
+    - distributed_leakage_projected_rzf
+    - static_local_null
+    - uniform_power_backoff
+  budget_controllers:
+    - static_offline_budget
+    - myopic_budget
+    - virtual_queue_budget
+    - predictive_cbf_budget
+  common_information_constraints:
+    local_bs:
+      - local_ue_csi
+      - local_incumbent_direction
+      - local_budget
+      - local_previous_action
+    slow_budget_layer:
+      - sector_id
+      - scalar_leakage
+      - scalar_utility_cost
+      - message_age
+    prohibited:
+      - inter_bs_ue_channel_vectors
+      - inter_bs_precoder_matrices
+      - joint_precoder_solution
+  control_grid:
+    geometry_slot_s: 1.0
+    local_precoder_update_ms: 10.0
+    budget_update_period_s_cases: [1.0, 5.0, 10.0]
+    budget_message_delay_s_cases: [0.0, 1.0, 3.0]
+    maximum_budget_change_db_per_update_cases: [1.0, 3.0, 6.0]
+  uncertainty:
+    channel_estimation_nmse_db_cases: [-30.0, -20.0, -10.0]
+    array_gain_error_db_cases: [0.0, 1.0, 3.0]
+    propagation_margin_db_cases: [0.0, 3.0, 6.0]
+  repetitions:
+    pilot_seeds: [1101, 1102, 1103]
+    final_minimum_topology_channel_seeds: 30
+    final_minimum_satellite_passes: 5
+  required_metrics:
+    - aggregate_interference_trajectory
+    - long_and_short_exceedance
+    - zero_slack_certificate
+    - per_sector_budget
+    - budget_message_age
+    - action_change
+    - local_and_network_sum_rate
+    - fifth_percentile_user_rate
+    - rate_retention
+    - active_sector_count
+    - filter_activity
+    - local_precoder_runtime
+    - budget_allocator_runtime
+    - communication_overhead_bytes
+    - uncertainty_coverage
+  next_gate: CODE_LEVEL_REVIEW_OF_EXISTING_CHANNEL_BASELINE

@@ -1,0 +1,1963 @@
+# =============================================================================
+# regulatory_constants.yaml -- v1.7
+# FR3 CBF safety-filter study -- single source of truth for regulatory values.
+# Rule: every number the paper uses is generated FROM this file; every entry
+# traces to an archived source. Status: CONFIRMED / PLACEHOLDER / DERIVED /
+# DECISION (a modeling choice forced by the sources, documented here).
+# =============================================================================
+
+meta:
+  source_pdf_sha256:
+    srsp307_7: "fd42b1742db01b091bfa2eb20f198f4eea7518122f3c3f0fcd89ba4a36b408dd"
+    f758_8: "3ce5567e84d8833cf6cc346f29a595d64b6db1a6bf99de34c25dfd558e481497"
+    sa1027_6: "5a779de45ebde61f211e700c22f648ecdca6246ea4b794999c2f245c719e1718"
+    f1108_4: "d8d996fa24c6b8c17c32b1de7ef10e2d2a9c8c63271ba3f13520eec77e3bb359"
+    f1494_0: "51a3eeae148ffc8a33d96b8e4573b8f7b60e5808ff644f2a20c9ea018e4e4216"
+    m2119_2007: "44a937c124d838b8c302732f732d22b8e92640ada78d633a01f3f32e5648ca6b"
+    sa1026_5: "97517875deb0a0bea79ded4dde600dd5306dce4fa5830db60f9749bca3d53818"
+    sa1023_0: "41bf6cedfb210cd008ce464c3561bb3815250ae181ec15dd8f7677bbe465eb72"
+    sf1650_1: "5a1c704f2fb542bf7b35471ee7fe48c8754f35de704e400a40f813738fbcee55"
+    p530_19: "a83e02f1c334f595ca12b27690b5ab16cc089cb4574fb1addf6470cf51c0d1c7"
+    p530_19_zip: "c3a883eb5664d50324e66f3b70a7632c2bad8d788a739082c8a37bf4e0012305"
+    p530_logk_csv: "90bfda07292a942322f6ab3052cd7bacc4122e43b4445baf72334ded16db9f38"
+    p530_dn75_csv: "ed5235ce3ef401a40f7ad86f5ec441bd6e29f7ac97640b73f00da8708a6ee364"
+    p530_latgrid_csv: "337ef2b9aaacc49c688aa79a30979432a56c4e5f9b64a069d28000e09e0dc398"
+    p530_longrid_csv: "fb55859cc8a88dc3e1067721df996f21f62246ef8133ef7946e27e0cd39dcb7d"
+    tr38922_v1920: "fa1736e8e8ece7ac4bf6c79c13cbc8851ddc65b00f64760bc38275e3d9eb23d9"
+    tr38921_v1710: "841f80adca2a84db0da4b830396ea9c15a316c07cd9d71622e6efc0b2950daac"
+    tr38922_v1930: "3e195ff78c102fe7e1ed7db90807fe332f0f4797b7b0be2c4e92d038694ca4c3"
+    p452_18: "3354e73af65f12cb4314d45be7af884483bd0de743d6fb0138326265438dc479"
+    p2108_1: "69c4138db26e76ac1c35fabdc99119ee3154e0328c23b64e8d931690a67693cb"
+    p1411_13: "f3adf832f7865127ba0d44142c82d06bb9893993e75ef43b3726510f64ae9119"
+    p619_6: "1c304ea032a3916d3591d53c8bfaf7ebb69bf87fde4a9853b8cc5922d6354b62"
+    p841_7: "8cf0b1836653e20d30c617ee44c002f841c58ecda4f0d60fa157a8e720001762"
+    f1245_3: "01ff882892a1eb6d2dc65075bca2814e67b315a94d45cb0f94bd46a503030730"
+    f699_9: "040231e55cccf0add639936e5fc2181cfbcb82eaf6e950e911b1d81c7495f811"
+    sa509_3: "839e4caa705df483deca6f27aa398f9e4256ff6923a814fa616e5e969305d784"
+    s465_6: "a813d82235c24ad52681634d5d8a1275da621317ddb1a6754cd983643024f98a"
+    m2101_0: "5ca56cd3bf8ac8641d1a74b1dd75b12973161f4d0b5bdc24223bb8a4c2ca19ce"
+    p452_zip: "b2d25952e85fb60d3c57f0078c201f243767fd285e1371931509437dc92a0208"
+    p452_dn50_txt: "4847bf9542b775850daab6f0fb1bdc933a4d9a28aff65549bcfc45e141cd230d"
+    p452_n050_txt: "d27590ce5c7cf7ff7b4457ce31b9bf3591f0b97e367732195de0f1a98bd35f2a"
+    p452_lat_txt: "62b555e7fb42f0e1051b80d1447f23710c286f97d9b607b59c65126a8bd0af8a"
+    p452_lon_txt: "e23c97490faebab7cac0830d835a98b89fc92a5a14aaa5aca954ea02b85a5e02"
+    dem_gta_fme_zip: "7920207027bc95364daefa5e0626bdc0d12ff242643ec28c96b61e879d1de1ba"
+    dem_gta_tif: "87db19a7bf186845f624267b7c0585a81eef3d345cddfd557b91bf9238292558"
+    dem_ottgat_fme_zip: "7795d9d126596ffe798e0e864fac46c3e47c3cd4c7684f92bbfa9b63c758072a"
+    dem_ottgat_tif: "f6431d0aaa5f8094b7ad73702ed7b7e5f1ab5376d7dd6f392e1a85aeadf8b9aa"
+    landcover_gta_tif: "7b85c6c674a9938a8202e0e9277138e64b62e792b1f2f306339beaddc6c33c50"
+    landcover_ottgat_tif: "2e839c8c033bb0d352bd61b5c6bb6a7364e84f5419ed11fa8006b7ee54d0748c"
+    landcover_class_index_pdf: "827bfbfb92559f46b3c9484f40f9549d0bcfd345ae184145fa8f573549dabe46"
+    hrdem_footprints_zip: "a9ea1f09fbbacf64ec4db60dc272d523609cd0f2c198e1e731e1110a2dbabb18"
+    ra769_2: "33f98db2b4660fc98a3d82f8a9faed0d591cf78aecf9f04cdaa416f10d7da878"
+    ra1513_2: "42e9631ab093f396ef034dc038551c345be8251c980ea55face96bcb75c066c4"
+    tr38803_e40_zip: "26d1332f372e52dec1805df3347f782f2b0a81dc8b6015aff655d5b7b74d7858"
+    tr38803_e40_docx: "390a20848090cd16808abd1de296fe1fc27214030f2ded7e646ee1b259974e52"
+  project: "Certified Dynamic Interference-Safety Filters for FR3 (Case T/S)"
+  constants_file_version: 1.7
+  last_updated: "2026-07-02"
+  changelog:
+    - "v1.7: TIERS 2-3 PROCESSED; A9 CLOSED (conditional on Case-R
+       retention). RA.769-2 (05/2003, in force; -1 superseded) and
+       RA.1513-2 (03/2015, in force; incorporated by reference in the
+       RR) verified and extracted: continuum Table-1 row at 15 375 MHz
+       (band 15.35-15.4 GHz) pixel-verified -- df 50 MHz, TA 15 K, TR
+       15 K, dT 0.095 mK, dP -269 dB(W/Hz), dPH -202 dBW, SH.df -156
+       dB(W/m2), SH -233 dB(W/(m2.Hz)) -- on the 10%%-of-dP basis
+       (dPH = 0.1 dP df), 2000 s integration, 0 dBi sidelobe reference,
+       pfd conversion +20 log f - 158.5; RA.769 itself ADOPTS the
+       SA.509 side-lobe model as the RAS reference antenna
+       (corroborates the Group-2 record). RA.1513-2 recommends: 5 %%
+       aggregate / 2 %% per network; recommends 3 option (3) defines
+       data loss as the PERCENTAGE OF 2000-s INTEGRATION PERIODS whose
+       average spectral pfd exceeds RA.769 (0 dBi) -- natively the
+       exceedance-fraction shape of the S3 budget (slots = integration
+       periods, p = 2 %%); recommends 4 -> Annex 1 sec. 3.3.2 for
+       unwanted emissions (the Case-R scenario class; read if Case R
+       confirmed kept). TR 38.803 RE-PULL COMPLETE: V14.4.0 docx
+       (38803-e40; history ...14.3.0 2024-06 RAN#104 RP-241381 ->
+       14.4.0) hashed; legacy Urban-macro Table 5.2.3.2.1-1 verified
+       (GE,max = 8 dBi; (Mg,Ng,M,N,P) = (1,1,8,16,2) at 30 GHz; 0.5-
+       lambda spacing) and the sec. 5.2.3.2.4 EXTENDED sub-array model
+       found, created for 1710-4990 MHz ITU-R sharing studies, with
+       Table -3 values 6.4 dBi / 90-65 deg / 30 dB and 4x8x2 sub-arrays
+       -- the documented lineage M.2101 form -> 38.803-extended ->
+       38.921 -> 38.922 is now source-complete. INTEGRITY: the re-
+       uploaded tr_138901v190200p__1_.pdf is BYTE-IDENTICAL to the
+       v1.4 text dump (same sha256 3453a5aa...5740) -> A7 ARCHIVE GATE
+       REMAINS OPEN; pull the official ETSI PDF."
+    - "v1.6: TIER 1 COMPLETE -- STEP-2 FULLY UNBLOCKED (milestone: nothing
+       blocks simulation any more). DEM clips received via the NRCan
+       Geospatial Data Extraction tool for both study boxes; PRODUCT
+       IDENTITY FINDING: the tool s DEM option serves the CDEM lineage
+       (CDEM.xml + product specs archived inside each package), vertical
+       datum CGVD28, and the spec states elevations can be either ground
+       or reflective surface -- acceptable for the P.530-19 step-2 inputs
+       and coordination-grade P.452 profiles (clutter heights are added
+       by category regardless), with the HRDEM DTM upgrade path
+       confirmed available (footprints: 502 tiles intersect the GTA box,
+       233 the Ottawa-Gatineau box). VERIFICATION PASSED on all four
+       rasters: DEMs EPSG:4617, exact requested coverage, res 0.000382
+       deg (~1.375 arcsec; ~31 x 42 m at study latitudes), nodata
+       -32767, elevations GTA 68-542 m / OttGat 37-446 m (plausible:
+       Lake Ontario ~74 m, escarpment, Ottawa River ~40 m, Gatineau
+       Hills); land-cover clips EPSG:3979 at exactly 30 m, uint8,
+       generous coverage of both boxes, observed classes a strict subset
+       of the Class Index (no unexpected values; sub-polar classes
+       correctly absent). NEW BUCKET-B ITEM B11: LC2020 class ->
+       P.452-18 Table-3 clutter-category mapping defined with defaults,
+       rationale, and sweep (single built-up class -> 15 m default,
+       {10,15} sweep; forests -> 15 m; open classes -> 0 m; endpoint
+       50-m bare rule restated). Class Index PDF hashed (15 Canada
+       classes; tropical classes 3/4/7/9 excluded nationally)."
+    - "v1.5: P.452-18 INTEGRAL DIGITAL PRODUCTS RECEIVED + VERIFIED --
+       the last regulatory pipeline input. ZIP (R-REC-P.452-18-202310-
+       I!!ZIP-E.zip) hashed; contents = DN50.TXT, N050.TXT, LAT.TXT,
+       LON.TXT, ReadMe.doc, all per-file hashed into the registry.
+       Structure verification PASSED: 121 x 241 grid, lat +90 -> -90 and
+       lon 0 -> 360 at exactly 1.5 deg, matching the recommendation text
+       and the ReadMe verbatim (ten-year 1983-1992 radiosonde basis;
+       P.1144 bilinear rule). Value sanity PASSED: DeltaN strictly
+       positive globally (24.58-79.90 N-units/km, per the procedure
+       convention); N0 294.3-389.1 N-units. PROVENANCE NOTE from the
+       ReadMe: the digital maps are NOT identical to the historical
+       paper maps (Bean et al. 1966 lineage) in P.452/P.1812 -- the
+       digital reanalysis is the authoritative input. DERIVED study
+       inputs (P.1144 bilinear, lon 0-360 convention): Toronto anchor
+       DeltaN 36.15 / N0 319.6; GTA bbox flat (36.08-36.34 / 319.2-
+       319.8); Ottawa-Gatineau representative 36.61 / 318.6.
+       Regulatory-input acquisition for the interference path is now
+       COMPLETE; remaining pipeline inputs are non-regulatory (DEM,
+       land-cover raster)."
+    - "v1.4: GROUP-3 PROCESSED WITH TWO INTEGRITY FINDINGS. M.2101-0
+       (02/2017, sole edition, In force, approved 2017-02-09) is exact:
+       valid PDF, hashed, archival duty CLOSED; extracted Table 3 element
+       pattern (FORM only -- phi3dB/theta3dB/Am/SLAv/GE,max are all input
+       parameters; the 8 dBi / 65-65 deg figures are TR 38.803 example
+       values, and TR 38.922 supplies the 7-8 GHz set), Table 4 composite
+       pattern AA = AE + 10 log10 |sum w v|^2 with the superposition
+       vector, the Monte-Carlo flow (2K-10K UE drop, HO margin, K chosen
+       UEs, equal-RB, P_UE = P_Max n/M eq (5)), loading = x %% transmit
+       probability, external interference eq (6) with ACIR/FDR, and the
+       SEC.-5 ADJACENT-BAND RULE: unwanted (out-of-block) emission sees
+       the SINGLE-ELEMENT pattern (non-correlated AAS), composite pattern
+       only in-channel -> source-native eps_adj treatment for Case R (B6),
+       refined by TR 38.922 clause 7.3. INTEGRITY: the two 3GPP files are
+       PLAIN-TEXT DUMPS, not PDFs. TR 38.901 dump = RIGHT edition
+       (V19.2.0, 2026-02; complete through p.163 + History) -> A7 CONTENT
+       CONFIRMED: Rel-19 7-24 GHz additions are clause 7.6.13 (near-field,
+       spherical wavefront) and 7.6.14 (spatial non-stationarity, TRP/UT
+       sides) under the OPTIONAL sec.-7.6 components; applicability
+       0.5-100 GHz verbatim; ARCHIVE GATE OPEN (pull the official ETSI
+       PDF and hash before v3). TR 38.803 dump = WRONG VERSION (draft
+       V2.0.0, 2017-03, pre-approval) -> NOT USED; re-pull latest
+       published V14.4.0 (Oct 2024), 3GPP archive 38803-e40.zip (confirm
+       newest in directory at download)."
+    - "v1.3: GROUP-2 (VICTIM ANTENNA PATTERNS) CLOSED; A4 pattern
+       sub-item DECIDED-WITH-SWEEP. F.1245-3 (01/2019, in force),
+       F.699-9 (02/2026, fresh revision, 100 MHz-174.8 GHz), SA.509-3
+       (12/2013, in force), S.465-6 (01/2010, in force; -5 superseded)
+       processed; formula pages verified at raster. OPERATIVE-BRANCH
+       FINDING: via F.699 recommends 3 (20 log D/lambda ~ Gmax - 7.7),
+       GTA victim gains 37-45.3 dBi give D/lambda ~ 29-76 -> the
+       D/lambda <= 100 branches govern ALL 69 victims: F.1245 average
+       sidelobe 39 - 5 log(D/lambda) - 25 log phi (floor -3 -
+       5 log(D/lambda)); F.699 envelope 52 - 10 log(D/lambda) -
+       25 log phi (floor 10 - 10 log(D/lambda)). B4 REFINEMENT: the
+       3 dB peak-vs-average gap holds only for D/lambda > 100; in the
+       operative branch the gap is 13 - 5 log(D/lambda) dB (~3.6-5.7 dB
+       across the fleet). SA.509-3 internal check PASSED (both patterns
+       meet 32/29 - 25 log phi at phi2 = 10^((49-G0)/25)); its scope is
+       D/lambda >= 100, ~1-30 GHz, space-research/RAS -- EESS not
+       literally named in EITHER earth-station rec -> A4 sub-item
+       closes as: measured pattern > SA.509-3 (Gatineau D/lambda
+       ~260-330 and 8.0-8.4 GHz inside its limits) > S.465-6
+       conservative alternative; unresolved-pattern certified bound =
+       per-angle max of SA.509-1.1 and S.465-2 (SA.509 is HIGHER in
+       80-120 deg: -5 vs -10 dBi); one-liner remains: check archived
+       SA.1026-5 Table 2 / SA.1027-6 for a stated pattern reference."
+    - "v1.2: A8 FULLY CLOSED. Group-1 batch processed: P.452-18 (10/2023,
+       approved 2023-10-21, in force -- landing page + WP3M reference-
+       software check), P.2108-1 (09/2021, in force; -0 superseded; DRAFT
+       -2 watch), P.1411-13 (09/2025), P.619-6 (09/2025), P.841-7
+       (08/2022, in force; -6 superseded). FOUR APPLICABILITY CATCHES:
+       (1) P.452-18 contains ZERO references to P.2108 -- clutter enters
+       via the PATH PROFILE (Step 4, eq (6e); Table 3 defaults have
+       exactly FOUR rows, NO dense-urban default; endpoints + points
+       within 50 m of terminals stay bare-terrain) -> harmony-table
+       default for GTA rooftop victims is P.452-18 with clutter-in-
+       profile, NOT +P.2108; (2) P.2108 sec. 3.2 applies to terminals
+       well below clutter (source measurements <= 6 m) -> mostly
+       inapplicable to 20-60 m rooftop FS victims; its sec. 3.3 has a
+       10 GHz floor -> NO valid statistical clutter model at the 8 GHz
+       Case-S-prime path until draft -2 (conservative default: no
+       clutter credit); (3) P.1411-13 above-rooftop site-general (Table
+       8) requires ONE station above AND one below rooftop -> not a
+       rooftop-to-rooftop victim model; hard gate = frequency + distance
+       + geometry; (4) P.841-7 global conversion p = 0.30 pw^1.15 valid
+       only for pw >= 1.9e-4 % -- below it Q saturates at 12 (p = pw/12),
+       exactly the SES-percentage regime. P.452 worst-month handled by
+       its OWN eq (1) (GL, omega), role-split from P.841. ACTION: pull +
+       hash R-REC-P.452-18-202310-I!!ZIP-E.zip (DN50.txt, N050.txt,
+       LAT/LON.txt; 1.5-deg grid; P.1144 bilinear). Report v3 queue:
+       harmony-table BS->FS cell rewrite, defect-4 wording, checklist
+       items (6)-(8) close-out."
+    - "v1.1: A5 VERSION GATE CLEARED. TR 38.922 V19.3.0 (2026-02, 101 pp)
+       received and hashed. Change history: EXACTLY ONE CR separates
+       19.2.0 -> 19.3.0 (RAN#110 2025-12, RP-253648, CR 0013 rev 1,
+       category F: improvements of the BS array antenna model DESCRIPTION
+       in clauses 7.1 and 7.3.2). Machine diff of normalized text confirms
+       EVERY adopted clause-5/6 value byte-identical in both versions (all
+       ten decisive markers); remaining diff lines are PDF re-render
+       spacing artifacts in equation regions. Citable edition switched to
+       V19.3.0; V19.2.0 hash retained as superseded archive. Refs [4]-[6]
+       (LS replies) remain (Void) in BOTH versions -> the TR never names
+       them; residual reworded to an optional RAN-plenary lookup. NEW
+       CONTEXT: clause 7.3 models array antenna gain OUTSIDE the carrier
+       (correlation roll-off + array-ACLR models, PA nonlinearity,
+       band-pass filters) -- source-native treatment of adjacent-band
+       array gain; feeds the Case-R eps_adj recompute (B6). A5 status:
+       FULLY CLOSED on the documented fallback path; no mandatory items
+       remain."
+    - "v1.0: A5 CLOSED ON THE DOCUMENTED FALLBACK PATH (WP 5D AI-1.7
+       annexes unavailable). 3GPP TR 38.922 V19.2.0 (2025-10) and TR
+       38.921 V17.1.0 (2022-05) processed from the project directory;
+       decisive tables verified at raster. HEADLINE VALIDATION: 7125-8400
+       macro TRP = 46 dBm two-pol / max EIRP 78.3 dBm per sector (Tables
+       5.2.1.5-1/2) -- the report convention (46 dBm conducted, implied
+       ~78 dBm) is externally confirmed; internal check 46 + 6.4 +
+       10log10(384) = 78.24 ~ 78.3 PASSED. A5-sourced BS antenna set for
+       7125-8400 (Table 5.4.1.2-1): GE,max 6.4 dBi, 90/65 deg HPBW, Am =
+       SLAv = 30 dB, 8 x 16 with 3-element 0.7-lambda subarrays (384
+       elements), dh 0.5 / dv 2.1 lambda, etilt 90-100, escan +/-60,
+       mech 6 deg; model = clause 7.1 parameterized RAN4 array model,
+       stated as also described in ITU-R M.2101 (lineage closed). BS:
+       ACLR 38 dB (n104 reuse), ACS 42 dB, NF 6/11/14 dB, dfOBUE 40/100
+       MHz, Cat-B mask = n104. UE: PC3 23 dBm, ACLR 26 dB / ACS 32 dB
+       (TR 38.921 lineage, WI-phase refinement flagged), NF 13 dB,
+       isotropic conducted. CASE-R IMPACT: 14800-15350 BS ACLR = 30 dB @
+       200 MHz -> B6 SUPERSEDED (generic 45 dB was 15 dB optimistic).
+       NEW Bucket-B B10: deployment side (ISD 450 m urban 3GPP
+       co-existence convention vs 500 m 38.901 calibration -- sweep;
+       BS 20-25 m; loading/TDD stay M.2101-labeled). VERSION GATE
+       (MANDATORY, one file): V19.3.0 (2026-02) is published with a
+       substantive-change digit and refs [4]-[6] (LS replies to WP 5D)
+       are (Void) in V19.2.0 -- pull V19.3.0, diff its change-history,
+       re-verify adopted values, capture the LS numbers. Upgrade path:
+       WP 5D characteristics annex when obtainable."
+    - "v0.9: P.530-19 integral-products ZIP received, hashed, VERIFIED
+       (v0.8 action closed). Exactly the four files of sec. 1.1 Table 1;
+       all 721 x 1441, zero NaNs, corners 90N..90S / 180W..180E, 0.25-deg
+       spacing -- matches the printed spec. Wrap columns (+/-180) agree to
+       <= 0.0034 (LogK) / 0.002 N-units (dN75) -- source artifact,
+       immaterial for GTA; dN75 noise floor -2.1e-6 -> clamp to 0; 4.4 %
+       of cells ~0 (matches the high-latitude-zeros text); map dN75 max
+       84.7 exceeds the eq (7) regression source range 0-54 in places
+       (GTA well inside at 2.3-8.5). NEW DERIVED BLOCK p530_gta_inputs
+       (Bucket B): over case_t_population.gta_bbox, K = 6.0e-6..1.22e-5 %
+       (median 8.4e-6), dN75 = 2.29..8.51 N-units (median 4.53);
+       representative anchor (43.6532 N, 79.3832 W): K = 8.44e-6 %,
+       dN75 = 4.16; vsr arithmetic: 17.85 vsr <= 5e-5 -> negligible.
+       Per-link path-centre interpolation supersedes. STEP-2 COMPUTATION
+       NOW FULLY UNBLOCKED -- all inputs in hand."
+    - "v0.8: BOTH S1 LOOKUP GATES CLEARED. SF.1650-1 (02/2005; in force,
+       confirmed v0.6) processed: 6 GHz pair VERIFIED at raster and by the
+       Imax internal check (-110.4 dBW = kTB(750 K, 11.2 MHz) + 19 dB);
+       values IDENTICAL to the -0 edition quoted by M.2119 -> gate (a)
+       cleared. SOURCE-STATED B8 ANCHOR FOUND: the pair rests on a 24 dB
+       net fade margin @ BER 1e-3 -- inside the F.758-8 sec. 4.14 bracket
+       (20-25 dB); the source itself designates ES 19 dB as the more
+       stringent criterion. P.530-19 (09/2025; In force (Main), -18 and
+       earlier superseded, confirmed on itu.int) processed: secs 2.3.1-2.3.2
+       eqs (5)-(18) verified at 300 dpi; -19 REVISION: K from LogK.csv map
+       + new dN75 parameter (older K(dN1) forms OBSOLETE); validity covers
+       Case T; prediction-error sigma 5.2 dB feeds B1-B3; worst month =
+       any month (P.581). ACTION: archive + hash the integral-products
+       ZIP. S1 remains PROVISIONAL pending ONLY the step-2 computation
+       (B8 sweep) -- no further document pulls needed for the freeze."
+    - "v0.7: A4 aggregate-vs-single-entry refinement CLOSED. SA.1026-5
+       (07/2017) and SA.1023-0 (03/94) processed from the project directory;
+       both confirmed In force (Main) on itu.int; SA.1023 project copy
+       byte-size-matches the official ITU PDF (15 988 bytes). Table 1
+       aggregate criteria recorded for BOTH overlap bands (8025-8400:
+       -147/-133 dBW per 10 MHz @ 20 %/0.0125 %; 7750-7900: -144/-127 --
+       recorded for completeness, Case S stays anchored to 8025-8400).
+       SA.1023 Annex 1 eqs (1)-(4) verified at raster incl. the (4a)
+       grouping i(p)/(y n). CONSISTENCY RECONSTRUCTION PASSED: SA.1027-6's
+       terrestrial column = SA.1023 applied to SA.1026-5 aggregate with
+       As ~ 50 (power 50/50) and as = 60 (time 60/40 space/terrestrial);
+       all three A4 numbers reproduced exactly (flagged RECONSTRUCTED --
+       verify wording vs archived SA.1027-6). n = 1 collapse of eqs (3)-(4)
+       gives the FORMAL basis for the A4 single-entry-on-network-aggregate
+       decision. NEW: Note 1 interpolation mask -> v3 multi-threshold S3
+       remark; NEW Bucket-B item B9 (n, y apportionment sweep, default
+       n = 1); SA.1022 marked OPTIONAL lineage pull."
+    - "v0.6: Report ITU-R M.2119 (2007) processed from the project directory
+       (sole edition M.2119-0, In force (Main), SG05, confirmed on ITU
+       catalogue). A2 short-term trio METHOD-COMPLETE. Annex 5 sec. 2.2.1
+       selection logic recorded; Table 13 verified at 300 dpi AND by the
+       Report's own arithmetic (SES 1.2e-5 % = 0.3 s/month, ES 4.5e-4 % =
+       12 s/month). PROVISIONAL S1 candidate recorded: always-on cap at
+       (I/N)_st = +19 dB (SF.1650 ES pair via M.2119) -- DO NOT FREEZE.
+       TWO STATUS DISCOVERIES from the ITU catalogue: (1) SF.1320 was
+       SUPPRESSED 15/06/2009 (CACE/482) -> its FDP <= 4 % is HISTORICAL
+       context only; long-term anchor remains F.758-8 (unaffected);
+       (2) in-force SF.1650 edition is SF.1650-1 (02/2005), NOT the -0
+       (2003) that M.2119 cites -> NEW MANDATORY PULL SF.1650-1 with a
+       carry-over verification task. sec. 2.3 pass-arithmetic recorded as
+       precedent for always-on S1; sec. 2.4 conditional-FDP + duty scaling
+       recorded as provenance-backed activity-factor refinement path.
+       Victim-parameter cross-check vs TAFL/A3 PASSED (N_T -139.9 vs our
+       -139.5 dBW/MHz)."
+    - "v0.5: spawned-pull batch 1 processed. F.1108-4 (01/2005; confirmed in
+       force) -> f1108_fdp CONFIRMED: FDP = I_av/N_T (Annex 3 eqs (15),
+       (23)-(24)), FML eq (16); NEW FINDING: diversity DFDP carries a
+       SECOND-MOMENT term (Annex 4 eqs (30)/(35)) that dominates for bursty
+       interference -> v3 corollary queued (S1+S3 => deterministic moment
+       bounds). F.1494-0 (05/2000; confirmed in force) -> short-term
+       methodology CONFIRMED as TEMPLATE ONLY (+20 dB / 1e-4% are
+       10.7-12.75 GHz values, never copied to 7-8 GHz); its hard-limit
+       reading is direct precedent for the always-on S1 cap; its long-term
+       integral excludes the 1e-6 tail = the S1-exclusion/S2-average split.
+       f1494_m2119_shortterm -> PARTIAL pending Report M.2119 Annex 5.
+       Spawned: P.530 (MANDATORY, fading model for the S1 derivation);
+       optional F.1565/F.1668. New Bucket-B item B8 (FM/ATPC anchor for GTA
+       links). Housekeeping: stale 'v0.2' header fixed; changelog reordered
+       newest-first."
+    - "v0.4: A4 (SA.1027-6) completed. CORRECTION: the earlier CEPT-derived
+       anchor (-116 dBW/10 MHz @ 0.005%) belongs to the 25.5-27 GHz row, NOT
+       8025-8400; authoritative values are -150 dBW/10 MHz @ 20% (long-term)
+       and -133 dBW/10 MHz @ 0.005% (short-term), terrestrial path. Criteria
+       are ABSOLUTE powers per reference bandwidth (no ES noise figure needed).
+       Spawned: SA.1026 + SA.1023 for the aggregate-vs-single-entry refinement."
+    - "v0.3: A3 (TAFL/SMS) completed via a3_extract.py -- see tafl_incumbents.
+       Case-S anchor upgraded to real EESS stations (Gatineau/Saint-Hubert)."
+    - "v0.2: A2 (F.758) completed. IN-FORCE REVISION IS F.758-8 (02/2025), not
+       F.758-7 as guessed -- correct framework bibliography at v3. Short-term
+       criterion for 7-8 GHz is NOT numeric in F.758-8 -> route decision
+       recorded; FDP (F.1108) hook for EMA state S2; worst-month time basis."
+    - "v0.1: A1 (SRSP-307.7 Issue 6) completed."
+
+# -----------------------------------------------------------------------------
+# A1 -- ISED SRSP-307.7 (COMPLETED 2026-07-02)  [unchanged from v0.1]
+# -----------------------------------------------------------------------------
+srsp_307_7:
+  source: "ISED SRSP-307.7, Fixed LoS Radio Systems, 7725-8275 MHz"
+  edition: "Issue 6, December 2006"
+  archived_as: "constants/sources/srsp307-7-i6e.pdf"
+  accessed: "2026-07-02"
+  action_open: "Confirm Issue 6 still in force on ISED SRSP index; record date."
+  status: CONFIRMED
+  band_mhz: [7725, 8275]
+  tx_rx_separation_mhz: 300
+  duplex_gap_mhz: [7975, 8025]
+  bandwidth_set_mhz: [1.25, 2.5, 5, 10, 20, 30]   # max 30 MHz in this band
+  channel_plans:
+    - {bw_mhz: 30,   n_pairs: 8,   lower: "7710 + 30n",     upper: "8010 + 30n",     clause: "4.1.1"}
+    - {bw_mhz: 20,   n_pairs: 12,  lower: "7715 + 20n",     upper: "8015 + 20n",     clause: "4.1.2"}
+    - {bw_mhz: 10,   n_pairs: 25,  lower: "7720 + 10n",     upper: "8020 + 10n",     clause: "4.2.1"}
+    - {bw_mhz: 5,    n_pairs: 50,  lower: "7722.50 + 5n",   upper: "8022.50 + 5n",   clause: "4.3.1"}
+    - {bw_mhz: 2.5,  n_pairs: 100, lower: "7723.75 + 2.5n", upper: "8023.75 + 2.5n", clause: "4.3.2"}
+    - {bw_mhz: 1.25, n_pairs: 200, lower: "7725.0 + 1.25n", upper: "8025.0 + 1.25n", clause: "4.3.3"}
+  assignment_convention: {le_10mhz: "lowest available pair", plans_20_30: "highest available pair", clause: "4.6"}
+  tx_power_limits_dbw: {30: 10, 20: 10, 10: 8.8, 5: 7, 2.5: 3, 1.25: 0, absolute_cap: 13, clause: "5.1-5.2"}
+  eirp_max_dbw_per_channel: {value: 55, clause: "7"}
+  gso_avoidance: {eirp_threshold_dbw: 35, min_offaxis_deg: 2, clause: "8"}
+  antenna_envelopes:
+    clause: "6, Table 2, Fig. 1"
+    angle_bins_deg: [[0,1.1],[1.1,5],[5,10],[10,15],[15,20],[20,30],[30,100],[100,140],[140,180]]
+    envelope_A_db: [0, 3, 25, 29, 33, 36, 42, 55, 55]   # default / congested (GTA)
+    envelope_B_db: [0, 3, 21, 25, 29, 32, 35, 39, 45]   # uncongested areas
+    caveat: "Mandatory for STANDARD systems (cl. 2.2-2.3); TAFL metadata primary."
+
+# -----------------------------------------------------------------------------
+# A2 -- Rec. ITU-R F.758 (COMPLETED 2026-07-02)
+# -----------------------------------------------------------------------------
+f758_fs_protection:
+  source: "Recommendation ITU-R F.758-8, System parameters and considerations
+           in the development of criteria for sharing or compatibility between
+           digital FWS in the FS and systems in other services"
+  edition: "F.758-8 (02/2025)"          # CORRECTION: supersedes F.758-7 guess
+  archived_as: "constants/sources/R-REC-F_758-8-202502-I__PDF-E.pdf"
+  accessed: "2026-07-02"
+  status: CONFIRMED
+
+  long_term_criterion:
+    definition: "Long-term interference characterized as the power exceeded by
+                 20% of the time at the victim receiver input"
+    clause_definition: "Annex 1, sec. 4"
+    IN_db_aggregate: -10                # bands above 3 GHz, co-primary sharing
+    clause_value: "Annex 2, sec. 4.13, Table 5"
+    caveats:
+      - "Table 5 labels -10 dB a STARTING POINT; where simultaneous
+         interference from multiple co-primary services is non-negligible,
+         -10 dB is the MAX AGGREGATE across ALL other co-primary services
+         (apportionment per F.1094; Annex 1 sec. 2.2). Paper must state the
+         share claimed by IMT."
+      - "Annex 1 Table 2: for SPACE-DIVERSITY links, I/N = -10 dB corresponds
+         to 20% EP degradation; holding the F.1094 10% budget on diversity
+         hops implies I/N = -13 dB. TAFL does not flag diversity ->
+         SWEEP I_lt over {-10, -13} dB."
+    apportionment_f1094: {X_fs_pct: 89, Y_coprimary_pct: 10, Z_other_pct: 1,
+                          clause: "Annex 1, sec. 2.1"}
+
+  short_term_criterion:
+    status: DECISION                    # numeric value NOT in F.758-8 for 7-8 GHz
+    finding: "F.758-8 defines short-term qualitatively (highest levels
+              occurring < 1% of time, sized to cause an error-performance
+              defect with the wanted signal unfaded; Annex 1 secs. 4, 4.2) and
+              defers numeric construction to band-specific recs (F.1494:
+              10.7-12.75 GHz; F.1495: 17.7-19.3; F.1606: 37-42). NONE covers
+              7-8 GHz."
+    chosen_route: "Multipath-dominant band (< ~15 GHz, Annex 1 sec. 4):
+              adopt the FDP method of Rec. ITU-R F.1108 -- average interference
+              power (EXCLUDING periods above the short-term limit) as the
+              long-term critical value -- and construct the short-term
+              EP-defect threshold per the F.1494 methodology with Report
+              ITU-R M.2119 Annex 5 examples. Both to be documented as a
+              derivation appendix, not presented as a lookup."
+    spawned_lookups: ["Rec. ITU-R F.1108 (in-force)", "Rec. ITU-R F.1494",
+                      "Report ITU-R M.2119 Annex 5", "Rec. ITU-R F.1094"]
+    framework_note: "FDP legitimizes safety state S2 (EMA average-power
+              tracker) as standards-aligned for this band; S3 budget carries
+              the 20%-of-time formulation; S1 carries the constructed
+              short-term defect cap. Fold wording into framework v3."
+
+  time_basis:                           # feeds timing convention clock #3
+    error_performance: "per MONTH (ITU-T G.826), fulfilled in the WORST MONTH
+                        (Rec. ITU-R P.581; annual<->worst-month via P.841)"
+    availability: "per YEAR (ITU-T G.827); only interference lasting > 10
+                   consecutive seconds affects availability"
+    clause: "Annex 1, sec. 1.1.2.1"
+    fast_varying_note: "Sec. 1.1.2.2: relatively fast-varying interference ->
+                   error-performance study on worst-month basis predominates.
+                   IMT beam/traffic dynamics fall in this category."
+
+  receiver_typicals_7725_8500:          # Annex 2, Table 9, cols '7.725-8.500'
+    reference_arrangement: "Rec. ITU-R F.386"
+    noise_figure_db: {simple_16qam: [2.5, 6], complex_128qam: [2.5, 8]}
+    feeder_multiplexer_loss_db: [0, 3.0]
+    antenna_gain_dbi: [12, 48.6]
+    rx_noise_density_dbw_mhz: [-141.5, -136]     # = -144 + NF (sec. 4.11)
+    eirp_range_dbw: [5.5, 55]           # cross-checks SRSP-307.7 cl.7 cap = 55
+    tx_power_range_dbw: [-6.5, 13]
+    long_term_limit_density: "N_RX(dBW/MHz) + I/N  (sec. 4.13)"
+    convention_note: "Criterion naturally expressed as DENSITY (dBW/MHz) --
+                   cleaner for tone-group partial-overlap (epsilon) handling."
+    channel_spacings_listed_mhz: [1.25, 2.5, 5, 7, 10, 11.662, 14, 20, 28, 29.65, 30, 40]
+    domestic_note: "Generic F.758 list includes 40 MHz+; SRSP-307.7 caps
+                   Canada at 30 MHz -- DOMESTIC PLAN GOVERNS Case-T population."
+
+  atpc_and_levels:                      # for short-term construction later
+    nominal_rx_above_ber1e6_db: [10, 15]          # sec. 4.14
+    atpc_nominal_reduction_db: 10                 # sec. 4.14
+    terrestrial_interferer_rule: "correlated fading -> assume wanted Tx at MAX
+                   ATPC power (sec. 5)"
+    ber_level_offsets: "1e-6 vs 1e-3: 1-2 dB (FEC), ~4 dB uncoded (sec. 3.1)"
+
+  deployment_statistics:                # optional Monte-Carlo realism
+    urban_suburban_rural_example_pct: [60, 30, 10]   # Annex 2, sec. 2.2
+    eirp_actual_vs_theoretical_max_db: [1.5, 2.7]    # Attachment 1
+    eirp_mu_plus_2sigma_below_theoretical_db: ~3
+
+# -----------------------------------------------------------------------------
+# DERIVED (recompute if inputs change)
+# -----------------------------------------------------------------------------
+derived:
+  fs_noise_floor_case_t:
+    formula: "N_dBm = -174 + 10log10(B_Hz) + NF_dB"
+    B_hz: 30.0e6                        # SRSP-307.7 max channel
+    NF_db: 4.5                          # CHOSEN within F.758-8 Table 9 range
+                                        # [2.5, 8]; sweep {2.5, 4.5, 8}
+    N_dbm: -94.7
+    I_longterm_dbm: {at_IN_minus10: -104.7, at_IN_minus13: -107.7}
+    note: "I/N sweep per diversity caveat above. Density form:
+           N_RX = -139.5 dBW/MHz; limit density = -149.5 (or -152.5) dBW/MHz."
+
+# -----------------------------------------------------------------------------
+# PLACEHOLDERS -- remaining lookups
+# -----------------------------------------------------------------------------
+f1108_fdp:                            # spawned by A2 (COMPLETED 2026-07-02)
+  status: CONFIRMED
+  source: "Recommendation ITU-R F.1108-4, Determination of the criteria to
+           protect fixed service receivers from the emissions of space
+           stations operating in non-geostationary orbits in shared
+           frequency bands"
+  edition: "F.1108-4 (01/2005); revision train 1994-1995-1997-2002-2005;
+            status In force (Main), SG5, confirmed on itu.int rec page"
+  archived_as: "constants/sources/R-REC-F_1108.pdf"
+  accessed: "2026-07-02"
+  fdp_definition:
+    discrete: "FDP = sum_i f_i (I_i / N_T)            (Annex 3, eq. (15))"
+    continuous: "FDP = I_av / N_T with I_av = int_0^inf I p_I(I) dI
+                 (Annex 3, eqs. (23)-(24)); the two forms declared equivalent"
+    fml: "FML = 10 log10(1 + FDP)                     (Annex 3, eq. (16));
+          mean interference above noise (dB) = 10 log10(FDP)"
+    reading: "first moment of the interference-power distribution over
+              thermal noise = fractional increase in outage probability"
+  validity_and_caveats:
+    - "recommends NOTE 1: FDP applies where MULTIPATH fading is the principal
+       fading cause (rain-dominated paths: further study) -- 7725-8275 MHz
+       qualifies; consistent with F.758-8 Annex 1 sec. 4 usage"
+    - "recommends NOTE 1 + Annex 3 sec. 4: short-term / high-level
+       interference assessment is OUTSIDE FDP scope (further study) -> FDP
+       must be paired with a separately constructed short-term criterion,
+       exactly the framework's S1/S2 split"
+    - "Annex 3 sec. 4: eqs. (15)-(16) may UNDERESTIMATE degradation for
+       interference ~20 dB above N_T (dispersive term, non-Rayleigh shallow
+       fading) -> the S1 exclusion also keeps the S2/FDP tracker inside the
+       FDP validity regime"
+  diversity_extension:                # NEW FINDING -> v3 framework item
+    switched: "DFDP = 2 I_av/N_T + I2/N_T^2      (Annex 4, eqs. (29)-(32))"
+    max_power_combining: "DFDP = 2 I_av/N_T + (3/2) I2/N_T^2
+                          (Annex 4, eqs. (33)-(36))"
+    second_moment: "I2 = int_0^inf I^2 p_I(I) dI     (Annex 4, eq. (31))"
+    dfml: "DFML = 5 log10(1 + DFDP) (eq. (37)); variance form eq. (39):
+           DFML = 5 log10(1 + 2 FDP + FDP^2 (1 + var_I/I_av^2))"
+    variance_warning: "Annex 4 sec. 5: when interference variance >> mean^2
+       (found for satellite constellations; equally characteristic of
+       beam-sweeping IMT) the SECOND-MOMENT term is the dominant effect"
+    framework_note: "S2 (EMA) tracks the FIRST moment only; compliance never
+       rests on S2 (unchanged). QUEUED v3 COROLLARY: S1 + S3 jointly yield
+       deterministic per-prefix moment bounds
+         I_av <= (1-p) I_lt + p I_st,  I2 <= (1-p) I_lt^2 + p I_st^2,
+       hence certified FDP and diversity-DFDP bounds via eqs. (24)/(30)/(35)
+       -- converts the 'first-moment-only' reviewer attack into a result and
+       strengthens the -13 dB diversity-sweep rationale"
+  worst_month: "Annex 5: FS performance objectives apply in ANY month
+       (nominal 30-day); assess on worst month; repeat-period and
+       longitudinal-uniformity guidance for constellation sims -- corroborates
+       timing clock #3; HEO month-stability caveat noted (not applicable:
+       Case S drives geometry from real TLEs)"
+  other_machinery: "Annex 6: C/(N+I)-distribution method for intermediate
+       fade depths / bilateral assessment; Annexes 1, 7 + App. 2: non-GSO
+       visibility statistics and analytical geometry -- CONTEXT ONLY (Case S
+       uses SGP4 ephemerides directly)"
+sa1026_aggregate:                     # spawned by A4 (COMPLETED 2026-07-02)
+  status: CONFIRMED
+  source: "Recommendation ITU-R SA.1026-5, Aggregate interference criteria for
+           space-to-Earth data transmission systems operating in the Earth
+           exploration-satellite and meteorological-satellite services using
+           satellites in low-Earth orbit (Questions ITU-R 139/7, 141/7)"
+  edition: "SA.1026-5 (07/2017); In force (Main), SG07, confirmed on itu.int
+            rec page (versions -0 (03/94) through -4 (02/2009) superseded)"
+  archived_as: "constants/sources/R-REC-SA.1026-5-201707.pdf (project copy
+            RRECSA_10265201707.pdf, 17 pp incl. cover; same bytes as hashed)"
+  accessed: "2026-07-02"
+  scope: "recommends 1 (sole recommends -- verified, no recommends 2): Table 1
+          values are the permissible AGGREGATE interfering signal power at the
+          EESS/MetSat earth-station antenna output, LEO satellites"
+  table1_rows_in_imt_overlap:         # verified at raster, PDF p.4
+    band_8025_8400: "long-term -147 dBW per 10 MHz @ 20 % of time; short-term
+       -133 dBW per 10 MHz @ 0.0125 % of time; minimum elevation 5 deg
+       (footnote (1) >= 25 deg applies ONLY to the 137-138 MHz row)"
+    band_7750_7900: "long-term -144 dBW per 10 MHz @ 20 %; short-term
+       -127 dBW per 10 MHz @ 0.0125 %; minimum elevation 5 deg. Recorded
+       because 7 725-8 275 MHz overlaps this MetSat downlink band; Case S
+       remains anchored to 8 025-8 400 (Gatineau) -- do NOT invent a MetSat
+       victim; if one enters scope, read the matching SA.1027-6 column from
+       the archived PDF first"
+    shortterm_basis: "0.0125 % column is based on the 99.9 % performance
+       requirement of Rec. ITU-R SA.1159 (Table 1 header text)"
+  note1_interpolation: "aggregate level exceeded for x % of time, 0.0125 < x
+       < 20, obtained by interpolation: LOGARITHMIC (base-10) scale for
+       percentage of time, LINEAR scale for signal power (dB). FRAMEWORK
+       NOTE: this upgrades the two-point criterion to a continuous CDF mask
+       -> queued v3 remark: S3 generalizes to a finite family of (I_k, p_k)
+       budget states sampled along the mask (Theorem 3 applies per pair)"
+  note2_timebasis: "percentages are of the TIME OF RECEPTION (incl.
+       acquisition + sync); short-term analyses evaluated at the minimum
+       elevation angle -- consistent with the timing-convention clocks"
+  derivation_context: "Annex 1 Table 2 + secs. 5-6: five reference systems
+       (A-E) for 8 025-8 400; System E (QPSK, 820 km) most representative ->
+       -147 / -133; q(long-term) ~ 0.1, q(short-term) ~ 1, Mmin ~ 4.5 dB;
+       method of Rec. ITU-R SA.1022 (OPTIONAL lineage pull -- criteria are
+       consumed, not re-derived). Sec. 5: 7 750-7 900 System D representative
+       -> -144 / -127"
+
+sa1023_methodology:                   # spawned by A4 (COMPLETED 2026-07-02)
+  status: CONFIRMED
+  source: "Recommendation ITU-R SA.1023, Methodology for determining sharing
+           and coordination criteria for systems in the Earth exploration-
+           satellite and meteorological-satellite services (Question 138/7)"
+  edition: "SA.1023-0 (03/94), approved 1994-03-21; In force (Main),
+            confirmed on itu.int rec page; official English PDF listed at
+            15 988 bytes = byte size of the project copy"
+  archived_as: "constants/sources/R-REC-SA.1023-0-199403.pdf (project copy
+            RRECSA_10230199403.pdf, 3 pp; same bytes as hashed)"
+  accessed: "2026-07-02"
+  initial_division:                   # Annex 1, verified at raster
+    longterm_power_basis: "is(20) = i(20) x As/100 (eq. 1a);
+       it(20) = i(20) - is(20) (eq. 1b) -- WATTS; divided on a POWER basis
+       because long-term space and terrestrial interference are present
+       simultaneously"
+    shortterm_time_basis: "is(ps) = i(p) - it(20) (eq. 2a);
+       it(pt) = i(p) - is(20) (eq. 2b) -- WATTS; ps = p x as/100 (eq. 2c);
+       pt = p - ps (eq. 2d). Short-term enhancements assumed NOT simultaneous
+       across categories, but the OTHER category's long-term power is
+       subtracted from the short-term total"
+    framework_note: "eq. (2) coupling is why Case-S thresholds must be the
+       SA.1027-6 TERRESTRIAL-path column, never the SA.1026-5 aggregate:
+       the terrestrial budget already presumes space paths at long-term
+       level"
+  single_entry:                       # verified at 300 dpi, p.3
+    longterm: "i'(20) = i(20) / n (eq. 3) -- power divided by equivalent
+       number of interferers n"
+    shortterm: "i'(p') = i(p)/(y n) - i(20) x (1 - y) (eq. 4a);
+       p' = p / n (eq. 4b); y = fraction of interferers simultaneously
+       enhanced (0 < y < 1), analogous to a correlation coefficient, usually
+       1/n (mutually uncorrelated entries). With y = 1/n: one entry enhanced
+       takes i(p) minus the (n-1) others' long-term power; exceedance TIME
+       is split p/n per entry"
+    framework_notes:
+      - "n = 1 collapse: single-entry = path-apportioned aggregate exactly
+         -> FORMAL basis for the A4 decision (whole IMT network treated as
+         one entry consuming the terrestrial allotment); previously recorded
+         as a conservative reading, now a cited construction"
+      - "eq. (4b) per-entry exceedance-TIME budgeting is the standards
+         ancestor of the S3 budget arithmetic -- lineage sentence for
+         Secs. 17/21 at v3"
+      - "multi-operator refinement path recorded: n > 1 with y = 1/n gives
+         closed-form per-entry criteria -> NEW Bucket-B item B9 (sweep
+         n in {1,2,3}, y = 1/n; default n = 1)"
+
+sa1026_sa1027_reconstruction:         # consistency check (OUR derivation)
+  status: "RECONSTRUCTED -- verify wording against archived SA.1027-6"
+  band: "8 025-8 400 MHz, per 10 MHz"
+  inputs: "SA.1026-5 aggregate i(20) = -147 dBW, i(p) = -133 dBW @ 0.0125 %
+       (verified today) vs SA.1027-6 terrestrial column -150 dBW @ 20 % and
+       -133 dBW @ 0.005 % (recorded at A4, prior session), which also
+       recorded equivalent_terrestrial_interferers ~ 2 (lt and st)"
+  level_arithmetic: "-150 = -147 - 3.01 dB (a factor-2 power division --
+       degenerate between the two readings below); short-term level:
+       i(p) minus a -150 dBW long-term contribution = -133.087 dBW ->
+       rounds to -133 (matches under both readings)"
+  time_discriminator: "0.005 % = 0.0125 % x 0.40 EXACTLY (SA.1023 eq. 2c-d
+       with as = 60, i.e. 60/40 space/terrestrial TIME split); a pure n = 2
+       single-entry time split (eq. 4b) would instead give
+       0.0125/2 = 0.00625 % -- does NOT match. The recorded 0.005 % therefore
+       favours the INITIAL-DIVISION reading"
+  most_consistent_joint_reading: "SA.1027-6 tabulated values = the
+       TERRESTRIAL-PATH TOTALS from SA.1023 eqs (1)-(2) applied to the
+       SA.1026-5 aggregate with As ~ 50 (power 50/50) and as = 60 (time
+       60/40 space/terrestrial); the recorded n ~ 2 is the equivalent-
+       interferer count available for FURTHER per-entry subdivision via
+       eqs (3)-(4), not already applied in the table. Under this reading
+       the A4 decision (whole IMT network under the tabulated threshold)
+       consumes the ENTIRE terrestrial allotment -- maximally conservative"
+  action: "one-liner vs archived SA.1027-6 text: confirm (a) tabulated
+       values are path TOTALS not single-entry, (b) stated As/as (or
+       equivalent wording), (c) how n ~ 2 is framed. The As = 50 / as = 60
+       values are OUR reconstruction, not a quoted clause; do not cite them
+       as SA.1027-6 statements until (a)-(c) are checked"
+
+f1494_shortterm_template:             # spawned by A2 (COMPLETED 2026-07-02)
+  status: CONFIRMED                   # as METHODOLOGY; the numeric values are
+                                      # 10.7-12.75 GHz -- NEVER copy to 7-8 GHz
+  source: "Recommendation ITU-R F.1494, Interference criteria to protect the
+           fixed service from time varying aggregate interference from other
+           services sharing the 10.7-12.75 GHz band on a co-primary basis"
+  edition: "F.1494-0 (05/2000); 2009 SG5 editorial amendments (Res. ITU-R 1);
+            status In force (Main), confirmed on itu.int rec page"
+  archived_as: "constants/sources/R-REC-F_1494.pdf"
+  accessed: "2026-07-02"
+  band_of_applicability_mhz: [10700, 12750]
+  criteria_as_written:                # template values, NOT Case-T values
+    short_term: "I/N at FS receiver input <= +20 dB (recommends 1.1, stated
+       WITHOUT a time qualifier); Annex 1 sec. 2 evaluates it at 1e-4 % of
+       time (< 3 s/month) and concludes the 20 dB level 'can be considered
+       as a hard limit' -> DIRECT PRECEDENT for the framework's always-on
+       S1 hard cap (Sec. 31 convention: never plan short-term exceedances)"
+    long_term: "FDP (per F.1108) or DltEPO <= 10 % (recommends 1.2);
+       DltEPO ~= (1/0.89) [ int_{1e-6}^{1} (I(t)/N) dt ] x 100 %,
+       I(t) = interference power exceeded for fraction of time t"
+    exclusion_structure: "long-term integral lower bound t = 1e-6 (fraction)
+       = the short-term tail governed by recommends 1.1 -> 'average power
+       EXCLUDING short-term events'; standards precedent for the framework's
+       S1-supplies-the-exclusion / S2-tracks-the-average split (Sec. 17)"
+    consistency_note: "DltEPO <= 10 % <=> time-mean I/N <= 0.089 (-10.5 dB):
+       numerically consonant with the F.758-8 long-term -10 dB level but a
+       MEAN statement, NOT the 20 %-time percentile -> keep S2 (mean) and
+       S3 (percentile) as distinct states, as the framework already does"
+  derivation_template_for_7725_8275:  # the S1 derivation-appendix recipe
+    step_1: "net fade margin F = FM - ATPC_range - (I/N)_st (Annex 1 sec. 2;
+             example values there: ATPC_range 13 dB, I/N 20 dB)"
+    step_2: "A% = p(fade depth > F) from Rec. P.530 multipath model, per
+             representative GTA hop (length / terrain / geoclimatic factor)"
+    step_3: "DstEPO = A% x p_st / EPO   (percentage of the EPO allowance)"
+    step_4: "adequacy target: DstEPO << 10 %, nominally <= 1 % (10/90
+             short/long apportionment); F.1494 worst case 2.7 % (37 dB FM
+             international link, q_t = 4.2, SES objective), dropping to
+             1.2 % at ATPC range 12 dB; all other tabled cases << 1 %"
+    step_5: "if I/N statistics reach the short-term level: long-term
+             allowance = 10 % - DstEPO (Annex 1 sec. 3; worked example
+             10 - 2.7 = 7.3 %). NOTE: sec. 3 text cites 'Table 2' for the
+             2.7 % value, which actually sits in Table 1 (SES) -- internal
+             typo in the Recommendation, recorded so nobody trips on it"
+    step_6: "choose ((I/N)_st, p_st) for 7725-8275 MHz s.t. the step-4
+             target holds with 7-8 GHz P.530 statistics + F.758-8 Table 9
+             typicals; because p_st ~ seconds/month, adopt as an ALWAYS-ON
+             hard cap (S1) per the F.1494 hard-limit reading -- no
+             short-term micro-budget"
+    atpc_supplement: "A_w = FM - A_Range - A_Threshold (Annex 1 sec. 4);
+             FDP = FDP0 + dFDP with
+             dFDP = sum_{k>k_c} (10^{0.1 A_w} - 1) f_k (1 + (i/n)_k),
+             k_c = largest index with 10 log(1 + (i/n)_k) < A_w
+             (self-consistency check passed: A_w ~ 15 dB, f = 1e-5,
+             i/n ~ 15 dB reproduces the stated dFDP ~ 1 %);
+             supplementary long-term point criterion 'I/N >= 15 dB for
+             <= 0.001 % of time' limits the ATPC sharing burden to ~1 %;
+             alternative integral: DltEPO ~= (1/0.89) [ int_{1e-6}^{t_f}
+             10^{0.1 A_w} dt + int_{t_f}^{1} (I(t)/N) dt ] x 100 %,
+             t_f = fraction of time I(t)/N (dB) exceeds A_w
+             -> candidate extra guard iff GTA links use ATPC (F.758-8
+             sec. 4.14: nominal reduction 10 dB)"
+    caution_terrestrial: "F.1494 is derived for NON-GSO SATELLITE
+             interferers (interference uncorrelated with hop fading). For
+             terrestrial IMT the F.758-8 sec. 5 correlated-fading rule
+             applies (assume wanted Tx at MAX ATPC power) -> adapt the
+             net-margin step accordingly; document in the appendix"
+    open_input_FM: "fade-margin anchor for GTA links (Bucket-B item B8):
+             RESOLVED DIRECTION at v0.8 -- SF.1650-1 states the criteria
+             rest on a 24 dB net fade margin @ BER 1e-3, which sits inside
+             the F.758-8 sec. 4.14 bracket (nominal Rx 10-15 dB above the
+             1e-6 threshold + ATPC 10 dB -> 20-25 dB). Adopt 24 dB as the
+             anchor, SWEEP 20-25 dB; ATPC placement relative to the anchor
+             is a sweep axis; per-link TAFL budgets remain the refinement"
+  spawned_lookups: ["Rec. ITU-R P.530 -- COMPLETED at v0.8 (P.530-19, see
+             p530_multipath)", "optional: F.1565 / F.1668 (EPO values;
+             F.1494 recognizing d)-e)) or derive EPO from G.826 as already
+             recorded under A2 time_basis"]
+
+m2119_annex5:                         # spawned by A2 (COMPLETED 2026-07-02)
+  status: CONFIRMED
+  source: "Report ITU-R M.2119, Sharing between aeronautical mobile telemetry
+           systems for flight testing and other systems operating in the
+           4 400-4 940 and 5 925-6 700 MHz bands (Question ITU-R 231/8)"
+  edition: "M.2119-0 (2007); sole edition, In force (Main), SG05, published
+            in English only -- confirmed on ITU publications catalogue"
+  document_class: "ITU-R REPORT (informative technical basis, not a normative
+            Recommendation) -- normative weight flows from the Recs it cites"
+  archived_as: "constants/sources/R-REP-M.2119-2007.pdf (project copy
+            RREPM_21192007.pdf, 39 pp; same bytes as hashed)"
+  accessed: "2026-07-02"
+  table13_criteria:                   # Annex 5 sec. 2.2.1; verified 300 dpi
+    sf1320_row: "6 700-6 825 MHz interferer (non-GSO MSS feeder links in the
+       FSS), 1997: long-term FDP <= 4 %; no short-term criterion"
+    f1494_row: "10.7-12.75 GHz (non-GSO FSS s-E), 2000: short-term I/N
+       < 20 dB (hard limit); long-term FDP < 10 % -- matches our v0.5 pull
+       (cross-document consistency check PASSED)"
+    sf1650_row: "5 925-6 425 MHz (earth stations on vessels), 2003:
+       I/N < 23 dB for all but 1.2e-5 % of a month (SES);
+       I/N < 19 dB for all but 4.5e-4 % of a month (ES); no long-term"
+    exponent_verification: "sec. 2.3 restates the allowances as 0.3 s/month
+       (SES) and 12 s/month (ES); 30 d x 86 400 s x 1.2e-7 = 0.31 s and
+       x 4.5e-6 = 11.7 s -> both exponents independently confirmed by the
+       Report's own arithmetic, not just typography"
+  selection_logic:                    # sec. 2.2.1 prose
+    - "SF.1650 short-term + SF.1320 long-term judged most applicable for
+       5 925-6 700 MHz (a band with no native numeric FS criteria) --
+       the closest ITU-R worked example of the exact situation at
+       7 725-8 275 MHz"
+    - "rationale: 6 GHz FS links have fade margins like the F.1494 band and
+       are even MORE likely to use ATPC; one long-term criterion across all
+       of 5 925-6 700 since the FSS operates E-s throughout"
+    - "FDP 4 % (not 10 %) chosen by SF.1320 because that band already bore
+       FSS Earth-to-space interference and FS diversity is widespread there
+       (diversity FDP more than 2x non-diversity, per F.1108 Annex 4)"
+    - "SF.1006 REJECTED as criteria source: predates F.1108 moving-source
+       criteria, G.821-only (per SF.1649), built for bilateral coordination,
+       never used in a sharing study -> precedent for not treating
+       coordination triggers as protection criteria"
+  shortterm_application:              # secs. 2.2.2-2.3, gain 46 dBi
+    regions_19db: "widths 2-5 km; lengths 150 km (low elev) to 30 km; extent
+       along main-beam axis 450 km at 0 deg elevation, 170 km at 5 deg"
+    regions_23db: "widths 1.5-3 km; lengths 120 to 20 km; extent 300 km at
+       0 deg (none above 5 km altitude at 0 deg elevation)"
+    gain_38dbi_variant: "extent <= 180 km; no 19 dB regions above 2 km
+       altitude at 0 deg elevation (sec. 2.4 / Fig. 13)"
+    pass_arithmetic: "aircraft at 900 km/h spends 6-12 s per SES-region
+       transit vs the 0.3 s/month SES allowance -> a SINGLE transit exceeds
+       the monthly allocation by a large factor; consecutive SES can render
+       the link unavailable or crash a backhaul network; ES allowance
+       (12 s/month) consumable in one pass if region width >= 3 km, out to
+       450 km"
+    framework_note: "ITU-R's own demonstration that a fast/swept interferer
+       cannot 'spend' a short-term budget -> second precedent (with the
+       F.1494 hard-limit reading) for enforcing S1 as an ALWAYS-ON cap
+       (Sec. 31), never as a micro-budget"
+  longterm_application:               # sec. 2.4; verified at raster
+    conditional_fdp: "FDP_C = sum_i f_Ci (I_i / N_T)        (eq. (9))"
+    duty_scaling: "FDP = (40 / (7 x 24)) x I_av / N_T       (eq. (10));
+       40 h/week assumed track occupancy"
+    results: "FDP 4 % exceeded for most main-beam-centred tracks at 0 deg
+       elevation; FDP > 100 % on 4-6 % of tracks; required lateral offset
+       >= 8 km (46 dBi RX) / ~12 km (38 dBi RX); acceptable offset is set by
+       LONG-TERM, not short-term, interference"
+    framework_notes:
+      - "duty-cycle scaling of the FDP mean is ITU-R-practised -> a
+         provenance-backed refinement path IF activity-factor credit is ever
+         taken (framework default: no credit)"
+      - "sec. 2.4 closing construction (boundary where critical FDP is met
+         exactly + confirm no short-term violation outside) is a STATIC safe
+         set -- the CBF filter is its dynamic, runtime generalization
+         (positioning sentence for Sec. 22)"
+  separations_and_context:            # sec. 2.5
+    separations: "450 km along the main-beam axis OR >= 12 km lateral offset
+       for co-channel sharing; worst-case exclusion region 450 km x 24 km"
+    geometry_note: "low-elevation FS antennas are the most exposed to
+       near-horizontal arrivals -- the same geometry class as terrestrial
+       IMT interference"
+    band_bridge: "4 400-4 940 MHz results 'not expected to differ
+       significantly' from 6 GHz (gains/criteria within a dB or two) ->
+       M.2119's criteria logic spans 4.4-6.7 GHz, bracketing toward
+       7 725-8 275 MHz from below while F.1494 anchors from above"
+    fs_density_us: "1 Apr 2006: 40 514 Tx lower-6 + 30 835 Tx upper-6
+       (about half below 6 700) + 635 BAS -> ~57 000 receivers in
+       5 925-6 700 MHz; growth up to 25 %/yr in one administration --
+       motivational parallel for GTA density (69 co-band RX victims)"
+  fs_parameter_crosscheck:            # Tables 12 & 14, verified at raster
+    table12_rx: "f 6.3 GHz; Gr 46 and 38 dBi; feeder loss 3 dB; h 100 m;
+       elevation 0 / 2.2 / 5.0 deg; Teff 750 K; noise floor
+       N_T = -139.9 dB(W/MHz)"
+    table14_tx: "highest-EIRP-density F.758-4 types: 45 Mbit/s 64-QAM;
+       EIRP density 36 dB(W/MHz) @ 4 600 MHz, 39 dB(W/MHz) @ 6 300 MHz;
+       F.1245 patterns; h 100 m"
+    verdict: "PASSED vs A3/TAFL + F.758-8: GTA gains 37-45.3 dBi (median 41)
+       bracket the 38/46 anchors; our NF 4.5 dB gives -139.5 dB(W/MHz) vs
+       M.2119's -139.9 (Teff 750 K equiv. NF 5.55 dB, inside our [2.5, 8]
+       sweep)"
+  provisional_s1_candidate:
+    level: "(I/N)_st = +19 dB above victim noise floor (ES-derived; the
+       +23 dB / 1.2e-5 % SES pair is dominated by an always-on 19 dB cap)"
+    origin_percentage: "4.5e-4 % of any month (SF.1650 via M.2119 Table 13)"
+    enforcement: "ALWAYS-ON hard cap (S1), per Sec. 31 convention + F.1494
+       hard-limit + M.2119 sec. 2.3 pass-arithmetic precedents"
+    status: "PROVISIONAL -- DO NOT FREEZE"
+    freeze_gates:
+      - "GATE (a) CLEARED (v0.8): SF.1650-1 (02/2005) verified; the 6 GHz
+         pair carried over IDENTICALLY from the -0 (2003) edition M.2119
+         cites; pair sits in Table 1 as a derivation input (recommends is
+         the minimum distance), and the source itself designates the ES
+         19 dB criterion as the more stringent"
+      - "GATE (b) LOOKUPS COMPLETE (v0.8): P.530-19 pulled and verified;
+         PENDING: the step-2 adequacy COMPUTATION at 7 725-8 275 MHz --
+         per-link eqs (11)-(18) with the B8 FM/ATPC sweep anchored at the
+         SF.1650-1-stated 24 dB net fade margin (bracket 20-25 dB per
+         F.758-8 sec. 4.14). Engineering, no further document pulls"
+      - "GATE (c) PENDING: document interaction with the F.758-8 long-term
+         criterion in the derivation appendix (mean vs percentile vs hard
+         cap)"
+    provenance_chain: "SF.1650-0 (2003) -> M.2119 Table 13 (2007, in force)
+       -> [verify vs SF.1650-1 (02/2005), in force] -> F.1494-recipe
+       transfer check at 7 725-8 275 MHz"
+  status_findings:                    # from ITU catalogue checks 2026-07-02
+    sf1320: "SUPPRESSED 15/06/2009 (CACE/482) per ITU SF-series catalogue ->
+       FDP <= 4 % is recorded as the HISTORICAL basis of M.2119's analysis
+       ONLY, never as an in-force anchor. Long-term anchor remains F.758-8
+       (02/2025) I/N <= -10 dB @ 20 %. The diversity-apportionment insight
+       survives via F.1108-4 Annex 4 (in force, pulled at v0.5). NO PULL
+       NEEDED."
+    sf1650: "in force; in-force edition is SF.1650-1 (02/2005), approved
+       2005-02-24; the -0 (06/2003) edition cited by M.2119 is superseded
+       -> MANDATORY PULL of SF.1650-1 with carry-over verification"
+  spawned_lookups: ["Rec. ITU-R SF.1650-1 (02/2005) -- COMPLETED at v0.8
+       (see sf1650_shortterm; gate (a) cleared)"]
+
+f1494_m2119_shortterm:                # composite tracker for the A2 trio
+  status: "ALL LOOKUP GATES CLEARED -- S1 freeze pending step-2 computation"
+  done: ["F.1108-4 (FDP): CONFIRMED (v0.5)",
+         "F.1494-0 (methodology): CONFIRMED (v0.5)",
+         "Report M.2119 (worked selection + application): CONFIRMED (v0.6)",
+         "SF.1650-1 (anchor verification, gate a): CONFIRMED (v0.8)",
+         "P.530-19 (fading model, gate b lookups): CONFIRMED (v0.8)"]
+  pending: ["step-2 adequacy COMPUTATION at 7725-8275 MHz (per-link P.530-19
+             eqs (11)-(18), B8 FM/ATPC sweep anchored at 24 dB) -> then
+             freeze ((I/N)_st, p_st) in the derivation appendix. ENGINEERING
+             ONLY -- no further document pulls required"]
+
+sf1650_shortterm:                     # spawned by M.2119 (COMPLETED 2026-07-02)
+  status: CONFIRMED
+  source: "Recommendation ITU-R SF.1650-1, The minimum distance from the
+           baseline beyond which in-motion earth stations located on board
+           vessels would not cause unacceptable interference to the
+           terrestrial service in the bands 5 925-6 425 MHz and 14-14.5 GHz"
+  edition: "SF.1650-1 (02/2005), approved 2005-02-24; In force (Main),
+            confirmed on itu.int at v0.6 (the -0 (06/2003) is superseded)"
+  archived_as: "constants/sources/R-REC-SF.1650-1-200502.pdf (project copy
+            RRECSF_16501200502.pdf, 16 pp; same bytes as hashed)"
+  accessed: "2026-07-02"
+  recommends: "minimum distance from the low-water mark: 300 km in
+       5 925-6 425 MHz (2.4 m ESV antenna, Table 1 parameters); 125 km in
+       14-14.5 GHz (1.2 m, Table 2). NOTE 1: protects terrestrial services
+       (space-service protection is Rec. S.1587's matter). The I/N pair is
+       a DERIVATION INPUT in Table 1, not the recommends -- exactly as
+       anticipated at v0.6"
+  criteria_6ghz:                      # Table 1 (cont.), rec p.6; verified
+    ses: "I/N = 23 dB, not to be exceeded for more than 1.2e-5 % of the
+       time, severely errored second (SES) level"
+    es: "I/N = 19 dB, not to be exceeded for more than 4.5e-4 % of the
+       time, errored second (ES) level"
+    fm_anchor: "Table comment: figures based on a NET FADE MARGIN OF 24 dB
+       referenced to the 1e-3 BER level -> the B8 anchor, stated in the
+       source itself; sits inside the F.758-8 sec. 4.14 bracket (nominal Rx
+       10-15 dB above the 1e-6 threshold + ATPC 10 dB -> 20-25 dB)"
+    binding: "Table note: the ES-level criterion is the MORE STRINGENT and
+       is used to determine the distance -> direct textual support for the
+       provisional S1 binding level (+19 dB always-on)"
+    internal_check: "PASSED: Imax = -110.4 dBW = 10 log(k T B) + I/N with
+       T = 750 K, B = 11.2 MHz, I/N = 19 dB (kTB = -129.36 dBW);
+       ps = 4.5e-4 % (ES percentage) used for the distance derivation"
+    carryover_verdict: "-1 (02/2005) values IDENTICAL to the -0 (2003)
+       values quoted in M.2119 Table 13 -> S1 FREEZE GATE (a) CLEARED"
+  fsr_parameters_crosscheck: "Gr,max 45 dBi (F.758); Gr,AVE 42.5 dBi within
+       the 1.72-deg -10 dB beamwidth (F.699); feeder 3 dB; B 11.2 MHz;
+       T 750 K (SM.1448); 34 Mbit/s; ref path 25 km; hg 50 m / hrs 120 m --
+       consistent with M.2119 Table 12 and with the GTA/TAFL victim
+       typicals"
+  method_notes: "Imax = I/N_th + 10 log(k T_FSR B_FSR) (eq. 1);
+       Lb,min(ps) = Pt,max + Gt + Gr,AVE - Imax - F (eq. 2; a stray ')' in
+       the print is typographic). The criteria percentage ps is NOT fed
+       directly to the propagation model: an ESV-occupancy iteration maps
+       ps to an ANNUAL propagation percentage p (P.452 / P.620; 3 km
+       iteration floor). That annual-% machinery belongs to the DISTANCE
+       derivation only; the framework consumes the receiver-side (level, %)
+       pair. Table wording is '% of the time'; M.2119 restates it as
+       monthly, consistent with the SES/ES (G.826-lineage) monthly
+       objectives behind the 24 dB net-fade-margin construction"
+  transfer_caution: "criteria formulated for ESV (surface, over-sea)
+       interferers; the receiver-side EPO construct transfers, but the
+       7 725-8 275 MHz adequacy check still runs through the F.1494
+       template with P.530-19 statistics and the F.758-8 sec. 5
+       correlated-fading rule for terrestrial IMT"
+
+p530_multipath:                       # spawned by F.1494 (COMPLETED 2026-07-02)
+  status: CONFIRMED
+  source: "Recommendation ITU-R P.530-19, Propagation data and prediction
+           methods required for the design of terrestrial line-of-sight
+           systems (Question ITU-R 204-6/3)"
+  edition: "P.530-19 (09/2025), approved 2025-09; In force (Main), SG03,
+            confirmed on itu.int rec page (P.530-18 (09/2021) and all
+            earlier editions superseded)"
+  archived_as: "constants/sources/R-REC-P.530-19-202509.pdf (project copy
+            RRECP_53019202509.pdf, 62 pp; same bytes as hashed)"
+  accessed: "2026-07-02"
+  integral_products: "LogK.csv (log10 of geoclimatic factor K, %) and
+       dN75.csv on a 0.25-deg global grid, plus lat/lon convenience grids;
+       bilinear interpolation per P.1144; delivered in
+       R-REC-P.530-19-202509-I!!ZIP-E.zip; the Recommendation states only
+       the file versions provided with it should be used. ACTION CLOSED at
+       v0.9: ZIP received, archived + hashed (see registry); contents
+       verified below"
+  integral_products_verified:         # v0.9, from the received ZIP
+    inventory: "exactly 4 files: LogK.csv (8 197 168 B), dN75.csv
+       (7 355 307 B), LatitudeQuarterDegree.csv (5 596 844 B),
+       LongitudeQuarterDegree.csv (6 118 406 B); no PDF inside; per-file
+       SHA-256 in the registry"
+    structure: "all four 721 x 1441, zero NaNs; corners 90 N -> 90 S and
+       180 W -> 180 E; 0.25-deg spacing both axes -- MATCHES sec. 1.1
+       Table 1 exactly"
+    wrap_columns: "the duplicate +/-180-deg meridian columns agree to
+       <= 0.0034 (LogK) and <= 0.002 N-units (dN75) -- source-file
+       artifact; use the -180 column consistently; immaterial at GTA
+       longitudes"
+    dn75_notes: "global range -2.1e-6 .. 84.699 N-units; tiny negatives
+       are numerical noise (clamp to 0 in pipeline); 4.4 % of cells
+       < 0.001, consistent with the some-high-latitude-regions-zero text;
+       map max 84.7 EXCEEDS the eq (7) regression source range 0-54 in
+       places -- observation only, GTA sits at 2.3-8.5"
+    logk_notes: "global range -6.6819 .. -2.1512 (K from 2.1e-7 % to
+       7.1e-3 %)"
+  revision_note: "-19 REVISED the multipath machinery: K now comes from the
+       LogK.csv map (or measured fading data per the Attachment), and a new
+       subrefractive parameter dN75 (0.1 %-of-average-worst-month
+       refractivity increase over the lowest 75 m, from dN75.csv) enters
+       eq. (7). Any K(dN1) formulation remembered from earlier editions is
+       OBSOLETE for this work -- use -19 as printed"
+  deep_fading_method:                 # sec. 2.3.1; verified at 300 dpi
+    scope: "single-frequency (narrow-band) fade-depth distribution, AVERAGE
+       WORST MONTH, any location, no path profile; multipath set to zero
+       for d <= 5 km"
+    eq5: "|eps_p| = |hr - he| / d   (mrad; d in km)"
+    eq6: "hc = (hr + he)/2 - d^2/102 - ht   (m; ht = mean terrain
+       elevation along the path, excluding trees)"
+    eq7: "pw = K d^3.51 (f^2 + 13)^0.447 x 10^[ -0.376 tanh((hc-147)/125)
+       - 0.334 |eps_p|^0.39 - 0.00027 hL + 17.85 vsr - A/10 ]   %"
+    eq8: "vsr = min{ (dN75/5075)^1.8 exp(-hc/(2.5 sqrt(d))), vsr_limit }"
+    eq9: "vsr_limit = dN75 d^1.5 f^0.5 / 24730"
+    eq10: "rough lower frequency limit fmin ~ 15/d GHz"
+    error_stats: "NOTE 1: overall prediction-error sigma 5.2 dB (incl.
+       year-to-year variability); mean error < 3 dB over the 21 source
+       regions -> feeds the uncertainty-box appendix (B1-B3)"
+    validity: "NOTE 2: regression on 539 links; d 7.5-300 km;
+       f 0.45-37 GHz (expected valid to >= 45 GHz); |eps_p| <= 37 mrad;
+       hL 17-2 300 m; hc 26-1 180 m; dN75 0-54 N-units; grazing LOS at
+       ke = 1.33. CASE-T COVERAGE: 7.7-8.3 GHz and GTA hop geometry sit
+       inside all ranges (per-link confirmation to run in the pipeline)"
+  all_percentages_method:             # sec. 2.3.2; verified at 300 dpi
+    eq11: "p0 = eq. (7) with A = 0 (multipath occurrence factor)"
+    eq12: "At = 25 + 1.2 log10(p0)  dB (deep/shallow transition)"
+    deep_branch: "A >= At: pw = p0 x 10^(-A/10)   (eq. 13)"
+    shallow_branch: "A < At: pt = p0 x 10^(-At/10) (eq. 14; cap
+       99.9999 %); q'a = -20 log10(-ln((100 - pt)/100)) / At (eq. 15);
+       qt = (q'a - 2)/[(1 + 0.3 x 10^(-At/20)) 10^(-0.016 At)]
+       - 4.3 (10^(-At/20) + At/800) (eq. 16);
+       qa = 2 + [1 + 0.3 x 10^(-A/20)][10^(-0.016 A)]
+       [qt + 4.3 (10^(-A/20) + A/800)] (eq. 17);
+       pw = 100 (1 - exp(-10^(-qa A/20)))   % (eq. 18)"
+    operative_branch_note: "candidate net margins F = FM - ATPC -
+       (I/N)_st are small or negative once ATPC and the S1 level are
+       netted (exact placement of ATPC relative to the 24 dB anchor is a
+       B8 sweep axis) -> the SHALLOW branch (eqs. 14-18) is the operative
+       one for step 2; F <= 0 handled as in F.1494 Table 2 (A% = fading
+       probability at ~0 dB depth)"
+    qt_lineage: "eq. (16)'s qt is the same parameter family as the qt
+       values (4.2 / 2.2) attached to the F.1494 example links -- lineage
+       closed"
+  time_basis: "'worst month' = 'any month' per P.581, stated in the
+       introduction -> timing clock #3 corroborated; sec. 2.3.4 gives
+       worst-month -> annual conversion; sec. 2.3.5 shorter worst periods;
+       sec. 6 diversity improvement factors available for the -13 dB
+       diversity sweep if needed"
+  step2_recipe: "per GTA link: d, he/hr from TAFL; ht from DEM; K and dN75
+       by P.1144 bilinear interpolation of LogK.csv / dN75.csv at the path
+       centre; F = FM - ATPC_range - (I/N)_st with FM anchored at 24 dB
+       (SF.1650-1) and swept over the F.758-8 sec. 4.14 bracket (20-25 dB,
+       B8); A% = pw(F) via eqs. (11)-(18); DstEPO per F.1494 template
+       steps 3-4; adequacy target DstEPO <= ~1 % of EPO; integral files
+       archived + hashed at v0.9, representative GTA values in
+       p530_gta_inputs"
+
+p530_gta_inputs:                      # DERIVED (Bucket B) -- 2026-07-02
+  status: "DERIVED -- representative values; per-link path-centre
+           interpolation in the pipeline supersedes"
+  method: "P.1144 bilinear interpolation on the v0.9-hashed integral
+           files; node locations READ from the lat/lon quarter-degree
+           grids (no assumed indexing)"
+  bbox_statistics:                    # over case_t_population.gta_bbox (A3)
+    nodes: 40
+    logk: "min -5.2222 / median -5.0746 / max -4.9135"
+    k_percent: "6.00e-6 .. 1.22e-5 (median 8.42e-6)"
+    dn75_nunits: "min 2.291 / median 4.527 / max 8.509 -- all well inside
+       the eq (7) regression source range 0-54"
+  representative_anchor:
+    coordinates: "43.6532 N, 79.3832 W (Toronto city centre; documented
+       choice, not a TAFL site)"
+    surrounding_nodes: "LogK: (43.75, -79.50) -5.1909; (43.75, -79.25)
+       -5.0768; (43.50, -79.50) -5.0007; (43.50, -79.25) -4.9409. dN75:
+       4.2653 / 4.1006 / 4.5434 / 3.6539 (same node order)"
+    interpolated: "LogK = -5.0738 -> K = 8.44e-6 % ; dN75 = 4.165
+       N-units (fractions fr = 0.3872, fc = 0.4672)"
+  vsr_note: "at dN75 ~ 4.2: (dN75/5075)^1.8 = 2.79e-6 -> 17.85 vsr <=
+       4.98e-5 in the exponent of 10 of eq (7) (~0.0005 dB-equivalent);
+       the exp(-hc/(2.5 sqrt(d))) factor and the vsr_limit min only
+       reduce it further -> subrefractive term NEGLIGIBLE for GTA-class
+       dN75 (recorded; still computed in the pipeline)"
+  pipeline_conventions: "clamp dN75 at 0; use the -180 longitude column
+       consistently"
+
+f1094_disposition: {status: "DECISION-PENDING (user)", note: "listed in A2
+             spawned_lookups; the operative 89/10/1 split is already recorded
+             via F.758-8 Annex 1 sec. 2.1 and its lineage is reconfirmed by
+             F.1494 recognizing c). Either add as an explicit pull or mark
+             'covered via F.758-8 citation' -- no silent bucket move"}
+tafl_incumbents:                      # A3 (COMPLETED 2026-07-02)
+  status: CONFIRMED
+  source: "ISED SMS Authorization Data Extract (open.canada.ca record
+           508040d7-6fa9-46e4-afbc-aa61f3ca317e), monthly refresh"
+  files:
+    fixe: {sha256: "e9d6ebdbfd63dd68ead8a2ca12d53c5ed7c3262b6640e1f6ba639bc0bb8aaf90"}
+    satellite: {sha256: "4840baa1d9ff17c99f628347e0e24dbf1a3581dc513763d772e3fca52c754a77"}
+    field_desc: "tafl_description_ltaf.pdf (60 fields + value lists)"
+  pipeline: "a3_extract.py (cleaning: ''/'-'->NULL, dup drop, zero-as-null flags;
+             raster validation vs SRSP-307.7; envelope + carrier-overlap derivation)"
+  layout_finding: "61 columns: UNDOCUMENTED leading TX/RX direction column +
+             the 60 documented fields; no header; UTF-8 BOM. Victims = RX rows."
+  units_confirmed: {antenna_gain: "dBi (field 23; no dBd conversion)",
+             coords: "WGS84 decimal degrees", heights: "m AGL + ground AMSL"}
+  empirical_precision:                # feeds B1/B2
+    coords: "49% of in-band records on integer arcseconds (tol 0.01 arcsec);
+             median offset 0.02 arcsec -> B1 quantization box <= +/-0.5 arcsec
+             (+/-15.5 m lat, +/-11.2 m lon at 43.7N) remains a valid bound"
+    azimuth: "full float precision (computed values) -> B2 box is
+             installation-tolerance-driven only (+/-1-2 deg, swept)"
+    elevation_angle: "field 30 populated for nearly all in-band records"
+  case_t_population:
+    in_band_rows: 6378              # 7725-8275 MHz, TX 3189 / RX 3189
+    gta_bbox: {lat: [43.2, 44.4], lon: [-80.3, -78.3]}
+    gta_rx_victims: 69
+    raster_violations_gta: 0        # all on 1.25 MHz SRSP grid
+    conformity_gta: {A: 130, B: 8}  # envelope guarantee applies to A
+    envelope_rule: "congestion H/M -> A; L/blank -> B (robust default)"
+    victim_params: {gain_dbi: [37, 45.3], gain_median: 41,
+                    height_agl_m: [19, 328], height_median: 55,
+                    channel_bw_mhz: {30: 59, 10: 8, 5: 2}}
+    carrier_cochannel_victims:      # duplex-gap effect QUANTIFIED
+      fc8000_7950-8050: 6
+      fc7850_7800-7900: 16
+    decision: "run both carriers: fc=8.0 GHz (WRC-relevant, EESS-edge
+               interaction) + fc=7.85 GHz (fully-loaded co-channel stress)"
+  case_s_survey:                    # RX earth stations, 7250-7750 / 8025-8400
+    gta_eess_stations: 0            # DOCUMENTED: none in GTA (2 GSO FSS only)
+    real_anchor_candidates:
+      - "NRCan Gatineau Satellite Station, Cantley QC -- TW class, RADARSAT,
+         55-58 dBi, ~15 km from Ottawa-Gatineau metro (RECOMMENDED primary)"
+      - "CSA Saint-Hubert QC -- inside Greater Montreal"
+      - "Prince Albert SK; Inuvik NT (ISSF); Goose Bay / Lewisporte NL"
+    tracked_satellites_with_public_tle: ["RADARSAT (RCM)", "SENTINEL-2",
+                                          "CFOSAT-1", "GHGSAT", "TERRASAR"]
+    dish_gains_dbi: [47, 59]        # => 5-13 m dishes; HPBW ~0.2-0.4 deg at
+                                    # 8.2 GHz -> UPDATE B3 derivation at v3
+    itu_classes_8025_8400: {TW: 112, TC: 30, TD: 5, TM: 4, TR: 1, ET: 1}
+sa1027_eess:                          # A4 (COMPLETED 2026-07-02)
+  status: CONFIRMED
+  source: "Recommendation ITU-R SA.1027-6 (08/2019), Sharing criteria for
+           space-to-Earth data transmission systems in the EESS and MetSat
+           services using satellites in low-Earth orbit"
+  archived_as: "constants/sources/R-REC-SA-1027-6-201908.pdf"
+  accessed: "2026-07-02"
+  band_8025_8400:                     # Table 1 row; TERRESTRIAL path applies
+    long_term:                        #  to IMT BS interference (Note 4)
+      threshold: "-150 dBW per 10 MHz  (= -120 dBm per 10 MHz)"
+      time_percentage: 20
+      space_to_earth_path_for_reference: "-167 dBW per 10 MHz"
+    short_term:
+      threshold: "-133 dBW per 10 MHz  (= -103 dBm per 10 MHz)"
+      time_percentage: 0.0050         # percent of time
+      space_to_earth_path_for_reference: "-133 dBW/10 MHz @ p=0.0025%"
+    min_elevation_deg: 5              # footnote (1): >=25 deg applies only to
+                                      # 137-138 MHz; all other bands >=5 deg
+    notes:
+      - "Note 1: SINGLE-ENTRY thresholds per reference bandwidth; narrower
+         interferers -> total power within the 10 MHz window; wider/partial
+         overlap -> apply frequency-dependent rejection. Implementation:
+         evaluate IMT aggregate PSD over the WORST 10 MHz window in the ES
+         passband (meshes with the tone-group epsilon machinery)."
+      - "Note 3: BOTH long-term and short-term criteria must be met -> maps
+         exactly onto S1 (short-term hard cap) + long-term budget state."
+      - "Note 4: terrestrial-path column applies to terrestrial transmitting
+         stations (incl. IMT BS) and transmitting earth stations."
+      - "recommends 3: services with LOWER allocation status held to 1% of
+         the criteria -- NOT applicable to IMT under a co-primary mobile/fixed
+         allocation (Sec. 6: fixed and mobile are primary in 8025-8400)."
+      - "Criteria are ABSOLUTE interfering powers: Case-S protection needs no
+         ES noise-figure assumption (simplifies the framework instantiation)."
+    apportionment_table2:             # derivation context (SA.1023 method)
+      long_term_space_vs_terrestrial_pct: [1, 99]
+      short_term_space_vs_terrestrial_pct: [20, 80]
+      equivalent_terrestrial_interferers: {long_term: 2, short_term: 2}
+    aggregate_treatment: DECISION
+    decision: "Conservative default: enforce the SINGLE-ENTRY terrestrial
+       threshold on the ENTIRE IMT network aggregate (the network then
+       consumes one of ~2 equivalent-interferer slots -- errs safe).
+       Refinement path: aggregate criteria from SA.1026 with the SA.1023
+       apportionment methodology. SPAWNED LOOKUPS: SA.1026, SA.1023 --
+       CLOSED at v0.7 (see sa1026_aggregate, sa1023_methodology,
+       sa1026_sa1027_reconstruction). Decision unchanged and now formally
+       grounded (SA.1023 eqs (3)-(4), n = 1 collapse); verify-wording
+       one-liner pending against archived SA.1027-6."
+  correction_log: "Earlier v0.2-era anchor (-116 dBW/10 MHz @ 0.005%, quoted
+       via CEPT Rec (19)01 search snippet) is the 25.5-27 GHz Table 1 row;
+       replaced by the authoritative 8025-8400 values above. Lesson recorded:
+       secondary-source anchors are expectations, never values."
+wp5d_imt_parameters: {status: PLACEHOLDER, item: A5, note: "record TRP vs EIRP"}
+oran_wg3_loop: {status: PLACEHOLDER, item: A6}
+tr38901_version: {status: PLACEHOLDER, item: A7}
+propagation_validity: {status: PLACEHOLDER, item: A8}
+ra769_ra1513: {status: PLACEHOLDER, item: A9}
+rr_and_domestic_table: {status: PLACEHOLDER, item: A10}
+
+a5_imt_parameters:                    # A5 (CLOSED ON FALLBACK PATH 2026-07-03)
+  status: "FULLY CLOSED on the documented fallback path -- WP 5D AI-1.7
+           annexes unavailable; RF/AAS side = Bucket A via TR 38.922
+           V19.3.0; deployment side = Bucket-B item B10; version gate
+           CLEARED (see below); no mandatory items remain"
+  version_gate:
+    status: "CLEARED at v1.1 (2026-07-03)"
+    finding: "V19.3.0 (2026-02, 101 pp) received and hashed; the 19.2.0 ->
+       19.3.0 delta is a SINGLE category-F CR (RAN#110 2025-12, RP-253648,
+       CR 0013 rev 1) improving the BS array antenna model DESCRIPTION in
+       clauses 7.1 and 7.3.2; a machine diff of normalized text confirms
+       every adopted clause-5/6 value is byte-identical in both versions;
+       residual diff lines are PDF re-render spacing artifacts in equation
+       regions; the +1 page is the inserted clause-7 description text"
+    edition_anchor: "citable edition = V19.3.0 (2026-02); the clause-5/6
+       values recorded below are verified identical in it; V19.2.0 hash
+       retained as superseded archive"
+    ls_refs: "refs [4]-[6] remain (Void) in V19.3.0 as well -- the TR does
+       not identify the LS documents in either version; if LS-level
+       provenance is ever needed, obtain the RP numbers from the RAN
+       plenary document lists under study item
+       FS_NR_IMT_4400_7125_14800MHz (OPTIONAL, non-blocking)"
+    clause73_context: "clause 7.3 'Modelling array antenna gain outside
+       the carrier' (7.3.2 adjacent-channel modelling: correlation
+       roll-off model and array-ACLR model, PA non-linearities, band-pass
+       filters) is the source-native treatment of whether beamforming
+       gain applies to unwanted emissions -> input to the Case-R eps_adj
+       recompute (B6)"
+  tr38922:
+    source: "3GPP TR 38.922, Study on IMT parameters for 4400-4800 MHz,
+       7125-8400 MHz and 14800-15350 MHz (ETSI TR 138 922)"
+    edition: "V19.2.0 (2025-10), Release 19; publication history: V19.2.0
+       October 2025; scope: Tx/Rx characteristics for NR BS and UE,
+       co-existence studies, AAS antenna models, responses to ITU-R WP 5D
+       requests; findings based on Rel-18 NR specifications"
+    archived_as: "constants/sources/tr_138922v190200p.pdf (project copy
+       tr_138922.pdf, 100 pp; same bytes as hashed)"
+    accessed: "2026-07-03"
+    band_7125_8400:                   # clause 5; tables verified at raster
+      general: "duplex: TDD most likely (FDD not precluded; SBFD a
+         candidate; adjacent to n104 6425-7125 and n79); typical channel
+         bandwidth 100 MHz (higher not precluded, Annex A)"
+      bs_power: "Table 5.2.1.5-1: max BS output power per sector (e.i.r.p.)
+         78.3 dBm macro suburban/urban, 61.5 dBm small-cell/micro urban;
+         Table 5.2.1.5-2: TRP (two polarizations) 46 dBm macro, 37 dBm
+         micro; agreed aligned with antenna characteristics.
+         INTERNAL CHECK PASSED: 46 + 6.4 + 10log10(8x16x3 = 384) = 78.24
+         ~ 78.3. EXTERNAL VALIDATION: report convention (P_max_b = 46 dBm
+         conducted/TRP; implied ~78 dBm EIRP) confirmed at source"
+      bs_antenna: "Table 5.4.1.2-1 (macro suburban / macro urban / micro):
+         Am 30 dB; SLAv 30 dB; phi3dB 90 deg; theta3dB 65 deg; GE,max
+         6.4 dBi; subarray Msub 3, dv,sub 0.7 lambda, subtilt 3 deg
+         (micro: N/A); M 8 (micro 8); N 16 (micro 8); dh 0.5 lambda;
+         dv 2.1 lambda (micro 0.7); etilt 90-100 deg (micro 90-120);
+         escan +/-60 deg; rho 1; Ptx 46 dBm (micro 37); mech tilt 6 deg.
+         Model identity (clause 7.1): parameterized RAN4 array model,
+         'also described ... in ITU-R in recommendation M.2101' --
+         lineage to the framework's eq. (9) element-gain convention CLOSED"
+      bs_rf: "ACLR 38 dB (n104 reuse; both first and second adjacency;
+         Table 5.2.1.3-1); Category-B mask = n104 (TS 38.104 sec. 6.6.4
+         conducted / 9.7.4.2 radiated); Category-A OBUE tables recorded;
+         dfOBUE 40 MHz non-AAS / 100 MHz AAS; spurious per TS 38.104 sec.
+         6.6.5; ACS 42 dB; NF 6 dB Wide Area / 11 Medium Range / 14 Local
+         Area (source table caption misprinted '4.2.2.1-1' inside clause
+         5 -- recorded as printed); in-band blocking dfOOB 60/100 MHz, WA
+         blocker -43 dBm; DL power dynamic range 0 dB (no DL power
+         control assumed in the study)"
+      ue: "power class 3 = 23 dBm max (20/26/29 dBm not precluded, ACLR
+         adapted); min output -33 dBm -> 56 dB dynamic range; ACLR 26 dB
+         and ACS 32 dB carried from TR 38.921 sec. 4.3 conclusions for
+         6425-7125 ('to be further studied in the WI phase' -- flag);
+         NF 13 dB (n104 assumed 12; prior LS interval [9,13] dB);
+         spurious per TS 38.101-1 sec. 6.5.3.1; antenna: isotropic,
+         conducted interface, no beamforming ('FR1-like' per the RAN4
+         7-24 GHz study for 7.125-[10-13] GHz)"
+    band_14800_15350:                 # clause 6 -- Case R relevance
+      coexistence: "full co-existence study; urban macro drives ACIR
+         (dense urban + indoor down-prioritized); single-operator layout
+         Table 6.1.2.1.1-1: hexagonal 19 sites x 3 sectors wrap-around,
+         ISD 450 m, BS height 25 m, indoor UE 20/0 %, 50/50 low/high
+         penetration loss, UMa channel, min BS-UE 35 m, shadowing corr
+         1.0 cells / 0.5 sites; multi-operator 0 % / 100 % grid shift"
+      bs_aclr: "Table 6.3.1.3-1: BS ACLR = 30 dB @ 200 MHz channel BW
+         (both adjacencies) -> CASE-R IMPACT: supersedes B6's generic
+         Category-B 45 dB assumption (15 dB optimistic); B6 default
+         becomes 30 dB with the old 45 dB as the optimistic sweep edge;
+         eps_adj to be recomputed"
+    band_4400_4800_context: "clause 4.4 Table 4.4.1.2-1 ('IMT parameters
+       relevant for 1710 to 4990 MHz'): GE,max 6.4 dBi, macro M4 x N8
+       (micro 8x8), Ptx 46/37 dBm -- recorded as the characteristics-
+       format precedent (3GPP quoting the WP 5D style)"
+  tr38921:
+    source: "3GPP TR 38.921, Study on IMT parameters for 6.425-7.025 GHz,
+       7.025-7.125 GHz and 10.0-10.5 GHz (ETSI TR 138 921)"
+    edition: "V17.1.0 (2022-05), Release 17; no later ETSI publication
+       observed at check date"
+    archived_as: "constants/sources/tr_138921v170100p.pdf (project copy,
+       47 pp; same bytes as hashed)"
+    accessed: "2026-07-03"
+    role: "adjacent-band precursor (below): UE ACLR 26 dB / ACS 32 dB
+       lineage consumed by TR 38.922 clause 5.3; dfOBUE = 100 MHz agreed
+       for 6425-7125 / 10-10.5; deployment bracket source"
+    urban_macro_layout: "Table 4.2.1.1-1: hexagonal 19 x 3 wrap-around;
+       ISD 0.45 km urban / 0.9 km suburban (cell range 0.3/0.6 km);
+       BS height 20 m urban / 25 m suburban; indoor UE 20 %; 50/50
+       penetration mix; UMa channel; min 35 m; shadowing corr 1.0/0.5;
+       multi-operator 0/100 % grid shift; indoor scenario 50x120 m,
+       12 BS, 3 m ceiling"
+  framework_impacts:
+    - "P_max_b convention VALIDATED at source (46 dBm TRP; 78.3 dBm EIRP)"
+    - "ADOPT Table 5.4.1.2-1 as the A5 primary BS antenna set for Case T
+       (Bucket A); keep the M.2101/38.803 legacy set (8 dBi, 65/65,
+       16x16) as the LABELED sensitivity variant -> report v3: sec. 14
+       array baseline, eq. (9) G_elem note, power-accounting sentence
+       (78.2 arithmetic)"
+    - "NEW Bucket-B item B10 (deployment side, no WP 5D source): ISD
+       sweep {450 m (3GPP co-existence convention), 500 m (38.901 UMa
+       calibration -- current report value)}; BS height 20-25 m; network
+       loading and TDD activity factor remain M.2101-labeled assumptions;
+       upgrade path = WP 5D AI-1.7 characteristics annex"
+    - "B6 (Case R emission mask) SUPERSEDED: BS ACLR 30 dB @ 15 GHz from
+       Table 6.3.1.3-1 replaces the generic 45 dB; sweep now {30 (source
+       default), 38 (7-8 GHz n104-class), 45 (legacy optimistic)}"
+  residuals_optional:
+    - "LS replies to WP 5D: refs [4]-[6] Void in V19.2.0 -- capture the
+       RP numbers from V19.3.0 (provenance nicety, tables already in TR)"
+    - "archive + hash M.2101-0 and TR 38.803 PDFs (deployment-fallback
+       citations) -- housekeeping, not blocking"
+    - "sighting (unverified scope): ETSI TR 138 908 V19.1.0 (2026-01)
+       'Protection of fixed satellite service (FSS)' -- possibly relevant
+       Rel-19 context for Case S/S-prime; check scope before any use"
+
+p452_interference:                    # A8 core (COMPLETED 2026-07-03)
+  status: CONFIRMED
+  source: "Recommendation ITU-R P.452-18, Prediction procedure for the
+           evaluation of interference between stations on the surface of
+           the Earth at frequencies above about 100 MHz (Question 208/3)"
+  edition: "P.452-18 (08/2023), approved 2023-10-21; In force (Main),
+            confirmed on itu.int landing page; WP 3M-approved reference
+            software tracks -18 (no -19 exists)"
+  archived_as: "constants/sources/R-REC-P.452-18-202310.pdf (project copy
+            RRECP_45218202310.pdf, 55 pp; same bytes as hashed)"
+  accessed: "2026-07-03"
+  scope: "100 MHz to 50 GHz; clear-air AND hydrometeor-scatter mechanisms;
+       consistent prediction of basic transmission loss over time
+       percentages p from 0.001 % to 50 % of an average year (verbatim
+       range statement located and recorded)"
+  worstmonth_native: "Step 2: models predict ANNUAL distributions; for
+       worst-month, convert pw -> annual-equivalent p via eq (1):
+       p = 10^[(log10 pw + log10 GL - 0.186 omega - 0.444)/(0.816 +
+       0.078 omega)], GL per eq (1a) (1.1 +/- |cos 2phi|^0.7 for |phi|
+       <=/> 45 deg), omega = over-water fraction; clamp 12 p >= pw.
+       ROLE SPLIT: P.452 paths use THIS conversion; P.841-7 is the
+       general converter for other statistics"
+  radiometeorology: "three inputs: DeltaN (lapse rate, lowest 1 km ->
+       effective Earth radius), beta0 (anomalous-propagation incidence,
+       eq (2), path-centre latitude), N0 (sea-level surface refractivity,
+       troposcatter only); path-centre values from the integral maps"
+  clutter_mechanism:                  # THE harmony refinement
+    finding: "P.452-18 contains ZERO references to P.2108 (full-text
+       verified). Clutter enters via the PATH PROFILE: Step 4 builds
+       g_i = terrain h_i + representative clutter height per ground-cover
+       category (eq (6e)); endpoints and all points within 50 m of either
+       terminal remain BARE TERRAIN; warnings recorded: bare-terrain
+       profiles UNDER-estimate diffraction loss in clutter; surface-height
+       (clutter-included) data may OVER-estimate"
+    table3_defaults: "exactly FOUR rows (verified at raster + full-text
+       'Dense' grep = prose-only hits): Water/sea 0 m; Open/rural 0 m;
+       Suburban 10 m; Urban/trees/forest 15 m. NO dense-urban default --
+       prose states high-rise categories (~30 m physical) may warrant
+       SMALLER-than-physical representative heights; local clutter-height
+       statistics preferred where available"
+    harmony_consequence: "coordination-grade default for GTA rooftop FS
+       victims = P.452-18 with clutter-in-profile (GTA land-cover raster
+       -> categories -> Table-3/ local heights). P.2108 sec. 3.2 is an
+       ALTERNATIVE end-correction only where a terminal is genuinely in
+       clutter and the path model is clutter-free -- never additive to a
+       clutter-bearing profile. Report v3: rewrite the harmony-table
+       BS->FS model cell + Sec. 9.2 defect-4 wording accordingly"
+  hydrometeor: "sec. 5 full bistatic hydrometeor-scatter method present
+       (single scatter; works with F.699 / F.1245 / S.465 / S.580
+       patterns); optional for Case T (clear-air dominates short GTA
+       co-channel paths) -- usage, if any, documented"
+  integral_products: "R-REC-P.452-18-202310-I!!ZIP-E.zip: DN50.txt,
+       N050.txt (+ LAT.txt / LON.txt companions); 1.5-deg global grid,
+       lon 0..360, lat +90..-90; ten-year (1983-1992) radiosonde basis;
+       bilinear interpolation per P.1144. RECEIVED + VERIFIED at v1.5 --
+       see p452_18_integral_data (zip + per-file hashes in registry)"
+  inputs_note: "Table 1 basic inputs incl. Gt/Gr toward the horizon along
+       the great-circle path, dct/dcr coast distances; Table 4 derived
+       path-profile parameters (omega = db/d etc.)"
+
+p2108_clutter:                        # A8 (COMPLETED 2026-07-03)
+  status: CONFIRMED
+  source: "Recommendation ITU-R P.2108-1, Prediction of clutter loss"
+  edition: "P.2108-1 (09/2021); In force (Main): -0 (06/2017) superseded,
+            SG3 reference software (WPs 3K/3M) tracks -1; DRAFT -2 WATCH:
+            CEPT tooling discussion (Nov 2025) of a draft revising sec.
+            3.3 (slant path) to 0.5-100 GHz with new inputs (ground-
+            station antenna height, median clutter height); sec. 3.2 not
+            indicated as changing; VERIFY approval status at freeze"
+  archived_as: "constants/sources/R-REC-P.2108-1-202109.pdf (project copy
+            RRECP_21081202109.pdf, 10 pp; same bytes as hashed)"
+  accessed: "2026-07-03"
+  sec31_heightgain: "0.03-3 GHz height-gain terminal correction (J(nu),
+       eqs (1)-(2g); Table 3 R defaults incl. Dense urban 20 m) -- OUT OF
+       BAND for 7.7-8.3 GHz; recorded for completeness"
+  sec32_terrestrial:                  # verified at raster
+    scope: "urban/suburban; terminal heights WELL BELOW the clutter
+       (source measurements up to 6 m above ground) -> mostly
+       INAPPLICABLE to 20-60 m rooftop FS victims and to the 25 m UMa BS;
+       operative only for below-rooftop legs (UMi sensitivity)"
+    validity: "0.5-67 GHz; minimum path 0.25 km (correction at ONE end) /
+       1.0 km (both ends); 0 < p < 100 % locations"
+    equations: "Lctt = -5 log(10^-0.2Ll + 10^-0.2Ls) - sigma_cb
+       Q^-1(p/100) (3a); sigma_cb = sqrt[(sigma_l^2 10^-0.2Ll +
+       sigma_s^2 10^-0.2Ls)/(10^-0.2Ll + 10^-0.2Ls)] (3b);
+       Ll = -2 log(10^(-5 log f - 12.5) + 10^-16.5), sigma_l = 4 dB
+       (4a-b); Ls = 32.98 + 23.9 log d + 3 log f, sigma_s = 6 dB (5a-b);
+       cap: Lctt <= Lctt(d = 2 km) (6)"
+    apply_once_anchor: "sec. 3.2 states the correction must NOT be
+       applied when the transmission-loss model (e.g. P.1411) inherently
+       accounts for clutter over the path -- P.452-18 WITH clutter-in-
+       profile is such a model: never combine the two"
+  sec33_earthspace:
+    validity: "10-100 GHz; elevation 0-90 deg; eq (7) with K1 = 93 f^0.175,
+       A1 = 0.05, -0.6 Q^-1(p/100) term"
+    gap_at_8ghz: "the 10 GHz floor means NO valid statistical clutter
+       model exists for the 8 GHz Case-S-prime Earth-space path in the
+       in-force edition -> conservative default: NO clutter credit at the
+       IMT end; revisit if/when P.2108-2 (extending to 0.5 GHz) is
+       approved"
+
+p1411_validity:                       # A8 (COMPLETED 2026-07-03)
+  status: CONFIRMED
+  source: "Recommendation ITU-R P.1411-13, Propagation data and prediction
+           methods for the planning of short-range outdoor
+           radiocommunication systems and radio local area networks in the
+           frequency range 300 MHz to 300 GHz"
+  edition: "P.1411-13 (09/2025); latest SG3 wave; in-force per -I
+            publication"
+  archived_as: "constants/sources/R-REC-P.1411-13-202509.pdf (project copy
+            RRECP_141113202509.pdf, 58 pp; same bytes as hashed)"
+  accessed: "2026-07-03"
+  above_rooftop_site_general:         # sec. 4.2.1; Table 8 at raster
+    applicability: "ONE station located above-rooftop AND the other
+       below-rooftop, regardless of antenna heights; same functional form
+       as the below-rooftop site-general eq (1) (power law + Gaussian
+       location variability)"
+    table8: "LoS: f 2.2-73 GHz, d 55-1200 m, urban high-rise / urban
+       low-rise / suburban: alpha 2.29, beta 28.6, gamma 1.96, sigma
+       3.48. NLoS: f 2.2-66.5 GHz, d 260-1200 m, urban high-rise: alpha
+       4.39, beta -6.27, gamma 2.30, sigma 6.89"
+    hard_gate: "simulator assert = frequency range + distance range +
+       GEOMETRY (one above / one below rooftop). Consequence: NOT a
+       rooftop-to-rooftop victim model -- the GTA BS(25 m)->FS(rooftop)
+       links are outside its geometry class; role confined to
+       below-rooftop sensitivity legs. 8.0 GHz sits inside both frequency
+       ranges"
+  site_specific_context: "urban model validity h1 4-55 m, h2 1-3 m,
+       f 0.8-26 GHz (2-16 GHz when h1 < hr and w2 < 10 m), d 20-5000 m
+       (Rec intended <= 1 km); suburban f 0.8-38 GHz -- context only"
+
+p619_earthspace:                      # A8 (COMPLETED 2026-07-03)
+  status: CONFIRMED
+  source: "Recommendation ITU-R P.619-6, Propagation data required for the
+           evaluation of interference between stations in space and those
+           on the surface of the Earth"
+  edition: "P.619-6 (09/2025); latest SG3 wave; in-force per -I
+            publication"
+  archived_as: "constants/sources/R-REC-P.619-6-202509.pdf (project copy
+            RRECP_6196202509.pdf, 36 pp; same bytes as hashed)"
+  accessed: "2026-07-03"
+  structure: "sec. 1.1 temporal/location variability conventions; sec. 1.2
+       apparent vs free-space elevation angles (conversion in Attachment
+       B); sec. 1.3 relevant propagation mechanisms inventory; per-effect
+       attachments"
+  term_selection_8ghz: "PROVISIONAL (pipeline-appendix task; document
+       secured + hashed): free-space basic transmission loss + atmospheric
+       gases (P.676 route) + tropospheric scintillation (matters at the
+       small Case-S-prime percentages) + depolarization check; terminal-
+       environment losses at the IMT end: building entry only for indoor
+       UE contributions (P.2109); statistical clutter NOT creditable at
+       8 GHz (P.2108 sec. 3.3 floor -- see p2108_clutter.gap_at_8ghz);
+       ionospheric effects expected negligible at 8 GHz -- pin the exact
+       clause id when the appendix is written"
+
+p841_worstmonth:                      # A8 addition (COMPLETED 2026-07-03)
+  status: CONFIRMED
+  source: "Recommendation ITU-R P.841-7, Conversion of annual statistics
+           to worst-month statistics (Question ITU-R 201/3)"
+  edition: "P.841-7 (08/2022); In force (Main): -6 (08/2019) superseded;
+            no -8 exists"
+  archived_as: "constants/sources/R-REC-P.841-7-202208.pdf (project copy
+            RRECP_8417202208.pdf, 9 pp; same bytes as hashed)"
+  accessed: "2026-07-03"
+  equations:                          # verified at raster
+    core: "pw = Q p (eq 1), 1 <= Q <= 12; q = 100 - p, qw = 100 - pw
+       conversions (eqs 2-3, added at -7)"
+    q_piecewise: "eq (4): Q = 12 for p < (Q1/12)^(1/beta) %;
+       Q = Q1 p^-beta for (Q1/12)^(1/beta) <= p < 3 %;
+       Q = Q1 3^-beta for 3 % <= p < 30 %;
+       Q = Q1 3^-beta (p/30)^(log(Q1 3^-beta)/log 0.3) for p >= 30 %"
+    inverse: "p = pw/Q (eq 5); Q = Q1^(1/(1-beta)) pw^(-beta/(1-beta))
+       (eq 6), valid 12 p0 <= pw <= Q1 3^(1-beta), p0 = (Q1/12)^(1/beta)"
+    global: "Q1 = 2.85, beta = 0.13 -> p(%) = 0.30 pw(%)^1.15 (eq 7),
+       valid 1.9e-4 <= pw(%) <= 7.8"
+    rain_regional: "Q1 = 2.82 / beta = 0.15 (tropical, subtropical,
+       temperate frequent-rain); Q1 = 4.48 / beta = 0.11 (dry temperate,
+       polar, desert)"
+  applicability_notes:
+    - "framework percentages vs eq (7) window: 20 % (long-term) and
+       0.005 % (Case S short-term) and 4.5e-4 % (S1 ES) are INSIDE;
+       1.2e-5 % (SES) is BELOW the window -> Q saturates at 12 and
+       p = pw/12 applies -- exactly the SES-percentage regime"
+    - "ROLE SPLIT recorded: P.452 paths use P.452-18's own eq (1)
+       worst-month conversion; P.841-7 is the general converter for
+       other statistics (F.1494-template handling, clocks 3-4
+       documentation)"
+
+f1245_average:                        # Group 2 (COMPLETED 2026-07-04)
+  status: CONFIRMED
+  source: "Recommendation ITU-R F.1245-3, Mathematical model of average and
+           related radiation patterns for point-to-point fixed wireless
+           system antennas for use in interference assessment in the
+           frequency range from 1 GHz to 86 GHz"
+  edition: "F.1245-3 (01/2019), approved 2019-01-30; In force (Main),
+            confirmed on itu.int landing page; current per aggregators"
+  archived_as: "constants/sources/R-REC-F.1245-3-201901.pdf (project copy
+            RRECF_12453201901.pdf, 12 pp; same bytes as hashed)"
+  accessed: "2026-07-04"
+  role: "G_rx for the 69 Case-T victims in the aggregate Monte-Carlo
+       (eq. (9) of the report); the AVERAGE side of B4"
+  recommends2:                        # verified at raster
+    branch_gt100: "1-70 GHz, D/lambda > 100: G = Gmax - 2.5e-3
+       (D/lambda phi)^2 (0..phi_m); G1 = 2 + 15 log(D/lambda) (phi_m ..
+       max(phi_m, phi_r)); 29 - 25 log phi (.. 48 deg); -13 dBi
+       (48-180 deg); phi_m = (20 lambda/D) sqrt(Gmax - G1);
+       phi_r = 12.02 (D/lambda)^-0.6. 70-86 GHz: 29 - 25 log phi to
+       120 deg, then -23 dBi"
+    branch_le100: "1-70 GHz, D/lambda <= 100: G = Gmax - 2.5e-3
+       (D/lambda phi)^2 (0..phi_m); 39 - 5 log(D/lambda) - 25 log phi
+       (phi_m .. 48 deg); -3 - 5 log(D/lambda) dBi (48-180 deg)"
+  operative_branch: "GTA fleet gains 37-45.3 dBi -> D/lambda ~ 29-76 via
+       F.699 recommends 3 -> the LE-100 branch governs ALL 69 victims;
+       e.g. D/lambda = 46 (41 dBi median): sidelobe 30.7 - 25 log phi,
+       floor -11.3 dBi"
+  notes: "NOTE 2: average side-lobe levels of sec. 2.1 are 3 dB below the
+       F.699 sec. 2.1 peak envelope (branch-scoped -- see B4 refinement);
+       Gmax <-> D/lambda per F.699 recommends 3; rotational symmetry;
+       one co-polarization; recommends 3 / Annex 1 = generalized patterns
+       for few-entry statistical cases (side-lobe peaks 3 dB above
+       average); Annex 2 = polarization-advantage model (Geff, XPI),
+       available if the pipeline ever takes polarization credit"
+
+f699_envelope:                        # Group 2 (COMPLETED 2026-07-04)
+  status: CONFIRMED
+  source: "Recommendation ITU-R F.699-9, Reference radiation patterns for
+           fixed wireless system antennas for use in coordination studies
+           and interference assessment in the frequency range from
+           100 MHz to 174.8 GHz"
+  edition: "F.699-9 (02/2026); fresh revision, in force per -I
+            publication; frequency coverage extended to 174.8 GHz"
+  archived_as: "constants/sources/R-REC-F.699-9-202602.pdf (project copy
+            RRECF_6999202602.pdf, 24 pp; same bytes as hashed)"
+  accessed: "2026-07-04"
+  role: "single-entry checks; the certified deterministic upper bound of
+       B4; recommends 1.2 explicitly covers FWS-vs-other-services
+       coordination and interference assessment"
+  recommends2:                        # verified at raster
+    branch_gt100: "1-70 GHz, D/lambda > 100: main beam as F.1245; G1 = 2 +
+       15 log(D/lambda) (phi_m..phi_r); 32 - 25 log phi (phi_r..48 deg);
+       -10 dBi (48-180 deg); phi_r = 15.85 (D/lambda)^-0.6 (NOTE: differs
+       from F.1245's 12.02 coefficient). 70-86 GHz: to 120 deg then
+       -20 dBi"
+    branch_le100: "1-70 GHz, D/lambda <= 100: G1 (phi_m .. 100 lambda/D);
+       52 - 10 log(D/lambda) - 25 log phi (100 lambda/D .. 48 deg);
+       10 - 10 log(D/lambda) dBi (48-180 deg)"
+    other_branches: "sec. 2.3: 100 MHz-1 GHz (D/lambda > 0.63) branch;
+       86-174.8 GHz coverage added at -9 -- both out of band for this
+       study, recorded for completeness"
+  recommends3_estimator: "in the absence of D: 20 log(D/lambda) ~ Gmax -
+       7.7 (Gmax in dBi) -- the estimator used for the operative-branch
+       determination and by F.1245 NOTE 2"
+  b4_refinement: "peak-vs-average relationship: 3 dB ONLY in the
+       D/lambda > 100 branch; in the operative LE-100 branch the sidelobe
+       and floor gaps are both 13 - 5 log(D/lambda) dB: ~5.7 dB at
+       D/lambda = 29 (37 dBi) to ~3.6 dB at 76 (45.3 dBi). B4's certified-
+       envelope-for-free statement stands, with the premium quantified
+       per victim rather than a flat 3 dB"
+
+sa509_science_pattern:                # Group 2 / A4 sub-item (2026-07-04)
+  status: CONFIRMED
+  source: "Recommendation ITU-R SA.509-3, Space research earth station and
+           radio astronomy reference antenna radiation pattern for use in
+           interference calculations, including coordination procedures,
+           for frequencies less than 30 GHz"
+  edition: "SA.509-3 (12/2013), approved 2013-12-10; In force (Main),
+            confirmed on itu.int landing page"
+  archived_as: "constants/sources/R-REC-SA.509-3-201312.pdf (project copy
+            RRECSA_5093201312.pdf, 6 pp; same bytes as hashed)"
+  accessed: "2026-07-04"
+  scope_limits: "large parabolic antennas with D/lambda >= 100 ONLY;
+       frequencies ~1-30 GHz; named services: space research earth
+       stations and radio astronomy -- EESS NOT literally named"
+  recommends11_single_entry: "G = G0 - 3 (phi/phi0)^2 (0..phi1);
+       G0 - 17 (phi1..phi2); 32 - 25 log phi (phi2..48 deg); -10
+       (48-80 deg); -5 (80-120 deg); -10 (120-180 deg);
+       phi1 = phi0 sqrt(17/3); phi2 = 10^((49 - G0)/25) deg"
+  recommends12_multiple_entry: "G = G0 - 3 (phi/phi0)^2; G0 - 20
+       (phi1' = phi0 sqrt(20/3) .. phi2); 29 - 25 log phi (..48 deg);
+       -13 (48-80); -8 (80-120); -13 (120-180); same phi2.
+       INTERNAL CHECK PASSED: both patterns meet their 25-log segments at
+       phi2 = 10^((49 - G0)/25) since 32 + 17 = 29 + 20 = 49; the
+       multiple-entry pattern sits uniformly 3 dB below single-entry"
+  recommends13_estimators: "G0 = 10 log[eta (pi D/lambda)^2] dBi;
+       phi0 = 20 sqrt(3)/(D/lambda) deg (= half 3-dB beamwidth;
+       ~ 34.6 lambda/D, consistent with HPBW ~ 70 lambda/D)"
+  gatineau_applicability: "55-58 dBi at 8.0-8.4 GHz -> D/lambda ~ 260-330
+       (eta 0.55-0.65) >= 100 (inside); band < 30 GHz (inside); service
+       scope caveat recorded (EESS unnamed)"
+
+s465_fss_envelope:                    # Group 2 / A4 sub-item (2026-07-04)
+  status: CONFIRMED
+  source: "Recommendation ITU-R S.465-6, Reference radiation pattern for
+           earth station antennas in the fixed-satellite service for use
+           in coordination and interference assessment in the frequency
+           range from 2 to 31 GHz"
+  edition: "S.465-6 (01/2010), approved 2010-01-23; In force (Main),
+            confirmed on itu.int landing page; -5 (04/93) superseded"
+  archived_as: "constants/sources/R-REC-S.465-6-201001.pdf (project copy
+            RRECS_4656201001.pdf, 4 pp; same bytes as hashed)"
+  accessed: "2026-07-04"
+  recommends2: "2-31 GHz (subject to Notes 4-5): G = 32 - 25 log phi
+       (phi_min .. 48 deg); -10 dBi (48-180 deg); phi_min = max(1 deg,
+       100 lambda/D) for D/lambda >= 50; phi_min = max(2 deg,
+       114 (D/lambda)^-1.09) for D/lambda < 50; NOTE 4: pre-1993
+       coordinated networks with D/lambda <= 100: G = 52 - 10 log
+       (D/lambda) - 25 log phi, floor 10 - 10 log(D/lambda); NOTE 5:
+       receiving ES with D/lambda < 33.3 (non-Note-4): phi_min = 2.5 deg"
+  scope: "FSS earth stations; recommends 1.1 covers FSS-ES vs stations of
+       other services sharing the band"
+
+a4_pattern_subitem:                   # CLOSURE (2026-07-04)
+  status: "DECIDED-WITH-SWEEP (Bucket-B discipline)"
+  finding: "neither in-force earth-station pattern rec literally names
+       EESS earth stations: SA.509-3 names space research + radio
+       astronomy; S.465-6 names FSS"
+  decision_rule: "for the Gatineau (Case-S) dish, in priority order:
+       (1) measured / licence-documented pattern if obtainable;
+       (2) SA.509-3 as the science-earth-station class pattern --
+       recommends 1.1 for single-entry / S1-style checks, recommends 1.2
+       for aggregate-average analyses (station sits inside its D/lambda
+       and frequency limits); (3) S.465-6 recommends-2 envelope as the
+       conservative alternative. UNRESOLVED-PATTERN CERTIFIED BOUND for
+       B3's gain-interval mapping: per-angle max of SA.509-1.1 and
+       S.465-2 (they differ only beyond 48 deg, where SA.509's -5 dBi
+       shelf at 80-120 deg is the higher, i.e. safer, envelope). All
+       three options swept in B3"
+  open_one_liner: "check the archived SA.1026-5 (Annex 1 Table 2) and
+       SA.1027-6 wording for a stated earth-station pattern reference;
+       if one is named, it becomes priority (1a) with a citation"
+
+m2101_methodology:                    # Group 3 (COMPLETED 2026-07-04)
+  status: CONFIRMED
+  source: "Recommendation ITU-R M.2101-0, Modelling and simulation of IMT
+           networks and systems for use in sharing and compatibility
+           studies"
+  edition: "M.2101-0 (02/2017), approved 2017-02-09; sole edition,
+            In force (Main), confirmed on itu.int landing page"
+  archived_as: "constants/sources/R-REC-M.2101-0-201702.pdf (project copy
+            RRECM_21010201702IPDFE.pdf, 36 pp; same bytes as hashed);
+            archival housekeeping duty CLOSED"
+  accessed: "2026-07-04"
+  element_pattern_form:               # Annex 1 Table 3; verified at raster
+    equations: "A_E,H(phi) = -min[12 (phi/phi3dB)^2, Am] dB;
+       A_E,V(theta) = -min[12 ((theta - 90)/theta3dB)^2, SLAv] dB;
+       A_E(theta, phi) = GE,max - min{-[A_E,H + A_E,V], Am} dBi"
+    parameters: "phi3dB, theta3dB, Am, SLAv, GE,max are ALL input
+       parameters -- M.2101 fixes the FORM, not the values. The report's
+       8 dBi / 65-65 deg / 30 dB figures are the TR 38.803 example
+       parameterization; the A5-sourced 7-8 GHz values (6.4 dBi, 90/65,
+       3-element subarrays) come from TR 38.922 Table 5.4.1.2-1"
+  composite_pattern: "Annex 1 Table 4: A_A,Beam_i(theta, phi) =
+       A_E(theta, phi) + 10 log10 |sum_{m=1..NH} sum_{n=1..NV}
+       w_{i,n,m} v_{n,m}|^2; superposition vector v_{n,m} =
+       exp(j 2 pi [(n-1) dV/lambda cos(theta) + (m-1) dH/lambda
+       sin(theta) sin(phi)]); consistent with the framework's eq.-(9)
+       convention (element gain once in beta-bar, array gain via the
+       beamformers)"
+  adjacent_band_rule:                 # sec. 5 intro -- Case-R relevance
+    finding: "M.2101 states an AAS's unwanted (out-of-block) emission is
+       NON-CORRELATED across elements and therefore has an antenna
+       pattern similar to a SINGLE ELEMENT; the composite (beamformed)
+       pattern applies only inside the channel bandwidth -- in both
+       interferer and victim adjacent-band roles"
+    consequence: "source-native eps_adj treatment for Case R (B6): the
+       adjacent-band interferer gain toward the RAS victim uses the
+       ELEMENT pattern (GE,max-class, no array gain), not the composite
+       beam; TR 38.922 clause 7.3 (correlation roll-off / array-ACLR
+       models) is the newer refinement layer if more fidelity is needed.
+       B6 recompute inputs now fully sourced: ACLR 30 dB (TR 38.922
+       Table 6.3.1.3-1) + element-pattern gain rule (M.2101 sec. 5)"
+  monte_carlo_flow: "snapshot procedure: BS grid (wrap-around option);
+       drop 2K-10K UEs; HO-margin cell selection; K chosen UEs per cell;
+       equal-RB scheduling with P_BS_UE = P_BS_Max n/M (eq. 5); BSs
+       transmit at full power or stay silent with load probability x %
+       (single number or per-snapshot range) -- the network-loading
+       mechanism; external interference accumulated per eq. (6):
+       I_External = P_BS_UE - CL_External - ACIR_linear (FDR
+       substitutable); deployment VALUES (densities, x %, TDD split)
+       intentionally not fixed by M.2101 -> B10 sources them"
+  roles: "aggregation methodology for Case S-prime (P.619 + M.2101 per
+       the harmony table); element-pattern lineage anchor for eq. (9);
+       loading/TDD conventions cited by B10"
+
+tr38901_channel:                      # A7 (CONTENT CONFIRMED 2026-07-04)
+  status: "CONTENT CONFIRMED -- ARCHIVE GATE OPEN"
+  source: "3GPP TR 38.901, Study on channel model for frequencies from
+           0.5 to 100 GHz (ETSI TR 138 901)"
+  edition: "V19.2.0 (2026-02), Release 19 -- the exact edition sighted as
+            latest on ETSI; History table in the supplied text confirms
+            V19.1.0 (Oct 2025) -> V19.2.0 (Feb 2026) publications"
+  supplied_artifact: "PLAIN-TEXT DUMP, not a PDF: project file
+       tr_138901v190200p.pdf is text data (410 943 B), complete through
+       page 163 and the History table; supplied_text_sha256 =
+       3453a5aa3b9a2d80ee5d6c3b75d80ab48f7b0790ac019582b4926b667b8d5740
+       (recorded here, NOT in the authoritative registry)"
+  a7_content:                         # read from the supplied text
+    applicability: "verbatim: the channel models address the frequency
+       range 0.5-100 GHz; UMa model present throughout (131 references)"
+    rel19_additions: "clause 7.6.13 Near-field channel model (supports
+       spherical-wavefront impacts from the antenna-array perspective;
+       rec p. 80) and clause 7.6.14 Spatial non-stationarity channel
+       model (7.6.14.1 TRP side, p. 81; 7.6.14.2 UT side, p. 84) --
+       both sit under clause 7.6 additional modelling components, i.e.
+       OPTIONAL features, exactly as the report's harmony-table caveat
+       states; scope bullet verbatim: support near-field channel
+       propagation (spherical wavefront) and spatial non-stationarity
+       (antenna element-wise power variation)"
+    citation_string: "cite as: 3GPP TR 38.901 V19.2.0 (2026-02),
+       Release 19 -- closes the report's checklist item (9) wording"
+  archive_gate: "before v3 freeze: pull the official ETSI PDF
+       (etsi.org/deliver/etsi_tr/138900_138999/138901/19.02.00_60/
+       tr_138901v190200p.pdf) or the 3GPP zip, hash it into the
+       registry, re-verify the two clause headers at raster, and
+       re-check ETSI for any version newer than 19.2.0 at pull time.
+       v1.7 NOTE: the re-uploaded tr_138901v190200p__1_.pdf was
+       byte-identical to the v1.4 text dump (same sha256) -- the gate
+       stays open; the required artifact is the ETSI PDF at
+       etsi.org/deliver/etsi_tr/138900_138999/138901/19.02.00_60/
+       tr_138901v190200p.pdf"
+
+tr38803_legacy:                       # Group 3 (RE-PULL REQUIRED)
+  status: "CONFIRMED -- V14.4.0 received at v1.7 (draft V2.0.0 dump superseded)"
+  finding: "project file TR-38_803.pdf is a plain-text dump of DRAFT
+       V2.0.0 (2017-03) -- the pre-approval version presented to RAN
+       plenary (change history ends at 2.0.0). No values extracted from
+       it (draft content is not citable under the Bucket-A rule)"
+  supplied_text_sha256: "0b1ece57058b8125542bfe0b58f61a7708a0bcf7f007ba09700e2f2746e96e89
+       (recorded here, NOT in the authoritative registry)"
+  received_v17: "38803-e40.zip -> 38803-e40.docx (2024-07-10), both
+       hashed into the registry; change-history trail ...14.3.0 (2024-06,
+       RAN#104, RP-241381, CR 0019r1, cat F, FS_NR_newRAT) -> 14.4.0.
+       VERIFIED CONTENT: (a) legacy Urban-macro Table 5.2.3.2.1-1 --
+       GE,max = 8 dBi, (Mg,Ng,M,N,P) = (1,1,8,16,2) at 30 GHz, (dv,dh)
+       = (0.5, 0.5) lambda, +3 dB dual-polarization note -- the 8-dBi
+       legacy example the report cites is confirmed verbatim; (b) sec.
+       5.2.3.2.4 EXTENDED AAS model, created to model AAS BS operating
+       within 1710-4990 MHz required for sharing studies in ITU-R:
+       sub-array parameterization (Am, SLAv, phi3dB, theta3dB, GE,max,
+       Msub, dv_sub, subtilt, M, N, etilt, escan) with the full equation
+       set (element min[12(.)^2, Am] form = M.2101; sub-array and
+       composite patterns), and Table 5.2.3.2.4-3 values 6.4 dBi,
+       90/65 deg, 30 dB F/B, 4x8x2 sub-arrays -- the source-complete
+       lineage: M.2101 form -> 38.803 extended parameterization ->
+       38.921 -> 38.922 Table 5.4.1.2-1"
+  role_unchanged: "labeled legacy sensitivity parameter set + the
+       8 dBi / 65-65 deg element-pattern example values cited by the
+       report's harmony table -- non-blocking for every current
+       computation (the A5 primary set comes from TR 38.922)"
+
+p452_18_integral_data:                # v1.5 (RECEIVED + VERIFIED 2026-07-04)
+  status: VERIFIED
+  source: "Integral digital products of Rec. ITU-R P.452-18: supplement
+           R-REC-P.452-18-202310-I!!ZIP-E.zip (uploaded as
+           R-REC-P_452-18-202310-I__ZIP-E.zip; identical role)"
+  contents: "DN50.TXT, N050.TXT, LAT.TXT, LON.TXT, ReadMe.doc (file dates
+       2013-06-29 -- the maps are stable across editions, consistent with
+       the stated ten-year 1983-1992 radiosonde analysis)"
+  readme_sha256: "59af2f75973e1562ba81c11524d51160e64e153dee35128a5cfc229919861bac"
+  structure_verification: "PASSED: all four grids 121 x 241; LAT rows
+       descend +90 -> -90 at 1.5 deg; LON columns 0 -> 360 at 1.5 deg
+       (wrap column present); matches the recommendation text (v1.2
+       extraction) and the ReadMe verbatim; interpolation rule = P.1144
+       bilinear on the four closest gridpoints"
+  value_sanity: "PASSED: DeltaN strictly positive globally, range
+       24.58-79.90 N-units/km (the P.452-18 procedure treats DeltaN as a
+       positive quantity); N0 range 294.3-389.1 N-units"
+  provenance_note: "ReadMe: digital maps are NOT identical to the
+       historical paper maps (Bean et al. 1966, 112 radiosonde stations)
+       printed in P.452/P.1812; the digital 1983-1992 reanalysis is
+       higher-resolution and, where they differ, generally represents the
+       data better -- the digital files are the authoritative procedure
+       input"
+  derived_study_inputs:               # DERIVED -- ours, method recorded
+    method: "P.1144 bilinear on the 1.5-deg grid; longitudes converted to
+       the 0-360 convention (e.g. -79.3832 -> 280.6168); per-link
+       path-centre interpolation is the pipeline rule -- values below are
+       reference anchors, not substitutes"
+    toronto_anchor_43_6532N_79_3832W: "DeltaN = 36.15 N-units/km;
+       N0 = 319.6 N-units"
+    gta_bbox: "corners + centre of lat [43.2, 44.4] x lon [-80.3, -78.3]:
+       DeltaN 36.08-36.34 N-units/km; N0 319.2-319.8 N-units (field is
+       nearly flat across the box at this grid resolution)"
+    ottawa_gatineau_representative_45_5N_75_75W: "DeltaN = 36.61
+       N-units/km; N0 = 318.6 N-units (representative area value; the
+       Case-S paths interpolate at true path centres from licence
+       coordinates)"
+  plugs_into: "P.452-18 Step 3 radiometeorology: DeltaN -> effective Earth
+       radius (diffraction/profile analysis) and, with latitude/path
+       terms, beta0 via eq. (2); N0 -> troposcatter model only; feeds L
+       in eq. (9) for every Case-T / Case-S terrestrial path"
+
+tier1_dem_cdem:                       # Tier 1 (RECEIVED + VERIFIED 2026-07-04)
+  status: VERIFIED
+  source: "NRCan Geospatial Data Extraction tool (maps.canada.ca), product
+           = Digital Elevation Model; delivered packages identify the CDEM
+           lineage (dataset/meta/CDEM.xml + CDEM_product_specs.pdf archived
+           inside each zip)"
+  vertical_datum: "CGVD28 (Canadian Geodetic Vertical Datum of 1928), per
+       the in-package product spec; metre-level datum differences are
+       propagation-negligible but recorded for height bookkeeping against
+       TAFL above-ground heights"
+  product_caveat: "spec states CDEM elevations can be either ground or
+       reflective surface elevations (undifferentiated DTM/DSM mix by
+       source). DISPOSITION: acceptable -- (a) southern-Ontario/Quebec
+       sources are predominantly ground; (b) representative clutter
+       heights are added by category per B11 regardless, and the P.452-18
+       over-estimation warning is symmetric; (c) recorded as a labeled
+       sensitivity: re-run key paths on HRDEM DTM if diffraction-sensitive
+       results warrant. UPGRADE PATH CONFIRMED: HRDEM DTM tiles cover both
+       boxes (see hrdem_footprints_context)"
+  gta_clip: "EPSG:4617 (NAD83(CSRS) geographic); bounds (-80.3002,
+       43.1998, -78.2998, 44.4002) -- covers the requested GTA box
+       exactly; 5240 x 3145; res 0.000382 deg (~1.375 arcsec; ~31 m E-W x
+       ~42 m N-S at 43.8 N); nodata -32767; elevation range 68-542 m
+       (decimated stats; Lake Ontario ~74 m and the escarpment highlands
+       both plausible); mean 216 m"
+  ottgat_clip: "EPSG:4617; bounds (-76.2002, 45.1498, -75.2998, 45.7502)
+       -- covers the requested Ottawa-Gatineau box exactly; 2359 x 1573;
+       same resolution and nodata; elevation range 37-446 m (Ottawa River
+       ~40 m, Gatineau Hills) ; mean 131 m"
+  plugs_into: "P.530-19 step-2 (S1 freeze): per-link endpoint heights,
+       path-centre height hc, path inclination |eps_p|, hL -- NOW FULLY
+       UNBLOCKED. P.452-18 Step 4 path profiles: bare-terrain g_i base to
+       which B11 clutter heights are added (endpoints + <50 m rule in
+       pipeline)"
+
+tier1_landcover_2020:                 # Tier 1 (RECEIVED + VERIFIED 2026-07-04)
+  status: VERIFIED
+  source: "NRCan 2020 Land Cover of Canada (CCRS; 30 m, Landsat OLI;
+           dataset page states 86.9 % overall accuracy from 832 samples;
+           temporal coverage 2019-2021); user-clipped GeoTIFFs per study
+           box"
+  gta_clip: "EPSG:3979 (NAD83(CSRS) Canada Atlas Lambert); 7512 x 7056 at
+       exactly 30 m; uint8; nodata 0; reprojected bounds (-80.90, 42.65,
+       -77.62, 44.94) -- generous cover of the GTA box; classes present
+       {1,5,6,8,10,14,15,16,17,18} (strict subset of the index; no
+       unexpected values); top shares: water 33.8 % (Lake Ontario in
+       clip), cropland 32.7 %, mixed forest 12.2 %, urban/built-up 10.9 %"
+  ottgat_clip: "EPSG:3979; 4041 x 4177 at 30 m; uint8; nodata 0; bounds
+       (-76.75, 44.76, -74.82, 46.14) -- generous cover; same class
+       subset; top shares: mixed forest 30.3 %, cropland 24.8 %,
+       broadleaf 18.9 %, urban/built-up 8.0 %"
+  plugs_into: "B11 mapping -> per-gridpoint representative clutter height
+       added to the P.452-18 path profile (eq. (6e))"
+
+landcover_class_index:                # Tier 1 (2026-07-04)
+  status: CONFIRMED
+  source: "2020 Land Cover of Canada Class Index (ClassIndex_v2.pdf)"
+  classes: "pixel values -> class: 1 needleleaf forest; 2 taiga
+       needleleaf; 5 broadleaf deciduous; 6 mixed forest; 8 shrubland;
+       10 grassland; 11 polar shrubland-lichen-moss; 12 polar
+       grassland-lichen-moss; 13 polar barren-lichen-moss; 14 wetland;
+       15 cropland; 16 barren land; 17 urban and built-up; 18 water;
+       19 snow and ice. Tropical classes 3, 4, 7, 9 excluded from the
+       national dataset (absent in Canada); 0 = nodata in the clips"
+
+b11_clutter_mapping:                  # NEW Bucket-B item (2026-07-04)
+  status: "DEFINED -- defaults + sweep per the Bucket-B rule"
+  purpose: "map LC2020 classes to the FOUR P.452-18 Table-3 clutter
+       categories (v1.2: Water/sea 0 m; Open/rural 0 m; Suburban 10 m;
+       Urban/trees/forest 15 m; NO dense-urban default) to build g_i =
+       terrain + representative clutter height per eq. (6e)"
+  mapping:
+    water_sea_0m: "class 18 (water)"
+    open_rural_0m: "classes 10, 12, 13, 15, 16 (grass/cropland/barren),
+       14 (wetland), 8 and 11 (shrubland -- default 0 m; P.452-18 prose
+       permits nonzero open/rural where justified, kept as an optional
+       sensitivity), 19 (snow/ice; absent in both clips)"
+    urban_trees_forest_15m: "classes 1, 2, 5, 6 (forests -- the category
+       is literally Urban/trees/forest) and class 17 (urban and built-up)
+       as the DEFAULT"
+    suburban_10m: "no LC2020 class maps here by default -- LC2020 carries
+       a SINGLE built-up class (17), with no suburban/dense split"
+  sweep: "class 17 representative height swept {10, 15} m (suburban vs
+       urban reading of the single built-up class); rationale: P.452-18
+       Table 3 prose prefers local clutter-height statistics and notes
+       high-rise categories may warrant SMALLER-than-physical heights;
+       optional refinement path: split class 17 by building-density or
+       OSM footprints if the sweep shows sensitivity"
+  pipeline_rules: "endpoints and every profile point within 50 m of
+       either terminal stay BARE TERRAIN (P.452-18 Step 4, verified
+       v1.2); clutter never double-counted against P.2108 sec. 3.2
+       (apply-once anchor, v1.2)"
+
+hrdem_footprints_context:             # upgrade-path record (2026-07-04)
+  status: RECORDED
+  source: "HRDEM Dataset Footprints shapefile (CanElevation Series)"
+  content: "42 016 footprint features; fields include Tile_name,
+       Provider, Project, Year_min/max, Coord_Sys, Meta_dtm; 502 tiles
+       intersect the GTA box and 233 the Ottawa-Gatineau box -> the HRDEM
+       DTM precision upgrade is available for both study areas whenever a
+       diffraction-sensitivity check calls for it"
+
+ra769_thresholds:                     # A9 (COMPLETED 2026-07-04)
+  status: "CONFIRMED -- conditional relevance: Case-R retention decision"
+  source: "Recommendation ITU-R RA.769-2, Protection criteria used for
+           radio astronomical measurements (Question ITU-R 145/7)"
+  edition: "RA.769-2 (05/2003), approved 2003-05-28; In force (Main),
+            confirmed on itu.int landing page; -1 (10/95) superseded"
+  archived_as: "constants/sources/R-REC-RA.769-2-200305.pdf (project copy
+            RRECRA_7692200305IPDFE.pdf, 11 pp; same bytes as hashed)"
+  accessed: "2026-07-04"
+  case_r_row:                         # Table 1 continuum; pixel-verified
+    band: "15.35-15.4 GHz (the RAS band adjacent to the 14.8-15.35 GHz
+       IMT candidate range)"
+    values: "fc 15 375 MHz; assumed bandwidth df = 50 MHz (the allocated
+       band); TA 15 K; TR 15 K; dT 0.095 mK; dP -269 dB(W/Hz);
+       input-power threshold dPH = -202 dBW; pfd SH.df = -156 dB(W/m2);
+       spectral pfd SH = -233 dB(W/(m2.Hz))"
+  basis: "detrimental level = interference introducing a 10 % error in
+       the measurement of dP (dPH = 0.1 dP df); integration time 2000 s
+       (10 h for spectral lines -> 6 dB more stringent there); thresholds
+       assume reception through a 0 dBi side lobe (isotropic reference);
+       pfd from dPH via +20 log f - 158.5 (f in Hz), spectral pfd by
+       -10 log df; applicable to terrestrial interference sources"
+  pattern_corroboration: "RA.769-2 sec. 1.3: the SA.509 side-lobe model
+       (2-30 GHz) is adopted throughout this Recommendation as the radio
+       astronomy reference antenna -- corroborates the Group-2 SA.509
+       record; for non-GSO dynamics it points to S.1428 (D > 100 lambda)
+       and the epfd concept (RR No. 22.5C) -- context only here (the
+       Case-R interferer is terrestrial IMT)"
+  context_rows: "Table 2 (spectral line) nearest entry: 14 488 MHz,
+       150 kHz channel, dPH -214 dBW, SH.df -169, SH -221 (below-band
+       context; the study band is the continuum one); Table 3 VLBI
+       criterion (1 % of receiver noise) recorded as context"
+
+ra1513_percentages:                   # A9 (COMPLETED 2026-07-04)
+  status: "CONFIRMED -- conditional relevance: Case-R retention decision"
+  source: "Recommendation ITU-R RA.1513-2, Levels of data loss to radio
+           astronomy observations and percentage-of-time criteria
+           resulting from degradation by interference for frequency bands
+           allocated to the radio astronomy service on a primary basis"
+  edition: "RA.1513-2 (03/2015), approved 2015-03-15; In force (Main),
+            confirmed on itu.int landing page; incorporated by reference
+            in the Radio Regulations"
+  archived_as: "constants/sources/R-REC-RA.1513-2-201503.pdf (project
+            copy RRECRA_15132201503IPDFE.pdf, 15 pp; same bytes as
+            hashed)"
+  accessed: "2026-07-04"
+  recommends: "1: aggregate data loss criterion 5 % from ALL networks in
+       any RAS primary band (apportionment between networks noted as
+       requiring further study); 2: 2 % for any ONE network; 3: data
+       loss determined by S.1586, M.1583, or -- option (3) -- the
+       PERCENTAGE OF 2000-s INTEGRATION PERIODS in which the average
+       spectral pfd at the telescope exceeds the RA.769 levels (0 dBi);
+       4: unwanted-emission evaluation per Annex 1 sec. 3.3.2"
+  s3_native_fit: "recommends 3 option (3) is natively the exceedance-
+       fraction form of the S3 budget: slots = 2000-s integration
+       periods, threshold = the RA.769 spectral-pfd level, p = 2 %
+       (single network) -- Theorem 3 applies verbatim on that clock;
+       the Case-R timing convention should state integration periods as
+       the slot unit for the RAS budget"
+  open_one_liner: "if Case R is confirmed kept: read Annex 1 sec. 3.3.2
+       (unwanted emissions, terrestrial applications) and record any
+       scenario-specific refinement of the 2 %/5 % application"
+
+a9_status:                            # board note (2026-07-04)
+  status: "CLOSED as lookups (both criteria documents verified, in force,
+       extracted, hashed); relevance conditional on the Case-R retention
+       decision -- if Case R is dropped, these blocks remain as archived
+       context at zero cost"

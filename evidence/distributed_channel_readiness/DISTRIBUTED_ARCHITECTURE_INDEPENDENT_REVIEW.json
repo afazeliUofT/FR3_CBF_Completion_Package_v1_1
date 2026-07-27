@@ -1,0 +1,45 @@
+{
+  "accepted_properties": [
+    "local_rzf_power_normalization",
+    "exact_single_direction_euclidean_projection",
+    "local_leakage_budget_enforcement",
+    "aggregate_budget_sum_certificate",
+    "transmit_power_nonincrease",
+    "no_network_wide_ue_csi",
+    "no_joint_network_precoder"
+  ],
+  "claim_boundary": "PASS_ARCHITECTURE_MATH_ONLY_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-27T05:12:49.851614+00:00",
+  "method_naming": {
+    "acronym": "DLP_RZF",
+    "previous_name": "distributed_ia_rzf",
+    "reason": "The operational safety action is an exact rank-one Euclidean leakage projection applied after local RZF. This is more precise than implying that the incumbent constraint enters only through RZF regularization.",
+    "recommended_name": "DISTRIBUTED_LEAKAGE_PROJECTED_RZF"
+  },
+  "next_gate": "CODE_LEVEL_REVIEW_OF_EXISTING_CHANNEL_BASELINE",
+  "prototype_findings": {
+    "aggregate_budget_sum_error_w": 1.262177448353619e-29,
+    "budget_recomputed_at_every_protected_sample": true,
+    "declared_ten_slot_budget_update_not_tested": true,
+    "inter_cell_ue_interference_not_in_rate_proxy": true,
+    "local_budget_violations": 0,
+    "minimum_rate_retention_fraction": 0.997729005553827,
+    "rate_retention_disposition": "The 99.77% rate-retention value is a deterministic local-channel, intra-cell-only software result. It is not evidence of paper-level cellular utility.",
+    "standards_channel_model_not_used": true
+  },
+  "prototype_not_tested": [
+    "3gpp_bs_ue_channel_model",
+    "inter_cell_ue_interference",
+    "real_ue_geometry_and_mobility",
+    "rate_limited_budget_updates",
+    "control_message_delay",
+    "channel_estimation_error",
+    "array_calibration_error",
+    "hybrid_or_codebook_factorization",
+    "physical_layer_bler",
+    "multi_seed_statistics",
+    "runtime_and_messaging_overhead"
+  ],
+  "scientific_conclusion": "The rank-one projection and aggregate budget certificate are sound. The deterministic prototype validates software only; it does not establish dynamic-control value, realistic cellular utility, or standards-aligned performance.",
+  "status": "PASS_WITH_REQUIRED_PAPER_EXPERIMENT"
+}

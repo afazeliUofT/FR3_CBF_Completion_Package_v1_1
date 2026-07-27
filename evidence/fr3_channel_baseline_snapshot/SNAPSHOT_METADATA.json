@@ -1,0 +1,15 @@
+{
+  "binary_candidate_count": 0,
+  "claim_boundary": "SOURCE_REVIEW_ONLY_NOT_EXECUTION_EVIDENCE",
+  "created_utc": "2026-07-27T05:12:53.017952+00:00",
+  "git": {},
+  "next_gate": "CODE_LEVEL_REVIEW_OF_EXISTING_CHANNEL_BASELINE",
+  "notebook_outputs_removed": true,
+  "purpose": "Review reusable channel/topology/rate infrastructure. WMMSE is not adopted as the operational method.",
+  "rejected_file_count": 0,
+  "secret_screen": "PASS_COMMON_PATTERNS",
+  "selected_text_file_count": 75,
+  "snapshot_bytes": 1121612,
+  "source_root": "/mnt/c/Users/alifa/OneDrive/Projects/FR3_MainWork_For_Journal",
+  "status": "PASS_REVIEW_REQUIRED"
+}

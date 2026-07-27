@@ -1,0 +1,79 @@
+# FR3 channel-baseline review priority
+
+Review channel generation, topology, array, power, noise, SINR, and rate code for reuse. WMMSE code may appear because it shares infrastructure, but WMMSE is not the proposed operational method.
+
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/docs/source/FR3_CBF_System_Model.tex` — score 11; hits: 38.901|beamforming|channel model|fr3|gta|ofdm|sinr|sum rate|tr 38.901|uma|umi
+- `regulatory_constants_v1.7.yaml` — score 11; hits: 38.901|beamforming|channel model|fixed service|fr3|gta|noise figure|tr 38.901|tr38901|uma|umi
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/docs/source/FR3_CBF_Tutorial.tex` — score 9; hits: 38.901|beamforming|channel model|fr3|gta|sum rate|tr 38.901|uma|umi
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/COMPLETION_ROADMAP.md` — score 7; hits: 38.901|beamforming|fr3|gta|topology|tr 38.901|uma
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/paper/FR3_CBF_JSAC_TWC_draft_skeleton.tex` — score 5; hits: beamforming|fixed service|fr3|gta|uma
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/paper/references.bib` — score 5; hits: 38.901|channel model|fixed service|fr3|tr 38.901
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/PROJECT_STATUS.md` — score 4; hits: fr3|gta|sionna|uma
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/README_FIRST.md` — score 4; hits: fixed service|fr3|gta|sionna
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/STANDARDS_TRACEABILITY.md` — score 4; hits: 38.901|fr3|tr 38.901|uma
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/docs/source/FR3_CBF_Completion_Execution_Guide.tex` — score 4; hits: fr3|gta|uma|umi
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/config/project.yaml` — score 3; hits: beamforming|fr3|uma
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/config/regulatory_constants.yaml` — score 3; hits: channel model|fr3|uma
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/10_run_e1_static_fs.py` — score 3; hits: fr3|sionna|uma
+- `a3_extract.py` — score 3; hits: fixed service|fr3|gta
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/ENVIRONMENT.md` — score 2; hits: fr3|sionna
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/INTEGRATION_CONTRACT.md` — score 2; hits: fr3|sionna
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/NEXT_IMMEDIATE_STEP.md` — score 2; hits: fr3|uma
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/PAPER_COMPLETION_CHECKLIST.md` — score 2; hits: fr3|gta
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/config/e1_static_fs.yaml` — score 2; hits: fr3|sionna
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/04_run_s1_adequacy.py` — score 2; hits: fr3|uma
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/11_run_e2_dynamic_fs.py` — score 2; hits: fr3|uma
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/12_run_e3_tracking_eess.py` — score 2; hits: fr3|uma
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/15_check_submission_readiness.py` — score 2; hits: fr3|sionna
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/bundle.py` — score 2; hits: fr3|sionna
+- `output_csvs/provenance_A3.md` — score 2; hits: fr3|gta
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/DATA_REQUIREMENTS.md` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/LICENSE_NOTICE.md` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/PACKAGE_QA.md` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/RUN_FIRST.ps1` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/RUN_FIRST.sh` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/SOURCE_INPUT_STATUS.md` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/config/calibration.yaml` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/config/e2_dynamic_fs.yaml` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/config/e3_tracking_eess.yaml` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/config/s1_adequacy.yaml` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/config/tafl_column_mapping.yaml` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/paper/README.md` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/paper/RESULTS_TABLE_TEMPLATE.csv` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/pyproject.toml` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/requirements-core.txt` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/requirements-full.txt` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/00_validate_package.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/01_run_smoke_test.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/02_download_p530_products.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/03_validate_paired_links.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/03a_pair_fs_records.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/03b_add_dem_mean_terrain.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/03c_compute_fade_margin.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/04b_run_s1_sensitivity.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/05_freeze_s1_candidate.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/06_generate_tle_track.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/07_run_calibration.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/08_export_bundle_template.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/09_validate_experiment_bundle.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/13_run_all_experiments.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/14_generate_manifest.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/16_benchmark_runtime.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/18_run_beam_space_filter.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/19_allocate_sector_budgets.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/20_validate_p452_export.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/scripts/_bootstrap.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/__init__.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/beam_filter.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/calibration.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/geo.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/grids.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/io.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/layered.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/p530.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/s1.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/safety.py` — score 1; hits: fr3
+- `FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1/src/fr3_cbf/units.py` — score 1; hits: fr3
+- `output_csvs/fixe_on_band.csv` — score 1; hits: umi
+- `output_csvs/incumbents_caseT_gta.csv` — score 1; hits: gta
+- `output_csvs/satellite_es_survey.csv` — score 0; hits: none

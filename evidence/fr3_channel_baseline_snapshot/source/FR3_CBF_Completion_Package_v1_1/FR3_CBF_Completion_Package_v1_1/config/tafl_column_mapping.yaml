@@ -1,0 +1,20 @@
+# Edit these names to match a reviewed source table.
+# The pairing script requires an explicit stable pair key and endpoint role.
+input_columns:
+  pair_key: "PAIR_ID"
+  endpoint_role: "ROLE"  # values mapped below
+  latitude_deg: "LATITUDE"
+  longitude_deg: "LONGITUDE"
+  antenna_altitude_m_asl: "ANTENNA_ALT_M_ASL"
+  frequency_ghz: "FREQUENCY_GHZ"
+  source_record_id: "RECORD_ID"
+role_values:
+  tx: "TX"
+  rx: "RX"
+output_defaults:
+  mean_terrain_elevation_m_asl: null
+  fade_margin_db: null
+  allocated_incremental_outage_pct: null
+strict:
+  require_exactly_one_tx_and_one_rx_per_pair: true
+  disallow_nearest_neighbour_fallback: true

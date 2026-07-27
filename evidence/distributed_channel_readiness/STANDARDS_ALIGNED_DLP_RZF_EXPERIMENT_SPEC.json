@@ -1,0 +1,168 @@
+{
+  "claim_boundary": "PAPER_EXPERIMENT_SPECIFICATION_NOT_RESULT",
+  "created_utc": "2026-07-27T05:13:11.620554+00:00",
+  "hard_requirements_before_paper_run": [
+    "Select and pin one validated channel implementation after code/environment review.",
+    "Map the selected implementation to ETSI TR 138 901 V19.4.0 assumptions used at 8.15 GHz.",
+    "Include inter-cell UE interference in all rate metrics.",
+    "Use actual rate-limited budget updates and message delays.",
+    "Use identical information and update limits for all controllers.",
+    "Re-verify actual transmitted hybrid/codebook beams when applicable.",
+    "Retain full-load stress results only as a sensitivity envelope.",
+    "Use multiple passes, seeds, load levels, and uncertainty epochs."
+  ],
+  "method_acronym": "DLP_RZF",
+  "method_name": "DISTRIBUTED_LEAKAGE_PROJECTED_RZF",
+  "next_gate": "CODE_LEVEL_REVIEW_OF_EXISTING_CHANNEL_BASELINE",
+  "scenario": {
+    "bandwidth_mhz": 100.0,
+    "bs_height_m": 25.0,
+    "budget_controllers": [
+      "static_offline_budget",
+      "myopic_budget",
+      "virtual_queue_budget",
+      "predictive_cbf_budget"
+    ],
+    "carrier_frequency_ghz": 8.15,
+    "common_information_constraints": {
+      "local_bs": [
+        "local_ue_csi",
+        "local_incumbent_direction",
+        "local_budget",
+        "local_previous_action"
+      ],
+      "prohibited": [
+        "inter_bs_ue_channel_vectors",
+        "inter_bs_precoder_matrices",
+        "joint_precoder_solution"
+      ],
+      "slow_budget_layer": [
+        "sector_id",
+        "scalar_leakage",
+        "scalar_utility_cost",
+        "message_age"
+      ]
+    },
+    "control_grid": {
+      "budget_message_delay_s_cases": [
+        0.0,
+        1.0,
+        3.0
+      ],
+      "budget_update_period_s_cases": [
+        1.0,
+        5.0,
+        10.0
+      ],
+      "geometry_slot_s": 1.0,
+      "local_precoder_update_ms": 10.0,
+      "maximum_budget_change_db_per_update_cases": [
+        1.0,
+        3.0,
+        6.0
+      ]
+    },
+    "indoor_probability_cases": [
+      0.0,
+      0.5,
+      0.8
+    ],
+    "local_precoders": [
+      "local_rzf",
+      "distributed_leakage_projected_rzf",
+      "static_local_null",
+      "uniform_power_backoff"
+    ],
+    "primary_scenario": "UMa",
+    "protected_reference_bandwidth_mhz": 10.0,
+    "repetitions": {
+      "final_minimum_satellite_passes": 5,
+      "final_minimum_topology_channel_seeds": 30,
+      "pilot_seeds": [
+        1101,
+        1102,
+        1103
+      ]
+    },
+    "required_metrics": [
+      "aggregate_interference_trajectory",
+      "long_and_short_exceedance",
+      "zero_slack_certificate",
+      "per_sector_budget",
+      "budget_message_age",
+      "action_change",
+      "local_and_network_sum_rate",
+      "fifth_percentile_user_rate",
+      "rate_retention",
+      "active_sector_count",
+      "filter_activity",
+      "local_precoder_runtime",
+      "budget_allocator_runtime",
+      "communication_overhead_bytes",
+      "uncertainty_coverage"
+    ],
+    "sector_activity_cases": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "sectors": 57,
+    "sensitivity_scenario": "UMi_street_canyon",
+    "sites": 19,
+    "uncertainty": {
+      "array_gain_error_db_cases": [
+        0.0,
+        1.0,
+        3.0
+      ],
+      "channel_estimation_nmse_db_cases": [
+        -30.0,
+        -20.0,
+        -10.0
+      ],
+      "propagation_margin_db_cases": [
+        0.0,
+        3.0,
+        6.0
+      ]
+    },
+    "user_height_m": 1.5,
+    "users_per_sector": {
+      "final_sensitivity": [
+        2,
+        4,
+        8
+      ],
+      "pilot": 4
+    }
+  },
+  "source_snapshot": {
+    "metadata": "evidence/fr3_channel_baseline_snapshot/SNAPSHOT_METADATA.json",
+    "selected_text_file_count": 75,
+    "source_root": "/mnt/c/Users/alifa/OneDrive/Projects/FR3_MainWork_For_Journal"
+  },
+  "standards_and_model": {
+    "channel_report": {
+      "document": "ETSI_TR_138_901",
+      "publication_date": "2026-07",
+      "release": 19,
+      "role": "primary_bs_ue_stochastic_channel_reference",
+      "version": "V19.4.0"
+    },
+    "implementation": {
+      "current_candidate": {
+        "framework": "PyTorch",
+        "limitation": "Current official library line; environment and exact TR 38.901 parameter-version coverage must be verified before freezing.",
+        "sionna_version": "2.0.1"
+      },
+      "legacy_candidate": {
+        "framework": "TensorFlow",
+        "limitation": "Existing reproducible baseline stack; it must be mapped against the Release-19 V19.4.0 parameter set before use as paper evidence.",
+        "sionna_version": "0.19.2"
+      },
+      "status": "TO_BE_SELECTED_AFTER_SOURCE_AND_ENVIRONMENT_REVIEW"
+    }
+  },
+  "status": "FROZEN_FOR_CODE_LEVEL_CHANNEL_BASELINE_REVIEW"
+}

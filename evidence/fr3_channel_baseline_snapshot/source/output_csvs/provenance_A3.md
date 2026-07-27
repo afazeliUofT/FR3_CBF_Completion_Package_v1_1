@@ -1,0 +1,18 @@
+# A3 provenance -- generated 2026-07-03 00:23 UTC
+- source Fixe: C:\Users\alifa\OneDrive\Projects\FR3_MainWork_For_Journal\TAFL_LTAF\TAFL_LTAF_Fixe.csv  sha256=e9d6ebdbfd63dd68ead8a2ca12d53c5ed7c3262b6640e1f6ba639bc0bb8aaf90
+- source Satellite: C:\Users\alifa\OneDrive\Projects\FR3_MainWork_For_Journal\TAFL_LTAF\TAFL_LTAF_Satellite.csv  sha256=4840baa1d9ff17c99f628347e0e24dbf1a3581dc513763d772e3fca52c754a77
+- portal record: open.canada.ca 508040d7-6fa9-46e4-afbc-aa61f3ca317e (SMS Authorization Data Extract, monthly refresh)
+- layout finding: 61 columns = undocumented leading TX/RX direction column + 60 documented fields; no header row; UTF-8 BOM.
+- cleaning: ''/'-' -> NULL; duplicates dropped; gain/hpbw zero flagged as possible NULL-as-zero per field-description note.
+- Fixe rows: 108722 raw, 0 exact duplicates dropped.
+- in 7725-8275 MHz: 6378 rows (TX 3189 / RX 3189).
+- auth_status kept G/11: 6370 (excluded 8: {'13': 8}).
+- Ontario in-band (kept): 2158; GTA bbox lat(43.2, 44.4) lon(-80.3, -78.3): 138 rows, 69 RX (victim) stations.
+- victims co-channel with carrier fc8000_7950-8050: 6
+- victims co-channel with carrier fc7850_7800-7900: 16
+- raster: 0 GTA rows NOT on the 1.25 MHz SRSP grid (flagged, not dropped).
+- conformity in GTA: {'A': 130, 'B': 8}
+- congestion in GTA: {nan: 70, 'L': 48, 'M': 20} -> envelope: {'B': 118, 'A': 20}
+- Satellite rows: 4584 raw, 0 duplicates dropped; txrx: {'RX': 2434, 'TX': 2150}
+- ES rows in 7250-7750 or 8025-8400: 157 (155 RX); provinces: {'NT': 108, 'NL': 20, 'SK': 12, 'QC': 10, 'AB': 3, 'ON': 2}
+- Ontario RX earth stations in survey bands: 2; ITU classes: {'TC': 2}; satellites: {'HISPASAT-2C3 KU': 2}

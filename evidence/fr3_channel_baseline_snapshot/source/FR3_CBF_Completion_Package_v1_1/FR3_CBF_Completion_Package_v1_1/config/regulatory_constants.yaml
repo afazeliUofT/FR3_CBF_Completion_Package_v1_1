@@ -1,0 +1,187 @@
+metadata:
+  file_version: "3.0.0"
+  generated_utc: "2026-07-23T00:00:00Z"
+  purpose: >-
+    Single source of truth for standards-derived values, model decisions, and open
+    verification items in the FR3 CBF project. PROVISIONAL and MODEL_DECISION values
+    must not be presented as mandatory regulatory requirements.
+  allowed_status_values:
+    - CONFIRMED
+    - PROVISIONAL
+    - MODEL_DECISION
+    - OPEN
+    - NOT_USED
+  no_guesswork_policy:
+    - "A number without a source, edition, scope, and status is not a regulatory constant."
+    - "Model decisions are separated from regulatory requirements."
+    - "The +19 dB fixed-service short-term cap remains provisional until the real S1 gate passes."
+    - "The in-force source and competent administration control if this file conflicts with them."
+  disclaimer: >-
+    Engineering-research configuration only; not legal or regulatory advice.
+
+source_documents:
+  user_supplied_p530_archive:
+    path: "source_documents/R-REC-P.530-19-202509.zip"
+    sha256: "3c0081a11950070ca4879ba91b8b655f4b5749bc5aad2f95bbf0928452836113"
+    content_note: "Contains the official Recommendation PDF, not the separate integral grids."
+
+standards_versions:
+  itu_r_p452:
+    edition: "P.452-18 (10/2023)"
+    status: CONFIRMED
+    role: "Primary terrestrial cellular-BS-to-incumbent interference propagation model."
+    source_url: "https://www.itu.int/rec/R-REC-P.452-18-202310-I/en"
+  itu_r_p2108:
+    edition: "P.2108-1 (09/2021)"
+    status: CONFIRMED
+    role: >-
+      Additional clutter loss only when applicable and not already represented in the
+      selected P.452 profile implementation.
+    source_url: "https://www.itu.int/rec/R-REC-P.2108-1-202109-I"
+  itu_r_p530:
+    edition: "P.530-19 (09/2025)"
+    status: CONFIRMED
+    role: >-
+      Wanted fixed-link fading and outage adequacy for the S1 gate. It is not the
+      cellular-to-incumbent path model.
+    source_url: "https://www.itu.int/rec/R-REC-P.530-19-202509-I"
+    integral_products_url: "https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.530-19-202509-I!!ZIP-E.zip"
+    required_integral_products:
+      - LogK.csv
+      - dN75.csv
+      - LatitudeQuarterDegree.csv
+      - LongitudeQuarterDegree.csv
+  itu_r_f758:
+    edition: "F.758-8 (02/2025)"
+    status: CONFIRMED
+    role: "Fixed-service sharing/compatibility system parameters and criteria."
+    source_url: "https://www.itu.int/rec/R-REC-F.758-8-202502-I/en"
+  itu_r_sa1027:
+    edition: "SA.1027-6 (08/2019)"
+    status: CONFIRMED
+    role: "EESS/MetSat LEO space-to-Earth sharing criteria."
+    source_url: "https://www.itu.int/rec/R-REC-SA.1027-6-201908-I/en"
+  ised_srsp_307_7:
+    edition: "Issue 6 (December 2006)"
+    status: CONFIRMED
+    role: "Canadian 7725-8275 MHz fixed-service channel plan and technical parameters."
+    source_url: "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/official-publications/standards/standard-radio-system-plans-srsp/srsp-3077-technical-requirements-fixed-line-sight-radio-systems-operating-band-7725-8275-mhz"
+  etsi_tr_138_901:
+    edition: "ETSI TR 138 901 V19.4.0"
+    status: CONFIRMED
+    role: "Primary BS-UE stochastic channel model; UMa baseline."
+    source_url: "https://www.etsi.org/deliver/etsi_tr/138900_138999/138901/19.04.00_60/"
+  itu_r_p1411:
+    edition: "Use the exact edition recorded by the reproduction environment"
+    status: NOT_USED
+    role: >-
+      May reproduce the ICC baseline or provide a validity-limited sensitivity case;
+      not the primary coordination-grade path model in the final study.
+
+fixed_service_7725_8275_mhz:
+  allocation_mhz: [7725.0, 8275.0]
+  status: CONFIRMED
+  canadian_channel_bandwidths_mhz: [30.0, 20.0, 10.0, 5.0, 2.5, 1.25]
+  source: "ISED SRSP-307.7 Issue 6"
+  long_term_aggregate:
+    metric: "I_over_N_dB"
+    limit_db: -10.0
+    time_percentage_exceeded: 20.0
+    status: CONFIRMED
+    source: "ITU-R F.758-8"
+    scope_note: >-
+      Use as an engineering aggregate sharing criterion with its stated scope. Do not
+      call it a universal Canadian licensing rule.
+  short_term_candidate:
+    metric: "I_over_N_dB"
+    candidate_limit_db: 19.0
+    candidate_set_db: [10.0, 13.0, 16.0, 19.0, 23.0]
+    status: PROVISIONAL
+    enforcement_first_implementation: "always_on_engineering_cap"
+    freeze_gate: >-
+      Real P.530-19 adequacy run on reviewed paired links, documented fade margins,
+      explicit incremental worst-month outage allocations, official grids, and a
+      predeclared sensitivity analysis.
+    claim_boundary: >-
+      A project engineering candidate derived through documented methodology; not a
+      native mandatory 7-8 GHz criterion asserted from F.758-8.
+
+fixed_service_power_reference:
+  maximum_incumbent_fs_eirp_dbw_per_rf_channel: 55.0
+  status: CONFIRMED
+  source: "ISED SRSP-307.7 Issue 6"
+  use_note: "An incumbent FS transmitter reference, not a cellular-sector power assumption."
+
+eess_earth_station_8025_8400_mhz:
+  allocation_mhz: [8025.0, 8400.0]
+  metric: "aggregate_interfering_signal_power_at_earth_station_antenna_output"
+  reference_bandwidth_mhz: 10.0
+  minimum_elevation_deg: 5.0
+  status: CONFIRMED
+  criteria:
+    - name: long_term
+      threshold_dbw_per_10mhz: -150.0
+      time_percentage_exceeded: 20.0
+    - name: short_term
+      threshold_dbw_per_10mhz: -133.0
+      time_percentage_exceeded: 0.005
+  source: "ITU-R SA.1027-6, 8025-8400 MHz terrestrial-path entries"
+  modelling_decision:
+    status: MODEL_DECISION
+    text: >-
+      The first paper conservatively treats the aggregate IMT network as one
+      terrestrial interfering entry. Describe this as a study decision, not as quoted
+      mandatory aggregation wording.
+
+cellular_study_parameters:
+  deployment: "3GPP UMa"
+  status: MODEL_DECISION
+  carrier_frequencies_ghz: [7.85, 8.0]
+  system_bandwidth_mhz: 100.0
+  sites: 19
+  sectors_per_site: 3
+  inter_site_distance_m: 500.0
+  bs_height_m: 25.0
+  ue_height_m: 1.5
+  users_per_sector: 8
+  array_rows: 16
+  array_cols: 16
+  tone_groups: 13
+  sector_conducted_power_dbm_per_100mhz: 46.0
+  element_gain_dbi: 8.0
+  ue_noise_figure_db: 9.0
+  indoor_probability: 0.8
+  note: >-
+    These are study parameters, not regulatory constants. Sweep power, array size,
+    loading, and activity. Replace with operator-approved/WP 5D parameters if obtained.
+
+control_timing:
+  status: MODEL_DECISION
+  rrm_slot_s: 1.0
+  uncertainty_epoch_s: 60.0
+  note: "RRM-timescale controller; no PHY-symbol-timescale claim."
+
+open_items:
+  - id: POWER_OPERATOR
+    status: OPEN
+    action: >-
+      Obtain or document the exact operator/WP 5D conducted-power, element-pattern,
+      downtilt, loading, and activity set used in final sharing simulations.
+  - id: P452_IMPLEMENTATION
+    status: OPEN
+    action: >-
+      Select and independently validate the exact P.452-18 implementation and profile
+      treatment; record whether P.2108 is separately applied.
+  - id: ORAN_CLAUSES
+    status: OPEN
+    action: >-
+      Pin exact O-RAN clauses only if making a compliance claim; otherwise use
+      "O-RAN-inspired layered architecture".
+  - id: EARTH_STATION_PATTERN
+    status: OPEN
+    action: "Select and cite the applicable documented tracking-earth-station pattern."
+  - id: REAL_CALIBRATION
+    status: OPEN
+    action: >-
+      Obtain measurements or a higher-fidelity held-out reference if claiming coverage
+      beyond the simulated/ray-traced world.

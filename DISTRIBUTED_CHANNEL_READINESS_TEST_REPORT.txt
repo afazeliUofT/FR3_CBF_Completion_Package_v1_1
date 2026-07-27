@@ -1,0 +1,20 @@
+Distributed channel-readiness drop-in v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Package SHA-256 manifest: PASS
+- No frozen bytecode/cache artifacts: PASS
+
+Scientific checks
+- Architecture/prototype claim-boundary review
+- Explicit record that budget-rate limits, inter-cell rates, TR 38.901
+  channels, delays, uncertainty, hybrid factorization, runtime, and
+  statistics are not yet tested
+- Method naming precision: Distributed Leakage-Projected RZF (DLP-RZF)
+- Architecture source-package manifest repair
+- Release-19 V19.4.0 standards experiment freeze
+- Human-reviewed text-only channel/topology source snapshot
+
+No performance or paper claim is produced.
+- Removal of previously tracked cache/bytecode artifacts from the Git index

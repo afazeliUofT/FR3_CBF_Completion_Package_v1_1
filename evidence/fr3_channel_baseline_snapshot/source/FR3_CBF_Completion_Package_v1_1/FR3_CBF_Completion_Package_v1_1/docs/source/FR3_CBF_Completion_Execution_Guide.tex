@@ -1,0 +1,206 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=22mm]{geometry}
+\usepackage{booktabs,longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\fancyhf{}
+\lhead{FR3 CBF Completion Guide}
+\rhead{Package v1.1}
+\cfoot{\thepage}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}
+\setlist{nosep,leftmargin=*}
+\sloppy
+\title{\textbf{Exact Execution Guide to Complete the FR3 CBF Project}}
+\author{Standalone project package}
+\date{23 July 2026}
+\begin{document}
+\maketitle
+
+\begin{center}
+\fbox{\parbox{0.92\textwidth}{\textbf{Immediate scientific task.} Close the fixed-service S1 adequacy gate on real paired links. Do not spend the next work cycle adding new conceptual material. The first evidence must decide whether the provisional +19 dB short-term engineering candidate is acceptable, must be reduced, must be link-specific, or should not be used.}}
+\end{center}
+
+\section{Day-zero software setup}
+
+From the package root:
+\begin{verbatim}
+python -m venv .venv
+source .venv/bin/activate
+# Windows PowerShell: .venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements-core.txt
+python -m pip install -e . --no-build-isolation
+python scripts/00_validate_package.py
+python -m pytest
+python scripts/01_run_smoke_test.py
+\end{verbatim}
+
+\textbf{Pass condition:} package validation and tests pass. Demo results remain clearly marked as demo evidence.
+
+\section{Obtain the P.530-19 digital products}
+
+The included ITU archive contains the Recommendation PDF. The official numerical grids are a separate components ZIP.
+
+Online:
+\begin{verbatim}
+python scripts/02_download_p530_products.py
+\end{verbatim}
+
+Offline/manual:
+\begin{enumerate}
+\item Download English \emph{Zip (Components)} from the official P.530-19 page.
+\item Save it as \texttt{data/external/p530/P530\_components.zip}.
+\item Run the downloader with \texttt{--zip}.
+\end{enumerate}
+
+\textbf{Pass condition:} \texttt{LogK.csv}, \texttt{dN75.csv}, coordinate products, and a SHA-256 manifest exist; the grid loader passes.
+
+\section{Create reviewed paired fixed links}
+
+A fixed receiver alone is not enough. S1 needs its wanted transmitter and link budget.
+
+Use an explicit trusted pair key. The strict pairing script refuses nearest-neighbour or frequency-only inference:
+\begin{verbatim}
+python scripts/03a_pair_fs_records.py \
+  --input <raw.csv> \
+  --mapping config/tafl_column_mapping.yaml \
+  --output data/real/paired_fs_links_unfinished.csv
+\end{verbatim}
+
+Complete, for every link:
+\begin{itemize}
+\item endpoints and antenna altitudes above mean sea level;
+\item mean terrain elevation along the wanted path;
+\item frequency and documented fade margin;
+\item incremental worst-month outage allocation;
+\item source IDs and provenance.
+\end{itemize}
+
+Optional DEM helper:
+\begin{verbatim}
+python -m pip install -r requirements-full.txt
+python scripts/03b_add_dem_mean_terrain.py \
+  --links <paired.csv> --dem <dem.tif> \
+  --output data/real/paired_fs_links_with_terrain.csv
+\end{verbatim}
+
+Optional fade-margin helper, only when received level and receiver threshold are supplied:
+\begin{verbatim}
+python scripts/03c_compute_fade_margin.py \
+  --input <links.csv> --output data/real/paired_fs_links.csv
+\end{verbatim}
+
+\section{Make the human engineering decision that code cannot make}
+
+The incremental-outage allocation is not guessed. Use \texttt{data/templates/S1\_ALLOCATION\_DECISION\_TEMPLATE.md}. State the reference period, link population, value, rationale, and reviewer.
+
+Then validate:
+\begin{verbatim}
+python scripts/03_validate_paired_links.py \
+  data/real/paired_fs_links.csv --mode real
+\end{verbatim}
+
+\textbf{Pass condition:} no missing numeric field, duplicate ID, example link, empty provenance, or geometry error.
+
+\section{Run nominal S1 and sensitivity}
+
+Edit \texttt{config/s1\_adequacy.yaml} so real mode points to the reviewed file and the allocation is explicit.
+
+\begin{verbatim}
+python scripts/04_run_s1_adequacy.py \
+  --config config/s1_adequacy.yaml --mode real
+python scripts/04b_run_s1_sensitivity.py \
+  --config config/s1_adequacy.yaml --mode real
+\end{verbatim}
+
+Review the link-level table before the summary. A candidate passes only if every intended link meets its allocation and every predeclared sensitivity scenario remains acceptable.
+
+The script evaluates candidate caps 10, 13, 16, 19, and 23 dB and reports baseline/post-interference P.530 worst-month outage, fade-margin penalty, incremental outage, warnings, and provenance.
+
+\section{Freeze, reduce, or reject the candidate}
+
+Only after review:
+\begin{verbatim}
+python scripts/05_freeze_s1_candidate.py \
+  --candidate-db 19 \
+  --reviewer "Name" \
+  --decision-note "Detailed reviewed rationale" \
+  --confirm
+\end{verbatim}
+
+The script refuses demo evidence, a nominal failure, or a sensitivity failure. The output is a separate engineering-decision YAML. It does not silently rewrite the regulatory source file.
+
+\section{Build the paper experiments}
+
+\subsection{E1: static fixed-service continuity}
+
+\begin{enumerate}
+\item Generate real UMa cellular channels and nominal WMMSE beams in the existing simulator.
+\item Generate or export validated P.452-18 coupling to the real FS receivers.
+\item Export the NPZ bundle defined in \texttt{INTEGRATION\_CONTRACT.md}.
+\item Validate and run E1.
+\item Confirm unit/bandwidth/array-gain accounting.
+\end{enumerate}
+
+\subsection{E2: dynamic fixed-service stress}
+
+\begin{enumerate}
+\item Select a physical disturbance and the real rate-limited control variable.
+\item Precompute time-varying robust coupling and one-step bounds.
+\item Use identical information and slew limits for all methods.
+\item Demonstrate the rate-limit trap.
+\item Report trajectories, violations, rate, slack, control activity, and runtime.
+\end{enumerate}
+
+\subsection{E3: drifting earth-station geometry}
+
+\begin{enumerate}
+\item Archive station assumptions, antenna pattern, and TLE.
+\item Generate/validate the topocentric track.
+\item Build time-varying sector-to-station coupling.
+\item Enforce the long SA.1027 entry through the exceedance budget and the short entry as an always-on cap.
+\item Repeat over passes, satellites, traffic seeds, and uncertainty levels.
+\end{enumerate}
+
+\section{Calibrate uncertainty and prove practicality}
+
+Use \texttt{scripts/07\_run\_calibration.py} on held-out residual data. Report overall and stress-stratified coverage. Use \texttt{scripts/16\_benchmark\_runtime.py} only as a reference starting point; final runtime must measure the real central benchmark and practical layered controller at paper scale.
+
+\section{Final completion gate}
+
+Run:
+\begin{verbatim}
+python scripts/15_check_submission_readiness.py
+python scripts/14_generate_manifest.py --include-results
+\end{verbatim}
+
+The paper is not ready while any required real audit, S1 decision, calibration result, runtime result, provenance file, or open standards/model item is missing.
+
+\section{Minimal weekly order}
+
+\begin{longtable}{p{0.12\textwidth}p{0.55\textwidth}p{0.25\textwidth}}
+\toprule
+Order & Work & Output\\
+\midrule
+1 & Environment, tests, products & Clean reproducible package\\
+2 & Pair fixed links and fill terrain/fade margins & Reviewed S1 input\\
+3 & Approve outage allocation & Decision memo\\
+4 & Nominal and sensitivity S1 & Candidate decision\\
+5 & Real E1 bundle & Static continuity results\\
+6 & E2 dynamic coupling and runs & Main CBF counterexample\\
+7 & E3 TLE/station/coupling and runs & Drifting-geometry results\\
+8 & Calibration and runtime & Coverage/practicality evidence\\
+9 & Statistics and paper population & Submission archive\\
+\bottomrule
+\end{longtable}
+
+\end{document}

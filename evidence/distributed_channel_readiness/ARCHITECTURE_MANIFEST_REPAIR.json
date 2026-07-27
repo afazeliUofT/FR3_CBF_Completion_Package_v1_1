@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-07-27T05:12:49.933836+00:00",
+  "manifest": "DISTRIBUTED_IA_RZF_ARCHITECTURE_MANIFEST.sha256",
+  "manifest_entries": 13,
+  "policy": "No bytecode or test cache belongs in source-package manifests.",
+  "removed_local_cache_artifacts": [
+    "src/fr3_cbf/__pycache__/distributed_precoding.cpython-313.pyc",
+    "src/fr3_cbf/__pycache__/",
+    "tests/__pycache__/test_distributed_precoding.cpython-313-pytest-9.0.2.pyc",
+    "tests/__pycache__/",
+    "tests/.pytest_cache/"
+  ],
+  "removed_prohibited_old_entries": [
+    "e9fed79e81f98bf54c0f61adfd31226de33fd565c6e2bb67cd069089d1caf13f  src/fr3_cbf/__pycache__/distributed_precoding.cpython-313.pyc",
+    "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd  tests/.pytest_cache/.gitignore",
+    "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4  tests/.pytest_cache/CACHEDIR.TAG",
+    "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad  tests/.pytest_cache/README.md",
+    "c332171e14ced12f1bed2fd20275807a4817e663cbaff778085106586d4db658  tests/.pytest_cache/v/cache/nodeids",
+    "f81d62af8c7c7ccabe781b3ddf2c580288c3ea9975a734f3bd9d1ab9e1d5094d  tests/__pycache__/test_distributed_precoding.cpython-313-pytest-9.0.2.pyc"
+  ],
+  "status": "PASS"
+}
