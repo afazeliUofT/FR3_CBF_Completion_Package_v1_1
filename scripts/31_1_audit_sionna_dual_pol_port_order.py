@@ -40,14 +40,14 @@ def steering_basis(
     )
     phase = 2.0 * math.pi * carrier_hz / C_M_S * (positions_m @ direction)
     vector = np.zeros(positions_m.shape[0], dtype=np.complex128)
-    vector[indices] = np.exp(1j * phase[indices])
+    vector[indices] = np.exp(-1j * phase[indices])
     return vector
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--config", default="config/tr38901_nibi_dlp_pilot_prep.json"
+        "--config", default="config/tr38901_narval_dlp_pilot_prep.json"
     )
     args = parser.parse_args()
     cfg = json.loads((ROOT / args.config).read_text(encoding="utf-8"))
@@ -177,13 +177,17 @@ def main() -> int:
             "steering_pol1_sha256": digest(a1),
             "steering_pol2_sha256": digest(a2),
         },
+        "steering_vector_convention": (
+            "a=exp(-j k r_local dot d_local), so a^H equals the Sionna "
+            "transmit channel-row spatial phase exp(+j k r_local dot d_local)."
+        ),
         "pilot_safety_rule": (
             "The protected-tone transmit-domain leakage allowance is divided "
             "between the two orthogonal Sionna polarization port groups in "
             "proportion to their nominal mode leakage; each mode is projected "
             "locally and their received powers are summed."
         ),
-        "next_gate": "BUILD_REVIEWABLE_NIBI_GPU_PILOT_BUNDLE",
+        "next_gate": "BUILD_REVIEWABLE_NARVAL_GPU_PILOT_BUNDLE",
     }
     write_json(work / "SIONNA_DUAL_POL_PORT_ORDER_AUDIT.json", audit)
     (work / "SIONNA_DUAL_POL_PORT_ORDER_AUDIT.md").write_text(

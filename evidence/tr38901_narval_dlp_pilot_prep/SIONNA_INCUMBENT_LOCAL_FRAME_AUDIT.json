@@ -1,0 +1,31 @@
+{
+  "claim_boundary": "EXACT_SIONNA_LOCAL_FRAME_STEERING_AUDIT_NOT_PAPER_RESULT",
+  "coordinate_conventions": {
+    "alpha": "90 degrees minus sector geographic azimuth",
+    "beta": "positive mechanical downtilt",
+    "gamma": 0.0,
+    "orientation": "TR 38.901 R=Rz(alpha)Ry(beta)Rx(gamma)",
+    "sionna_local": "x=boresight, local y-z panel plane",
+    "world": "x=east, y=north, z=up; geographic azimuth north-clockwise"
+  },
+  "created_utc": "2026-07-27T23:29:35.449838+00:00",
+  "finding": "The superseded bundle inserted the signed geographic horizontal offset directly as a Sionna-local azimuth. For zero pitch the correct local azimuth has the opposite sign; with downtilt the exact R^T transform is required. The superseded GPU source also used exp(+j k r dot d) as a in ||a^H W||, whereas Sionna's transmit row uses exp(+j k r dot d); therefore a must use exp(-j k r dot d).",
+  "gpu_rule": "The Narval pilot loads the frozen local unit vector by sector_id, does not reconstruct it from horizontal_offset_deg at runtime, and uses a=exp(-j k r_local dot d_local) so a^H matches Sionna's transmit channel-row spatial phase.",
+  "maximum_local_x_component": 0.9794278777019494,
+  "maximum_prior_direct_offset_direction_error_deg": 154.52557691652785,
+  "maximum_signed_offset_approximation_error_deg": 17.561978743479386,
+  "maximum_world_reconstruction_error": 2.268710597756992e-16,
+  "minimum_local_x_component": -0.7525203805379194,
+  "next_gate": "REBUILD_STEERING_HARDENED_NARVAL_BUNDLE",
+  "polarization_bound": "conservative_sum_of_two_orthogonal_sionna_port_group_spatial_mode_powers",
+  "sector_count": 57,
+  "source_offset_definition": {
+    "horizontal": "target geographic azimuth minus sector geographic azimuth",
+    "vertical": "target geographic elevation minus boresight elevation"
+  },
+  "status": "PASS_EXACT_SIONNA_INCUMBENT_LOCAL_FRAME_AUDIT",
+  "superseded_bundle": {
+    "disposition": "DO_NOT_RUN_SUPERSEDED_STEERING_FRAME",
+    "sha256": "a6ad7c3e202b57ff002b330b1d2c4e0f5b58a90b10fb7e64d6ae86c7069bef69"
+  }
+}

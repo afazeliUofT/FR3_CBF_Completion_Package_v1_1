@@ -1,0 +1,116 @@
+{
+  "claim_boundary": {
+    "narval_bundle": "ONE_SEED_NARVAL_GPU_PILOT_PACKAGE_NOT_PAPER_RESULT",
+    "port_audit": "SIONNA_PORT_ORDER_AND_STEERING_BASIS_AUDIT_NOT_PAPER_RESULT",
+    "steering_frame": "EXACT_SIONNA_LOCAL_FRAME_STEERING_AUDIT_NOT_PAPER_RESULT"
+  },
+  "expected": {
+    "array_cols": 8,
+    "array_polarization": "dual",
+    "array_polarization_type": "cross",
+    "array_port_count": 128,
+    "array_rows": 8,
+    "branch": "e3-first-sector-p452",
+    "carrier_frequency_hz": 8150000000.0,
+    "protected_pass_samples": 587,
+    "required_ancestor_commit": "e1a5d0c41b2a676aa05680ab558a2995eecda6e6",
+    "sector_count": 57,
+    "sionna_version": "2.0.1",
+    "site_count": 19,
+    "torch_base_version": "2.9.1",
+    "user_count": 228,
+    "users_per_sector": 4
+  },
+  "inputs": {
+    "bs_sectors": "data/real/bs_sectors.csv",
+    "bs_sites": "data/real/bs_sites.csv",
+    "earth_station_gain": "data/real/e3_57_sector_reference_screen/earth_station_site_gain_timeseries.csv.gz",
+    "existing_port_audit": "data/real/tr38901_nibi_dlp_pilot_prep/SIONNA_DUAL_POL_PORT_ORDER_AUDIT.json",
+    "mapping_decision": "data/real/tr38901_nibi_dlp_pilot_prep/TR38901_USED_SUBSET_MAPPING_DECISION.json",
+    "qualified_sionna_venv": "/home/afazeli2006/.venvs/fr3-sionna2-2.0.1-cpu",
+    "sector_static": "data/real/e3_57_sector_reference_screen/sector_static_reference_accounting.csv"
+  },
+  "narval": {
+    "cpus_per_task": 12,
+    "gpu_memory_class_gib": 40,
+    "gpu_model": "a100",
+    "gpus_per_node": "a100:1",
+    "host": "narval.alliancecan.ca",
+    "memory": "124G",
+    "module_stack": [
+      "StdEnv/2023",
+      "python/3.12.4"
+    ],
+    "preferred_accounts": [
+      "def-rsadve_gpu",
+      "def-rsadve",
+      "def-rsadve_cpu"
+    ],
+    "scratch_subdir": "FR3_DLP_RZF_NARVAL_PILOT_v1",
+    "torch_cuda_index": "https://download.pytorch.org/whl/cu128",
+    "venv_path": "$HOME/.venvs/fr3-sionna2-2.0.1-narval-cu128",
+    "walltime": "04:00:00"
+  },
+  "next_gate": "LOCAL_REVIEW_COMPLETE_THEN_RUN_NARVAL_ONE_SEED_GPU_PILOT",
+  "outputs": {
+    "evidence_dir": "evidence/tr38901_narval_dlp_pilot_prep",
+    "log_dir": "logs/tr38901_narval_dlp_pilot_prep",
+    "upload_dir": "results/tr38901_narval_dlp_pilot_prep/upload",
+    "work_dir": "data/real/tr38901_narval_dlp_pilot_prep"
+  },
+  "pilot": {
+    "aperture_efficiency": 0.65,
+    "budget_reserve_fraction": 0.1,
+    "channel_seed": 32002,
+    "channel_user_chunk_size": 8,
+    "conducted_power_dbm_per_100mhz": 46.0,
+    "earth_station_pattern_type": "multiple_entry_section_1_2",
+    "finite_network_no_wraparound": true,
+    "frequency_offsets_mhz": [
+      -50.0,
+      -37.5,
+      -25.0,
+      -12.5,
+      0.0,
+      12.5,
+      25.0,
+      37.5,
+      50.0
+    ],
+    "frequency_weights": [
+      0.1125,
+      0.1125,
+      0.1125,
+      0.1125,
+      0.1,
+      0.1125,
+      0.1125,
+      0.1125,
+      0.1125
+    ],
+    "incumbent_steering_coordinate_model": "exact_world_to_local_rotation_Rz_alpha_Ry_beta_Rx_gamma",
+    "indoor_probability": 0.8,
+    "noise_figure_db": 7.0,
+    "p452_polarization": "H",
+    "p452_time_percentage": 20.0,
+    "protected_bandwidth_hz": 10000000.0,
+    "protected_frequency_index": 4,
+    "result_status": "ONE_SEED_NARVAL_GPU_DLP_RZF_PILOT_NOT_PAPER_RESULT",
+    "scenario": "uma",
+    "sector_half_width_deg": 30.0,
+    "short_threshold_dbw_per_10mhz": -133.0,
+    "steering_vector_convention": "a_exp_minus_jkrd_so_aH_matches_sionna_tx_channel_row_exp_plus_jkrd",
+    "thermal_noise_density_dbm_per_hz": -174.0,
+    "total_bandwidth_hz": 100000000.0,
+    "transmit_polarization_bound": "conservative_sum_of_two_orthogonal_sionna_port_group_spatial_mode_powers",
+    "user_radius_max_m": 200.0,
+    "user_radius_min_m": 50.0,
+    "user_seed": 32001
+  },
+  "purpose": "Run all non-heavy steering-frame and polarization audits locally in WSL, then build a separate Narval A100 package for the one-seed 57-sector, four-user-per-sector DLP-RZF GPU pilot. No SSH, Slurm, or GPU job is started by the local preparation workflow.",
+  "schema_version": 1,
+  "superseded_nibi_bundle": {
+    "disposition": "DO_NOT_RUN",
+    "sha256": "a6ad7c3e202b57ff002b330b1d2c4e0f5b58a90b10fb7e64d6ae86c7069bef69"
+  }
+}

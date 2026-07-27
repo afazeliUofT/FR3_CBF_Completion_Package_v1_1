@@ -1,0 +1,42 @@
+{
+  "channel_generation": {
+    "cross_chunk_spatial_consistency_claimed": false,
+    "reason": "fit one Narval A100 40GB",
+    "user_chunk_size": 8
+  },
+  "claim_boundary": "ONE_SEED_NARVAL_GPU_PILOT_PACKAGE_NOT_PAPER_RESULT",
+  "cluster": "narval",
+  "created_utc": "2026-07-27T23:29:35.705559+00:00",
+  "dimensions": {
+    "ports_per_bs": 128,
+    "sectors": 57,
+    "sites": 19,
+    "users": 228,
+    "users_per_sector": 4
+  },
+  "gpu": "A100-40GB",
+  "input_sha256": {
+    "input/SIONNA_8X8_DUAL_PORT_ORDER.csv": "f9e42eb1002068b7172f2cd873f5ad67930af2d9b2481328094c022d1ef69a02",
+    "input/SIONNA_DUAL_POL_PORT_ORDER_AUDIT.json": "991eac235c93fa5660dc8182eddf4d4f681416860c98a25dbdff5352afc64bdb",
+    "input/SIONNA_INCUMBENT_LOCAL_FRAME.csv": "5b1b6d642e81d92f146cb6f0f973126524cb487fac140edb3cdbbf15059cc214",
+    "input/SIONNA_INCUMBENT_LOCAL_FRAME_AUDIT.json": "d67982417fb66ea5980d6f21e735e85989bebbe710a003b72b15392d035bdf64",
+    "input/TR38901_USED_SUBSET_MAPPING_DECISION.json": "2aa67ca92e96077a242d15b1c95f07eb327a4aedb273507ad20200b6bb51f528",
+    "input/TR38901_V19_4_USED_SUBSET_MAPPING.csv": "4a01daf0084c03b6e6d648dd9e80af3be7f3f48ac6ebc298be7d8db388c80c3c",
+    "input/bs_sectors.csv": "ce004abb263864812e59b8cc8c76f9c0d7881f61732d19cad63281ccd7dbb1a6",
+    "input/bs_sites.csv": "9cd34443d1f53eef1b7efbb6eaa19799c039d9b55245fe5ae1d95d4de5e5f2bb",
+    "input/earth_station_site_gain_timeseries.csv.gz": "e507e1516813c75bbf07047f1632b35802d5b9f60dcec655cb847f7b8ab9d950",
+    "input/sector_static_reference_accounting.csv": "6d1277d66c5e178267210909779fa211e3698dcfcef2631a9ee55254bcebd7e1"
+  },
+  "manifest_entries": 18,
+  "next_gate": "LOCAL_REVIEW_COMPLETE_THEN_RUN_NARVAL_ONE_SEED_GPU_PILOT",
+  "source_commit_required": "e1a5d0c41b2a676aa05680ab558a2995eecda6e6",
+  "status": "READY_FOR_NARVAL_A100_ONE_SEED_GPU_PILOT",
+  "steering_frame_status": "PASS_EXACT_SIONNA_INCUMBENT_LOCAL_FRAME_AUDIT",
+  "superseded_nibi_bundle": {
+    "disposition": "DO_NOT_RUN",
+    "sha256": "a6ad7c3e202b57ff002b330b1d2c4e0f5b58a90b10fb7e64d6ae86c7069bef69"
+  },
+  "zip_bytes": 741844,
+  "zip_path": "results/tr38901_narval_dlp_pilot_prep/upload/FR3_DLP_RZF_NARVAL_ONE_SEED_GPU_PILOT_v1.zip",
+  "zip_sha256": "9ed038882910f82b94b3193086293efb331287d907705f5f5b762a71abacec84"
+}

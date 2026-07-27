@@ -26,7 +26,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--config",
-        default="config/tr38901_nibi_dlp_pilot_prep.json",
+        default="config/tr38901_narval_dlp_pilot_prep.json",
     )
     args = parser.parse_args()
 
@@ -155,7 +155,7 @@ def main() -> int:
         "- Correct PanelArray keywords: "
         "`element_vertical_spacing`, `element_horizontal_spacing`\n"
         f"- Verified dual-array ports: `{dual.num_ant}`\n\n"
-        "The same correction is applied to the future Nibi GPU pilot source, "
+        "The same correction is applied to the future Narval GPU pilot source, "
         "so the generated bundle cannot repeat the CPU port-audit failure.\n",
         encoding="utf-8",
     )

@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-07-27T23:29:26.909769+00:00",
+  "dual_array": {
+    "cols": 8,
+    "element_horizontal_spacing_lambda": 0.5,
+    "element_vertical_spacing_lambda": 0.5,
+    "polarization": "dual",
+    "polarization_type": "cross",
+    "ports": 128,
+    "rows": 8
+  },
+  "environment": {
+    "sionna_no_rt_version": "2.0.1",
+    "torch_version": "2.9.1+cpu"
+  },
+  "failure_diagnosis": "The failed package passed vertical_spacing and horizontal_spacing to PanelArray. In Sionna 2.0.1 those names belong to AntennaArray; PanelArray requires element_vertical_spacing and element_horizontal_spacing.",
+  "gpu_source_patch_verified": true,
+  "next_gate": "SIONNA_DUAL_POLARIZATION_PORT_ORDER_AUDIT",
+  "panelarray_parameter_names": [
+    "self",
+    "num_rows_per_panel",
+    "num_cols_per_panel",
+    "polarization",
+    "polarization_type",
+    "antenna_pattern",
+    "carrier_frequency",
+    "num_rows",
+    "num_cols",
+    "panel_vertical_spacing",
+    "panel_horizontal_spacing",
+    "element_vertical_spacing",
+    "element_horizontal_spacing",
+    "precision",
+    "device"
+  ],
+  "panelarray_signature": "(self, num_rows_per_panel: int, num_cols_per_panel: int, polarization: str, polarization_type: str, antenna_pattern: str, carrier_frequency: float, num_rows: int = 1, num_cols: int = 1, panel_vertical_spacing: Optional[float] = None, panel_horizontal_spacing: Optional[float] = None, element_vertical_spacing: Optional[float] = None, element_horizontal_spacing: Optional[float] = None, precision: Optional[str] = None, device: Optional[str] = None) -> None",
+  "status": "PASS_SIONNA_PANELARRAY_API_RECOVERY",
+  "ut_array": {
+    "polarization": "single",
+    "polarization_type": "V",
+    "ports": 1
+  },
+  "verified_keywords": [
+    "element_horizontal_spacing",
+    "element_vertical_spacing"
+  ]
+}

@@ -1,0 +1,20 @@
+Local steering hardening and Narval preparation v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Package manifest: PASS
+- Cache/bytecode exclusion: PASS
+
+Focused gates
+- 57-sector/228-user/128-port dimensions
+- Exact local-frame steering source included
+- Negative steering-column phase convention
+- Narval-only A100 request
+- 12-core / 124-GB Narval resource bundle
+- Narval-specific virtual environment
+- Eight-user Sionna channel chunks for A100 40 GB
+- Prior Nibi FR3 bundle explicitly superseded
+
+No cluster job is submitted by this package.
+- Repository-scope regression: package syntax test no longer traverses .venv or third-party non-UTF-8 fixtures
