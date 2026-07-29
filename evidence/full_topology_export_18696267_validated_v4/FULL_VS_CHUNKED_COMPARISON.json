@@ -1,0 +1,58 @@
+{
+  "full_vs_chunked": {
+    "chunked_common_scale_minimum_network_retention": 0.9914915199226378,
+    "chunked_nominal_network_sum_se_bps_hz": 545.5243122823118,
+    "desired_power_ratio_quantiles": {
+      "max": 603.6608421547578,
+      "min": 0.0006027219258154478,
+      "p01": 0.00849789049576665,
+      "p05": 0.0324533875881771,
+      "p50": 0.9314026930828337,
+      "p95": 10.147918103434026,
+      "p99": 44.868125699615966
+    },
+    "full_common_scale_minimum_network_retention": 0.9929676702239479,
+    "full_nominal_network_sum_se_bps_hz": 546.3379124583655,
+    "interference_power_ratio_quantiles": {
+      "max": 3004.5872456790585,
+      "min": 0.0009595888997960144,
+      "p01": 0.004531996209513703,
+      "p05": 0.019772530595920525,
+      "p50": 0.8649964194412589,
+      "p95": 49.79384213705808,
+      "p99": 275.54348006124485
+    },
+    "interpretation": "Differences combine topology-generation mode, random-number mapping, and correlation structure; they are not attributed only to spatial correlation.",
+    "nominal_incumbent_db_difference_quantiles": {
+      "max": 0.6074057758768787,
+      "min": -1.951425170036341,
+      "p01": -1.942922246631144,
+      "p05": -1.8676600238891772,
+      "p50": -0.6323373364841229,
+      "p95": -0.2286278460725064,
+      "p99": 0.5424211617626019
+    },
+    "per_user_nominal_rate_correlation": 0.29287934678652244,
+    "per_user_nominal_rate_difference_quantiles_bps_hz": {
+      "max": 5.106234122812747,
+      "min": -7.515016612410546,
+      "p01": -6.201406231181696,
+      "p05": -3.589067897736095,
+      "p50": -0.08028703480958954,
+      "p95": 3.780167298261076,
+      "p99": 4.986315188872629
+    },
+    "relative_network_sum_difference": 0.001491409562755913,
+    "top10_dominant_sector_overlap_count": 8
+  },
+  "legacy_numeric_reproduction": {
+    "bitwise_response_hash_match": true,
+    "maximum_nominal_incumbent_relative_error": 4.388895256621174e-16,
+    "maximum_user_nominal_rate_error_bps_hz": 1.7763568394002505e-15,
+    "network_sum_rate_error_bps_hz": 1.1368683772161603e-13,
+    "new_response_hash": "661f2eaf758f3251d59ea9a289429af2a5e0f597c66b1053b7f27edc42def9c1",
+    "pass": true,
+    "prior_audit_response_hash": "661f2eaf758f3251d59ea9a289429af2a5e0f597c66b1053b7f27edc42def9c1"
+  },
+  "reference_job_id": "18658301"
+}

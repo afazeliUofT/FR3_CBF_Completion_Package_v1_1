@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-07-29T13:53:35.591572+00:00",
+  "cuda_version": "12.6",
+  "gpu_name": "NVIDIA H100 80GB HBM3",
+  "gpu_peak_allocated_bytes": 27849974272,
+  "gpu_total_memory_bytes": 85017624576,
+  "hostname": "g18.nibi.sharcnet",
+  "max_rss_kb": 2429528,
+  "platform": "Linux-5.14.0-570.44.1.el9_6.x86_64-x86_64-INTEL-R-_XEON-R-_PLATINUM_8570-with-glibc2.37",
+  "python": "3.12.4 (main, Jun 12 2024, 16:22:31) [GCC 13.3.0]",
+  "sionna_version": "2.0.1",
+  "torch_version": "2.9.1+computecanada"
+}

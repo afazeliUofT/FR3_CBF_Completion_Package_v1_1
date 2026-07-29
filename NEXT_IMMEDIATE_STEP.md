@@ -2,23 +2,26 @@
 
 ## Gate
 
-`INDEPENDENT_REVIEW_THEN_PREPARE_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT`
+`IMPLEMENT_LOCAL_STATIC_MYOPIC_AND_PREDICTIVE_CONTROLLERS`
 
 ## Work location
 
-Local WSL only for the present freeze and contract review. Do not submit a new
-Nibi seed yet.
+Local WSL. No new Nibi channel generation is needed.
 
 ## Required sequence
 
-1. Accept job 18658301 only as a one-seed software/physical-accounting gate.
-2. Preserve the immutable executed input and return hashes.
-3. Use the execution metadata overlay rather than editing the old bundle.
-4. Review `config/dynamic_safety_experiment_v1.yaml`.
-5. Review `config/controller_ready_full_topology_export_v1.yaml`.
-6. After independent review, prepare one Nibi H100 export using all 228 users
-   in one Sionna topology call.
-7. Export protected-tone amplitude components and coupling sufficient
-   statistics so controller experiments can run locally.
-8. Do not launch multiple channel seeds until the dynamic rate-limit
-   counterexample passes.
+1. Use the validated full controller dataset under
+   `data/real/full_topology_export_18696267_validated_v4`.
+2. Implement and test, under the same information, delay, update period and
+   slew limit:
+   - common-scale oracle reference;
+   - static nonuniform allocation;
+   - myopic utility-aware safety;
+   - virtual-queue baseline;
+   - predictive/CBF safety filter.
+3. Separate total-band and protected-band utility.
+4. Include user-tail and outage metrics, not only network sum rate.
+5. Construct the natural rate-limit counterexample around the steep coupling
+   rise found in the frozen pass.
+6. Do not launch a multi-seed campaign until the predictive method shows a
+   safety-utility advantage over fair baselines.

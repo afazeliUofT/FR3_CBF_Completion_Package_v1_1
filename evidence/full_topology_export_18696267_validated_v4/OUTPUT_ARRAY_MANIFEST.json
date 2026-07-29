@@ -1,0 +1,282 @@
+{
+  "arrays": {
+    "aggregate_allowance_w.npy": {
+      "bytes": 4824,
+      "dtype": "float64",
+      "sha256": "449b0827ad7bd7da090755c1c122c9702ad97817e2680305316a38d81b5dd815",
+      "shape": [
+        587
+      ]
+    },
+    "common_scale_reference.npy": {
+      "bytes": 4824,
+      "dtype": "float64",
+      "sha256": "a4723a4eedc2386d9053d1bfe00a64a54579db8c6e0287cdbd4a0ae6a1b8e1b6",
+      "shape": [
+        587
+      ]
+    },
+    "common_scale_user_rate.npy": {
+      "bytes": 1070816,
+      "dtype": "float64",
+      "sha256": "c8caa8691b52e7af883e25fc72be0d8bb6fa5367424aff7e3b4c1a770d8796d8",
+      "shape": [
+        587,
+        228
+      ]
+    },
+    "frequency_offsets_hz.npy": {
+      "bytes": 200,
+      "dtype": "float64",
+      "sha256": "6548c8529843ce058f93e9d8be9e910ac8e9fc79f0264627d55c77f9be21fc5d",
+      "shape": [
+        9
+      ]
+    },
+    "frequency_response.npy": {
+      "bytes": 119771264,
+      "dtype": "complex64",
+      "sha256": "d1ba79eb51141b8106b7d838e2b2b05eca239eb5f7cf2b6b1a68752cfc9ee526",
+      "shape": [
+        9,
+        228,
+        57,
+        128
+      ]
+    },
+    "frequency_weights.npy": {
+      "bytes": 200,
+      "dtype": "float64",
+      "sha256": "96d8113815a5895cc603b78fa3adf26f4711998f86d9d2c3bcf3c1594bb16493",
+      "shape": [
+        9
+      ]
+    },
+    "kappa_time_sector.npy": {
+      "bytes": 267800,
+      "dtype": "float64",
+      "sha256": "384204be7c5d1a408db080570e915aeb94119229301861115094df3c600dcce1",
+      "shape": [
+        587,
+        57
+      ]
+    },
+    "noise_power_by_frequency_w.npy": {
+      "bytes": 200,
+      "dtype": "float64",
+      "sha256": "8d94fb26a2a6f7660edd6f974042a506593d817735484ca4876c799080e9c220",
+      "shape": [
+        9
+      ]
+    },
+    "nominal_aggregate_interference_w.npy": {
+      "bytes": 4824,
+      "dtype": "float64",
+      "sha256": "0a32dce0d0f667cb50192bf2149655ac19c0828f1282d957e100d36501812a53",
+      "shape": [
+        587
+      ]
+    },
+    "nominal_amplitude_by_frequency.npy": {
+      "bytes": 3742976,
+      "dtype": "complex64",
+      "sha256": "0a70b608846549aba234cb9d9cd8c3529540f7b1e1cac0f41c44a69dd9c3a188",
+      "shape": [
+        9,
+        228,
+        57,
+        4
+      ]
+    },
+    "nominal_mode_leakage_w.npy": {
+      "bytes": 1040,
+      "dtype": "float64",
+      "sha256": "025d9a5e38b3e41db969cb74ad370a54d4920a6df78970508b83d90c69217c26",
+      "shape": [
+        57,
+        2
+      ]
+    },
+    "nominal_precoder_by_frequency.npy": {
+      "bytes": 2101376,
+      "dtype": "complex64",
+      "sha256": "178e00facddfd9c8ace7c662138962aec20bdf600b7a89f600b7f2110cefee06",
+      "shape": [
+        9,
+        57,
+        128,
+        4
+      ]
+    },
+    "nominal_precoder_power_w.npy": {
+      "bytes": 4232,
+      "dtype": "float64",
+      "sha256": "f3b4c50f81b8251534c7ab0effcfcd90a783bb1430c6c8ae681f67c16d0bc839",
+      "shape": [
+        9,
+        57
+      ]
+    },
+    "nominal_protected_rate_per_user.npy": {
+      "bytes": 1952,
+      "dtype": "float64",
+      "sha256": "fca39b46b6d00ec75f8ac29780af40f602d3755dafabc9eedf853b82805c9668",
+      "shape": [
+        228
+      ]
+    },
+    "nominal_total_weighted_rate_per_user.npy": {
+      "bytes": 1952,
+      "dtype": "float64",
+      "sha256": "0adf21464aaba14952780a87834819f5c723c8ec9798df9516621084984a6062",
+      "shape": [
+        228
+      ]
+    },
+    "nominal_user_desired_power_by_frequency_w.npy": {
+      "bytes": 16544,
+      "dtype": "float64",
+      "sha256": "b8766f8569353233304190984f9d64ee5d423079d9afad67902186ffcfc06484",
+      "shape": [
+        9,
+        228
+      ]
+    },
+    "nominal_user_interference_power_by_frequency_w.npy": {
+      "bytes": 16544,
+      "dtype": "float64",
+      "sha256": "5432b54298bad08527017bc236a7901047944ea38419bb8f778e97876fa85c39",
+      "shape": [
+        9,
+        228
+      ]
+    },
+    "nominal_user_rate_by_frequency.npy": {
+      "bytes": 16544,
+      "dtype": "float64",
+      "sha256": "4d5443c6f5bf6a9dfc3cf5bfd2149f61321aabe224921a553ea912033af9d185",
+      "shape": [
+        9,
+        228
+      ]
+    },
+    "nominal_user_sinr_by_frequency.npy": {
+      "bytes": 16544,
+      "dtype": "float64",
+      "sha256": "0d1d726750a30a326c13db23b29a561d1db7d54b82d5ca472aafc7fbb07325ea",
+      "shape": [
+        9,
+        228
+      ]
+    },
+    "other_frequency_weighted_rate_per_user.npy": {
+      "bytes": 1952,
+      "dtype": "float64",
+      "sha256": "2529540de59bdb53e319ed3061b895819a373e6f78687dea76679bf9de54f890",
+      "shape": [
+        228
+      ]
+    },
+    "protected_amp_perpendicular.npy": {
+      "bytes": 416000,
+      "dtype": "complex64",
+      "sha256": "aaf83ca7e243c077f607bc1e2e4d751073a89450b6212ad0bbfb7bfdb667296d",
+      "shape": [
+        228,
+        57,
+        4
+      ]
+    },
+    "protected_amp_pol1.npy": {
+      "bytes": 416000,
+      "dtype": "complex64",
+      "sha256": "ad8bb05effbeb3349cc27d80c566ff0709965d8a57762319174895c8e622e718",
+      "shape": [
+        228,
+        57,
+        4
+      ]
+    },
+    "protected_amp_pol2.npy": {
+      "bytes": 416000,
+      "dtype": "complex64",
+      "sha256": "2c14c566929874505710c66eff4c57fbd6a7d544632b85752bde91f3ba485acc",
+      "shape": [
+        228,
+        57,
+        4
+      ]
+    },
+    "protected_mode_coefficients.npy": {
+      "bytes": 3776,
+      "dtype": "complex64",
+      "sha256": "9e88629f9e76a27c970a323584b061301b14901170e1191cadb5848ec31438a4",
+      "shape": [
+        57,
+        2,
+        4
+      ]
+    },
+    "protected_steering_pol1.npy": {
+      "bytes": 58496,
+      "dtype": "complex64",
+      "sha256": "7dea519934a3df13dbf683011256ea6ff74aefefe7d4fed8ce6b7b9f96a56046",
+      "shape": [
+        57,
+        128
+      ]
+    },
+    "protected_steering_pol2.npy": {
+      "bytes": 58496,
+      "dtype": "complex64",
+      "sha256": "70c3512093910941001792704e74b7a36e2be5bcc8bc3ef4c6138b9223d50aa7",
+      "shape": [
+        57,
+        128
+      ]
+    },
+    "protected_time_s.npy": {
+      "bytes": 4824,
+      "dtype": "float64",
+      "sha256": "0b1462536305eab4ef59c814379c909b4b9a5f2ff0cccef6366a1973416553b5",
+      "shape": [
+        587
+      ]
+    },
+    "serving_bs_index.npy": {
+      "bytes": 1952,
+      "dtype": "int64",
+      "sha256": "d3cf88216b9292954ee5c20042f6273f4b63eff4067f0a9db8aeb92e5df5b8af",
+      "shape": [
+        228
+      ]
+    },
+    "serving_stream_index.npy": {
+      "bytes": 1952,
+      "dtype": "int64",
+      "sha256": "114a7d9f015da820d6906a7601a105db9e205ab914e66c386aba35de22ed2834",
+      "shape": [
+        228
+      ]
+    },
+    "transmit_power_by_frequency_w.npy": {
+      "bytes": 200,
+      "dtype": "float64",
+      "sha256": "b16202d46fe1415595ae34212fa053ebc427df1397002250af5780ffe799d206",
+      "shape": [
+        9
+      ]
+    }
+  },
+  "created_utc": "2026-07-29T13:53:35.572369+00:00",
+  "tables": {
+    "SECTOR_TOPOLOGY.csv": {
+      "bytes": 6097,
+      "sha256": "20e98d8b5ec92b85259c249c0974ffceb38a9488b48d556db7f98e28b61ed665"
+    },
+    "USER_TOPOLOGY.csv": {
+      "bytes": 30261,
+      "sha256": "6785c338f0d4a7c06195dc93ac106ac3562d613f078f9a0061d5a6cd300d040d"
+    }
+  }
+}

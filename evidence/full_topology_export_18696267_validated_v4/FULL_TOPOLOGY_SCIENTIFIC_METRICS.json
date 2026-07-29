@@ -1,0 +1,336 @@
+{
+  "claim_boundary": "CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_ONE_SEED_NOT_PAPER_RESULT",
+  "common_scale_reference": {
+    "nominal_network_sum_se_bps_hz": 546.3379124583655,
+    "nominal_total_band_jain_index": 0.6295540970621497,
+    "protected_band_network_retention_quantiles": {
+      "maximum": 0.931657998812717,
+      "median": 0.9313354494554922,
+      "minimum": 0.9301875202720783,
+      "p01": 0.9302080960147289,
+      "p05": 0.9303004071431156,
+      "p10": 0.9304413121513712,
+      "p25": 0.9308546439147267,
+      "p75": 0.9316579424333087,
+      "p90": 0.9316579424333087,
+      "p95": 0.9316579424333087,
+      "p99": 0.9316579424333087
+    },
+    "total_band_network_retention_quantiles": {
+      "maximum": 0.9931157940274098,
+      "median": 0.9930833030822679,
+      "minimum": 0.9929676702239479,
+      "p01": 0.9929697428534875,
+      "p05": 0.9929790415103946,
+      "p10": 0.9929932351114387,
+      "p25": 0.9930348707226956,
+      "p75": 0.9931157883482161,
+      "p90": 0.9931157883482161,
+      "p95": 0.9931157883482161,
+      "p99": 0.9931157883482161
+    },
+    "user_worst_protected_band_retention_quantiles": {
+      "maximum": 1.9338476414642665,
+      "median": 0.98792371496769,
+      "minimum": 0.0036147942801591846,
+      "p01": 0.128900866612634,
+      "p05": 0.566189998282471,
+      "p10": 0.7491405228940508,
+      "p25": 0.9148747945448327,
+      "p75": 1.0052285162629868,
+      "p90": 1.0537516092086907,
+      "p95": 1.1735794451663282,
+      "p99": 1.3724077256982687
+    },
+    "user_worst_total_band_retention_quantiles": {
+      "maximum": 1.0783114354139023,
+      "median": 0.9987660666067244,
+      "minimum": 0.8696453277785554,
+      "p01": 0.9189390827856572,
+      "p05": 0.9478323319019022,
+      "p10": 0.9700047403372838,
+      "p25": 0.9925311959295914,
+      "p75": 1.0005316486286708,
+      "p90": 1.0048223476169964,
+      "p95": 1.0155524472415054,
+      "p99": 1.0279522697696506
+    },
+    "worst_protected_band_user": {
+      "minimum_safe_protected_se_bps_hz": 0.009786809821861198,
+      "nominal_protected_se_bps_hz": 2.7074320316314697,
+      "retention": 0.0036147942801591846,
+      "user_id": "E3_SITE_17_SEC_3_UE_1"
+    },
+    "worst_time_total_band_jain_index": 0.629251871569167,
+    "worst_total_band_user": {
+      "minimum_safe_se_bps_hz": 0.025326430421481017,
+      "nominal_se_bps_hz": 0.029122711998206798,
+      "retention": 0.8696453277785554,
+      "user_id": "E3_SITE_05_SEC_1_UE_2"
+    }
+  },
+  "created_utc": "2026-07-29T21:57:09.651182+00:00",
+  "dimensions": {
+    "frequency_samples": 9,
+    "ports_per_bs": 128,
+    "protected_pass_samples": 587,
+    "sectors": 57,
+    "sites": 19,
+    "users": 228,
+    "users_per_sector": 4
+  },
+  "dynamic_geometry_screen": {
+    "boundary": "common-attenuation geometry-only screen; does not establish a practical predictive-controller utility gain",
+    "largest_one_second_required_attenuation_rise_db": 1.8554816876637048,
+    "status": "PASS_NATURAL_RATE_LIMIT_TRAP_EXISTS"
+  },
+  "environment": {
+    "created_utc": "2026-07-29T13:53:35.591572+00:00",
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "gpu_peak_allocated_bytes": 27849974272,
+    "gpu_total_memory_bytes": 85017624576,
+    "hostname": "g18.nibi.sharcnet",
+    "max_rss_kb": 2429528,
+    "platform": "Linux-5.14.0-570.44.1.el9_6.x86_64-x86_64-INTEL-R-_XEON-R-_PLATINUM_8570-with-glibc2.37",
+    "python": "3.12.4 (main, Jun 12 2024, 16:22:31) [GCC 13.3.0]",
+    "sionna_version": "2.0.1",
+    "torch_version": "2.9.1+computecanada"
+  },
+  "full_vs_chunked": {
+    "chunked_common_scale_minimum_network_retention": 0.9914915199226378,
+    "chunked_nominal_network_sum_se_bps_hz": 545.5243122823118,
+    "desired_power_ratio_quantiles": {
+      "max": 603.6608421547578,
+      "min": 0.0006027219258154478,
+      "p01": 0.00849789049576665,
+      "p05": 0.0324533875881771,
+      "p50": 0.9314026930828337,
+      "p95": 10.147918103434026,
+      "p99": 44.868125699615966
+    },
+    "full_common_scale_minimum_network_retention": 0.9929676702239479,
+    "full_nominal_network_sum_se_bps_hz": 546.3379124583655,
+    "interference_power_ratio_quantiles": {
+      "max": 3004.5872456790585,
+      "min": 0.0009595888997960144,
+      "p01": 0.004531996209513703,
+      "p05": 0.019772530595920525,
+      "p50": 0.8649964194412589,
+      "p95": 49.79384213705808,
+      "p99": 275.54348006124485
+    },
+    "interpretation": "Differences combine topology-generation mode, random-number mapping, and correlation structure; they are not attributed only to spatial correlation.",
+    "nominal_incumbent_db_difference_quantiles": {
+      "max": 0.6074057758768787,
+      "min": -1.951425170036341,
+      "p01": -1.942922246631144,
+      "p05": -1.8676600238891772,
+      "p50": -0.6323373364841229,
+      "p95": -0.2286278460725064,
+      "p99": 0.5424211617626019
+    },
+    "per_user_nominal_rate_correlation": 0.29287934678652244,
+    "per_user_nominal_rate_difference_quantiles_bps_hz": {
+      "max": 5.106234122812747,
+      "min": -7.515016612410546,
+      "p01": -6.201406231181696,
+      "p05": -3.589067897736095,
+      "p50": -0.08028703480958954,
+      "p95": 3.780167298261076,
+      "p99": 4.986315188872629
+    },
+    "relative_network_sum_difference": 0.001491409562755913,
+    "top10_dominant_sector_overlap_count": 8
+  },
+  "incumbent_challenge": {
+    "allowance_dbw": -133.45757490560675,
+    "nominal_aggregate_dbw_quantiles": {
+      "maximum": -86.61718363321623,
+      "median": -98.9419630392122,
+      "minimum": -100.61911054128252,
+      "p01": -100.61884394933764,
+      "p05": -100.61884394933764,
+      "p10": -100.61884394933764,
+      "p25": -100.61884394933764,
+      "p75": -95.62407922003476,
+      "p90": -91.18828852315346,
+      "p95": -88.9497844809811,
+      "p99": -87.09167634439112
+    },
+    "required_common_attenuation_db_quantiles": {
+      "maximum": 46.84039127239053,
+      "median": 34.51561186639456,
+      "minimum": 32.83846436432424,
+      "p01": 32.83873095626911,
+      "p05": 32.83873095626911,
+      "p10": 32.83873095626911,
+      "p25": 32.83873095626911,
+      "p75": 37.833495685572004,
+      "p90": 42.269286382453295,
+      "p95": 44.507790424625675,
+      "p99": 46.36589856121562
+    },
+    "worst_time_s": 114.0
+  },
+  "legacy_reproduction": {
+    "bitwise_response_hash_match": true,
+    "maximum_nominal_incumbent_relative_error": 4.388895256621174e-16,
+    "maximum_user_nominal_rate_error_bps_hz": 1.7763568394002505e-15,
+    "network_sum_rate_error_bps_hz": 1.1368683772161603e-13,
+    "new_response_hash": "661f2eaf758f3251d59ea9a289429af2a5e0f597c66b1053b7f27edc42def9c1",
+    "pass": true,
+    "prior_audit_response_hash": "661f2eaf758f3251d59ea9a289429af2a5e0f597c66b1053b7f27edc42def9c1"
+  },
+  "limitations": [
+    "one channel/topology seed and one protected pass",
+    "finite 19-site network without wraparound",
+    "8x8 dual-polarized fully digital array",
+    "nine frequency samples rather than the final OFDM grid",
+    "common-scale DLP remains an oracle reference rather than the proposed controller",
+    "full-versus-chunked differences are not attributed only to spatial correlation",
+    "paper-grade uncertainty, mobility, practical-array, and statistical gates remain open",
+    "the full versus chunked comparison cannot isolate correlation from random-number mapping",
+    "the geometry-only dynamic screen uses a perfect-lookahead preloaded reference",
+    "the static nonuniform opportunity screen is not utility-aware"
+  ],
+  "next_gate": "IMPLEMENT_LOCAL_STATIC_MYOPIC_AND_PREDICTIVE_CONTROLLERS",
+  "runtime_seconds": {
+    "full_processing": 0.5418231491930783,
+    "full_topology_channel_generation": 1.1587404259480536,
+    "legacy_chunked_reproduction": 1.276160294888541,
+    "total": 29.771351682022214
+  },
+  "sector_sparsity_at_worst_time": {
+    "interpretation_boundary": "common sector azimuths and the modelled earth-station placement may amplify sparsity; rotation and placement sensitivity remain mandatory",
+    "leading_sector_counts": {
+      "E3_SITE_10_SEC_1": 5,
+      "E3_SITE_16_SEC_1": 462,
+      "E3_SITE_18_SEC_1": 120
+    },
+    "top_10_share": 0.936586394418669,
+    "top_15_share": 0.9985853144161068,
+    "top_1_share": 0.3291087154312197,
+    "top_2_share": 0.4780052197370099,
+    "top_5_share": 0.7448568405459172
+  },
+  "source_provenance": {
+    "full_zip_sha256": "e9ac40e3839e9c5ff6e0fdc9a13145af988a9cfd1b2fbcb48368845e7b9aa42a",
+    "review_zip_sha256": "b1c2dd5866b1b39b7336e1adba1255b8374ddf10d9b8509e349e7802b5c7c1bf",
+    "source_export_status": "PASS",
+    "source_h100_job_id": "18696267",
+    "source_h100_state": "FAILED",
+    "validation_cpu_job_id": "18704028",
+    "validation_cpu_state": "COMPLETED"
+  },
+  "static_nonuniform_opportunity_screen": {
+    "common_protected_band_retention_quantiles": {
+      "maximum": 0.931657998812717,
+      "median": 0.9313354494554922,
+      "minimum": 0.9301875202720783,
+      "p01": 0.9302080960147289,
+      "p05": 0.9303004071431156,
+      "p10": 0.9304413121513712,
+      "p25": 0.9308546439147267,
+      "p75": 0.9316579424333087,
+      "p90": 0.9316579424333087,
+      "p95": 0.9316579424333087,
+      "p99": 0.9316579424333087
+    },
+    "common_total_band_retention_quantiles": {
+      "maximum": 0.9931157940274098,
+      "median": 0.9930833030822679,
+      "minimum": 0.9929676702239479,
+      "p01": 0.9929697428534875,
+      "p05": 0.9929790415103946,
+      "p10": 0.9929932351114387,
+      "p25": 0.9930348707226956,
+      "p75": 0.9931157883482161,
+      "p90": 0.9931157883482161,
+      "p95": 0.9931157883482161,
+      "p99": 0.9931157883482161
+    },
+    "common_user_worst_total_retention_quantiles": {
+      "maximum": 1.0783114354139023,
+      "median": 0.9987660666067244,
+      "minimum": 0.8696453277785554,
+      "p01": 0.9189390827856572,
+      "p05": 0.9478323319019022,
+      "p10": 0.9700047403372838,
+      "p25": 0.9925311959295914,
+      "p75": 1.0005316486286708,
+      "p90": 1.0048223476169964,
+      "p95": 1.0155524472415054,
+      "p99": 1.0279522697696506
+    },
+    "conclusion": "nonuniform actions improve aggregate/protected-band retention but can worsen the worst user; the next controller must be utility- and fairness-aware",
+    "full_mode_count_quantiles": {
+      "maximum": 76.0,
+      "median": 70.0,
+      "minimum": 39.0,
+      "p01": 39.0,
+      "p05": 42.3,
+      "p10": 47.0,
+      "p25": 60.0,
+      "p75": 76.0,
+      "p90": 76.0,
+      "p95": 76.0,
+      "p99": 76.0
+    },
+    "method": "preserve weakest received modes, partially use one boundary mode, null stronger modes; not utility-aware",
+    "screen_protected_band_retention_quantiles": {
+      "maximum": 0.9548994559252346,
+      "median": 0.9504855377920561,
+      "minimum": 0.9393071670688822,
+      "p01": 0.9393408147846467,
+      "p05": 0.9399429524489473,
+      "p10": 0.9413682545794385,
+      "p25": 0.9451370491527804,
+      "p75": 0.954396553211461,
+      "p90": 0.954396553211461,
+      "p95": 0.9544619086628092,
+      "p99": 0.9548723949786848
+    },
+    "screen_total_band_retention_quantiles": {
+      "maximum": 0.9954569455167733,
+      "median": 0.9950123240388088,
+      "minimum": 0.9938863077507369,
+      "p01": 0.9938896971423529,
+      "p05": 0.9939503514930139,
+      "p10": 0.9940939245998736,
+      "p25": 0.9944735616848364,
+      "p75": 0.9954062872713948,
+      "p90": 0.9954062872713948,
+      "p95": 0.9954128706371247,
+      "p99": 0.9954542196216192
+    },
+    "screen_user_worst_total_retention_quantiles": {
+      "maximum": 1.078962071158053,
+      "median": 0.9996093697935802,
+      "minimum": 0.8574905207107757,
+      "p01": 0.9207262787606122,
+      "p05": 0.9561625669600886,
+      "p10": 0.9730407660958262,
+      "p25": 0.9938957582459387,
+      "p75": 1.000264469456884,
+      "p90": 1.0018618542245676,
+      "p95": 1.004728024913668,
+      "p99": 1.0264090447445258
+    },
+    "zero_mode_count_quantiles": {
+      "maximum": 74.0,
+      "median": 43.0,
+      "minimum": 37.0,
+      "p01": 37.0,
+      "p05": 37.0,
+      "p10": 37.0,
+      "p25": 37.0,
+      "p75": 53.0,
+      "p90": 66.0,
+      "p95": 70.69999999999993,
+      "p99": 74.0
+    }
+  },
+  "status": "PASS_VALIDATED_FULL_TOPOLOGY_EXPORT_INGESTION",
+  "validation_status": "PASS_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_VALIDATION_V4"
+}

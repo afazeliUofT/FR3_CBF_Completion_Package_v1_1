@@ -1,0 +1,125 @@
+{
+  "chunked_reference": {
+    "elapsed_seconds": 1.276160294888541,
+    "expected_frequency_response_chunk_stream_sha256": "661f2eaf758f3251d59ea9a289429af2a5e0f597c66b1053b7f27edc42def9c1",
+    "frequency_response_chunk_stream_sha256": "661f2eaf758f3251d59ea9a289429af2a5e0f597c66b1053b7f27edc42def9c1",
+    "mode": "legacy_57_four_user_chunks"
+  },
+  "claim_boundary": "CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_NOT_PAPER_RESULT",
+  "comparison": {
+    "full_vs_chunked": {
+      "chunked_common_scale_minimum_network_retention": 0.9914915199226378,
+      "chunked_nominal_network_sum_se_bps_hz": 545.5243122823118,
+      "desired_power_ratio_quantiles": {
+        "max": 603.6608421547578,
+        "min": 0.0006027219258154478,
+        "p01": 0.00849789049576665,
+        "p05": 0.0324533875881771,
+        "p50": 0.9314026930828337,
+        "p95": 10.147918103434026,
+        "p99": 44.868125699615966
+      },
+      "full_common_scale_minimum_network_retention": 0.9929676702239479,
+      "full_nominal_network_sum_se_bps_hz": 546.3379124583655,
+      "interference_power_ratio_quantiles": {
+        "max": 3004.5872456790585,
+        "min": 0.0009595888997960144,
+        "p01": 0.004531996209513703,
+        "p05": 0.019772530595920525,
+        "p50": 0.8649964194412589,
+        "p95": 49.79384213705808,
+        "p99": 275.54348006124485
+      },
+      "interpretation": "Differences combine topology-generation mode, random-number mapping, and correlation structure; they are not attributed only to spatial correlation.",
+      "nominal_incumbent_db_difference_quantiles": {
+        "max": 0.6074057758768787,
+        "min": -1.951425170036341,
+        "p01": -1.942922246631144,
+        "p05": -1.8676600238891772,
+        "p50": -0.6323373364841229,
+        "p95": -0.2286278460725064,
+        "p99": 0.5424211617626019
+      },
+      "per_user_nominal_rate_correlation": 0.29287934678652244,
+      "per_user_nominal_rate_difference_quantiles_bps_hz": {
+        "max": 5.106234122812747,
+        "min": -7.515016612410546,
+        "p01": -6.201406231181696,
+        "p05": -3.589067897736095,
+        "p50": -0.08028703480958954,
+        "p95": 3.780167298261076,
+        "p99": 4.986315188872629
+      },
+      "relative_network_sum_difference": 0.001491409562755913,
+      "top10_dominant_sector_overlap_count": 8
+    },
+    "legacy_numeric_reproduction": {
+      "bitwise_response_hash_match": true,
+      "maximum_nominal_incumbent_relative_error": 4.388895256621174e-16,
+      "maximum_user_nominal_rate_error_bps_hz": 1.7763568394002505e-15,
+      "network_sum_rate_error_bps_hz": 1.1368683772161603e-13,
+      "new_response_hash": "661f2eaf758f3251d59ea9a289429af2a5e0f597c66b1053b7f27edc42def9c1",
+      "pass": true,
+      "prior_audit_response_hash": "661f2eaf758f3251d59ea9a289429af2a5e0f597c66b1053b7f27edc42def9c1"
+    },
+    "reference_job_id": "18658301"
+  },
+  "created_utc": "2026-07-29T13:53:35.646190+00:00",
+  "dimensions": {
+    "frequency_samples": 9,
+    "ports_per_bs": 128,
+    "protected_pass_samples": 587,
+    "sectors": 57,
+    "sites": 19,
+    "users": 228,
+    "users_per_sector": 4
+  },
+  "full_topology": {
+    "coefficient_shape": [
+      1,
+      228,
+      1,
+      57,
+      128,
+      24,
+      1
+    ],
+    "coefficients_sha256": "f1b25e940cc68f98c8595d38953234c1597b38b5af69867f6ee1a2ed934070a9",
+    "delay_shape": [
+      1,
+      228,
+      57,
+      24
+    ],
+    "delays_sha256": "9ee7618201d2cb5e2a3a144546dd50ec27a10f1d7c8928f448cf73955580d0cd",
+    "elapsed_seconds": 1.1587404259480536,
+    "frequency_response_sha256": "c72a1952be6e9e0dc279503a6138a4d2eb490562d10b09323ee6210beab1c038",
+    "gpu_peak_allocated_gib": 25.937309741973877,
+    "mode": "one_topology_call_all_228_users",
+    "response_shape": [
+      228,
+      57,
+      128,
+      9
+    ]
+  },
+  "limitations": [
+    "one channel/topology seed and one protected pass",
+    "finite 19-site network without wraparound",
+    "8x8 dual-polarized fully digital array",
+    "nine frequency samples rather than the final OFDM grid",
+    "common-scale DLP remains an oracle reference rather than the proposed controller",
+    "full-versus-chunked differences are not attributed only to spatial correlation",
+    "paper-grade uncertainty, mobility, practical-array, and statistical gates remain open"
+  ],
+  "next_gate": "INDEPENDENT_REVIEW_THEN_LOCAL_DYNAMIC_CONTROLLER_IMPLEMENTATION",
+  "output_manifest": "OUTPUT_ARRAY_MANIFEST.json",
+  "protected_decomposition_max_error": 1.0328396471415147e-10,
+  "runtime_seconds": {
+    "full_processing": 0.5418231491930783,
+    "full_topology_channel_generation": 1.1587404259480536,
+    "legacy_chunked_reproduction": 1.276160294888541,
+    "total": 29.771351682022214
+  },
+  "status": "PASS_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_REVIEW_REQUIRED"
+}

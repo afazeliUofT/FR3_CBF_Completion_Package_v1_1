@@ -1,3 +1,26 @@
+<!-- BEGIN VALIDATED FULL-TOPOLOGY EXPORT -->
+## Validated controller-ready full-topology export
+
+- Source H100 job: `18696267`
+- Corrected CPU validation job: `18704028`
+- Full topology: 228 users, 57 sectors, 128 ports, 9 frequencies
+- Full response shape: `[228,57,128,9]`
+- V4 validation: `PASS`
+- Legacy job-18658301 reproduction: bitwise channel hash match
+- Minimum total-band common-scale retention: `99.296767%`
+- Minimum protected-band common-scale retention: `93.018752%`
+- Claim boundary: `CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_ONE_SEED_NOT_PAPER_RESULT`
+
+The full-versus-chunked network sum differs by only about 0.15%, but the
+per-user nominal-rate correlation is only about 0.293. This confirms that the
+full topology is necessary for user-level controller evaluation.
+
+The exported pass contains a natural delay/slew safety trap, but no practical
+predictive controller has yet been demonstrated.
+
+**Next gate:** `IMPLEMENT_LOCAL_STATIC_MYOPIC_AND_PREDICTIVE_CONTROLLERS`
+<!-- END VALIDATED FULL-TOPOLOGY EXPORT -->
+
 # Current Project Status
 
 ## Status date

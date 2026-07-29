@@ -1,0 +1,24 @@
+Validated full-topology ingestion and dynamic-readiness drop-in v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Stage-owned focused tests: PASS
+- Full ZIP SHA-256 and integrity: PASS
+- Compact ZIP SHA-256 and integrity: PASS
+- Full/review shared-member byte identity: PASS
+- Array-manifest hashes/shapes/dtypes/finiteness: PASS
+- V4 validation status and Slurm provenance: PASS
+- Core ingestion dry run using the uploaded full and compact ZIPs: PASS
+
+Scientific outputs
+- total-band and protected-band network retention
+- user worst-pass total/protected retention quantiles
+- full-versus-chunked comparison
+- sector sparsity
+- required attenuation trajectory
+- delay/slew myopic versus perfect-lookahead geometry screen
+- nonutility-aware nonuniform-action opportunity screen
+
+Claim boundary
+CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_ONE_SEED_NOT_PAPER_RESULT

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "purpose": "Ingest, independently analyze, and freeze the validated full-228-user controller-ready export from source H100 job 18696267 and CPU validation job 18704028.",
+  "claim_boundary": "CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_ONE_SEED_NOT_PAPER_RESULT",
+  "expected": {
+    "branch": "e3-first-sector-p452",
+    "required_ancestor_commit": "30800585889d7d8ea127e00dde7de06d9762cce8",
+    "source_h100_job_id": "18696267",
+    "source_h100_job_name": "fr3-fulltopo-export-v1",
+    "source_h100_job_state": "FAILED",
+    "source_h100_exit_code": "1:0",
+    "source_export_marker": "CONTROLLER-READY FULL-TOPOLOGY EXPORT: PASS",
+    "validation_cpu_job_id": "18704028",
+    "validation_cpu_job_name": "fr3-fulltopo-val-v4",
+    "validation_cpu_job_state": "COMPLETED",
+    "validation_cpu_exit_code": "0:0",
+    "validation_status": "PASS_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_VALIDATION_V4",
+    "full_zip_name": "FR3_FULL_TOPOLOGY_EXPORT_RETURN_18696267_VALIDATED_v4.zip",
+    "full_zip_sha256": "e9ac40e3839e9c5ff6e0fdc9a13145af988a9cfd1b2fbcb48368845e7b9aa42a",
+    "review_zip_name": "FR3_FULL_TOPOLOGY_EXPORT_REVIEW_18696267_VALIDATED_v4.zip",
+    "review_zip_sha256": "b1c2dd5866b1b39b7336e1adba1255b8374ddf10d9b8509e349e7802b5c7c1bf",
+    "sites": 19,
+    "sectors": 57,
+    "users": 228,
+    "users_per_sector": 4,
+    "ports_per_bs": 128,
+    "frequency_samples": 9,
+    "protected_pass_samples": 587
+  },
+  "paths": {
+    "local_data_dir": "data/real/full_topology_export_18696267_validated_v4",
+    "evidence_dir": "evidence/full_topology_export_18696267_validated_v4",
+    "results_dir": "results/full_topology_dynamic_readiness_v1",
+    "review_bundle": "evidence/full_topology_export_18696267_validated_v4/FR3_FULL_TOPOLOGY_DYNAMIC_READINESS_REVIEW_v1.zip"
+  },
+  "dynamic_screen": {
+    "update_interval_s": [1, 5, 10],
+    "message_delay_intervals": [0, 1, 2],
+    "slew_db_per_update": [1, 3, 6]
+  },
+  "next_gate": "IMPLEMENT_LOCAL_STATIC_MYOPIC_AND_PREDICTIVE_CONTROLLERS"
+}

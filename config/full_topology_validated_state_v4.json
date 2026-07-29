@@ -1,0 +1,14 @@
+{
+  "compact_review_sha256": "b1c2dd5866b1b39b7336e1adba1255b8374ddf10d9b8509e349e7802b5c7c1bf",
+  "created_utc": "2026-07-29T21:57:10.133625+00:00",
+  "dynamic_controller_proven": false,
+  "full_return_sha256": "e9ac40e3839e9c5ff6e0fdc9a13145af988a9cfd1b2fbcb48368845e7b9aa42a",
+  "next_gate": "IMPLEMENT_LOCAL_STATIC_MYOPIC_AND_PREDICTIVE_CONTROLLERS",
+  "paper_result": false,
+  "schema_version": 1,
+  "source_h100_job_id": "18696267",
+  "source_h100_job_state": "FAILED_AFTER_EXPORT_DUE_TO_SUPERSEDED_VALIDATOR",
+  "status": "PASS_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_ONE_SEED",
+  "validation_cpu_job_id": "18704028",
+  "validation_cpu_job_state": "COMPLETED"
+}
