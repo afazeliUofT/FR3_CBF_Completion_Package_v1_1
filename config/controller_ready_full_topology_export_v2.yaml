@@ -1,0 +1,211 @@
+schema_version: 2
+name: Controller-ready full-topology Sionna export
+claim_boundary: CONTROLLER_READY_EXPORT_SPEC_NOT_EXECUTED
+
+primary_generation:
+  scenario: UMa
+  carrier_frequency_hz: 8150000000
+  sectors: 57
+  users_per_sector: 4
+  users: 228
+  bs_ports: 128
+  ut_ports: 1
+  frequency_samples: 9
+  protected_frequency_index: 4
+  required_mode: one Sionna topology call containing all 228 users
+  reason: jointly generate the static-snapshot cross-user and cross-sector large-scale channel state supported by Sionna
+  target_cluster: Nibi H100 80 GB
+  paper_ready_if_passed: false
+  next_boundary: controller platform export; dynamic, robustness, and statistical gates remain
+
+fallback:
+  diagnostic_only:
+    - site chunks with 12 users and all 57 BS sectors
+    - larger spatial groups whose membership and correlation boundary are recorded
+  forbidden_as_primary_paper_platform:
+    - 57 independent four-user sector chunks
+  rule: never silently fall back; emit a scientific stop or explicit diagnostic-only status
+
+important_interpretation:
+  full_vs_chunked_difference: combines topology-generation mode, random-number mapping, and correlation structure
+  prohibited_claim: do not attribute every full-versus-chunked difference only to spatial correlation
+
+frozen_inputs:
+  - user and sector topology with exact IDs
+  - serving BS and local stream index
+  - indoor state
+  - exact Sionna port ordering
+  - exact local incumbent direction
+  - P.452 static sector accounting
+  - 587-sample earth-station gain trajectory
+  - frequency offsets and weights
+  - transmit power and thermal-noise assumptions
+  - random seeds
+  - software versions and source hashes
+  - immutable job-18658301 reference evidence
+
+required_exports:
+  tables:
+    USER_TOPOLOGY.csv:
+      rows: 228
+      required_columns:
+        - user_id
+        - serving_sector_id
+        - serving_bs_index
+        - local_stream_index
+        - x_m
+        - y_m
+        - z_m
+        - indoor
+    SECTOR_TOPOLOGY.csv:
+      rows: 57
+      required_columns:
+        - sector_id
+        - site_id
+        - bs_index
+        - x_m
+        - y_m
+        - z_m
+        - yaw_rad
+        - pitch_rad
+        - roll_rad
+  arrays:
+    frequency_response.npy:
+      shape: [9, 228, 57, 128]
+      dtype: complex64
+      purpose: recompute practical local RZF and inter-cell interference for arbitrary local traffic masks
+    serving_bs_index.npy:
+      shape: [228]
+      dtype: int64
+    serving_stream_index.npy:
+      shape: [228]
+      dtype: int64
+    frequency_offsets_hz.npy:
+      shape: [9]
+      dtype: float64
+    frequency_weights.npy:
+      shape: [9]
+      dtype: float64
+    transmit_power_by_frequency_w.npy:
+      shape: [9]
+      dtype: float64
+    noise_power_by_frequency_w.npy:
+      shape: [9]
+      dtype: float64
+    nominal_precoder_by_frequency.npy:
+      shape: [9, 57, 128, 4]
+      dtype: complex64
+    nominal_precoder_power_w.npy:
+      shape: [9, 57]
+      dtype: float64
+    nominal_amplitude_by_frequency.npy:
+      shape: [9, 228, 57, 4]
+      dtype: complex64
+    nominal_user_desired_power_by_frequency_w.npy:
+      shape: [9, 228]
+      dtype: float64
+    nominal_user_interference_power_by_frequency_w.npy:
+      shape: [9, 228]
+      dtype: float64
+    nominal_user_sinr_by_frequency.npy:
+      shape: [9, 228]
+      dtype: float64
+    nominal_user_rate_by_frequency.npy:
+      shape: [9, 228]
+      dtype: float64
+    nominal_total_weighted_rate_per_user.npy:
+      shape: [228]
+      dtype: float64
+    other_frequency_weighted_rate_per_user.npy:
+      shape: [228]
+      dtype: float64
+      semantics: sum over all non-protected frequencies of weight_f times log2(1+SINR_f)
+    nominal_protected_rate_per_user.npy:
+      shape: [228]
+      dtype: float64
+      semantics: unweighted log2(1+SINR) on the protected frequency sample
+    protected_amp_perpendicular.npy:
+      shape: [228, 57, 4]
+      dtype: complex64_or_complex128
+    protected_amp_pol1.npy:
+      shape: [228, 57, 4]
+      dtype: complex64_or_complex128
+    protected_amp_pol2.npy:
+      shape: [228, 57, 4]
+      dtype: complex64_or_complex128
+    protected_steering_pol1.npy:
+      shape: [57, 128]
+      dtype: complex64
+    protected_steering_pol2.npy:
+      shape: [57, 128]
+      dtype: complex64
+    protected_mode_coefficients.npy:
+      shape: [57, 2, 4]
+      dtype: complex64_or_complex128
+    nominal_mode_leakage_w.npy:
+      shape: [57, 2]
+      dtype: float64
+    kappa_time_sector.npy:
+      shape: [587, 57]
+      dtype: float64
+    protected_time_s.npy:
+      shape: [587]
+      dtype: float64
+    aggregate_allowance_w.npy:
+      shape: [587]
+      dtype: float64
+    nominal_aggregate_interference_w.npy:
+      shape: [587]
+      dtype: float64
+    common_scale_reference.npy:
+      shape: [587]
+      dtype: float64
+    common_scale_user_rate.npy:
+      shape: [587, 228]
+      dtype: float64
+
+local_controller_identities:
+  safe_protected_amplitude: A_perp + s_b1*A_pol1 + s_b2*A_pol2
+  amplitude_scale_from_db: s_bm = 10^(-q_bm_db/20)
+  total_rate: other_frequency_weighted_rate + protected_weight*protected_rate
+  traffic_change: recompute local RZF from frequency_response.npy and serving indices
+
+required_validation:
+  - exact shapes, dtypes, and finite values
+  - frequency weights sum to one
+  - four users per serving sector
+  - nominal rates reconstructed from nominal amplitudes
+  - protected decomposition reconstructs nominal protected amplitude
+  - nominal mode leakage reconstructed from exported mode coefficients
+  - kappa and mode leakage reconstruct nominal aggregate incumbent interference
+  - common-scale rates reconstructed from exported protected components
+  - local RZF power normalization
+  - fingerprints for every file
+  - complete environment and Slurm provenance
+  - no hidden topology fallback
+  - numerical reproduction of job 18658301 chunked reference before comparison
+
+comparison_to_chunked_gate:
+  reference_job_id: 18658301
+  reproduce_legacy_mode:
+    - rerun the exact 57 four-user reset_topology sequence
+    - compare numerical rates and incumbent trajectory to the immutable reference
+    - record but do not require bitwise equality across GPU nodes
+  required_comparisons:
+    - per-user nominal rate distribution
+    - network sum rate
+    - desired-power distribution
+    - inter-cell interference distribution
+    - nominal aggregate incumbent interference
+    - dominant-sector ordering
+    - common-scale DLP utility cost
+  interpretation: differences measure combined topology-generation-mode, random-number-mapping, and correlation effects
+
+runtime_outputs:
+  - full-topology channel generation seconds
+  - chunked-reference reproduction seconds
+  - local RZF seconds
+  - export and validation seconds
+  - peak GPU allocated memory
+  - maximum host RSS
+  - output bytes

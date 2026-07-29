@@ -1,0 +1,23 @@
+Controller-ready full-topology export preparation v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused tests: PASS
+- Bundle ZIP integrity: PASS
+- Exact job-18658301 review/input/return hash lineage: enforced
+- Hidden four-user fallback in the primary full-topology source: prohibited
+
+Scientific additions over the v1 export specification
+- full frequency-response export for traffic/load changes
+- transmit-power and noise arrays
+- nominal precoders and amplitudes
+- exact local steering vectors and mode coefficients
+- protected-subband and total-band rate separation
+- legacy chunked numerical reproduction before comparison
+- full-versus-chunked interpretation does not attribute all differences only to correlation
+
+Claim boundary
+CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_PREPARATION_NOT_EXECUTED
+- Stage-owned Python parsing only; repository `.venv` is excluded
+- Big5/non-UTF-8 virtual-environment regression fixture: PASS

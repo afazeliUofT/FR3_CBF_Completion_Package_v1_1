@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "purpose": "Prepare and independently review a Nibi H100 package that generates all 228 users in one Sionna topology call and exports controller-ready channel and incumbent-safety sufficient statistics.",
+  "claim_boundary": "CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_PREPARATION_NOT_EXECUTED",
+  "expected": {
+    "branch": "e3-first-sector-p452",
+    "required_ancestor_commit": "11b705b684461fa23e279dc3f3e57557b8488849",
+    "review_zip_name": "FR3_NIBI_18658301_REVIEW_UPLOAD.zip",
+    "review_zip_sha256": "8981873eff57575e40d12df40b845f781c4863de3168edc27d1473dad3d4f10e",
+    "executed_input_bundle_sha256": "9be0d1a0eb58c4764871d92e95b84f8e85c18818257d08522beed83d67573144",
+    "return_bundle_sha256": "05e49566fc9a7dcef7279ff6324e46d35ceb4fc457ebccea53410ccf3706589c",
+    "reference_job_id": "18658301",
+    "sites": 19,
+    "sectors": 57,
+    "users": 228,
+    "users_per_sector": 4,
+    "ports_per_bs": 128,
+    "frequency_samples": 9,
+    "protected_pass_samples": 587
+  },
+  "paths": {
+    "work_dir": "data/real/controller_ready_full_topology_export_prep",
+    "upload_dir": "results/controller_ready_full_topology_export_prep/upload",
+    "evidence_dir": "evidence/controller_ready_full_topology_export_prep"
+  },
+  "next_gate": "INDEPENDENT_REVIEW_THEN_RUN_SINGLE_NIBI_FULL_TOPOLOGY_EXPORT"
+}
