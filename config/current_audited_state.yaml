@@ -1,24 +1,34 @@
-schema_version: 6
-as_of_date: '2026-07-27'
+schema_version: 7
+as_of_date: '2026-07-29'
 main_method: DLP_RZF
-sionna:
-  version: 2.0.1
-  torch_base_version: 2.9.1
-  cpu_qualification: passed
+claim_boundary: ONE_SEED_SOFTWARE_AND_PHYSICAL_ACCOUNTING_GATE_NOT_PAPER_RESULT
+foundation:
+  propagation_and_incumbent: passed_nonpaper
+  sionna_cpu_qualification: passed_nonpaper
   custom_57_sector_adapter: passed_nonpaper
+  exact_local_frame_steering: passed
   dual_pol_port_order: passed
-standards:
-  reference: ETSI_TR_138_901_V19_4_0
-  used_subset_mapping: USED_SUBSET_READY_FOR_NONPAPER_GPU_PILOT_WITH_RELEASE19_GAPS
-  full_v19_4_certification: false
-  release19_delta_sensitivities: open
-nibi_gpu_pilot:
-  status: prepared_not_executed
+nibi_one_seed_gate:
+  status: PASS_ONE_SEED_SOFTWARE_AND_PHYSICAL_ACCOUNTING_GATE
+  job_id: '18658301'
+  job_name: fr3-dlp-nibi-proj-v6
+  gpu: NVIDIA_H100_80GB_HBM3
   sites: 19
   sectors: 57
-  users_per_sector: 4
   users: 228
+  users_per_sector: 4
   ports_per_bs: 128
   frequency_samples: 9
-  bundle_sha256: a6ad7c3e202b57ff002b330b1d2c4e0f5b58a90b10fb7e64d6ae86c7069bef69
-next_gate: INDEPENDENT_REVIEW_THEN_RUN_NIBI_ONE_SEED_GPU_PILOT
+  protected_pass_samples: 587
+  local_budget_violations: 0
+  power_increase_violations: 0
+  minimum_network_rate_retention: 0.9914915178726954
+  input_bundle_sha256: 9be0d1a0eb58c4764871d92e95b84f8e85c18818257d08522beed83d67573144
+  return_bundle_sha256: 05e49566fc9a7dcef7279ff6324e46d35ceb4fc457ebccea53410ccf3706589c
+limitations:
+  common_scale_oracle: true
+  delayed_rate_limited_controller: open
+  full_topology_cross_sector_correlation: open
+  uncertainty_calibration: open
+  statistical_campaign: open
+next_gate: INDEPENDENT_REVIEW_THEN_PREPARE_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT

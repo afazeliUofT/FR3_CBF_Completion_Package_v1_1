@@ -1,0 +1,92 @@
+{
+  "accounting": {
+    "local_budget_violation_count": 0,
+    "maximum_budget_sum_reconstruction_error_w": 1.262177448353619e-29,
+    "maximum_safe_minus_allowance_w": 1.8238464128709793e-27,
+    "maximum_safe_rate_sum_reconstruction_error_bps_hz": 2.2737367544323206e-13,
+    "maximum_sector_aggregate_reconstruction_error_w": 1.262177448353619e-29,
+    "power_increase_violation_count": 0
+  },
+  "claim_boundary": "ONE_SEED_SOFTWARE_AND_PHYSICAL_ACCOUNTING_GATE_NOT_PAPER_RESULT",
+  "common_scale_reference": {
+    "analytical_status": "DEGENERATE_COMMON_ORACLE_SCALE_NOT_UTILITY_AWARE_ALLOCATION",
+    "maximum_mode_scale_spread_at_fixed_time": 1.9518867300227782e-08,
+    "median_mode_scale_spread_at_fixed_time": 1.5168069300575127e-08
+  },
+  "dimensions": {
+    "frequency_samples": 9,
+    "ports_per_bs": 128,
+    "protected_pass_samples": 587,
+    "sector_time_rows": 33459,
+    "sectors": 57,
+    "sites": 19,
+    "users": 228,
+    "users_per_sector": 4
+  },
+  "environment": {
+    "created_utc": "2026-07-28T20:24:03.240295+00:00",
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "gpu_peak_allocated_bytes": 641288192,
+    "gpu_total_memory_bytes": 85017624576,
+    "hostname": "g15.nibi.sharcnet",
+    "max_rss_kb": 1758944,
+    "platform": "Linux-5.14.0-570.44.1.el9_6.x86_64-x86_64-INTEL-R-_XEON-R-_PLATINUM_8570-with-glibc2.37",
+    "python": "3.12.4 (main, Jun 12 2024, 16:22:31) [GCC 13.3.0]",
+    "sionna_version": "2.0.1",
+    "torch_version": "2.9.1+computecanada"
+  },
+  "incumbent_challenge": {
+    "allowance_dbw_per_10mhz": -133.45757490560675,
+    "linear_reserve_fraction": 0.09999999999999998,
+    "nominal_aggregate_max_dbw_per_10mhz": -84.66575846317988,
+    "nominal_aggregate_min_dbw_per_10mhz": -100.08154770182145,
+    "required_suppression_max_db": 48.791816442426864,
+    "required_suppression_min_db": 33.3760272037853,
+    "reserve_db": 0.4575749056067512
+  },
+  "job": {
+    "exit_code": "0:0",
+    "input_bundle_sha256": "9be0d1a0eb58c4764871d92e95b84f8e85c18818257d08522beed83d67573144",
+    "job_id": "18658301",
+    "job_name": "fr3-dlp-nibi-proj-v6",
+    "return_bundle_sha256": "05e49566fc9a7dcef7279ff6324e46d35ceb4fc457ebccea53410ccf3706589c",
+    "review_zip_sha256": "8981873eff57575e40d12df40b845f781c4863de3168edc27d1473dad3d4f10e",
+    "slurm_state": "COMPLETED"
+  },
+  "limitations": [
+    "one channel and topology seed",
+    "one protected pass",
+    "finite network without wraparound",
+    "eight-by-eight dual-polarized fully digital pilot array",
+    "nine frequency samples",
+    "four-user sector chunks do not preserve cross-sector large-scale correlation",
+    "only the protected ten-megahertz frequency sample is modified by DLP",
+    "instantaneous proportional budgets reduce analytically to one common scale",
+    "no delayed or rate-limited controller",
+    "ten-percent linear reserve is not uncertainty-calibrated"
+  ],
+  "network_utility": {
+    "maximum_retention": 0.9916411557365236,
+    "median_retention": 0.9916009121607784,
+    "minimum_retention": 0.9914915178726954,
+    "nominal_sum_se_bps_hz": 545.5243122823117
+  },
+  "next_gate": "INDEPENDENT_REVIEW_THEN_PREPARE_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT",
+  "runtime_seconds": {
+    "channel_generation": 9.790195198031142,
+    "dlp_pass_sweep": 28.563651480013505,
+    "local_rzf": 1.0441615590825677,
+    "total": 159.13411139696836
+  },
+  "status": "PASS_ONE_SEED_SOFTWARE_AND_PHYSICAL_ACCOUNTING_GATE",
+  "user_utility": {
+    "minimum_worst_pass_retention": 0.8497200677124273,
+    "nominal_jain_index": 0.6224384830650432,
+    "nominal_users_below_0_1_bps_hz": 14,
+    "safe_users_below_0_1_bps_hz": 16,
+    "users_decreased_at_worst_pass": 146,
+    "users_improved_at_worst_pass": 82,
+    "worst_pass_safe_jain_index": 0.6246962228021996
+  }
+}

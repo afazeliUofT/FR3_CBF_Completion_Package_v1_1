@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-07-29T01:00:10.002100+00:00",
+  "execution_overlay": {
+    "channel_chunk_count": 57,
+    "channel_user_chunk_size": 4,
+    "chunk_reason": "four co-scheduled users per serving sector with reset_topology before every set_topology",
+    "claim_boundary": "ONE_SEED_SOFTWARE_AND_PHYSICAL_ACCOUNTING_GATE_NOT_PAPER_RESULT",
+    "cluster": "nibi",
+    "executed_input_bundle_sha256": "9be0d1a0eb58c4764871d92e95b84f8e85c18818257d08522beed83d67573144",
+    "exit_code": "0:0",
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "job_id": "18658301",
+    "job_name": "fr3-dlp-nibi-proj-v6",
+    "return_bundle_sha256": "05e49566fc9a7dcef7279ff6324e46d35ceb4fc457ebccea53410ccf3706589c",
+    "slurm_state": "COMPLETED"
+  },
+  "original_metadata": {
+    "channel_generation": {
+      "cross_chunk_spatial_consistency_claimed": false,
+      "reason": "fit one Narval A100 40GB",
+      "user_chunk_size": 8
+    },
+    "claim_boundary": "ONE_SEED_NARVAL_GPU_PILOT_PACKAGE_NOT_PAPER_RESULT",
+    "cluster": "nibi",
+    "created_utc": "2026-07-27T23:29:35.705559+00:00",
+    "dimensions": {
+      "ports_per_bs": 128,
+      "sectors": 57,
+      "sites": 19,
+      "users": 228,
+      "users_per_sector": 4
+    },
+    "gpu": "H100-80GB",
+    "input_sha256": {
+      "input/SIONNA_8X8_DUAL_PORT_ORDER.csv": "f9e42eb1002068b7172f2cd873f5ad67930af2d9b2481328094c022d1ef69a02",
+      "input/SIONNA_DUAL_POL_PORT_ORDER_AUDIT.json": "991eac235c93fa5660dc8182eddf4d4f681416860c98a25dbdff5352afc64bdb",
+      "input/SIONNA_INCUMBENT_LOCAL_FRAME.csv": "5b1b6d642e81d92f146cb6f0f973126524cb487fac140edb3cdbbf15059cc214",
+      "input/SIONNA_INCUMBENT_LOCAL_FRAME_AUDIT.json": "d67982417fb66ea5980d6f21e735e85989bebbe710a003b72b15392d035bdf64",
+      "input/TR38901_USED_SUBSET_MAPPING_DECISION.json": "2aa67ca92e96077a242d15b1c95f07eb327a4aedb273507ad20200b6bb51f528",
+      "input/TR38901_V19_4_USED_SUBSET_MAPPING.csv": "4a01daf0084c03b6e6d648dd9e80af3be7f3f48ac6ebc298be7d8db388c80c3c",
+      "input/bs_sectors.csv": "ce004abb263864812e59b8cc8c76f9c0d7881f61732d19cad63281ccd7dbb1a6",
+      "input/bs_sites.csv": "9cd34443d1f53eef1b7efbb6eaa19799c039d9b55245fe5ae1d95d4de5e5f2bb",
+      "input/earth_station_site_gain_timeseries.csv.gz": "e507e1516813c75bbf07047f1632b35802d5b9f60dcec655cb847f7b8ab9d950",
+      "input/sector_static_reference_accounting.csv": "6d1277d66c5e178267210909779fa211e3698dcfcef2631a9ee55254bcebd7e1"
+    },
+    "next_gate": "RUN_AND_REVIEW_NIBI_ONE_SEED_H100_GPU_PILOT",
+    "operational_repairs": [
+      "pilot_worker uses exported FR3_PACKAGE_ROOT instead of Slurm-spooled BASH_SOURCE",
+      "scratch-only FR3 virtual environment and caches",
+      "H100-80GB GPU gate and Nibi output labels",
+      "topology uses frozen bs_sites.csv east_m/north_m coordinates and has no runtime pyproj/PROJ dependency",
+      "four-user serving-sector chunks divide 228 exactly and call Sionna reset_topology before every set_topology"
+    ],
+    "source_bundle_sha256": "9ed038882910f82b94b3193086293efb331287d907705f5f5b762a71abacec84",
+    "source_commit_required": "e1a5d0c41b2a676aa05680ab558a2995eecda6e6",
+    "status": "READY_FOR_NIBI_H100_ONE_SEED_GPU_PILOT",
+    "steering_frame_status": "PASS_EXACT_SIONNA_INCUMBENT_LOCAL_FRAME_AUDIT",
+    "superseded_nibi_bundle": {
+      "disposition": "DO_NOT_RUN",
+      "sha256": "a6ad7c3e202b57ff002b330b1d2c4e0f5b58a90b10fb7e64d6ae86c7069bef69"
+    }
+  },
+  "original_metadata_sha256": "e9591cca968c35f9fffbc49262bcd976fcea8be063ce652e23c1dadf853f750d",
+  "rule": "Do not edit the executed bundle; cite this overlay with the original bundle hash.",
+  "stale_or_preexecution_fields": [
+    {
+      "embedded_value": "ONE_SEED_NARVAL_GPU_PILOT_PACKAGE_NOT_PAPER_RESULT",
+      "execution_value": "ONE_SEED_SOFTWARE_AND_PHYSICAL_ACCOUNTING_GATE_NOT_PAPER_RESULT",
+      "path": "claim_boundary"
+    },
+    {
+      "embedded_value": 8,
+      "execution_value": 4,
+      "path": "channel_generation.user_chunk_size"
+    },
+    {
+      "embedded_value": "fit one Narval A100 40GB",
+      "execution_value": "Nibi H100 execution with 57 four-user serving-sector chunks",
+      "path": "channel_generation.reason"
+    },
+    {
+      "embedded_value": "READY_FOR_NIBI_H100_ONE_SEED_GPU_PILOT",
+      "execution_value": "PASS_ONE_SEED_SOFTWARE_AND_PHYSICAL_ACCOUNTING_GATE",
+      "path": "status"
+    }
+  ],
+  "status": "EXECUTION_OVERLAY_RECORDED_ORIGINAL_METADATA_IMMUTABLE"
+}

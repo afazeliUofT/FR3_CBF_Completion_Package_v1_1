@@ -1,0 +1,12 @@
+{
+  "conclusion": "The pilot is a common oracle attenuation reference, not a utility-aware nonuniform budget allocator.",
+  "derivation": [
+    "beta_b = I_allow * kappa_b*L_b / sum_j(kappa_j*L_j)",
+    "gamma_bm = beta_b/kappa_b * L_bm/L_b",
+    "gamma_bm = I_allow*L_bm / sum_j(kappa_j*L_j)",
+    "s_bm = sqrt(gamma_bm/L_bm)",
+    "s_bm = sqrt(I_allow / sum_j(kappa_j*L_j))"
+  ],
+  "maximum_empirical_mode_scale_spread": 1.9518867300227782e-08,
+  "status": "PASS_COMMON_SCALE_DEGENERACY_IDENTIFIED"
+}

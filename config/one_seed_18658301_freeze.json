@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "purpose": "Freeze and independently validate Nibi job 18658301 as a one-seed software and physical-accounting gate, without treating it as a paper result.",
+  "claim_boundary": "ONE_SEED_SOFTWARE_AND_PHYSICAL_ACCOUNTING_GATE_NOT_PAPER_RESULT",
+  "expected": {
+    "branch": "e3-first-sector-p452",
+    "required_ancestor_commit": "ca9b33ced8c9040438389ebd793f35020e8c54c2",
+    "review_zip_name": "FR3_NIBI_18658301_REVIEW_UPLOAD.zip",
+    "review_zip_sha256": "8981873eff57575e40d12df40b845f781c4863de3168edc27d1473dad3d4f10e",
+    "input_bundle_sha256": "9be0d1a0eb58c4764871d92e95b84f8e85c18818257d08522beed83d67573144",
+    "return_bundle_sha256": "05e49566fc9a7dcef7279ff6324e46d35ceb4fc457ebccea53410ccf3706589c",
+    "job_id": "18658301",
+    "job_name": "fr3-dlp-nibi-proj-v6",
+    "slurm_state": "COMPLETED",
+    "exit_code": "0:0",
+    "sites": 19,
+    "sectors": 57,
+    "users": 228,
+    "users_per_sector": 4,
+    "ports_per_bs": 128,
+    "frequency_samples": 9,
+    "protected_pass_samples": 587,
+    "sector_time_rows": 33459,
+    "gpu_substring": "H100"
+  },
+  "paths": {
+    "work_dir": "data/real/nibi_one_seed_18658301_freeze",
+    "evidence_dir": "evidence/nibi_one_seed_18658301",
+    "review_bundle": "evidence/nibi_one_seed_18658301/FR3_ONE_SEED_18658301_DYNAMIC_CONTRACT_REVIEW_v1.zip"
+  },
+  "next_gate": "INDEPENDENT_REVIEW_THEN_PREPARE_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT"
+}

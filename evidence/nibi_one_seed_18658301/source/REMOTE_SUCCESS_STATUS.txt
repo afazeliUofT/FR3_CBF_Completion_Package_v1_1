@@ -1,0 +1,8 @@
+status=PASS
+job_id=18658301
+slurm_account=def-rsadve_gpu
+job_name=fr3-dlp-nibi-proj-v6
+return_zip=/scratch/rsadve1/FR3_DLP_RZF_NIBI_RETURN_ca9b33c_nibi_v6_projection_preflight_fixed/FR3_DLP_RZF_NIBI_PILOT_RETURN_18658301.zip
+return_sha=/scratch/rsadve1/FR3_DLP_RZF_NIBI_RETURN_ca9b33c_nibi_v6_projection_preflight_fixed/FR3_DLP_RZF_NIBI_PILOT_RETURN_18658301.zip.sha256
+input_bundle_sha256=9be0d1a0eb58c4764871d92e95b84f8e85c18818257d08522beed83d67573144
+utc=2026-07-28T20:25:07Z

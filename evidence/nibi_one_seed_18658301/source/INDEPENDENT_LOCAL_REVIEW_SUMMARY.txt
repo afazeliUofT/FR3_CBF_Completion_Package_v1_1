@@ -1,0 +1,22 @@
+FR3 Nibi job 18658301 local review summary
+
+Audit status: PASS_ONE_SEED_GPU_DLP_RZF_PILOT_REVIEW_REQUIRED
+GPU: NVIDIA H100 80GB HBM3
+Time rows: 587
+Sector-time rows: 33459
+User rows: 228
+Minimum network rate retention: 0.991491517873
+Median network rate retention: 0.991600912161
+Maximum network rate retention: 0.991641155737
+Maximum safe-minus-allowance (W): 1.823846412870979294e-27
+Minimum nominal user SE (bit/s/Hz): 0.00108080441896
+Minimum safe user SE over pass (bit/s/Hz): 0.00108343494248
+Median safe user SE (bit/s/Hz): 2.10690465122
+local_budget_violation_count: 0
+power_increase_violation_count: 0
+maximum_sector_aggregate_reconstruction_error_w: 1.262177448353619e-29
+maximum_budget_sum_reconstruction_error_w: 1.262177448353619e-29
+maximum_safe_rate_sum_reconstruction_error_bps_hz: 2.2737367544323206e-13
+
+Boundary: one-seed software/physical-accounting gate only.
+Do not treat this as a TWC result or launch more seeds before review.

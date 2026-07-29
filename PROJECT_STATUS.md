@@ -2,34 +2,48 @@
 
 ## Status date
 
-27 July 2026
+2026-07-29
 
 ## Status in one sentence
 
-The propagation/E3 foundation, distributed DLP-RZF architecture, Sionna 2.0.1
-CPU qualification, custom 57-sector adapter, used-subset V19.4.0 mapping, and
-exact dual-polarized Sionna port-order audit are complete as non-paper evidence.
-A self-contained Nibi H100 bundle for the one-seed 57-sector/four-user DLP-RZF
-pilot is prepared but has not yet been executed or independently accepted.
+The propagation, incumbent, topology, standards-subset, exact steering, and
+distributed DLP-RZF foundations are complete as non-paper evidence. Nibi job
+18658301 successfully closed the one-seed 57-sector, 228-user software and
+physical-accounting gate with zero local budget violations and zero projection
+power-increase violations. The dynamic delayed/rate-limited controller and
+paper-grade statistical campaign remain open.
+
+## Frozen successful gate
+
+- Job: `18658301`
+- GPU: NVIDIA H100 80 GB HBM3
+- Sectors/users: 57 / 228
+- Users per sector: 4
+- BS ports: 128
+- Frequency samples: 9
+- Protected-pass samples: 587
+- Minimum network sum-rate retention: `99.149152%`
+- Claim boundary: `ONE_SEED_SOFTWARE_AND_PHYSICAL_ACCOUNTING_GATE_NOT_PAPER_RESULT`
 
 ## Current gate
 
-`INDEPENDENT_REVIEW_THEN_RUN_NIBI_ONE_SEED_GPU_PILOT`
-
-## Completed in the preparation stage
-
-- Clause-level used-subset ETSI TR 138 901 V19.4.0 mapping for a non-paper pilot.
-- Explicit Release-19 delta gaps retained; no full V19.4 certification claim.
-- 8x8 dual-cross Sionna port positions and polarization index sets audited.
-- Far-field justification for the reduced pilot array.
-- Reviewable Nibi H100 source bundle with 57 sectors, four users per sector,
-  nine frequency samples, local RZF, all inter-cell interference, and protected-
-  tone dual-polarization DLP projection.
+`INDEPENDENT_REVIEW_THEN_PREPARE_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT`
 
 ## Immediate requirements
 
-1. Independently review the generated GitHub source and bundle manifest.
-2. Run the one-seed Nibi H100 pilot only after that review.
-3. Validate power, SINR, rate, leakage, port order, runtime, and GPU memory.
-4. Keep the result explicitly non-paper evidence.
-5. Complete Release-19 delta patches/sensitivities before the final campaign.
+1. Review and merge the frozen job-18658301 evidence and provenance overlay.
+2. Freeze the delayed/rate-limited dynamic experiment contract.
+3. Prepare one controller-ready full-228-user topology export.
+4. Compare the full-topology export with the four-user-chunk reference.
+5. Implement practical static, myopic, virtual-queue, and predictive/CBF
+   controllers locally before launching a multi-seed campaign.
+
+## Open paper gates
+
+- exact long-term incumbent criterion;
+- uncertainty calibration;
+- practical array/hybrid sensitivity;
+- full-topology spatial correlation;
+- rate-limit counterexample;
+- controller runtime and message overhead;
+- multi-seed, multi-pass confidence intervals.

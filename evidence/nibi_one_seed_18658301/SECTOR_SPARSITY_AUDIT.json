@@ -1,0 +1,15 @@
+{
+  "interpretation_boundary": "The modelled common sector azimuths and earth-station placement may amplify this sparsity; rotation and placement sensitivity are mandatory.",
+  "leading_sector_counts": {
+    "E3_SITE_13_SEC_1": 12,
+    "E3_SITE_14_SEC_1": 16,
+    "E3_SITE_16_SEC_1": 37,
+    "E3_SITE_18_SEC_1": 522
+  },
+  "top_10_share": 0.9644677329747176,
+  "top_15_share": 0.9993681914248572,
+  "top_1_share": 0.3953791196122209,
+  "top_2_share": 0.5623474369744668,
+  "top_5_share": 0.8177396273329948,
+  "worst_time_s": 114.0
+}

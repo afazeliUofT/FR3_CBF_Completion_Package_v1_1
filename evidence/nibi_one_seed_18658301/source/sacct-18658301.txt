@@ -1,0 +1,4 @@
+JobID|JobName|State|ExitCode|Elapsed|MaxRSS|ReqMem|AllocTRES
+18658301|fr3-dlp-nibi-proj-v6|COMPLETED|0:0|00:04:35||128G|billing=13942,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=128G,node=1
+18658301.batch|batch|COMPLETED|0:0|00:04:35|1701584K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=128G,node=1
+18658301.extern|extern|COMPLETED|0:0|00:04:35|408K||billing=13942,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=128G,node=1

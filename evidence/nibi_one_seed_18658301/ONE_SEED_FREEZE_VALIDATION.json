@@ -1,0 +1,15 @@
+{
+  "aggregate_reconstruction_verified": true,
+  "claim_boundary": "ONE_SEED_SOFTWARE_AND_PHYSICAL_ACCOUNTING_GATE_NOT_PAPER_RESULT",
+  "common_scale_degeneracy_identified": true,
+  "created_utc": "2026-07-29T01:00:10.277212+00:00",
+  "input_and_return_bundle_hashes_verified": true,
+  "local_budget_constraints_verified": true,
+  "next_gate": "INDEPENDENT_REVIEW_THEN_PREPARE_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT",
+  "paper_result": false,
+  "power_nonincrease_verified": true,
+  "rate_reconstruction_verified": true,
+  "review_zip_hash_verified": true,
+  "slurm_completion_verified": true,
+  "status": "PASS_FROZEN_ONE_SEED_EVIDENCE"
+}

@@ -1,0 +1,149 @@
+schema_version: 1
+name: Controller-ready full-topology Sionna export
+claim_boundary: CONTROLLER_READY_EXPORT_SPEC_NOT_EXECUTED
+
+primary_generation:
+  scenario: UMa
+  carrier_frequency_hz: 8150000000
+  sectors: 57
+  users_per_sector: 4
+  users: 228
+  bs_ports: 128
+  ut_ports: 1
+  frequency_samples: 9
+  protected_frequency_index: 4
+  required_mode: one Sionna topology call containing all 228 users
+  reason: preserve cross-sector large-scale correlation and spatial consistency available within the static snapshot
+  target_cluster: Nibi H100 80 GB
+  paper_ready_if_passed: false
+  next_boundary: controller platform export; dynamic and statistical gates remain
+
+fallback:
+  diagnostic_only:
+    - site chunks with 12 users and all 57 BS sectors
+    - larger spatial groups whose membership and correlation loss are recorded
+  forbidden_as_primary_paper_platform:
+    - 57 independent four-user sector chunks
+  rule: never silently fall back; emit a scientific stop or explicit diagnostic-only status
+
+frozen_inputs:
+  - user and sector topology with exact IDs
+  - serving BS and local stream index
+  - indoor state
+  - exact Sionna port ordering
+  - exact local incumbent direction
+  - P.452 static sector accounting
+  - 587-sample earth-station gain trajectory
+  - frequency offsets and weights
+  - random seeds
+  - software versions and source hashes
+
+required_exports:
+  tables:
+    USER_TOPOLOGY.csv:
+      rows: 228
+      required_columns:
+        - user_id
+        - serving_sector_id
+        - serving_bs_index
+        - local_stream_index
+        - x_m
+        - y_m
+        - z_m
+        - indoor
+    SECTOR_TOPOLOGY.csv:
+      rows: 57
+      required_columns:
+        - sector_id
+        - site_id
+        - bs_index
+        - x_m
+        - y_m
+        - z_m
+        - yaw_rad
+        - pitch_rad
+        - roll_rad
+  arrays:
+    serving_bs_index.npy:
+      shape: [228]
+      dtype: int64
+    serving_stream_index.npy:
+      shape: [228]
+      dtype: int64
+    frequency_offsets_hz.npy:
+      shape: [9]
+      dtype: float64
+    frequency_weights.npy:
+      shape: [9]
+      dtype: float64
+    other_frequency_weighted_rate_per_user.npy:
+      shape: [228]
+      dtype: float64
+    nominal_protected_rate_per_user.npy:
+      shape: [228]
+      dtype: float64
+    protected_amp_perpendicular.npy:
+      shape: [228, 57, 4]
+      dtype: complex64_or_complex128
+    protected_amp_pol1.npy:
+      shape: [228, 57, 4]
+      dtype: complex64_or_complex128
+    protected_amp_pol2.npy:
+      shape: [228, 57, 4]
+      dtype: complex64_or_complex128
+    nominal_mode_leakage_w.npy:
+      shape: [57, 2]
+      dtype: float64
+    kappa_time_sector.npy:
+      shape: [587, 57]
+      dtype: float64
+    protected_time_s.npy:
+      shape: [587]
+      dtype: float64
+    nominal_precoder_power_w.npy:
+      shape: [57, 9]
+      dtype: float64
+    nominal_user_rate_by_frequency.npy:
+      shape: [9, 228]
+      dtype: float64
+  optional_validation_arrays:
+    nominal_amplitude_by_frequency.npy:
+      shape: [9, 228, 57, 4]
+      dtype: complex64
+      purpose: independent rate reconstruction
+
+local_controller_identity:
+  safe_protected_amplitude: A_perp + s_b1*A_pol1 + s_b2*A_pol2
+  amplitude_scale_from_db: s_bm = 10^(-q_bm_db/20)
+  rate_reconstruction: full desired and inter-cell terms must be recomputed from the exported amplitudes
+
+required_validation:
+  - exact array shapes and finite values
+  - frequency weights sum to one
+  - serving indices cover four users per sector
+  - nominal rates reconstructed from exported amplitudes
+  - nominal leakage reconstructed from exported mode vectors
+  - kappa reconstructs the frozen one-seed nominal aggregate trajectory
+  - fingerprints for every file
+  - complete environment and Slurm provenance
+  - comparison with job 18658301 chunked platform
+  - no hidden topology fallback
+
+comparison_to_chunked_gate:
+  reference_job_id: 18658301
+  required_comparisons:
+    - per-user nominal rate distribution
+    - network sum rate
+    - inter-cell interference distribution
+    - dominant-sector ordering
+    - nominal aggregate incumbent interference
+    - DLP utility cost under the common-scale reference
+  interpretation: differences quantify the cost of losing cross-sector correlation in sector-wise chunks
+
+runtime_outputs:
+  - channel generation seconds
+  - local RZF seconds
+  - export seconds
+  - peak GPU allocated memory
+  - maximum host RSS
+  - output bytes

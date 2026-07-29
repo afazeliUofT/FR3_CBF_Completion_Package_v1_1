@@ -1,0 +1,24 @@
+One-seed freeze and dynamic-contract drop-in v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused tests: PASS
+- ZIP integrity: PASS
+- Cache/bytecode exclusion: PASS
+
+Scientific gates
+- review/input/return SHA-256 verification
+- Slurm completion and job-ID verification
+- 587 time rows, 33,459 sector-time rows, 228 users
+- local budget and power-nonincrease checks
+- independent aggregate and rate reconstruction
+- user and power retention quantiles
+- sector sparsity audit
+- common-scale allocator degeneracy proof
+- immutable executed-metadata overlay
+- delayed/rate-limited dynamic experiment contract
+- controller-ready full-topology export specification
+
+Claim boundary
+ONE_SEED_SOFTWARE_AND_PHYSICAL_ACCOUNTING_GATE_NOT_PAPER_RESULT

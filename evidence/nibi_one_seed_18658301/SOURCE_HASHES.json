@@ -1,0 +1,18 @@
+{
+  "input_bundle": {
+    "bytes": 743587,
+    "name": "FR3_DLP_RZF_NIBI_ONE_SEED_GPU_PILOT_v6_PROJECTION_PREFLIGHT_FIXED.zip",
+    "sha256": "9be0d1a0eb58c4764871d92e95b84f8e85c18818257d08522beed83d67573144"
+  },
+  "return_bundle": {
+    "bytes": 1064295,
+    "name": "FR3_DLP_RZF_NIBI_PILOT_RETURN_18658301.zip",
+    "sha256": "05e49566fc9a7dcef7279ff6324e46d35ceb4fc457ebccea53410ccf3706589c"
+  },
+  "review_manifest_entries": 21,
+  "review_zip": {
+    "bytes": 2884201,
+    "name": "FR3_NIBI_18658301_REVIEW_UPLOAD.zip",
+    "sha256": "8981873eff57575e40d12df40b845f781c4863de3168edc27d1473dad3d4f10e"
+  }
+}

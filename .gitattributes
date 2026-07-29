@@ -7,3 +7,7 @@ evidence/**/*.txt text eol=lf
 evidence/**/*.html text eol=lf
 evidence/**/*.sha256 text eol=lf
 # END FR3 EVIDENCE TEXT NORMALIZATION
+
+# BEGIN IMMUTABLE NIBI JOB 18658301 EVIDENCE
+evidence/nibi_one_seed_18658301/** -text
+# END IMMUTABLE NIBI JOB 18658301 EVIDENCE

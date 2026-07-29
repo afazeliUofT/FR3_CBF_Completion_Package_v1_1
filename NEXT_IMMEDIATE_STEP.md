@@ -2,20 +2,23 @@
 
 ## Gate
 
-Independent review, then Nibi execution of the one-seed 57-sector/four-user
-DLP-RZF GPU pilot.
+`INDEPENDENT_REVIEW_THEN_PREPARE_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT`
 
-## Review before execution
+## Work location
 
-- `evidence/tr38901_nibi_dlp_pilot_prep/TR38901_USED_SUBSET_MAPPING_DECISION.json`
-- `evidence/tr38901_nibi_dlp_pilot_prep/TR38901_V19_4_USED_SUBSET_MAPPING.csv`
-- `evidence/tr38901_nibi_dlp_pilot_prep/SIONNA_DUAL_POL_PORT_ORDER_AUDIT.json`
-- `nibi/dlp_rzf_pilot_v1/run_gpu_pilot.py`
-- `nibi/dlp_rzf_pilot_v1/validate_gpu_pilot.py`
-- `evidence/tr38901_nibi_dlp_pilot_prep/NIBI_BUNDLE_METADATA.json`
+Local WSL only for the present freeze and contract review. Do not submit a new
+Nibi seed yet.
 
-## Pilot claim boundary
+## Required sequence
 
-One seed, finite network, 8x8 dual-polarized array, nine frequency samples,
-and instantaneous proportional budgets. It is a GPU/accounting gate, not the
-dynamic-controller paper experiment.
+1. Accept job 18658301 only as a one-seed software/physical-accounting gate.
+2. Preserve the immutable executed input and return hashes.
+3. Use the execution metadata overlay rather than editing the old bundle.
+4. Review `config/dynamic_safety_experiment_v1.yaml`.
+5. Review `config/controller_ready_full_topology_export_v1.yaml`.
+6. After independent review, prepare one Nibi H100 export using all 228 users
+   in one Sionna topology call.
+7. Export protected-tone amplitude components and coupling sufficient
+   statistics so controller experiments can run locally.
+8. Do not launch multiple channel seeds until the dynamic rate-limit
+   counterexample passes.
