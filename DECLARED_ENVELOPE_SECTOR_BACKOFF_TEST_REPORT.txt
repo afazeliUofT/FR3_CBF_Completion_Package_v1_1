@@ -1,0 +1,40 @@
+Declared engineering envelope and sector-selective fallback v1
+
+Static and package verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused tests: 5 passed
+- Exact validated full-topology dry run: PASS
+- Corrected long/short dual-criterion inputs: PASS
+- 18 declared pattern/cap/uplift scenarios and two methods: PASS
+- Exact per-second safety audit: PASS
+- Exact eligible-user floor audit: PASS
+- Review-bundle construction: PASS
+- Ignored-results Git policy: PASS
+- Simulated Git commit/push: PASS
+
+Exact primary screen: long-term SA.509 single-entry, 65 dB null cap,
+3 dB residual-coupling uplift
+- sector-selective long-term violations: 0
+- sector-selective paired short-term violations: 0
+- sector-selective eligible-user floor violations: 0
+- sector-selective mean moving PF utility: 95.669556025
+- sector-selective mean protected-band retention: 92.159695%
+- sector-selective sector-mute interval count: 241
+- uniform-backoff eligible-user floor violations: 19
+- uniform-backoff mean moving PF utility: 93.566862610
+- uniform-backoff mean protected-band retention: 84.503210%
+
+Boundary screen: long-term SA.509 single-entry, 60 dB null cap,
+3 dB residual-coupling uplift
+- sector-selective long/paired-short violations: 0 / 0
+- sector-selective eligible-user floor violations: 3
+
+Scientific boundary
+- measured calibration: unavailable
+- declared scenarios: deterministic, not probabilistic
+- practical 64T64R/hybrid mapping: open
+- campaign execution authorization: false
+
+Claim boundary
+DECLARED_ENGINEERING_ENVELOPE_SECTOR_BACKOFF_ONE_SEED_NOT_CALIBRATION_NOT_COMPLIANCE_NOT_PAPER_RESULT

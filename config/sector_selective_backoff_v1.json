@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "purpose": "Declare a transparent, non-calibrated array/CSI engineering scenario matrix and implement a distributed null-floor-aware sector-selective protected-tone backoff on the corrected dual-criterion one-seed platform.",
+  "claim_boundary": "DECLARED_ENGINEERING_ENVELOPE_SECTOR_BACKOFF_ONE_SEED_NOT_CALIBRATION_NOT_COMPLIANCE_NOT_PAPER_RESULT",
+  "required_ancestor_commit": "d9ebbebc9486ee6c4bb7fa3bdb3557415394f206",
+  "data_root": "data/real/full_topology_export_18696267_validated_v4/output",
+  "dual_criterion_root": "data/real/eess_dual_criterion_audit_v1",
+  "dependency_sha256": {
+    "src/fr3_cbf/constrained_pf_safety.py": "4fb99be56c1290d47fc6dcf63cc838fb1726ed07e2fe9c33c3f337e1a2aa6dab",
+    "src/fr3_cbf/dual_criterion_controller.py": "40519f1231fd8ecdff629588d7931f0e3dfcd80aa551866068965c7e2f371488",
+    "src/fr3_cbf/online_pf_load_transition.py": "8c7ef36e5330cb8c7f28e22649341d1694f1624dfe0c478f77dc909c66df875a",
+    "src/fr3_cbf/physical_impairment_sensitivity.py": "aa7d0a8625f0b23ac879d2140a02520d67dc23514374f9049577c4b086b5ef26",
+    "src/fr3_cbf/robust_delayed_safety.py": "f855e754e773174c24ba3614e9f756bbc473377f71305b32eaeb6c422535ffa9"
+  },
+  "timing": {
+    "update_interval_s": 5,
+    "message_delay_intervals": 1,
+    "mode_slew_db_per_update": 3
+  },
+  "load_schedule": {
+    "phase_lengths_intervals": [20, 20, 20, 20, 20, 18],
+    "active_streams_per_sector": [4, 2, 4, 1, 3, 2]
+  },
+  "moving_average": {
+    "time_constant_s": 100,
+    "epsilon_bps_hz": 0.001,
+    "inactive_semantics": "backlogged_unscheduled_zero_rate_update"
+  },
+  "fairness": {
+    "serviceability_threshold_bps_hz": 0.1,
+    "absolute_floor_bps_hz": 0.1,
+    "relative_floor_fraction": 0.9
+  },
+  "criteria_design": {
+    "multiple": "long_multiple",
+    "single": "long_single",
+    "paired_short_verification": {
+      "long_multiple": "short_multiple",
+      "long_single": "short_single"
+    }
+  },
+  "declared_engineering_envelope": {
+    "status": "DETERMINISTIC_SCENARIO_MATRIX_NOT_MEASURED_NOT_PROBABILISTIC",
+    "null_depth_caps_db": [60, 65, 67],
+    "residual_coupling_uplift_db": [0, 1, 3],
+    "primary_decisive_screen": {
+      "pattern": "single",
+      "null_depth_cap_db": 65,
+      "residual_coupling_uplift_db": 3
+    },
+    "boundary_screen": {
+      "pattern": "single",
+      "null_depth_cap_db": 60,
+      "residual_coupling_uplift_db": 3
+    },
+    "interpretation": "The cap/uplift pairs are explicit engineering stress scenarios. They are not OTA-calibrated confidence bounds and do not support practical regulatory-compliance claims."
+  },
+  "fallback": {
+    "type": "sector_selective_protected_tone_power_backoff",
+    "backoff_grid_db": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "exact_sector_mute_endpoint": true,
+    "uniform_backoff_role": "conservative baseline only",
+    "information_partition": "Each BS supplies a served-user constrained-PF cost curve. The coordinator uses only that scalar curve and one scalar protected-receiver contribution envelope per sector.",
+    "certificate": "Per-sector interval maxima imply exact per-second safety when the selected sector power scales satisfy the aggregate envelope inequality."
+  },
+  "paths": {
+    "results_dir": "results/sector_selective_backoff_v1",
+    "evidence_dir": "evidence/sector_selective_backoff_v1",
+    "review_bundle": "evidence/sector_selective_backoff_v1/FR3_SECTOR_SELECTIVE_BACKOFF_REVIEW_v1.zip"
+  },
+  "next_gate": "MAP_PRACTICAL_64T64R_OR_HYBRID_ARCHITECTURE_AND_INDEPENDENTLY_REVIEW_PHASE1_CAMPAIGN_BUNDLE",
+  "campaign_execution_authorized": false
+}

@@ -1,0 +1,15 @@
+{
+  "boundary_selective_floor_violations": 3,
+  "campaign_execution_authorized": false,
+  "created_utc": "2026-07-30T22:39:12.601586+00:00",
+  "measured_calibration": false,
+  "next_gate": "MAP_PRACTICAL_64T64R_OR_HYBRID_ARCHITECTURE_AND_INDEPENDENTLY_REVIEW_PHASE1_CAMPAIGN_BUNDLE",
+  "paper_result": false,
+  "primary_selective_floor_violations": 0,
+  "primary_selective_long_safe": true,
+  "primary_selective_short_safe": true,
+  "primary_uniform_floor_violations": 19,
+  "regulatory_compliance_result": false,
+  "sector_selective_fallback_implemented": true,
+  "status": "PASS_DECLARED_ENGINEERING_ENVELOPE_SECTOR_BACKOFF_ONE_SEED"
+}

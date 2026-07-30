@@ -1,3 +1,32 @@
+<!-- BEGIN DECLARED ENVELOPE SECTOR BACKOFF -->
+## Declared-envelope sector-selective protected-tone fallback
+
+Measured OTA array/CSI calibration remains unavailable. The project
+therefore freezes explicit deterministic engineering scenarios rather
+than claiming a calibrated physical uncertainty distribution.
+
+Primary long-term SA.509 single-entry engineering screen:
+
+- null-depth cap: `65 dB`;
+- residual normalized-coupling uplift: `3 dB`;
+- sector-selective long-term violation seconds: `0`;
+- sector-selective paired short-term violation seconds: `0`;
+- sector-selective eligible-user floor violations: `0`;
+- uniform-backoff eligible-user floor violations: `19`;
+- sector-selective mean PF utility: `95.669746245`;
+- uniform-backoff mean PF utility: `93.567054214`;
+- sector-selective mean protected-band retention: `92.159165%`;
+- uniform-backoff mean protected-band retention: `84.502692%`.
+
+The 60 dB + 3 dB boundary case is safety-feasible only by using
+the explicit sector fail-safe and still causes `3` eligible-user floor violations. This shows that the deterministic scenario matrix
+does not replace practical calibration or architecture mapping.
+
+The multi-seed campaign remains unauthorized.
+
+**Next gate:** `MAP_PRACTICAL_64T64R_OR_HYBRID_ARCHITECTURE_AND_INDEPENDENTLY_REVIEW_PHASE1_CAMPAIGN_BUNDLE`
+<!-- END DECLARED ENVELOPE SECTOR BACKOFF -->
+
 <!-- BEGIN PHYSICAL IMPAIRMENT SENSITIVITY -->
 ## Practical null-depth and physical-impairment sensitivity
 

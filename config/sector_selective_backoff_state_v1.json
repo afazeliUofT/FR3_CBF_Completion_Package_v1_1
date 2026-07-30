@@ -1,0 +1,15 @@
+{
+  "campaign_execution_authorized": false,
+  "declared_engineering_scenarios": true,
+  "measured_array_csi_calibration": false,
+  "next_gate": "MAP_PRACTICAL_64T64R_OR_HYBRID_ARCHITECTURE_AND_INDEPENDENTLY_REVIEW_PHASE1_CAMPAIGN_BUNDLE",
+  "paper_result": false,
+  "primary_eligible_floor_violations": 0,
+  "primary_long_safe": true,
+  "primary_short_safe": true,
+  "regulatory_compliance_result": false,
+  "schema_version": 1,
+  "sector_selective_fallback_implemented": true,
+  "status": "PASS_DECLARED_ENGINEERING_ENVELOPE_SECTOR_BACKOFF_ONE_SEED",
+  "uniform_primary_floor_violations": 19
+}
