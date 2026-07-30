@@ -1,3 +1,27 @@
+<!-- BEGIN FAIRNESS POLICY AUDIT -->
+## Fairness policy frozen before controller implementation
+
+The controller objective is **constrained proportional fairness**, not network
+sum rate.
+
+Primary one-seed diagnostic policy:
+
+- nominal serviceability threshold: 0.1 bit/s/Hz;
+- eligible users: `207`;
+- coverage-limited users: `21`;
+- eligible-user floor: `max(0.1 bit/s/Hz, 0.9 R_nominal)`;
+- common-scale reference floor violations: `0`;
+- primary utility: `sum log(R_u + 0.001)`;
+- report total-band/protected-band, absolute outage, fifth percentile, minimum,
+  geometric mean, Jain index, and indoor/outdoor groups.
+
+No indoor-specific optimization weight is assigned from the one-seed result,
+because the nominal indoor/outdoor ordering is counterintuitive and must be
+audited over multiple channel/topology seeds.
+
+**Next gate:** `IMPLEMENT_CONSTRAINED_PROPORTIONAL_FAIR_STATIC_MYOPIC_AND_PREDICTIVE_CONTROLLERS`
+<!-- END FAIRNESS POLICY AUDIT -->
+
 <!-- BEGIN VALIDATED FULL-TOPOLOGY EXPORT -->
 ## Validated controller-ready full-topology export
 

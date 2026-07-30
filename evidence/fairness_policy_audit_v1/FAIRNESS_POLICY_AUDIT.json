@@ -1,0 +1,109 @@
+{
+  "claim_boundary": "ONE_SEED_FAIRNESS_POLICY_AUDIT_NOT_PAPER_RESULT",
+  "common_scale_worst_protected_band": {
+    "geometric_mean_rate_bps_hz": 1.07664553383627,
+    "jain_fairness_index": 0.6055464889411865,
+    "maximum_rate_bps_hz": 8.379484134471866,
+    "mean_log_utility_per_user": 0.07477860008050205,
+    "median_rate_bps_hz": 2.124534255589876,
+    "minimum_rate_bps_hz": 0.00010620321992165017,
+    "p01_rate_bps_hz": 0.002717747729608209,
+    "p05_rate_bps_hz": 0.017482090044207022,
+    "p10_rate_bps_hz": 0.07625013345251354,
+    "proportional_fair_utility": 17.049520818354466,
+    "sum_rate_bps_hz": 511.84716209288035
+  },
+  "common_scale_worst_total_band": {
+    "geometric_mean_rate_bps_hz": 1.245187000319825,
+    "jain_fairness_index": 0.6292457519397773,
+    "maximum_rate_bps_hz": 8.087323502120649,
+    "mean_log_utility_per_user": 0.220088489617811,
+    "median_rate_bps_hz": 2.1166817501251227,
+    "minimum_rate_bps_hz": 9.162787061642175e-05,
+    "p01_rate_bps_hz": 0.004032404266636303,
+    "p05_rate_bps_hz": 0.030326462169686663,
+    "p10_rate_bps_hz": 0.14700179415231135,
+    "proportional_fair_utility": 50.18017563286091,
+    "sum_rate_bps_hz": 542.4890818785924
+  },
+  "conclusions": [
+    "The controller objective must not be network sum rate.",
+    "Proportional fairness is appropriate as a utility objective but does not guarantee a nonzero rate.",
+    "Coverage-limited users must be separated from controller-induced outages.",
+    "Eligible users require an explicit total-band service floor in addition to PF utility.",
+    "Protected-band rate and total-band rate must be reported separately.",
+    "Indoor and outdoor metrics must be stratified; no indoor class weight is frozen from one seed."
+  ],
+  "created_utc": "2026-07-29T23:31:07.880263+00:00",
+  "data_validation_status": "PASS_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_VALIDATION_V4",
+  "indoor_outdoor_audit": {
+    "indoor_median_exceeds_outdoor_median": true,
+    "interpretation": "Do not assign an indoor-specific optimization bonus from this one seed. Report groups separately and perform a multi-seed O2I/association audit before class weighting.",
+    "nominal_indoor_median_bps_hz": 2.7235475413501264,
+    "nominal_outdoor_median_bps_hz": 0.20326356608420612,
+    "sionna_boolean_interpretation_used": "True=indoor, False=outdoor"
+  },
+  "next_gate": "IMPLEMENT_CONSTRAINED_PROPORTIONAL_FAIR_STATIC_MYOPIC_AND_PREDICTIVE_CONTROLLERS",
+  "nominal_protected_band": {
+    "geometric_mean_rate_bps_hz": 1.2169207459300804,
+    "jain_fairness_index": 0.6224055348932902,
+    "maximum_rate_bps_hz": 8.733243942260742,
+    "mean_log_utility_per_user": 0.19714509814770204,
+    "median_rate_bps_hz": 2.233368396759033,
+    "minimum_rate_bps_hz": 0.00010800106247188523,
+    "p01_rate_bps_hz": 0.0029747020406648518,
+    "p05_rate_bps_hz": 0.028247934300452474,
+    "p10_rate_bps_hz": 0.08943161442875863,
+    "proportional_fair_utility": 44.94908237767606,
+    "sum_rate_bps_hz": 550.3354678906107
+  },
+  "nominal_total_band": {
+    "geometric_mean_rate_bps_hz": 1.2540906533416707,
+    "jain_fairness_index": 0.6295540970621497,
+    "maximum_rate_bps_hz": 8.100958710908891,
+    "mean_log_utility_per_user": 0.22720780371339933,
+    "median_rate_bps_hz": 2.127908293157816,
+    "minimum_rate_bps_hz": 9.180765487144526e-05,
+    "p01_rate_bps_hz": 0.004092775202618214,
+    "p05_rate_bps_hz": 0.030197555737686347,
+    "p10_rate_bps_hz": 0.1479613272799179,
+    "proportional_fair_utility": 51.80337924665505,
+    "sum_rate_bps_hz": 546.3379124583655
+  },
+  "primary_policy": {
+    "absolute_total_band_floor_bps_hz": 0.1,
+    "indoor_weight": 1.0,
+    "name": "constrained_proportional_fairness",
+    "optimization_priority": [
+      "incumbent safety",
+      "minimize controller-induced service-floor violations",
+      "minimize normalized service-floor shortfall",
+      "maximize proportional-fair utility",
+      "minimize control variation"
+    ],
+    "outdoor_weight": 1.0,
+    "reason_no_indoor_bonus": "The one-seed nominal rate ordering is counterintuitive; report indoor/outdoor separately and wait for a multi-seed O2I audit before assigning class weights.",
+    "relative_total_band_floor_fraction": 0.9,
+    "serviceability_threshold_bps_hz": 0.1,
+    "utility": "sum_u log(R_u + epsilon)"
+  },
+  "primary_policy_common_scale_check": {
+    "common_scale_controller_induced_floor_violation_count": 0,
+    "common_scale_indoor_floor_violation_count": 0,
+    "common_scale_outdoor_floor_violation_count": 0,
+    "coverage_limited_indoor_count": 3,
+    "coverage_limited_outdoor_count": 18,
+    "coverage_limited_user_count": 21,
+    "eligible_user_count": 207,
+    "maximum_normalized_floor_shortfall": 0.0,
+    "relative_floor_fraction": 0.9,
+    "serviceability_threshold_bps_hz": 0.1,
+    "total_normalized_floor_shortfall": 0.0
+  },
+  "status": "PASS_FAIRNESS_POLICY_AUDIT_REVIEW_REQUIRED",
+  "user_counts": {
+    "indoor": 184,
+    "outdoor": 44,
+    "total": 228
+  }
+}

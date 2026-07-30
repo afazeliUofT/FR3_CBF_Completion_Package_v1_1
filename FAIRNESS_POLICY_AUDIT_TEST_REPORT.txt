@@ -1,0 +1,18 @@
+FR3 fairness policy audit v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused tests: PASS
+- Exact validated full-topology data dry run: PASS
+- 228 users: PASS
+- Indoor/outdoor counts 184/44: PASS
+- Nominal total-band users below 0.1 bit/s/Hz: 21
+- Coverage-limited split at 0.1 bit/s/Hz: 3 indoor / 18 outdoor
+- Common-scale 90% eligible-user floor violations: 0
+- Common-scale 95% eligible-user floor violations: 10
+- PF utility/geometric mean/Jain/outage metrics: PASS
+- Review-bundle construction: PASS
+
+Claim boundary
+ONE_SEED_FAIRNESS_POLICY_AUDIT_NOT_PAPER_RESULT

@@ -1,0 +1,15 @@
+{
+  "coverage_limited_users_reported_separately": true,
+  "created_utc": "2026-07-29T23:31:07.880904+00:00",
+  "explicit_service_floor": true,
+  "indoor_class_weight_frozen": false,
+  "indoor_outdoor_metrics_required": true,
+  "next_gate": "IMPLEMENT_CONSTRAINED_PROPORTIONAL_FAIR_STATIC_MYOPIC_AND_PREDICTIVE_CONTROLLERS",
+  "paper_result": false,
+  "primary_absolute_floor_bps_hz": 0.1,
+  "primary_relative_floor_fraction": 0.9,
+  "primary_serviceability_threshold_bps_hz": 0.1,
+  "primary_utility": "proportional_fair_sum_log",
+  "status": "PASS_CONSTRAINED_PF_POLICY_FROZEN_FOR_ONE_SEED_CONTROLLER_MILESTONE",
+  "sum_rate_primary_objective": false
+}

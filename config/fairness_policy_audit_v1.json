@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "purpose": "Audit nominal and incumbent-protected user fairness before implementing the local controller milestone.",
+  "claim_boundary": "ONE_SEED_FAIRNESS_POLICY_AUDIT_NOT_PAPER_RESULT",
+  "required_ancestor_commit": "ec0ac888fd5ec922fcf9cee0611f322d71df7afb",
+  "data_root": "data/real/full_topology_export_18696267_validated_v4/output",
+  "pf_epsilon_bps_hz": 0.001,
+  "serviceability_thresholds_bps_hz": [0.05, 0.1, 0.25],
+  "relative_floor_fractions": [0.8, 0.9, 0.95],
+  "primary_policy": {
+    "name": "constrained_proportional_fairness",
+    "serviceability_threshold_bps_hz": 0.1,
+    "absolute_total_band_floor_bps_hz": 0.1,
+    "relative_total_band_floor_fraction": 0.9,
+    "utility": "sum_u log(R_u + epsilon)",
+    "optimization_priority": [
+      "incumbent safety",
+      "minimize controller-induced service-floor violations",
+      "minimize normalized service-floor shortfall",
+      "maximize proportional-fair utility",
+      "minimize control variation"
+    ],
+    "indoor_weight": 1.0,
+    "outdoor_weight": 1.0,
+    "reason_no_indoor_bonus": "The one-seed nominal rate ordering is counterintuitive; report indoor/outdoor separately and wait for a multi-seed O2I audit before assigning class weights."
+  },
+  "required_metrics": [
+    "coverage_limited_user_count",
+    "controller_induced_outage_count",
+    "normalized_floor_shortfall",
+    "proportional_fair_utility",
+    "geometric_mean_rate",
+    "jain_fairness_index",
+    "minimum_absolute_rate",
+    "5th_percentile_absolute_rate",
+    "total_band_and_protected_band_metrics",
+    "indoor_and_outdoor_stratification"
+  ],
+  "paths": {
+    "results_dir": "results/fairness_policy_audit_v1",
+    "evidence_dir": "evidence/fairness_policy_audit_v1",
+    "review_bundle": "evidence/fairness_policy_audit_v1/FR3_FAIRNESS_POLICY_AUDIT_REVIEW_v1.zip"
+  },
+  "next_gate": "IMPLEMENT_CONSTRAINED_PROPORTIONAL_FAIR_STATIC_MYOPIC_AND_PREDICTIVE_CONTROLLERS"
+}

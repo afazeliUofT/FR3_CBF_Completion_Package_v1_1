@@ -1,0 +1,10 @@
+serviceability_threshold_bps_hz,relative_floor_fraction,eligible_user_count,coverage_limited_user_count,coverage_limited_indoor_count,coverage_limited_outdoor_count,common_scale_controller_induced_floor_violation_count,common_scale_indoor_floor_violation_count,common_scale_outdoor_floor_violation_count,total_normalized_floor_shortfall,maximum_normalized_floor_shortfall
+0.05,0.8,212,16,2,14,0,0,0,0.0,0.0
+0.05,0.9,212,16,2,14,0,0,0,0.0,0.0
+0.05,0.95,212,16,2,14,10,7,3,0.20546898956154502,0.05175122743508908
+0.1,0.8,207,21,3,18,0,0,0,0.0,0.0
+0.1,0.9,207,21,3,18,0,0,0,0.0,0.0
+0.1,0.95,207,21,3,18,10,7,3,0.20546898956154502,0.05175122743508908
+0.25,0.8,196,32,8,24,0,0,0,0.0,0.0
+0.25,0.9,196,32,8,24,0,0,0,0.0,0.0
+0.25,0.95,196,32,8,24,9,7,2,0.1537177621264559,0.03413782304222442

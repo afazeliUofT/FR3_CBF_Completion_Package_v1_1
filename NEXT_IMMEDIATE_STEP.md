@@ -2,26 +2,13 @@
 
 ## Gate
 
-`IMPLEMENT_LOCAL_STATIC_MYOPIC_AND_PREDICTIVE_CONTROLLERS`
+`IMPLEMENT_CONSTRAINED_PROPORTIONAL_FAIR_STATIC_MYOPIC_AND_PREDICTIVE_CONTROLLERS`
 
-## Work location
+## Required controller objective
 
-Local WSL. No new Nibi channel generation is needed.
-
-## Required sequence
-
-1. Use the validated full controller dataset under
-   `data/real/full_topology_export_18696267_validated_v4`.
-2. Implement and test, under the same information, delay, update period and
-   slew limit:
-   - common-scale oracle reference;
-   - static nonuniform allocation;
-   - myopic utility-aware safety;
-   - virtual-queue baseline;
-   - predictive/CBF safety filter.
-3. Separate total-band and protected-band utility.
-4. Include user-tail and outage metrics, not only network sum rate.
-5. Construct the natural rate-limit counterexample around the steep coupling
-   rise found in the frozen pass.
-6. Do not launch a multi-seed campaign until the predictive method shows a
-   safety-utility advantage over fair baselines.
+1. Incumbent safety is a hard constraint.
+2. Report users below the nominal serviceability threshold separately as coverage-limited.
+3. For eligible users, minimize service-floor violations and normalized shortfall before maximizing proportional-fair utility.
+4. Do not use network sum rate as the primary objective or acceptance metric.
+5. Report absolute rates, outage, fifth percentile, minimum, geometric mean, Jain index, and indoor/outdoor groups for total and protected bands.
+6. Keep indoor/outdoor weights equal until a multi-seed O2I audit supports a different weighting.
