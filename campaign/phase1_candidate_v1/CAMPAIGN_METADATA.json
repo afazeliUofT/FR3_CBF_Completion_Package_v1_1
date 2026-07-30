@@ -1,0 +1,114 @@
+{
+  "architecture_claim_boundary": "GENERIC_PRACTICAL_ARCHITECTURE_MAPPING_ONE_SEED_NOT_PRODUCT_NOT_CALIBRATION_NOT_COMPLIANCE_NOT_PAPER_RESULT",
+  "channel_topology_seeds": [
+    44000,
+    44001,
+    44002,
+    44003,
+    44004,
+    44005,
+    44006,
+    44007,
+    44008,
+    44009,
+    44010,
+    44011,
+    44012,
+    44013,
+    44014,
+    44015,
+    44016,
+    44017,
+    44018,
+    44019,
+    44020,
+    44021,
+    44022,
+    44023,
+    44024,
+    44025,
+    44026,
+    44027,
+    44028,
+    44029
+  ],
+  "created_utc": "2026-07-30T23:26:15.959223+00:00",
+  "execution_authorized": false,
+  "next_gate": "ACQUIRE_FOUR_ADDITIONAL_PROTECTED_PASS_RECORDS_AND_INDEPENDENTLY_REVIEW_PHASE1_CAMPAIGN_CANDIDATE",
+  "paired_methods": [
+    "robust_predictive_constrained_pf_with_sector_selective_fallback",
+    "static_robust_constrained_pf",
+    "delayed_myopic_constrained_pf",
+    "virtual_queue",
+    "uniform_protected_tone_backoff",
+    "hard_spatial_null",
+    "common_scale_oracle_upper_reference"
+  ],
+  "phase1_replication_units": 150,
+  "primary_design": {
+    "criterion": "joint long-term design with separately reported short-term verification",
+    "declared_array_sensitivity": {
+      "null_depth_cap_db": [
+        60,
+        65,
+        67
+      ],
+      "residual_coupling_uplift_db": [
+        0,
+        1,
+        3
+      ]
+    },
+    "delay_intervals": 1,
+    "load": "staggered arrivals/departures plus deterministic stress",
+    "pattern": "SA.509 multiple-entry primary",
+    "slew_db_per_update": 3,
+    "update_interval_s": 5
+  },
+  "primary_endpoints": [
+    "hard-safety violation count and maximum excess",
+    "moving-average constrained-PF utility",
+    "eligible-floor violation user-seconds",
+    "protected-band p05 and geometric-mean rate"
+  ],
+  "protected_pass_slots": [
+    {
+      "compact_review_sha256": "b1c2dd5866b1b39b7336e1adba1255b8374ddf10d9b8509e349e7802b5c7c1bf",
+      "full_return_sha256": "e9ac40e3839e9c5ff6e0fdc9a13145af988a9cfd1b2fbcb48368845e7b9aa42a",
+      "slot": 0,
+      "source_h100_job_id": "18696267",
+      "status": "CURRENT_VALIDATED_PASS",
+      "validation_cpu_job_id": "18704028"
+    },
+    {
+      "slot": 1,
+      "status": "MISSING_IMMUTABLE_PASS_RECORD"
+    },
+    {
+      "slot": 2,
+      "status": "MISSING_IMMUTABLE_PASS_RECORD"
+    },
+    {
+      "slot": 3,
+      "status": "MISSING_IMMUTABLE_PASS_RECORD"
+    },
+    {
+      "slot": 4,
+      "status": "MISSING_IMMUTABLE_PASS_RECORD"
+    }
+  ],
+  "schema_version": 1,
+  "selected_architecture": "generic_64t64r_subarray_6bit",
+  "source_commit_required": "e69265eb43106e6875d28e80de449b148b73008f",
+  "statistics": {
+    "bootstrap": "clustered by channel/topology seed and protected pass",
+    "confidence_level": 0.95,
+    "paired_comparisons": true
+  },
+  "status": "REVIEW_CANDIDATE_NOT_AUTHORIZED_FOR_EXECUTION",
+  "stop_reasons": [
+    "four protected-pass records are missing",
+    "independent source review has not returned PASS",
+    "execution authorization token is absent"
+  ]
+}

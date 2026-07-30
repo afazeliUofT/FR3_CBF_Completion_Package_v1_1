@@ -1,0 +1,37 @@
+{
+  "access_date": "2026-07-30",
+  "boundary": "The selected 64T64R/32T32R mappings are generic declared models. No vendor product equivalence, OTA null-depth calibration, or practical compliance claim is made.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "3gpp_tr_38_901",
+      "title": "3GPP TR 38.901: Study on channel model for frequencies from 0.5 to 100 GHz",
+      "url": "https://www.3gpp.org/DynaReport/38.901.htm",
+      "use": "array/channel-model lineage"
+    },
+    {
+      "id": "ericsson_aas_whitepaper",
+      "title": "Massive MIMO for superior network performance",
+      "url": "https://www.ericsson.com/en/reports-and-papers/white-papers/advanced-antenna-systems-for-5g-networks",
+      "use": "source basis for arrays divided into dual-polarized subarrays and 64 radio chains controlling small subarrays"
+    },
+    {
+      "id": "ericsson_air_6494",
+      "title": "AIR 6494",
+      "url": "https://www.ericsson.com/en/portfolio/networks/ericsson-radio-system/radio/macro/massive-mimo/air-6494",
+      "use": "evidence that a current 64T64R radio can contain substantially more radiating elements than RF chains; not used as a direct product model"
+    },
+    {
+      "doi": "10.1109/TVT.2018.2889491",
+      "id": "deng_tirkkonen_studer_2019",
+      "title": "MmWave Multiuser MIMO Precoding with Fixed Subarrays and Quantized Phase Shifters",
+      "use": "fixed subarray and finite-resolution phase-shifter sensitivity rationale"
+    },
+    {
+      "doi": "10.1109/TSP.2019.2911255",
+      "id": "ioushua_eldar_2019",
+      "title": "A Family of Hybrid Analog-Digital Beamforming Methods for Massive MIMO Systems",
+      "use": "hybrid architecture and fully-digital approximation rationale"
+    }
+  ]
+}

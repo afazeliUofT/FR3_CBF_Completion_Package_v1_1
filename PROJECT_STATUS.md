@@ -1,3 +1,19 @@
+<!-- BEGIN PRACTICAL 64T64R ARCHITECTURE -->
+## Generic practical 64T64R architecture mapping
+
+- selected primary: `generic_64t64r_subarray_6bit`;
+- 64 RF chains over 128 polarization ports using 32 dual-polarized disjoint subarrays;
+- nominal network-sum retention versus 128-port upper reference: `98.660021%`;
+- primary safety violations: `0`;
+- primary eligible-floor violations: `0`;
+- minimum digital nullspace dimension: `58`;
+- 32-RF-chain sensitivity floor violations: `None`.
+
+This is a generic declared architecture, not a vendor-product or calibrated-hardware model. The phase-1 campaign review candidate is execution-blocked until four additional protected-pass records and independent review are available.
+
+**Next gate:** `ACQUIRE_FOUR_ADDITIONAL_PROTECTED_PASS_RECORDS_AND_INDEPENDENTLY_REVIEW_PHASE1_CAMPAIGN_CANDIDATE`
+<!-- END PRACTICAL 64T64R ARCHITECTURE -->
+
 <!-- BEGIN DECLARED ENVELOPE SECTOR BACKOFF -->
 ## Declared-envelope sector-selective protected-tone fallback
 

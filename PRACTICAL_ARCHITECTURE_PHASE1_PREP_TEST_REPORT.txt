@@ -1,0 +1,15 @@
+Practical architecture mapping / phase-1 preparation v1
+
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused tests: PASS
+- Exact validated-data dry run: PASS
+- 128-port upper-reference full-load reproduction: PASS
+- Generic 64T64R 6-bit primary: full controller/fallback replay, hard-safe and floor-safe
+- Generic 64T64R 8-bit sensitivity: structural/full-load gate PASS
+- Generic 32T32R reduced-chain sensitivity: rejected as phase-1 primary by nominal-retention/common-user floor gate
+- Phase-1 campaign candidate: execution-blocked
+- Review-bundle construction: PASS
+
+Claim boundary:
+GENERIC_PRACTICAL_ARCHITECTURE_MAPPING_ONE_SEED_NOT_PRODUCT_NOT_CALIBRATION_NOT_COMPLIANCE_NOT_PAPER_RESULT

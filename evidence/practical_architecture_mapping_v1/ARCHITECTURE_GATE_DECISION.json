@@ -1,0 +1,15 @@
+{
+  "campaign_execution_authorized": false,
+  "created_utc": "2026-07-30T23:26:15.685791+00:00",
+  "measured_calibration": false,
+  "next_gate": "ACQUIRE_FOUR_ADDITIONAL_PROTECTED_PASS_RECORDS_AND_INDEPENDENTLY_REVIEW_PHASE1_CAMPAIGN_CANDIDATE",
+  "paper_result": false,
+  "phase_8bit_structural_sensitivity_pass": true,
+  "primary_floor_safe": true,
+  "primary_hard_safe": true,
+  "primary_nominal_sum_rate_retention_vs_128": 0.9866002065988602,
+  "product_mapping": false,
+  "reduced_32rf_primary_rejected": true,
+  "selected_phase1_primary_architecture": "generic_64t64r_subarray_6bit",
+  "status": "PASS_GENERIC_64T64R_ARCHITECTURE_MAPPING_ONE_SEED"
+}
