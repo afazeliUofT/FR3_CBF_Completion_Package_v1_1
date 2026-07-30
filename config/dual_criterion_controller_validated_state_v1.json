@@ -1,0 +1,13 @@
+{
+  "hard_null_reference_evaluated": true,
+  "long_term_controller_rerun": true,
+  "next_gate": "CALIBRATE_ARRAY_CSI_NULL_DEPTH_AND_PHYSICAL_UNCERTAINTY_THEN_FREEZE_PHASED_CAMPAIGN",
+  "paper_result": false,
+  "physical_null_depth_calibrated": false,
+  "q70_terminal_safe": true,
+  "regulatory_compliance_result": false,
+  "schema_version": 1,
+  "short_term_controller_rerun": true,
+  "single_entry_pattern_sensitivity": true,
+  "status": "PASS_CORRECTED_DUAL_CRITERION_CONTROLLER_ONE_SEED"
+}

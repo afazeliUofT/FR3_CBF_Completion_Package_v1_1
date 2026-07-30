@@ -1,0 +1,28 @@
+Corrected EESS dual-criterion controller reevaluation v1
+
+Static and packaging verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused tests: PASS
+- Dependency SHA-256 checks: PASS
+- Corrected dual-criterion input gate: PASS
+- Exact validated full-topology dry run: PASS
+- Four criterion/pattern cases: PASS
+- Provisional 0--70 dB action grid: PASS
+- Exact hard-null reference: PASS
+- Corrected finite-pass predictive certificates: PASS
+- Long-over-short normalized dominance audit: PASS
+- Review-bundle construction: PASS
+- Ignored-results Git policy: PASS
+
+Scientific acceptance
+- predictive zero violations in all four cases
+- static zero violations in all four cases
+- delayed myopic violations in all four cases
+- virtual queue instantaneous violations in all four cases
+- zero predictive eligible-user floor violations
+- q=70 terminal action safe in all four cases
+- long-term predictive actions satisfy paired short-term tests
+
+Claim boundary
+CORRECTED_DUAL_CRITERION_CONTROLLER_REEVALUATION_ONE_SEED_NOT_REGULATORY_COMPLIANCE_OR_PAPER_RESULT

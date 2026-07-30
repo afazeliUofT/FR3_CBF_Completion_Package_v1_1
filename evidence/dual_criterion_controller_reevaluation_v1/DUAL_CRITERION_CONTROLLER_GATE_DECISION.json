@@ -1,0 +1,13 @@
+{
+  "all_predictive_cases_safe": true,
+  "all_predictive_certificates_pass": true,
+  "all_predictive_floor_violations_zero": true,
+  "created_utc": "2026-07-30T17:09:07.908970+00:00",
+  "long_term_dominates_short_term": true,
+  "new_nibi_job_required": false,
+  "next_gate": "CALIBRATE_ARRAY_CSI_NULL_DEPTH_AND_PHYSICAL_UNCERTAINTY_THEN_FREEZE_PHASED_CAMPAIGN",
+  "paper_result": false,
+  "q70_terminal_safe_all_cases": true,
+  "regulatory_compliance_result": false,
+  "status": "PASS_CORRECTED_DUAL_CRITERION_CONTROLLER_ONE_SEED"
+}

@@ -1,0 +1,11 @@
+{
+  "dual_array:allowance_long_exact_w.npy": "efc4d3d5c592180db6dbe7a3443a2a124f92b36ec74f97fc3986ec01b7160f1c",
+  "dual_array:allowance_short_exact_w.npy": "9c8f466468f99a1202c18898b39d16ca3be35417dfeee6a552aab1aabe37580d",
+  "dual_array:kappa_long_p20_multiple.npy": "384204be7c5d1a408db080570e915aeb94119229301861115094df3c600dcce1",
+  "dual_array:kappa_long_p20_single.npy": "6bb58fcc7af5f02d5c63fa27827c35e2f363148a98eb64b6876161b5d19bb53d",
+  "dual_array:kappa_short_p0005_multiple.npy": "03127d4352b3f63685d83620cb2abb9b539f586a8b47061bacf3c9a1c8ee4cdd",
+  "dual_array:kappa_short_p0005_single.npy": "54e0864df4e31f9731504541bcf62d60a972a4555b29ba09aafdc08c0a67ca72",
+  "dual_criterion_audit": "a070e01d6e55761700a611bc5ea1bda92f5a0a10ada71adfe280d72399a83a6a",
+  "frequency_response": "d1ba79eb51141b8106b7d838e2b2b05eca239eb5f7cf2b6b1a68752cfc9ee526",
+  "full_topology_validation": "b8ae3ad46351ab49be6408e54d2c9496716d1594c59bd28a8b35dc8bc20c3c0a"
+}

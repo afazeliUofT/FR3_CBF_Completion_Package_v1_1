@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "purpose": "Rerun the validated one-seed online constrained-PF controller platform with percentile-matched EESS long- and short-term criteria, a 0-70 dB action grid, exact hard-null reference, and SA.509 pattern sensitivity.",
+  "claim_boundary": "CORRECTED_DUAL_CRITERION_CONTROLLER_REEVALUATION_ONE_SEED_NOT_REGULATORY_COMPLIANCE_OR_PAPER_RESULT",
+  "required_ancestor_commit": "2d4e21099fbdc1e083b46dfbf4ce8e7f9cd1fb45",
+  "data_root": "data/real/full_topology_export_18696267_validated_v4/output",
+  "dual_criterion_root": "data/real/eess_dual_criterion_audit_v1",
+  "dependency_sha256": {
+    "src/fr3_cbf/constrained_pf_safety.py": "4fb99be56c1290d47fc6dcf63cc838fb1726ed07e2fe9c33c3f337e1a2aa6dab",
+    "src/fr3_cbf/online_pf_load_transition.py": "8c7ef36e5330cb8c7f28e22649341d1694f1624dfe0c478f77dc909c66df875a",
+    "src/fr3_cbf/robust_delayed_safety.py": "f855e754e773174c24ba3614e9f756bbc473377f71305b32eaeb6c422535ffa9"
+  },
+  "action_grid": {
+    "minimum_db": 0,
+    "maximum_db": 70,
+    "step_db": 1,
+    "hard_null_endpoint": true,
+    "interpretation": "The 70 dB ceiling is a provisional ideal-digital numerical design choice. Exact hard null is evaluated separately and is not claimed as hardware-achievable."
+  },
+  "controller_timing": {
+    "update_interval_s": 5,
+    "message_delay_intervals": 1,
+    "slew_db_per_update": 3,
+    "message_drop_command_indices_primary": [55, 56]
+  },
+  "moving_average": {
+    "time_constant_s": 100,
+    "epsilon_bps_hz": 0.001,
+    "inactive_update": "zero instantaneous rate enters the same exponential average",
+    "interpretation": "backlogged-but-unscheduled stress semantics; departed-user semantics remain a campaign sensitivity"
+  },
+  "fairness_policy": {
+    "serviceability_threshold_bps_hz": 0.1,
+    "absolute_total_band_floor_bps_hz": 0.1,
+    "relative_current_load_floor_fraction": 0.9,
+    "indoor_weight": 1.0,
+    "outdoor_weight": 1.0
+  },
+  "load_schedule": {
+    "phase_lengths_intervals": [20, 20, 20, 20, 20, 18],
+    "active_streams_per_sector": [4, 2, 4, 1, 3, 2],
+    "selection_rule": "sector- and phase-rotated local stream IDs; at least one active user per sector",
+    "interpretation": "deterministic load-transition stress test, not a traffic distribution model"
+  },
+  "criteria": {
+    "short_multiple": {
+      "kappa_file": "kappa_short_p0005_multiple.npy",
+      "allowance_file": "allowance_short_exact_w.npy",
+      "p452_time_percentage": 0.005,
+      "threshold_dbw_per_10mhz": -133.0,
+      "pattern": "SA.509 multiple-entry",
+      "role": "short-term primary-pattern diagnostic"
+    },
+    "long_multiple": {
+      "kappa_file": "kappa_long_p20_multiple.npy",
+      "allowance_file": "allowance_long_exact_w.npy",
+      "p452_time_percentage": 20.0,
+      "threshold_dbw_per_10mhz": -150.0,
+      "pattern": "SA.509 multiple-entry",
+      "role": "long-term primary-pattern joint-design case"
+    },
+    "short_single": {
+      "kappa_file": "kappa_short_p0005_single.npy",
+      "allowance_file": "allowance_short_exact_w.npy",
+      "p452_time_percentage": 0.005,
+      "threshold_dbw_per_10mhz": -133.0,
+      "pattern": "SA.509 single-entry",
+      "role": "+3 dB short-term pattern sensitivity"
+    },
+    "long_single": {
+      "kappa_file": "kappa_long_p20_single.npy",
+      "allowance_file": "allowance_long_exact_w.npy",
+      "p452_time_percentage": 20.0,
+      "threshold_dbw_per_10mhz": -150.0,
+      "pattern": "SA.509 single-entry",
+      "role": "+3 dB long-term pattern sensitivity"
+    }
+  },
+  "controllers_per_case": [
+    "online_delayed_myopic_constrained_pf",
+    "online_predictive_constrained_pf",
+    "static_constrained_pf",
+    "virtual_queue_gain_1_frozen_table",
+    "instantaneous_common_scale_oracle",
+    "exact_hard_null_reference"
+  ],
+  "additional_primary_case": {
+    "case": "long_multiple",
+    "controller": "online_predictive_constrained_pf_two_drops"
+  },
+  "paths": {
+    "results_dir": "results/dual_criterion_controller_reevaluation_v1",
+    "evidence_dir": "evidence/dual_criterion_controller_reevaluation_v1",
+    "review_bundle": "evidence/dual_criterion_controller_reevaluation_v1/FR3_DUAL_CRITERION_CONTROLLER_REEVALUATION_REVIEW_v1.zip"
+  },
+  "next_gate": "CALIBRATE_ARRAY_CSI_NULL_DEPTH_AND_PHYSICAL_UNCERTAINTY_THEN_FREEZE_PHASED_CAMPAIGN"
+}

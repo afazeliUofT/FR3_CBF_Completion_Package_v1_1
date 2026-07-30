@@ -2,11 +2,11 @@
 
 ## Gate
 
-`RERUN_LOCAL_CONTROLLERS_WITH_CORRECTED_DUAL_CRITERIA_QMAX70_AND_PATTERN_SENSITIVITY`
+`CALIBRATE_ARRAY_CSI_NULL_DEPTH_AND_PHYSICAL_UNCERTAINTY_THEN_FREEZE_PHASED_CAMPAIGN`
 
-1. Rebuild local coupling for P.452 p=0.005% short-term and p=20% long-term.
-2. Use exact -133 and -150 dBW/10 MHz thresholds; keep uncertainty margins separate.
-3. Extend the provisional action grid to 70 dB and include a hard-null endpoint.
-4. Rerun constrained online-PF static, myopic, virtual-queue, and predictive controllers under both criteria.
-5. Report SA.509 multiple-entry primary and single-entry +3 dB sensitivity.
-6. Do not launch multi-seed jobs until corrected one-seed fairness and recursive feasibility pass.
+1. Do not launch the multi-seed campaign yet.
+2. Convert the ideal 60--70 dB spatial-mode attenuation requirement into explicit array/CSI/quantization null-depth sensitivity cases.
+3. Separate source-referenced deterministic engineering bounds from held-out calibrated uncertainty; do not relabel 1/3 dB smoke tests.
+4. Quantify whether a practical 64T64R or hybrid architecture can meet the long-term criterion without hidden power shutdown.
+5. Freeze a phased paired campaign: primary seed/pass block first, then rotations, loads, delays, O2I, pattern, and array sensitivities.
+6. Preserve both inactive-user PF semantics: backlogged-unscheduled decay and departed-user removal/freeze.

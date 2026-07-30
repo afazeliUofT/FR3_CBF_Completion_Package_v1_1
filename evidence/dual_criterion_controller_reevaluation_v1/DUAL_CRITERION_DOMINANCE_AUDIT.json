@@ -1,0 +1,18 @@
+{
+  "multiple": {
+    "long_constraint_elementwise_dominates": true,
+    "long_predictive_actions_short_term_maximum_ratio": 0.03754543156420348,
+    "long_predictive_actions_short_term_violation_seconds": 0,
+    "maximum_short_to_long_normalized_ratio": 0.04076171950624402,
+    "minimum_long_dominance_margin_db": 13.897475038529981,
+    "minimum_short_to_long_normalized_ratio": 0.029281172911395814
+  },
+  "single": {
+    "long_constraint_elementwise_dominates": true,
+    "long_predictive_actions_short_term_maximum_ratio": 0.03750520451158024,
+    "long_predictive_actions_short_term_violation_seconds": 0,
+    "maximum_short_to_long_normalized_ratio": 0.04076171950624403,
+    "minimum_long_dominance_margin_db": 13.897475038529981,
+    "minimum_short_to_long_normalized_ratio": 0.029281172911395807
+  }
+}

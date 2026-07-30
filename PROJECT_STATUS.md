@@ -1,3 +1,53 @@
+<!-- BEGIN CORRECTED DUAL-CRITERION CONTROLLERS -->
+## Corrected EESS dual-criterion controller reevaluation
+
+The online constrained-PF controller platform has been rerun locally with:
+
+- short term: P.452 `p=0.005%`, `-133 dBW/10 MHz`;
+- long term: P.452 `p=20%`, `-150 dBW/10 MHz`;
+- SA.509 multiple-entry primary pattern;
+- SA.509 single-entry `+3 dB` sensitivity;
+- provisional ideal-digital action grid `0--70 dB`;
+- exact hard-null upper reference.
+
+Primary long-term multiple-entry result:
+
+- delayed-myopic violation seconds:
+  `67`;
+- predictive violation seconds:
+  `0`;
+- predictive PF utility:
+  `95.751060416`;
+- static PF utility:
+  `95.703501965`;
+- predictive mean protected-band retention:
+  `95.948175%`;
+- predictive minimum eligible-user floor ratio:
+  `1.001008`.
+
+Single-entry long-term sensitivity:
+
+- delayed-myopic violation seconds:
+  `58`;
+- predictive violation seconds:
+  `0`;
+- predictive PF utility:
+  `95.733459313`.
+
+The long-term normalized constraint elementwise dominates the paired short-term
+constraint by at least
+`13.897 dB`
+in this deterministic percentile-matched model. The short-term runs remain
+reported separately for transparency.
+
+All predictive cases and the 70 dB terminal action pass the finite-pass safety
+certificate with zero eligible-user floor violations. This remains an ideal
+one-seed engineering compatibility result, not regulatory-compliance evidence
+or a paper result.
+
+**Next gate:** `CALIBRATE_ARRAY_CSI_NULL_DEPTH_AND_PHYSICAL_UNCERTAINTY_THEN_FREEZE_PHASED_CAMPAIGN`
+<!-- END CORRECTED DUAL-CRITERION CONTROLLERS -->
+
 <!-- BEGIN EESS DUAL CRITERION CORRECTION -->
 ## EESS dual-criterion correction
 
