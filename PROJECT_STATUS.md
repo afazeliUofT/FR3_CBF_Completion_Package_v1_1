@@ -1,3 +1,33 @@
+<!-- BEGIN EESS DUAL CRITERION CORRECTION -->
+## EESS dual-criterion correction
+
+The historical controller platform combined P.452 `p=20%` with the
+`-133 dBW/10 MHz` short-term threshold. It remains valid as algorithmic
+one-seed evidence, but not as a final regulatory test.
+
+The corrected percentile-matched terrestrial single-entry tests are:
+
+- long term: P.452 `p=20%`, threshold `-150 dBW/10 MHz`;
+- short term: P.452 `p=0.005%`, threshold `-133 dBW/10 MHz`;
+- both criteria must be met.
+
+No new P.452 or channel-generation job is needed. The existing all-sector table
+already includes `p=0.005%`.
+
+For the SA.509 multiple-entry aggregate-network pattern, required common
+attenuation ranges are:
+
+- short term: `34.592` to `48.636` dB;
+- long term: `49.381` to `63.383` dB.
+
+The current 60 dB action grid is insufficient for part of the long-term case.
+A provisional 70 dB grid plus an exact hard-null endpoint is required for the
+next local controller rerun. The SA.509 single-entry pattern is retained as a
++3 dB sensitivity.
+
+**Next gate:** `RERUN_LOCAL_CONTROLLERS_WITH_CORRECTED_DUAL_CRITERIA_QMAX70_AND_PATTERN_SENSITIVITY`
+<!-- END EESS DUAL CRITERION CORRECTION -->
+
 <!-- BEGIN ONLINE MOVING-AVERAGE PF LOAD TRANSITIONS -->
 ## Online moving-average PF with deterministic load transitions
 

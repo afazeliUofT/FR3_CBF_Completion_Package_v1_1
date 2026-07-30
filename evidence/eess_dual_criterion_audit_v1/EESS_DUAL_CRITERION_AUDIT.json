@@ -1,0 +1,169 @@
+{
+  "case_results": {
+    "historical_p20_multiple": {
+      "nominal_interference_dbw": {
+        "maximum": -86.61718363321623,
+        "median": -98.9419630392122,
+        "minimum": -100.61911054128252,
+        "p05": -100.61884394933764,
+        "p95": -88.9497844809811
+      },
+      "required_attenuation_db": {
+        "maximum": 46.84039127239053,
+        "median": 34.51561186639456,
+        "minimum": 32.83846436432424,
+        "p05": 32.83873095626911,
+        "p95": 44.507790424625675
+      },
+      "samples_above_60db": 0,
+      "samples_above_67db": 0
+    },
+    "long_p20_multiple": {
+      "historical_policy_exceedance_samples": 587,
+      "historical_policy_maximum_excess_db": 16.54242509439324,
+      "nominal_interference_dbw": {
+        "maximum": -86.61718363321623,
+        "median": -98.9419630392122,
+        "minimum": -100.61911054128252,
+        "p05": -100.61884394933764,
+        "p95": -88.9497844809811
+      },
+      "required_attenuation_db": {
+        "maximum": 63.38281636678377,
+        "median": 51.0580369607878,
+        "minimum": 49.38088945871748,
+        "p05": 49.381156050662355,
+        "p95": 61.05021551901891
+      },
+      "samples_above_60db": 43,
+      "samples_above_67db": 0
+    },
+    "long_p20_single": {
+      "historical_policy_exceedance_samples": 587,
+      "historical_policy_maximum_excess_db": 19.542425094393245,
+      "nominal_interference_dbw": {
+        "maximum": -83.61718363321623,
+        "median": -95.94196303921221,
+        "minimum": -97.61911054128251,
+        "p05": -97.61884394933764,
+        "p95": -85.94978448098108
+      },
+      "required_attenuation_db": {
+        "maximum": 66.38281636678377,
+        "median": 54.0580369607878,
+        "minimum": 52.38088945871748,
+        "p05": 52.38115605066235,
+        "p95": 64.0502155190189
+      },
+      "samples_above_60db": 84,
+      "samples_above_67db": 0
+    },
+    "short_p0005_multiple": {
+      "historical_policy_exceedance_samples": 587,
+      "historical_policy_maximum_excess_db": 1.896686068184127,
+      "nominal_interference_dbw": {
+        "maximum": -84.3637148970936,
+        "median": -96.69018529287962,
+        "minimum": -98.40842976210803,
+        "p05": -98.40814715905455,
+        "p95": -86.69827134087375
+      },
+      "required_attenuation_db": {
+        "maximum": 48.63628510290639,
+        "median": 36.30981470712039,
+        "minimum": 34.59157023789197,
+        "p05": 34.59185284094545,
+        "p95": 46.301728659126255
+      },
+      "samples_above_60db": 0,
+      "samples_above_67db": 0
+    },
+    "short_p0005_single": {
+      "historical_policy_exceedance_samples": 587,
+      "historical_policy_maximum_excess_db": 4.8966860681841275,
+      "nominal_interference_dbw": {
+        "maximum": -81.36371489709362,
+        "median": -93.69018529287962,
+        "minimum": -95.40842976210804,
+        "p05": -95.40814715905455,
+        "p95": -83.69827134087376
+      },
+      "required_attenuation_db": {
+        "maximum": 51.63628510290639,
+        "median": 39.30981470712039,
+        "minimum": 37.59157023789197,
+        "p05": 37.59185284094545,
+        "p95": 49.301728659126255
+      },
+      "samples_above_60db": 0,
+      "samples_above_67db": 0
+    }
+  },
+  "claim_boundary": "EESS_DUAL_CRITERION_CORRECTION_AUDIT_NOT_PAPER_RESULT",
+  "corrected_criteria": {
+    "both_required": true,
+    "long_term": {
+      "frequency_band_mhz": [
+        8025.0,
+        8400.0
+      ],
+      "maximum_exceedance_time_percent": 20.0,
+      "p452_time_percentage": 20.0,
+      "path_type": "terrestrial",
+      "recommendation": "ITU-R SA.1027-6",
+      "threshold_dbw_per_10mhz": -150.0
+    },
+    "short_term": {
+      "frequency_band_mhz": [
+        8025.0,
+        8400.0
+      ],
+      "maximum_exceedance_time_percent": 0.005,
+      "p452_time_percentage": 0.005,
+      "path_type": "terrestrial",
+      "recommendation": "ITU-R SA.1027-6",
+      "threshold_dbw_per_10mhz": -133.0
+    }
+  },
+  "created_utc": "2026-07-30T15:52:38.723021+00:00",
+  "historical_configuration": {
+    "decision": "HYBRID_LONG_TERM_PROPAGATION_WITH_SHORT_TERM_THRESHOLD_NOT_VALID_AS_FINAL_REGULATORY_TEST",
+    "p452_time_percentage": 20.0,
+    "pattern_type": "multiple_entry_section_1_2",
+    "reserve_fraction": 0.1,
+    "threshold_dbw_per_10mhz": -133.0
+  },
+  "key_diagnosis": {
+    "current_60db_grid_insufficient_for_long_multiple": true,
+    "current_60db_grid_insufficient_for_long_single_sensitivity": true,
+    "historical_policy_long_multiple_all_samples_violate": true,
+    "historical_policy_short_multiple_all_samples_violate": true,
+    "short_term_arrays_can_be_rebuilt_without_new_p452_run": true
+  },
+  "next_gate": "RERUN_LOCAL_CONTROLLERS_WITH_CORRECTED_DUAL_CRITERIA_QMAX70_AND_PATTERN_SENSITIVITY",
+  "p452_p0005_minus_p20_coupling_db": {
+    "maximum": 3.10252496147001,
+    "median": 2.463252193563008,
+    "minimum": 1.6658846920140036,
+    "p05": 1.8384471300748033,
+    "p95": 2.985571555201215
+  },
+  "pattern_policy": {
+    "maximum_phi2_deg": 0.4241415503913911,
+    "measured_station_pattern_available": false,
+    "minimum_protected_off_axis_deg": 8.035691596201232,
+    "primary": "SA.509-3 multiple-entry pattern for aggregate power from 57 physical transmitters",
+    "sensitivity": "SA.509-3 single-entry pattern, exactly +3 dB over the protected-window off-axis range",
+    "verified_single_minus_multiple_db": 3.0
+  },
+  "status": "PASS_EESS_DUAL_CRITERION_DIAGNOSIS",
+  "uncertainty_evidence_status": {
+    "array_csi": "NO_HELD_OUT_CALIBRATION_DATA",
+    "earth_station_pattern": "REFERENCE_PATTERN_ONLY_NO_MEASURED_STATION_PATTERN",
+    "ephemeris": "ONE_TLE_WITH_0.52_DAY_AGE_NO_INDEPENDENT_TRUTH",
+    "p452_model_residual": "NOT_CALIBRATABLE_FROM_COLLECTED_PACKAGE",
+    "p452_reference_implementation_numeric_error": "VALIDATED_BELOW_1E-6_DB_NOT_A_PHYSICAL_UNCERTAINTY",
+    "terrain_vertical_error": "PROVENANCE_AVAILABLE_NO_HELD_OUT_ERROR_DISTRIBUTION",
+    "traffic_message": "SYNTHETIC_STRESS_MODEL_AVAILABLE_NOT_PHYSICAL_CALIBRATION"
+  }
+}

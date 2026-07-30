@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-07-30T15:52:38.723021+00:00",
+  "current_online_controller_results_are_regulatory_compliance_evidence": false,
+  "current_online_controller_results_remain_algorithmic_one_seed_evidence": true,
+  "hard_null_endpoint_required": true,
+  "local_controller_rerun_required": true,
+  "new_nibi_channel_generation_required": false,
+  "new_p452_matlab_run_required": false,
+  "next_gate": "RERUN_LOCAL_CONTROLLERS_WITH_CORRECTED_DUAL_CRITERIA_QMAX70_AND_PATTERN_SENSITIVITY",
+  "paper_result": false,
+  "recommended_provisional_action_grid_max_db": 70,
+  "status": "PASS_REGULATORY_DIAGNOSIS_CONTROLLER_REEVALUATION_REQUIRED"
+}

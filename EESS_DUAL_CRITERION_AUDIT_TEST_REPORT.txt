@@ -1,0 +1,16 @@
+EESS dual-criterion correction audit v1
+
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused tests: PASS
+- Exact collected-input dry run: PASS
+- p=20% and p=0.005% all-sector table: PASS
+- Historical kappa reconstruction: PASS
+- SA.509 protected-window +3 dB sensitivity verification: PASS
+- Separate -150/20% and -133/0.005% criteria: PASS
+- Current-policy mismatch quantification: PASS
+- No P.452 rerun required: PASS
+- No Nibi channel-generation rerun required: PASS
+
+Claim boundary:
+EESS_DUAL_CRITERION_CORRECTION_AUDIT_NOT_PAPER_RESULT

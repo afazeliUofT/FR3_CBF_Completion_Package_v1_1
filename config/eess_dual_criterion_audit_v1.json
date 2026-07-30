@@ -1,0 +1,60 @@
+{
+  "claim_boundary": "EESS_DUAL_CRITERION_CORRECTION_AUDIT_NOT_PAPER_RESULT",
+  "criteria": {
+    "both_required": true,
+    "long_term": {
+      "frequency_band_mhz": [
+        8025.0,
+        8400.0
+      ],
+      "maximum_exceedance_time_percent": 20.0,
+      "p452_time_percentage": 20.0,
+      "path_type": "terrestrial",
+      "recommendation": "ITU-R SA.1027-6",
+      "threshold_dbw_per_10mhz": -150.0
+    },
+    "short_term": {
+      "frequency_band_mhz": [
+        8025.0,
+        8400.0
+      ],
+      "maximum_exceedance_time_percent": 0.005,
+      "p452_time_percentage": 0.005,
+      "path_type": "terrestrial",
+      "recommendation": "ITU-R SA.1027-6",
+      "threshold_dbw_per_10mhz": -133.0
+    }
+  },
+  "input_paths": {
+    "export_config": "nibi/controller_ready_full_topology_export_v1/export_config.json",
+    "full_output": "data/real/full_topology_export_18696267_validated_v4/output",
+    "pattern_parameters": "data/real/e3_pattern_layout_review/earth_station_pattern_parameters.csv",
+    "pattern_samples": "data/real/e3_pattern_layout_review/earth_station_pattern_samples.csv",
+    "protected_pattern_summary": "data/real/e3_pattern_layout_review/selected_pass_off_axis_summary_protected.csv",
+    "regulatory_constants": "config/regulatory_constants.yaml",
+    "static_accounting": "data/real/e3_57_sector_reference_screen/sector_static_reference_accounting.csv"
+  },
+  "model_entry": {
+    "description": "The complete 57-sector IMT network is treated as one SA.1027 terrestrial single entry; received power is aggregated over its multiple physical transmitters.",
+    "status": "MODEL_DECISION"
+  },
+  "next_gate": "RERUN_LOCAL_CONTROLLERS_WITH_CORRECTED_DUAL_CRITERIA_QMAX70_AND_PATTERN_SENSITIVITY",
+  "paths": {
+    "evidence": "evidence/eess_dual_criterion_audit_v1",
+    "local_arrays": "data/real/eess_dual_criterion_audit_v1",
+    "review_bundle": "evidence/eess_dual_criterion_audit_v1/FR3_EESS_DUAL_CRITERION_AUDIT_REVIEW_v1.zip"
+  },
+  "pattern_policy": {
+    "measured_station_pattern_available": false,
+    "primary": "SA.509-3 multiple-entry pattern for aggregate power from 57 physical transmitters",
+    "sensitivity": "SA.509-3 single-entry pattern, exactly +3 dB over the protected-window off-axis range"
+  },
+  "purpose": "Correct the EESS long/short-term criterion pairing and quantify the impact on the validated one-seed full-topology controller platform before any multi-seed campaign.",
+  "required_ancestor_commit": "9c00f3c9cacc2a817cae8f45a154cf069b778306",
+  "schema_version": 1,
+  "threshold_policy": {
+    "existing_ten_percent_reserve_status": "SMOKE_TEST_ONLY",
+    "regulatory_thresholds_are_not_reduced_by_arbitrary_reserve": true,
+    "robust_uncertainty_margin_is_separate": true
+  }
+}

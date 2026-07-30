@@ -2,13 +2,11 @@
 
 ## Gate
 
-`CALIBRATE_UNCERTAINTY_AND_PREPARE_MULTI_SEED_MULTI_PASS_CAMPAIGN`
+`RERUN_LOCAL_CONTROLLERS_WITH_CORRECTED_DUAL_CRITERIA_QMAX70_AND_PATTERN_SENSITIVITY`
 
-## Required sequence
-
-1. Calibrate coupling, pointing, array, and ephemeris upper errors from held-out data or a declared deterministic engineering set; do not use the 1/3 dB smoke margins as paper evidence.
-2. Resolve and implement the exact long-term regulatory functional separately from the certified short-term constraint.
-3. Freeze one immutable multi-seed/multi-pass experiment package using `config/multi_seed_campaign_spec_v1.json`.
-4. Include stochastic arrivals/departures in addition to the deterministic rotating-load stress test.
-5. Include layout rotations, O2I stratification, finite-network sensitivity, a practical 64T64R primary case, and the 128-port digital upper reference.
-6. Launch the statistical campaign only after independent review of the calibration and campaign package.
+1. Rebuild local coupling for P.452 p=0.005% short-term and p=20% long-term.
+2. Use exact -133 and -150 dBW/10 MHz thresholds; keep uncertainty margins separate.
+3. Extend the provisional action grid to 70 dB and include a hard-null endpoint.
+4. Rerun constrained online-PF static, myopic, virtual-queue, and predictive controllers under both criteria.
+5. Report SA.509 multiple-entry primary and single-entry +3 dB sensitivity.
+6. Do not launch multi-seed jobs until corrected one-seed fairness and recursive feasibility pass.

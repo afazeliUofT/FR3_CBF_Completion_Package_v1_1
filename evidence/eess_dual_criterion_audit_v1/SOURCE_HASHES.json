@@ -1,0 +1,10 @@
+{
+  "export_config": "c3edfd9bd848e8f017c58a70f099f23d723f65e013910ab232ed6ed0748a496d",
+  "kappa_p20_multiple": "384204be7c5d1a408db080570e915aeb94119229301861115094df3c600dcce1",
+  "mode_leakage": "025d9a5e38b3e41db969cb74ad370a54d4920a6df78970508b83d90c69217c26",
+  "pattern_parameters": "f1a6212d42c0181e2579fa45a1ed9a50c6a4c5ca4e5a073f36c098af49041e26",
+  "pattern_samples": "725ae9988b184b99ca54d4f7fbb6ac5bf25f0faa4d9264e285d51b02c2ae5f74",
+  "protected_pattern_summary": "ef4c613593ce1b33432a3b1b8c8ce2ec0ddb72154d0beda22fa65702495a474b",
+  "regulatory_constants": "91f47f27651098ec24b02a8113a56befaf00096f1e454d5576f0585072dbffa2",
+  "static_accounting": "6d1277d66c5e178267210909779fa211e3698dcfcef2631a9ee55254bcebd7e1"
+}
