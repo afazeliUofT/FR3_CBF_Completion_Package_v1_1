@@ -1,0 +1,18 @@
+Practical null-depth / physical-impairment sensitivity v1
+
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused tests: PASS
+- Exact validated full-topology dry run: PASS
+- Long multiple and long single predictive reconstruction: PASS
+- Null-depth cap sweep 40--70 dB: PASS
+- Uniform protected-tone fallback audit: PASS
+- Deterministic phase/gain/direction/quantization stresses: PASS
+- Error-correlation sensitivity: PASS
+- Calibration requirements freeze: PASS
+- Phased campaign specification freeze: PASS
+- Campaign execution authorization: FALSE
+- Review-bundle construction: PASS
+
+Claim boundary:
+PHYSICAL_IMPAIRMENT_SENSITIVITY_ONE_SEED_ENGINEERING_AUDIT_NOT_CALIBRATION_NOT_COMPLIANCE_NOT_PAPER_RESULT

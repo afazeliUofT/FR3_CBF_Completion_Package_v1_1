@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "status": "FROZEN_DESIGN_NOT_AUTHORIZED_FOR_EXECUTION",
+  "claim_boundary": "PHASED_MULTI_SEED_CAMPAIGN_SPECIFICATION_NOT_EXECUTED",
+  "execution_authorized": false,
+  "authorization_prerequisites": [
+    "measured or explicitly source-referenced array/CSI/quantization calibration envelope",
+    "null-floor-aware protected-tone fallback with exact floor/outage audit",
+    "practical 64T64R or hybrid architecture mapping",
+    "independent review of immutable campaign bundle"
+  ],
+  "primary_hypothesis": "Under identical information, delay, slew, traffic, criterion, and uncertainty conditions, robust predictive constrained-PF control achieves zero hard-safety violations and a positive paired fairness-utility advantage over safe static, delayed-myopic, virtual-queue, common-scale, hard-null, and power-backoff baselines.",
+  "phase_0_calibration": {
+    "purpose": "Characterize complex gain/phase residuals, their spatial/frequency/temperature correlation, steering/orientation error, CSI error, quantization, and achieved null depth.",
+    "required_output": "calibrated upper envelope or explicitly deterministic engineering envelope",
+    "execution_location": "measurement/OTA platform or documented source data; not Nibi"
+  },
+  "phase_1_paired_primary": {
+    "replication_unit": "channel/topology seed crossed with protected pass",
+    "channel_topology_seeds": 30,
+    "protected_passes": 5,
+    "layout_rotation_deg": 0,
+    "pattern": "SA.509 multiple-entry primary",
+    "criterion": "joint long-term design with separately reported short-term verification",
+    "array": "practical primary architecture after phase-0 calibration",
+    "load": "staggered arrivals/departures plus deterministic stress",
+    "delay_intervals": 1,
+    "slew_db_per_update": 3,
+    "update_interval_s": 5,
+    "paired_methods": [
+      "robust_predictive_constrained_pf",
+      "static_robust_constrained_pf",
+      "delayed_myopic_constrained_pf",
+      "virtual_queue",
+      "uniform_protected_tone_backoff",
+      "hard_spatial_null",
+      "common_scale_oracle_upper_reference"
+    ]
+  },
+  "phase_2_factor_sensitivities": {
+    "paired_subset_seeds": 10,
+    "paired_subset_passes": 2,
+    "blocks": {
+      "layout_rotation_deg": [0, 30, 60, 90, 120, 150],
+      "load_fraction": [0.25, 0.5, 0.75, 1.0],
+      "delay_intervals": [0, 1, 2],
+      "slew_db_per_update": [1, 3, 6],
+      "update_interval_s": [1, 5, 10],
+      "pattern": ["multiple_entry_primary", "single_entry_plus3db_sensitivity"],
+      "inactive_pf_semantics": ["backlogged_unscheduled_decay", "departed_user_freeze_or_remove"],
+      "array": ["practical_primary", "128_port_ideal_digital_upper_reference"]
+    },
+    "rule": "Run one factor block at a time using paired common random numbers; do not execute the full Cartesian product."
+  },
+  "phase_3_confirmatory_holdout": {
+    "new_channel_topology_seeds": 10,
+    "new_protected_passes": 3,
+    "rule": "Freeze algorithms, thresholds, uncertainty envelope, and primary metrics before opening this block."
+  },
+  "statistics": {
+    "paired_comparisons": true,
+    "confidence_level": 0.95,
+    "bootstrap": "clustered by seed/pass",
+    "primary_endpoints": [
+      "hard-safety violation count and maximum excess",
+      "moving-average constrained-PF utility",
+      "eligible-floor violation user-seconds",
+      "protected-band p05 and geometric-mean rate"
+    ],
+    "go_condition": "All hard-safety checks pass with no hidden slack and the paired predictive-versus-safe-static fairness-utility confidence interval excludes zero."
+  }
+}

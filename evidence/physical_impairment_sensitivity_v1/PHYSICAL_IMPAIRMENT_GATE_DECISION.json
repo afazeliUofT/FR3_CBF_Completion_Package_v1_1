@@ -1,0 +1,11 @@
+{
+  "campaign_execution_authorized": false,
+  "created_utc": "2026-07-30T21:39:22.978481+00:00",
+  "ideal_controller_result_preserved": true,
+  "next_gate": "ACQUIRE_OR_DECLARE_ARRAY_CSI_CALIBRATION_ENVELOPE_AND_IMPLEMENT_NULL_FLOOR_AWARE_SECTOR_BACKOFF",
+  "null_floor_aware_fallback_required": true,
+  "paper_result": false,
+  "physical_null_depth_calibrated": false,
+  "regulatory_compliance_result": false,
+  "status": "PASS_DETERMINISTIC_PHYSICAL_IMPAIRMENT_SENSITIVITY_CALIBRATION_DATA_REQUIRED"
+}

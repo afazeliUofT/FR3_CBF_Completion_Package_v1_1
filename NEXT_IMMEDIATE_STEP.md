@@ -2,11 +2,10 @@
 
 ## Gate
 
-`CALIBRATE_ARRAY_CSI_NULL_DEPTH_AND_PHYSICAL_UNCERTAINTY_THEN_FREEZE_PHASED_CAMPAIGN`
+`ACQUIRE_OR_DECLARE_ARRAY_CSI_CALIBRATION_ENVELOPE_AND_IMPLEMENT_NULL_FLOOR_AWARE_SECTOR_BACKOFF`
 
-1. Do not launch the multi-seed campaign yet.
-2. Convert the ideal 60--70 dB spatial-mode attenuation requirement into explicit array/CSI/quantization null-depth sensitivity cases.
-3. Separate source-referenced deterministic engineering bounds from held-out calibrated uncertainty; do not relabel 1/3 dB smoke tests.
-4. Quantify whether a practical 64T64R or hybrid architecture can meet the long-term criterion without hidden power shutdown.
-5. Freeze a phased paired campaign: primary seed/pass block first, then rotations, loads, delays, O2I, pattern, and array sensitivities.
-6. Preserve both inactive-user PF semantics: backlogged-unscheduled decay and departed-user removal/freeze.
+1. Obtain measured or source-referenced per-port complex calibration residuals, their correlation, quantization, steering/orientation error, CSI error, and achieved OTA null depth.
+2. If measurements are unavailable, freeze explicit deterministic engineering envelopes and do not claim practical compliance.
+3. Implement a null-floor-aware sector-selective protected-tone backoff fallback; uniform backoff remains only a conservative baseline.
+4. Re-run the four corrected criterion/pattern cases with the practical null-depth envelope and exact user-floor audit.
+5. Independently review the phased campaign bundle before any Nibi submission.

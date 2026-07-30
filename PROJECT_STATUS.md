@@ -1,3 +1,25 @@
+<!-- BEGIN PHYSICAL IMPAIRMENT SENSITIVITY -->
+## Practical null-depth and physical-impairment sensitivity
+
+The corrected ideal-digital controller remains valid, but practical array/CSI
+calibration is not yet available. In the one-seed long-term single-entry
+sensitivity:
+
+- clipping the protected-mode attenuation to 60 dB produces
+  `582` violation seconds;
+- a conservative uniform protected-tone fallback then requires
+  `6.911` dB backoff;
+- at a 67 dB cap, the corresponding fallback is
+  `1.558` dB;
+- assumed differential phase/gain, steering, and phase-quantization errors can
+  break the near-zero-margin solution;
+- these are deterministic sensitivity tests, not empirical calibration.
+
+The multi-seed campaign is frozen as a phased design but remains unauthorized.
+
+**Next gate:** `ACQUIRE_OR_DECLARE_ARRAY_CSI_CALIBRATION_ENVELOPE_AND_IMPLEMENT_NULL_FLOOR_AWARE_SECTOR_BACKOFF`
+<!-- END PHYSICAL IMPAIRMENT SENSITIVITY -->
+
 <!-- BEGIN CORRECTED DUAL-CRITERION CONTROLLERS -->
 ## Corrected EESS dual-criterion controller reevaluation
 

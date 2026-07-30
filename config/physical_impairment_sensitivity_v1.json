@@ -1,0 +1,88 @@
+{
+  "array_error_stress": {
+    "correlation_models": [
+      "independent_port",
+      "tile_2x2",
+      "tile_4x4",
+      "common_per_polarization"
+    ],
+    "correlation_probe_gain_rms_db": 0.01,
+    "correlation_probe_phase_rms_deg": 0.01,
+    "direction_error_deg": [
+      0.001,
+      0.003,
+      0.01
+    ],
+    "gain_rms_db": [
+      0.001,
+      0.003,
+      0.01
+    ],
+    "phase_quantization_bits": [
+      8,
+      10,
+      12,
+      14,
+      16,
+      24
+    ],
+    "phase_rms_deg": [
+      0.001,
+      0.003,
+      0.01
+    ],
+    "power_renormalize_per_sector": true,
+    "random_seed": 420042,
+    "status": "DETERMINISTIC_ENGINEERING_SENSITIVITY_NOT_EMPIRICAL_CALIBRATION",
+    "trials_per_level": 8
+  },
+  "calibration_status": {
+    "campaign_execution_authorized": false,
+    "independent_ephemeris_truth_available": false,
+    "measured_array_residuals_available": false,
+    "measured_csi_residuals_available": false,
+    "measured_station_pattern_available": false
+  },
+  "cases": [
+    "long_multiple",
+    "long_single"
+  ],
+  "claim_boundary": "PHYSICAL_IMPAIRMENT_SENSITIVITY_ONE_SEED_ENGINEERING_AUDIT_NOT_CALIBRATION_NOT_COMPLIANCE_NOT_PAPER_RESULT",
+  "data_root": "data/real/full_topology_export_18696267_validated_v4/output",
+  "dual_controller_config": "config/dual_criterion_controller_reevaluation_v1.json",
+  "dual_criterion_root": "data/real/eess_dual_criterion_audit_v1",
+  "next_gate": "ACQUIRE_OR_DECLARE_ARRAY_CSI_CALIBRATION_ENVELOPE_AND_IMPLEMENT_NULL_FLOOR_AWARE_SECTOR_BACKOFF",
+  "null_depth_cap_db": [
+    40,
+    45,
+    50,
+    55,
+    60,
+    62,
+    64,
+    65,
+    66,
+    67,
+    68,
+    70
+  ],
+  "paths": {
+    "evidence_dir": "evidence/physical_impairment_sensitivity_v1",
+    "results_dir": "results/physical_impairment_sensitivity_v1",
+    "review_bundle": "evidence/physical_impairment_sensitivity_v1/FR3_PHYSICAL_IMPAIRMENT_SENSITIVITY_REVIEW_v1.zip"
+  },
+  "purpose": "Audit practical protected-direction null-depth limits and deterministic array/steering/quantization sensitivities using the validated corrected dual-criterion one-seed controller platform.",
+  "required_ancestor_commit": "6515d52b7c80d2cfe186be530cdbfe36f928179a",
+  "schema_version": 1,
+  "source_inputs": {
+    "local_frame": "source_inputs/physical_impairment_sensitivity_v1/SIONNA_INCUMBENT_LOCAL_FRAME.csv",
+    "local_frame_sha256": "5b1b6d642e81d92f146cb6f0f973126524cb487fac140edb3cdbbf15059cc214",
+    "port_order": "source_inputs/physical_impairment_sensitivity_v1/SIONNA_8X8_DUAL_PORT_ORDER.csv",
+    "port_order_original_sha256": "f9e42eb1002068b7172f2cd873f5ad67930af2d9b2481328094c022d1ef69a02",
+    "port_order_sha256": "f32b243a55dc555e8247675ee2f26beb323647dff091c9c1bbba7e05186162df"
+  },
+  "uniform_backoff_fallback": {
+    "enabled": true,
+    "interpretation": "A conservative protected-tone-wide power backoff applied after clipping each mode command to the declared implementable null depth. It is a baseline/fail-safe, not the proposed final sector-selective fallback."
+  }
+}

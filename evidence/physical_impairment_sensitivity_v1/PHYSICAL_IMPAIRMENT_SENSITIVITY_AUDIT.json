@@ -1,0 +1,77 @@
+{
+  "calibration_status": {
+    "campaign_execution_authorized": false,
+    "independent_ephemeris_truth_available": false,
+    "measured_array_residuals_available": false,
+    "measured_csi_residuals_available": false,
+    "measured_station_pattern_available": false
+  },
+  "campaign_execution_authorized": false,
+  "campaign_spec": "config/phased_campaign_spec_v2.json",
+  "cases": [
+    "long_multiple",
+    "long_single"
+  ],
+  "claim_boundary": "PHYSICAL_IMPAIRMENT_SENSITIVITY_ONE_SEED_ENGINEERING_AUDIT_NOT_CALIBRATION_NOT_COMPLIANCE_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-30T21:39:22.977518+00:00",
+  "next_gate": "ACQUIRE_OR_DECLARE_ARRAY_CSI_CALIBRATION_ENVELOPE_AND_IMPLEMENT_NULL_FLOOR_AWARE_SECTOR_BACKOFF",
+  "null_depth_findings": {
+    "interpretation": "Clipping the ideal action to a practical null-depth cap can break hard safety. A broad protected-tone backoff can restore safety but may reduce protected-band utility or violate eligible-user floors. A sector-selective null-floor-aware fallback is required.",
+    "long_single_cap60": {
+      "case": "long_single",
+      "eligible_floor_violation_user_intervals": 60,
+      "mean_moving_pf_utility": 90.9899215010928,
+      "mean_protected_network_retention": 0.7073804419144667,
+      "minimum_floor_ratio": 0.9261865929498428,
+      "minimum_uniform_protected_tone_backoff_db": 6.910924372714754,
+      "null_depth_cap_db": 60.0,
+      "post_backoff_maximum_ratio": 1.0,
+      "uncorrected_maximum_excess_db": 6.910924372714754,
+      "uncorrected_violation_seconds": 582
+    },
+    "long_single_cap65": {
+      "case": "long_single",
+      "eligible_floor_violation_user_intervals": 20,
+      "mean_moving_pf_utility": 93.98742187511216,
+      "mean_protected_network_retention": 0.8654933363964873,
+      "minimum_floor_ratio": 0.9919614071158902,
+      "minimum_uniform_protected_tone_backoff_db": 2.8750080589853195,
+      "null_depth_cap_db": 65.0,
+      "post_backoff_maximum_ratio": 1.0,
+      "uncorrected_maximum_excess_db": 2.8750080589853195,
+      "uncorrected_violation_seconds": 496
+    },
+    "long_single_cap67": {
+      "case": "long_single",
+      "eligible_floor_violation_user_intervals": 0,
+      "mean_moving_pf_utility": 94.8369999590447,
+      "mean_protected_network_retention": 0.9106998866141437,
+      "minimum_floor_ratio": 1.0009509996033965,
+      "minimum_uniform_protected_tone_backoff_db": 1.5581579003712134,
+      "null_depth_cap_db": 67.0,
+      "post_backoff_maximum_ratio": 1.0,
+      "uncorrected_maximum_excess_db": 1.5581579003712134,
+      "uncorrected_violation_seconds": 358
+    },
+    "long_single_cap70": {
+      "case": "long_single",
+      "eligible_floor_violation_user_intervals": 0,
+      "mean_moving_pf_utility": 95.7334593131934,
+      "mean_protected_network_retention": 0.958785618465173,
+      "minimum_floor_ratio": 1.000951624549143,
+      "minimum_uniform_protected_tone_backoff_db": 0.0,
+      "null_depth_cap_db": 70.0,
+      "post_backoff_maximum_ratio": 0.999967867802153,
+      "uncorrected_maximum_excess_db": -0.00013955060420972585,
+      "uncorrected_violation_seconds": 0
+    }
+  },
+  "source_commit": "6515d52b7c80d2cfe186be530cdbfe36f928179a",
+  "status": "PASS_PHYSICAL_IMPAIRMENT_SENSITIVITY_AUDIT_CALIBRATION_REQUIRED",
+  "stress_findings": {
+    "all_levels_are_assumed_not_calibrated": true,
+    "any_positive_stress_has_violation": true,
+    "interpretation": "The ideal long-term single-entry solution operates near the threshold and is sensitive to differential array/steering/quantization errors. Common-mode errors can be much less damaging; the correlation structure must be measured or explicitly bounded.",
+    "row_count": 19
+  }
+}
