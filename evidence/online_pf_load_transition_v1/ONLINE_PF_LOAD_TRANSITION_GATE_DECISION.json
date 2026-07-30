@@ -1,0 +1,11 @@
+{
+  "active_user_floor_violations": 0,
+  "next_gate": "CALIBRATE_UNCERTAINTY_AND_PREPARE_MULTI_SEED_MULTI_PASS_CAMPAIGN",
+  "online_pf_exceeds_frozen_pf": true,
+  "online_predictive_1db_safe": true,
+  "online_predictive_3db_safe": true,
+  "paper_result": false,
+  "status": "PASS_ONLINE_MOVING_AVERAGE_PF_LOAD_TRANSITION_ONE_SEED",
+  "theorem_saturation_statement_repaired": true,
+  "two_message_drop_fail_safe_safe": true
+}

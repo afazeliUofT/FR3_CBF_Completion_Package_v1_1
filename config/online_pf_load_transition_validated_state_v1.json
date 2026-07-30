@@ -1,0 +1,12 @@
+{
+  "active_user_floor_violations": 0,
+  "created_utc": "2026-07-30T14:04:00.599803+00:00",
+  "multi_seed_campaign_status": "SPECIFICATION_ONLY_NOT_SUBMITTED",
+  "next_gate": "CALIBRATE_UNCERTAINTY_AND_PREPARE_MULTI_SEED_MULTI_PASS_CAMPAIGN",
+  "online_predictive_1db_safe": true,
+  "online_predictive_3db_safe": true,
+  "paper_result": false,
+  "status": "PASS_ONLINE_MOVING_AVERAGE_PF_LOAD_TRANSITION_ONE_SEED",
+  "theorem_saturation_statement_repaired": true,
+  "two_message_drop_fail_safe_safe": true
+}

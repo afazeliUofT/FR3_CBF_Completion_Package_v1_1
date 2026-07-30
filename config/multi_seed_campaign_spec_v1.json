@@ -1,0 +1,110 @@
+{
+  "claim_boundary": "MULTI_SEED_CAMPAIGN_SPECIFICATION_NOT_EXECUTED",
+  "execution_policy": {
+    "artifact_policy": "one immutable input bundle, per-job checksums, compact review returns, full arrays retained outside Git when large",
+    "current_status": "PREPARATION_ONLY",
+    "do_not_submit_before": "online moving-average PF load-transition milestone passes",
+    "preferred_cluster": "Nibi"
+  },
+  "methods": [
+    "unprotected_local_rzf",
+    "uniform_power_backoff",
+    "hard_spatial_null",
+    "common_scale_oracle",
+    "static_robust_constrained_pf",
+    "delayed_myopic_online_pf",
+    "virtual_queue_online_pf",
+    "robust_predictive_online_pf",
+    "centralized_future_oracle_upper_bound"
+  ],
+  "minimum_design": {
+    "array_cases": [
+      "64T64R_primary",
+      "128_port_fully_digital_upper_reference"
+    ],
+    "channel_topology_seeds": 30,
+    "finite_network_edge_sensitivity": true,
+    "global_layout_rotations_deg": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      150
+    ],
+    "load_fractions": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "load_patterns": [
+      "rotating_deterministic_stress",
+      "staggered_markov_arrivals",
+      "full_load"
+    ],
+    "message_delay_intervals": [
+      0,
+      1,
+      2
+    ],
+    "o2i_stratification": true,
+    "protected_passes": 5,
+    "slew_db_per_update": [
+      1,
+      3,
+      6
+    ],
+    "uncertainty_calibration": "held-out coupling/pointing/array residuals; no arbitrary paper margin",
+    "update_interval_s": [
+      1,
+      5,
+      10
+    ]
+  },
+  "primary_metrics": {
+    "band_split": [
+      "total_band_metrics",
+      "protected_10mhz_metrics"
+    ],
+    "control": [
+      "command_total_variation_db",
+      "maximum_slew_db",
+      "active_mode_count",
+      "bytes_per_update",
+      "local_runtime_ms",
+      "coordinator_runtime_ms"
+    ],
+    "fairness": [
+      "moving_average_pf_utility",
+      "geometric_mean_rate",
+      "p05_rate",
+      "minimum_rate",
+      "jain_index",
+      "eligible_floor_violation_user_seconds",
+      "normalized_floor_shortfall"
+    ],
+    "groups": [
+      "eligible_indoor",
+      "eligible_outdoor",
+      "coverage_limited_indoor",
+      "coverage_limited_outdoor"
+    ],
+    "hard_safety": [
+      "violation_count",
+      "maximum_threshold_excess_db",
+      "minimum_safety_margin_db",
+      "fail_safe_count"
+    ]
+  },
+  "primary_question": "Does the robust distributed online-PF predictive safety filter provide a statistically significant safety-fairness advantage over static, delayed-myopic, virtual-queue, common-scale, hard-null, and power-backoff baselines under identical information, delay, slew, traffic, and uncertainty conditions?",
+  "schema_version": 1,
+  "statistics": {
+    "bootstrap": "clustered by seed/pass",
+    "confidence_level": 0.95,
+    "go_condition": "predictive safety-fairness advantage confidence interval excludes zero, with zero hidden slack and all hard-safety checks passing",
+    "paired_comparisons": true,
+    "unit_of_replication": "channel/topology seed crossed with protected pass"
+  },
+  "target_venue": "IEEE Transactions on Wireless Communications"
+}

@@ -1,3 +1,39 @@
+<!-- BEGIN ONLINE MOVING-AVERAGE PF LOAD TRANSITIONS -->
+## Online moving-average PF with deterministic load transitions
+
+Validated one-seed load sequence:
+
+- 118 five-second intervals over the 587-second pass;
+- active users per phase: 228, 114, 228, 57, 171, 114;
+- four recomputed local-RZF/load states;
+- 100-second exponential moving-average PF time constant;
+- one-update delay and 3 dB/update mode-attenuation slew.
+
+Results:
+
+- online delayed-myopic 1 dB upper-bound violation seconds:
+  `55`;
+- online predictive 1 dB violation seconds:
+  `0`;
+- online predictive 1 dB with two dropped commands:
+  `0` violations and
+  `2` fail-safe commands;
+- online predictive 3 dB violation seconds:
+  `0`;
+- all predictive active eligible-user floor violations: `0`;
+- online 1 dB moving-PF utility: `95.962861771`;
+- frozen-table predictive moving-PF utility:
+  `95.957091240`;
+- static robust moving-PF utility: `95.833441183`.
+
+The saturation statement of the finite-pass theorem is repaired by checking the
+actual clipped candidate `F(q)=min(q+rho,Q)` against the next envelope. This
+remains one seed, one pass, a deterministic load stress test, and an
+uncalibrated uncertainty screen.
+
+**Next gate:** `CALIBRATE_UNCERTAINTY_AND_PREPARE_MULTI_SEED_MULTI_PASS_CAMPAIGN`
+<!-- END ONLINE MOVING-AVERAGE PF LOAD TRANSITIONS -->
+
 <!-- BEGIN ROBUST DELAYED SAFETY MILESTONE -->
 ## Robust delayed-safety theorem and baseline milestone
 
@@ -116,12 +152,7 @@ predictive controller has yet been demonstrated.
 
 ## Status in one sentence
 
-The propagation, incumbent, topology, standards-subset, exact steering, and
-distributed DLP-RZF foundations are complete as non-paper evidence. Nibi job
-18658301 successfully closed the one-seed 57-sector, 228-user software and
-physical-accounting gate with zero local budget violations and zero projection
-power-increase violations. The dynamic delayed/rate-limited controller and
-paper-grade statistical campaign remain open.
+The public/modelled propagation and full-topology platform, constrained-PF predictive controller, finite-pass robust safety certificate, virtual-queue comparison, and deterministic online-PF load-transition milestone have passed as one-seed non-paper evidence. Calibrated uncertainty and the statistical multi-seed/multi-pass campaign remain open.
 
 ## Frozen successful gate
 
@@ -137,15 +168,16 @@ paper-grade statistical campaign remain open.
 
 ## Current gate
 
-`FORMALIZE_DELAYED_SAFETY_GUARANTEE_ADD_VIRTUAL_QUEUE_AND_UNCERTAINTY`
+`CALIBRATE_UNCERTAINTY_AND_PREPARE_MULTI_SEED_MULTI_PASS_CAMPAIGN`
 
 ## Immediate requirements
 
-1. Formalize the delayed/reachability safety guarantee.
-2. Add the virtual-queue baseline under the same fairness and actuation rules.
-3. Add uncertainty, message age, and an explicit fail-safe.
-4. Quantify frozen local-cost-table approximation error.
-5. Expand the controller grid before any multi-seed campaign.
+1. Calibrate coupling, pointing, array, and ephemeris upper errors.
+2. Resolve the exact long-term regulatory functional.
+3. Independently review the immutable multi-seed campaign package before submission.
+4. Add stochastic traffic, layout rotations, O2I, finite-network, and practical-array sensitivity.
+5. Run paired multi-seed/multi-pass statistics only after those gates pass.
+
 ## Open paper gates
 
 - exact long-term incumbent criterion;

@@ -1,0 +1,74 @@
+{
+  "frozen_table_predictive_robust_1db": {
+    "checks": {
+      "all_commands_envelope_feasible": true,
+      "all_solver_commands_feasible": true,
+      "all_upper_intervals_safe": true,
+      "candidate_specific_saturation_feasibility": true,
+      "full_horizon_recurrence": true,
+      "maximum_action_terminal_safety": true,
+      "slew_constraint": true
+    },
+    "maximum_candidate_specific_ratio": 0.7299299703197241,
+    "maximum_command_envelope_ratio": 0.999997239228492,
+    "maximum_command_slew_db": 3.0,
+    "maximum_recurrence_excess_w": 0.0,
+    "maximum_terminal_ratio": 0.0608189762284404,
+    "maximum_upper_interval_ratio": 0.9999439904477774,
+    "status": "PASS_CORRECTED_FINITE_PASS_DYNAMIC_CERTIFICATE"
+  },
+  "online_predictive_robust_1db": {
+    "checks": {
+      "all_commands_envelope_feasible": true,
+      "all_solver_commands_feasible": true,
+      "all_upper_intervals_safe": true,
+      "candidate_specific_saturation_feasibility": true,
+      "full_horizon_recurrence": true,
+      "maximum_action_terminal_safety": true,
+      "slew_constraint": true
+    },
+    "maximum_candidate_specific_ratio": 0.6100362152376765,
+    "maximum_command_envelope_ratio": 0.9999595551976161,
+    "maximum_command_slew_db": 3.0,
+    "maximum_recurrence_excess_w": 0.0,
+    "maximum_terminal_ratio": 0.0608189762284404,
+    "maximum_upper_interval_ratio": 0.9999595551976161,
+    "status": "PASS_CORRECTED_FINITE_PASS_DYNAMIC_CERTIFICATE"
+  },
+  "online_predictive_robust_1db_two_drops": {
+    "checks": {
+      "all_commands_envelope_feasible": true,
+      "all_solver_commands_feasible": true,
+      "all_upper_intervals_safe": true,
+      "candidate_specific_saturation_feasibility": true,
+      "full_horizon_recurrence": true,
+      "maximum_action_terminal_safety": true,
+      "slew_constraint": true
+    },
+    "maximum_candidate_specific_ratio": 0.6100362152376765,
+    "maximum_command_envelope_ratio": 0.9999737577572207,
+    "maximum_command_slew_db": 3.0,
+    "maximum_recurrence_excess_w": 0.0,
+    "maximum_terminal_ratio": 0.0608189762284404,
+    "maximum_upper_interval_ratio": 0.9999737577572207,
+    "status": "PASS_CORRECTED_FINITE_PASS_DYNAMIC_CERTIFICATE"
+  },
+  "online_predictive_robust_3db": {
+    "checks": {
+      "all_commands_envelope_feasible": true,
+      "all_solver_commands_feasible": true,
+      "all_upper_intervals_safe": true,
+      "candidate_specific_saturation_feasibility": true,
+      "full_horizon_recurrence": true,
+      "maximum_action_terminal_safety": true,
+      "slew_constraint": true
+    },
+    "maximum_candidate_specific_ratio": 0.6445006147765234,
+    "maximum_command_envelope_ratio": 0.999990393158109,
+    "maximum_command_slew_db": 3.0,
+    "maximum_recurrence_excess_w": 0.0,
+    "maximum_terminal_ratio": 0.09639158139690948,
+    "maximum_upper_interval_ratio": 0.999990393158109,
+    "status": "PASS_CORRECTED_FINITE_PASS_DYNAMIC_CERTIFICATE"
+  }
+}

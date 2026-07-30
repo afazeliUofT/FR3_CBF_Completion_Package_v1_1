@@ -2,12 +2,13 @@
 
 ## Gate
 
-`ONLINE_MOVING_AVERAGE_PF_LOAD_TRANSITIONS_AND_MULTI_SEED_PREP`
+`CALIBRATE_UNCERTAINTY_AND_PREPARE_MULTI_SEED_MULTI_PASS_CAMPAIGN`
 
 ## Required sequence
 
-1. Replace frozen instantaneous PF tables with online moving-average PF weights and quantify the frozen-table approximation gap.
-2. Add deterministic load transitions and user arrivals/departures, recompute local RZF from the validated full channel, and preserve the same hard safety certificate.
-3. Calibrate coupling/pointing/array uncertainty from held-out samples rather than arbitrary dB smoke margins.
-4. Freeze the formal short-term theorem in manuscript notation and resolve the exact long-term regulatory functional.
-5. Prepare multi-seed, multi-pass, layout-rotation, O2I, and practical array sensitivity jobs only after local moving-average PF passes.
+1. Calibrate coupling, pointing, array, and ephemeris upper errors from held-out data or a declared deterministic engineering set; do not use the 1/3 dB smoke margins as paper evidence.
+2. Resolve and implement the exact long-term regulatory functional separately from the certified short-term constraint.
+3. Freeze one immutable multi-seed/multi-pass experiment package using `config/multi_seed_campaign_spec_v1.json`.
+4. Include stochastic arrivals/departures in addition to the deterministic rotating-load stress test.
+5. Include layout rotations, O2I stratification, finite-network sensitivity, a practical 64T64R primary case, and the 128-port digital upper reference.
+6. Launch the statistical campaign only after independent review of the calibration and campaign package.

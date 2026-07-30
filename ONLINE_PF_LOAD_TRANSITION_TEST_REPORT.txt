@@ -1,0 +1,23 @@
+Online moving-average PF and load-transition milestone v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused unit tests: PASS
+- Exact validated full-topology data dry run: PASS
+- Full-load local-RZF reproduction: PASS
+- Four recomputed load states / 118 intervals: PASS
+- Online delayed-myopic 1 dB upper violations present: PASS
+- Online predictive 1 dB upper violations zero: PASS
+- Online predictive 3 dB upper violations zero: PASS
+- Two dropped commands with ramp-to-safe fallback: PASS
+- All active eligible-user floor violations zero: PASS
+- Online moving-PF utility exceeds frozen-table and static references: PASS
+- Corrected candidate-specific saturation certificate: PASS
+- Tracked pycache cleanup: REQUIRED AND AUTOMATED
+- Multi-seed campaign: SPECIFICATION ONLY, NOT SUBMITTED
+
+Claim boundary
+ONLINE_MOVING_AVERAGE_PF_LOAD_TRANSITION_ONE_SEED_NOT_PAPER_RESULT
+- WSL BLAS/LAPACK aggregate-reproduction regression: PASS
+- Full-load per-user absolute + network-relative numerical contract: PASS

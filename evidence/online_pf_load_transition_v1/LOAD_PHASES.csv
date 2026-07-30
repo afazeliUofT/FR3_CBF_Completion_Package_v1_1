@@ -1,0 +1,7 @@
+phase_index,start_interval,stop_interval_exclusive,interval_count,active_streams_per_sector,active_user_count
+0,0,20,20,4,228
+1,20,40,20,2,114
+2,40,60,20,4,228
+3,60,80,20,1,57
+4,80,100,20,3,171
+5,100,118,18,2,114
