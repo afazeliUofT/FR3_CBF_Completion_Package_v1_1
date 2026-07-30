@@ -1,0 +1,22 @@
+Robust delayed-safety and baseline milestone v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused unit tests: PASS
+- Exact validated full-topology data dry run: PASS
+- Finite-pass envelope recurrence: PASS
+- Recursive-feasibility candidate: PASS
+- Maximum-action terminal safety: PASS
+- Nominal robust predictive violations: 0
+- 1 dB robust case with two dropped commands: 0 violations
+- 3 dB robust case: 0 violations
+- One additional stale interval with 1 dB margin: 0 violations
+- All robust eligible-user floor violations: 0
+- Delayed myopic violations present: PASS
+- Virtual-queue instantaneous violations present: PASS
+- Frozen local PF surrogate correlation with exact PF loss: >0.99
+- Review-bundle construction: PASS
+
+Claim boundary
+ROBUST_DELAYED_SAFETY_BASELINE_MILESTONE_ONE_SEED_NOT_PAPER_RESULT

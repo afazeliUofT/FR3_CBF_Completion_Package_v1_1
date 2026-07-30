@@ -1,3 +1,29 @@
+<!-- BEGIN ROBUST DELAYED SAFETY MILESTONE -->
+## Robust delayed-safety theorem and baseline milestone
+
+A finite-pass robust reachability certificate now matches the implemented
+predictive filter. It includes known delay, a 3 dB/update per-mode slew limit,
+a full-pass geometry envelope, multiplicative coupling bounds, a preloaded
+initial action, and a ramp-to-safe message-loss fallback.
+
+One-seed primary results:
+
+- nominal predictive upper-bound violations: `0`;
+- 1 dB robust case with two dropped commands: `0` violations and `2` fail-safe commands;
+- 3 dB robust upper-bound violations: `0`;
+- all robust eligible-user floor violations: `0`;
+- virtual-queue gain-1 instantaneous violation seconds:
+  `169`;
+- 3 dB robust predictive mean PF utility:
+  `132.382157793`.
+
+The virtual queue is a long-term baseline and does not provide the hard
+instantaneous guarantee. Uncertainty bounds are deterministic smoke-test
+bounds, not yet held-out calibrated error models.
+
+**Next gate:** `ONLINE_MOVING_AVERAGE_PF_LOAD_TRANSITIONS_AND_MULTI_SEED_PREP`
+<!-- END ROBUST DELAYED SAFETY MILESTONE -->
+
 <!-- BEGIN CONSTRAINED PF CONTROLLER MILESTONE -->
 ## Constrained proportional-fair controller milestone
 

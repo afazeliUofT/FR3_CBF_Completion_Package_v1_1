@@ -2,13 +2,12 @@
 
 ## Gate
 
-`FORMALIZE_DELAYED_SAFETY_GUARANTEE_ADD_VIRTUAL_QUEUE_AND_UNCERTAINTY`
+`ONLINE_MOVING_AVERAGE_PF_LOAD_TRANSITIONS_AND_MULTI_SEED_PREP`
 
 ## Required sequence
 
-1. State and prove the finite-horizon delayed/reachability safety condition matching the implemented predictive filter, including initialization, forecast error, delay, and slew limits.
-2. Add a virtual-queue/Lyapunov baseline under the same information, delay, slew, service-floor, and uncertainty conditions.
-3. Add coupling-error and message-age uncertainty with an explicit local fail-safe and no hidden slack.
-4. Replace frozen nominal local action-cost tables with online local moving-average PF cost updates, or quantify their approximation gap.
-5. Expand the delay/slew/update grid and produce the primary safety-fairness ablation figures.
-6. Only after these gates pass, launch multi-seed and multi-pass experiments.
+1. Replace frozen instantaneous PF tables with online moving-average PF weights and quantify the frozen-table approximation gap.
+2. Add deterministic load transitions and user arrivals/departures, recompute local RZF from the validated full channel, and preserve the same hard safety certificate.
+3. Calibrate coupling/pointing/array uncertainty from held-out samples rather than arbitrary dB smoke margins.
+4. Freeze the formal short-term theorem in manuscript notation and resolve the exact long-term regulatory functional.
+5. Prepare multi-seed, multi-pass, layout-rotation, O2I, and practical array sensitivity jobs only after local moving-average PF passes.

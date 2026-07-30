@@ -1,0 +1,90 @@
+{
+  "predictive_1db_plus_one_stale_interval": {
+    "case_id": "predictive_1db_plus_one_stale_interval",
+    "checks": {
+      "all_commands_envelope_feasible": true,
+      "all_commands_solver_feasible": true,
+      "all_upper_bound_intervals_safe": true,
+      "fail_safe_candidate_recursively_feasible": true,
+      "full_horizon_recurrence": true,
+      "slew_constraint": true,
+      "terminal_maximum_action_safe": true
+    },
+    "coupling_upper_margin_db": 1.0,
+    "effective_delay_intervals": 2,
+    "fail_safe_use_count": 0,
+    "maximum_command_slew_db": 3.0,
+    "maximum_envelope_ratio": 0.9999934169442957,
+    "maximum_fail_safe_candidate_ratio": 0.6425647370770965,
+    "maximum_recurrence_excess_w": 0.0,
+    "maximum_terminal_action_ratio": 0.0608189792938456,
+    "maximum_upper_safety_ratio": 0.9999934169442957,
+    "status": "PASS_FINITE_PASS_ROBUST_REACHABILITY_CERTIFICATE"
+  },
+  "predictive_1db_with_two_message_drops": {
+    "case_id": "predictive_1db_with_two_message_drops",
+    "checks": {
+      "all_commands_envelope_feasible": true,
+      "all_commands_solver_feasible": true,
+      "all_upper_bound_intervals_safe": true,
+      "fail_safe_candidate_recursively_feasible": true,
+      "full_horizon_recurrence": true,
+      "slew_constraint": true,
+      "terminal_maximum_action_safe": true
+    },
+    "coupling_upper_margin_db": 1.0,
+    "effective_delay_intervals": 1,
+    "fail_safe_use_count": 2,
+    "maximum_command_slew_db": 3.0,
+    "maximum_envelope_ratio": 0.9999897677805134,
+    "maximum_fail_safe_candidate_ratio": 0.6425647370770965,
+    "maximum_recurrence_excess_w": 0.0,
+    "maximum_terminal_action_ratio": 0.0608189792938456,
+    "maximum_upper_safety_ratio": 0.9999897677805133,
+    "status": "PASS_FINITE_PASS_ROBUST_REACHABILITY_CERTIFICATE"
+  },
+  "predictive_3db": {
+    "case_id": "predictive_3db",
+    "checks": {
+      "all_commands_envelope_feasible": true,
+      "all_commands_solver_feasible": true,
+      "all_upper_bound_intervals_safe": true,
+      "fail_safe_candidate_recursively_feasible": true,
+      "full_horizon_recurrence": true,
+      "slew_constraint": true,
+      "terminal_maximum_action_safe": true
+    },
+    "coupling_upper_margin_db": 3.0,
+    "effective_delay_intervals": 1,
+    "fail_safe_use_count": 0,
+    "maximum_command_slew_db": 3.0,
+    "maximum_envelope_ratio": 0.9999659413666648,
+    "maximum_fail_safe_candidate_ratio": 0.6420418858830278,
+    "maximum_recurrence_excess_w": 0.0,
+    "maximum_terminal_action_ratio": 0.09639158625524931,
+    "maximum_upper_safety_ratio": 0.9999589066337133,
+    "status": "PASS_FINITE_PASS_ROBUST_REACHABILITY_CERTIFICATE"
+  },
+  "predictive_nominal_full_horizon": {
+    "case_id": "predictive_nominal_full_horizon",
+    "checks": {
+      "all_commands_envelope_feasible": true,
+      "all_commands_solver_feasible": true,
+      "all_upper_bound_intervals_safe": true,
+      "fail_safe_candidate_recursively_feasible": true,
+      "full_horizon_recurrence": true,
+      "slew_constraint": true,
+      "terminal_maximum_action_safe": true
+    },
+    "coupling_upper_margin_db": 0.0,
+    "effective_delay_intervals": 1,
+    "fail_safe_use_count": 0,
+    "maximum_command_slew_db": 3.0,
+    "maximum_envelope_ratio": 0.9999931889467821,
+    "maximum_fail_safe_candidate_ratio": 0.6595449681195328,
+    "maximum_recurrence_excess_w": 0.0,
+    "maximum_terminal_action_ratio": 0.048310232460213,
+    "maximum_upper_safety_ratio": 0.9999931889467822,
+    "status": "PASS_FINITE_PASS_ROBUST_REACHABILITY_CERTIFICATE"
+  }
+}

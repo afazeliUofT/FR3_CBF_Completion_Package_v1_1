@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "purpose": "Formalize and machine-certify the delayed reachability safety guarantee, add a virtual-queue baseline, bounded coupling uncertainty, message-age handling, and an explicit fail-safe on the validated one-seed full-topology dataset.",
+  "claim_boundary": "ROBUST_DELAYED_SAFETY_BASELINE_MILESTONE_ONE_SEED_NOT_PAPER_RESULT",
+  "required_ancestor_commit": "41ec80f28f2b5a68fa32d09efc428a60c20b1a4f",
+  "data_root": "data/real/full_topology_export_18696267_validated_v4/output",
+  "fairness_policy": {
+    "serviceability_threshold_bps_hz": 0.1,
+    "absolute_total_band_floor_bps_hz": 0.1,
+    "relative_total_band_floor_fraction": 0.9,
+    "pf_epsilon_bps_hz": 0.001,
+    "indoor_weight": 1.0,
+    "outdoor_weight": 1.0
+  },
+  "action_grid": {
+    "minimum_db": 0,
+    "maximum_db": 60,
+    "step_db": 1
+  },
+  "primary_scenario": {
+    "update_interval_s": 5,
+    "message_delay_intervals": 1,
+    "slew_db_per_update": 3,
+    "full_future_geometry_envelope": true
+  },
+  "robust_cases": [
+    {
+      "case_id": "predictive_nominal_full_horizon",
+      "coupling_upper_margin_db": 0,
+      "additional_message_age_intervals": 0,
+      "fail_safe_drop_command_indices": []
+    },
+    {
+      "case_id": "predictive_1db_with_two_message_drops",
+      "coupling_upper_margin_db": 1,
+      "additional_message_age_intervals": 0,
+      "fail_safe_drop_command_indices": [40, 41]
+    },
+    {
+      "case_id": "predictive_3db",
+      "coupling_upper_margin_db": 3,
+      "additional_message_age_intervals": 0,
+      "fail_safe_drop_command_indices": []
+    },
+    {
+      "case_id": "predictive_1db_plus_one_stale_interval",
+      "coupling_upper_margin_db": 1,
+      "additional_message_age_intervals": 1,
+      "fail_safe_drop_command_indices": []
+    }
+  ],
+  "virtual_queue": {
+    "price_gains": [1, 10, 100],
+    "queue_update": "Z[k+1]=max(0,Z[k]+I[k]/I_allow-1)",
+    "hard_instantaneous_safety": false
+  },
+  "theorem_assumptions": {
+    "upper_contribution_bound_available": true,
+    "known_integer_action_delay": true,
+    "absolute_per_mode_slew_limit": true,
+    "finite_pass_full_horizon_envelope": true,
+    "maximum_attenuation_terminal_action_safe": true,
+    "preloaded_initial_action": true
+  },
+  "paths": {
+    "results_dir": "results/robust_safety_baselines_v1",
+    "evidence_dir": "evidence/robust_safety_baselines_v1",
+    "review_bundle": "evidence/robust_safety_baselines_v1/FR3_ROBUST_DELAYED_SAFETY_BASELINES_REVIEW_v1.zip"
+  },
+  "next_gate": "ONLINE_MOVING_AVERAGE_PF_LOAD_TRANSITIONS_AND_MULTI_SEED_PREP"
+}

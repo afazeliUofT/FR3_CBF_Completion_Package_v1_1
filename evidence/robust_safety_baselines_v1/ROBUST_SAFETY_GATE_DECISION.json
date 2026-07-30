@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-07-30T01:31:49.381093+00:00",
+  "formal_finite_pass_safety_certificate": true,
+  "message_drop_fail_safe_safe": true,
+  "next_gate": "ONLINE_MOVING_AVERAGE_PF_LOAD_TRANSITIONS_AND_MULTI_SEED_PREP",
+  "paper_result": false,
+  "predictive_3db_upper_bound_safe": true,
+  "predictive_nominal_safe": true,
+  "status": "PASS_ROBUST_DELAYED_SAFETY_BASELINE_MILESTONE_ONE_SEED",
+  "sum_rate_primary_objective": false,
+  "virtual_queue_instantaneously_safe": false
+}
