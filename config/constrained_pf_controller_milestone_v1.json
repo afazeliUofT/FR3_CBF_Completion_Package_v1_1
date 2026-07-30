@@ -1,0 +1,50 @@
+{
+  "action_grid": {
+    "maximum_db": 60,
+    "minimum_db": 0,
+    "step_db": 1
+  },
+  "claim_boundary": "CONSTRAINED_PF_CONTROLLER_MILESTONE_ONE_SEED_NOT_PAPER_RESULT",
+  "controllers": [
+    "common_scale_oracle",
+    "hard_spatial_null",
+    "static_constrained_pf",
+    "delayed_myopic_constrained_pf",
+    "predictive_reachability_constrained_pf"
+  ],
+  "data_root": "data/real/full_topology_export_18696267_validated_v4/output",
+  "next_gate": "FORMALIZE_DELAYED_SAFETY_GUARANTEE_ADD_VIRTUAL_QUEUE_AND_UNCERTAINTY",
+  "paths": {
+    "evidence_dir": "evidence/constrained_pf_controller_milestone_v1",
+    "results_dir": "results/constrained_pf_controller_milestone_v1",
+    "review_bundle": "evidence/constrained_pf_controller_milestone_v1/FR3_CONSTRAINED_PF_CONTROLLER_MILESTONE_REVIEW_v1.zip"
+  },
+  "policy": {
+    "absolute_total_band_floor_bps_hz": 0.1,
+    "indoor_weight": 1.0,
+    "optimization_priority": [
+      "incumbent safety",
+      "minimize eligible-user floor violations",
+      "minimize eligible-user normalized floor shortfall",
+      "maximize eligible-user proportional-fair utility",
+      "minimize control variation"
+    ],
+    "outdoor_weight": 1.0,
+    "pf_epsilon_bps_hz": 0.001,
+    "relative_total_band_floor_fraction": 0.9,
+    "serviceability_threshold_bps_hz": 0.1
+  },
+  "primary_scenario": {
+    "initialization": {
+      "myopic": "current-interval safe action",
+      "predictive": "ephemeris-preloaded action safe for current interval and finite-horizon reachability envelope"
+    },
+    "message_delay_intervals": 1,
+    "predictive_horizon_intervals": 10,
+    "slew_db_per_update": 3,
+    "update_interval_s": 5
+  },
+  "purpose": "Implement and validate a one-seed constrained-proportional-fair static, delayed-myopic, and predictive reachability safety-controller milestone on the validated full-topology export.",
+  "required_ancestor_commit": "2ca450fe3a5029b9101890bcde2dac032650a3b9",
+  "schema_version": 1
+}

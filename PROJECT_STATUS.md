@@ -1,3 +1,40 @@
+<!-- BEGIN CONSTRAINED PF CONTROLLER MILESTONE -->
+## Constrained proportional-fair controller milestone
+
+Primary frozen scenario:
+
+- update interval: 5 s;
+- message/action delay: 1 update;
+- attenuation slew: 3 dB/update;
+- predictive horizon: 10 updates;
+- eligible users: 207;
+- coverage-limited users reported separately: 21;
+- eligible floor: `max(0.1, 0.9 R_nominal)` bit/s/Hz.
+
+Results:
+
+- delayed-myopic incumbent violation seconds:
+  `39`;
+- predictive incumbent violation seconds:
+  `0`;
+- predictive eligible-user floor violations:
+  `0`;
+- predictive mean PF utility:
+  `132.464839322`;
+- static-safe mean PF utility:
+  `132.263101034`;
+- predictive mean eligible-user geometric rate:
+  `1.895342143` bit/s/Hz;
+- static-safe mean eligible-user geometric rate:
+  `1.893494747` bit/s/Hz.
+
+Network sum rate remains secondary. The milestone is one seed and does not yet
+provide a formal delayed-safety theorem, virtual-queue baseline, uncertainty
+calibration, or statistical paper evidence.
+
+**Next gate:** `FORMALIZE_DELAYED_SAFETY_GUARANTEE_ADD_VIRTUAL_QUEUE_AND_UNCERTAINTY`
+<!-- END CONSTRAINED PF CONTROLLER MILESTONE -->
+
 <!-- BEGIN FAIRNESS POLICY AUDIT -->
 ## Fairness policy frozen before controller implementation
 
@@ -74,17 +111,15 @@ paper-grade statistical campaign remain open.
 
 ## Current gate
 
-`INDEPENDENT_REVIEW_THEN_PREPARE_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT`
+`FORMALIZE_DELAYED_SAFETY_GUARANTEE_ADD_VIRTUAL_QUEUE_AND_UNCERTAINTY`
 
 ## Immediate requirements
 
-1. Review and merge the frozen job-18658301 evidence and provenance overlay.
-2. Freeze the delayed/rate-limited dynamic experiment contract.
-3. Prepare one controller-ready full-228-user topology export.
-4. Compare the full-topology export with the four-user-chunk reference.
-5. Implement practical static, myopic, virtual-queue, and predictive/CBF
-   controllers locally before launching a multi-seed campaign.
-
+1. Formalize the delayed/reachability safety guarantee.
+2. Add the virtual-queue baseline under the same fairness and actuation rules.
+3. Add uncertainty, message age, and an explicit fail-safe.
+4. Quantify frozen local-cost-table approximation error.
+5. Expand the controller grid before any multi-seed campaign.
 ## Open paper gates
 
 - exact long-term incumbent criterion;

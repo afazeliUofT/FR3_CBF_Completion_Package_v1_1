@@ -1,0 +1,14 @@
+{
+  "coverage_limited_users_reported_separately": true,
+  "created_utc": "2026-07-30T00:36:23.173699+00:00",
+  "eligible_user_floor_enforced_and_audited": true,
+  "next_gate": "FORMALIZE_DELAYED_SAFETY_GUARANTEE_ADD_VIRTUAL_QUEUE_AND_UNCERTAINTY",
+  "paper_result": false,
+  "predictive_geometric_rate_exceeds_static": true,
+  "predictive_pf_exceeds_static": true,
+  "primary_myopic_unsafe": true,
+  "primary_predictive_floor_violations": 0,
+  "primary_predictive_safe": true,
+  "status": "PASS_CONSTRAINED_PF_CONTROLLER_MILESTONE_ONE_SEED",
+  "sum_rate_primary_objective": false
+}

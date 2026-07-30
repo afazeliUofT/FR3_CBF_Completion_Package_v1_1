@@ -1,0 +1,30 @@
+Constrained proportional-fair controller milestone v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused unit tests: PASS
+- Exact validated full-topology data dry run: PASS
+- 207 eligible / 21 coverage-limited users: PASS
+- Explicit max(0.1,0.9 R_nominal) floor audit: PASS
+- Delayed myopic incumbent violations present: PASS
+- Predictive reachability incumbent violations zero: PASS
+- Predictive eligible-user floor violations zero: PASS
+- Predictive PF utility exceeds safe static PF utility: PASS
+- Protected-band and total-band fairness metrics: PASS
+- Indoor/outdoor group metrics: PASS
+- Review-bundle construction: PASS
+
+Claim boundary
+CONSTRAINED_PF_CONTROLLER_MILESTONE_ONE_SEED_NOT_PAPER_RESULT
+
+Exact-data primary dry-run values
+- Delayed myopic incumbent violation seconds: 39
+- Predictive incumbent violation seconds: 0
+- Predictive eligible-user floor violation user-intervals: 0
+- Predictive mean PF utility: 132.4648393222265
+- Static-safe mean PF utility: 132.26310103373677
+- Predictive mean eligible-user geometric rate: 1.8953421426455583 bit/s/Hz
+- Static-safe mean eligible-user geometric rate: 1.893494747374218 bit/s/Hz
+- Predictive total-band network retention (secondary): 0.9956529711139078
+- Predictive protected-band network retention (secondary): 0.9568454728871694
