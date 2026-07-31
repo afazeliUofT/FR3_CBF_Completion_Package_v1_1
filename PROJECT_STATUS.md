@@ -1,3 +1,23 @@
+<!-- BEGIN PHASE1 INDEPENDENT REVIEW ROUND2 -->
+## Phase-1 independent review round 2
+
+Candidate v3:
+
+- commit: `be9053dd18deaeef6ab87597e706ab45092ea8cf`;
+- ZIP SHA-256: `f7b47fd3a07e30987b7f0901df1706d6127774d32284e7d3b0da38185d810161`;
+- verdict:
+  `PASS_FOR_IMMUTABLE_JOB_PACKAGE_PREPARATION_NOT_EXECUTION`;
+- campaign execution authorized: `NO`.
+
+The campaign contract, fixed-pass statistical plan, method information classes,
+source snapshot, compute DAG, five pass records, and execution locks pass
+review. The immutable job package must implement the reactive-myopic fallback,
+use the v3 contract as the sole canonical source, preserve channel reuse, and
+pass a separate independent review before any execution token is issued.
+
+**Next gate:** `BUILD_AND_INDEPENDENTLY_REVIEW_IMMUTABLE_PHASE1_NIBI_JOB_PACKAGE`
+<!-- END PHASE1 INDEPENDENT REVIEW ROUND2 -->
+
 <!-- BEGIN PHASE1 INDEPENDENT REVIEW ROUND1 -->
 ## Phase-1 independent review round 1
 

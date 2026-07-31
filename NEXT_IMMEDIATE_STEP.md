@@ -2,10 +2,11 @@
 
 ## Gate
 
-`INDEPENDENTLY_REVIEW_PHASE1_CAMPAIGN_CANDIDATE_V3`
+`BUILD_AND_INDEPENDENTLY_REVIEW_IMMUTABLE_PHASE1_NIBI_JOB_PACKAGE`
 
-1. Keep campaign execution unauthorized.
-2. Independently review phase-1 candidate v3 against the round-1 blocking defects and the v3 method/statistical contracts.
-3. Return PASS or a precise remaining blocker.
-4. Only after independent PASS may an immutable Nibi job-array package be prepared.
-5. A separate execution authorization token is still required after job-package review.
+1. Build an immutable, non-executable Nibi job-array package from candidate-v3 hashes.
+2. Implement and test the reactive-myopic sector-fallback comparator.
+3. Generate each of the 30 cellular channel seeds once and reuse it across all five passes and eight methods.
+4. Include local smoke tests, result schemas, merge/finalization scripts, and exact SHA-256 manifests.
+5. Keep every submission command locked.
+6. Independently review the job package; only a later explicit token may authorize Nibi execution.

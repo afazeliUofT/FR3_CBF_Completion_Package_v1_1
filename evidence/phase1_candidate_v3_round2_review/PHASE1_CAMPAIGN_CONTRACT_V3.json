@@ -1,0 +1,264 @@
+{
+  "claim_boundary": "PHASE1_CAMPAIGN_CONTRACT_FIXED_FIVE_PASSES_DECLARED_ENGINEERING_ENVELOPE_NOT_EXECUTED_NOT_CALIBRATION_NOT_COMPLIANCE_NOT_PAPER_RESULT",
+  "compute_dag": {
+    "channel_generation_jobs": 30,
+    "common_random_numbers": true,
+    "controller_method_evaluations_per_cell": 8,
+    "forbidden_redundancy": "Do not regenerate Sionna channels separately for passes or methods.",
+    "pass_method_cells": 150,
+    "rule": "Generate one full 128-port cellular channel/topology bundle per seed. Derive the 64-RF architecture once and reuse it across all five pass records and all methods.",
+    "total_controller_evaluations": 1200
+  },
+  "execution_authorized": false,
+  "execution_lock": {
+    "authorized": false,
+    "required_before_job_array_execution": [
+      "independent round-2 PASS on candidate v3",
+      "immutable job-array package whose source/config hashes match candidate v3",
+      "separate explicit execution authorization token"
+    ]
+  },
+  "fixed_population": {
+    "channel_topology_seeds": [
+      44000,
+      44001,
+      44002,
+      44003,
+      44004,
+      44005,
+      44006,
+      44007,
+      44008,
+      44009,
+      44010,
+      44011,
+      44012,
+      44013,
+      44014,
+      44015,
+      44016,
+      44017,
+      44018,
+      44019,
+      44020,
+      44021,
+      44022,
+      44023,
+      44024,
+      44025,
+      44026,
+      44027,
+      44028,
+      44029
+    ],
+    "interpretation": "Thirty independent channel/topology seed clusters crossed with five preselected fixed protected-pass geometry blocks. The five passes are not treated as an iid sample from all possible passes.",
+    "protected_pass_slots": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "replication_cells": 150
+  },
+  "independent_review_status": "PENDING_ROUND2",
+  "method_contracts": [
+    {
+      "causal_information": "Current local CSI/load and preloaded full-pass ephemeris-derived coupling upper envelope; no future cellular-channel realization.",
+      "class": "primary_method",
+      "hard_safety_certificate": true,
+      "id": "robust_predictive_constrained_pf_with_sector_selective_fallback",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": true
+    },
+    {
+      "causal_information": "One static action designed from the full-pass declared upper envelope; reported as a conservative preplanned comparator.",
+      "class": "primary_safe_comparator",
+      "hard_safety_certificate": true,
+      "id": "static_robust_constrained_pf_with_sector_selective_fallback",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": true
+    },
+    {
+      "causal_information": "Current interval only; no future coupling. Receives the same pre-authorized sector-selective emergency fallback.",
+      "class": "secondary_practical_dynamic_comparator",
+      "hard_safety_certificate": "by_exact_reactive_fallback_audit",
+      "id": "delayed_myopic_constrained_pf_with_reactive_sector_fallback",
+      "implementation_required_before_job_package": true,
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": true
+    },
+    {
+      "causal_information": "Current interval only; no future coupling.",
+      "class": "diagnostic_negative_control",
+      "hard_safety_certificate": false,
+      "id": "delayed_myopic_constrained_pf_unshielded",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": false
+    },
+    {
+      "causal_information": "Current interval and queue state only.",
+      "class": "diagnostic_long_term_baseline",
+      "hard_safety_certificate": false,
+      "id": "virtual_queue_unshielded",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": false
+    },
+    {
+      "causal_information": "Same interval upper envelope and fallback latency assumption.",
+      "class": "safe_conservative_baseline",
+      "hard_safety_certificate": true,
+      "id": "uniform_protected_tone_backoff",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": false
+    },
+    {
+      "causal_information": "Predeclared maximum attenuation/mute action.",
+      "class": "safe_conservative_baseline",
+      "hard_safety_certificate": true,
+      "id": "hard_spatial_null_or_exact_mute",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": false
+    },
+    {
+      "causal_information": "Instantaneous exact coupling; no delay/slew penalty.",
+      "class": "noncausal_reference_not_primary_comparator",
+      "hard_safety_certificate": true,
+      "id": "common_scale_instantaneous_noncausal_reference",
+      "timing_equal_to_primary": false,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": false
+    }
+  ],
+  "next_gate": "INDEPENDENTLY_REVIEW_PHASE1_CAMPAIGN_CANDIDATE_V3",
+  "primary_scenario": {
+    "analog_phase_bits": 6,
+    "architecture_id": "generic_64t64r_subarray_6bit",
+    "declared_engineering_envelope": {
+      "interpretation": "Deterministic engineering stress scenario, not a calibrated confidence bound.",
+      "null_depth_cap_db": 65.0,
+      "residual_normalized_coupling_uplift_db": 3.0
+    },
+    "design_criterion": {
+      "name": "long_multiple",
+      "p452_time_percentage": 20.0,
+      "threshold_dbw_per_10mhz": -150.0
+    },
+    "fairness": {
+      "absolute_total_band_floor_bps_hz": 0.1,
+      "indoor_weight": 1.0,
+      "outdoor_weight": 1.0,
+      "relative_current_load_floor_fraction": 0.9,
+      "serviceability_threshold_bps_hz": 0.1
+    },
+    "load_schedule": {
+      "active_streams_per_sector": [
+        4,
+        2,
+        4,
+        1,
+        3,
+        2
+      ],
+      "declared_phase_lengths_intervals": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        18
+      ],
+      "selection_rule": "For sector b and phase j, activate local streams {(b+j+r) mod 4: r=0,...,K_j-1}.",
+      "variable_pass_length_rule": "Let N_p=ceil(S_p/5), where S_p is the protected one-second sample count. Apply declared phases in order, truncating the phase that reaches N_p. If N_p exceeds 118, append one extension phase with K=2 and phase index j=6, matching build_rotating_load_schedule(). The last update interval may be shorter than five seconds and uses the exact available samples."
+    },
+    "mode_attenuation_grid_db": {
+      "maximum_numerical": 70,
+      "minimum": 0,
+      "physical_clip": 65,
+      "step": 1
+    },
+    "moving_average_pf": {
+      "epsilon_bps_hz": 0.001,
+      "inactive_semantics": "backlogged_unscheduled_zero_rate_update",
+      "initialization": "per-seed full-load nominal total-band user rates",
+      "time_constant_s": 100.0
+    },
+    "paired_verification_criterion": {
+      "name": "short_multiple",
+      "p452_time_percentage": 0.005,
+      "threshold_dbw_per_10mhz": -133.0
+    },
+    "physical_ports": 128,
+    "primary_pattern": "SA.509_multiple_entry",
+    "rf_chains": 64,
+    "sector_fallback": {
+      "declared_local_latency_budget_ms": 100,
+      "exact_protected_subband_mute_endpoint": true,
+      "finite_backoff_grid_db": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "latency_measured": false
+    },
+    "timing": {
+      "command_delay_intervals": 1,
+      "mode_slew_db_per_update": 3,
+      "predictive_horizon": "full_remaining_protected_pass",
+      "primary_message_drop_indices": [],
+      "update_interval_s": 5
+    }
+  },
+  "schema_version": 3,
+  "source_candidate_v2": {
+    "candidate_zip_sha256": "cb4d121372aa572e1163b92d013b87a66d2816180b071a941355c69553e80498",
+    "commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450",
+    "review_bundle_sha256": "1dd347fa380366ece18e0b723643ff6d1445066f25140d066071e796c5419485",
+    "round1_verdict": "REQUIRES_REVISION"
+  },
+  "statistics": {
+    "bootstrap_resamples": 10000,
+    "claim_scope": "Inference is over the predeclared 30 channel/topology seeds averaged across these five fixed geometry passes; it is not a population claim over all orbital passes or ephemeris uncertainty.",
+    "confidence_interval": "paired percentile bootstrap over 30 seed clusters",
+    "confidence_level": 0.95,
+    "go_condition": "All hard gates pass and the lower 95% paired seed-cluster bootstrap bound for the primary moving-PF utility difference is greater than zero.",
+    "hard_gates": [
+      "zero predictive hard-safety violation seconds across all 150 cells",
+      "zero predictive eligible-floor violation user-seconds across all 150 cells",
+      "all numerical/manifest/provenance checks pass"
+    ],
+    "missing_run_policy": "No imputation or silent exclusion. A deterministic failed cell may be rerun once with the identical immutable inputs. Persistent failure leaves the campaign incomplete and blocks the go decision.",
+    "multiplicity": "One confirmatory utility comparison. All other comparisons and sensitivity effects are secondary/exploratory.",
+    "outlier_policy": "No outcome-based exclusion.",
+    "pass_treatment": "Fixed blocking factor. Do not bootstrap five passes as if they were an iid population sample.",
+    "primary_comparison": "robust_predictive_constrained_pf_with_sector_selective_fallback minus static_robust_constrained_pf_with_sector_selective_fallback",
+    "primary_estimand": "For each seed s, average the paired moving-PF utility difference over the five fixed pass blocks; estimate the mean over the 30 seeds.",
+    "resampling_unit": "channel_topology_seed_cluster",
+    "secondary_reporting": [
+      "pass-specific paired effects",
+      "leave-one-pass-out primary effect",
+      "reactive-myopic fallback incidence and utility",
+      "protected-band p05 and geometric-mean rates",
+      "mute/backoff incidence, payload and runtime",
+      "ideal-128-port architecture reference"
+    ]
+  },
+  "status": "REVISED_PHASE1_REVIEW_CANDIDATE_NOT_AUTHORIZED_FOR_EXECUTION"
+}

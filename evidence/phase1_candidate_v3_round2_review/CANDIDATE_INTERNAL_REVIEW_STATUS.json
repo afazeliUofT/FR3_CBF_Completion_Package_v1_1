@@ -1,0 +1,19 @@
+{
+  "execution_authorized": false,
+  "required_round2_checks": [
+    "unique primary scenario and declared envelope",
+    "method information/timing/fallback equivalence",
+    "variable-pass-length load contract",
+    "seed-cluster statistical analysis plan",
+    "complete source/config snapshot",
+    "compute DAG and no repeated channel generation",
+    "all five immutable pass records",
+    "execution locks and candidate provenance"
+  ],
+  "review_commit": null,
+  "reviewer": null,
+  "round1_review_file": "PHASE1_INDEPENDENT_REVIEW_ROUND1.md",
+  "round1_verdict": "REQUIRES_REVISION",
+  "schema_version": 2,
+  "status": "PENDING_ROUND2"
+}

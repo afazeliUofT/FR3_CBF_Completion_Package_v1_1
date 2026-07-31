@@ -1,0 +1,38 @@
+{
+  "campaign_execution_authorized": false,
+  "candidate_commit": "be9053dd18deaeef6ab87597e706ab45092ea8cf",
+  "candidate_zip_path": "campaign/phase1_candidate_v3/FR3_PHASE1_CAMPAIGN_REVIEW_CANDIDATE_v3.zip",
+  "candidate_zip_sha256": "f7b47fd3a07e30987b7f0901df1706d6127774d32284e7d3b0da38185d810161",
+  "checks": {
+    "candidate_binding": "PASS_BY_COMMIT_AND_ZIP_SHA256",
+    "compute_dag_channel_reuse": "PASS",
+    "execution_locks": "PASS",
+    "five_pass_records": "PASS",
+    "method_information_classes": "PASS",
+    "reactive_myopic_comparator_contract": "PASS_CONTRACT_ONLY_IMPLEMENT_IN_JOB_PACKAGE",
+    "seed_cluster_statistics_fixed_pass_blocks": "PASS",
+    "source_config_snapshot": "PASS_FOR_EXISTING_METHODS",
+    "unique_primary_scenario": "PASS",
+    "variable_pass_length_load_semantics": "PASS"
+  },
+  "mandatory_job_package_gates": [
+    "Use PHASE1_CAMPAIGN_CONTRACT_V3.json as the sole canonical campaign source; ignore legacy v2 fields retained in CAMPAIGN_METADATA.json.",
+    "Implement and test delayed_myopic_constrained_pf_with_reactive_sector_fallback before the job package can pass review.",
+    "Freeze the primary utility exactly as the final moving-average sum-log utility specified in PHASE1_STATISTICAL_ANALYSIS_PLAN_V3; also report duration-weighted mean moving-PF utility as secondary.",
+    "All job source/config hashes must match the candidate-v3 source snapshot plus newly reviewed job-package files.",
+    "Generate one cellular channel/topology bundle per seed and reuse it across every pass and method.",
+    "Keep campaign execution locked until the immutable job package receives independent PASS and a separate authorization token."
+  ],
+  "next_gate": "BUILD_AND_INDEPENDENTLY_REVIEW_IMMUTABLE_PHASE1_NIBI_JOB_PACKAGE",
+  "nonblocking_review_notes": [
+    "CAMPAIGN_METADATA.json retains legacy v2 primary_design and paired_methods fields. The v3 contract is canonical; the job package must not parse those legacy fields.",
+    "The internal candidate review status remains PENDING_ROUND2 because changing it would alter the reviewed candidate hash. This external signed-by-hash review record supersedes it.",
+    "The five pass blocks share one archived TLE and therefore support fixed geometry-block inference, not ephemeris-error population inference.",
+    "The declared 100 ms fallback latency is not measured and cannot support practical compliance language."
+  ],
+  "review_prep_zip_path": "evidence/phase1_candidate_v3_review/FR3_PHASE1_CANDIDATE_V3_REVIEW_PREP_v1.zip",
+  "review_prep_zip_sha256": "505f5a54e3ce42992ed21ed5636ae3cb611dbc89be9eb15321c043a63b2745da",
+  "round1_verdict": "REQUIRES_REVISION",
+  "round2_verdict": "PASS_FOR_IMMUTABLE_JOB_PACKAGE_PREPARATION_NOT_EXECUTION",
+  "schema_version": 1
+}
