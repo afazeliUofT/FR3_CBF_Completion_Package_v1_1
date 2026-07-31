@@ -1,0 +1,98 @@
+{
+  "claim_boundary": "Orbit geometry is a model input. Same-TLE pass records provide temporal geometry diversity, not independent ephemeris-error calibration or evidence that the public station tracked the modelled object.",
+  "criteria": {
+    "aperture_efficiency": 0.65,
+    "arbitrary_regulatory_reserve": false,
+    "bs_gain_case": "ELEMENT_PATTERN_REFERENCE",
+    "long_term": {
+      "p452_time_percentage": 20.0,
+      "threshold_dbw_per_10mhz": -150.0
+    },
+    "pattern_primary": "multiple_entry_section_1_2",
+    "pattern_sensitivity": "single_entry_section_1_1",
+    "polarization_label": "H",
+    "short_term": {
+      "p452_time_percentage": 0.005,
+      "threshold_dbw_per_10mhz": -133.0
+    }
+  },
+  "nominal_mode_leakage_sha256": "510c3b1227244f1eb2c80b0692dad2fa650dfbba9f9ac9873c2e3566c851a1b6",
+  "pattern_parameters_sha256": "f1a6212d42c0181e2579fa45a1ed9a50c6a4c5ca4e5a073f36c098af49041e26",
+  "protected_window": {
+    "end_utc": "2026-07-27T23:21:12+00:00",
+    "maximum_elevation_deg": 29.722436455398228,
+    "minimum_elevation_deg": 5.009171411228225,
+    "sample_count": 571,
+    "start_utc": "2026-07-27T23:11:42+00:00"
+  },
+  "schema_version": 1,
+  "screening_summary": {
+    "kappa_long_multiple": {
+      "nominal_aggregate_interference_w_max": 1.4283750644628192e-09,
+      "nominal_aggregate_interference_w_min": 8.671926834933531e-11,
+      "required_common_attenuation_db_max": 61.548422599884525,
+      "required_common_attenuation_db_median": 51.0580369607878,
+      "required_common_attenuation_db_min": 49.381156050662355
+    },
+    "kappa_long_single": {
+      "nominal_aggregate_interference_w_max": 2.8499829377639095e-09,
+      "nominal_aggregate_interference_w_min": 1.7302768811910236e-10,
+      "required_common_attenuation_db_max": 64.54842259988452,
+      "required_common_attenuation_db_median": 54.0580369607878,
+      "required_common_attenuation_db_min": 52.381156050662355
+    },
+    "kappa_short_multiple": {
+      "nominal_aggregate_interference_w_max": 2.4184377295107737e-09,
+      "nominal_aggregate_interference_w_min": 1.4427307359119324e-10,
+      "required_common_attenuation_db_max": 46.835349095545276,
+      "required_common_attenuation_db_median": 36.320378411002274,
+      "required_common_attenuation_db_min": 34.59185284094545
+    },
+    "kappa_short_single": {
+      "nominal_aggregate_interference_w_max": 4.8254176627917445e-09,
+      "nominal_aggregate_interference_w_min": 2.878626268012399e-10,
+      "required_common_attenuation_db_max": 49.835349095545276,
+      "required_common_attenuation_db_median": 39.320378411002274,
+      "required_common_attenuation_db_min": 37.59185284094545
+    }
+  },
+  "selection": {
+    "duration_s": 560.0,
+    "end_utc": "2026-07-27T23:21:10+00:00",
+    "maximum_elevation_deg": 29.704368690958116,
+    "peak_utc": "2026-07-27T23:16:30+00:00",
+    "selection_rule": "For each predeclared target UTC peak date, select the complete visible pass with the highest peak elevation; break ties by earliest start time. Selection is made before any controller calculation.",
+    "start_utc": "2026-07-27T23:11:50+00:00",
+    "target_peak_date": "2026-07-27"
+  },
+  "selection_policy": {
+    "additional_slot_count": 4,
+    "coarse_search_extra_days": 1,
+    "coarse_step_s": 10,
+    "daily_rule": "For each predeclared target UTC peak date, select the complete visible pass with the highest peak elevation; break ties by earliest start time. Selection is made before any controller calculation.",
+    "detailed_margin_s": 120,
+    "detailed_step_s": 1,
+    "existing_slot": 0,
+    "minimum_elevation_deg": 5.0,
+    "orbit_engine": "skyfield",
+    "target_day_offsets_from_existing_peak_utc": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "tle_policy": "Reuse the exact archived TLE used by the validated slot-0 pass. Every selected pass peak must remain within the archived maximum TLE age. These records provide geometric-pass diversity, not independent ephemeris-error samples."
+  },
+  "slot": 1,
+  "slot0_historical_kappa_max_relative_error": null,
+  "static_accounting_sha256": "6d1277d66c5e178267210909779fa211e3698dcfcef2631a9ee55254bcebd7e1",
+  "status": "IMMUTABLE_ADDITIONAL_PASS_RECORD_READY",
+  "tle": {
+    "age_days_at_peak": 2.337016606666667,
+    "epoch_utc": "2026-07-25T15:11:11.765184+00:00",
+    "maximum_age_days": 14.0,
+    "recorded_sha256": "1a862dbeefb2191ddaf87f6b344ae82bfc94a71bcaa7033599de44e2069b8114",
+    "retrieved_utc": "2026-07-26T03:39:47.979134+00:00",
+    "sha256": "1a862dbeefb2191ddaf87f6b344ae82bfc94a71bcaa7033599de44e2069b8114"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "execution_authorized": false,
+  "required_checks": [
+    "generic 64T64R grouping, phase convention and normalization",
+    "local-RZF ranks and condition numbers",
+    "exact safety and eligible-floor accounting",
+    "sector-mute incidence and latency boundary",
+    "paired method fairness and identical timing information",
+    "all five pass records and their TLE/pattern/P.452 provenance",
+    "campaign statistics and stop/go rules"
+  ],
+  "review_commit": null,
+  "reviewer": null,
+  "schema_version": 1,
+  "status": "PENDING"
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "purpose": "Generate four additional immutable protected-pass geometry/coupling records, normalize the existing validated pass into the same format, and build a complete but still execution-locked phase-1 campaign review candidate.",
+  "claim_boundary": "PROTECTED_PASS_RECORD_ACQUISITION_GEOMETRY_INPUTS_NOT_CAMPAIGN_EXECUTION_NOT_PAPER_RESULT",
+  "required_ancestor_commit": "312f651fe271ca85e88f659eca3225f329f0d9c5",
+  "selection_policy": {
+    "existing_slot": 0,
+    "additional_slot_count": 4,
+    "target_day_offsets_from_existing_peak_utc": [1, 2, 3, 4],
+    "coarse_search_extra_days": 1,
+    "coarse_step_s": 10,
+    "detailed_step_s": 1,
+    "detailed_margin_s": 120,
+    "minimum_elevation_deg": 5.0,
+    "orbit_engine": "skyfield",
+    "daily_rule": "For each predeclared target UTC peak date, select the complete visible pass with the highest peak elevation; break ties by earliest start time. Selection is made before any controller calculation.",
+    "tle_policy": "Reuse the exact archived TLE used by the validated slot-0 pass. Every selected pass peak must remain within the archived maximum TLE age. These records provide geometric-pass diversity, not independent ephemeris-error samples."
+  },
+  "criteria": {
+    "long_term": {
+      "p452_time_percentage": 20.0,
+      "threshold_dbw_per_10mhz": -150.0
+    },
+    "short_term": {
+      "p452_time_percentage": 0.005,
+      "threshold_dbw_per_10mhz": -133.0
+    },
+    "polarization_label": "H",
+    "bs_gain_case": "ELEMENT_PATTERN_REFERENCE",
+    "pattern_primary": "multiple_entry_section_1_2",
+    "pattern_sensitivity": "single_entry_section_1_1",
+    "aperture_efficiency": 0.65,
+    "arbitrary_regulatory_reserve": false
+  },
+  "input_candidates": {
+    "tle": ["data/external/tle/active_case.tle"],
+    "tle_source_record": ["data/external/tle/TLE_SOURCE_RECORD.json"],
+    "station": [
+      "data/real/earth_station.csv",
+      "data/real/e3_reference_case/earth_station_staging.csv"
+    ],
+    "sites": [
+      "data/real/bs_sites.csv",
+      "data/real/e3_pattern_layout_review/bs_sites_review.csv"
+    ],
+    "pattern_parameters": [
+      "data/real/e3_pattern_layout_review/earth_station_pattern_parameters.csv"
+    ],
+    "static_accounting": [
+      "data/real/e3_57_sector_reference_screen/sector_static_reference_accounting.csv",
+      "evidence/e3_57_sector_reference_screen/work/sector_static_reference_accounting.csv"
+    ],
+    "existing_pass_selection": [
+      "data/real/e3_reference_case/E3_PASS_SELECTION.json",
+      "evidence/e3_pattern_layout/E3_PASS_SELECTION.json"
+    ],
+    "existing_pass_track": [
+      "data/real/e3_reference_case/e3_track_selected_pass_1s.csv"
+    ],
+    "validated_full_output": [
+      "data/real/full_topology_export_18696267_validated_v4/output"
+    ],
+    "phase1_candidate_v1": [
+      "campaign/phase1_candidate_v1"
+    ]
+  },
+  "paths": {
+    "work_dir": "results/protected_pass_records_phase1_v1",
+    "pass_records_dir": "campaign/protected_pass_records_v1",
+    "phase1_candidate_v2_dir": "campaign/phase1_candidate_v2",
+    "evidence_dir": "evidence/protected_pass_records_phase1_v1",
+    "review_bundle": "evidence/protected_pass_records_phase1_v1/FR3_PROTECTED_PASS_RECORDS_PHASE1_REVIEW_v1.zip"
+  },
+  "next_gate": "INDEPENDENTLY_REVIEW_COMPLETE_PHASE1_CAMPAIGN_CANDIDATE"
+}

@@ -1,0 +1,22 @@
+Five protected-pass record / phase-1 candidate v2 preparation
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused synthetic tests: PASS
+- Exact slot-0 kappa formula reconstructed against the validated export: PASS
+- SA.509 single/multiple far-sidelobe relation: PASS
+- Corrected p=20%/-150 and p=0.005%/-133 record format: PASS
+- Candidate execution-lock regression: PASS
+- ZIP and internal manifest integrity: PASS
+
+Runtime boundary
+- The exact four future-pass Skyfield trajectories are generated in the user's
+  existing repository environment, whose orbit pipeline already generated and
+  validated slot 0.
+- Same archived TLE provides reproducible geometry diversity, not independent
+  ephemeris-error calibration.
+- Campaign execution remains unauthorized.
+
+Claim boundary
+PROTECTED_PASS_RECORD_ACQUISITION_GEOMETRY_INPUTS_NOT_CAMPAIGN_EXECUTION_NOT_PAPER_RESULT

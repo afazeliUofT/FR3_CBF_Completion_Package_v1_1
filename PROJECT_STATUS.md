@@ -1,3 +1,23 @@
+<!-- BEGIN FIVE PROTECTED PASS RECORDS -->
+## Five immutable protected-pass records
+
+- pass records ready: `5 / 5`;
+- selection: four predeclared consecutive UTC peak dates after slot 0;
+- daily rule: highest complete visible pass by peak elevation before any
+  controller calculation;
+- orbit engine: Skyfield;
+- TLE policy: exact archived slot-0 TLE, with age checked against the frozen
+  14-day limit;
+- criteria per pass: long/short P.452 percentile pairing and both SA.509
+  multiple-/single-entry patterns;
+- campaign execution authorized: `NO`.
+
+These passes provide temporal geometry diversity under one archived orbital
+record. They do not constitute independent ephemeris-error calibration.
+
+**Next gate:** `INDEPENDENTLY_REVIEW_COMPLETE_PHASE1_CAMPAIGN_CANDIDATE`
+<!-- END FIVE PROTECTED PASS RECORDS -->
+
 <!-- BEGIN PRACTICAL 64T64R ARCHITECTURE -->
 ## Generic practical 64T64R architecture mapping
 
