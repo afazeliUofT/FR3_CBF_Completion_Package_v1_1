@@ -1,0 +1,11 @@
+{
+  "candidate_commit": "be9053dd18deaeef6ab87597e706ab45092ea8cf",
+  "candidate_zip_sha256": "f7b47fd3a07e30987b7f0901df1706d6127774d32284e7d3b0da38185d810161",
+  "execution_authorized": false,
+  "full_topology_source_bundle_sha256": "206c8cc7aa18c3616f70fba6c56b72af8a76267b59f9f446baa019dede0085b5",
+  "full_topology_source_commit": "30800585889d7d8ea127e00dde7de06d9762cce8",
+  "package_id": "bd18734787de7396b9de4bf8c0b9ba4d191c6346a7cb83e969499622067a8129",
+  "round2_review_commit": "9f3c6ffda7d4c6117406ad1b54ef16404590b32b",
+  "round2_review_zip_sha256": "7b54af8bc5ada09ac82c01a36d0dc73814b31ad4ccfe5132cfa3bf8eac6e63d1",
+  "round2_verdict": "PASS_FOR_IMMUTABLE_JOB_PACKAGE_PREPARATION_NOT_EXECUTION"
+}

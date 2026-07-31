@@ -1,3 +1,21 @@
+<!-- BEGIN PHASE1 JOB PACKAGE INDEPENDENT REVIEW -->
+## Phase-1 immutable Nibi job-package independent review
+
+- reviewed commit: `20d65eeb0fcc53f649a4f3f716fa2780406b4810`;
+- package ID: `bd18734787de7396b9de4bf8c0b9ba4d191c6346a7cb83e969499622067a8129`;
+- job-package SHA-256: `a81f1808f75119e64a0f7f631a54230f3e722efa8d17dcf032ee1296f2bb76be`;
+- verdict:
+  `PASS_FOR_NIBI_DEPLOYMENT_SMOKE_PREPARATION_NOT_FULL_CAMPAIGN_EXECUTION`;
+- 30-seed phase-1 execution authorized: `NO`.
+
+The immutable package passes local source, manifest, method, merge, result-schema,
+and execution-lock review. Before any confirmatory campaign, a noncampaign Nibi
+deployment smoke must freeze the exact environment, use a smoke-scoped token,
+and return complete Slurm/environment/package provenance.
+
+**Next gate:** `BUILD_REVIEW_AND_RUN_NONCAMPAIGN_NIBI_DEPLOYMENT_SMOKE`
+<!-- END PHASE1 JOB PACKAGE INDEPENDENT REVIEW -->
+
 <!-- BEGIN IMMUTABLE PHASE1 NIBI JOB PACKAGE -->
 ## Immutable phase-1 Nibi job-package review candidate
 

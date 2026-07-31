@@ -2,10 +2,11 @@
 
 ## Gate
 
-`INDEPENDENTLY_REVIEW_IMMUTABLE_PHASE1_NIBI_JOB_PACKAGE`
+`BUILD_REVIEW_AND_RUN_NONCAMPAIGN_NIBI_DEPLOYMENT_SMOKE`
 
-1. Keep all Nibi submission scripts locked.
-2. Independently review the immutable job package, reactive-myopic implementation, result schemas, merge analysis, manifests, and authorization checks.
-3. Return PASS or a precise blocking defect.
-4. Only after job-package PASS may a separate execution token and local WSL-to-Nibi orchestrator be prepared.
-5. No cluster command is authorized by this stage.
+1. Build a separately reviewed smoke-only WSL-to-Nibi orchestrator.
+2. Use a noncampaign seed outside 44000--44029.
+3. Freeze and hash the exact Nibi software/GPU environment.
+4. Issue a smoke-scoped token bound to package, commit, environment, seed, stage, and expiry.
+5. Submit exactly one H100 smoke job and retrieve complete provenance.
+6. Independently review the smoke before building the full-campaign orchestrator or issuing a 30-seed token.

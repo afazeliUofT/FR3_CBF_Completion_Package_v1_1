@@ -1,0 +1,71 @@
+{
+  "campaign_execution_authorized": false,
+  "candidate_snapshot_entries_verified": 14,
+  "candidate_v3_sha256": "f7b47fd3a07e30987b7f0901df1706d6127774d32284e7d3b0da38185d810161",
+  "checks": {
+    "candidate_and_round2_binding": "PASS",
+    "exact_local_slot0_all8_smoke": "PASS",
+    "execution_locks": "PASS",
+    "five_fixed_passes_eight_methods": "PASS",
+    "job_package_zip_and_manifest": "PASS",
+    "one_channel_generation_per_seed_compute_dag": "PASS",
+    "primary_and_secondary_endpoint_schema": "PASS",
+    "reactive_myopic_same_fallback_implementation": "PASS_LOCAL_SMOKE_ONLY",
+    "review_bundle_zip_and_manifest": "PASS",
+    "reviewed_channel_generator_source_bundle": "PASS",
+    "seed_cluster_bootstrap_merge": "PASS_SYNTHETIC_TEST",
+    "source_snapshot_and_new_source_manifests": "PASS"
+  },
+  "created_utc": "2026-07-31T17:17:21.877156+00:00",
+  "execution_lock_exit_codes": {
+    "MERGE_PHASE1_LOCKED.sh": 64,
+    "RUN_PHASE1_NIBI_CAMPAIGN.sh": 64,
+    "SUBMIT_PHASE1_LOCKED.sh": 64
+  },
+  "full_30_seed_execution_authorized": false,
+  "full_topology_source_bundle_sha256": "206c8cc7aa18c3616f70fba6c56b72af8a76267b59f9f446baa019dede0085b5",
+  "mandatory_before_full_30_seed_execution": [
+    "Independent PASS on the noncampaign Nibi deployment smoke with no source/config modification.",
+    "Independent review of the final WSL-to-Nibi full-campaign orchestrator and full-execution authorization token.",
+    "Bind the full token to execution stage, package ID, reviewed commit, job-package ZIP SHA-256, environment-lock SHA-256, allowed seed list, and expiry.",
+    "Add a master seed-result hash/index record and stronger external trace-consistency checks before accepting the merged return.",
+    "Do not use the current per-method runtime_seconds field for a comparative runtime claim: reactive-myopic and uniform-fallback entries measure incremental fallback work rather than identical end-to-end method scope. Use Slurm elapsed time and/or a reviewed corrected timing instrument.",
+    "Keep deterministic 65 dB/3 dB assumptions labelled engineering stress scenarios, not calibrated uncertainty or compliance."
+  ],
+  "mandatory_before_noncampaign_nibi_smoke": [
+    "Build a separate smoke-only orchestrator bound to the reviewed commit, package ID, job-package ZIP SHA-256, and candidate SHA-256.",
+    "Use a noncampaign smoke seed outside 44000--44029; mark every output EXCLUDED_FROM_PHASE1_CONFIRMATORY_ANALYSIS.",
+    "Freeze the exact resolved Nibi software environment and record Python, Torch/CUDA, Sionna, NumPy, SciPy, Pandas, pip-freeze, wheel/source hashes, GPU model, and driver.",
+    "Use a smoke-scoped authorization token that cannot authorize the 30-seed array or merge.",
+    "Return package/hash checks, Slurm accounting, stdout/stderr, environment lock, channel fingerprints, all-eight-method smoke audit, and a diagnostic bundle on failure."
+  ],
+  "new_source_manifest_entries_verified": 14,
+  "next_gate": "BUILD_REVIEW_AND_RUN_NONCAMPAIGN_NIBI_DEPLOYMENT_SMOKE",
+  "package_manifest_entries_verified": 75,
+  "paper_claim_boundary": "JOB_PACKAGE_AND_ONE_SEED_LOCAL_SMOKE_NOT_PHASE1_RESULT_NOT_CALIBRATION_NOT_COMPLIANCE",
+  "reviewed_commit": "20d65eeb0fcc53f649a4f3f716fa2780406b4810",
+  "reviewed_job_package_path": "campaign/phase1_nibi_job_package_v1/FR3_PHASE1_NIBI_JOB_PACKAGE_v1.zip",
+  "reviewed_job_package_sha256": "a81f1808f75119e64a0f7f631a54230f3e722efa8d17dcf032ee1296f2bb76be",
+  "reviewed_package_id": "bd18734787de7396b9de4bf8c0b9ba4d191c6346a7cb83e969499622067a8129",
+  "reviewed_review_bundle_path": "evidence/phase1_nibi_job_package_v1/FR3_PHASE1_NIBI_JOB_PACKAGE_REVIEW_v1.zip",
+  "reviewed_review_bundle_sha256": "8620229b75767c97935b9fb65b8441cec8f677c6d56e452ba2fffd15b3a24b1d",
+  "round2_review_sha256": "7b54af8bc5ada09ac82c01a36d0dc73814b31ad4ccfe5132cfa3bf8eac6e63d1",
+  "schema_version": 1,
+  "scientific_smoke": {
+    "eligible_user_count": 207,
+    "predictive_floor_violation_user_seconds": 0,
+    "predictive_long_violation_seconds": 0,
+    "predictive_minus_static_final_pf": 0.20906705394846625,
+    "reactive_myopic_long_violation_seconds": 0,
+    "status": "PASS_EXACT_LOCAL_SLOT0_ALL8_METHOD_SMOKE",
+    "unshielded_myopic_long_violation_seconds": 65,
+    "virtual_queue_long_violation_seconds": 158
+  },
+  "setup_environment_review": {
+    "disposition": "An exact resolved Nibi environment lock is mandatory before any smoke or campaign execution.",
+    "numpy_scipy_pandas_currently_range_versioned": true,
+    "torch_and_sionna_exactly_versioned": true
+  },
+  "status": "PASS_PHASE1_JOB_PACKAGE_FOR_NIBI_DEPLOYMENT_SMOKE_PREPARATION_NOT_FULL_CAMPAIGN_EXECUTION",
+  "verdict": "PASS_FOR_NIBI_DEPLOYMENT_SMOKE_PREPARATION_NOT_FULL_CAMPAIGN_EXECUTION"
+}
