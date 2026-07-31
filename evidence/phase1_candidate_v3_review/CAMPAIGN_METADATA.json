@@ -1,0 +1,401 @@
+{
+  "architecture_claim_boundary": "GENERIC_PRACTICAL_ARCHITECTURE_MAPPING_ONE_SEED_NOT_PRODUCT_NOT_CALIBRATION_NOT_COMPLIANCE_NOT_PAPER_RESULT",
+  "candidate_v2_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450",
+  "candidate_v2_zip_sha256": "cb4d121372aa572e1163b92d013b87a66d2816180b071a941355c69553e80498",
+  "channel_topology_seeds": [
+    44000,
+    44001,
+    44002,
+    44003,
+    44004,
+    44005,
+    44006,
+    44007,
+    44008,
+    44009,
+    44010,
+    44011,
+    44012,
+    44013,
+    44014,
+    44015,
+    44016,
+    44017,
+    44018,
+    44019,
+    44020,
+    44021,
+    44022,
+    44023,
+    44024,
+    44025,
+    44026,
+    44027,
+    44028,
+    44029
+  ],
+  "compute_dag": {
+    "channel_generation_jobs": 30,
+    "common_random_numbers": true,
+    "controller_method_evaluations_per_cell": 8,
+    "forbidden_redundancy": "Do not regenerate Sionna channels separately for passes or methods.",
+    "pass_method_cells": 150,
+    "rule": "Generate one full 128-port cellular channel/topology bundle per seed. Derive the 64-RF architecture once and reuse it across all five pass records and all methods.",
+    "total_controller_evaluations": 1200
+  },
+  "created_utc": "2026-07-31T01:41:54.274250+00:00",
+  "execution_authorized": false,
+  "independent_review_status": "PENDING_ROUND2",
+  "method_contracts": [
+    {
+      "causal_information": "Current local CSI/load and preloaded full-pass ephemeris-derived coupling upper envelope; no future cellular-channel realization.",
+      "class": "primary_method",
+      "hard_safety_certificate": true,
+      "id": "robust_predictive_constrained_pf_with_sector_selective_fallback",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": true
+    },
+    {
+      "causal_information": "One static action designed from the full-pass declared upper envelope; reported as a conservative preplanned comparator.",
+      "class": "primary_safe_comparator",
+      "hard_safety_certificate": true,
+      "id": "static_robust_constrained_pf_with_sector_selective_fallback",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": true
+    },
+    {
+      "causal_information": "Current interval only; no future coupling. Receives the same pre-authorized sector-selective emergency fallback.",
+      "class": "secondary_practical_dynamic_comparator",
+      "hard_safety_certificate": "by_exact_reactive_fallback_audit",
+      "id": "delayed_myopic_constrained_pf_with_reactive_sector_fallback",
+      "implementation_required_before_job_package": true,
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": true
+    },
+    {
+      "causal_information": "Current interval only; no future coupling.",
+      "class": "diagnostic_negative_control",
+      "hard_safety_certificate": false,
+      "id": "delayed_myopic_constrained_pf_unshielded",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": false
+    },
+    {
+      "causal_information": "Current interval and queue state only.",
+      "class": "diagnostic_long_term_baseline",
+      "hard_safety_certificate": false,
+      "id": "virtual_queue_unshielded",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": false
+    },
+    {
+      "causal_information": "Same interval upper envelope and fallback latency assumption.",
+      "class": "safe_conservative_baseline",
+      "hard_safety_certificate": true,
+      "id": "uniform_protected_tone_backoff",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": false
+    },
+    {
+      "causal_information": "Predeclared maximum attenuation/mute action.",
+      "class": "safe_conservative_baseline",
+      "hard_safety_certificate": true,
+      "id": "hard_spatial_null_or_exact_mute",
+      "timing_equal_to_primary": true,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": false
+    },
+    {
+      "causal_information": "Instantaneous exact coupling; no delay/slew penalty.",
+      "class": "noncausal_reference_not_primary_comparator",
+      "hard_safety_certificate": true,
+      "id": "common_scale_instantaneous_noncausal_reference",
+      "timing_equal_to_primary": false,
+      "uses_primary_declared_envelope": true,
+      "uses_sector_selective_fallback": false
+    }
+  ],
+  "next_gate": "INDEPENDENTLY_REVIEW_PHASE1_CAMPAIGN_CANDIDATE_V3",
+  "paired_methods": [
+    "robust_predictive_constrained_pf_with_sector_selective_fallback",
+    "static_robust_constrained_pf",
+    "delayed_myopic_constrained_pf",
+    "virtual_queue",
+    "uniform_protected_tone_backoff",
+    "hard_spatial_null",
+    "common_scale_oracle_upper_reference"
+  ],
+  "pass_selection_policy": {
+    "additional_slot_count": 4,
+    "coarse_search_extra_days": 1,
+    "coarse_step_s": 10,
+    "daily_rule": "For each predeclared target UTC peak date, select the complete visible pass with the highest peak elevation; break ties by earliest start time. Selection is made before any controller calculation.",
+    "detailed_margin_s": 120,
+    "detailed_step_s": 1,
+    "existing_slot": 0,
+    "minimum_elevation_deg": 5.0,
+    "orbit_engine": "skyfield",
+    "target_day_offsets_from_existing_peak_utc": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "tle_policy": "Reuse the exact archived TLE used by the validated slot-0 pass. Every selected pass peak must remain within the archived maximum TLE age. These records provide geometric-pass diversity, not independent ephemeris-error samples."
+  },
+  "phase1_replication_units": 150,
+  "primary_contract_file": "PHASE1_CAMPAIGN_CONTRACT_V3.json",
+  "primary_design": {
+    "criterion": "joint long-term design with separately reported short-term verification",
+    "declared_array_sensitivity": {
+      "null_depth_cap_db": [
+        60,
+        65,
+        67
+      ],
+      "residual_coupling_uplift_db": [
+        0,
+        1,
+        3
+      ]
+    },
+    "delay_intervals": 1,
+    "load": "staggered arrivals/departures plus deterministic stress",
+    "pattern": "SA.509 multiple-entry primary",
+    "slew_db_per_update": 3,
+    "update_interval_s": 5
+  },
+  "primary_endpoints": [
+    "hard-safety violation count and maximum excess",
+    "moving-average constrained-PF utility",
+    "eligible-floor violation user-seconds",
+    "protected-band p05 and geometric-mean rate"
+  ],
+  "primary_scenario": {
+    "analog_phase_bits": 6,
+    "architecture_id": "generic_64t64r_subarray_6bit",
+    "declared_engineering_envelope": {
+      "interpretation": "Deterministic engineering stress scenario, not a calibrated confidence bound.",
+      "null_depth_cap_db": 65.0,
+      "residual_normalized_coupling_uplift_db": 3.0
+    },
+    "design_criterion": {
+      "name": "long_multiple",
+      "p452_time_percentage": 20.0,
+      "threshold_dbw_per_10mhz": -150.0
+    },
+    "fairness": {
+      "absolute_total_band_floor_bps_hz": 0.1,
+      "indoor_weight": 1.0,
+      "outdoor_weight": 1.0,
+      "relative_current_load_floor_fraction": 0.9,
+      "serviceability_threshold_bps_hz": 0.1
+    },
+    "load_schedule": {
+      "active_streams_per_sector": [
+        4,
+        2,
+        4,
+        1,
+        3,
+        2
+      ],
+      "declared_phase_lengths_intervals": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        18
+      ],
+      "selection_rule": "For sector b and phase j, activate local streams {(b+j+r) mod 4: r=0,...,K_j-1}.",
+      "variable_pass_length_rule": "Let N_p=ceil(S_p/5), where S_p is the protected one-second sample count. Apply declared phases in order, truncating the phase that reaches N_p. If N_p exceeds 118, append one extension phase with K=2 and phase index j=6, matching build_rotating_load_schedule(). The last update interval may be shorter than five seconds and uses the exact available samples."
+    },
+    "mode_attenuation_grid_db": {
+      "maximum_numerical": 70,
+      "minimum": 0,
+      "physical_clip": 65,
+      "step": 1
+    },
+    "moving_average_pf": {
+      "epsilon_bps_hz": 0.001,
+      "inactive_semantics": "backlogged_unscheduled_zero_rate_update",
+      "initialization": "per-seed full-load nominal total-band user rates",
+      "time_constant_s": 100.0
+    },
+    "paired_verification_criterion": {
+      "name": "short_multiple",
+      "p452_time_percentage": 0.005,
+      "threshold_dbw_per_10mhz": -133.0
+    },
+    "physical_ports": 128,
+    "primary_pattern": "SA.509_multiple_entry",
+    "rf_chains": 64,
+    "sector_fallback": {
+      "declared_local_latency_budget_ms": 100,
+      "exact_protected_subband_mute_endpoint": true,
+      "finite_backoff_grid_db": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "latency_measured": false
+    },
+    "timing": {
+      "command_delay_intervals": 1,
+      "mode_slew_db_per_update": 3,
+      "predictive_horizon": "full_remaining_protected_pass",
+      "primary_message_drop_indices": [],
+      "update_interval_s": 5
+    }
+  },
+  "protected_pass_slots": [
+    {
+      "protected_sample_count": 587,
+      "record_manifest_sha256": "215f263dce75ee5ff59c034dc867337fb1867090b62b727d1d1a37ad9894ed86",
+      "record_zip": "protected_pass_records/FR3_PROTECTED_PASS_SLOT_0.zip",
+      "record_zip_sha256": "290f0dba48661039fb2dd95a7debcb9dd8e6d9de91e5cb6c18a95a3ff5fad321",
+      "selection": {
+        "duration_s": 580.0,
+        "end_utc": "2026-07-26T23:13:20+00:00",
+        "maximum_elevation_deg": 35.92113233734308,
+        "peak_utc": "2026-07-26T23:08:30+00:00",
+        "selection_rule": "existing independently validated slot-0 pass",
+        "start_utc": "2026-07-26T23:03:40+00:00",
+        "target_peak_date": "2026-07-26"
+      },
+      "slot": 0,
+      "status": "IMMUTABLE_PASS_RECORD_READY",
+      "tle_age_days_at_peak": 1.3314610511111111,
+      "tle_sha256": "1a862dbeefb2191ddaf87f6b344ae82bfc94a71bcaa7033599de44e2069b8114"
+    },
+    {
+      "protected_sample_count": 571,
+      "record_manifest_sha256": "8c5ca1bea5e428a771891cf60864f00825a7bd95459f4b1457295a0d2a8da7e2",
+      "record_zip": "protected_pass_records/FR3_PROTECTED_PASS_SLOT_1.zip",
+      "record_zip_sha256": "8ccdcefff5fb5ec0760f97b5e612db77e263f016a2b378069ec9e8f3d3c738eb",
+      "selection": {
+        "duration_s": 560.0,
+        "end_utc": "2026-07-27T23:21:10+00:00",
+        "maximum_elevation_deg": 29.704368690958116,
+        "peak_utc": "2026-07-27T23:16:30+00:00",
+        "selection_rule": "For each predeclared target UTC peak date, select the complete visible pass with the highest peak elevation; break ties by earliest start time. Selection is made before any controller calculation.",
+        "start_utc": "2026-07-27T23:11:50+00:00",
+        "target_peak_date": "2026-07-27"
+      },
+      "slot": 1,
+      "status": "IMMUTABLE_PASS_RECORD_READY",
+      "tle_age_days_at_peak": 2.337016606666667,
+      "tle_sha256": "1a862dbeefb2191ddaf87f6b344ae82bfc94a71bcaa7033599de44e2069b8114"
+    },
+    {
+      "protected_sample_count": 581,
+      "record_manifest_sha256": "109478d3578abf8b1874052cb43287712291407f3d15152b22659b93ef63eecf",
+      "record_zip": "protected_pass_records/FR3_PROTECTED_PASS_SLOT_2.zip",
+      "record_zip_sha256": "d3cdfcd70c01eb7f1647985caaa16a792d62994d169a45ef51003a031e15fa95",
+      "selection": {
+        "duration_s": 570.0,
+        "end_utc": "2026-07-28T11:01:10+00:00",
+        "maximum_elevation_deg": 33.28823178252738,
+        "peak_utc": "2026-07-28T10:56:30+00:00",
+        "selection_rule": "For each predeclared target UTC peak date, select the complete visible pass with the highest peak elevation; break ties by earliest start time. Selection is made before any controller calculation.",
+        "start_utc": "2026-07-28T10:51:40+00:00",
+        "target_peak_date": "2026-07-28"
+      },
+      "slot": 2,
+      "status": "IMMUTABLE_PASS_RECORD_READY",
+      "tle_age_days_at_peak": 2.823127717777778,
+      "tle_sha256": "1a862dbeefb2191ddaf87f6b344ae82bfc94a71bcaa7033599de44e2069b8114"
+    },
+    {
+      "protected_sample_count": 594,
+      "record_manifest_sha256": "f835cc1f90f7255cad4016f4df1ecaf1b20d91e6d99783dc2873138fb7e155bf",
+      "record_zip": "protected_pass_records/FR3_PROTECTED_PASS_SLOT_3.zip",
+      "record_zip_sha256": "9fdb38ff37a12f1484c250d69422caaead3e5cc9a48607753f2e94b95b7b2873",
+      "selection": {
+        "duration_s": 590.0,
+        "end_utc": "2026-07-29T11:09:20+00:00",
+        "maximum_elevation_deg": 40.40598093645075,
+        "peak_utc": "2026-07-29T11:04:30+00:00",
+        "selection_rule": "For each predeclared target UTC peak date, select the complete visible pass with the highest peak elevation; break ties by earliest start time. Selection is made before any controller calculation.",
+        "start_utc": "2026-07-29T10:59:30+00:00",
+        "target_peak_date": "2026-07-29"
+      },
+      "slot": 3,
+      "status": "IMMUTABLE_PASS_RECORD_READY",
+      "tle_age_days_at_peak": 3.828683273333333,
+      "tle_sha256": "1a862dbeefb2191ddaf87f6b344ae82bfc94a71bcaa7033599de44e2069b8114"
+    },
+    {
+      "protected_sample_count": 605,
+      "record_manifest_sha256": "5bced660d65c45a42a50e303f160bdb20dd6accc18f3d149e967341dd1b87e6b",
+      "record_zip": "protected_pass_records/FR3_PROTECTED_PASS_SLOT_4.zip",
+      "record_zip_sha256": "2e9ea342061b3bf36aca7b5f605ab920338eca4f5074b2c3e438815a7a0dc0b7",
+      "selection": {
+        "duration_s": 590.0,
+        "end_utc": "2026-07-30T11:17:20+00:00",
+        "maximum_elevation_deg": 49.47220427728028,
+        "peak_utc": "2026-07-30T11:12:20+00:00",
+        "selection_rule": "For each predeclared target UTC peak date, select the complete visible pass with the highest peak elevation; break ties by earliest start time. Selection is made before any controller calculation.",
+        "start_utc": "2026-07-30T11:07:30+00:00",
+        "target_peak_date": "2026-07-30"
+      },
+      "slot": 4,
+      "status": "IMMUTABLE_PASS_RECORD_READY",
+      "tle_age_days_at_peak": 4.834123088148148,
+      "tle_sha256": "1a862dbeefb2191ddaf87f6b344ae82bfc94a71bcaa7033599de44e2069b8114"
+    }
+  ],
+  "schema_version": 3,
+  "selected_architecture": "generic_64t64r_subarray_6bit",
+  "source_commit_required": "312f651fe271ca85e88f659eca3225f329f0d9c5",
+  "statistics": {
+    "bootstrap_resamples": 10000,
+    "claim_scope": "Inference is over the predeclared 30 channel/topology seeds averaged across these five fixed geometry passes; it is not a population claim over all orbital passes or ephemeris uncertainty.",
+    "confidence_interval": "paired percentile bootstrap over 30 seed clusters",
+    "confidence_level": 0.95,
+    "go_condition": "All hard gates pass and the lower 95% paired seed-cluster bootstrap bound for the primary moving-PF utility difference is greater than zero.",
+    "hard_gates": [
+      "zero predictive hard-safety violation seconds across all 150 cells",
+      "zero predictive eligible-floor violation user-seconds across all 150 cells",
+      "all numerical/manifest/provenance checks pass"
+    ],
+    "missing_run_policy": "No imputation or silent exclusion. A deterministic failed cell may be rerun once with the identical immutable inputs. Persistent failure leaves the campaign incomplete and blocks the go decision.",
+    "multiplicity": "One confirmatory utility comparison. All other comparisons and sensitivity effects are secondary/exploratory.",
+    "outlier_policy": "No outcome-based exclusion.",
+    "pass_treatment": "Fixed blocking factor. Do not bootstrap five passes as if they were an iid population sample.",
+    "primary_comparison": "robust_predictive_constrained_pf_with_sector_selective_fallback minus static_robust_constrained_pf_with_sector_selective_fallback",
+    "primary_estimand": "For each seed s, average the paired moving-PF utility difference over the five fixed pass blocks; estimate the mean over the 30 seeds.",
+    "resampling_unit": "channel_topology_seed_cluster",
+    "secondary_reporting": [
+      "pass-specific paired effects",
+      "leave-one-pass-out primary effect",
+      "reactive-myopic fallback incidence and utility",
+      "protected-band p05 and geometric-mean rates",
+      "mute/backoff incidence, payload and runtime",
+      "ideal-128-port architecture reference"
+    ]
+  },
+  "status": "REVISED_COMPLETE_FIVE_PASS_REVIEW_CANDIDATE_V3_NOT_AUTHORIZED_FOR_EXECUTION",
+  "stop_reasons": [
+    "independent round-2 review has not returned PASS",
+    "immutable job-array package is absent",
+    "execution authorization token is absent"
+  ]
+}

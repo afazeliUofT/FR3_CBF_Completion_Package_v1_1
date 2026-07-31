@@ -1,0 +1,9 @@
+{
+  "candidate_v2_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450",
+  "candidate_v2_zip_sha256": "cb4d121372aa572e1163b92d013b87a66d2816180b071a941355c69553e80498",
+  "candidate_v3_build_commit": "TO_BE_FILLED_BY_POST_COMMIT_REVIEW_RECORD",
+  "execution_authorized": false,
+  "pass_record_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450",
+  "schema_version": 1,
+  "source_snapshot_manifest_sha256": "3204d42ee9953e3be79c30ff60e17573df8182e3ec7596e0569eb3199f0fceef"
+}

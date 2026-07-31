@@ -1,3 +1,27 @@
+<!-- BEGIN PHASE1 INDEPENDENT REVIEW ROUND1 -->
+## Phase-1 independent review round 1
+
+Candidate v2 at commit `f26af9f3ff595f6b6ae9b468c79683e53bc8b450`
+passed architecture, five-pass provenance, manifest, and execution-lock checks,
+but received:
+
+`REQUIRES_REVISION_BEFORE_INDEPENDENT_PASS`
+
+Candidate v3 now freezes:
+
+- one primary declared envelope: 65 dB null cap and 3 dB uplift;
+- exact method information/fallback classes;
+- a reactive-myopic comparator with the same emergency fallback;
+- exact variable-pass-length load semantics;
+- a seed-cluster paired statistical plan with passes treated as fixed blocks;
+- immutable source/config snapshots;
+- one-channel-generation-per-seed compute DAG.
+
+Campaign execution remains unauthorized.
+
+**Next gate:** `INDEPENDENTLY_REVIEW_PHASE1_CAMPAIGN_CANDIDATE_V3`
+<!-- END PHASE1 INDEPENDENT REVIEW ROUND1 -->
+
 <!-- BEGIN FIVE PROTECTED PASS RECORDS -->
 ## Five immutable protected-pass records
 

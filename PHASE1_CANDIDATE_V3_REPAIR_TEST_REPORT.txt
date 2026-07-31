@@ -1,0 +1,13 @@
+Phase-1 candidate v3 contract repair
+
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused contract tests: PASS
+- Synthetic candidate-v2 to candidate-v3 end-to-end build: PASS
+- Source/config snapshot manifest: PASS
+- Candidate-v3 bundle manifest and ZIP integrity: PASS
+- Execution-lock regression: PASS
+- Simulated Git staging/commit/push: PASS
+
+Scientific boundary:
+CANDIDATE_CONTRACT_REPAIR_NOT_CAMPAIGN_EXECUTION_NOT_PAPER_RESULT

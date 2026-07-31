@@ -1,0 +1,91 @@
+{
+  "files": [
+    {
+      "bytes": 9591,
+      "path": "src/fr3_cbf/practical_architecture_mapping.py",
+      "sha256": "5e319d15e4be7b6875cf5b2ea6b2383b19100707f43f2d655bc2f4ecf2363067",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 25835,
+      "path": "src/fr3_cbf/constrained_pf_safety.py",
+      "sha256": "4fb99be56c1290d47fc6dcf63cc838fb1726ed07e2fe9c33c3f337e1a2aa6dab",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 12672,
+      "path": "src/fr3_cbf/robust_delayed_safety.py",
+      "sha256": "f855e754e773174c24ba3614e9f756bbc473377f71305b32eaeb6c422535ffa9",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 41192,
+      "path": "src/fr3_cbf/online_pf_load_transition.py",
+      "sha256": "8c7ef36e5330cb8c7f28e22649341d1694f1624dfe0c478f77dc909c66df875a",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 10344,
+      "path": "src/fr3_cbf/dual_criterion_controller.py",
+      "sha256": "40519f1231fd8ecdff629588d7931f0e3dfcd80aa551866068965c7e2f371488",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 22658,
+      "path": "src/fr3_cbf/null_floor_aware_sector_backoff.py",
+      "sha256": "ebdaea04adf423a74214d2698156a4639cfecd9b51a4f1926c05e72c239ec94d",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 7703,
+      "path": "src/fr3_cbf/physical_impairment_sensitivity.py",
+      "sha256": "aa7d0a8625f0b23ac879d2140a02520d67dc23514374f9049577c4b086b5ef26",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 1961,
+      "path": "config/constrained_pf_controller_milestone_v1.json",
+      "sha256": "1dbf43b443e3e6ea3135888b35e5c64d4f61503747bde415582fb5f0fd634377",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 2454,
+      "path": "config/online_pf_load_transition_v1.json",
+      "sha256": "1dc8b7728b5b5570c4b4e9d817cc62b41924a4a26070fa62c45d78564cf63314",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 3612,
+      "path": "config/sector_selective_backoff_v1.json",
+      "sha256": "0c6b534e662e61dcfa1cbdbd11a31e01e1664961e373e976b44b0ccc6c5366c4",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 4568,
+      "path": "config/practical_architecture_mapping_v1.json",
+      "sha256": "7eda70a71fd51697ee87fc1a5bb65dfa4f4b23e7c291fbe7c4a5a6246022a55a",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 4065,
+      "path": "config/phased_campaign_spec_v3.json",
+      "sha256": "d9379cd54a12afdae344d4ddf6f9888ca6d673cb17d74e0a782ecf55c03f41e2",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 3655,
+      "path": "docs/DELAYED_REACHABILITY_SAFETY_THEOREM.md",
+      "sha256": "928421dce806c89070bd186c8a3f40a361200c4fef61475181f570c0067f787e",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    },
+    {
+      "bytes": 1679,
+      "path": "docs/SECTOR_SELECTIVE_BACKOFF_CERTIFICATE.md",
+      "sha256": "a7c81a5aae93882a11a2408ac18cb8f5945863436c7dd107ca741e3b6e4f1452",
+      "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+    }
+  ],
+  "interpretation": "Exact source/config snapshot for candidate review. The eventual job-array package must match these hashes or return to independent review.",
+  "schema_version": 1,
+  "source_commit": "f26af9f3ff595f6b6ae9b468c79683e53bc8b450"
+}

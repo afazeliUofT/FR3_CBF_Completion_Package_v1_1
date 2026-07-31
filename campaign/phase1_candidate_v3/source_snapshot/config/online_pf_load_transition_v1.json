@@ -1,0 +1,69 @@
+{
+  "action_grid": {
+    "maximum_db": 60,
+    "minimum_db": 0,
+    "step_db": 1
+  },
+  "claim_boundary": "ONLINE_MOVING_AVERAGE_PF_LOAD_TRANSITION_ONE_SEED_NOT_PAPER_RESULT",
+  "controllers": [
+    "online_predictive_robust_1db",
+    "online_predictive_robust_1db_two_drops",
+    "online_myopic_robust_1db",
+    "static_robust_1db",
+    "frozen_table_predictive_robust_1db"
+  ],
+  "data_root": "data/real/full_topology_export_18696267_validated_v4/output",
+  "fairness_policy": {
+    "absolute_total_band_floor_bps_hz": 0.1,
+    "indoor_weight": 1.0,
+    "outdoor_weight": 1.0,
+    "relative_current_load_floor_fraction": 0.9,
+    "serviceability_threshold_bps_hz": 0.1
+  },
+  "load_schedule": {
+    "active_streams_per_sector": [
+      4,
+      2,
+      4,
+      1,
+      3,
+      2
+    ],
+    "interpretation": "deterministic load-transition stress test, not a traffic distribution model",
+    "phase_lengths_intervals": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      18
+    ],
+    "selection_rule": "sector- and phase-rotated local stream IDs; at least one active user per sector"
+  },
+  "maximum_action_db": 60.0,
+  "message_delay_intervals": 1,
+  "message_drop_command_indices": [
+    55,
+    56
+  ],
+  "moving_average": {
+    "epsilon_bps_hz": 0.001,
+    "inactive_update": "zero instantaneous rate enters the same exponential average",
+    "initialization": "validated full-load nominal total-band user rates",
+    "time_constant_s": 100.0
+  },
+  "next_gate": "CALIBRATE_UNCERTAINTY_AND_PREPARE_MULTI_SEED_MULTI_PASS_CAMPAIGN",
+  "paths": {
+    "evidence_dir": "evidence/online_pf_load_transition_v1",
+    "results_dir": "results/online_pf_load_transition_v1",
+    "review_bundle": "evidence/online_pf_load_transition_v1/FR3_ONLINE_PF_LOAD_TRANSITION_REVIEW_v1.zip"
+  },
+  "primary_uncertainty_margin_db": 1.0,
+  "purpose": "Implement online moving-average constrained proportional fairness under deterministic user arrivals/departures, recompute local RZF from the validated full channel, preserve the robust delayed safety certificate, repair the saturation statement of the theorem, and freeze a multi-seed campaign specification.",
+  "required_ancestor_commit": "83ce40b0f1edb285d529f866ee40d2d5d60ed8cf",
+  "schema_version": 1,
+  "sensitivity_uncertainty_margin_db": 3.0,
+  "slew_db_per_update": 3.0,
+  "update_interval_s": 5,
+  "validated_full_return_sha256": "e9ac40e3839e9c5ff6e0fdc9a13145af988a9cfd1b2fbcb48368845e7b9aa42a"
+}
