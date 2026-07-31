@@ -1,0 +1,33 @@
+{
+  "claim_boundary": "CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_PREPARATION_NOT_EXECUTED",
+  "created_utc": "2026-07-29T06:07:59.959620+00:00",
+  "executed_input_bundle_sha256": "9be0d1a0eb58c4764871d92e95b84f8e85c18818257d08522beed83d67573144",
+  "input_sha256": {
+    "input/SIONNA_8X8_DUAL_PORT_ORDER.csv": "f9e42eb1002068b7172f2cd873f5ad67930af2d9b2481328094c022d1ef69a02",
+    "input/SIONNA_DUAL_POL_PORT_ORDER_AUDIT.json": "991eac235c93fa5660dc8182eddf4d4f681416860c98a25dbdff5352afc64bdb",
+    "input/SIONNA_INCUMBENT_LOCAL_FRAME.csv": "5b1b6d642e81d92f146cb6f0f973126524cb487fac140edb3cdbbf15059cc214",
+    "input/SIONNA_INCUMBENT_LOCAL_FRAME_AUDIT.json": "d67982417fb66ea5980d6f21e735e85989bebbe710a003b72b15392d035bdf64",
+    "input/TR38901_USED_SUBSET_MAPPING_DECISION.json": "2aa67ca92e96077a242d15b1c95f07eb327a4aedb273507ad20200b6bb51f528",
+    "input/TR38901_V19_4_USED_SUBSET_MAPPING.csv": "4a01daf0084c03b6e6d648dd9e80af3be7f3f48ac6ebc298be7d8db388c80c3c",
+    "input/bs_sectors.csv": "ce004abb263864812e59b8cc8c76f9c0d7881f61732d19cad63281ccd7dbb1a6",
+    "input/bs_sites.csv": "9cd34443d1f53eef1b7efbb6eaa19799c039d9b55245fe5ae1d95d4de5e5f2bb",
+    "input/earth_station_site_gain_timeseries.csv.gz": "e507e1516813c75bbf07047f1632b35802d5b9f60dcec655cb847f7b8ab9d950",
+    "input/reference_job_18658301/NIBI_ONE_SEED_DLP_RZF_PILOT_AUDIT.json": "bf51764c5639f631899d9fcb909a015a4402105744ca044fd45a0f3d701f880f",
+    "input/reference_job_18658301/PILOT_NUMERICAL_EVIDENCE.npz": "7640ed04d0f7d94fcb6726dd63b2afd77902da9f0ff31d3c1db0d27cd178ff2b",
+    "input/reference_job_18658301/PILOT_SECTOR_TIME_METRICS.csv.gz": "c3a21e1d120273caa332f19d99dc56b7c9516b1b24ac83b279205acbdf2dd113",
+    "input/reference_job_18658301/PILOT_TIME_SUMMARY.csv": "6f3c8be94919c957b9f44035570caa03ee2fee005deead295a4db3ff0e32de69",
+    "input/reference_job_18658301/PILOT_USER_RATE_SUMMARY.csv": "ce05d58b1dfdc673a197195c9cacc514311c8d5d31396f1f75430d008ff61eeb",
+    "input/sector_static_reference_accounting.csv": "6d1277d66c5e178267210909779fa211e3698dcfcef2631a9ee55254bcebd7e1"
+  },
+  "next_gate": "INDEPENDENT_REVIEW_THEN_RUN_SINGLE_NIBI_FULL_TOPOLOGY_EXPORT",
+  "reference_job_id": "18658301",
+  "return_bundle_sha256": "05e49566fc9a7dcef7279ff6324e46d35ceb4fc457ebccea53410ccf3706589c",
+  "review_zip_sha256": "8981873eff57575e40d12df40b845f781c4863de3168edc27d1473dad3d4f10e",
+  "source_commit_required": "11b705b684461fa23e279dc3f3e57557b8488849",
+  "status": "READY_FOR_INDEPENDENT_SOURCE_REVIEW",
+  "target": {
+    "cluster": "nibi",
+    "gpu": "H100-80GB",
+    "users_in_one_topology_call": 228
+  }
+}

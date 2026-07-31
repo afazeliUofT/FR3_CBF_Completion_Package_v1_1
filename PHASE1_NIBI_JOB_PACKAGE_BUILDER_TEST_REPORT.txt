@@ -1,0 +1,25 @@
+Immutable phase-1 Nibi job-package builder v1
+
+Verification performed
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused unit tests: 5 PASS
+- Exact validated slot-0 all-eight-method smoke: PASS
+- Reactive-myopic + identical sector fallback: PASS
+- Candidate-v3 and round-2 review hash binding: PASS
+- Source-snapshot manifest verification: PASS
+- Job-package manifest and ZIP integrity: PASS
+- Three execution-lock regressions: PASS
+- Synthetic 30-seed/150-cell merge and 10,000-bootstrap analysis: PASS
+- Synthetic merged-result strict validation: PASS
+- Synthetic repository staging, commit, push, and remote/local equality: PASS
+
+Scientific boundary
+IMMUTABLE_PHASE1_NIBI_JOB_PACKAGE_PREPARATION_NOT_EXECUTION_NOT_PAPER_RESULT
+
+Builder drop-in v2 correction
+- The committed reviewed full-topology source bundle is now the sole channel-generator input source.
+- No extracted nibi/controller_ready_full_topology_export_v1/input directory is required.
+- Source bundle SHA-256, internal manifest, metadata lineage, and 15 exact input hashes are verified.
+- Package ID now binds the reviewed source-bundle hash, manifest, and input-binding record.
+- The job package carries the original source-bundle metadata/manifest and an explicit binding record.

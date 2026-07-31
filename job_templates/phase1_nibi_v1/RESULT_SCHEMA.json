@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "seed_result": {
+    "required_files": [
+      "SEED_RESULT.json",
+      "RESULT_FILE_MANIFEST.json",
+      "CELL_SUMMARY.csv",
+      "PRIMARY_PAIRED_EFFECTS.csv",
+      "PASS_0_METHOD_TRACES.npz",
+      "PASS_1_METHOD_TRACES.npz",
+      "PASS_2_METHOD_TRACES.npz",
+      "PASS_3_METHOD_TRACES.npz",
+      "PASS_4_METHOD_TRACES.npz"
+    ],
+    "cell_rows": 40,
+    "passes": 5,
+    "methods": 8
+  },
+  "merged_result": {
+    "cell_rows": 1200,
+    "primary_paired_rows": 150,
+    "seed_cluster_rows": 30,
+    "bootstrap_resamples": 10000
+  },
+  "primary_endpoint": "final_moving_average_sum_log_utility",
+  "mandatory_secondary_endpoint": "duration_weighted_mean_moving_pf_utility"
+}

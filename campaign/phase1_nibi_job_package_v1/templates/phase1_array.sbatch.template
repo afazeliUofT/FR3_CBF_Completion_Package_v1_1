@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#SBATCH --account=def-rsadve_gpu
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --gpus-per-node=h100:1
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=124G
+#SBATCH --time=04:00:00
+#SBATCH --array=0-29%8
+#SBATCH --job-name=fr3-phase1
+#SBATCH --output=__RUN_ROOT__/logs/phase1-%A_%a.out
+#SBATCH --error=__RUN_ROOT__/logs/phase1-%A_%a.err
+
+# REVIEW TEMPLATE ONLY. Do not submit directly.
+export PHASE1_PACKAGE_ROOT="__PACKAGE_ROOT__"
+export PHASE1_RUN_ROOT="__RUN_ROOT__"
+export PHASE1_VENV="__VENV__"
+export PHASE1_AUTHORIZATION_FILE="__AUTHORIZATION_FILE__"
+exec bash "$PHASE1_PACKAGE_ROOT/phase1_array_worker.sh"

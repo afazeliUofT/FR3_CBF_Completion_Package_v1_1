@@ -1,0 +1,76 @@
+{
+  "files": [
+    {
+      "bytes": 24612,
+      "path": "phase1_seed_worker.py",
+      "sha256": "cae3414da868c03060977bcaf20de5c4812af190a60369e800a1bb963cd7c8d3"
+    },
+    {
+      "bytes": 5890,
+      "path": "validate_seed_result.py",
+      "sha256": "564332460508937e5a1e6a40d50e5dd31cbcf0d5100bd47257ff86ed78306455"
+    },
+    {
+      "bytes": 8137,
+      "path": "merge_phase1_results.py",
+      "sha256": "48b82bf63b59787ad5dc54a8adcebee2261d30c13705620772c587f4404f5e1a"
+    },
+    {
+      "bytes": 2593,
+      "path": "validate_merged_results.py",
+      "sha256": "dfeba528f460dd9577286a68c05ed397a446922dd7ba7f0af20c30cd3a84ebe9"
+    },
+    {
+      "bytes": 2537,
+      "path": "setup_environment.sh",
+      "sha256": "f63ba908fd3cdfa375a5c04c5af927a8788821de3b6e793de832c27f83b9b1ce"
+    },
+    {
+      "bytes": 1709,
+      "path": "phase1_array_worker.sh",
+      "sha256": "6c52d15bd81318fa658ff2d0e162b78062a5f74877b8c2461e7e35e814ada935"
+    },
+    {
+      "bytes": 199,
+      "path": "RUN_PHASE1_NIBI_CAMPAIGN.sh",
+      "sha256": "d53914c455c4d2476ab4871e71c5a3d1d73b81b664d9dcbf65719ffba3b34421"
+    },
+    {
+      "bytes": 189,
+      "path": "SUBMIT_PHASE1_LOCKED.sh",
+      "sha256": "d338a8e0e972d28df1d1da42aad0ab6a37b205d3dec08a4abe572005d09b5ec3"
+    },
+    {
+      "bytes": 153,
+      "path": "MERGE_PHASE1_LOCKED.sh",
+      "sha256": "f8ad2250a593addc4e724f673e6b9fc7b62bcaf45c09f735298580cb781b6d6c"
+    },
+    {
+      "bytes": 711,
+      "path": "RESULT_SCHEMA.json",
+      "sha256": "c08df8bb028ea4d79358c2ddfa0299ad500a09099fbf87574550b555ffdfa12c"
+    },
+    {
+      "bytes": 676,
+      "path": "README_JOB_PACKAGE.md",
+      "sha256": "8758a0ab6fa22b8aab55c1dd3a70a484174c3e1ef4bbcdd3b19cc516004351b2"
+    },
+    {
+      "bytes": 17966,
+      "path": "src/fr3_cbf/phase1_job_runtime.py",
+      "sha256": "b6d486d00d56c73c0c7358356a59af42fe5c1810930d8c0191fd989bb4390bdf"
+    },
+    {
+      "bytes": 624,
+      "path": "templates/phase1_array.sbatch.template",
+      "sha256": "743092928de35ebe6849fcd045e687f01f1c2a1f437883939a1e353cef597abf"
+    },
+    {
+      "bytes": 700,
+      "path": "templates/phase1_merge.sbatch.template",
+      "sha256": "266a78c3bd823fe5794ce8d843ef54ca80871accad89f20435fec4034188bf6c"
+    }
+  ],
+  "review_required": true,
+  "schema_version": 1
+}

@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#SBATCH --account=def-rsadve_cpu
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=64G
+#SBATCH --time=01:00:00
+#SBATCH --job-name=fr3-phase1-merge
+#SBATCH --output=__RUN_ROOT__/logs/merge-%j.out
+#SBATCH --error=__RUN_ROOT__/logs/merge-%j.err
+
+# REVIEW TEMPLATE ONLY. Do not submit directly.
+module --force purge
+module load StdEnv/2023
+module load python/3.12.4
+source "__VENV__/bin/activate"
+python "__PACKAGE_ROOT__/merge_phase1_results.py" \
+  --seed-root "__RUN_ROOT__/results" \
+  --package-root "__PACKAGE_ROOT__" \
+  --output-root "__RUN_ROOT__/merged"
+python "__PACKAGE_ROOT__/validate_merged_results.py" \
+  --merged-dir "__RUN_ROOT__/merged"

@@ -1,0 +1,8 @@
+{
+  "authorization": "NOT_AUTHORIZED",
+  "candidate_zip_sha256": "f7b47fd3a07e30987b7f0901df1706d6127774d32284e7d3b0da38185d810161",
+  "execution_authorized": false,
+  "note": "A future independently issued token must replace this non-authorizing template.",
+  "package_id": "bd18734787de7396b9de4bf8c0b9ba4d191c6346a7cb83e969499622067a8129",
+  "schema_version": 1
+}

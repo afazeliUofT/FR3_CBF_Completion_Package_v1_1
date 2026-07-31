@@ -1,0 +1,16 @@
+clause,model_item,experiment_choice,status,evidence
+1,frequency scope,8.15 GHz,USED_AND_IN_SCOPE,Official V19.4.0 scope is 0.5-100 GHz.
+7.1.2-7.1.4,local/global coordinates and downtilt,local x=east/y=north; Sionna yaw and positive downtilt mapping frozen,USED_ADAPTER_AUDITED,57-sector CPU adapter passed with frozen IDs and orientations.
+"7.2, Table 7.2-1",UMa evaluation geometry,"19 sites, 3 sectors/site, 500 m ISD, 25 m BS, 1.5 m UT, min 35 m, 80% indoor",USED_MATCHED,Frozen E3 layout and Sionna qualification.
+7.3.0-7.3.2,"array, antenna port, and polarization model","8x8 dual-cross 3GPP element, half-wavelength spacing",USED_PORT_ORDER_AUDIT_REQUIRED,Completed by the companion Sionna port-ordering audit.
+7.4.1,UMa pathloss,Sionna UMa with enable_pathloss=True,USED_LIBRARY_IMPLEMENTATION_VERSION_BOUNDARY,Sionna 2.0.1 source hashed; exact V19.4 delta tables are not claimed.
+7.4.2,LOS probability,Sionna-generated LOS state,USED_LIBRARY_IMPLEMENTATION_VERSION_BOUNDARY,No forced LOS state.
+7.4.3,O2I penetration,low-loss O2I; indoor probability 0.8,USED_LIBRARY_IMPLEMENTATION_VERSION_BOUNDARY,Release-19 7-24 GHz material changes remain a paper sensitivity item.
+7.4.4,shadow fading,enable_shadow_fading=True,USED_LIBRARY_IMPLEMENTATION_VERSION_BOUNDARY,One-seed pilot only; spatial consistency is not claimed.
+7.5,fast fading clusters/rays/LSPs,Sionna 2.0.1 UMa system-level channel,USED_LIBRARY_IMPLEMENTATION_VERSION_BOUNDARY,Installed source hashes and delay sanity are preserved.
+7.6.2,large bandwidth/large array,9 frequency samples over 100 MHz; 8x8 dual-polarized pilot array,PILOT_APPROXIMATION,Paper run requires tone-grid sensitivity and larger-array sensitivity.
+7.6.3,spatial consistency,single static channel snapshot,NOT_USED_IN_ONE_SEED_PILOT,Dynamic mobility campaign remains open.
+7.6.13,near-field channel,not enabled,EXCLUDED_WITH_FAR_FIELD_JUSTIFICATION,8x8 pilot diagonal aperture=0.182073 m; Fraunhofer distance=1.802433 m; minimum UMa distance=35.0 m.
+7.6.14,spatial non-stationarity,not enabled,NOT_USED_PILOT_SENSITIVITY_OPEN,Pilot array aperture is small relative to BS-UT distance; larger 16x16 sensitivity remains open.
+7.6.15-7.6.16,cluster-count and polarization-power variability,not separately enabled,RELEASE19_SENSITIVITY_OPEN,Not required to validate the software pilot; must be discussed/tested before paper claim.
+7.8,calibration,not a 3GPP calibration campaign,PAPER_CALIBRATION_OPEN,The pilot is a reproducibility and accounting gate only.

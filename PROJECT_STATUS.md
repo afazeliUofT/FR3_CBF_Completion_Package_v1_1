@@ -1,3 +1,23 @@
+<!-- BEGIN IMMUTABLE PHASE1 NIBI JOB PACKAGE -->
+## Immutable phase-1 Nibi job-package review candidate
+
+- package ID: `bd18734787de7396b9de4bf8c0b9ba4d191c6346a7cb83e969499622067a8129`;
+- candidate-v3 SHA-256: `f7b47fd3a07e30987b7f0901df1706d6127774d32284e7d3b0da38185d810161`;
+- seeds / fixed passes / methods: `30 / 5 / 8`;
+- channel-generation jobs: `30`, one channel per seed reused across passes and
+  methods;
+- reactive-myopic comparator with identical sector fallback: implemented and
+  slot-0 smoke-tested;
+- exact slot-0 all-eight-method smoke: `PASS_EXACT_LOCAL_SLOT0_ALL8_METHOD_SMOKE`;
+- submission scripts: locked;
+- campaign execution authorized: `NO`.
+
+The package is ready only for independent source/package review. No Nibi job
+has been submitted.
+
+**Next gate:** `INDEPENDENTLY_REVIEW_IMMUTABLE_PHASE1_NIBI_JOB_PACKAGE`
+<!-- END IMMUTABLE PHASE1 NIBI JOB PACKAGE -->
+
 <!-- BEGIN PHASE1 INDEPENDENT REVIEW ROUND2 -->
 ## Phase-1 independent review round 2
 
