@@ -2,11 +2,10 @@
 
 ## Gate
 
-`BUILD_REVIEW_AND_RUN_NONCAMPAIGN_NIBI_DEPLOYMENT_SMOKE`
+`INDEPENDENTLY_REVIEW_NONCAMPAIGN_NIBI_DEPLOYMENT_SMOKE_RETURN`
 
-1. Build a separately reviewed smoke-only WSL-to-Nibi orchestrator.
-2. Use a noncampaign seed outside 44000--44029.
-3. Freeze and hash the exact Nibi software/GPU environment.
-4. Issue a smoke-scoped token bound to package, commit, environment, seed, stage, and expiry.
-5. Submit exactly one H100 smoke job and retrieve complete provenance.
-6. Independently review the smoke before building the full-campaign orchestrator or issuing a 30-seed token.
+1. Execute exactly one smoke-scoped H100 job for excluded seed 43999.
+2. Retrieve and validate the compact success or diagnostic return.
+3. Keep all 30 confirmatory seeds and merge locked.
+4. Independently review the Nibi environment, Slurm record, channel fingerprints, and all-eight-method smoke output.
+5. Only after smoke PASS may a full-campaign orchestrator and campaign-scoped token be prepared.

@@ -1,3 +1,21 @@
+<!-- BEGIN NONCAMPAIGN NIBI DEPLOYMENT SMOKE -->
+## Noncampaign Nibi deployment smoke
+
+- smoke-package ID: `b1f7905888a9abb4dce322ee198a4edfe5fe951b2174f8101ddc3f4e397ee0f4`;
+- smoke ZIP SHA-256: `680ac0aa824c0fcae77f49d7e8fd20ce8ef4249f745525243ca96d45ba789d18`;
+- excluded smoke seed: `43999`;
+- execution scope: `NONCAMPAIGN_SINGLE_SEED_SMOKE_ONLY`;
+- confirmatory analysis included: `NO`;
+- 30-seed phase-1 execution authorized: `NO`;
+- merge authorized: `NO`.
+
+The reviewed smoke orchestrator may submit exactly one non-array H100 job,
+freeze the exact Nibi environment before token creation, and retrieve complete
+success or diagnostic provenance.
+
+**Next gate:** `INDEPENDENTLY_REVIEW_NONCAMPAIGN_NIBI_DEPLOYMENT_SMOKE_RETURN`
+<!-- END NONCAMPAIGN NIBI DEPLOYMENT SMOKE -->
+
 <!-- BEGIN PHASE1 JOB PACKAGE INDEPENDENT REVIEW -->
 ## Phase-1 immutable Nibi job-package independent review
 

@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "all_eight_methods_and_five_passes": "PASS_BY_IMMUTABLE_IMPORT",
+    "compact_success_and_failure_return": "PASS",
+    "environment_lock_before_token": "PASS",
+    "full_campaign_and_merge_prohibited": "PASS",
+    "noncampaign_seed": "PASS",
+    "single_nonarray_h100_submission": "PASS",
+    "smoke_scoped_expiring_token": "PASS"
+  },
+  "confirmatory_analysis_included": false,
+  "full_campaign_execution_authorized": false,
+  "job_package_id": "bd18734787de7396b9de4bf8c0b9ba4d191c6346a7cb83e969499622067a8129",
+  "job_package_review_commit": "74d7ae7354903b9fcade76515b0765286309f7ca",
+  "job_package_sha256": "a81f1808f75119e64a0f7f631a54230f3e722efa8d17dcf032ee1296f2bb76be",
+  "merge_authorized": false,
+  "schema_version": 1,
+  "scope": "ONE_EXCLUDED_NIBI_DEPLOYMENT_SMOKE_ONLY_NOT_PHASE1_RESULT_NOT_PAPER_RESULT",
+  "smoke_package_id": "b1f7905888a9abb4dce322ee198a4edfe5fe951b2174f8101ddc3f4e397ee0f4",
+  "smoke_seed": 43999,
+  "verdict": "PASS_FOR_SINGLE_NONCAMPAIGN_NIBI_DEPLOYMENT_SMOKE_EXECUTION_ONLY"
+}

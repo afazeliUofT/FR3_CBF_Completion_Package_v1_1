@@ -1,0 +1,20 @@
+Noncampaign phase-1 Nibi deployment-smoke package v1
+
+Static verification
+- Python syntax: PASS
+- Bash syntax: PASS
+- Focused unit tests: PASS
+- Smoke seed exclusion from 44000--44029: PASS
+- Token scope/expiry/environment binding tests: PASS
+- Synthetic five-pass/eight-method smoke runner: PASS
+- Synthetic smoke result validation: PASS
+- Synthetic compact return build/validation: PASS
+- Source/package manifest and ZIP integrity: PASS
+- Local Git staging/commit/push simulation: PASS
+- Reviewed smoke token expiry window: 168 hours, single seed/job scope
+- Remote orchestration shell syntax: PASS
+
+Execution boundary
+- Exactly one non-array H100 smoke job may be submitted.
+- Seed 43999 is excluded from confirmatory analysis.
+- Full campaign and merge authorization remain false.

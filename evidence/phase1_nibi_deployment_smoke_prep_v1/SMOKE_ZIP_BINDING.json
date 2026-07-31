@@ -1,0 +1,11 @@
+{
+  "execution_scope": "NONCAMPAIGN_SINGLE_SEED_SMOKE_ONLY",
+  "full_campaign_execution_authorized": false,
+  "job_package_sha256": "a81f1808f75119e64a0f7f631a54230f3e722efa8d17dcf032ee1296f2bb76be",
+  "schema_version": 1,
+  "smoke_package_id": "b1f7905888a9abb4dce322ee198a4edfe5fe951b2174f8101ddc3f4e397ee0f4",
+  "smoke_seed": 43999,
+  "source_manifest_sha256": "9d08208d8e5fed77bd0208de8a45dd66117831a2c47ba48f7398763c1c522021",
+  "zip_path": "FR3_PHASE1_NIBI_DEPLOYMENT_SMOKE_v1.zip",
+  "zip_sha256": "680ac0aa824c0fcae77f49d7e8fd20ce8ef4249f745525243ca96d45ba789d18"
+}
