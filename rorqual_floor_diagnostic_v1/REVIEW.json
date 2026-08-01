@@ -1,0 +1,13 @@
+{
+  "confirmatory_campaign_authorized": false,
+  "diagnostic_hard_gates_enforced": false,
+  "h100_channel_regenerated": false,
+  "immutable_job_package_modified": false,
+  "original_channel_reused": true,
+  "original_h100_job_id": 18041525,
+  "requested_cpus": 16,
+  "requested_memory_gib": 32,
+  "schema_version": 1,
+  "smoke_seed": 43999,
+  "status": "PASS_FOR_CPU_ONLY_RORQUAL_FLOOR_DIAGNOSTIC_USING_PRESERVED_CHANNEL"
+}
