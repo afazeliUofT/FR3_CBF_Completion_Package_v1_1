@@ -1,0 +1,10 @@
+{
+  "candidate_version": "v4.1",
+  "confirmatory_campaign_authorized": false,
+  "next_gate": "REVIEW_INTERVAL_CERTIFICATES_AND_CONSIDER_PROTECTED_SUBBAND_SCHEDULING_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_POLICY",
+  "remote_wrapper_exit_code": 42,
+  "return_zip_sha256": "b4e36a9c47fcd55c0619cf584e0709bcc7da7b431239939c38393da7630fddf2",
+  "schema_version": 1,
+  "scientific_status": "FAIL_OR_INFEASIBLE_EXCLUDED_SEED43999_CANDIDATE_V4_1_REVIEW_REQUIRED",
+  "status": "COLLECTED_FOR_INDEPENDENT_REVIEW"
+}

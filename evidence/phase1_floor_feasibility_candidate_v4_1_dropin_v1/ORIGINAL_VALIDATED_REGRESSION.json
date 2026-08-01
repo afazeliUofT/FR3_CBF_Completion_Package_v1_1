@@ -1,0 +1,22 @@
+{
+  "candidate_change": "NOOP_ON_ORIGINAL_VALIDATED_NOMINAL_FLOOR_SYSTEM",
+  "claim_boundary": "ONE_VALIDATED_FULL_TOPOLOGY_COMPATIBILITY_REGRESSION_NOT_STATISTICAL_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE",
+  "common_scale_floor_violation_user_seconds": 0,
+  "dynamic_dual_criterion_candidate_run": false,
+  "dynamic_dual_criterion_reason": "pre-campaign export has one protected criterion/pass and no five-pass controller trajectories",
+  "eligible_user_count": 207,
+  "export_reconstruction_tolerance": 3e-06,
+  "export_reconstruction_tolerance_scope": "stored float32-derived mode-coefficient reconstruction only; not a fairness/EESS gate tolerance and not used by seed-43999 candidate-v4.1",
+  "maximum_reconstructed_common_scale_eess_ratio": 1.0000000391261843,
+  "minimum_common_scale_floor_ratio": 1.0009292599296282,
+  "nominal_floor_candidate": "FEASIBLE_BASELINE_NOOP",
+  "nominal_rate_reconstruction_max_abs_error": 4.783959836274221e-06,
+  "protected_rate_reconstruction_max_abs_error": 4.783959836274221e-05,
+  "schema_version": 2,
+  "source_common_scale_aggregate_safety": {
+    "maximum_safe_minus_allowance_w": 1.8932661725304283e-29,
+    "pass": true
+  },
+  "source_validation_status": "PASS_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_VALIDATION_V4",
+  "status": "PASS_ORIGINAL_VALIDATED_TOPOLOGY_COMPATIBILITY_REGRESSION"
+}

@@ -1,0 +1,216 @@
+=================================================================
+FR3 FLOOR-FEASIBILITY CANDIDATE V4.1 — WSL ORCHESTRATOR
+=================================================================
+PACKAGE_ROOT=/mnt/c/Users/alifa/Downloads/FR3_CBF_v1_1_Floor_Feasibility_Repair_Candidate_v4_1_DropIn_v1_2026-08-01_EXTRACTED/FR3_CBF_v1_1_Floor_Feasibility_Repair_Candidate_v4_1_DropIn_v1_2026-08-01
+REPO=/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1
+LOCAL_RETURN=/mnt/c/Users/alifa/Downloads/FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_1_RETURN_20260801_191803
+RORQUAL_REQUIRED=YES_CPU_ONLY
+H100_CHANNEL_REGENERATION=NO
+PRESERVED_SEED43999_CHANNEL_REUSED=YES
+CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+INTERNAL_MANIFEST_VERIFICATION=PASS
+SOURCE_PAYLOAD_MANIFEST_VERIFICATION=PASS
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+Cloning into '/mnt/c/Users/alifa/Downloads/FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_1_RETURN_20260801_191803/github_working_clone'...
+done.
+Updating files:  13% (228/1632)Updating files:  14% (229/1632)Updating files:  15% (245/1632)Updating files:  16% (262/1632)Updating files:  17% (278/1632)Updating files:  18% (294/1632)Updating files:  19% (311/1632)Updating files:  20% (327/1632)Updating files:  21% (343/1632)Updating files:  22% (360/1632)Updating files:  23% (376/1632)Updating files:  24% (392/1632)Updating files:  24% (400/1632)Updating files:  25% (408/1632)Updating files:  26% (425/1632)Updating files:  27% (441/1632)Updating files:  28% (457/1632)Updating files:  29% (474/1632)Updating files:  30% (490/1632)Updating files:  31% (506/1632)Updating files:  32% (523/1632)Updating files:  33% (539/1632)Updating files:  33% (550/1632)Updating files:  34% (555/1632)Updating files:  34% (570/1632)Updating files:  35% (572/1632)Updating files:  36% (588/1632)Updating files:  37% (604/1632)Updating files:  37% (610/1632)Updating files:  38% (621/1632)Updating files:  39% (637/1632)Updating files:  40% (653/1632)Updating files:  41% (670/1632)Updating files:  42% (686/1632)Updating files:  43% (702/1632)Updating files:  44% (719/1632)Updating files:  45% (735/1632)Updating files:  46% (751/1632)Updating files:  47% (768/1632)Updating files:  48% (784/1632)Updating files:  48% (789/1632)Updating files:  49% (800/1632)Updating files:  50% (816/1632)Updating files:  51% (833/1632)Updating files:  52% (849/1632)Updating files:  53% (865/1632)Updating files:  54% (882/1632)Updating files:  55% (898/1632)Updating files:  56% (914/1632)Updating files:  57% (931/1632)Updating files:  58% (947/1632)Updating files:  58% (961/1632)Updating files:  59% (963/1632)Updating files:  60% (980/1632)Updating files:  61% (996/1632)Updating files:  62% (1012/1632)Updating files:  63% (1029/1632)Updating files:  64% (1045/1632)Updating files:  65% (1061/1632)Updating files:  66% (1078/1632)Updating files:  67% (1094/1632)Updating files:  67% (1106/1632)Updating files:  68% (1110/1632)Updating files:  69% (1127/1632)Updating files:  70% (1143/1632)Updating files:  71% (1159/1632)Updating files:  72% (1176/1632)Updating files:  73% (1192/1632)Updating files:  74% (1208/1632)Updating files:  75% (1224/1632)Updating files:  76% (1241/1632)Updating files:  77% (1257/1632)Updating files:  78% (1273/1632)Updating files:  79% (1290/1632)Updating files:  80% (1306/1632)Updating files:  81% (1322/1632)Updating files:  82% (1339/1632)Updating files:  82% (1346/1632)Updating files:  83% (1355/1632)Updating files:  84% (1371/1632)Updating files:  85% (1388/1632)Updating files:  86% (1404/1632)Updating files:  87% (1420/1632)Updating files:  88% (1437/1632)Updating files:  89% (1453/1632)Updating files:  90% (1469/1632)Updating files:  91% (1486/1632)Updating files:  92% (1502/1632)Updating files:  93% (1518/1632)Updating files:  94% (1535/1632)Updating files:  95% (1551/1632)Updating files:  95% (1559/1632)Updating files:  96% (1567/1632)Updating files:  97% (1584/1632)Updating files:  98% (1600/1632)Updating files:  99% (1616/1632)Updating files: 100% (1632/1632)Updating files: 100% (1632/1632), done.
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+Reset branch 'e3-first-sector-p452'
+GIT_HEAD_BEFORE=76a62cda5d649cad25a6a45ccb5f0f757a99a269
+GIT_REMOTE_HEAD_BEFORE=76a62cda5d649cad25a6a45ccb5f0f757a99a269
+GIT_STAGING_WORKTREE=/mnt/c/Users/alifa/Downloads/FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_1_RETURN_20260801_191803/github_working_clone
+LOCAL_REPOSITORY_WORKTREE_MODIFIED=NO
+GITHUB_NEWER_WORK_OVERWRITTEN=NO
+PYTHON_IN_MEMORY_SYNTAX_CHECK=PASS
+PYTHON_SYNTAX_FILE_COUNT=11
+BASH_SYNTAX_CHECK=PASS
+.............                                                            [100%]
+13 passed in 0.98s
+PACKAGED_FLOOR_DEFINITION_AUDIT=PASS
+PACKAGED_VARIABLE_PASS_EXTENSION_AUDIT=PASS
+PACKAGED_ALL_EIGHT_METHOD_AGGREGATE_AUDIT=PASS
+PACKAGED_SEED43999_MATERIAL_FAILURE_REPRODUCED=PASS
+CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+NEXT_GATE=CPU_ONLY_RORQUAL_EXACT_SEED43999_FEASIBILITY_DIAGNOSTIC
+ORIGINAL_VALIDATED_INPUT_BINDING=PASS
+ORIGINAL_VALIDATION_V4_STATUS=PASS_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_VALIDATION_V4
+ORIGINAL_VALIDATED_COMPATIBILITY_REGRESSION=PASS
+ORIGINAL_CANDIDATE_NOMINAL_FLOOR_NOOP=PASS
+ORIGINAL_SOURCE_COMMON_SCALE_SAFETY_GATE=PASS
+ORIGINAL_COMMON_SCALE_EXPORT_RECONSTRUCTION=PASS_WITH_DECLARED_FLOAT32_RECONSTRUCTION_TOLERANCE
+ORIGINAL_EXPORT_RECONSTRUCTION_TOLERANCE=3.0000000000000001e-06
+ORIGINAL_EXACT_DYNAMIC_DUAL_CRITERION_CANDIDATE=NOT_APPLICABLE_TO_PRECAMPAIGN_EXPORT
+ORIGINAL_DISTINCT_SHORT_TERM_CRITERION_ASSERTED=NO
+CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+RANDOM_FLOOR_LINEARIZATION_CHECKS=2400
+RANDOM_FLOOR_LINEARIZATION=PASS
+RANDOM_EESS_ROW_CHECKS=793
+RANDOM_EESS_LINEARIZATION=PASS
+SMALL_MILP_EXHAUSTIVE_CASES=60
+FROZEN_GRID_MILP_VS_EXHAUSTIVE=PASS
+RANDOMIZED_MODEL_AUDIT=PASS
+CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+LOCAL_QUALITY_GATE=PASS
+STRICT_LOCAL_SCOPE_UNIT_GATE=PASS
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+To github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1.git
+   76a62cd..ff45ffb  e3-first-sector-p452 -> e3-first-sector-p452
+CANDIDATE_SOURCE_COMMIT=ff45ffbb2a5f6006ca487fd3f600073975ece247
+COMMITTED_PACKAGE_MANIFEST_VERIFICATION=PASS
+COMMITTED_SOURCE_MANIFEST_VERIFICATION=PASS
+REMOTE_PAYLOAD_SHA256=6b7f7b018d13705f80b12aadf6643011e228eb983e804146dbc2773e8c1126c6
+Multifactor authentication is now mandatory to connect to this cluster.
+You can enroll your account into multifactor authentication on this page:
+https://ccdb.alliancecan.ca/multi_factor_authentications
+by following the instructions available here:
+https://docs.alliancecan.ca/wiki/Multifactor_authentication
+
+=============================================================================
+
+L'authentification multifacteur est maintenant obligatoire pour vous connecter
+à cette grappe. Configurez votre compte sur
+https://ccdb.alliancecan.ca/multi_factor_authentications
+et suivez les directives dans
+https://docs.alliancecan.ca/wiki/Multifactor_authentication/fr.
+Success. Logging you in...
+REMOTE_PAYLOAD_SHA256_RECOMPUTED=6b7f7b018d13705f80b12aadf6643011e228eb983e804146dbc2773e8c1126c6
+tar: src/fr3_cbf/floor_feasibility_repair.py: time stamp 2026-08-01 16:23:34 is 3814.916955809 s in the future
+tar: src/fr3_cbf/__init__.py: time stamp 2026-08-01 16:07:16 is 2836.916044411 s in the future
+tar: scripts/randomized_model_audit.py: time stamp 2026-08-01 16:07:16 is 2836.801432876 s in the future
+tar: scripts/regress_original_validated_topology.py: time stamp 2026-08-01 16:07:16 is 2836.800404927 s in the future
+tar: scripts/run_seed43999_floor_feasibility_candidate_v4_1.py: time stamp 2026-08-01 16:14:14 is 3254.799331028 s in the future
+tar: config/CANDIDATE_V4_1_CONTRACT.json: time stamp 2026-08-01 16:07:16 is 2836.798020088 s in the future
+tar: wrappers/REMOTE_ORCHESTRATE_FR3_FLOOR_CANDIDATE_V4_1.sh: time stamp 2026-08-01 16:09:30 is 2970.778796357 s in the future
+tar: wrappers/RUN_FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_1_FROM_WSL.sh: time stamp 2026-08-01 16:24:56 is 3896.777827839 s in the future
+tar: SOURCE_PAYLOAD_MANIFEST.sha256: time stamp 2026-08-01 16:27:56 is 4076.776861001 s in the future
+tar: immutable_bindings/IMMUTABLE_INPUT_BINDINGS.json: time stamp 2026-08-01 16:27:04 is 4024.758274986 s in the future
+tar: PACKAGE_VERSION.json: time stamp 2026-08-01 16:07:16 is 2836.757322438 s in the future
+REMOTE_CPU_DIAGNOSTIC_SUBMITTED_ONLY=YES
+REMOTE_SOURCE_MANIFEST_VERIFICATION=PASS
+SOURCE_PAYLOAD_MANIFEST_SHA256=264bbbd821bf4c6ccf5d8a955c7bafc7f1abd4ac77d5ff5c897a7c8965bddc00
+REMOTE_VENV_REPAIR_REQUIRED=YES
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Requirement already satisfied: pip in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (24.0)
+Collecting pip
+  Using cached pip-26.2-py3-none-any.whl.metadata (4.6 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/setuptools-83.0.0+computecanada-py3-none-any.whl
+Collecting wheel
+  Using cached wheel-0.47.0-py3-none-any.whl.metadata (2.3 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/packaging-26.2+computecanada-py3-none-any.whl (from wheel)
+Using cached pip-26.2-py3-none-any.whl (1.8 MB)
+Using cached wheel-0.47.0-py3-none-any.whl (32 kB)
+Installing collected packages: setuptools, pip, packaging, wheel
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed packaging-26.2+computecanada pip-26.2 setuptools-83.0.0+computecanada wheel-0.47.0
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Collecting sionna-no-rt==2.0.1
+  File was already downloaded /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/wheels/sionna_no_rt-2.0.1-py3-none-any.whl
+Successfully downloaded sionna-no-rt
+Looking in indexes: https://download.pytorch.org/whl/cu128
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/torch-2.9.1+computecanada-cp312-cp312-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/filelock-3.31.1+computecanada-py3-none-any.whl (from torch==2.9.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typing_extensions-4.16.0+computecanada-py3-none-any.whl (from torch==2.9.1)
+Requirement already satisfied: setuptools in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from torch==2.9.1) (83.0.0+computecanada)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/sympy-1.14.0+computecanada-py3-none-any.whl (from torch==2.9.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/networkx-3.6.1+computecanada-py3-none-any.whl (from torch==2.9.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jinja2-3.1.6+computecanada-py3-none-any.whl (from torch==2.9.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fsspec-2026.6.0+computecanada-py3-none-any.whl (from torch==2.9.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/mpmath-1.3.0+computecanada-py3-none-any.whl (from sympy>=1.13.3->torch==2.9.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/markupsafe-3.0.3+computecanada-cp312-cp312-linux_x86_64.whl (from jinja2->torch==2.9.1)
+Installing collected packages: mpmath, typing-extensions, sympy, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+
+Successfully installed MarkupSafe-3.0.3+computecanada filelock-3.31.1+computecanada fsspec-2026.6.0+computecanada jinja2-3.1.6+computecanada mpmath-1.3.0+computecanada networkx-3.6.1+computecanada sympy-1.14.0+computecanada torch-2.9.1+computecanada typing-extensions-4.16.0+computecanada
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/wheels/sionna_no_rt-2.0.1-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pandas-2.3.3+computecanada-cp312-cp312-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/numpy-2.4.2+computecanada-cp312-cp312-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/scipy-1.17.0+computecanada-cp312-cp312-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/h5py-3.16.0+computecanada-cp312-cp312-linux_x86_64.whl (from sionna-no-rt==2.0.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/importlib_resources-7.1.0+computecanada-py3-none-any.whl (from sionna-no-rt==2.0.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/matplotlib-3.11.1+computecanada-cp312-cp312-linux_x86_64.whl (from sionna-no-rt==2.0.1)
+Requirement already satisfied: torch>=2.9.1 in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from sionna-no-rt==2.0.1) (2.9.1+computecanada)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/python_dateutil-2.9.0.post0+computecanada-py2.py3-none-any.whl (from pandas<3,>=2.2)
+Collecting pytz>=2020.1 (from pandas<3,>=2.2)
+  Using cached pytz-2026.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas<3,>=2.2)
+  Using cached tzdata-2026.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/contourpy-1.3.3+computecanada-cp312-cp312-linux_x86_64.whl (from matplotlib>=3.10.8->sionna-no-rt==2.0.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/cycler-0.12.1+computecanada-py3-none-any.whl (from matplotlib>=3.10.8->sionna-no-rt==2.0.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fonttools-4.63.0+computecanada-cp312-cp312-linux_x86_64.whl (from matplotlib>=3.10.8->sionna-no-rt==2.0.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/kiwisolver-1.4.9+computecanada-cp312-cp312-linux_x86_64.whl (from matplotlib>=3.10.8->sionna-no-rt==2.0.1)
+Requirement already satisfied: packaging>=20.0 in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from matplotlib>=3.10.8->sionna-no-rt==2.0.1) (26.2+computecanada)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pillow-12.1.0+computecanada-cp312-cp312-linux_x86_64.whl (from matplotlib>=3.10.8->sionna-no-rt==2.0.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pyparsing-3.3.2+computecanada-py3-none-any.whl (from matplotlib>=3.10.8->sionna-no-rt==2.0.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/six-1.17.0+computecanada-py2.py3-none-any.whl (from python-dateutil>=2.8.2->pandas<3,>=2.2)
+Requirement already satisfied: filelock in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from torch>=2.9.1->sionna-no-rt==2.0.1) (3.31.1+computecanada)
+Requirement already satisfied: typing-extensions>=4.10.0 in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from torch>=2.9.1->sionna-no-rt==2.0.1) (4.16.0+computecanada)
+Requirement already satisfied: setuptools in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from torch>=2.9.1->sionna-no-rt==2.0.1) (83.0.0+computecanada)
+Requirement already satisfied: sympy>=1.13.3 in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from torch>=2.9.1->sionna-no-rt==2.0.1) (1.14.0+computecanada)
+Requirement already satisfied: networkx>=2.5.1 in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from torch>=2.9.1->sionna-no-rt==2.0.1) (3.6.1+computecanada)
+Requirement already satisfied: jinja2 in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from torch>=2.9.1->sionna-no-rt==2.0.1) (3.1.6+computecanada)
+Requirement already satisfied: fsspec>=0.8.5 in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from torch>=2.9.1->sionna-no-rt==2.0.1) (2026.6.0+computecanada)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from sympy>=1.13.3->torch>=2.9.1->sionna-no-rt==2.0.1) (1.3.0+computecanada)
+Requirement already satisfied: MarkupSafe>=2.0 in /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_ENV_5037b4e33448/.venv/lib/python3.12/site-packages (from jinja2->torch>=2.9.1->sionna-no-rt==2.0.1) (3.0.3+computecanada)
+Using cached pytz-2026.3.post1-py2.py3-none-any.whl (508 kB)
+Using cached tzdata-2026.3-py2.py3-none-any.whl (348 kB)
+Installing collected packages: pytz, tzdata, six, pyparsing, pillow, numpy, kiwisolver, importlib-resources, fonttools, cycler, scipy, python-dateutil, h5py, contourpy, pandas, matplotlib, sionna-no-rt
+
+Successfully installed contourpy-1.3.3+computecanada cycler-0.12.1+computecanada fonttools-4.63.0+computecanada h5py-3.16.0+computecanada importlib-resources-7.1.0+computecanada kiwisolver-1.4.9+computecanada matplotlib-3.11.1+computecanada numpy-2.4.2+computecanada pandas-2.3.3+computecanada pillow-12.1.0+computecanada pyparsing-3.3.2+computecanada python-dateutil-2.9.0.post0+computecanada pytz-2026.3.post1 scipy-1.17.0+computecanada sionna-no-rt-2.0.1 six-1.17.0+computecanada tzdata-2026.3
+No broken requirements found.
+PHASE-1 NIBI ENVIRONMENT: PASS
+Torch: 2.9.1
+CUDA build: 12.6
+Sionna: 2.0.1
+SLURM_ACCOUNT=def-rsadve_cpu
+RORQUAL_REQUIRED=YES_CPU_ONLY
+H100_REQUESTED=NO
+PRESERVED_CHANNEL_REUSED=YES
+sbatch: NOTE: Your memory request of 65536.0M was likely submitted as 64.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+SLURM_JOB_ID=18107989
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18107989    PENDING       0:00                              (None)
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18107989    RUNNING       0:02                             rc31807
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18107989    RUNNING       0:22                             rc31807
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18107989    RUNNING       0:43                             rc31807
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18107989    RUNNING       1:03                             rc31807
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18107989    RUNNING       1:23                             rc31807
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18107989    RUNNING       1:43                             rc31807
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18107989    RUNNING       2:03                             rc31807
+JobID|JobName|Account|State|ExitCode|Elapsed|MaxRSS|MaxVMSize|ReqMem|AllocTRES
+18107989|fr3-floor-v4-1|def-rsadve_cpu|FAILED|42:0|00:02:04|||64G|billing=16000,cpu=16,mem=64G,node=1
+18107989.batch|batch|def-rsadve_cpu|FAILED|42:0|00:02:04|436984K|0||cpu=16,mem=64G,node=1
+18107989.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:02:04||||billing=16000,cpu=16,mem=64G,node=1
+REMOTE_RETURN_ZIP=/home/rsadve1/links/scratch/FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_1_20260801_191803/return/FR3_RORQUAL_FLOOR_FEASIBILITY_CANDIDATE_V4_1_18107989.zip
+REMOTE_RETURN_ZIP_SHA256=b4e36a9c47fcd55c0619cf584e0709bcc7da7b431239939c38393da7630fddf2
+SLURM_STATE=FAILED
+SLURM_EXIT_CODE=42:0
+SLURM_MAXRSS=436984K
+SCIENTIFIC_SCRIPT_EXIT_CODE=42
+REMOTE_WRAPPER_EXIT_CODE=42
+REMOTE_FAILURE_STAGE=RETURN_PACKAGING
+SLURM_JOB_ID=18107989
+SLURM_ACCOUNT=def-rsadve_cpu
+SLURM_STATE=FAILED
+SLURM_EXIT_CODE=42:0
+SLURM_MAXRSS=436984K
+SCIENTIFIC_SCRIPT_EXIT_CODE=42
+CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+REMOTE_WRAPPER_EXIT_CODE=42
+DIAGNOSTIC_RETRIEVAL_EXIT_CODE=0
+LOCAL_RETURN_ZIP=/mnt/c/Users/alifa/Downloads/FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_1_RETURN_20260801_191803/remote_return/FR3_RORQUAL_FLOOR_FEASIBILITY_CANDIDATE_V4_1_18107989.zip
+LOCAL_RETURN_ZIP_SHA256=b4e36a9c47fcd55c0619cf584e0709bcc7da7b431239939c38393da7630fddf2
+REMOTE_SUMMARY_MANIFEST_VERIFICATION=PASS

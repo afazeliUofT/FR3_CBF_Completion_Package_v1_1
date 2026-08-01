@@ -1,0 +1,15 @@
+{
+  "candidate_version": "v4.1",
+  "confirmatory_campaign_authorized": false,
+  "created_utc": "2026-08-01T16:10:00+00:00",
+  "h100_channel_regeneration": false,
+  "immutable_reviewed_base_commit": "76a62cda5d649cad25a6a45ccb5f0f757a99a269",
+  "package_name": "FR3_CBF_v1_1_Floor_Feasibility_Repair_Candidate_v4_1_DropIn_v1_2026-08-01",
+  "release_purpose": "Bounded sparse-distributed floor/EESS feasibility repair with exact LP/MILP oracles and repair-or-infeasibility evidence for excluded seed 43999.",
+  "release_revision": 1,
+  "remote_execution_required": true,
+  "remote_resource": "Rorqual CPU-only; preserved seed-43999 H100 channel is reused",
+  "schema_version": 1,
+  "target_branch": "e3-first-sector-p452",
+  "target_repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1"
+}

@@ -1,0 +1,18 @@
+{
+  "candidate_version": "v4.1",
+  "channel_reused": true,
+  "confirmatory_campaign_authorized": false,
+  "h100_channel_regenerated": false,
+  "mode": "FAIL",
+  "remote_wrapper_exit_code": 42,
+  "schema_version": 1,
+  "scientific_exit_code": "42",
+  "seed": 43999,
+  "slurm_account": "def-rsadve_cpu",
+  "slurm_exit_code": "42:0",
+  "slurm_job_id": "18107989",
+  "slurm_maxrss": "436984K",
+  "slurm_state": "FAILED",
+  "source_commit": "ff45ffbb2a5f6006ca487fd3f600073975ece247",
+  "status": "FAIL_RETURN_READY"
+}
