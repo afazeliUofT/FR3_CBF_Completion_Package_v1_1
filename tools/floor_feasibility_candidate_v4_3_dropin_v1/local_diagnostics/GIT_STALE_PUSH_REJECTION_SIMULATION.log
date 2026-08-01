@@ -1,0 +1,9 @@
+To /tmp/fr3_v43_git_sim_lZUfu9/remote.git
+ ! [rejected]        e3-first-sector-p452 -> e3-first-sector-p452 (fetch first)
+error: failed to push some refs to '/tmp/fr3_v43_git_sim_lZUfu9/remote.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+GIT_STALE_PUSH_REJECTION_SIMULATION=PASS

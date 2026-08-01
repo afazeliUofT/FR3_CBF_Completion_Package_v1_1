@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "confirmatory_campaign_not_authorized": true,
+    "eess_verification_tolerance_frozen_1e_10": true,
+    "expected_nonzero_remote_exit_captured_in_if": true,
+    "floor_comparison_tolerance_frozen_1e_12": true,
+    "mode_and_beam_frozen": true,
+    "no_centralized_wmmse": true,
+    "no_executable_confirmatory_seed_range": true,
+    "normal_push_only": true,
+    "preserved_channel_reused": true,
+    "q0_deployable_actions_hardcoded_zero": true,
+    "q0_outcome_never_selected": true,
+    "remote_seed_is_only_43999": true,
+    "solver_dual_tolerance_1e_9": true,
+    "solver_primal_tolerance_1e_9": true,
+    "solver_reserve_is_tightening_1e_8": true,
+    "strict_post_mode_witness_selected": true,
+    "sum_rate_not_primary": true
+  },
+  "confirmatory_campaign_authorized": false,
+  "schema_version": 3,
+  "status": "PASS"
+}

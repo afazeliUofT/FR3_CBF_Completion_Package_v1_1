@@ -1,0 +1,14 @@
+{
+  "eess_verification_tolerance": 1e-10,
+  "floor_comparison_tolerance": 1e-12,
+  "focused_tests_passed": 4,
+  "q0_only_witness_rejected_from_deployment": true,
+  "schema_version": 3,
+  "scientific_tolerances_widened": false,
+  "solver_constraint_reserve": 1e-08,
+  "solver_dual_feasibility_tolerance": 1e-09,
+  "solver_primal_feasibility_tolerance": 1e-09,
+  "status": "PASS",
+  "strict_post_mode_witness_only": true,
+  "total_regression_tests_passed": 18
+}

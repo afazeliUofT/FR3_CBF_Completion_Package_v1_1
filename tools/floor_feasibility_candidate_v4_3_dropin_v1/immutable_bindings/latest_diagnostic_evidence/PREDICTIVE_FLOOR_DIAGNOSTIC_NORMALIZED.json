@@ -1,0 +1,46 @@
+{
+  "architecture_audit": {
+    "local_channel_rank_failure_count": 0,
+    "maximum_local_channel_condition_number": 1228.6851806640625,
+    "maximum_protected_mode_condition_number": 1.0000000000000002,
+    "minimum_available_digital_nullspace_dimension": 58
+  },
+  "channel_reused": true,
+  "claim_boundary": "DIAGNOSTIC_RERUN_USING_PRESERVED_NONCAMPAIGN_CHANNEL_HARD_GATES_RECORDED_NOT_ENFORCED",
+  "confirmatory_campaign_authorized": false,
+  "decision_rule": {
+    "MATERIAL": "block confirmatory execution and revise the algorithm/envelope",
+    "NONE": "original floor failure was not reproduced",
+    "NUMERICAL_SCALE": "consider only a separately reviewed numerical tolerance repair",
+    "SMALL_BUT_REAL": "do not relax the gate; strengthen fallback or floor feasibility"
+  },
+  "diagnostic_cpu_job_id": "18059211",
+  "diagnostic_seed": 43999,
+  "eligible_user_count": 205,
+  "h100_channel_regenerated": false,
+  "maximum_normalized_shortfall": 0.18930301661426396,
+  "method_count": 8,
+  "minimum_violating_floor_ratio": 0.810696983385736,
+  "original_h100_job_id": "18041525",
+  "overall_floor_violation_classification": "MATERIAL",
+  "paper_result": false,
+  "pass_count": 5,
+  "pass_user_seconds": {
+    "0": 135,
+    "1": 135,
+    "2": 55,
+    "3": 79,
+    "4": 115
+  },
+  "predictive_long_violation_seconds": 0,
+  "predictive_short_violation_seconds": 0,
+  "source_blob_sha": "bbf1b3238c23a614b480d140f303a5139235a566",
+  "source_branch": "e3-first-sector-p452",
+  "source_commit": "76a62cda5d649cad25a6a45ccb5f0f757a99a269",
+  "source_path": "evidence/phase1_rorqual_predictive_floor_diagnostic_v1/PREDICTIVE_FLOOR_DIAGNOSTIC_AUDIT.json",
+  "source_repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1",
+  "status": "PASS_RORQUAL_PREDICTIVE_FLOOR_DIAGNOSTIC_REVIEW_REQUIRED",
+  "total_predictive_floor_violation_user_intervals": 104,
+  "total_predictive_floor_violation_user_seconds": 519,
+  "unique_pass_user_pairs": 7
+}

@@ -1,0 +1,45 @@
+{
+  "confirmatory_campaign_authorized": false,
+  "next_gate": "RUN_CANDIDATE_V4_3_ON_PRESERVED_SEED43999_CHANNEL",
+  "root_cause_by_user": {
+    "E3_SITE_02_SEC_3_UE_4": {
+      "classification": "common sector scaling cannot redistribute fixed-RZF power against dominant same-sector interference",
+      "floor_branch": "RELATIVE_0P9_CURRENT_LOAD_NOMINAL",
+      "intervals": 100,
+      "mean_same_sector_nonnoise_interference_fraction": 0.8584012861335684,
+      "minimum_reviewed_floor_ratio": 0.9724542726228104
+    },
+    "E3_SITE_07_SEC_1_UE_2": {
+      "classification": "full-load eligibility plus absolute current-load floor is not met by nominal all-sector action, but sparse external-sector backoff provides a feasible witness",
+      "current_load_nominal_rate_bps_hz": 0.0814890294580922,
+      "floor_branch": "ABSOLUTE_0P1",
+      "intervals": 4,
+      "mean_external_nonnoise_interference_fraction": 0.9822381240167999,
+      "minimum_reviewed_floor_ratio": 0.810696983385736
+    }
+  },
+  "schema_version": 1,
+  "scientific_inference": {
+    "boundary_residual_cause": "untightened L1 witnesses were accepted with positive linear constraint excess below 5e-9 and then failed the unchanged exact floor audit by at most 2.5e-10 normalized",
+    "q0_headroom_is_unnecessary": "the strict post-mode comparator was feasible in every one of the 98 stream-repair intervals",
+    "required_v4_3_correction": "normalized solver-side reserve with unchanged exact tolerances; select strict post-mode witnesses only; retain q0 only as a diagnostic",
+    "v4_2_is_not_a_physical_infeasibility_certificate": true
+  },
+  "source_supported_facts": {
+    "eess_long_violation_seconds": 0,
+    "eess_short_violation_seconds": 0,
+    "maximum_normalized_boundary_shortfall": 2.419707002352053e-10,
+    "maximum_strict_lp_constraint_excess_on_boundary_residuals": 6.933011612725304e-10,
+    "new_boundary_residual_intervals": 16,
+    "new_boundary_residual_user_seconds": 80,
+    "original_affected_intervals_repaired": 104,
+    "q0_headroom_selected_intervals": 9,
+    "return_zip_sha256": "5665acb504b6751700a9e305baaaba2e47c3bf265825e0accba01b2f532a1e33",
+    "reviewed_original_violating_intervals": 104,
+    "reviewed_original_violating_user_seconds": 519,
+    "source_commit": "9acc9bed8b53ca9b358f774bd87218e676156b16",
+    "strict_post_mode_stream_feasible_intervals": 98,
+    "strict_post_mode_stream_infeasible_intervals": 0
+  },
+  "status": "PASS_PRIOR_V4_2_RECLASSIFIED_AS_NUMERICAL_WITNESS_BOUNDARY_DEFECT"
+}

@@ -1,0 +1,21 @@
+{
+  "channel_regeneration_authorized": false,
+  "confirmatory_campaign_authorized": false,
+  "created_utc": "2026-08-01T20:03:10Z",
+  "expected_channel_record_sha256": "bf55f7a071bc00fdc9e73075bcf2b3f9da3bd07843e3795e134d4bdb3c4fa0d9",
+  "expected_frequency_response_array_sha256": "c4ac7fb56da5d3f8182836e2a99ab2ef1dd7b17bf76332abbc198d1ae6b6a093",
+  "h100_requested": false,
+  "host": "rsadve1@rorqual.alliancecan.ca",
+  "preserved_channel_root": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008/run/results/seed_43999/channel",
+  "remote_base": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008",
+  "requested_cpus": 16,
+  "requested_memory_gib": 64,
+  "requested_time": "06:00:00",
+  "required": true,
+  "resource": "Rorqual CPU-only Slurm job",
+  "schema_version": 2,
+  "scratch_link": "/home/rsadve1/links/scratch",
+  "seed": 43999,
+  "scientific_action": "strict-post-mode stream-power witness only; q0 envelope diagnostic only",
+  "status": "NOT_EXECUTED_IN_RELEASE_ENVIRONMENT"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_zip_basename": "FR3_CBF_v1_1_Floor_Feasibility_Repair_Candidate_v4_3_DropIn_v1_2026-08-01.zip",
+  "exact_expected_sha256_verification": "PASS",
+  "extraction_root": "PASS",
+  "inner_wrapper_executed": false,
+  "newest_matching_zip_selection": "PASS",
+  "package_manifest_verification": "PASS",
+  "portable_sidecar_basename_only": "PASS",
+  "reason_inner_wrapper_not_executed": "Would require real GitHub and Rorqual side effects; inner local and remote failure paths and clean Git workflow were separately simulated.",
+  "schema_version": 2,
+  "simulated_zip_sha256": "228590b3064a6a4cecc381d8e780f50cadc3367fedc102905f1b7bf9600e7ea0",
+  "source_payload_manifest_verification": "PASS",
+  "status": "PASS",
+  "zip_crc": "PASS"
+}

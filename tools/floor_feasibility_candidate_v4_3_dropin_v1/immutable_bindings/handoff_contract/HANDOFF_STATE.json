@@ -1,0 +1,146 @@
+{
+  "campaign": {
+    "confirmatory_seeds": [
+      44000,
+      44001,
+      44002,
+      44003,
+      44004,
+      44005,
+      44006,
+      44007,
+      44008,
+      44009,
+      44010,
+      44011,
+      44012,
+      44013,
+      44014,
+      44015,
+      44016,
+      44017,
+      44018,
+      44019,
+      44020,
+      44021,
+      44022,
+      44023,
+      44024,
+      44025,
+      44026,
+      44027,
+      44028,
+      44029
+    ],
+    "evaluations": 1200,
+    "execution_authorized": false,
+    "methods": 8,
+    "pass_slots": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "created_utc": "2026-08-01T09:52:37.833732+00:00",
+  "current_diagnostic": {
+    "classification": "MATERIAL",
+    "eligible_users": 205,
+    "floor_violation_user_intervals": 104,
+    "floor_violation_user_seconds": 519,
+    "maximum_normalized_shortfall": 0.18930301661426396,
+    "minimum_floor_ratio": 0.810696983385736,
+    "physical_users": [
+      {
+        "minimum_floor_ratio": 0.9724542726228104,
+        "passes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "user_id": "E3_SITE_02_SEC_3_UE_4",
+        "user_seconds": 500
+      },
+      {
+        "minimum_floor_ratio": 0.810696983385736,
+        "passes": [
+          3,
+          4
+        ],
+        "user_id": "E3_SITE_07_SEC_1_UE_2",
+        "user_seconds": 19
+      }
+    ],
+    "predictive_long_violation_seconds": 0,
+    "predictive_short_violation_seconds": 0,
+    "unique_pass_user_pairs": 7
+  },
+  "current_gate": "FLOOR_FEASIBILITY_AND_POLICY_REPAIR_BEFORE_CONFIRMATORY_CAMPAIGN",
+  "frozen_primary": {
+    "architecture": "generic_64t64r_subarray_6bit",
+    "coupling_uplift_db": 3.0,
+    "delay_intervals": 1,
+    "floor_rule": "max(0.1, 0.9 * current_load_nominal_total_rate)",
+    "long_term": {
+      "p452_time_percentage": 20.0,
+      "threshold_dbw_per_10mhz": -150.0
+    },
+    "null_depth_cap_db": 65.0,
+    "pf_time_constant_s": 100.0,
+    "physical_ports": 128,
+    "rf_chains": 64,
+    "sectors": 57,
+    "short_term": {
+      "p452_time_percentage": 0.005,
+      "threshold_dbw_per_10mhz": -133.0
+    },
+    "slew_db_per_update": 3.0,
+    "update_interval_s": 5,
+    "users": 228
+  },
+  "github": {
+    "branch": "e3-first-sector-p452",
+    "head": "76a62cda5d649cad25a6a45ccb5f0f757a99a269",
+    "repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1",
+    "url": "https://github.com/afazeliUofT/FR3_CBF_Completion_Package_v1_1"
+  },
+  "paths": {
+    "local_wsl_repo": "/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1",
+    "nibi_login": "rsadve1@nibi.alliancecan.ca",
+    "nibi_scratch": "/scratch/rsadve1",
+    "preserved_rorqual_smoke_root": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008",
+    "rorqual_login": "rsadve1@rorqual.alliancecan.ca",
+    "rorqual_scratch_link": "/home/rsadve1/links/scratch",
+    "rorqual_scratch_resolved": "/lustre10/scratch/rsadve1",
+    "windows_downloads": "C:\\Users\\alifa\\Downloads",
+    "wsl_downloads": "/mnt/c/Users/alifa/Downloads"
+  },
+  "prohibited": [
+    "launch 30-seed campaign",
+    "relax floor tolerance to hide material violations",
+    "silently change floor policy",
+    "claim regulatory compliance",
+    "claim calibrated hardware uncertainty",
+    "use WMMSE as the primary architecture",
+    "use sum rate as the primary objective"
+  ],
+  "project": {
+    "name": "FR3 distributed predictive EESS coexistence controller",
+    "primary_objective": "Hard incumbent protection under delayed/slew-limited distributed control with constrained moving-average proportional fairness",
+    "sum_rate_primary": false,
+    "target_venue": "IEEE Transactions on Wireless Communications",
+    "wmmse_primary": false
+  },
+  "rorqual_smoke": {
+    "cpu_diagnostic_job_id": 18059211,
+    "diagnostic_evidence_commit": "76a62cda5d649cad25a6a45ccb5f0f757a99a269",
+    "diagnostic_zip_sha256": "428f5e65b701eb645a0cbb1a4fa4138f033f2e308ddcfe918b6bd68b55d3f918",
+    "excluded_seed": 43999,
+    "h100_channel_regenerated_in_diagnostic": false,
+    "h100_job_id": 18041525
+  },
+  "schema_version": 1
+}

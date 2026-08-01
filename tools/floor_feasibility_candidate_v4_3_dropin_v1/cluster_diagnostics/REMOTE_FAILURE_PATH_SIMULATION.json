@@ -1,0 +1,11 @@
+{
+  "confirmatory_campaign_authorized": false,
+  "expected_nonzero_exit_code": 15,
+  "observed_exit_code": 15,
+  "portable_sidecar_basename_only": true,
+  "return_source_layout_preserved": true,
+  "return_source_manifest_verification": "PASS",
+  "schema_version": 2,
+  "status": "PASS",
+  "zip_crc": "PASS"
+}

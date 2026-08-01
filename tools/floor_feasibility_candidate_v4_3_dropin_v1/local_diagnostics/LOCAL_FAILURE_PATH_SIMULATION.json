@@ -1,0 +1,10 @@
+{
+  "confirmatory_campaign_authorized": false,
+  "expected_nonzero_exit_code": 3,
+  "local_failure_return_packaging": "PASS",
+  "observed_exit_code": 3,
+  "portable_sidecar_basename_only": true,
+  "schema_version": 2,
+  "status": "PASS",
+  "zip_crc": "PASS"
+}

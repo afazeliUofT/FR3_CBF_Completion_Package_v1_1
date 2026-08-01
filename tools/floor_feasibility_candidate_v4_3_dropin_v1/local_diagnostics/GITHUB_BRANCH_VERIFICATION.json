@@ -1,0 +1,15 @@
+{
+  "ahead_by": 4,
+  "behind_by": 0,
+  "branch": "e3-first-sector-p452",
+  "comparison_status": "ahead_without_divergence",
+  "head_commit": "c8a20e297f99d3b675a25474e5a4e38613786c1b",
+  "head_message": "Collect candidate-v4.2 excluded-seed feasibility evidence",
+  "newer_work_overwritten": false,
+  "repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1",
+  "reviewed_base": "76a62cda5d649cad25a6a45ccb5f0f757a99a269",
+  "runtime_wrapper_rechecks_remote_before_each_normal_push": true,
+  "schema_version": 2,
+  "status": "PASS",
+  "verified_utc": "2026-08-01T20:03:10Z"
+}

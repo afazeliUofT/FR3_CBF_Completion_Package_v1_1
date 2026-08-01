@@ -1,0 +1,16 @@
+{
+  "candidate_version": "v4.3",
+  "confirmatory_campaign_authorized": false,
+  "file_count_excluding_package_manifest": 110,
+  "forbidden_artifact_scan": "PASS",
+  "forbidden_or_nested_archive_artifacts": [],
+  "missing_required_files": [],
+  "outer_wsl_preflight_simulation": "PASS",
+  "remote_execution_performed_in_build_environment": false,
+  "required_files_present": true,
+  "schema_version": 4,
+  "source_payload_manifest_verification": "PASS",
+  "source_payload_members": 12,
+  "status": "PASS",
+  "tests_passed": 18
+}

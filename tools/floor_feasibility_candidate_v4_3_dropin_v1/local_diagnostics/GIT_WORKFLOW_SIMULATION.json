@@ -1,0 +1,16 @@
+{
+  "base_is_ancestor_of_preexisting_head": true,
+  "evidence_normal_push": "PASS",
+  "final_commit": "1b9a2e403ad16fc9d49e4d6bc8ad1de482b2ae84",
+  "force_push_used": false,
+  "fresh_clone_package_manifest": "PASS",
+  "fresh_clone_source_manifest": "PASS",
+  "newer_work_overwritten": false,
+  "reviewed_base": "3811b023c5426d970911cf12e6a5df238cfb8530",
+  "schema_version": 2,
+  "simulated_preexisting_head": "51b49c359230aa53eee5224f25d3af3b872387d2",
+  "source_commit": "85ebff8862d4a04261b8293a4b3af987fbef7cb6",
+  "source_normal_push": "PASS",
+  "stale_normal_push_rejected": true,
+  "status": "PASS"
+}

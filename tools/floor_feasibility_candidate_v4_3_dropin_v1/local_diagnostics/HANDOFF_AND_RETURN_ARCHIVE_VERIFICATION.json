@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "standalone_handoff": {
+    "sha256": "ddb83ebe3efdcabca092996f6c9e12914df60c5e46609cec24545a1cfaaacec4",
+    "sidecar_basename": "FR3_TWC_Standalone_Handoff_2026-08-01.zip",
+    "sidecar_expected_sha256": "ddb83ebe3efdcabca092996f6c9e12914df60c5e46609cec24545a1cfaaacec4",
+    "sidecar_verified": true,
+    "zip_crc": "PASS"
+  },
+  "status": "PASS",
+  "v4_1_return": {
+    "expected_sha256": "b4e36a9c47fcd55c0619cf584e0709bcc7da7b431239939c38393da7630fddf2",
+    "return_source_manifest_layout": "FLATTENED_V1_V2_PACKAGING_DEFECT",
+    "returned_flat_source_members_hash_bound": 5,
+    "scientific_evidence_affected_by_layout_defect": false,
+    "sha256": "b4e36a9c47fcd55c0619cf584e0709bcc7da7b431239939c38393da7630fddf2",
+    "source_manifest_members_absent_from_compact_return": [
+      "scripts/audit_packaged_diagnostic.py",
+      "scripts/randomized_model_audit.py",
+      "scripts/regress_original_validated_topology.py",
+      "src/fr3_cbf/__init__.py",
+      "wrappers/RUN_FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_1_FROM_WSL.sh"
+    ],
+    "summary_output_manifest": "PASS",
+    "v4_3_layout_repair_required": true,
+    "zip_crc": "PASS"
+  },
+  "v4_2_return": {
+    "expected_sha256": "5665acb504b6751700a9e305baaaba2e47c3bf265825e0accba01b2f532a1e33",
+    "return_source_manifest_layout": "FLATTENED_V1_V2_PACKAGING_DEFECT",
+    "returned_flat_source_members_hash_bound": 5,
+    "scientific_evidence_affected_by_layout_defect": false,
+    "sha256": "5665acb504b6751700a9e305baaaba2e47c3bf265825e0accba01b2f532a1e33",
+    "source_manifest_members_absent_from_compact_return": [
+      "scripts/audit_packaged_diagnostic.py",
+      "scripts/randomized_model_audit.py",
+      "scripts/regress_original_validated_topology.py",
+      "src/fr3_cbf/__init__.py",
+      "wrappers/RUN_FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_2_FROM_WSL.sh"
+    ],
+    "summary_output_manifest": "PASS",
+    "v4_3_layout_repair_required": true,
+    "zip_crc": "PASS"
+  }
+}
