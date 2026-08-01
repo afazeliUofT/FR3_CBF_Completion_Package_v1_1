@@ -1,0 +1,31 @@
+POLICY_AND_SCOPE_GUARD_SCAN_BEGIN
+--- executable references to confirmatory seed range ---
+EXECUTABLE_CONFIRMATORY_SEED_REFERENCE=NONE
+--- centralized WMMSE executable references ---
+EXECUTABLE_CENTRALIZED_WMMSE_REFERENCE=NONE
+--- sum-rate objective executable references ---
+scripts/run_seed43999_floor_feasibility_candidate_v4_1.py:1456:                    "deviation is secondary and sum rate is not primary"
+src/fr3_cbf/floor_feasibility_repair.py:10:sum rate is never used as the primary objective.
+SUM_RATE_TEXT_REFERENCE=FOUND
+NOTE=References must only deny sum-rate primacy; inspect above.
+--- hard campaign lock markers ---
+scripts/randomized_model_audit.py:198:    print("CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO")
+scripts/regress_original_validated_topology.py:198:    print("CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO")
+scripts/audit_packaged_diagnostic.py:92:    print("CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO")
+wrappers/REMOTE_ORCHESTRATE_FR3_FLOOR_CANDIDATE_V4_1.sh:49:CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+wrappers/REMOTE_ORCHESTRATE_FR3_FLOOR_CANDIDATE_V4_1.sh:152:  echo "CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO"
+wrappers/REMOTE_ORCHESTRATE_FR3_FLOOR_CANDIDATE_V4_1.sh:303:CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+wrappers/RUN_FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_1_FROM_WSL.sh:64:CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+wrappers/RUN_FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_1_FROM_WSL.sh:108:    echo "CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO"
+wrappers/RUN_FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_1_FROM_WSL.sh:137:  'CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO'
+wrappers/RUN_FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_1_FROM_WSL.sh:403:  'CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO' \
+--- fixed local scope guards ---
+src/fr3_cbf/floor_feasibility_repair.py:1024:            "deployable EESS neighbourhood must contain at most two sectors"
+src/fr3_cbf/floor_feasibility_repair.py:1503:            "MAX_TWO_EXTERNAL_PER_VIOLATING_USER_MAX_TWO_EESS_SECTORS_"
+scripts/run_seed43999_floor_feasibility_candidate_v4_1.py:1455:                    "stream redistribution plus at most two external interferers per violated user and at most two EESS-contributor backoffs; minimum "
+POLICY_GUARD_CAMPAIGN_LOCK=PASS
+POLICY_GUARD_NO_CENTRALIZED_WMMSE=PASS
+POLICY_GUARD_NO_FLOOR_REDEFINITION=PASS_BY_CODE_AND_CONTRACT_REVIEW
+POLICY_GUARD_NO_TOLERANCE_INCREASE=PASS_BY_CODE_AND_CONTRACT_REVIEW
+POLICY_GUARD_PRIMARY_OBJECTIVE_HARD_FEASIBILITY=PASS
+POLICY_AND_SCOPE_GUARD_SCAN=PASS

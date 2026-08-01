@@ -1,0 +1,23 @@
+{
+  "compact_failure_zip_created": true,
+  "compiled_artifact_members": [],
+  "confirmatory_campaign_authorized": false,
+  "expected_exit_code": 15,
+  "members": [
+    "RETURN_METADATA.json",
+    "candidate_source/CANDIDATE_V4_1_CONTRACT.json",
+    "candidate_source/IMMUTABLE_INPUT_BINDINGS.json",
+    "candidate_source/PACKAGE_VERSION.json",
+    "candidate_source/REMOTE_ORCHESTRATE_FR3_FLOOR_CANDIDATE_V4_1.sh",
+    "candidate_source/SOURCE_PAYLOAD_MANIFEST.sha256",
+    "candidate_source/floor_feasibility_repair.py",
+    "candidate_source/run_seed43999_floor_feasibility_candidate_v4_1.py",
+    "slurm/REMOTE_PREJOB_FAILURE.env"
+  ],
+  "observed_exit_code": 15,
+  "schema_version": 1,
+  "sidecar_basename_only": true,
+  "simulation": "expected pre-job environment failure",
+  "zip_crc_pass": true,
+  "zip_sha256": "5aba053120ed4b6b933172dc0ec44da80f65125dfe7a1d71e38acbed85dbc035"
+}

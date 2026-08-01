@@ -1,0 +1,13 @@
+{
+  "compact_failure_zip_created": true,
+  "compiled_artifact_members": [],
+  "confirmatory_campaign_authorized": false,
+  "expected_exit_code": 3,
+  "member_count": 2,
+  "observed_exit_code": 3,
+  "schema_version": 1,
+  "sidecar_basename_only": true,
+  "simulation": "expected local repository preflight failure",
+  "zip_crc_pass": true,
+  "zip_sha256": "7966d3630c0a6edddda594754a1929513bd7ba363147fe790cdcfdda08ed8768"
+}

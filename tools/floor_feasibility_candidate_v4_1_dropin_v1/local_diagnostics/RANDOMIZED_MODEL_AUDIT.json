@@ -1,0 +1,10 @@
+{
+  "confirmatory_campaign_authorized": false,
+  "floor_linearization_direct_equivalence_checks": 2400,
+  "frozen_grid_milp_vs_exhaustive_cases": 60,
+  "physical_second_eess_row_identity_checks": 793,
+  "schema_version": 1,
+  "scope": "local mathematical/model regression; not seed or campaign evidence",
+  "seed": 20260801,
+  "status": "PASS_DETERMINISTIC_RANDOMIZED_MODEL_AUDIT"
+}

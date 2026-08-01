@@ -1,0 +1,19 @@
+{
+  "bash_wrappers": 2,
+  "compiled_or_cache_artifacts_retained": false,
+  "confirmatory_campaign_authorized": false,
+  "focused_tests_passed": 13,
+  "git_staging_push_simulation": "PASS",
+  "github_branch_head": "76a62cda5d649cad25a6a45ccb5f0f757a99a269",
+  "github_branch_status": "IDENTICAL_TO_REVIEWED_BASE",
+  "next_gate": "CPU_ONLY_RORQUAL_EXACT_SEED43999_FEASIBILITY_DIAGNOSTIC",
+  "original_validated_compatibility_regression": "PASS",
+  "packaged_diagnostic_audit": "PASS",
+  "python_syntax_files": 11,
+  "randomized_model_audit": "PASS",
+  "remote_expected_failure_packaging_simulation": "PASS",
+  "rorqual_exact_seed43999_run": "NOT_EXECUTED_REMOTE_ONLY",
+  "schema_version": 1,
+  "status": "PASS_LOCAL_RELEASE_GATES",
+  "wsl_expected_failure_packaging_simulation": "PASS"
+}

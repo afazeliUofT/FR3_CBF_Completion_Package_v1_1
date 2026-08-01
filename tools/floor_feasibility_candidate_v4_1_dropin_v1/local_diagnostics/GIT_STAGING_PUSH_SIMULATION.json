@@ -1,0 +1,13 @@
+{
+  "base_commit": "fdef501e2fe8b7b8ca402b6de6ab4f6a46ef3b10",
+  "clean_repository": true,
+  "confirmatory_campaign_authorized": false,
+  "final_commit": "2b9984bbae41223c27cd781443c14bc69752bd93",
+  "force_push_used": false,
+  "git_staging_push_simulation": "PASS",
+  "normal_push_only": true,
+  "remote_final_equals_local_final": true,
+  "schema_version": 1,
+  "source_commit": "96734922faf58d7061b54abfa33089dab874889f",
+  "source_manifest_verified_after_fresh_clone": true
+}
