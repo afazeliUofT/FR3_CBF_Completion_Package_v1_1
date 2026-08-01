@@ -1,0 +1,4 @@
+JobID|JobName|Account|State|ExitCode|Elapsed|MaxRSS|MaxVMSize|ReqMem|AllocTRES
+18108461|fr3-floor-v4-2|def-rsadve_cpu|FAILED|42:0|00:01:55|||64G|billing=16000,cpu=16,mem=64G,node=1
+18108461.batch|batch|def-rsadve_cpu|FAILED|42:0|00:01:55|431044K|0||cpu=16,mem=64G,node=1
+18108461.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:01:55||||billing=16000,cpu=16,mem=64G,node=1

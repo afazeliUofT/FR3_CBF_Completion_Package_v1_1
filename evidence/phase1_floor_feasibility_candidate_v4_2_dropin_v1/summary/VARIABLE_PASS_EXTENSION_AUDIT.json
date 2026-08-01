@@ -1,0 +1,310 @@
+{
+  "all_passes_cover_every_physical_second": true,
+  "pass_count": 5,
+  "passes": [
+    {
+      "all_physical_seconds_covered_once": true,
+      "final_interval_seconds": 2,
+      "interval_count": 118,
+      "pass_slot": 0,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 18,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 118
+        }
+      ],
+      "physical_seconds": 587
+    },
+    {
+      "all_physical_seconds_covered_once": true,
+      "final_interval_seconds": 1,
+      "interval_count": 115,
+      "pass_slot": 1,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 15,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 115
+        }
+      ],
+      "physical_seconds": 571
+    },
+    {
+      "all_physical_seconds_covered_once": true,
+      "final_interval_seconds": 1,
+      "interval_count": 117,
+      "pass_slot": 2,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 17,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 117
+        }
+      ],
+      "physical_seconds": 581
+    },
+    {
+      "all_physical_seconds_covered_once": true,
+      "final_interval_seconds": 4,
+      "interval_count": 119,
+      "pass_slot": 3,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 18,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 118
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "extended_final_phase": true,
+          "interval_count": 1,
+          "phase_index": 6,
+          "start_interval": 118,
+          "stop_interval_exclusive": 119
+        }
+      ],
+      "physical_seconds": 594
+    },
+    {
+      "all_physical_seconds_covered_once": true,
+      "final_interval_seconds": 5,
+      "interval_count": 121,
+      "pass_slot": 4,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 18,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 118
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "extended_final_phase": true,
+          "interval_count": 3,
+          "phase_index": 6,
+          "start_interval": 118,
+          "stop_interval_exclusive": 121
+        }
+      ],
+      "physical_seconds": 605
+    }
+  ],
+  "status": "PASS_VARIABLE_PASS_EXTENSION_COVERAGE"
+}

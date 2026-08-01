@@ -1,0 +1,6 @@
+method_id,pass_slot,protected_sample_count,interval_count,long_violation_seconds,short_violation_seconds,eligible_floor_violation_user_intervals,eligible_floor_violation_user_seconds,minimum_active_eligible_floor_ratio,maximum_normalized_floor_shortfall,total_normalized_floor_shortfall,maximum_long_ratio,maximum_short_ratio,network_wide_shutdown_intervals,local_frozen_grid_repair_intervals,local_stream_repair_intervals,unresolved_intervals
+candidate_v4_2_floor_feasibility_repair,0,587,118,0,0,5,25,0.9999999997796503,2.203497585490023e-10,5.628834485874382e-10,0.9998279197595357,0.03817406034830582,0,1,26,0
+candidate_v4_2_floor_feasibility_repair,1,571,115,0,0,11,55,0.9999999997580293,2.419707002352053e-10,9.216621117837626e-10,0.9998008141588167,0.03817198308010826,0,1,26,0
+candidate_v4_2_floor_feasibility_repair,2,581,117,0,0,0,0,1.0,0.0,0.0,0.9998386852090588,0.03915703588931786,0,0,11,0
+candidate_v4_2_floor_feasibility_repair,3,594,119,0,0,0,0,1.0,0.0,0.0,0.9993659081117068,0.038020006330337315,0,1,15,0
+candidate_v4_2_floor_feasibility_repair,4,605,121,0,0,0,0,1.0,0.0,0.0,0.9998318961299942,0.038808715043890066,0,3,20,0

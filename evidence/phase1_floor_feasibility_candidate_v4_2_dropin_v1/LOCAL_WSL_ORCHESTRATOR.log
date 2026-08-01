@@ -1,0 +1,151 @@
+=================================================================
+FR3 FLOOR-FEASIBILITY CANDIDATE V4.2 — WSL ORCHESTRATOR
+=================================================================
+PACKAGE_ROOT=/home/afazeli2006/fr3_floor_candidate_v4_2_runs/20260801_192858/extracted/FR3_CBF_v1_1_Floor_Feasibility_Repair_Candidate_v4_2_DropIn_v1_2026-08-01
+REPO=/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1
+LOCAL_RETURN=/mnt/c/Users/alifa/Downloads/FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_2_RETURN_20260801_192858
+RORQUAL_REQUIRED=YES_CPU_ONLY
+H100_CHANNEL_REGENERATION=NO
+PRESERVED_SEED43999_CHANNEL_REUSED=YES
+CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+INTERNAL_MANIFEST_VERIFICATION=PASS
+SOURCE_PAYLOAD_MANIFEST_VERIFICATION=PASS
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+   76a62cd..9be2f6d  e3-first-sector-p452 -> origin/e3-first-sector-p452
+Cloning into '/mnt/c/Users/alifa/Downloads/FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_2_RETURN_20260801_192858/github_working_clone'...
+done.
+Updating files:  16% (273/1632)Updating files:  17% (278/1632)Updating files:  18% (294/1632)Updating files:  19% (311/1632)Updating files:  20% (327/1632)Updating files:  21% (343/1632)Updating files:  22% (360/1632)Updating files:  23% (376/1632)Updating files:  24% (392/1632)Updating files:  25% (408/1632)Updating files:  26% (425/1632)Updating files:  27% (441/1632)Updating files:  27% (448/1632)Updating files:  28% (457/1632)Updating files:  29% (474/1632)Updating files:  30% (490/1632)Updating files:  31% (506/1632)Updating files:  32% (523/1632)Updating files:  33% (539/1632)Updating files:  33% (550/1632)Updating files:  34% (555/1632)Updating files:  35% (572/1632)Updating files:  35% (573/1632)Updating files:  36% (588/1632)Updating files:  37% (604/1632)Updating files:  38% (621/1632)Updating files:  39% (637/1632)Updating files:  40% (653/1632)Updating files:  41% (670/1632)Updating files:  41% (676/1632)Updating files:  42% (686/1632)Updating files:  43% (702/1632)Updating files:  44% (719/1632)Updating files:  45% (735/1632)Updating files:  46% (751/1632)Updating files:  47% (768/1632)Updating files:  48% (784/1632)Updating files:  49% (800/1632)Updating files:  50% (816/1632)Updating files:  51% (833/1632)Updating files:  52% (849/1632)Updating files:  52% (856/1632)Updating files:  53% (865/1632)Updating files:  54% (882/1632)Updating files:  55% (898/1632)Updating files:  56% (914/1632)Updating files:  57% (931/1632)Updating files:  58% (947/1632)Updating files:  59% (963/1632)Updating files:  60% (980/1632)Updating files:  61% (996/1632)Updating files:  62% (1012/1632)Updating files:  62% (1018/1632)Updating files:  63% (1029/1632)Updating files:  64% (1045/1632)Updating files:  65% (1061/1632)Updating files:  66% (1078/1632)Updating files:  67% (1094/1632)Updating files:  68% (1110/1632)Updating files:  69% (1127/1632)Updating files:  70% (1143/1632)Updating files:  71% (1159/1632)Updating files:  72% (1176/1632)Updating files:  73% (1192/1632)Updating files:  74% (1208/1632)Updating files:  74% (1218/1632)Updating files:  75% (1224/1632)Updating files:  76% (1241/1632)Updating files:  77% (1257/1632)Updating files:  78% (1273/1632)Updating files:  79% (1290/1632)Updating files:  80% (1306/1632)Updating files:  81% (1322/1632)Updating files:  82% (1339/1632)Updating files:  83% (1355/1632)Updating files:  84% (1371/1632)Updating files:  85% (1388/1632)Updating files:  86% (1404/1632)Updating files:  87% (1420/1632)Updating files:  88% (1437/1632)Updating files:  89% (1453/1632)Updating files:  90% (1469/1632)Updating files:  90% (1482/1632)Updating files:  91% (1486/1632)Updating files:  92% (1502/1632)Updating files:  93% (1518/1632)Updating files:  94% (1535/1632)Updating files:  95% (1551/1632)Updating files:  96% (1567/1632)Updating files:  97% (1584/1632)Updating files:  98% (1600/1632)Updating files:  99% (1616/1632)Updating files: 100% (1632/1632)Updating files: 100% (1632/1632), done.
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+   76a62cd..9be2f6d  e3-first-sector-p452 -> origin/e3-first-sector-p452
+Reset branch 'e3-first-sector-p452'
+GIT_HEAD_BEFORE=76a62cda5d649cad25a6a45ccb5f0f757a99a269
+GIT_REMOTE_HEAD_BEFORE=9be2f6d63e17452179cb5161e8cf566a70efd82b
+GIT_STAGING_WORKTREE=/mnt/c/Users/alifa/Downloads/FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_2_RETURN_20260801_192858/github_working_clone
+LOCAL_REPOSITORY_WORKTREE_MODIFIED=NO
+GITHUB_NEWER_WORK_OVERWRITTEN=NO
+PYTHON_IN_MEMORY_SYNTAX_CHECK=PASS
+PYTHON_SYNTAX_FILE_COUNT=11
+BASH_SYNTAX_CHECK=PASS
+................                                                         [100%]
+16 passed in 0.91s
+PACKAGED_FLOOR_DEFINITION_AUDIT=PASS
+PACKAGED_VARIABLE_PASS_EXTENSION_AUDIT=PASS
+PACKAGED_ALL_EIGHT_METHOD_AGGREGATE_AUDIT=PASS
+PACKAGED_SEED43999_MATERIAL_FAILURE_REPRODUCED=PASS
+CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+NEXT_GATE=CPU_ONLY_RORQUAL_EXACT_SEED43999_FEASIBILITY_DIAGNOSTIC
+ORIGINAL_VALIDATED_INPUT_BINDING=PASS
+ORIGINAL_VALIDATION_V4_STATUS=PASS_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_VALIDATION_V4
+ORIGINAL_VALIDATED_COMPATIBILITY_REGRESSION=PASS
+ORIGINAL_CANDIDATE_NOMINAL_FLOOR_NOOP=PASS
+ORIGINAL_SOURCE_COMMON_SCALE_SAFETY_GATE=PASS
+ORIGINAL_Q0_POWER_ENVELOPE_RECONSTRUCTION=PASS
+ORIGINAL_65DB_3DB_POWER_ENVELOPE_GATE=PASS
+ORIGINAL_MAXIMUM_Q0_NOMINAL_POWER_ENVELOPE_RATIO=0.99852630416398414
+ORIGINAL_MINIMUM_MODE_ADJUSTED_TO_Q0_POWER_RATIO=0.77002387839840669
+ORIGINAL_NONVACUOUS_Q0_HEADROOM_SECTORS=57
+ORIGINAL_COMMON_SCALE_EXPORT_RECONSTRUCTION=PASS_WITH_DECLARED_FLOAT32_RECONSTRUCTION_TOLERANCE
+ORIGINAL_EXPORT_RECONSTRUCTION_TOLERANCE=3.0000000000000001e-06
+ORIGINAL_EXACT_DYNAMIC_DUAL_CRITERION_CANDIDATE=NOT_APPLICABLE_TO_PRECAMPAIGN_EXPORT
+ORIGINAL_DISTINCT_SHORT_TERM_CRITERION_ASSERTED=NO
+CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+RANDOM_FLOOR_LINEARIZATION_CHECKS=2400
+RANDOM_FLOOR_LINEARIZATION=PASS
+RANDOM_EESS_ROW_CHECKS=793
+RANDOM_EESS_LINEARIZATION=PASS
+Q0_NOMINAL_POWER_ENVELOPE_CHECKS=735
+Q0_POWER_BUDGET_ROW_CHECKS=6180
+Q0_POWER_ENVELOPE_RANDOMIZED_AUDIT=PASS
+SMALL_MILP_EXHAUSTIVE_CASES=60
+FROZEN_GRID_MILP_VS_EXHAUSTIVE=PASS
+RANDOMIZED_MODEL_AUDIT=PASS
+CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+LOCAL_QUALITY_GATE=PASS
+STRICT_LOCAL_SCOPE_UNIT_GATE=PASS
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+To github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1.git
+   9be2f6d..9acc9be  e3-first-sector-p452 -> e3-first-sector-p452
+CANDIDATE_SOURCE_COMMIT=9acc9bed8b53ca9b358f774bd87218e676156b16
+COMMITTED_PACKAGE_MANIFEST_VERIFICATION=PASS
+COMMITTED_SOURCE_MANIFEST_VERIFICATION=PASS
+REMOTE_PAYLOAD_SHA256=5600bdadb4d35f7df493120f551852eacb113f70da4f33e3b4479038a804cd4c
+Multifactor authentication is now mandatory to connect to this cluster.
+You can enroll your account into multifactor authentication on this page:
+https://ccdb.alliancecan.ca/multi_factor_authentications
+by following the instructions available here:
+https://docs.alliancecan.ca/wiki/Multifactor_authentication
+
+=============================================================================
+
+L'authentification multifacteur est maintenant obligatoire pour vous connecter
+à cette grappe. Configurez votre compte sur
+https://ccdb.alliancecan.ca/multi_factor_authentications
+et suivez les directives dans
+https://docs.alliancecan.ca/wiki/Multifactor_authentication/fr.
+Success. Logging you in...
+REMOTE_PAYLOAD_SHA256_RECOMPUTED=5600bdadb4d35f7df493120f551852eacb113f70da4f33e3b4479038a804cd4c
+tar: src/fr3_cbf/floor_feasibility_repair.py: time stamp 2026-08-01 16:57:16 is 5190.522405354 s in the future
+tar: src/fr3_cbf/__init__.py: time stamp 2026-08-01 16:53:14 is 4948.521229514 s in the future
+tar: scripts/audit_packaged_diagnostic.py: time stamp 2026-08-01 16:53:14 is 4948.519654901 s in the future
+tar: scripts/randomized_model_audit.py: time stamp 2026-08-01 16:59:44 is 5338.518723623 s in the future
+tar: scripts/regress_original_validated_topology.py: time stamp 2026-08-01 17:11:52 is 6066.517758595 s in the future
+tar: scripts/run_seed43999_floor_feasibility_candidate_v4_2.py: time stamp 2026-08-01 17:19:58 is 6552.516537485 s in the future
+tar: config/CANDIDATE_V4_2_CONTRACT.json: time stamp 2026-08-01 17:17:04 is 6378.515144803 s in the future
+tar: wrappers/REMOTE_ORCHESTRATE_FR3_FLOOR_CANDIDATE_V4_2.sh: time stamp 2026-08-01 17:03:42 is 5576.513775672 s in the future
+tar: wrappers/RUN_FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_2_FROM_WSL.sh: time stamp 2026-08-01 17:24:10 is 6804.512890184 s in the future
+tar: SOURCE_PAYLOAD_MANIFEST.sha256: time stamp 2026-08-01 17:31:26 is 7240.511940576 s in the future
+tar: immutable_bindings/IMMUTABLE_INPUT_BINDINGS.json: time stamp 2026-08-01 17:30:00 is 7154.510678526 s in the future
+tar: PACKAGE_VERSION.json: time stamp 2026-08-01 17:17:04 is 6378.509876609 s in the future
+REMOTE_CPU_DIAGNOSTIC_SUBMITTED_ONLY=YES
+REMOTE_SOURCE_MANIFEST_VERIFICATION=PASS
+SOURCE_PAYLOAD_MANIFEST_SHA256=592e5253b0f6e3a30a14fc5cbe22090f22f225718cd86802794361b6d6be468b
+REMOTE_VENV_REUSE=PASS
+SLURM_ACCOUNT=def-rsadve_cpu
+RORQUAL_REQUIRED=YES_CPU_ONLY
+H100_REQUESTED=NO
+PRESERVED_CHANNEL_REUSED=YES
+sbatch: NOTE: Your memory request of 65536.0M was likely submitted as 64.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+SLURM_JOB_ID=18108461
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18108461    PENDING       0:00                              (None)
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18108461    PENDING       0:00                          (Priority)
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18108461    RUNNING       0:02                             rc31813
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18108461    RUNNING       0:22                             rc31813
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18108461    RUNNING       0:42                             rc31813
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18108461    RUNNING       1:02                             rc31813
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18108461    RUNNING       1:22                             rc31813
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18108461    RUNNING       1:42                             rc31813
+JobID|JobName|Account|State|ExitCode|Elapsed|MaxRSS|MaxVMSize|ReqMem|AllocTRES
+18108461|fr3-floor-v4-2|def-rsadve_cpu|FAILED|42:0|00:01:55|||64G|billing=16000,cpu=16,mem=64G,node=1
+18108461.batch|batch|def-rsadve_cpu|FAILED|42:0|00:01:55|431044K|0||cpu=16,mem=64G,node=1
+18108461.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:01:55||||billing=16000,cpu=16,mem=64G,node=1
+REMOTE_RETURN_ZIP=/home/rsadve1/links/scratch/FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_2_20260801_192858/return/FR3_RORQUAL_FLOOR_FEASIBILITY_CANDIDATE_V4_2_18108461.zip
+REMOTE_RETURN_ZIP_SHA256=5665acb504b6751700a9e305baaaba2e47c3bf265825e0accba01b2f532a1e33
+SLURM_STATE=FAILED
+SLURM_EXIT_CODE=42:0
+SLURM_MAXRSS=431044K
+SCIENTIFIC_SCRIPT_EXIT_CODE=42
+REMOTE_WRAPPER_EXIT_CODE=42
+REMOTE_FAILURE_STAGE=RETURN_PACKAGING
+SLURM_JOB_ID=18108461
+SLURM_ACCOUNT=def-rsadve_cpu
+SLURM_STATE=FAILED
+SLURM_EXIT_CODE=42:0
+SLURM_MAXRSS=431044K
+SCIENTIFIC_SCRIPT_EXIT_CODE=42
+CONFIRMATORY_CAMPAIGN_AUTHORIZED=NO
+REMOTE_WRAPPER_EXIT_CODE=42
+DIAGNOSTIC_RETRIEVAL_EXIT_CODE=0
+LOCAL_RETURN_ZIP=/mnt/c/Users/alifa/Downloads/FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_2_RETURN_20260801_192858/remote_return/FR3_RORQUAL_FLOOR_FEASIBILITY_CANDIDATE_V4_2_18108461.zip
+LOCAL_RETURN_ZIP_SHA256=5665acb504b6751700a9e305baaaba2e47c3bf265825e0accba01b2f532a1e33
+REMOTE_SUMMARY_MANIFEST_VERIFICATION=PASS
