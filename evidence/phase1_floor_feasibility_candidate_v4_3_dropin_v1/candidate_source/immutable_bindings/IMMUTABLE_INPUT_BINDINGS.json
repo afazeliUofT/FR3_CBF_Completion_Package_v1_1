@@ -1,0 +1,118 @@
+{
+  "candidate_id": "FR3_FLOOR_FEASIBILITY_REPAIR_CANDIDATE_V4_3_DROPIN_V1",
+  "created_utc": "2026-08-01T20:03:10Z",
+  "github_binding": {
+    "ahead_by": 4,
+    "behind_by": 0,
+    "branch": "e3-first-sector-p452",
+    "comparison_status": "AHEAD_BY_4_NO_DIVERGENCE_AT_V4_2_EVIDENCE_GATE",
+    "expected_reviewed_base": "76a62cda5d649cad25a6a45ccb5f0f757a99a269",
+    "newer_work_must_not_be_overwritten": true,
+    "repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1",
+    "runtime_wrapper_rechecks_remote_head_and_uses_normal_nonforce_push": true,
+    "verified_head": "c8a20e297f99d3b675a25474e5a4e38613786c1b",
+    "verified_head_message": "Collect candidate-v4.2 excluded-seed feasibility evidence",
+    "verified_utc": "2026-08-01T20:03:10Z"
+  },
+  "original_validated_minimal_test_data": {
+    "FULL_TOPOLOGY_EXPORT_VALIDATION_V4.json": "b8ae3ad46351ab49be6408e54d2c9496716d1594c59bd28a8b35dc8bc20c3c0a",
+    "OUTPUT_ARRAY_MANIFEST.json": "275e6d29704190228081c0c8fd68b49db625005a50d48e70fcfdd5fb85eb289a",
+    "USER_TOPOLOGY.csv": "6785c338f0d4a7c06195dc93ac106ac3562d613f078f9a0061d5a6cd300d040d",
+    "aggregate_allowance_w.npy": "449b0827ad7bd7da090755c1c122c9702ad97817e2680305316a38d81b5dd815",
+    "common_scale_reference.npy": "a4723a4eedc2386d9053d1bfe00a64a54579db8c6e0287cdbd4a0ae6a1b8e1b6",
+    "common_scale_user_rate.npy": "c8caa8691b52e7af883e25fc72be0d8bb6fa5367424aff7e3b4c1a770d8796d8",
+    "frequency_weights.npy": "96d8113815a5895cc603b78fa3adf26f4711998f86d9d2c3bcf3c1594bb16493",
+    "kappa_time_sector.npy": "384204be7c5d1a408db080570e915aeb94119229301861115094df3c600dcce1",
+    "noise_power_by_frequency_w.npy": "8d94fb26a2a6f7660edd6f974042a506593d817735484ca4876c799080e9c220",
+    "nominal_aggregate_interference_w.npy": "0a32dce0d0f667cb50192bf2149655ac19c0828f1282d957e100d36501812a53",
+    "nominal_mode_leakage_w.npy": "025d9a5e38b3e41db969cb74ad370a54d4920a6df78970508b83d90c69217c26",
+    "nominal_precoder_by_frequency.npy": "178e00facddfd9c8ace7c662138962aec20bdf600b7a89f600b7f2110cefee06",
+    "nominal_precoder_power_w.npy": "f3b4c50f81b8251534c7ab0effcfcd90a783bb1430c6c8ae681f67c16d0bc839",
+    "nominal_protected_rate_per_user.npy": "fca39b46b6d00ec75f8ac29780af40f602d3755dafabc9eedf853b82805c9668",
+    "nominal_total_weighted_rate_per_user.npy": "0adf21464aaba14952780a87834819f5c723c8ec9798df9516621084984a6062",
+    "other_frequency_weighted_rate_per_user.npy": "2529540de59bdb53e319ed3061b895819a373e6f78687dea76679bf9de54f890",
+    "protected_amp_perpendicular.npy": "aaf83ca7e243c077f607bc1e2e4d751073a89450b6212ad0bbfb7bfdb667296d",
+    "protected_amp_pol1.npy": "ad8bb05effbeb3349cc27d80c566ff0709965d8a57762319174895c8e622e718",
+    "protected_amp_pol2.npy": "2c14c566929874505710c66eff4c57fbd6a7d544632b85752bde91f3ba485acc",
+    "protected_mode_coefficients.npy": "9e88629f9e76a27c970a323584b061301b14901170e1191cadb5848ec31438a4",
+    "protected_steering_pol1.npy": "7dea519934a3df13dbf683011256ea6ff74aefefe7d4fed8ce6b7b9f96a56046",
+    "protected_steering_pol2.npy": "70c3512093910941001792704e74b7a36e2be5bcc8bc3ef4c6138b9223d50aa7",
+    "serving_bs_index.npy": "d3cf88216b9292954ee5c20042f6273f4b63eff4067f0a9db8aeb92e5df5b8af",
+    "serving_stream_index.npy": "114a7d9f015da820d6906a7601a105db9e205ab914e66c386aba35de22ed2834",
+    "transmit_power_by_frequency_w.npy": "b16202d46fe1415595ae34212fa053ebc427df1397002250af5780ffe799d206"
+  },
+  "packaged_diagnostic_evidence": {
+    "ALL_METHOD_CELL_SUMMARY.csv": "fd18db75a87682448f9cfa44d5825e6f14c3301bf654426451805eab766cacdd",
+    "PREDICTIVE_FLOOR_DIAGNOSTIC_NORMALIZED.json": "6a54ad591d6bcdf762f94929f2668fbd20a4bf3c425b3e99a84794a75405135b",
+    "PREDICTIVE_FLOOR_PASS_SUMMARY.csv": "db462cf4e6bd00bb6ed0b9b0fcf6a5acf2e9cbb3700ac126f360fba958b69f44",
+    "PREDICTIVE_FLOOR_VIOLATING_INTERVALS.csv": "ddc8fc29c17c6b020f2fcfddbc2419dacfe9e8769242ffe566a6312f04fab507",
+    "PREDICTIVE_FLOOR_VIOLATING_USERS.csv": "1383a99bf6bf5530a23b596082ad4195ffe506d3c555babec4698dc6362fba6d",
+    "PROVENANCE.md": "19266a21477175b52048292b3e66edd20527d0a90556af57f6ffc22739359f93"
+  },
+  "prior_v4_2_return": {
+    "boundary_residual_intervals": 16,
+    "channel_reused": true,
+    "evidence_commit": "c8a20e297f99d3b675a25474e5a4e38613786c1b",
+    "maximum_normalized_boundary_shortfall": 2.419707002352053e-10,
+    "original_affected_intervals_repaired": 104,
+    "q0_headroom_unnecessary": true,
+    "return_zip_sha256": "5665acb504b6751700a9e305baaaba2e47c3bf265825e0accba01b2f532a1e33",
+    "slurm_job_id": "18108461",
+    "source_commit": "9acc9bed8b53ca9b358f774bd87218e676156b16",
+    "strict_post_mode_stream_feasible_intervals": 98,
+    "strict_post_mode_stream_infeasible_intervals": 0
+  },
+  "raw_validated_archives": {
+    "FR3_FULL_TOPOLOGY_EXPORT_RETURN_18696267_VALIDATED_v4.zip": "e9ac40e3839e9c5ff6e0fdc9a13145af988a9cfd1b2fbcb48368845e7b9aa42a",
+    "FR3_FULL_TOPOLOGY_EXPORT_REVIEW_18696267_VALIDATED_v4.zip": "b1c2dd5866b1b39b7336e1adba1255b8374ddf10d9b8509e349e7802b5c7c1bf"
+  },
+  "release_note": "Candidate v4.3 reclassifies the v4.2 result as a near-pass with 16 solver-boundary residual intervals. It keeps the exact floor and EESS tolerances unchanged, applies a row-normalized 1e-8 solver reserve, and deploys only a strict post-mode power-budget witness. The q=0 envelope is diagnostic only. Fixed modes, beam directions, and distributed scope remain frozen.",
+  "release_revision": 1,
+  "remote_preserved_seed43999": {
+    "channel_record_sha256": "bf55f7a071bc00fdc9e73075bcf2b3f9da3bd07843e3795e134d4bdb3c4fa0d9",
+    "channel_regeneration_authorized": false,
+    "channel_root": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008/run/results/seed_43999/channel",
+    "environment_link": "/home/rsadve1/links/scratch/FR3_PHASE1_RORQUAL_ENV_5037b4e33448",
+    "excluded_diagnostic_only": true,
+    "frequency_response_sha256_array_bytes": "c4ac7fb56da5d3f8182836e2a99ab2ef1dd7b17bf76332abbc198d1ae6b6a093",
+    "remote_base": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008",
+    "reviewed_package": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008/package_rorqual_smoke",
+    "seed": 43999
+  },
+  "reviewed_reproducibility_archives": {
+    "FR3_CBF_v1_1_Rorqual_NonCampaign_Deployment_Smoke_v2.zip": "ad81595090fdc5bac278a62a7f3a81ff10bba392bdbd9cb42ecdb4f20d67c346",
+    "FR3_CBF_v1_1_Rorqual_Predictive_Floor_Diagnostic_Recovery_v1.zip": "145800b5d535797e66bb225a08c8bed57124df5bb191a7212959bc8407b8d081"
+  },
+  "reviewed_source_snapshot": {
+    "diagnose_predictive_floor.py": "394a9ba8c276ea7d85ed822a71a679f153e4ed44802f2e462659e0b4b5d8f8c1",
+    "null_floor_aware_sector_backoff.py": "ebdaea04adf423a74214d2698156a4639cfecd9b51a4f1926c05e72c239ec94d",
+    "phase1_job_runtime.py": "b6d486d00d56c73c0c7358356a59af42fe5c1810930d8c0191fd989bb4390bdf",
+    "phase1_seed_worker.py": "cae3414da868c03060977bcaf20de5c4812af190a60369e800a1bb963cd7c8d3"
+  },
+  "schema_version": 2,
+  "scientific_contract": {
+    "calibration_claimed": false,
+    "confirmatory_campaign_authorized": false,
+    "confirmatory_seed_range": "44000-44029 LOCKED",
+    "eess_tolerance_changed": false,
+    "floor_policy_changed": false,
+    "floor_tolerance_changed": false,
+    "q0_nominal_power_envelope_diagnostic_only": true,
+    "q0_nominal_power_envelope_selected": false,
+    "regulatory_compliance_claimed": false,
+    "solver_constraint_reserve": 1e-08,
+    "solver_dual_feasibility_tolerance": 1e-09,
+    "solver_primal_feasibility_tolerance": 1e-09,
+    "strict_post_mode_budget_deployable": true
+  },
+  "standalone_handoff": {
+    "filename": "FR3_TWC_Standalone_Handoff_2026-08-01.zip",
+    "sha256": "ddb83ebe3efdcabca092996f6c9e12914df60c5e46609cec24545a1cfaaacec4",
+    "sidecar_verified": true
+  },
+  "trust_classes": {
+    "assumptions_requiring_validation": "remote exact seed-43999 v4.3 run; per-stream PA/EVM constraints; implementation latency/signalling; fixed-RZF reweighting support",
+    "scientific_inference": "documented separately and not promoted to confirmatory evidence",
+    "source_supported_facts": "bound to immutable files and reviewed commit below"
+  }
+}

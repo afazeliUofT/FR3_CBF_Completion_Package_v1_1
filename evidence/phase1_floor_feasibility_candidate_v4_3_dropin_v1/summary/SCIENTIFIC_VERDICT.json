@@ -1,0 +1,124 @@
+{
+  "assumptions_requiring_validation": {
+    "fixed_rzf_direction_validity_during_stream_reweighting": true,
+    "hardware_calibration": false,
+    "local_stream_power_update_latency_and_signalling": true,
+    "q0_nominal_power_envelope_deployed": false,
+    "q0_nominal_power_envelope_maps_to_available_conducted_power": false,
+    "regulatory_compliance_claimed": false
+  },
+  "candidate_results": {
+    "action_class_counts": {
+      "BASELINE_NOOP": 486,
+      "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR": 6,
+      "SPARSE_LOCAL_STREAM_POWER_REPAIR": 98
+    },
+    "continuous_sector_proven_infeasible_intervals": 93,
+    "floor_violation_user_intervals": 0,
+    "floor_violation_user_seconds": 0,
+    "global_frozen_grid_proven_infeasible_intervals": 93,
+    "global_stream_proven_infeasible_intervals": 0,
+    "local_frozen_grid_repaired_intervals": 6,
+    "local_stream_power_proven_infeasible_intervals": 0,
+    "local_stream_power_repaired_intervals": 98,
+    "long_violation_seconds": 0,
+    "maximum_candidate_normalized_shortfall": 0.0,
+    "maximum_eess_backoff_sectors": 2,
+    "maximum_external_interferers_per_violating_user": 2,
+    "maximum_mode_adjusted_to_q0_power_ratio": 1.0,
+    "maximum_mutable_sector_count": 5,
+    "maximum_q0_nominal_power_envelope_ratio": 0.9838266217392282,
+    "maximum_strict_post_mode_baseline_power_ratio": 0.9999999874146094,
+    "minimum_mode_adjusted_to_q0_power_ratio": 0.5826808827220771,
+    "network_wide_shutdown_intervals": 0,
+    "q0_power_headroom_used_intervals": 0,
+    "root_cause_class_counts": {
+      "LOCAL_SECTOR_GRID_INFEASIBLE_STRICT_POST_MODE_BUDGET_STREAM_REPAIR_FEASIBLE": 98,
+      "SPARSE_LOCAL_FROZEN_GRID_FEASIBLE_REVIEWED_FALLBACK_SELECTION_DEFECT": 6
+    },
+    "short_violation_seconds": 0,
+    "solver_constraint_reserve": 1e-08,
+    "solver_dual_feasibility_tolerance": 1e-09,
+    "solver_primal_feasibility_tolerance": 1e-09,
+    "strict_local_scope_violation_intervals": 0,
+    "strict_post_mode_stream_feasible_intervals": 98,
+    "strict_post_mode_stream_infeasible_intervals": 0,
+    "strict_post_mode_stream_uncertified_intervals": 0,
+    "unresolved_deployable_intervals": 0
+  },
+  "claim_boundary": "EXCLUDED_SEED_DIAGNOSTIC_NOT_CONFIRMATORY_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE",
+  "confirmatory_campaign_authorized": false,
+  "created_utc": "2026-08-01T20:51:29.283393+00:00",
+  "next_gate": "INDEPENDENT_REVIEW_THEN_EXCLUDED_H100_DEPLOYMENT_SMOKE",
+  "paper_result": false,
+  "reproduction_gates": {
+    "candidate_formula_matches_reviewed_baseline": true,
+    "maximum_long_ratio_formula_error": 6.661338147750939e-16,
+    "maximum_short_ratio_formula_error": 2.0816681711721685e-17,
+    "maximum_total_rate_formula_error": 3.552713678800501e-15,
+    "q0_envelope_deployable_actions": 0,
+    "reactive_same_fallback_zero_eess_violations": true,
+    "reviewed_seed43999_reproduced": true,
+    "strict_post_mode_selected_power_gate": true
+  },
+  "runtime_seconds": 109.85089000198059,
+  "schema_version": 1,
+  "scientific_inference": {
+    "preferred_repair": "hard EESS and floor feasibility first; exact frozen sector grid when feasible; otherwise actual post-mode serving-stream power redistribution bounded by the stricter reviewed scalar times the actual post-mode sector-power baseline, plus at most two external interferers per violated user and at most two EESS-contributor backoffs; minimum deviation is secondary and sum rate is not primary",
+    "reviewed_fallback_defect": "local served-user cost tables and an incumbent-only scalar price do not enforce coupled network-wide floors",
+    "root_cause_by_user": {
+      "E3_SITE_02_SEC_3_UE_4": {
+        "deployable_sparse_stream_feasible_intervals": 100,
+        "floor_branches": [
+          "RELATIVE_0P9_CURRENT_LOAD_NOMINAL"
+        ],
+        "global_frozen_grid_feasible_intervals": 2,
+        "global_stream_feasible_intervals": 100,
+        "local_frozen_grid_feasible_intervals": 2,
+        "minimum_candidate_floor_ratio": 1.0000000004430856,
+        "minimum_optimistic_single_user_rate_bps_hz": 1.9085127501191446,
+        "minimum_reviewed_floor_ratio": 0.9724542726228104,
+        "q0_envelope_sparse_stream_feasible_intervals": 100,
+        "root_cause_classes": {
+          "LOCAL_SECTOR_GRID_INFEASIBLE_STRICT_POST_MODE_BUDGET_STREAM_REPAIR_FEASIBLE": 98,
+          "SPARSE_LOCAL_FROZEN_GRID_FEASIBLE_REVIEWED_FALLBACK_SELECTION_DEFECT": 2
+        },
+        "strict_post_mode_sparse_stream_feasible_intervals": 100,
+        "violating_interval_count": 100
+      },
+      "E3_SITE_07_SEC_1_UE_2": {
+        "deployable_sparse_stream_feasible_intervals": 4,
+        "floor_branches": [
+          "ABSOLUTE_0P1"
+        ],
+        "global_frozen_grid_feasible_intervals": 4,
+        "global_stream_feasible_intervals": 4,
+        "local_frozen_grid_feasible_intervals": 4,
+        "minimum_candidate_floor_ratio": 1.0329062274771346,
+        "minimum_optimistic_single_user_rate_bps_hz": 0.3778773575590488,
+        "minimum_reviewed_floor_ratio": 0.810696983385736,
+        "q0_envelope_sparse_stream_feasible_intervals": 4,
+        "root_cause_classes": {
+          "SPARSE_LOCAL_FROZEN_GRID_FEASIBLE_REVIEWED_FALLBACK_SELECTION_DEFECT": 4
+        },
+        "strict_post_mode_sparse_stream_feasible_intervals": 4,
+        "violating_interval_count": 4
+      }
+    }
+  },
+  "source_supported_facts": {
+    "channel_record_sha256": "bf55f7a071bc00fdc9e73075bcf2b3f9da3bd07843e3795e134d4bdb3c4fa0d9",
+    "channel_reused": true,
+    "excluded_seed": 43999,
+    "frequency_response_sha256_array_bytes": "c4ac7fb56da5d3f8182836e2a99ab2ef1dd7b17bf76332abbc198d1ae6b6a093",
+    "h100_channel_regenerated": false,
+    "pass_count": 5,
+    "reviewed_method_count": 8,
+    "reviewed_predictive_floor_violation_user_intervals": 104,
+    "reviewed_predictive_floor_violation_user_seconds": 519,
+    "reviewed_predictive_long_violation_seconds": 0,
+    "reviewed_predictive_short_violation_seconds": 0,
+    "source_commit": "b65dc117f1ace492b55bd764f74bf985fbcb9507"
+  },
+  "status": "PASS_EXCLUDED_SEED43999_CANDIDATE_V4_3_ALL5_FLOOR_EESS_AND_STRICT_POWER_GATES"
+}

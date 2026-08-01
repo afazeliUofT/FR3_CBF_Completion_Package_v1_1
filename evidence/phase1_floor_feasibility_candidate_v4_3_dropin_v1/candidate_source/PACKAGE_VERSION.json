@@ -1,0 +1,16 @@
+{
+  "candidate_version": "v4.3",
+  "confirmatory_campaign_authorized": false,
+  "created_utc": "2026-08-01T20:03:10Z",
+  "h100_channel_regeneration": false,
+  "immutable_reviewed_base_commit": "76a62cda5d649cad25a6a45ccb5f0f757a99a269",
+  "package_name": "FR3_CBF_v1_1_Floor_Feasibility_Repair_Candidate_v4_3_DropIn_v1_2026-08-01",
+  "release_purpose": "Recover an interior, exactly audited floor/EESS witness for excluded seed 43999 without weakening any scientific gate.",
+  "release_revision": 1,
+  "remote_execution_required": true,
+  "remote_resource": "Rorqual CPU-only; reuse the preserved seed-43999 H100-generated channel",
+  "schema_version": 3,
+  "scientific_change": "Keep the frozen floor and EESS tolerances unchanged; impose a row-normalized 1e-8 solver-side reserve and 1e-9 HiGHS feasibility tolerances; deploy only the strict post-mode power-budget witness; retain the broader q=0 envelope only as a nondeployable diagnostic oracle.",
+  "target_branch": "e3-first-sector-p452",
+  "target_repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1"
+}

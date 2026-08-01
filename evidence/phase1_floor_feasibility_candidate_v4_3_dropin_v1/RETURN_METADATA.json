@@ -1,0 +1,18 @@
+{
+  "candidate_version": "v4.3",
+  "channel_reused": true,
+  "confirmatory_campaign_authorized": false,
+  "h100_channel_regenerated": false,
+  "mode": "PASS",
+  "remote_wrapper_exit_code": 0,
+  "schema_version": 1,
+  "scientific_exit_code": "0",
+  "seed": 43999,
+  "slurm_account": "def-rsadve_cpu",
+  "slurm_exit_code": "0:0",
+  "slurm_job_id": "18112817",
+  "slurm_maxrss": "432072K",
+  "slurm_state": "COMPLETED",
+  "source_commit": "b65dc117f1ace492b55bd764f74bf985fbcb9507",
+  "status": "PASS_RETURN_READY"
+}

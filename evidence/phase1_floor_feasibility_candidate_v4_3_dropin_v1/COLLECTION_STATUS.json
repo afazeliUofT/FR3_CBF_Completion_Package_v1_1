@@ -1,0 +1,10 @@
+{
+  "candidate_version": "v4.3",
+  "confirmatory_campaign_authorized": false,
+  "next_gate": "INDEPENDENT_REVIEW_THEN_EXCLUDED_H100_DEPLOYMENT_SMOKE",
+  "remote_wrapper_exit_code": 0,
+  "return_zip_sha256": "52fbd777e7816320f5bf05ed39ff6c3dd62573776336e404f1f2306875d98e90",
+  "schema_version": 1,
+  "scientific_status": "PASS_EXCLUDED_SEED43999_CANDIDATE_V4_3_ALL5_FLOOR_EESS_AND_STRICT_POWER_GATES",
+  "status": "COLLECTED_FOR_INDEPENDENT_REVIEW"
+}
