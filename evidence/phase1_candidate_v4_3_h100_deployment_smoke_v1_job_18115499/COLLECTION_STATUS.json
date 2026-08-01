@@ -1,0 +1,8 @@
+{
+  "campaign_execution_authorized": false,
+  "h100_return_zip_sha256": "1a60707389e29d56e34451233fe51ce36095190c0d415392a9eb2c349f766217",
+  "h100_smoke_status": "PASS_EXCLUDED_H100_DEPLOYMENT_SMOKE_V4_3",
+  "next_gate": "BUILD_AND_INDEPENDENTLY_REVIEW_V4_3_LOCKED_30_SEED_CAMPAIGN_PACKAGE",
+  "schema_version": 1,
+  "status": "COLLECTED_FOR_INDEPENDENT_CAMPAIGN_READINESS_REVIEW"
+}

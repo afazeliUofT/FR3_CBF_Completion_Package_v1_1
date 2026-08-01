@@ -1,0 +1,29 @@
+{
+  "campaign_execution_authorized": false,
+  "candidate_cpu_source_commit": "b65dc117f1ace492b55bd764f74bf985fbcb9507",
+  "candidate_source_hashes": {
+    "floor_feasibility_repair.py": "98d119425ab9b72ce85374f8cbdf4481058ab7400aec6b5c7250121935ee86af",
+    "run_seed43999_floor_feasibility_candidate_v4_3.py": "cb2986b8cd21e589d60a96c5821069c2233af13f113fe604e2a0774538f4b99d"
+  },
+  "candidate_version": "v4.3",
+  "cpu_return": {
+    "filename": "FR3_RORQUAL_FLOOR_FEASIBILITY_CANDIDATE_V4_3_18112817.zip",
+    "sha256": "52fbd777e7816320f5bf05ed39ff6c3dd62573776336e404f1f2306875d98e90",
+    "slurm_job_id": "18112817"
+  },
+  "excluded_h100_smoke_pass": true,
+  "h100_return": {
+    "filename": "FR3_RORQUAL_CANDIDATE_V4_3_H100_DEPLOYMENT_SMOKE_18115499.zip",
+    "sha256": "1a60707389e29d56e34451233fe51ce36095190c0d415392a9eb2c349f766217",
+    "slurm_job_id": "18115499"
+  },
+  "h100_source_commit": "4e9af0bde493416ff2c15621884c8f1f625e6e17",
+  "immutable_channel": {
+    "channel_record_sha256": "bf55f7a071bc00fdc9e73075bcf2b3f9da3bd07843e3795e134d4bdb3c4fa0d9",
+    "excluded_seed": 43999,
+    "frequency_response_array_sha256": "c4ac7fb56da5d3f8182836e2a99ab2ef1dd7b17bf76332abbc198d1ae6b6a093"
+  },
+  "repo_head_at_freeze": "4e9af0bde493416ff2c15621884c8f1f625e6e17",
+  "required_ancestor": "4e9af0bde493416ff2c15621884c8f1f625e6e17",
+  "schema_version": 1
+}

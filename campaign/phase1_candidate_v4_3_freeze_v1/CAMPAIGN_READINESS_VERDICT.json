@@ -1,0 +1,9 @@
+{
+  "campaign_execution_authorized": false,
+  "h100_smoke_independently_reaudited": true,
+  "legacy_campaign_package_status": "OBSOLETE_V3_BOUND_AND_EXECUTION_LOCKED",
+  "method_contract_amendment_required": true,
+  "next_gate": "BUILD_AND_INDEPENDENTLY_REVIEW_V4_3_LOCKED_30_SEED_CAMPAIGN_PACKAGE",
+  "schema_version": 1,
+  "status": "PASS_TO_BUILD_V4_3_LOCKED_CAMPAIGN_PACKAGE_NOT_EXECUTE"
+}

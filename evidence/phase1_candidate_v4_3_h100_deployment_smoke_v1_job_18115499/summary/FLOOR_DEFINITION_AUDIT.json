@@ -1,0 +1,11 @@
+{
+  "active_floor": "max(0.1, 0.9 * current_load_nominal_total_rate)",
+  "comparison_tolerance": 1e-12,
+  "eligibility": "full_load_nominal_total_rate >= 0.1 bit/s/Hz",
+  "eligible_user_count": 205,
+  "policy_changed": false,
+  "scientific_tolerance_widened": false,
+  "solver_side_constraint_reserve": 1e-08,
+  "status": "PASS_FROZEN_FLOOR_DEFINITION_REPRODUCED",
+  "tolerance_changed": false
+}

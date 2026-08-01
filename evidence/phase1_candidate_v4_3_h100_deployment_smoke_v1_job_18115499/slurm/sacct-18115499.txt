@@ -1,0 +1,4 @@
+JobID|JobName|Account|State|ExitCode|Elapsed|MaxRSS|MaxVMSize|ReqMem|AllocTRES
+18115499|fr3-v43-h100|def-rsadve_gpu|COMPLETED|0:0|00:02:52|||64G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=64G,node=1
+18115499.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:52|704340K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=64G,node=1
+18115499.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:52||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=64G,node=1

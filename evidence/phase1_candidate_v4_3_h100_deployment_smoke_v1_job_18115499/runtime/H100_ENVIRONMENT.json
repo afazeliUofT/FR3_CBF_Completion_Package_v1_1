@@ -1,0 +1,33 @@
+{
+  "channel_regenerated": false,
+  "confirmatory_campaign_authorized": false,
+  "controller_replay_execution": "CPU_NUMPY_SCIPY_HIGHS_ON_H100_NODE",
+  "cuda_device_count": 1,
+  "float64_matmul_max_abs_error": 1.4210854715202004e-14,
+  "float64_matmul_relative_error": 1.574550009320212e-16,
+  "gpu_name": "NVIDIA H100 80GB HBM3",
+  "gpu_total_memory_bytes": 85017493504,
+  "gpu_total_memory_gib": 79.1787109375,
+  "nvidia_smi": "NVIDIA H100 80GB HBM3, GPU-beba9b80-b42b-d042-12ee-d44040646b0b, 580.159.04, 81559",
+  "preserved_channel_dtype": "complex64",
+  "preserved_channel_sample_cpu_energy": 4.2676841841402434e-10,
+  "preserved_channel_sample_energy_relative_error": 2.4228029092072725e-16,
+  "preserved_channel_sample_gpu_energy": 4.2676841841402423e-10,
+  "preserved_channel_sample_shape": [
+    2,
+    8,
+    8,
+    16
+  ],
+  "preserved_channel_shape": [
+    9,
+    228,
+    57,
+    128
+  ],
+  "python": "3.12.4",
+  "schema_version": 1,
+  "status": "PASS_H100_ENVIRONMENT_AND_PRESERVED_CHANNEL_ACCESS",
+  "torch": "2.9.1",
+  "torch_cuda_build": "12.6"
+}

@@ -1,0 +1,7 @@
+{
+  "campaign_execution_authorized": false,
+  "next_gate": "BUILD_AND_INDEPENDENTLY_REVIEW_V4_3_LOCKED_30_SEED_CAMPAIGN_PACKAGE",
+  "repo_head_before_freeze": "4e9af0bde493416ff2c15621884c8f1f625e6e17",
+  "schema_version": 1,
+  "status": "PASS_TO_BUILD_LOCKED_CAMPAIGN_PACKAGE_NOT_EXECUTE"
+}

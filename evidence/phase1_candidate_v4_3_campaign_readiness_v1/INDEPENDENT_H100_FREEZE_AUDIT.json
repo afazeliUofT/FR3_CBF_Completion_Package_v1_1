@@ -1,0 +1,87 @@
+{
+  "campaign_execution_authorized": false,
+  "cpu_h100_comparison": {
+    "all_method_nonruntime": {
+      "excluded_field": "runtime_seconds",
+      "mismatches": {},
+      "nonruntime_exact": true
+    },
+    "exact_text_file_hashes": {
+      "AFFECTED_USER_INTERVAL_FEASIBILITY.csv": true,
+      "CANDIDATE_ACTION_INTERVALS.csv": true,
+      "CANDIDATE_CELL_SUMMARY.csv": true,
+      "CANDIDATE_RESIDUAL_FLOOR_VIOLATIONS.csv": true,
+      "FLOOR_DEFINITION_AUDIT.json": true,
+      "INTERVAL_FEASIBILITY_CERTIFICATES.json": true,
+      "RUN_STATUS.env": true,
+      "VARIABLE_PASS_EXTENSION_AUDIT.json": true
+    },
+    "npz": {
+      "action_class_trace_exact": true,
+      "details": [
+        {
+          "maximum_nonruntime_absolute_difference": 0.0,
+          "pass_slot": 0
+        },
+        {
+          "maximum_nonruntime_absolute_difference": 0.0,
+          "pass_slot": 1
+        },
+        {
+          "maximum_nonruntime_absolute_difference": 0.0,
+          "pass_slot": 2
+        },
+        {
+          "maximum_nonruntime_absolute_difference": 0.0,
+          "pass_slot": 3
+        },
+        {
+          "maximum_nonruntime_absolute_difference": 0.0,
+          "pass_slot": 4
+        }
+      ],
+      "ignored_timing_only_arrays": [
+        "integrated_local_table_build_seconds"
+      ],
+      "scientific_trace_exact": true
+    }
+  },
+  "cpu_return": {
+    "hard_markers_match_h100": true,
+    "sha256": "52fbd777e7816320f5bf05ed39ff6c3dd62573776336e404f1f2306875d98e90",
+    "summary_manifest_entries": 15
+  },
+  "h100_return": {
+    "embedded_original_full_package_manifest": "NOT_APPLICABLE_TO_COMPACT_SOURCE_SUBSET",
+    "embedded_original_manifest_missing_entries": 178,
+    "environment_pass": true,
+    "hard_markers_pass": true,
+    "return_manifest_entries": 64,
+    "sha256": "1a60707389e29d56e34451233fe51ce36095190c0d415392a9eb2c349f766217",
+    "slurm_and_script_pass": true,
+    "summary_manifest_entries": 15
+  },
+  "next_gate": "BUILD_AND_INDEPENDENTLY_REVIEW_V4_3_LOCKED_30_SEED_CAMPAIGN_PACKAGE",
+  "remaining_twc_risks": {
+    "controller_latency_measured": false,
+    "fixed_rzf_reweighting_signalling_validated": false,
+    "information_exchange_locality_certified": false,
+    "multi_seed_generalization_validated": false,
+    "pa_evm_hardware_feasibility_validated": false
+  },
+  "schema_version": 1,
+  "scientific_result": {
+    "floor_violation_user_intervals": 0,
+    "floor_violation_user_seconds": 0,
+    "local_frozen_grid_repaired_intervals": 6,
+    "local_stream_power_repaired_intervals": 98,
+    "long_eess_violation_seconds": 0,
+    "mean_candidate_minus_predictive_duration_mean_pf": 0.004077479667259354,
+    "mean_candidate_minus_predictive_final_pf": -0.012308200376506307,
+    "q0_envelope_deployable_actions": 0,
+    "short_eess_violation_seconds": 0,
+    "strict_local_scope_gate": "PASS",
+    "strict_post_mode_power_gate": "PASS"
+  },
+  "status": "PASS_V4_3_FREEZE_AND_CAMPAIGN_READINESS_PRECHECK"
+}

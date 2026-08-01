@@ -1,0 +1,20 @@
+{
+  "candidate_script_exit_code": "0",
+  "candidate_source_commit": "4e9af0bde493416ff2c15621884c8f1f625e6e17",
+  "candidate_version": "v4.3",
+  "channel_regenerated": false,
+  "channel_reused": true,
+  "confirmatory_campaign_authorized": false,
+  "excluded_seed": 43999,
+  "execution_scope": "SINGLE_EXCLUDED_H100_DEPLOYMENT_SMOKE_ONLY",
+  "independent_audit_exit_code": "0",
+  "mode": "PASS",
+  "remote_wrapper_exit_code": 0,
+  "schema_version": 1,
+  "slurm_account": "def-rsadve_gpu",
+  "slurm_exit_code": "0:0",
+  "slurm_job_id": "18115499",
+  "slurm_maxrss": "704340K",
+  "slurm_state": "COMPLETED",
+  "status": "PASS_RETURN_READY"
+}

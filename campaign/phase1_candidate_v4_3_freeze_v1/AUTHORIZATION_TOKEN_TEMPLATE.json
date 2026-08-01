@@ -1,0 +1,7 @@
+{
+  "authorization": "LOCKED_REVIEW_TEMPLATE_ONLY",
+  "confirmatory_seeds": "44000-44029 LOCKED",
+  "execution_authorized": false,
+  "required_next_gate": "BUILD_AND_INDEPENDENTLY_REVIEW_V4_3_LOCKED_30_SEED_CAMPAIGN_PACKAGE",
+  "schema_version": 1
+}

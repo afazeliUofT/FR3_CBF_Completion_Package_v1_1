@@ -1,0 +1,21 @@
+{
+  "action_scope_locality_verified": true,
+  "claim_boundary": "ACTION_SCOPE_LOCALITY_ONLY_UNTIL_INFORMATION_AND_LATENCY_AUDIT",
+  "controller_latency_measured": false,
+  "fixed_rzf_reweighting_signalling_validated": false,
+  "information_exchange_locality_certified": false,
+  "maximum_eess_backoff_sectors": 2,
+  "maximum_external_interferers_per_violating_user": 2,
+  "maximum_mutable_sectors": 5,
+  "pa_evm_hardware_feasibility_validated": false,
+  "required_campaign_instrumentation": [
+    "local table build time",
+    "LP solve time",
+    "changed and mutable sector counts",
+    "external and EESS neighbor counts",
+    "per-interval control payload estimate",
+    "fallback incidence",
+    "hard floor/EESS residuals"
+  ],
+  "schema_version": 1
+}
