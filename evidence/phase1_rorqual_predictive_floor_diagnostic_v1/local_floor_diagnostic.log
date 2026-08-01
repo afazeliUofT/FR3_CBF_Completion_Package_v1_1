@@ -1,0 +1,77 @@
+=================================================================
+RORQUAL PREDICTIVE-FLOOR DIAGNOSTIC RECOVERY
+=================================================================
+Original H100 job: 18041525
+Preserved channel root: /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008
+Diagnostic compute: CPU only
+H100 channel regenerated: NO
+Confirmatory campaign authorized: NO
+README.md: OK
+REVIEW.json: OK
+RUN_RORQUAL_PREDICTIVE_FLOOR_DIAGNOSTIC_RECOVERY_v1.sh: OK
+diagnose_predictive_floor.py: OK
+[e3-first-sector-p452 9320f25] Add CPU diagnostic for Rorqual predictive floor failure
+ 5 files changed, 1111 insertions(+)
+ create mode 100644 rorqual_floor_diagnostic_v1/README.md
+ create mode 100644 rorqual_floor_diagnostic_v1/REVIEW.json
+ create mode 100644 rorqual_floor_diagnostic_v1/RORQUAL_FLOOR_DIAGNOSTIC_MANIFEST.sha256
+ create mode 100755 rorqual_floor_diagnostic_v1/RUN_RORQUAL_PREDICTIVE_FLOOR_DIAGNOSTIC_RECOVERY_v1.sh
+ create mode 100755 rorqual_floor_diagnostic_v1/diagnose_predictive_floor.py
+To github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1.git
+   910dd69..9320f25  e3-first-sector-p452 -> e3-first-sector-p452
+
+=== Verify preserved Rorqual channel and failure artifacts ===
+Multifactor authentication is now mandatory to connect to this cluster.
+You can enroll your account into multifactor authentication on this page:
+https://ccdb.alliancecan.ca/multi_factor_authentications
+by following the instructions available here:
+https://docs.alliancecan.ca/wiki/Multifactor_authentication
+
+=============================================================================
+
+L'authentification multifacteur est maintenant obligatoire pour vous connecter
+à cette grappe. Configurez votre compte sur
+https://ccdb.alliancecan.ca/multi_factor_authentications
+et suivez les directives dans
+https://docs.alliancecan.ca/wiki/Multifactor_authentication/fr.
+Success. Logging you in...
+OK      /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008/package_rorqual_smoke/phase1_seed_worker.py
+OK      /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008/package_rorqual_smoke/PHASE1_CAMPAIGN_CONTRACT_V3.json
+OK      /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008/run/results/seed_43999/channel/CHANNEL_RECORD.json
+OK      /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008/run/results/seed_43999/channel/frequency_response.npy
+OK      /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008/run/runtime/RORQUAL_ENVIRONMENT_LOCK.json
+OK      /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008/run/logs/smoke-18041525.out
+OK      /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008/run/logs/smoke-18041525.err
+OK      /lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008/run/logs/sacct-18041525.txt
+PRESERVED CHANNEL/FAILURE ARTIFACTS: PASS
+
+=== Submit CPU-only diagnostic (no H100, no channel regeneration) ===
+Submitted diagnostic CPU job: 18059211
+H100 requested: NO
+Preserved channel reused: YES
+sbatch: NOTE: Your memory request of 32768.0M was likely submitted as 32.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18059211    PENDING       0:00                              (None)
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18059211    RUNNING       0:20                             rc32306
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18059211    RUNNING       0:40                             rc32306
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18059211    RUNNING       1:00                             rc32306
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18059211    RUNNING       1:20                             rc32306
+             JOBID      STATE       TIME                    NODELIST(REASON)
+          18059211    RUNNING       1:40                             rc32306
+JobID|JobName|State|ExitCode|Elapsed|MaxRSS|MaxVMSize|ReqMem|AllocTRES
+18059211|fr3-p1-floor-d|COMPLETED|0:0|00:01:50|||32G|billing=16000,cpu=16,mem=32G,node=1
+18059211.batch|batch|COMPLETED|0:0|00:01:50|376160K|0||cpu=16,mem=32G,node=1
+18059211.extern|extern|COMPLETED|0:0|00:01:50||||billing=16000,cpu=16,mem=32G,node=1
+Final diagnostic state: COMPLETED
+FR3_RORQUAL_PREDICTIVE_FLOOR_DIAGNOSTIC_18059211.zip: OK
+
+=== Retrieve compact diagnostic return ===
+/mnt/c/Users/alifa/Downloads/FR3_RORQUAL_FLOOR_DIAGNOSTIC_18041525_20260801_091043/FR3_RORQUAL_PREDICTIVE_FLOOR_DIAGNOSTIC_18059211.zip | 2785079 bytes
+/mnt/c/Users/alifa/Downloads/FR3_RORQUAL_FLOOR_DIAGNOSTIC_18041525_20260801_091043/FR3_RORQUAL_PREDICTIVE_FLOOR_DIAGNOSTIC_18059211.zip.sha256 | 119 bytes
+/mnt/c/Users/alifa/Downloads/FR3_RORQUAL_FLOOR_DIAGNOSTIC_18041525_20260801_091043/REMOTE_DIAGNOSTIC_SUCCESS_STATUS.txt | 43 bytes
+/mnt/c/Users/alifa/Downloads/FR3_RORQUAL_FLOOR_DIAGNOSTIC_18041525_20260801_091043/local_floor_diagnostic.log | 4714 bytes
+FR3_RORQUAL_PREDICTIVE_FLOOR_DIAGNOSTIC_18059211.zip: OK

@@ -1,0 +1,42 @@
+{
+  "ALL_METHOD_CELL_SUMMARY.csv": {
+    "bytes": 12671,
+    "sha256": "fd18db75a87682448f9cfa44d5825e6f14c3301bf654426451805eab766cacdd"
+  },
+  "PREDICTIVE_FLOOR_DIAGNOSTIC_AUDIT.json": {
+    "bytes": 10417,
+    "sha256": "ba5670d085eadf091cbff87dd359841902e215ed6263d6b98d6fd65a9053c97a"
+  },
+  "PREDICTIVE_FLOOR_DIAGNOSTIC_PASS_0.npz": {
+    "bytes": 595509,
+    "sha256": "da843f2e4cbf6984bd5601d6f2ad3c3a51249bbd8f82bc6711fdce46af12bb45"
+  },
+  "PREDICTIVE_FLOOR_DIAGNOSTIC_PASS_1.npz": {
+    "bytes": 582553,
+    "sha256": "f9ba86f2701b2b72695b3692b31ed3eaf214682e281d7587178782e603522701"
+  },
+  "PREDICTIVE_FLOOR_DIAGNOSTIC_PASS_2.npz": {
+    "bytes": 529978,
+    "sha256": "8f06775871d9cadfaee581d910ef5319236558ea9d4842b5f64af53e05eb90d2"
+  },
+  "PREDICTIVE_FLOOR_DIAGNOSTIC_PASS_3.npz": {
+    "bytes": 528877,
+    "sha256": "098daad6e19d42d5a427a14ad0dfd5b82b0361c5a995af8e2cfb23c6b4995d45"
+  },
+  "PREDICTIVE_FLOOR_DIAGNOSTIC_PASS_4.npz": {
+    "bytes": 549199,
+    "sha256": "d780a086f7ef41a10bcc4625fa08b4dcaeabcc12804db6abaebe12ad2ef1db29"
+  },
+  "PREDICTIVE_FLOOR_PASS_SUMMARY.csv": {
+    "bytes": 902,
+    "sha256": "db462cf4e6bd00bb6ed0b9b0fcf6a5acf2e9cbb3700ac126f360fba958b69f44"
+  },
+  "PREDICTIVE_FLOOR_VIOLATING_INTERVALS.csv": {
+    "bytes": 5139,
+    "sha256": "ddc8fc29c17c6b020f2fcfddbc2419dacfe9e8769242ffe566a6312f04fab507"
+  },
+  "PREDICTIVE_FLOOR_VIOLATING_USERS.csv": {
+    "bytes": 1637,
+    "sha256": "1383a99bf6bf5530a23b596082ad4195ffe506d3c555babec4698dc6362fba6d"
+  }
+}

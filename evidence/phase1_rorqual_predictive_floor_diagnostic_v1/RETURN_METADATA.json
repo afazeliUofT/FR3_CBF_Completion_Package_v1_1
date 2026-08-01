@@ -1,0 +1,14 @@
+{
+  "confirmatory_campaign_authorized": false,
+  "diagnostic_cpu_job_id": "18059211",
+  "diagnostic_source_commit": "9320f25da621efe5e1ba0ad8b440e7864bad3eb5",
+  "file_count": 23,
+  "h100_channel_regenerated": false,
+  "immutable_job_package_modified": false,
+  "mode": "PASS",
+  "original_channel_reused": true,
+  "original_h100_job_id": "18041525",
+  "schema_version": 1,
+  "smoke_seed": 43999,
+  "status": "PASS_RORQUAL_FLOOR_DIAGNOSTIC_RETURN_READY"
+}

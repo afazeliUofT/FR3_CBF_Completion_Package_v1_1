@@ -1,0 +1,339 @@
+{
+  "architecture_audit": {
+    "local_channel_rank_failure_count": 0,
+    "maximum_local_channel_condition_number": 1228.6851806640625,
+    "maximum_protected_mode_condition_number": 1.0000000000000002,
+    "minimum_available_digital_nullspace_dimension": 58
+  },
+  "channel_record_sha256": "bf55f7a071bc00fdc9e73075bcf2b3f9da3bd07843e3795e134d4bdb3c4fa0d9",
+  "channel_reused": true,
+  "claim_boundary": "DIAGNOSTIC_RERUN_USING_PRESERVED_NONCAMPAIGN_CHANNEL_HARD_GATES_RECORDED_NOT_ENFORCED",
+  "confirmatory_campaign_authorized": false,
+  "created_utc": "2026-08-01T09:12:58.806951+00:00",
+  "decision_rule": {
+    "MATERIAL": "block confirmatory execution and revise the algorithm/envelope",
+    "NONE": "original floor failure was not reproduced",
+    "NUMERICAL_SCALE": "consider only a separately reviewed numerical tolerance repair",
+    "SMALL_BUT_REAL": "do not relax the gate; strengthen fallback or floor feasibility"
+  },
+  "diagnostic_hard_gates_enforced": false,
+  "diagnostic_seed": 43999,
+  "eligible_user_count": 205,
+  "frequency_response_sha256_array_bytes": "c4ac7fb56da5d3f8182836e2a99ab2ef1dd7b17bf76332abbc198d1ae6b6a093",
+  "h100_channel_regenerated": false,
+  "maximum_normalized_shortfall": 0.18930301661426396,
+  "method_count": 8,
+  "minimum_violating_floor_ratio": 0.810696983385736,
+  "original_h100_job_id": "18041525",
+  "overall_floor_violation_classification": "MATERIAL",
+  "paper_result": false,
+  "pass_audits": [
+    {
+      "diagnostic_hard_gates_enforced": false,
+      "method_runtime_seconds": 19.969581311102957,
+      "pass_slot": 0,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 18,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 118
+        }
+      ],
+      "predictive_floor_violation_user_seconds": 135
+    },
+    {
+      "diagnostic_hard_gates_enforced": false,
+      "method_runtime_seconds": 19.60182762495242,
+      "pass_slot": 1,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 15,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 115
+        }
+      ],
+      "predictive_floor_violation_user_seconds": 135
+    },
+    {
+      "diagnostic_hard_gates_enforced": false,
+      "method_runtime_seconds": 19.850377992959693,
+      "pass_slot": 2,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 17,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 117
+        }
+      ],
+      "predictive_floor_violation_user_seconds": 55
+    },
+    {
+      "diagnostic_hard_gates_enforced": false,
+      "method_runtime_seconds": 20.09573642280884,
+      "pass_slot": 3,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 18,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 118
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "extended_final_phase": true,
+          "interval_count": 1,
+          "phase_index": 6,
+          "start_interval": 118,
+          "stop_interval_exclusive": 119
+        }
+      ],
+      "predictive_floor_violation_user_seconds": 79
+    },
+    {
+      "diagnostic_hard_gates_enforced": false,
+      "method_runtime_seconds": 20.600197502877563,
+      "pass_slot": 4,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 18,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 118
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "extended_final_phase": true,
+          "interval_count": 3,
+          "phase_index": 6,
+          "start_interval": 118,
+          "stop_interval_exclusive": 121
+        }
+      ],
+      "predictive_floor_violation_user_seconds": 115
+    }
+  ],
+  "pass_count": 5,
+  "predictive_long_violation_seconds": 0,
+  "predictive_short_violation_seconds": 0,
+  "runtime_seconds": 107.90046438691206,
+  "schema_version": 1,
+  "status": "PASS_RORQUAL_PREDICTIVE_FLOOR_DIAGNOSTIC_REVIEW_REQUIRED",
+  "total_predictive_floor_violation_user_intervals": 104,
+  "total_predictive_floor_violation_user_seconds": 519,
+  "unique_pass_user_pairs": 7
+}
