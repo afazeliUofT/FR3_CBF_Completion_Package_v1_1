@@ -1,0 +1,42 @@
+{
+  "checks": {
+    "channel_generation_not_called": true,
+    "confirmatory_campaign_false_everywhere": true,
+    "deployable_eess_bound": true,
+    "deployable_external_bound": true,
+    "driver_is_seed43999_only_no_seed_argument": true,
+    "eess_tolerance_exact": true,
+    "fixed_modes_and_beams": true,
+    "floor_policy_unchanged": true,
+    "floor_tolerance_exact": true,
+    "floor_tolerance_unchanged": true,
+    "h100_channel_regeneration_false": true,
+    "immutable_phase1_modified_false": true,
+    "no_confirmatory_seed_literal_in_executable_code": true,
+    "no_wmmse_in_executable_code": true,
+    "q0_selected_constraint_present": true,
+    "release_revision_consistent": true,
+    "remote_cpu_only_declared": true,
+    "reviewed_branch_binding_exact": true,
+    "sum_rate_not_primary": true
+  },
+  "confirmatory_campaign_authorized": false,
+  "created_utc": "2026-08-01T17:31:56.178196+00:00",
+  "executable_files_scanned": [
+    "scripts/audit_packaged_diagnostic.py",
+    "scripts/randomized_model_audit.py",
+    "scripts/regress_original_validated_topology.py",
+    "scripts/run_seed43999_floor_feasibility_candidate_v4_2.py",
+    "src/fr3_cbf/__init__.py",
+    "src/fr3_cbf/floor_feasibility_repair.py",
+    "tests/test_floor_feasibility_repair.py",
+    "wrappers/REMOTE_ORCHESTRATE_FR3_FLOOR_CANDIDATE_V4_2.sh",
+    "wrappers/RUN_FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_2_FROM_WSL.sh"
+  ],
+  "notes": [
+    "Locked confirmatory seeds occur only in non-executable documentation/configuration.",
+    "Global solves are diagnostic oracles; selected actions remain bounded local actions."
+  ],
+  "schema_version": 1,
+  "status": "PASS"
+}

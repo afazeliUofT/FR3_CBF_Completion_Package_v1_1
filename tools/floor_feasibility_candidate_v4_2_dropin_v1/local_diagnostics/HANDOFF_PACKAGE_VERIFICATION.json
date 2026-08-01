@@ -1,0 +1,31 @@
+{
+  "basename_only_sidecar": true,
+  "computed_sha256": "ddb83ebe3efdcabca092996f6c9e12914df60c5e46609cec24545a1cfaaacec4",
+  "expected_sha256": "ddb83ebe3efdcabca092996f6c9e12914df60c5e46609cec24545a1cfaaacec4",
+  "filename": "FR3_TWC_Standalone_Handoff_2026-08-01.zip",
+  "internal_manifest_entry_count": 91,
+  "internal_manifest_pass": true,
+  "latest_diagnostic_evidence_all_read": true,
+  "latest_diagnostic_evidence_files": [
+    "ALL_METHOD_CELL_SUMMARY.csv",
+    "PREDICTIVE_FLOOR_DIAGNOSTIC_NORMALIZED.json",
+    "PREDICTIVE_FLOOR_PASS_SUMMARY.csv",
+    "PREDICTIVE_FLOOR_VIOLATING_INTERVALS.csv",
+    "PREDICTIVE_FLOOR_VIOLATING_USERS.csv",
+    "PROVENANCE.md"
+  ],
+  "required_read_files_present": true,
+  "required_read_order": [
+    "00_START_HERE.md",
+    "HANDOFF_STATE.json",
+    "01_EXECUTIVE_SCIENTIFIC_STATUS.md",
+    "02_CURRENT_BLOCKER_AND_NEXT_GATE.md",
+    "03_METHODS_REGULATORY_AND_STATISTICAL_CONTRACT.md",
+    "04_SYSTEM_PATHS_GITHUB_AND_COMPUTE.md",
+    "07_NEXT_AI_DELIVERABLE_CONTRACT.md"
+  ],
+  "schema_version": 1,
+  "sidecar_basename": "FR3_TWC_Standalone_Handoff_2026-08-01.zip",
+  "status": "PASS",
+  "zip_crc_pass": true
+}

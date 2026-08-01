@@ -1,0 +1,64 @@
+{
+  "confirmatory_campaign_authorized": false,
+  "created_utc": "2026-08-01T17:32:55.613228+00:00",
+  "file_count_before_package_manifest": 94,
+  "forbidden_artifacts": [],
+  "missing": {},
+  "required_categories": {
+    "cluster_diagnostics": [
+      "cluster_diagnostics/RORQUAL_EXECUTION_CONTRACT.json",
+      "cluster_diagnostics/REMOTE_FAILURE_PATH_SIMULATION.json",
+      "cluster_diagnostics/NOT_EXECUTED_IN_BUILD_ENVIRONMENT.md"
+    ],
+    "configs": [
+      "config/CANDIDATE_V4_2_CONTRACT.json",
+      "requirements.txt",
+      "PACKAGE_VERSION.json"
+    ],
+    "diagnostic_scripts": [
+      "scripts/run_seed43999_floor_feasibility_candidate_v4_2.py",
+      "scripts/audit_packaged_diagnostic.py",
+      "scripts/regress_original_validated_topology.py",
+      "scripts/randomized_model_audit.py"
+    ],
+    "documentation": [
+      "README.md",
+      "docs/SCIENTIFIC_STATUS_AND_METHOD.md",
+      "docs/CLAIM_BOUNDARIES.md",
+      "docs/WSL_RORQUAL_WORKFLOW.md",
+      "docs/EXPECTED_SUCCESS_MARKERS.md",
+      "docs/RETURN_CONTRACT.md",
+      "docs/BUILD_VALIDATION.md"
+    ],
+    "immutable_bindings": [
+      "immutable_bindings/IMMUTABLE_INPUT_BINDINGS.json",
+      "immutable_bindings/handoff_contract/HANDOFF_STATE.json",
+      "immutable_bindings/latest_diagnostic_evidence/PREDICTIVE_FLOOR_DIAGNOSTIC_NORMALIZED.json"
+    ],
+    "local_diagnostics": [
+      "local_diagnostics/LOCAL_RELEASE_GATE_SUMMARY.json",
+      "local_diagnostics/PACKAGED_DIAGNOSTIC_AUDIT.json",
+      "local_diagnostics/ORIGINAL_VALIDATED_TOPOLOGY_REGRESSION.json",
+      "local_diagnostics/RANDOMIZED_MODEL_AUDIT.json",
+      "local_diagnostics/GIT_WORKFLOW_SIMULATION.json",
+      "local_diagnostics/LOCAL_FAILURE_PATH_SIMULATION.json",
+      "local_diagnostics/GITHUB_BRANCH_VERIFICATION.json"
+    ],
+    "manifests": [
+      "SOURCE_PAYLOAD_MANIFEST.sha256"
+    ],
+    "source": [
+      "src/fr3_cbf/floor_feasibility_repair.py",
+      "src/fr3_cbf/__init__.py"
+    ],
+    "tests": [
+      "tests/test_floor_feasibility_repair.py"
+    ],
+    "wrappers": [
+      "wrappers/RUN_FR3_FLOOR_FEASIBILITY_CANDIDATE_V4_2_FROM_WSL.sh",
+      "wrappers/REMOTE_ORCHESTRATE_FR3_FLOOR_CANDIDATE_V4_2.sh"
+    ]
+  },
+  "schema_version": 1,
+  "status": "PASS"
+}

@@ -1,0 +1,28 @@
+{
+  "candidate_version": "v4.2",
+  "confirmatory_campaign_authorized": false,
+  "created_utc": "2026-08-01T17:32:55.613228+00:00",
+  "local_gates": {
+    "all_eight_method_audit": true,
+    "bash_syntax": true,
+    "clean_git_normal_push_and_stale_rejection_simulation": true,
+    "final_release_log_present": true,
+    "focused_tests_passed": 16,
+    "handoff_outer_sha_crc_internal_manifest": true,
+    "local_failure_return_simulation": true,
+    "milp_vs_exhaustive_cases": 60,
+    "original_validated_topology_regression": true,
+    "packaged_failure_reproduction": true,
+    "policy_scope_scan": true,
+    "python_syntax": true,
+    "q0_envelope_dominance_checks": 735,
+    "q0_power_envelope_real_128_port_regression": true,
+    "randomized_linear_or_row_equivalence_checks": 9373,
+    "release_content_audit": true,
+    "remote_failure_return_simulation": true
+  },
+  "next_gate": "CPU_ONLY_RORQUAL_EXACT_SEED43999_FEASIBILITY_DIAGNOSTIC",
+  "remote_exact_seed43999_gate_executed": false,
+  "schema_version": 1,
+  "status": "PASS_LOCAL_RELEASE_GATES_REMOTE_EXACT_GATE_PENDING"
+}

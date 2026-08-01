@@ -1,0 +1,61 @@
+{
+  "candidate_change": "NOOP_ON_ORIGINAL_VALIDATED_NOMINAL_FLOOR_SYSTEM_PLUS_EXACT_Q0_POWER_ENVELOPE_RECONSTRUCTION",
+  "claim_boundary": "ONE_VALIDATED_FULL_TOPOLOGY_COMPATIBILITY_AND_ACTION_ENVELOPE_REGRESSION_NOT_STATISTICAL_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE",
+  "common_scale_floor_violation_user_seconds": 0,
+  "dynamic_dual_criterion_candidate_run": false,
+  "dynamic_dual_criterion_reason": "pre-campaign export has one protected criterion/pass and no five-pass controller trajectories",
+  "eligible_user_count": 207,
+  "export_reconstruction_tolerance": 3e-06,
+  "export_reconstruction_tolerance_scope": "stored float32-derived mode-coefficient reconstruction only; not a fairness/EESS gate tolerance and not used by seed-43999 candidate-v4.2",
+  "maximum_reconstructed_common_scale_eess_ratio": 1.0000000391261843,
+  "minimum_common_scale_floor_ratio": 1.0009292599296282,
+  "nominal_floor_candidate": "FEASIBLE_BASELINE_NOOP",
+  "nominal_rate_reconstruction_max_abs_error": 4.783959836274221e-06,
+  "protected_rate_reconstruction_max_abs_error": 4.783959836274221e-05,
+  "q0_physical_power_envelope_audit": {
+    "frozen_baseline_backoff_db": 3.0,
+    "frozen_mode_pattern_results": {
+      "POL1_3_POL2_65": {
+        "maximum_constructed_q0_power_envelope_ratio": 0.2477141994631375,
+        "maximum_constructed_target_stream_uplift_over_reviewed_scalar": 1.9952623149688797,
+        "maximum_mode_adjusted_to_q0_sector_power_ratio": 0.9985263040119299,
+        "maximum_normalized_budget_row_excess": -0.0007493201026467222,
+        "maximum_q0_budget_direct_ratio_at_reviewed_scalar": 0.99852630401193,
+        "minimum_mode_adjusted_to_q0_sector_power_ratio": 0.7700238704218993,
+        "mode_command_db": [
+          3.0,
+          65.0
+        ],
+        "nonvacuous_headroom_sector_count": 57,
+        "q0_reconstruction_max_abs_error_w_per_stream": 0.0
+      },
+      "POL1_65_POL2_3": {
+        "maximum_constructed_q0_power_envelope_ratio": 0.2479109803152266,
+        "maximum_constructed_target_stream_uplift_over_reviewed_scalar": 1.9952623149688797,
+        "maximum_mode_adjusted_to_q0_sector_power_ratio": 0.9985081366226124,
+        "maximum_normalized_budget_row_excess": -0.0007585292844066727,
+        "maximum_q0_budget_direct_ratio_at_reviewed_scalar": 0.9985081366226125,
+        "minimum_mode_adjusted_to_q0_sector_power_ratio": 0.8279215242689649,
+        "mode_command_db": [
+          65.0,
+          3.0
+        ],
+        "nonvacuous_headroom_sector_count": 57,
+        "q0_reconstruction_max_abs_error_w_per_stream": 0.0
+      }
+    },
+    "maximum_nonvacuous_headroom_sector_count": 57,
+    "maximum_q0_nominal_power_envelope_ratio": 0.99852630401193,
+    "minimum_mode_adjusted_to_q0_sector_power_ratio": 0.7700238704218993,
+    "q0_direct_vs_reconstructed_max_abs_error_w_per_stream": 1.0351333585845168e-06,
+    "q0_sector_vs_stored_precoder_power_max_abs_error_w": 3.10696370409147e-07,
+    "q0_sector_vs_transmit_power_max_abs_error_w": 5.667858524738278e-07
+  },
+  "schema_version": 3,
+  "source_common_scale_aggregate_safety": {
+    "maximum_safe_minus_allowance_w": 1.8932661725304283e-29,
+    "pass": true
+  },
+  "source_validation_status": "PASS_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_VALIDATION_V4",
+  "status": "PASS_ORIGINAL_VALIDATED_TOPOLOGY_COMPATIBILITY_REGRESSION"
+}

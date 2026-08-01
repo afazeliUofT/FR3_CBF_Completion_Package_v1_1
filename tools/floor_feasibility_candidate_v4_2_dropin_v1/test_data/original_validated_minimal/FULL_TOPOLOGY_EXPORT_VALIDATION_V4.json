@@ -1,0 +1,163 @@
+{
+  "checks": {
+    "aggregate_incumbent_reconstruction": {
+      "maximum_absolute_error_w": 1.0339757656912846e-25,
+      "maximum_relative_error": 2.919550889673067e-16,
+      "pass": true
+    },
+    "common_scale_aggregate_safety": {
+      "maximum_safe_minus_allowance_w": 1.8932661725304283e-29,
+      "pass": true
+    },
+    "common_scale_user_rate_reconstruction": {
+      "maximum_absolute_error_bps_hz": 0.0,
+      "pass": true,
+      "tolerance": 2e-08
+    },
+    "desired_power_reconstruction": {
+      "maximum_absolute_error": 0.0,
+      "maximum_relative_error": 0.0,
+      "pass": true
+    },
+    "frequency_weight_sum": {
+      "pass": true,
+      "sum": 1.0
+    },
+    "full_channel_precoder_amplitude_linkage": {
+      "coverage": "all 9 frequencies, 228 users, 57 sectors, 4 streams",
+      "gamma_n": 7.629452739355006e-06,
+      "maximum_absolute_error": 1.7105081240309516e-10,
+      "maximum_error_to_bound_ratio": 0.0021014620263669743,
+      "pass": true,
+      "reduction_terms": 128,
+      "safety_factor": 64.0
+    },
+    "interference_power_reconstruction": {
+      "acceptance_basis": "total-power forward-error bound plus desired-power error",
+      "maximum_absolute_error": 7.105427357601002e-15,
+      "maximum_error_to_bound_ratio": 0.4619759656855819,
+      "maximum_relative_error_diagnostic_only": 0.0004768717215069146,
+      "pass": true
+    },
+    "mode_coefficient_reconstruction": {
+      "maximum_absolute_error": 1.3728348611947834e-06,
+      "maximum_error_to_bound_ratio": 0.00019779728071801607,
+      "pass": true
+    },
+    "mode_leakage_reconstruction": {
+      "maximum_absolute_error": 7.62939453125e-06,
+      "maximum_relative_error": 3.20962425089376e-07,
+      "pass": true
+    },
+    "precoder_power_reconstruction": {
+      "maximum_absolute_error": 9.5367431640625e-07,
+      "maximum_relative_error": 2.1293526363408523e-07,
+      "pass": true
+    },
+    "protected_amplitude_decomposition": {
+      "acceptance_basis": "independent H@W_perp, H@P1, H@P2 and H@W source linkages plus propagated float32 forward-error bounds",
+      "maximum_direct_sum_absolute_error": 1.0328396754881719e-10,
+      "maximum_direct_sum_error_to_propagated_bound_ratio": 0.00018120310377934607,
+      "pass": true
+    },
+    "protected_component_source_linkage": {
+      "component_names": [
+        "perpendicular",
+        "polarization_1",
+        "polarization_2"
+      ],
+      "coverage": "all 228 users, 57 sectors, 4 streams",
+      "dot_safety_factor": 128.0,
+      "maximum_absolute_errors": [
+        4.2314643713181087e-11,
+        1.0643948773565322e-11,
+        1.0683954037347841e-11
+      ],
+      "maximum_error_to_bound_ratios": [
+        0.00010553087902690751,
+        0.00014761506825921298,
+        0.00010332688666246037
+      ],
+      "multiply_safety_factor": 32.0,
+      "pass": true,
+      "subtraction_safety_factor": 64.0
+    },
+    "protected_mode_support_and_orthogonality": {
+      "maximum_cross_mode_inner_product": 0.0,
+      "maximum_nonzero_magnitude_error": 3.930332748147691e-08,
+      "pass": true,
+      "support_counts_expected": 64
+    },
+    "protected_projector_matrix_identity": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "pass": true
+    },
+    "rate_reconstruction": {
+      "atol": 5e-07,
+      "maximum_absolute_error": 4.76837158203125e-07,
+      "maximum_float32_ulp_distance": 2,
+      "maximum_relative_error": 1.491361141452025e-07,
+      "pass": true,
+      "rtol": 8e-06
+    },
+    "rzf_power_normalization": {
+      "maximum_relative_error": 2.7155439242705756e-07,
+      "pass": true,
+      "tolerance": 3e-06
+    },
+    "serving_association": {
+      "pass": true
+    },
+    "sinr_reconstruction": {
+      "atol": 2e-07,
+      "maximum_absolute_error": 0.0,
+      "maximum_float32_ulp_distance": 0,
+      "maximum_relative_error": 0.0,
+      "pass": true,
+      "rtol": 8e-06
+    },
+    "stored_float32_origin": {
+      "pass": true,
+      "rate_is_exact_float32_cast": true,
+      "sinr_is_exact_float32_cast": true
+    },
+    "topology_tables": {
+      "pass": true,
+      "sector_rows": 57,
+      "user_rows": 228
+    },
+    "total_received_power_reduction": {
+      "gamma_n": 1.3590043695566808e-05,
+      "maximum_absolute_error": 6.2987809412717866e-15,
+      "maximum_error_to_bound_ratio": 0.0019373766037686364,
+      "maximum_relative_error": 4.2126452319975345e-07,
+      "pass": true,
+      "reduction_terms": 228,
+      "safety_factor": 16.0
+    },
+    "weighted_total_rate_reconstruction": {
+      "maximum_absolute_error": 1.7763568394002505e-15,
+      "pass": true,
+      "tolerance": 1e-10
+    }
+  },
+  "claim_boundary": "CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_ONE_SEED_NOT_PAPER_RESULT",
+  "created_utc": "2026-07-29T16:20:46.255266+00:00",
+  "failures": [],
+  "floating_point_contract": {
+    "dot_product_acceptance": "magnitude-sum-scaled gamma_n forward-error bound",
+    "float32_epsilon": 1.1920928955078125e-07,
+    "float32_unit_roundoff": 5.960464477539063e-08,
+    "interference_acceptance": "total-power forward-error bound plus desired-power error; relative residual error is diagnostic only near zero",
+    "protected_decomposition_acceptance": "source-linked reconstruction of P1, P2, W_perp and all three amplitude components, followed by a propagated identity bound",
+    "sinr_rate_acceptance": "hybrid float32 rtol/atol with recorded ULP distance"
+  },
+  "next_gate": "LOCAL_INGESTION_THEN_DYNAMIC_CONTROLLER_IMPLEMENTATION",
+  "prior_cpu_validator_disposition": "SUPERSEDED_NEAR_ZERO_INTERFERENCE_RELATIVE_ERROR_TEST",
+  "prior_cpu_validator_job_id": "18699475",
+  "prior_cpu_validator_v3_disposition": "SUPERSEDED_INCOMPLETE_PROTECTED_SUM_BOUND",
+  "prior_cpu_validator_v3_job_id": "18702280",
+  "source_h100_job_id": "18696267",
+  "source_h100_job_state": "FAILED_AFTER_SUCCESSFUL_EXPORT_DUE_TO_SUPERSEDED_VALIDATOR",
+  "status": "PASS_CONTROLLER_READY_FULL_TOPOLOGY_EXPORT_VALIDATION_V4"
+}

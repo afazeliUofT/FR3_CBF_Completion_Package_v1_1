@@ -1,0 +1,13 @@
+{
+  "basename_only_sidecar": true,
+  "compact_failure_zip_created": true,
+  "compiled_or_cache_artifacts_present": false,
+  "confirmatory_campaign_authorized": false,
+  "expected_failure_stage": "PRESERVED_ENVIRONMENT_PREFLIGHT",
+  "observed_exit_code": 15,
+  "schema_version": 1,
+  "simulated_expected_exit_code": 15,
+  "status": "PASS",
+  "zip_crc_pass": true,
+  "zip_sha256": "9d2ec53e173d543ef0f239b83a364ed23068cf81311352a6a85a614571d2c351"
+}

@@ -1,0 +1,13 @@
+{
+  "confirmatory_campaign_authorized": false,
+  "floor_linearization_direct_equivalence_checks": 2400,
+  "frozen_grid_milp_vs_exhaustive_cases": 60,
+  "maximum_post_mode_to_q0_power_ratio": 0.9791675371360213,
+  "physical_second_eess_row_identity_checks": 793,
+  "q0_nominal_power_envelope_dominance_checks": 735,
+  "q0_power_budget_row_direct_equivalence_checks": 6180,
+  "schema_version": 1,
+  "scope": "local mathematical/model regression; not seed or campaign evidence",
+  "seed": 20260801,
+  "status": "PASS_DETERMINISTIC_RANDOMIZED_MODEL_AUDIT"
+}

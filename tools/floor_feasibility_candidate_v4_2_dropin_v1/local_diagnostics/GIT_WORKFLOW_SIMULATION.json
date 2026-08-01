@@ -1,0 +1,20 @@
+{
+  "base_commit": "8b906e683071a6b8014099cea7a81b57bf7acc5a",
+  "confirmatory_campaign_authorized": false,
+  "evidence_commit": "50fca4e90ac17a18981bed4c328ab5272e7bbd77",
+  "evidence_normal_push_pass": true,
+  "existing_target_guard_condition_detected": true,
+  "force_push_attempted": false,
+  "fresh_clone_clean": true,
+  "fresh_clone_evidence_manifest_pass": true,
+  "fresh_clone_package_manifest_pass": true,
+  "fresh_clone_source_manifest_pass": true,
+  "remote_final_commit": "50fca4e90ac17a18981bed4c328ab5272e7bbd77",
+  "schema_version": 1,
+  "simulation_scope": "clean local bare repository",
+  "source_commit": "24f2e95d201faaa1f5bc0a023c27559dd89f0509",
+  "source_normal_push_pass": true,
+  "stale_normal_push_exit_code": 1,
+  "stale_normal_push_rejected": true,
+  "status": "PASS"
+}

@@ -1,0 +1,13 @@
+{
+  "basename_only_sidecar": true,
+  "compact_failure_zip_created": true,
+  "confirmatory_campaign_authorized": false,
+  "expected_exit_code": 3,
+  "failure_stage": "GIT_READ_ONLY_PREFLIGHT_AND_ISOLATED_CLONE",
+  "local_log_created": true,
+  "observed_exit_code": 3,
+  "schema_version": 1,
+  "status": "PASS",
+  "zip_crc_pass": true,
+  "zip_sha256": "402c17d478b5bcf8ac7fcc79b6df152c281ae265f7418f29a40bc6bfdfc485ee"
+}
