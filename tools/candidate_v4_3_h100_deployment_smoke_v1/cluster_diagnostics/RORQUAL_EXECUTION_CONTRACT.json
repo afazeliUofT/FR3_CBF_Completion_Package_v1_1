@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "cluster": "rorqual",
+  "host": "rsadve1@rorqual.alliancecan.ca",
+  "scratch_link": "/home/rsadve1/links/scratch",
+  "allowed_job_count": 1,
+  "gpu_request": "h100:1",
+  "cpus_per_task": 16,
+  "memory_gib": 64,
+  "time_limit": "00:30:00",
+  "excluded_seed": 43999,
+  "preserved_channel_reused": true,
+  "channel_regeneration_allowed": false,
+  "controller_replay_execution": "CPU_NUMPY_SCIPY_HIGHS_ON_H100_NODE",
+  "confirmatory_campaign_authorized": false
+}

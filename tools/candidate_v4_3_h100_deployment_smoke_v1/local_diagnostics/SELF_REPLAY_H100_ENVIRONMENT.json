@@ -1,0 +1,7 @@
+{
+  "status": "PASS_H100_ENVIRONMENT_AND_PRESERVED_CHANNEL_ACCESS",
+  "channel_regenerated": false,
+  "controller_replay_execution": "CPU_NUMPY_SCIPY_HIGHS_ON_H100_NODE",
+  "gpu_name": "BUILD_ENVIRONMENT_SELF_REPLAY_PLACEHOLDER_H100",
+  "confirmatory_campaign_authorized": false
+}

@@ -1,0 +1,10 @@
+{
+  "package_id": "FR3_CBF_V1_1_CANDIDATE_V4_3_INDEPENDENT_REVIEW_H100_DEPLOYMENT_SMOKE_DROPIN_V1",
+  "package_version": "1.0.0",
+  "created_date": "2026-08-01",
+  "candidate_version": "v4.3",
+  "excluded_seed": 43999,
+  "execution_scope": "INDEPENDENT_REVIEW_AND_SINGLE_EXCLUDED_H100_DEPLOYMENT_SMOKE_ONLY",
+  "confirmatory_campaign_authorized": false,
+  "schema_version": 1
+}

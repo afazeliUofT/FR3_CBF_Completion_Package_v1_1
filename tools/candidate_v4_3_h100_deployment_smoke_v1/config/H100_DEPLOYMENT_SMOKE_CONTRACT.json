@@ -1,0 +1,50 @@
+{
+  "allowed_job_count": 1,
+  "candidate_cpu_return_sha256": "52fbd777e7816320f5bf05ed39ff6c3dd62573776336e404f1f2306875d98e90",
+  "candidate_source_commit": "b65dc117f1ace492b55bd764f74bf985fbcb9507",
+  "candidate_version": "v4.3",
+  "channel_regeneration_allowed": false,
+  "claim_boundary": "EXCLUDED_H100_INTEGRATION_SMOKE_NOT_CONFIRMATORY_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE",
+  "cluster": "rorqual",
+  "comparison_gates": {
+    "action_stream_scale_max_abs_difference_limit": 1e-10,
+    "all_five_action_traces_reproduced": true,
+    "candidate_long_short_ratio_max_abs_difference_limit": 1e-10,
+    "candidate_rate_max_abs_difference_limit": 1e-10
+  },
+  "confirmatory_campaign_authorized": false,
+  "confirmatory_seed_range": "44000-44029 LOCKED",
+  "contract_id": "FR3_CANDIDATE_V4_3_EXCLUDED_H100_DEPLOYMENT_SMOKE_V1",
+  "controller_replay_execution": "CPU_NUMPY_SCIPY_HIGHS_ON_H100_NODE",
+  "excluded_seed": 43999,
+  "forbidden": [
+    "generate a new channel",
+    "run seeds 44000-44029",
+    "weaken or redefine the floor",
+    "increase a scientific gate tolerance",
+    "claim calibration or regulatory compliance",
+    "use sum rate as the primary objective",
+    "reintroduce centralized WMMSE"
+  ],
+  "h100_role": "deployment-environment, CUDA, float64, and preserved-channel integration gate; controller optimization remains CPU NumPy/SciPy/HiGHS",
+  "hard_gates": {
+    "floor_violation_user_intervals": 0,
+    "floor_violation_user_seconds": 0,
+    "long_eess_violation_seconds": 0,
+    "network_wide_shutdown_intervals": 0,
+    "q0_envelope_deployable_actions": 0,
+    "short_eess_violation_seconds": 0,
+    "strict_local_action_scope": "PASS",
+    "strict_post_mode_selected_power": "PASS"
+  },
+  "next_gate_on_pass": "FREEZE_V4_3_AND_INDEPENDENTLY_REVIEW_CAMPAIGN_READINESS",
+  "preserved_channel_relative_path": "run/results/seed_43999/channel",
+  "preserved_smoke_root": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_SMOKE_5037b4e33448_20260801_031008",
+  "resources": {
+    "cpus": 16,
+    "gpu": "one full H100 80GB-class GPU",
+    "host_memory_gib": 64,
+    "time_limit": "00:30:00"
+  },
+  "schema_version": 1
+}

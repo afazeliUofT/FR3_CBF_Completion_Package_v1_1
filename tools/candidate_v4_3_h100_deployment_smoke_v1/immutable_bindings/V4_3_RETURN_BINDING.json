@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "candidate_version": "v4.3",
+  "excluded_seed": 43999,
+  "return_zip_name": "FR3_RORQUAL_FLOOR_FEASIBILITY_CANDIDATE_V4_3_18112817.zip",
+  "return_zip_sha256": "52fbd777e7816320f5bf05ed39ff6c3dd62573776336e404f1f2306875d98e90",
+  "candidate_source_commit": "b65dc117f1ace492b55bd764f74bf985fbcb9507",
+  "channel_record_sha256": "bf55f7a071bc00fdc9e73075bcf2b3f9da3bd07843e3795e134d4bdb3c4fa0d9",
+  "frequency_response_array_sha256": "c4ac7fb56da5d3f8182836e2a99ab2ef1dd7b17bf76332abbc198d1ae6b6a093",
+  "slurm_job_id": "18112817",
+  "slurm_state": "COMPLETED",
+  "slurm_exit_code": "0:0",
+  "scientific_exit_code": 0,
+  "expected_status": "PASS_EXCLUDED_SEED43999_CANDIDATE_V4_3_ALL5_FLOOR_EESS_AND_STRICT_POWER_GATES",
+  "github_repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1",
+  "github_branch": "e3-first-sector-p452",
+  "github_evidence_path": "evidence/phase1_floor_feasibility_candidate_v4_3_dropin_v1",
+  "confirmatory_campaign_authorized": false
+}

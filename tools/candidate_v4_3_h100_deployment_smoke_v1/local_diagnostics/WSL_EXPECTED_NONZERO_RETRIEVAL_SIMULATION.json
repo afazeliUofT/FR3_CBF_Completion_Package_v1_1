@@ -1,0 +1,8 @@
+{
+  "diagnostic_retrieved": true,
+  "evidence_normal_push_completed": true,
+  "return_manifest_verified": true,
+  "schema_version": 1,
+  "simulated_remote_wrapper_exit_code": 42,
+  "status": "PASS"
+}

@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "concurrent_advancement": true,
+    "evidence_rebase_push": true,
+    "source_normal_push": true,
+    "stale_push_rejected": true
+  },
+  "schema_version": 1,
+  "status": "PASS"
+}

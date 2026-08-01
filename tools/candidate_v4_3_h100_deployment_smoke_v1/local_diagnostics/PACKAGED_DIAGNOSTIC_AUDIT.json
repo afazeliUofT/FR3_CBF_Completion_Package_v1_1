@@ -1,0 +1,19 @@
+{
+  "affected_physical_users": {
+    "E3_SITE_02_SEC_3_UE_4": 500,
+    "E3_SITE_07_SEC_1_UE_2": 19
+  },
+  "all_eight_methods_audit": "PASS",
+  "classification": "MATERIAL",
+  "confirmatory_campaign_authorized": false,
+  "floor_definition_audit": "PASS",
+  "maximum_normalized_shortfall": 0.1893030166142639,
+  "minimum_floor_ratio": 0.810696983385736,
+  "next_gate": "CPU_ONLY_RORQUAL_EXACT_SEED43999_FEASIBILITY_DIAGNOSTIC",
+  "predictive_floor_violation_user_intervals": 104,
+  "predictive_floor_violation_user_seconds": 519,
+  "predictive_long_violation_seconds": 0,
+  "predictive_short_violation_seconds": 0,
+  "status": "PASS_PACKAGED_SEED43999_DIAGNOSTIC_AUDIT",
+  "variable_pass_extension_audit": "PASS"
+}
