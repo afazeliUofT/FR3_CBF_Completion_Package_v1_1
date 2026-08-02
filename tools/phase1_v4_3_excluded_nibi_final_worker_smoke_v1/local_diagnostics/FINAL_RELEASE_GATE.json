@@ -1,0 +1,29 @@
+{
+  "bash_syntax_file_count": 3,
+  "checks": {
+    "bash_syntax": true,
+    "focused_tests": true,
+    "git_workflow": true,
+    "locked_campaign_inputs": true,
+    "policy_scope": true,
+    "python_syntax": true,
+    "return_packaging": true,
+    "source_return_archive": true,
+    "synthetic_exact_audit": true,
+    "synthetic_tamper_detection": true,
+    "terminal_continuation": true
+  },
+  "created_utc": "2026-08-02T01:45:29.250599+00:00",
+  "focused_test_count": 9,
+  "full_campaign_execution_authorized": false,
+  "information_exchange_locality_certified": false,
+  "locked_job_zip_sha256": "76a4aa701639a00913c5412c8ba54b86855a55ed97cb16e254ed6a7173356bd5",
+  "locked_package_id": "77bec1efa2ea151a64481d6993399b82585eac3c1343d51adb0fc37da294e015",
+  "locked_review_zip_sha256": "17e58beb67ca74ce5420d87580d4dc72b74475462a78ca99169fe7f342a1ffec",
+  "next_gate": "RUN_ONE_EXCLUDED_NIBI_FINAL_CAMPAIGN_WORKER_SMOKE_SEED43999",
+  "python_syntax_file_count": 10,
+  "real_nibi_h100_smoke_executed_in_build_environment": false,
+  "required_git_ancestor": "cc1c911ef5592a2c22834d7fb3e6550bbd4ab2ab",
+  "schema_version": 1,
+  "status": "PASS_ALL_LOCALLY_EXECUTABLE_RELEASE_GATES"
+}

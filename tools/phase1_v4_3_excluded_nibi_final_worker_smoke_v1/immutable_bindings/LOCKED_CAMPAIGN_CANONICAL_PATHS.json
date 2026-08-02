@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1",
+  "branch": "e3-first-sector-p452",
+  "required_ancestor": "cc1c911ef5592a2c22834d7fb3e6550bbd4ab2ab",
+  "job_package_path": "campaign/phase1_nibi_job_package_v4_3_v1/FR3_PHASE1_NIBI_JOB_PACKAGE_V4_3_v1.zip",
+  "job_package_sha256": "76a4aa701639a00913c5412c8ba54b86855a55ed97cb16e254ed6a7173356bd5",
+  "independent_review_path": "evidence/phase1_nibi_job_package_v4_3_v1/FR3_PHASE1_NIBI_JOB_PACKAGE_V4_3_INDEPENDENT_REVIEW_v1.zip",
+  "independent_review_sha256": "17e58beb67ca74ce5420d87580d4dc72b74475462a78ca99169fe7f342a1ffec",
+  "full_campaign_execution_authorized": false
+}

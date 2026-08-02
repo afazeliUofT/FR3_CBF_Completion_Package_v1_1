@@ -1,0 +1,31 @@
+{
+  "campaign_seed": 43999,
+  "checks": {
+    "array_not_authorized": true,
+    "authorization_token_deleted": true,
+    "campaign_claim_boundary": true,
+    "confirmatory_seeds_disjoint": true,
+    "excluded_seed_only": true,
+    "final_worker_exact": true,
+    "fresh_channel_required": true,
+    "full_campaign_not_authorized": true,
+    "information_exchange_not_certified": true,
+    "issuer_one_job": true,
+    "issuer_one_seed_constant": true,
+    "merge_not_authorized": true,
+    "no_force_push": true,
+    "no_merge_worker": true,
+    "no_reuse_channel_argument": true,
+    "no_slurm_array_option": true,
+    "no_terminal_termination": true,
+    "one_job_only": true,
+    "single_h100_request": true,
+    "token_not_packaged": true
+  },
+  "confirmatory_seed_count": 30,
+  "created_utc": "2026-08-02T01:45:14.149348+00:00",
+  "full_campaign_execution_authorized": false,
+  "information_exchange_locality_certified": false,
+  "schema_version": 1,
+  "status": "PASS_EXCLUDED_ONE_SEED_SMOKE_POLICY_AND_SCOPE_AUDIT"
+}

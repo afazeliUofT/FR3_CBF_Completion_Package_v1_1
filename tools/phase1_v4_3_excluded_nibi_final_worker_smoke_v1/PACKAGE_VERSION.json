@@ -1,0 +1,9 @@
+{
+  "campaign_execution_authorized": false,
+  "created_utc": "2026-08-02T01:21:32.868820+00:00",
+  "execution_scope": "EXCLUDED_NIBI_FINAL_WORKER_SMOKE_SEED43999_ONLY",
+  "package_name": "FR3_CBF_v1_1_Candidate_v4_3_Excluded_Nibi_Final_Worker_Smoke_DropIn_v1_2026-08-02",
+  "schema_version": 1,
+  "scientific_candidate": "v4.3",
+  "version": "v1"
+}

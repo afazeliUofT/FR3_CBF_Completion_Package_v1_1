@@ -1,0 +1,23 @@
+{
+  "base_commit": "cfb5e53d43c4a084a89eb4ee5711da608e5c2014",
+  "checks": {
+    "base_is_ancestor": true,
+    "concurrent_first_push_rejected": true,
+    "concurrent_is_ancestor": true,
+    "concurrent_update_preserved": true,
+    "evidence_rebase_and_push": true,
+    "final_remote_matches_evidence": true,
+    "normal_source_push": true,
+    "source_is_ancestor": true,
+    "stale_non_force_push_rejected": true
+  },
+  "concurrent_commit": "d9660e80ad53d80f03557ced9592672dd0adaa2c",
+  "created_utc": "2026-08-02T01:45:14.893061+00:00",
+  "evidence_commit_before_rebase": "e94b2a80555a6a68c90855c6cb69a7f1589df2e9",
+  "final_remote_commit": "032c90f92c00bbb972989431a7b2af2ce0ffd333",
+  "newer_work_overwritten": false,
+  "schema_version": 1,
+  "source_commit": "bd8ee800913cd8e772b9939205cc1e018ba80515",
+  "stale_commit": "47925f9a07f8f865e4a6ce8d9f045b0d5fcbf538",
+  "status": "PASS_GIT_NORMAL_CONCURRENT_AND_STALE_NON_FORCE_SIMULATION"
+}

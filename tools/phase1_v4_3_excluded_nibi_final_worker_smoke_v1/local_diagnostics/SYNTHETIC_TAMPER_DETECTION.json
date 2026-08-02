@@ -1,0 +1,10 @@
+{
+  "auditor_exit_code": 42,
+  "candidate_reference_trace_gate": "FAIL",
+  "perturbation": 0.0001,
+  "schema_version": 1,
+  "status": "PASS_DELIBERATE_CANDIDATE_TRACE_TAMPER_DETECTED",
+  "trace_failures": [
+    "pass_0_candidate_stream_scale"
+  ]
+}
