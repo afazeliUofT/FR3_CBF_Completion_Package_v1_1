@@ -1,0 +1,20 @@
+{
+  "authorization_token_included": false,
+  "campaign_execution_authorized": false,
+  "campaign_seed_count": 30,
+  "candidate_source_manifest_sha256": "a2e67130c91577b83be6e14f400d0934aa6d94ac0f974956594df35eec0cb93c",
+  "created_utc": "2026-08-02T13:14:29.854025+00:00",
+  "execution_cluster": "rorqual",
+  "fixed_pass_count": 5,
+  "method_count": 9,
+  "next_gate": "INDEPENDENT_REVIEW_CORRECTED_RORQUAL_NATIVE_LOCKED_PACKAGE",
+  "package_id": "8473d5504e69347a69a536c43dcae35bec9519a90bc55de3a0712f9e0fb97889",
+  "package_zip": "FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_3_R2.zip",
+  "package_zip_sha256": "c106fa6441b15873d0d2d9b29d636434625edcd58f4033a4700589cb91e19e82",
+  "schema_version": 1,
+  "smoke_reclassification_status": "PASS_EXCLUDED_RORQUAL_FINAL_WORKER_SMOKE_AFTER_VALIDATOR_CONTRACT_REPAIR",
+  "source_candidate_changed": false,
+  "status": "PASS_CORRECTED_RORQUAL_NATIVE_LOCKED_30_SEED_CAMPAIGN_PACKAGE_BUILD",
+  "total_cells": 1350,
+  "validator_repairs_only": true
+}

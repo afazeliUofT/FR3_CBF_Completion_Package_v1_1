@@ -1,0 +1,142 @@
+{
+  "authorization_contract": {
+    "authorization_expiry_required": true,
+    "authorization_file_required": true,
+    "permitted_execution_stages": [
+      "EXCLUDED_FINAL_WORKER_SMOKE_SEED43999",
+      "FULL_30_SEED_CONFIRMATORY_CAMPAIGN"
+    ],
+    "required_authorization_string": "EXECUTE_PHASE1_RORQUAL_V4_3_R2",
+    "required_candidate_source_manifest_sha256": "a2e67130c91577b83be6e14f400d0934aa6d94ac0f974956594df35eec0cb93c",
+    "required_freeze_commit": "ee6708ba204c2acfe8479aeea5dd444f2cc1be04",
+    "required_package_id": "8473d5504e69347a69a536c43dcae35bec9519a90bc55de3a0712f9e0fb97889",
+    "required_package_manifest_sha256": "EXACT_RUNTIME_PACKAGE_MANIFEST_SHA256",
+    "token_included": false
+  },
+  "campaign_seed_list": [
+    44000,
+    44001,
+    44002,
+    44003,
+    44004,
+    44005,
+    44006,
+    44007,
+    44008,
+    44009,
+    44010,
+    44011,
+    44012,
+    44013,
+    44014,
+    44015,
+    44016,
+    44017,
+    44018,
+    44019,
+    44020,
+    44021,
+    44022,
+    44023,
+    44024,
+    44025,
+    44026,
+    44027,
+    44028,
+    44029
+  ],
+  "candidate_hard_gates": {
+    "eligible_floor_violation_user_intervals": 0,
+    "eligible_floor_violation_user_seconds": 0,
+    "long_eess_violation_seconds": 0,
+    "network_wide_shutdown_intervals": 0,
+    "q0_envelope_deployable_actions": 0,
+    "short_eess_violation_seconds": 0,
+    "strict_local_scope_gate": "PASS",
+    "strict_post_mode_selected_power_gate": "PASS",
+    "unresolved_deployable_intervals": 0
+  },
+  "candidate_v4_3": {
+    "excluded_runner_source_sha256": "cb2986b8cd21e589d60a96c5821069c2233af13f113fe604e2a0774538f4b99d",
+    "repair_source_sha256": "98d119425ab9b72ce85374f8cbdf4481058ab7400aec6b5c7250121935ee86af",
+    "source_manifest_path": "CANDIDATE_V4_3_SOURCE_MANIFEST.sha256",
+    "source_manifest_sha256": "a2e67130c91577b83be6e14f400d0934aa6d94ac0f974956594df35eec0cb93c"
+  },
+  "cells_per_seed": 45,
+  "claim_boundary": "CORRECTED_RORQUAL_NATIVE_LOCKED_CAMPAIGN_PACKAGE_NOT_EXECUTION_NOT_PAPER_RESULT_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE",
+  "common_random_numbers": true,
+  "created_utc": "2026-08-02T00:00:00+00:00",
+  "descriptive_metric_contract": {
+    "excluded_reference_standard_positive_geometric_mean": {
+      "definition": "exp(mean(log(x)))",
+      "must_not_be_directly_compared_to_campaign_epsilon_stabilized_metric": true,
+      "scope": "excluded seed diagnostic only"
+    },
+    "total_active_eligible_geometric_mean_bps_hz": {
+      "definition": "exp(mean(log(x+0.001)))-0.001",
+      "role": "descriptive_not_primary_or_mandatory_secondary_endpoint",
+      "scope": "positive delivered total rates of active eligible users"
+    }
+  },
+  "excluded_smoke_seed": 43999,
+  "execution_authorized": false,
+  "execution_cluster": "rorqual",
+  "failure_preserving_merge_dependency": "afterany",
+  "fixed_pass_count": 5,
+  "freeze_commit": "ee6708ba204c2acfe8479aeea5dd444f2cc1be04",
+  "freeze_return_sha256": "e4df110eeeb97630e0cb522c35a15e8f8edcf196d6365746599e62ec1f65707e",
+  "information_exchange_claim_boundary": "ACTION_SCOPE_LOCALITY_VERIFIED_INFORMATION_EXCHANGE_LOCALITY_NOT_YET_CERTIFIED",
+  "information_exchange_locality_certified": false,
+  "legacy_substrate": {
+    "package_id": "bd18734787de7396b9de4bf8c0b9ba4d191c6346a7cb83e969499622067a8129",
+    "role": "immutable channel-generator, pass-record, architecture, baseline-method and environment source substrate only; candidate-v3 scientific binding is superseded",
+    "scientific_candidate_binding_superseded": true,
+    "zip_sha256": "a81f1808f75119e64a0f7f631a54230f3e722efa8d17dcf032ee1296f2bb76be"
+  },
+  "mandatory_secondary_endpoint": "duration_weighted_mean_moving_pf_utility",
+  "merge_scripts_locked": true,
+  "method_count": 9,
+  "method_ids": [
+    "candidate_v4_3_floor_feasibility_repair",
+    "robust_predictive_constrained_pf_with_sector_selective_fallback",
+    "static_robust_constrained_pf_with_sector_selective_fallback",
+    "delayed_myopic_constrained_pf_with_reactive_sector_fallback",
+    "delayed_myopic_constrained_pf_unshielded",
+    "virtual_queue_unshielded",
+    "uniform_protected_tone_backoff",
+    "hard_spatial_null_or_exact_mute",
+    "common_scale_instantaneous_noncausal_reference"
+  ],
+  "next_gate": "SEPARATE_RORQUAL_30_SEED_CAMPAIGN_AUTHORIZATION_AND_EXECUTION",
+  "package_id": "8473d5504e69347a69a536c43dcae35bec9519a90bc55de3a0712f9e0fb97889",
+  "primary_comparator": "static_robust_constrained_pf_with_sector_selective_fallback",
+  "primary_endpoint": "final_moving_average_sum_log_utility",
+  "primary_method": "candidate_v4_3_floor_feasibility_repair",
+  "rorqual_resource_template": {
+    "array": "0-29%8",
+    "cluster": "rorqual",
+    "cpu_merge_account_preference": "def-rsadve_cpu",
+    "cpus_per_task": 16,
+    "gpu": "h100:1",
+    "gpu_account_preference": "def-rsadve_gpu",
+    "home_heavy_storage_prohibited": true,
+    "memory_gib": 124,
+    "scratch_link": "/home/rsadve1/links/scratch",
+    "time_limit": "04:00:00"
+  },
+  "schema_version": 3,
+  "seed_mapping": {
+    "channel_seed_rule": "2 * campaign_seed + 1",
+    "user_seed_rule": "2 * campaign_seed"
+  },
+  "smoke_reclassification_binding": {
+    "job_id": "18132931",
+    "return_zip_sha256": "ead8922184290c735dcde92866bd69ab7f2f1fd1ac530842c9729b40e0251c54",
+    "status": "PASS_EXCLUDED_RORQUAL_FINAL_WORKER_SMOKE_AFTER_VALIDATOR_CONTRACT_REPAIR",
+    "validator_contract_repair": true
+  },
+  "status": "IMMUTABLE_PHASE1_V4_3_RORQUAL_R2_JOB_PACKAGE_REVIEWED_NOT_AUTHORIZED_FOR_EXECUTION",
+  "submission_scripts_locked": true,
+  "total_cells": 1350,
+  "validator_contract_revision": "CANDIDATE_ONLY_NA_SEMANTICS_AND_GEOMETRIC_MEAN_DEFINITION_R2"
+}

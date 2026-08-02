@@ -1,0 +1,80 @@
+{
+  "campaign_seed": 43999,
+  "channel_generation": {
+    "coefficient_shape": [
+      1,
+      228,
+      1,
+      57,
+      128,
+      24,
+      1
+    ],
+    "coefficients_sha256": "7154ae666986b50ac0cf81be8438c8c9fb8677ad1519d39efc2c25d008dabdbd",
+    "delay_shape": [
+      1,
+      228,
+      57,
+      24
+    ],
+    "delays_sha256": "f766f53fe73343a8392f44ad7100f2adf016640486db25c39501b647a621253f",
+    "elapsed_seconds": 2.132316611940041,
+    "frequency_response_sha256": "0389782b4337a100e84b3b89449b37b59a0bf4eb12ebb7df2a26af70f2663224",
+    "gpu_peak_allocated_gib": 25.937309741973877,
+    "mode": "one_topology_call_all_228_users",
+    "response_shape": [
+      228,
+      57,
+      128,
+      9
+    ]
+  },
+  "channel_seed": 87999,
+  "files": {
+    "SECTOR_TOPOLOGY.csv": {
+      "bytes": 6097,
+      "sha256": "20e98d8b5ec92b85259c249c0974ffceb38a9488b48d556db7f98e28b61ed665"
+    },
+    "USER_TOPOLOGY.csv": {
+      "bytes": 30312,
+      "sha256": "ab301772aa031497462e4cba305f6d19b770a6bb07522628ec998b43cf91292d"
+    },
+    "frequency_response.npy": {
+      "bytes": 119771264,
+      "sha256": "d593817030292e86397e6a8cdb97e0da58f6e4633638aa7474bb252f769904f0"
+    },
+    "frequency_weights.npy": {
+      "bytes": 200,
+      "sha256": "96d8113815a5895cc603b78fa3adf26f4711998f86d9d2c3bcf3c1594bb16493"
+    },
+    "noise_power_by_frequency_w.npy": {
+      "bytes": 200,
+      "sha256": "8d94fb26a2a6f7660edd6f974042a506593d817735484ca4876c799080e9c220"
+    },
+    "protected_steering_pol1.npy": {
+      "bytes": 58496,
+      "sha256": "7dea519934a3df13dbf683011256ea6ff74aefefe7d4fed8ce6b7b9f96a56046"
+    },
+    "protected_steering_pol2.npy": {
+      "bytes": 58496,
+      "sha256": "70c3512093910941001792704e74b7a36e2be5bcc8bc3ef4c6138b9223d50aa7"
+    },
+    "serving_bs_index.npy": {
+      "bytes": 1952,
+      "sha256": "d3cf88216b9292954ee5c20042f6273f4b63eff4067f0a9db8aeb92e5df5b8af"
+    },
+    "serving_stream_index.npy": {
+      "bytes": 1952,
+      "sha256": "114a7d9f015da820d6906a7601a105db9e205ab914e66c386aba35de22ed2834"
+    },
+    "transmit_power_by_frequency_w.npy": {
+      "bytes": 200,
+      "sha256": "b16202d46fe1415595ae34212fa053ebc427df1397002250af5780ffe799d206"
+    }
+  },
+  "frequency_response_sha256_array_bytes": "c4ac7fb56da5d3f8182836e2a99ab2ef1dd7b17bf76332abbc198d1ae6b6a093",
+  "gpu_name": "NVIDIA H100 80GB HBM3",
+  "gpu_total_memory_bytes": 85017493504,
+  "schema_version": 1,
+  "user_seed": 87998
+}

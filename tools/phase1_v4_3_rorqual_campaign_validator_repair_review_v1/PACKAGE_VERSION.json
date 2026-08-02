@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "package_id": "FR3_CBF_v1_1_Candidate_v4_3_Rorqual_Campaign_Validator_Repair_Review_DropIn_v1_2026-08-02",
+  "version": "1.0.0",
+  "created_date": "2026-08-02",
+  "execution_mode": "LOCAL_WSL_ONLY",
+  "cluster_contacted": false,
+  "campaign_execution_authorized": false,
+  "required_github_ancestor": "fa00b2a4d81b98a2089c992f56fdca63e23c24f3",
+  "next_gate": "SEPARATE_RORQUAL_30_SEED_CAMPAIGN_AUTHORIZATION_AND_EXECUTION"
+}

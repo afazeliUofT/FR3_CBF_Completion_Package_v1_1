@@ -1,0 +1,4 @@
+JobID|JobName|Account|State|ExitCode|Elapsed|MaxRSS|MaxVMSize|ReqMem|AllocTRES|NodeList
+18132931|fr3-v43-final-smoke|def-rsadve_gpu|FAILED|42:0|00:03:10|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31701
+18132931.batch|batch|def-rsadve_gpu|FAILED|42:0|00:03:10|2374592K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31701
+18132931.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:10||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31701

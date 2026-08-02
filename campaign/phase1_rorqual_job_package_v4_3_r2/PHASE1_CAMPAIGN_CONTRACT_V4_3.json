@@ -1,0 +1,83 @@
+{
+  "campaign_execution_authorized": false,
+  "candidate_hard_gates": {
+    "eligible_floor_violation_user_intervals": 0,
+    "eligible_floor_violation_user_seconds": 0,
+    "long_eess_violation_seconds": 0,
+    "network_wide_shutdown_intervals": 0,
+    "q0_envelope_deployable_actions": 0,
+    "short_eess_violation_seconds": 0,
+    "strict_local_scope_gate": "PASS",
+    "strict_post_mode_selected_power_gate": "PASS",
+    "unresolved_deployable_intervals": 0
+  },
+  "candidate_id": "candidate_v4_3_floor_feasibility_repair",
+  "candidate_status": "FROZEN_AFTER_CPU_AND_EXCLUDED_H100_EXACT_PASS",
+  "descriptive_metrics": {
+    "excluded_reference_standard_positive_geometric_mean": {
+      "definition": "exp(mean(log(x)))",
+      "must_not_be_directly_compared_to_campaign_epsilon_stabilized_metric": true,
+      "scope": "excluded seed diagnostic only"
+    },
+    "total_active_eligible_geometric_mean_bps_hz": {
+      "definition": "exp(mean(log(x+0.001)))-0.001",
+      "role": "descriptive_not_primary_or_mandatory_secondary_endpoint",
+      "scope": "positive delivered total rates of active eligible users"
+    }
+  },
+  "execution_cluster": "rorqual",
+  "information_exchange_claim_boundary": "ACTION_SCOPE_LOCALITY_VERIFIED_INFORMATION_EXCHANGE_LOCALITY_NOT_YET_CERTIFIED",
+  "package_revision": "V4_3_RORQUAL_R2",
+  "paper_result": false,
+  "primary_scenario": {
+    "analog_phase_bits": 6,
+    "architecture_id": "practical_64rf_128port_subarray_hybrid",
+    "fairness": {
+      "absolute_total_band_floor_bps_hz": 0.1,
+      "eligibility_reference": "full_load_nominal_total_band_rate",
+      "floor_reference": "current_load_nominal_total_band_rate",
+      "relative_current_load_floor_fraction": 0.9,
+      "serviceability_threshold_bps_hz": 0.1
+    },
+    "load_schedule": {
+      "active_streams_per_sector": [
+        4,
+        2,
+        4,
+        1,
+        3,
+        2
+      ],
+      "declared_phase_lengths_intervals": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        18
+      ],
+      "variable_final_extension": true
+    },
+    "moving_average_pf": {
+      "time_constant_s": 100
+    },
+    "rf_chains": 64,
+    "timing": {
+      "update_interval_s": 5
+    }
+  },
+  "schema_version": 5,
+  "statistics": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260801,
+    "claim_scope": "declared engineering scenarios under common-random-number seed clusters; not calibration and not regulatory compliance",
+    "descriptive_repair_cost_comparator": "robust_predictive_constrained_pf_with_sector_selective_fallback",
+    "mandatory_secondary_endpoint": "duration_weighted_mean_moving_pf_utility",
+    "primary_comparator": "static_robust_constrained_pf_with_sector_selective_fallback",
+    "primary_endpoint": "final_moving_average_sum_log_utility",
+    "primary_estimand": "mean_over_30_seed_clusters_of_the_within_seed_mean_over_five_fixed_passes_of_candidate_minus_static_final_moving_pf_utility",
+    "primary_method": "candidate_v4_3_floor_feasibility_repair",
+    "primary_superiority_rule": "lower_95_seed_cluster_bootstrap_bound_greater_than_zero"
+  },
+  "validator_contract_revision": "CANDIDATE_ONLY_NA_SEMANTICS_AND_GEOMETRIC_MEAN_DEFINITION_R2"
+}

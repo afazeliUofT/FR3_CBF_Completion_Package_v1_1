@@ -1,0 +1,23 @@
+{
+  "active_execution_routing_rorqual_only": "PASS",
+  "campaign_contract_not_paper_result": true,
+  "candidate_only_na_semantics": true,
+  "candidate_source_unchanged": true,
+  "exact_smoke_corrected_scientific_validator": "PASS",
+  "exact_smoke_corrected_structural_validator": "PASS",
+  "execution_cluster_rorqual": true,
+  "execution_locked": true,
+  "five_passes": true,
+  "geometric_mean_definition_explicit": true,
+  "information_exchange_not_overclaimed": true,
+  "next_gate_separate_authorization": true,
+  "nine_methods": true,
+  "package_id": true,
+  "package_manifest": "PASS",
+  "rorqual_resource_template": true,
+  "seed_list_exact": true,
+  "submission_scripts_locked": true,
+  "synthetic_30_seed_merged_numeric_domain": "PASS",
+  "token_not_included": true,
+  "total_cells": true
+}

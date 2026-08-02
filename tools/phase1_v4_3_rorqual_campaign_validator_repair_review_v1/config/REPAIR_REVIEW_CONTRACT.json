@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "package_role": "local-only independent reclassification of excluded Rorqual final-worker smoke and construction/review of a corrected Rorqual-native locked 30-seed campaign package",
+  "required_github_ancestor": "fa00b2a4d81b98a2089c992f56fdca63e23c24f3",
+  "smoke_return": {
+    "filename": "FR3_RORQUAL_V4_3_FINAL_WORKER_SMOKE_43999_18132931.zip",
+    "sha256": "ead8922184290c735dcde92866bd69ab7f2f1fd1ac530842c9729b40e0251c54",
+    "campaign_seed": 43999,
+    "job_id": "18132931"
+  },
+  "legacy_locked_campaign": {
+    "filename": "FR3_PHASE1_NIBI_JOB_PACKAGE_V4_3_v1.zip",
+    "sha256": "76a4aa701639a00913c5412c8ba54b86855a55ed97cb16e254ed6a7173356bd5",
+    "review_filename": "FR3_PHASE1_NIBI_JOB_PACKAGE_V4_3_INDEPENDENT_REVIEW_v1.zip",
+    "review_sha256": "17e58beb67ca74ce5420d87580d4dc72b74475462a78ca99169fe7f342a1ffec",
+    "package_id": "77bec1efa2ea151a64481d6993399b82585eac3c1343d51adb0fc37da294e015"
+  },
+  "validator_repairs": {
+    "candidate_only_numeric_na_semantics": "candidate-only numeric fields must be finite for candidate rows and blank/NaN for non-candidate rows",
+    "common_numeric_fields": "finite for every method row",
+    "geometric_mean_contract": {
+      "campaign_cell_summary": "epsilon-stabilized geometric mean exp(mean(log(x+0.001)))-0.001",
+      "excluded_reference_utility_summary": "ordinary positive geometric mean exp(mean(log(x)))",
+      "classification": "two distinct descriptive metrics; a direct equality comparison is invalid"
+    }
+  },
+  "new_locked_campaign": {
+    "cluster": "rorqual",
+    "package_filename": "FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_3_R2.zip",
+    "review_filename": "FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_3_R2_INDEPENDENT_REVIEW.zip",
+    "seed_start": 44000,
+    "seed_end": 44029,
+    "seed_count": 30,
+    "pass_count": 5,
+    "method_count": 9,
+    "cell_count": 1350,
+    "gpu": "h100:1",
+    "cpus_per_task": 16,
+    "memory_gib": 124,
+    "time_limit": "04:00:00",
+    "array": "0-29%8",
+    "gpu_account": "def-rsadve_gpu",
+    "cpu_merge_account": "def-rsadve_cpu",
+    "scratch_link": "/home/rsadve1/links/scratch",
+    "execution_authorized": false,
+    "authorization_token_included": false
+  },
+  "campaign_execution_authorized": false,
+  "cluster_contacted": false,
+  "next_gate": "SEPARATE_RORQUAL_30_SEED_CAMPAIGN_AUTHORIZATION_AND_EXECUTION"
+}

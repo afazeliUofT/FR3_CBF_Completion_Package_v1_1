@@ -1,0 +1,70 @@
+{
+  "cell_summary_numeric_domain_contract": {
+    "candidate_only_nan_is_not_data_corruption": true,
+    "candidate_only_numeric_fields": "finite on candidate rows and blank/NaN on comparator rows",
+    "common_numeric_fields": "finite for every method row"
+  },
+  "claim_boundary": "DECLARED_ENGINEERING_SCENARIOS_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE",
+  "control_payload_claim_boundary": "FLOAT32 coefficient-value lower bound only; excludes identifiers, headers, reliability, and transport overhead",
+  "descriptive_metric_definitions": {
+    "excluded_reference_standard_positive_geometric_mean": {
+      "definition": "exp(mean(log(x)))",
+      "must_not_be_directly_compared_to_campaign_epsilon_stabilized_metric": true,
+      "scope": "excluded seed diagnostic only"
+    },
+    "total_active_eligible_geometric_mean_bps_hz": {
+      "definition": "exp(mean(log(x+0.001)))-0.001",
+      "role": "descriptive_not_primary_or_mandatory_secondary_endpoint",
+      "scope": "positive delivered total rates of active eligible users"
+    }
+  },
+  "mandatory_secondary_endpoint": "duration_weighted_mean_moving_pf_utility",
+  "merged_result": {
+    "bootstrap_resamples": 10000,
+    "cell_rows": 1350,
+    "primary_paired_rows": 150,
+    "required_summary_files": [
+      "PHASE1_METHOD_ENDPOINT_SUMMARY.csv",
+      "PHASE1_ACTION_AND_RUNTIME_SUMMARY.json",
+      "PHASE1_SEED_RESULT_HASH_INDEX.csv",
+      "PHASE1_BOOTSTRAP_SUMMARY.json",
+      "PHASE1_LEAVE_ONE_PASS_OUT.csv"
+    ],
+    "seed_cluster_rows": 30
+  },
+  "primary_comparator": "static_robust_constrained_pf_with_sector_selective_fallback",
+  "primary_endpoint": "final_moving_average_sum_log_utility",
+  "primary_method": "candidate_v4_3_floor_feasibility_repair",
+  "primary_superiority_rule": "lower endpoint of seed-cluster bootstrap 95% interval for candidate-minus-static final moving PF utility is greater than zero",
+  "repair_cost_comparator": "robust_predictive_constrained_pf_with_sector_selective_fallback",
+  "runtime_claim_boundary": "campaign-compute software runtime; not deployed latency or normalized cross-method benchmarking",
+  "schema_version": 4,
+  "seed_result": {
+    "candidate_action_trace_additions": [
+      "candidate_changed_stream_coefficient_count_trace",
+      "candidate_changed_sector_count_trace",
+      "candidate_incremental_float32_payload_lower_bound_bytes_trace"
+    ],
+    "cell_rows": 45,
+    "methods": 9,
+    "paired_rows": 5,
+    "passes": 5,
+    "required_files": [
+      "SEED_RESULT.json",
+      "RESULT_FILE_MANIFEST.json",
+      "CELL_SUMMARY.csv",
+      "PRIMARY_PAIRED_EFFECTS.csv",
+      "PASS_0_METHOD_TRACES.npz",
+      "PASS_1_METHOD_TRACES.npz",
+      "PASS_2_METHOD_TRACES.npz",
+      "PASS_3_METHOD_TRACES.npz",
+      "PASS_4_METHOD_TRACES.npz",
+      "PASS_0_CANDIDATE_ACTION_TRACE.npz",
+      "PASS_1_CANDIDATE_ACTION_TRACE.npz",
+      "PASS_2_CANDIDATE_ACTION_TRACE.npz",
+      "PASS_3_CANDIDATE_ACTION_TRACE.npz",
+      "PASS_4_CANDIDATE_ACTION_TRACE.npz"
+    ],
+    "scientific_failure_exit_code": 42
+  }
+}

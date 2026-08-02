@@ -1,0 +1,4855 @@
+{
+  "architecture": {
+    "analog_phase_bits": 6,
+    "architecture_id": "practical_64rf_128port_subarray_hybrid",
+    "full_load_audit": {
+      "local_channel_rank_failure_count": 0,
+      "maximum_local_channel_condition_number": 1228.6851806640625,
+      "maximum_protected_mode_condition_number": 1.0000000000000002,
+      "minimum_available_digital_nullspace_dimension": 58
+    },
+    "nominal_total_sum_se_bps_hz": 491.64346808911307,
+    "rf_chains": 64
+  },
+  "array_index": -1,
+  "authorization_token_sha256": "3f6f11ecd59012ca13f162b1bbcb1c7797ca52f3841e4341c82133aec2dfc523",
+  "campaign_seed": 43999,
+  "candidate_hard_gates_pass": true,
+  "candidate_source_manifest_sha256": "a2e67130c91577b83be6e14f400d0934aa6d94ac0f974956594df35eec0cb93c",
+  "cell_count": 45,
+  "channel_record": {
+    "campaign_seed": 43999,
+    "channel_generation": {
+      "coefficient_shape": [
+        1,
+        228,
+        1,
+        57,
+        128,
+        24,
+        1
+      ],
+      "coefficients_sha256": "7154ae666986b50ac0cf81be8438c8c9fb8677ad1519d39efc2c25d008dabdbd",
+      "delay_shape": [
+        1,
+        228,
+        57,
+        24
+      ],
+      "delays_sha256": "f766f53fe73343a8392f44ad7100f2adf016640486db25c39501b647a621253f",
+      "elapsed_seconds": 2.132316611940041,
+      "frequency_response_sha256": "0389782b4337a100e84b3b89449b37b59a0bf4eb12ebb7df2a26af70f2663224",
+      "gpu_peak_allocated_gib": 25.937309741973877,
+      "mode": "one_topology_call_all_228_users",
+      "response_shape": [
+        228,
+        57,
+        128,
+        9
+      ]
+    },
+    "channel_seed": 87999,
+    "files": {
+      "SECTOR_TOPOLOGY.csv": {
+        "bytes": 6097,
+        "sha256": "20e98d8b5ec92b85259c249c0974ffceb38a9488b48d556db7f98e28b61ed665"
+      },
+      "USER_TOPOLOGY.csv": {
+        "bytes": 30312,
+        "sha256": "ab301772aa031497462e4cba305f6d19b770a6bb07522628ec998b43cf91292d"
+      },
+      "frequency_response.npy": {
+        "bytes": 119771264,
+        "sha256": "d593817030292e86397e6a8cdb97e0da58f6e4633638aa7474bb252f769904f0"
+      },
+      "frequency_weights.npy": {
+        "bytes": 200,
+        "sha256": "96d8113815a5895cc603b78fa3adf26f4711998f86d9d2c3bcf3c1594bb16493"
+      },
+      "noise_power_by_frequency_w.npy": {
+        "bytes": 200,
+        "sha256": "8d94fb26a2a6f7660edd6f974042a506593d817735484ca4876c799080e9c220"
+      },
+      "protected_steering_pol1.npy": {
+        "bytes": 58496,
+        "sha256": "7dea519934a3df13dbf683011256ea6ff74aefefe7d4fed8ce6b7b9f96a56046"
+      },
+      "protected_steering_pol2.npy": {
+        "bytes": 58496,
+        "sha256": "70c3512093910941001792704e74b7a36e2be5bcc8bc3ef4c6138b9223d50aa7"
+      },
+      "serving_bs_index.npy": {
+        "bytes": 1952,
+        "sha256": "d3cf88216b9292954ee5c20042f6273f4b63eff4067f0a9db8aeb92e5df5b8af"
+      },
+      "serving_stream_index.npy": {
+        "bytes": 1952,
+        "sha256": "114a7d9f015da820d6906a7601a105db9e205ab914e66c386aba35de22ed2834"
+      },
+      "transmit_power_by_frequency_w.npy": {
+        "bytes": 200,
+        "sha256": "b16202d46fe1415595ae34212fa053ebc427df1397002250af5780ffe799d206"
+      }
+    },
+    "frequency_response_sha256_array_bytes": "c4ac7fb56da5d3f8182836e2a99ab2ef1dd7b17bf76332abbc198d1ae6b6a093",
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "gpu_total_memory_bytes": 85017493504,
+    "schema_version": 1,
+    "user_seed": 87998
+  },
+  "created_utc": "2026-08-02T04:34:57.591928+00:00",
+  "execution_boundary": "DECLARED_ENGINEERING_SCENARIOS_NOT_CALIBRATION_NOT_COMPLIANCE",
+  "execution_stage": "EXCLUDED_FINAL_WORKER_SMOKE_SEED43999",
+  "method_ids": [
+    "candidate_v4_3_floor_feasibility_repair",
+    "robust_predictive_constrained_pf_with_sector_selective_fallback",
+    "static_robust_constrained_pf_with_sector_selective_fallback",
+    "delayed_myopic_constrained_pf_with_reactive_sector_fallback",
+    "delayed_myopic_constrained_pf_unshielded",
+    "virtual_queue_unshielded",
+    "uniform_protected_tone_backoff",
+    "hard_spatial_null_or_exact_mute",
+    "common_scale_instantaneous_noncausal_reference"
+  ],
+  "package_id": "77bec1efa2ea151a64481d6993399b82585eac3c1343d51adb0fc37da294e015",
+  "pass_audits": [
+    {
+      "candidate_action_diagnostics": {
+        "action_class_counts": {
+          "BASELINE_NOOP": 91,
+          "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR": 1,
+          "SPARSE_LOCAL_STREAM_POWER_REPAIR": 26
+        },
+        "action_scope_locality_verified": true,
+        "candidate_end_to_end_seconds": 1.1065483149141073,
+        "changed_sector_interval_count_sum": 30,
+        "changed_stream_coefficient_count_sum": 85,
+        "global_oracles_classification_only": true,
+        "incremental_float32_payload_lower_bound_bytes_sum": 340,
+        "information_exchange_locality_certified": false,
+        "local_table_build_seconds_max": 0.004393364768475294,
+        "local_table_build_seconds_sum": 0.43757205246947706,
+        "maximum_changed_sectors_per_interval": 4,
+        "maximum_changed_stream_coefficients_per_interval": 16,
+        "maximum_eess_backoff_sectors": 2,
+        "maximum_external_interferers_per_violating_user": 2,
+        "maximum_mutable_sector_count": 5,
+        "maximum_normalized_floor_shortfall": 0.0,
+        "maximum_q0_nominal_power_envelope_ratio": 0.9832046189542554,
+        "maximum_strict_post_mode_selected_power_ratio": 0.9999999874146094,
+        "network_wide_shutdown_intervals": 0,
+        "payload_claim_boundary": "FLOAT32_COEFFICIENT_VALUE_LOWER_BOUND_ONLY_EXCLUDES_IDS_HEADERS_RELIABILITY_AND_TRANSPORT_OVERHEAD",
+        "q0_envelope_deployable_actions": 0,
+        "repair_solver_seconds_max": 0.06729166000150144,
+        "repair_solver_seconds_p95_nonzero": 0.03076068873051553,
+        "repair_solver_seconds_sum": 0.4316404538694769,
+        "solver_constraint_reserve": 1e-08,
+        "solver_dual_feasibility_tolerance": 1e-09,
+        "solver_primal_feasibility_tolerance": 1e-09,
+        "strict_local_scope_gate": "PASS",
+        "strict_local_scope_violation_intervals": 0,
+        "strict_post_mode_power_violation_intervals": 0,
+        "strict_post_mode_selected_power_gate": "PASS",
+        "unresolved_deployable_intervals": 0
+      },
+      "candidate_hard_gates": {
+        "eligible_floor_violation_user_intervals": 0,
+        "eligible_floor_violation_user_seconds": 0,
+        "long_violation_seconds": 0,
+        "network_wide_shutdown_intervals": 0,
+        "q0_envelope_deployable_actions": 0,
+        "short_violation_seconds": 0,
+        "strict_local_scope_gate": "PASS",
+        "strict_post_mode_selected_power_gate": "PASS",
+        "unresolved_deployable_intervals": 0
+      },
+      "candidate_interval_records": [
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 0,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6960064508502765,
+          "maximum_strict_post_mode_power_ratio": 0.7080500280012614,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 1,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.695982325237863,
+          "maximum_strict_post_mode_power_ratio": 0.7080254849233574,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 2,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6960527174589483,
+          "maximum_strict_post_mode_power_ratio": 0.7080970941962019,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 3,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6964176078638203,
+          "maximum_strict_post_mode_power_ratio": 0.7084682937446422,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 4,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6969593800720139,
+          "maximum_strict_post_mode_power_ratio": 0.7090194309830975,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 5,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6976948688004155,
+          "maximum_strict_post_mode_power_ratio": 0.7097676270938693,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              33
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              33
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 6,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6987054560683866,
+          "maximum_strict_post_mode_power_ratio": 0.7107956626311381,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              12,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              12,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 7,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7001271842364167,
+          "maximum_strict_post_mode_power_ratio": 0.7122419145973631,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              39,
+              45
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              39,
+              45
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 8,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7021314112461803,
+          "maximum_strict_post_mode_power_ratio": 0.7142806671137594,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              27,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              27,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 9,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7050655975739267,
+          "maximum_strict_post_mode_power_ratio": 0.717265314537038,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              45,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              45,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 10,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7092427732293205,
+          "maximum_strict_post_mode_power_ratio": 0.7215141449015616,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              45,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              45,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 11,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.715205966428762,
+          "maximum_strict_post_mode_power_ratio": 0.7275792606928182,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              45,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              45,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 12,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.723771528230493,
+          "maximum_strict_post_mode_power_ratio": 0.7362904794394424,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 13,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7361715830959736,
+          "maximum_strict_post_mode_power_ratio": 0.7488998813837219,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              39,
+              40
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              39,
+              40
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 14,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7541822628411029,
+          "maximum_strict_post_mode_power_ratio": 0.7672114679703154,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 15,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7805943017529564,
+          "maximum_strict_post_mode_power_ratio": 0.7940581265336408,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              40,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              40,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 16,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.8205205828608876,
+          "maximum_strict_post_mode_power_ratio": 0.8346276114324965,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              48,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              48,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 17,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9832046189542554,
+          "maximum_strict_post_mode_power_ratio": 0.9999999874146094,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              41,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              41,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 18,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.0,
+          "maximum_strict_post_mode_power_ratio": 0.0,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              41,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              41,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 80,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.49499596272127805,
+          "maximum_strict_post_mode_power_ratio": 0.5035646082175231,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 81,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5102046960100538,
+          "maximum_strict_post_mode_power_ratio": 0.5190309671637889,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 82,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5262636005371534,
+          "maximum_strict_post_mode_power_ratio": 0.5353560634671949,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 83,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5507535281385045,
+          "maximum_strict_post_mode_power_ratio": 0.560244853439561,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 84,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5880125431902434,
+          "maximum_strict_post_mode_power_ratio": 0.5980942935039026,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              24
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 85,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6470507013037036,
+          "maximum_strict_post_mode_power_ratio": 0.6580312662294159,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              24
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 86,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7460695849034404,
+          "maximum_strict_post_mode_power_ratio": 0.7584697132950488,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              24
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 87,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9227036306624878,
+          "maximum_strict_post_mode_power_ratio": 0.9373966127689684,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              24
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        }
+      ],
+      "information_exchange_claim_boundary": "ACTION_SCOPE_LOCALITY_VERIFIED_INFORMATION_EXCHANGE_LOCALITY_NOT_YET_CERTIFIED",
+      "interval_count": 118,
+      "method_count": 9,
+      "method_runtime_seconds": 29.201712148962542,
+      "pass_slot": 0,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 18,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 118
+        }
+      ],
+      "protected_sample_count": 587
+    },
+    {
+      "candidate_action_diagnostics": {
+        "action_class_counts": {
+          "BASELINE_NOOP": 88,
+          "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR": 1,
+          "SPARSE_LOCAL_STREAM_POWER_REPAIR": 26
+        },
+        "action_scope_locality_verified": true,
+        "candidate_end_to_end_seconds": 1.0690883388742805,
+        "changed_sector_interval_count_sum": 28,
+        "changed_stream_coefficient_count_sum": 78,
+        "global_oracles_classification_only": true,
+        "incremental_float32_payload_lower_bound_bytes_sum": 312,
+        "information_exchange_locality_certified": false,
+        "local_table_build_seconds_max": 0.003846521023660898,
+        "local_table_build_seconds_sum": 0.42553293076343834,
+        "maximum_changed_sectors_per_interval": 2,
+        "maximum_changed_stream_coefficients_per_interval": 8,
+        "maximum_eess_backoff_sectors": 2,
+        "maximum_external_interferers_per_violating_user": 2,
+        "maximum_mutable_sector_count": 5,
+        "maximum_normalized_floor_shortfall": 0.0,
+        "maximum_q0_nominal_power_envelope_ratio": 0.9227077895227923,
+        "maximum_strict_post_mode_selected_power_ratio": 0.937400837854286,
+        "network_wide_shutdown_intervals": 0,
+        "payload_claim_boundary": "FLOAT32_COEFFICIENT_VALUE_LOWER_BOUND_ONLY_EXCLUDES_IDS_HEADERS_RELIABILITY_AND_TRANSPORT_OVERHEAD",
+        "q0_envelope_deployable_actions": 0,
+        "repair_solver_seconds_max": 0.03985221893526614,
+        "repair_solver_seconds_p95_nonzero": 0.033529814868234094,
+        "repair_solver_seconds_sum": 0.4130927037913352,
+        "solver_constraint_reserve": 1e-08,
+        "solver_dual_feasibility_tolerance": 1e-09,
+        "solver_primal_feasibility_tolerance": 1e-09,
+        "strict_local_scope_gate": "PASS",
+        "strict_local_scope_violation_intervals": 0,
+        "strict_post_mode_power_violation_intervals": 0,
+        "strict_post_mode_selected_power_gate": "PASS",
+        "unresolved_deployable_intervals": 0
+      },
+      "candidate_hard_gates": {
+        "eligible_floor_violation_user_intervals": 0,
+        "eligible_floor_violation_user_seconds": 0,
+        "long_violation_seconds": 0,
+        "network_wide_shutdown_intervals": 0,
+        "q0_envelope_deployable_actions": 0,
+        "short_violation_seconds": 0,
+        "strict_local_scope_gate": "PASS",
+        "strict_post_mode_selected_power_gate": "PASS",
+        "unresolved_deployable_intervals": 0
+      },
+      "candidate_interval_records": [
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 0,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6958741195287369,
+          "maximum_strict_post_mode_power_ratio": 0.7079154068410595,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              9,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              9,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 1,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6958723747664392,
+          "maximum_strict_post_mode_power_ratio": 0.7079136318876919,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              9,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              9,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 2,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6959680010006369,
+          "maximum_strict_post_mode_power_ratio": 0.7080109118188386,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              9,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              9,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 3,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.696337354696572,
+          "maximum_strict_post_mode_power_ratio": 0.708386651890924,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 4,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.696853236112152,
+          "maximum_strict_post_mode_power_ratio": 0.7089114503285926,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 5,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6975807619772214,
+          "maximum_strict_post_mode_power_ratio": 0.7096515457913468,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              33
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              33
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 6,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6986203729324674,
+          "maximum_strict_post_mode_power_ratio": 0.7107091072400943,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              10,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 7,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7000778500535293,
+          "maximum_strict_post_mode_power_ratio": 0.7121917267548311,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              12,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              12,
+              26,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 8,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7021401011030965,
+          "maximum_strict_post_mode_power_ratio": 0.7142895073346865,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              39,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              39,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 9,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.705065203163835,
+          "maximum_strict_post_mode_power_ratio": 0.717264913302487,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              39,
+              45
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              39,
+              45
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 10,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7092437753939158,
+          "maximum_strict_post_mode_power_ratio": 0.7215151644056839,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              39,
+              45
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              39,
+              45
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 11,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.715209633247832,
+          "maximum_strict_post_mode_power_ratio": 0.7275829909490427,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              39,
+              45
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              39,
+              45
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 12,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7237660198380673,
+          "maximum_strict_post_mode_power_ratio": 0.7362848757693037,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              39,
+              45
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              39,
+              45
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 13,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7361256028664742,
+          "maximum_strict_post_mode_power_ratio": 0.7488531061628239,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              39,
+              45
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              39,
+              45
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 14,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7541287436479313,
+          "maximum_strict_post_mode_power_ratio": 0.7671570241829434,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              39,
+              40
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              39,
+              40
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 15,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7806137138489361,
+          "maximum_strict_post_mode_power_ratio": 0.7940778734527908,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              40,
+              51
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              40,
+              51
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 16,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.8205618629815471,
+          "maximum_strict_post_mode_power_ratio": 0.8346696012731237,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              40,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              40,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 17,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.8824277098770064,
+          "maximum_strict_post_mode_power_ratio": 0.8975015797930916,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              40,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              40,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 18,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.0,
+          "maximum_strict_post_mode_power_ratio": 0.0,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              41,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              10,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              10,
+              26,
+              41,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 80,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.499300437545532,
+          "maximum_strict_post_mode_power_ratio": 0.5079435958087374,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 81,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.510206719370419,
+          "maximum_strict_post_mode_power_ratio": 0.5190330255272172,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 82,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5262638129725028,
+          "maximum_strict_post_mode_power_ratio": 0.5353562795728731,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 83,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5507535145590359,
+          "maximum_strict_post_mode_power_ratio": 0.5602448396260725,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 84,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.58801207719175,
+          "maximum_strict_post_mode_power_ratio": 0.5980938195156469,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              24
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 85,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6470506439281982,
+          "maximum_strict_post_mode_power_ratio": 0.6580312078802382,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              24
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 86,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7460703051384315,
+          "maximum_strict_post_mode_power_ratio": 0.7584704455007816,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              24
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 87,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9227077895227923,
+          "maximum_strict_post_mode_power_ratio": 0.937400837854286,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              24
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        }
+      ],
+      "information_exchange_claim_boundary": "ACTION_SCOPE_LOCALITY_VERIFIED_INFORMATION_EXCHANGE_LOCALITY_NOT_YET_CERTIFIED",
+      "interval_count": 115,
+      "method_count": 9,
+      "method_runtime_seconds": 28.57216896605678,
+      "pass_slot": 1,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 15,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 115
+        }
+      ],
+      "protected_sample_count": 571
+    },
+    {
+      "candidate_action_diagnostics": {
+        "action_class_counts": {
+          "BASELINE_NOOP": 106,
+          "SPARSE_LOCAL_STREAM_POWER_REPAIR": 11
+        },
+        "action_scope_locality_verified": true,
+        "candidate_end_to_end_seconds": 0.800594684202224,
+        "changed_sector_interval_count_sum": 11,
+        "changed_stream_coefficient_count_sum": 22,
+        "global_oracles_classification_only": true,
+        "incremental_float32_payload_lower_bound_bytes_sum": 88,
+        "information_exchange_locality_certified": false,
+        "local_table_build_seconds_max": 0.003919475944712758,
+        "local_table_build_seconds_sum": 0.4307385019492358,
+        "maximum_changed_sectors_per_interval": 1,
+        "maximum_changed_stream_coefficients_per_interval": 2,
+        "maximum_eess_backoff_sectors": 2,
+        "maximum_external_interferers_per_violating_user": 2,
+        "maximum_mutable_sector_count": 5,
+        "maximum_normalized_floor_shortfall": 0.0,
+        "maximum_q0_nominal_power_envelope_ratio": 0.8489913935082127,
+        "maximum_strict_post_mode_selected_power_ratio": 0.8627544054229962,
+        "network_wide_shutdown_intervals": 0,
+        "payload_claim_boundary": "FLOAT32_COEFFICIENT_VALUE_LOWER_BOUND_ONLY_EXCLUDES_IDS_HEADERS_RELIABILITY_AND_TRANSPORT_OVERHEAD",
+        "q0_envelope_deployable_actions": 0,
+        "repair_solver_seconds_max": 0.017121378798037767,
+        "repair_solver_seconds_p95_nonzero": 0.015224944450892508,
+        "repair_solver_seconds_sum": 0.13869550079107285,
+        "solver_constraint_reserve": 1e-08,
+        "solver_dual_feasibility_tolerance": 1e-09,
+        "solver_primal_feasibility_tolerance": 1e-09,
+        "strict_local_scope_gate": "PASS",
+        "strict_local_scope_violation_intervals": 0,
+        "strict_post_mode_power_violation_intervals": 0,
+        "strict_post_mode_selected_power_gate": "PASS",
+        "unresolved_deployable_intervals": 0
+      },
+      "candidate_hard_gates": {
+        "eligible_floor_violation_user_intervals": 0,
+        "eligible_floor_violation_user_seconds": 0,
+        "long_violation_seconds": 0,
+        "network_wide_shutdown_intervals": 0,
+        "q0_envelope_deployable_actions": 0,
+        "short_violation_seconds": 0,
+        "strict_local_scope_gate": "PASS",
+        "strict_post_mode_selected_power_gate": "PASS",
+        "unresolved_deployable_intervals": 0
+      },
+      "candidate_interval_records": [
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 80,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.49682020223464224,
+          "maximum_strict_post_mode_power_ratio": 0.5054215623857565,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 81,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5067830002961164,
+          "maximum_strict_post_mode_power_ratio": 0.515552390135918,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 82,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5214130549989016,
+          "maximum_strict_post_mode_power_ratio": 0.5304264596140507,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 83,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5425822951653881,
+          "maximum_strict_post_mode_power_ratio": 0.551942656969223,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 84,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5702050259592891,
+          "maximum_strict_post_mode_power_ratio": 0.5800021174873953,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 85,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6201130491523155,
+          "maximum_strict_post_mode_power_ratio": 0.6306812924073812,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 86,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.702308967661945,
+          "maximum_strict_post_mode_power_ratio": 0.7140829757408707,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 87,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.8489913935082127,
+          "maximum_strict_post_mode_power_ratio": 0.8627544054229962,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 97,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7844563962902217,
+          "maximum_strict_post_mode_power_ratio": 0.7974422579155197,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              33,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              33,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 98,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6712910701665683,
+          "maximum_strict_post_mode_power_ratio": 0.682660560621698,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              33,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              33,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 99,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7844570610071672,
+          "maximum_strict_post_mode_power_ratio": 0.7974429336361644,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              33,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              33,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        }
+      ],
+      "information_exchange_claim_boundary": "ACTION_SCOPE_LOCALITY_VERIFIED_INFORMATION_EXCHANGE_LOCALITY_NOT_YET_CERTIFIED",
+      "interval_count": 117,
+      "method_count": 9,
+      "method_runtime_seconds": 28.618039784952998,
+      "pass_slot": 2,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 17,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 117
+        }
+      ],
+      "protected_sample_count": 581
+    },
+    {
+      "candidate_action_diagnostics": {
+        "action_class_counts": {
+          "BASELINE_NOOP": 103,
+          "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR": 1,
+          "SPARSE_LOCAL_STREAM_POWER_REPAIR": 15
+        },
+        "action_scope_locality_verified": true,
+        "candidate_end_to_end_seconds": 0.8611220009624958,
+        "changed_sector_interval_count_sum": 17,
+        "changed_stream_coefficient_count_sum": 39,
+        "global_oracles_classification_only": true,
+        "incremental_float32_payload_lower_bound_bytes_sum": 156,
+        "information_exchange_locality_certified": false,
+        "local_table_build_seconds_max": 0.0038402369245886803,
+        "local_table_build_seconds_sum": 0.4369449994992465,
+        "maximum_changed_sectors_per_interval": 2,
+        "maximum_changed_stream_coefficients_per_interval": 8,
+        "maximum_eess_backoff_sectors": 2,
+        "maximum_external_interferers_per_violating_user": 2,
+        "maximum_mutable_sector_count": 5,
+        "maximum_normalized_floor_shortfall": 0.0,
+        "maximum_q0_nominal_power_envelope_ratio": 0.9837050398592407,
+        "maximum_strict_post_mode_selected_power_ratio": 0.9999999800484061,
+        "network_wide_shutdown_intervals": 0,
+        "payload_claim_boundary": "FLOAT32_COEFFICIENT_VALUE_LOWER_BOUND_ONLY_EXCLUDES_IDS_HEADERS_RELIABILITY_AND_TRANSPORT_OVERHEAD",
+        "q0_envelope_deployable_actions": 0,
+        "repair_solver_seconds_max": 0.013442506082355976,
+        "repair_solver_seconds_p95_nonzero": 0.012547580583486706,
+        "repair_solver_seconds_sum": 0.1935650792438537,
+        "solver_constraint_reserve": 1e-08,
+        "solver_dual_feasibility_tolerance": 1e-09,
+        "solver_primal_feasibility_tolerance": 1e-09,
+        "strict_local_scope_gate": "PASS",
+        "strict_local_scope_violation_intervals": 0,
+        "strict_post_mode_power_violation_intervals": 0,
+        "strict_post_mode_selected_power_gate": "PASS",
+        "unresolved_deployable_intervals": 0
+      },
+      "candidate_hard_gates": {
+        "eligible_floor_violation_user_intervals": 0,
+        "eligible_floor_violation_user_seconds": 0,
+        "long_violation_seconds": 0,
+        "network_wide_shutdown_intervals": 0,
+        "q0_envelope_deployable_actions": 0,
+        "short_violation_seconds": 0,
+        "strict_local_scope_gate": "PASS",
+        "strict_post_mode_selected_power_gate": "PASS",
+        "unresolved_deployable_intervals": 0
+      },
+      "candidate_interval_records": [
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 80,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.4943160633907175,
+          "maximum_strict_post_mode_power_ratio": 0.5028749677137584,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 81,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5034295892411363,
+          "maximum_strict_post_mode_power_ratio": 0.5121427760604419,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 82,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5160613443684551,
+          "maximum_strict_post_mode_power_ratio": 0.5249859682741435,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 83,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5306103954553519,
+          "maximum_strict_post_mode_power_ratio": 0.5397718789428831,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 84,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5582725383569848,
+          "maximum_strict_post_mode_power_ratio": 0.5678806774502977,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 85,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6010231842510018,
+          "maximum_strict_post_mode_power_ratio": 0.6113005959116271,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 86,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.670105143034295,
+          "maximum_strict_post_mode_power_ratio": 0.6814159885361204,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 87,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.7897592269194325,
+          "maximum_strict_post_mode_power_ratio": 0.8027422713783796,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 93,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.773945327754596,
+          "maximum_strict_post_mode_power_ratio": 0.7867656268426739,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 94,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6624390679807305,
+          "maximum_strict_post_mode_power_ratio": 0.6736622563953881,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 95,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.773945327754596,
+          "maximum_strict_post_mode_power_ratio": 0.7867656268426739,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 96,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6624390679807305,
+          "maximum_strict_post_mode_power_ratio": 0.6736622563953881,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 97,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9743394404496265,
+          "maximum_strict_post_mode_power_ratio": 0.9904792407584094,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 98,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6624390679807305,
+          "maximum_strict_post_mode_power_ratio": 0.6736622563953881,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 99,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9837050398592407,
+          "maximum_strict_post_mode_power_ratio": 0.9999999800484061,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              33
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              33
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 118,
+          "interval_seconds": 4,
+          "maximum_q0_power_envelope_ratio": 0.0,
+          "maximum_strict_post_mode_power_ratio": 0.0,
+          "pre_repair_violating_users": [
+            73
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              18
+            ],
+            "eess_backoff_sectors": [
+              0,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              19,
+              55
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              18,
+              19,
+              48,
+              55
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        }
+      ],
+      "information_exchange_claim_boundary": "ACTION_SCOPE_LOCALITY_VERIFIED_INFORMATION_EXCHANGE_LOCALITY_NOT_YET_CERTIFIED",
+      "interval_count": 119,
+      "method_count": 9,
+      "method_runtime_seconds": 29.042034229962155,
+      "pass_slot": 3,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 18,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 118
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "extended_final_phase": true,
+          "interval_count": 1,
+          "phase_index": 6,
+          "start_interval": 118,
+          "stop_interval_exclusive": 119
+        }
+      ],
+      "protected_sample_count": 594
+    },
+    {
+      "candidate_action_diagnostics": {
+        "action_class_counts": {
+          "BASELINE_NOOP": 98,
+          "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR": 3,
+          "SPARSE_LOCAL_STREAM_POWER_REPAIR": 20
+        },
+        "action_scope_locality_verified": true,
+        "candidate_end_to_end_seconds": 0.9651234790217131,
+        "changed_sector_interval_count_sum": 26,
+        "changed_stream_coefficient_count_sum": 64,
+        "global_oracles_classification_only": true,
+        "incremental_float32_payload_lower_bound_bytes_sum": 256,
+        "information_exchange_locality_certified": false,
+        "local_table_build_seconds_max": 0.004050835035741329,
+        "local_table_build_seconds_sum": 0.4517682178411633,
+        "maximum_changed_sectors_per_interval": 2,
+        "maximum_changed_stream_coefficients_per_interval": 8,
+        "maximum_eess_backoff_sectors": 2,
+        "maximum_external_interferers_per_violating_user": 2,
+        "maximum_mutable_sector_count": 5,
+        "maximum_normalized_floor_shortfall": 0.0,
+        "maximum_q0_nominal_power_envelope_ratio": 0.9838266217392282,
+        "maximum_strict_post_mode_selected_power_ratio": 0.9999999874113955,
+        "network_wide_shutdown_intervals": 0,
+        "payload_claim_boundary": "FLOAT32_COEFFICIENT_VALUE_LOWER_BOUND_ONLY_EXCLUDES_IDS_HEADERS_RELIABILITY_AND_TRANSPORT_OVERHEAD",
+        "q0_envelope_deployable_actions": 0,
+        "repair_solver_seconds_max": 0.012849692022427917,
+        "repair_solver_seconds_p95_nonzero": 0.01252990027423948,
+        "repair_solver_seconds_sum": 0.27582265832461417,
+        "solver_constraint_reserve": 1e-08,
+        "solver_dual_feasibility_tolerance": 1e-09,
+        "solver_primal_feasibility_tolerance": 1e-09,
+        "strict_local_scope_gate": "PASS",
+        "strict_local_scope_violation_intervals": 0,
+        "strict_post_mode_power_violation_intervals": 0,
+        "strict_post_mode_selected_power_gate": "PASS",
+        "unresolved_deployable_intervals": 0
+      },
+      "candidate_hard_gates": {
+        "eligible_floor_violation_user_intervals": 0,
+        "eligible_floor_violation_user_seconds": 0,
+        "long_violation_seconds": 0,
+        "network_wide_shutdown_intervals": 0,
+        "q0_envelope_deployable_actions": 0,
+        "short_violation_seconds": 0,
+        "strict_local_scope_gate": "PASS",
+        "strict_post_mode_selected_power_gate": "PASS",
+        "unresolved_deployable_intervals": 0
+      },
+      "candidate_interval_records": [
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 80,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.494656568745974,
+          "maximum_strict_post_mode_power_ratio": 0.5032213687964107,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 81,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.4998963368861992,
+          "maximum_strict_post_mode_power_ratio": 0.5085483713844926,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 82,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5162475860109729,
+          "maximum_strict_post_mode_power_ratio": 0.5251754307287472,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 83,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5307839234380797,
+          "maximum_strict_post_mode_power_ratio": 0.5399484030481181,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 84,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.5584340476347783,
+          "maximum_strict_post_mode_power_ratio": 0.5680449663804998,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 85,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6011658464324305,
+          "maximum_strict_post_mode_power_ratio": 0.611445697596232,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              21,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 86,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6702261027261106,
+          "maximum_strict_post_mode_power_ratio": 0.6815389899319884,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              24,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 87,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9838266217392281,
+          "maximum_strict_post_mode_power_ratio": 0.9999999874113953,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              24,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 88,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6709726945962462,
+          "maximum_strict_post_mode_power_ratio": 0.6822981836831628,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              24,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 89,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9838266217392282,
+          "maximum_strict_post_mode_power_ratio": 0.9999999874113955,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              24,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 90,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6710353697749177,
+          "maximum_strict_post_mode_power_ratio": 0.6823619167693434,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              24,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 91,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9838266185324358,
+          "maximum_strict_post_mode_power_ratio": 0.9999999841518858,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              24,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              5,
+              21,
+              24,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 92,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.671050252118629,
+          "maximum_strict_post_mode_power_ratio": 0.6823770503152611,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 93,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9838266185324357,
+          "maximum_strict_post_mode_power_ratio": 0.9999999841518856,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 94,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6711022981710384,
+          "maximum_strict_post_mode_power_ratio": 0.6824299748639243,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 95,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9838266185324357,
+          "maximum_strict_post_mode_power_ratio": 0.9999999841518856,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              48
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              48
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 96,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6711350842465647,
+          "maximum_strict_post_mode_power_ratio": 0.6824633143425078,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 97,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9837050438958544,
+          "maximum_strict_post_mode_power_ratio": 0.9999999841518856,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 98,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.6621653224083149,
+          "maximum_strict_post_mode_power_ratio": 0.6733838729652656,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_STREAM_POWER_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 99,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.9835799357514212,
+          "maximum_strict_post_mode_power_ratio": 0.9999999841518856,
+          "pre_repair_violating_users": [
+            23
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              5
+            ],
+            "eess_backoff_sectors": [
+              0,
+              39
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              21,
+              26
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              5,
+              21,
+              26,
+              39
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 118,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.0,
+          "maximum_strict_post_mode_power_ratio": 0.0,
+          "pre_repair_violating_users": [
+            73
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              18
+            ],
+            "eess_backoff_sectors": [
+              0,
+              3
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              19,
+              55
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              3,
+              18,
+              19,
+              55
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 119,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.0,
+          "maximum_strict_post_mode_power_ratio": 0.0,
+          "pre_repair_violating_users": [
+            73
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              18
+            ],
+            "eess_backoff_sectors": [
+              0,
+              3
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              19,
+              55
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              3,
+              18,
+              19,
+              55
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        },
+        {
+          "candidate_floor_violation_count": 0,
+          "candidate_long_violation_seconds": 0,
+          "candidate_short_violation_seconds": 0,
+          "chosen_action_class": "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR",
+          "global_oracles_used_for_classification": true,
+          "information_exchange_locality_certified": false,
+          "interval_index": 120,
+          "interval_seconds": 5,
+          "maximum_q0_power_envelope_ratio": 0.0,
+          "maximum_strict_post_mode_power_ratio": 0.0,
+          "pre_repair_violating_users": [
+            73
+          ],
+          "scope": {
+            "critical_serving_sectors": [
+              18
+            ],
+            "eess_backoff_sectors": [
+              0,
+              3
+            ],
+            "external_eess_actions_nonincreasing": true,
+            "external_eess_actions_scalar": true,
+            "external_interferer_sectors": [
+              19,
+              55
+            ],
+            "immutable_sectors_unchanged": true,
+            "mutable_sectors": [
+              0,
+              3,
+              18,
+              19,
+              55
+            ]
+          },
+          "strict_local_scope_gate": "PASS",
+          "strict_post_mode_selected_power_gate": "PASS"
+        }
+      ],
+      "information_exchange_claim_boundary": "ACTION_SCOPE_LOCALITY_VERIFIED_INFORMATION_EXCHANGE_LOCALITY_NOT_YET_CERTIFIED",
+      "interval_count": 121,
+      "method_count": 9,
+      "method_runtime_seconds": 29.573578901123255,
+      "pass_slot": 4,
+      "phase_records": [
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 0,
+          "start_interval": 0,
+          "stop_interval_exclusive": 20
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 20,
+          "phase_index": 1,
+          "start_interval": 20,
+          "stop_interval_exclusive": 40
+        },
+        {
+          "active_streams_per_sector": 4,
+          "active_user_count": 228,
+          "interval_count": 20,
+          "phase_index": 2,
+          "start_interval": 40,
+          "stop_interval_exclusive": 60
+        },
+        {
+          "active_streams_per_sector": 1,
+          "active_user_count": 57,
+          "interval_count": 20,
+          "phase_index": 3,
+          "start_interval": 60,
+          "stop_interval_exclusive": 80
+        },
+        {
+          "active_streams_per_sector": 3,
+          "active_user_count": 171,
+          "interval_count": 20,
+          "phase_index": 4,
+          "start_interval": 80,
+          "stop_interval_exclusive": 100
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "interval_count": 18,
+          "phase_index": 5,
+          "start_interval": 100,
+          "stop_interval_exclusive": 118
+        },
+        {
+          "active_streams_per_sector": 2,
+          "active_user_count": 114,
+          "extended_final_phase": true,
+          "interval_count": 3,
+          "phase_index": 6,
+          "start_interval": 118,
+          "stop_interval_exclusive": 121
+        }
+      ],
+      "protected_sample_count": 605
+    }
+  ],
+  "result_files": {
+    "CELL_SUMMARY.csv": {
+      "bytes": 35868,
+      "sha256": "6cf6e7c05577eabb9714004162a3efcb0281cda8e1edac914a343c46d6d5fbb9"
+    },
+    "PASS_0_CANDIDATE_ACTION_TRACE.npz": {
+      "bytes": 4924,
+      "sha256": "cc3a4f6ed0fd40b3cbe9eb88fa49c5511432c9b28d1055878dc3a10ea0729648"
+    },
+    "PASS_0_METHOD_TRACES.npz": {
+      "bytes": 62700,
+      "sha256": "a45adcb8aa64a90c813d4a53074a782d2596c32eb329196ee6055c66872d4d0e"
+    },
+    "PASS_1_CANDIDATE_ACTION_TRACE.npz": {
+      "bytes": 4614,
+      "sha256": "fd92a0a68f1953c541437155d47fa61434c83169e54e339d297d74da96fc9bf9"
+    },
+    "PASS_1_METHOD_TRACES.npz": {
+      "bytes": 61568,
+      "sha256": "fc16aeeb18aed5afaac94054ef613e4c08929ceb6aa5a9d17a3b61b9e46835d6"
+    },
+    "PASS_2_CANDIDATE_ACTION_TRACE.npz": {
+      "bytes": 4770,
+      "sha256": "ea4e107c1d546402f6219861a3d42343e11e684a289ef05ba5575dad526f7242"
+    },
+    "PASS_2_METHOD_TRACES.npz": {
+      "bytes": 60565,
+      "sha256": "736d9ce7164a2880d974d1d4472cb054524c929042a372432df816370c319632"
+    },
+    "PASS_3_CANDIDATE_ACTION_TRACE.npz": {
+      "bytes": 4815,
+      "sha256": "65a16e8324f5faf6307e7062be8be735872d7aad9849d5b3f611bb63e501025d"
+    },
+    "PASS_3_METHOD_TRACES.npz": {
+      "bytes": 62131,
+      "sha256": "ce09303dd710471532f844a90e3d694874d88ccab8b37339c4c80c867bc2e4cc"
+    },
+    "PASS_4_CANDIDATE_ACTION_TRACE.npz": {
+      "bytes": 5003,
+      "sha256": "11d9d2dba4d1735d7cc2e6d7efdc6e003875c8d7a02b599e300ee227c41c105e"
+    },
+    "PASS_4_METHOD_TRACES.npz": {
+      "bytes": 63116,
+      "sha256": "4bf7247bbdc72e1b846251dc94bbe69edd41b50f56697645f8f39a8518fbf5e6"
+    },
+    "PRIMARY_PAIRED_EFFECTS.csv": {
+      "bytes": 589,
+      "sha256": "f62395b56f95eee80159244abb2a270c3809adb37b7112b936c189e8eed3c6cd"
+    }
+  },
+  "runtime_seconds": 164.39925799006596,
+  "schema_version": 1,
+  "scientific_exit_code": 0,
+  "status": "PASS_PHASE1_V4_3_SEED_RESULT_REVIEW_REQUIRED"
+}
