@@ -1,0 +1,10 @@
+{
+  "bash_wrappers": 4,
+  "companion_gap_audit": "PASS",
+  "pytest_output": ".........................                                                [100%]\n25 passed in 14.37s",
+  "python_syntax_files": 62,
+  "real_rorqual_execution": "NOT_EXECUTED_IN_BUILD_ENVIRONMENT",
+  "status": "PASS",
+  "worker_memory_gib": 8,
+  "worker_walltime": "00:06:00"
+}

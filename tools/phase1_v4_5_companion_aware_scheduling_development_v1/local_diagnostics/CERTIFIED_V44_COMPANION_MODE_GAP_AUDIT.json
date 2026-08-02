@@ -1,0 +1,21 @@
+{
+  "active_stream_count_distribution": {
+    "2": 317,
+    "3": 139,
+    "4": 67
+  },
+  "certified_v44_residual_intervals": 523,
+  "critical_sector_count_distribution": {
+    "1": 207,
+    "2": 26,
+    "3": 286,
+    "4": 4
+  },
+  "maximum_companion_completed_mode_count": 625,
+  "next_test": "COMPANION_AWARE_FIXED_ASSOCIATION_SCHEDULING_BEFORE_REASSIGNMENT_OR_ADMISSION",
+  "omitted_companion_singleton_count_sum": 1426,
+  "residual_intervals_with_omitted_companion_singletons": 523,
+  "schema_version": 1,
+  "scientific_inference": "The v4.4 continuous-infeasibility results certify only its target-only mode library; every residual interval omitted at least one active companion singleton.",
+  "status": "PASS_CERTIFIED_V44_COMPANION_MODE_GAP_AUDIT"
+}

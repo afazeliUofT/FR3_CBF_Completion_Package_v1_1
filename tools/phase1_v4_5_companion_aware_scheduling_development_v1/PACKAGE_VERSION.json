@@ -1,0 +1,34 @@
+{
+  "candidate_version": "v4.5",
+  "channel_regeneration": false,
+  "claim_boundary": "POST_CAMPAIGN_DEVELOPMENT_ON_OBSERVED_SEEDS_NOT_FRESH_CONFIRMATION_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE",
+  "created_utc": "2026-08-02T20:30:00Z",
+  "gpu_requested": false,
+  "merge_resources": {
+    "cpus": 4,
+    "memory_gib": 4,
+    "walltime": "00:03:00"
+  },
+  "package_id": "FR3_CBF_V4_5_COMPANION_AWARE_SCHEDULING_DEVELOPMENT_V1",
+  "required_github_ancestor": "c88ecac477e085dbac533cd8117adaae83ae87a4",
+  "schema_version": 1,
+  "worker_resources": {
+    "array": "0-10%4",
+    "cpus": 8,
+    "memory_gib": 8,
+    "walltime": "00:06:00"
+  },
+  "worker_seeds": [
+    44001,
+    44007,
+    44008,
+    44013,
+    44017,
+    44018,
+    44024,
+    44025,
+    44026,
+    44027,
+    44028
+  ]
+}
