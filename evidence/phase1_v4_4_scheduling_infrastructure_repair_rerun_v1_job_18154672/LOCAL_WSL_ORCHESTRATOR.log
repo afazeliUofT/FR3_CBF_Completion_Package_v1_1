@@ -1,0 +1,678 @@
+=================================================================
+FR3 CANDIDATE V4.4 — SCHEDULING INFRASTRUCTURE REPAIR RERUN
+=================================================================
+PACKAGE_ROOT=/home/afazeli2006/fr3_v44_infrastructure_repair_outer_runs/20260802_190019/extracted/FR3_CBF_v1_1_Candidate_v4_4_Scheduling_Infrastructure_Repair_Rerun_DropIn_v1_2026-08-02
+REPO=/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1
+RORQUAL_HOST=rsadve1@rorqual.alliancecan.ca
+FAILED_SEED_COUNT=11
+CHANNEL_REGENERATION=NO
+GPU_REQUESTED=NO
+WORKER_WALLTIME=00:06:00
+WORKER_MEMORY=8G
+MERGE_WALLTIME=00:03:00
+MERGE_MEMORY=4G
+CAMPAIGN_RERUN_AUTHORIZED=NO
+WSL_TERMINAL_CLOSE_REQUESTED=NO
+INTERNAL_MANIFEST_VERIFICATION=PASS
+SOURCE_PAYLOAD_MANIFEST_VERIFICATION=PASS
+REPO_VENV_ACTIVATED=YES
+
+[notice] A new release of pip is available: 26.1.2 -> 26.2
+[notice] To update, run: pip install --upgrade pip
+No broken requirements found.
+LOCAL_VENV_DEPENDENCY_GATE=PASS
+PYTHON_IN_MEMORY_SYNTAX_CHECK=PASS
+PYTHON_SYNTAX_FILE_COUNT=46
+BASH_SYNTAX_CHECK=PASS
+...................                                                      [100%]
+19 passed in 2.05s
+IMMUTABLE_FAILED_SEED_DIAGNOSIS_AUDIT=PASS
+DIAGNOSED_UNRESOLVED_INTERVAL_COUNT=1736
+FIXED_BEAM_JOINT_GLOBAL_INFEASIBLE_INTERVAL_COUNT=1284
+FIXED_BEAM_SINGLE_USER_INFEASIBLE_INTERVAL_COUNT=0
+NEXT_REPAIR_DECISION=PROTECTED_SUBBAND_SCHEDULING_REASSIGNMENT_REQUIRED
+SCHEDULING_NECESSITY_AND_PLAUSIBILITY_AUDIT=PASS
+AFFECTED_INTERVAL_COUNT=1736
+MAXIMUM_CONSERVATIVE_SINGLE_USER_DEDICATED_FRACTION=0.31954502137142188
+MAXIMUM_CONSERVATIVE_GLOBAL_DEDICATED_FRACTION_SUM=0.41450107427104349
+MAXIMUM_CONSERVATIVE_PER_SECTOR_DEDICATED_FRACTION_SUM=0.31954502137142188
+PRIOR_V44_INFRASTRUCTURE_FAILURE_AUDIT=PASS
+PRIOR_V44_ROOT_CAUSE=NUMPY_NDARRAY_JSON_SERIALIZATION
+PRIOR_V44_WORKER_ERROR_COUNT=11
+PRIOR_V44_COMPLETED_TRACE_FILE_COUNT=110
+PRELIMINARY_COMPARATOR_MAXIMUM_ABSOLUTE_ERROR=0
+PRELIMINARY_V44_FLOOR_VIOLATION_USER_SECONDS=6540
+PRELIMINARY_V44_UNRESOLVED_INTERVALS=523
+PRELIMINARY_HARD_GATE_PASS_SEEDS=44013,44018,44026,44027
+PRELIMINARY_FAILED_SEEDS=44001,44007,44008,44017,44024,44025,44028
+SCIENTIFIC_CANDIDATE_SOURCE_IDENTITY=PASS
+NUMPY_JSON_SERIALIZATION_REGRESSION=PASS
+LOCAL_QUALITY_GATE=PASS
+Cloning into '/mnt/c/Users/alifa/Downloads/FR3_V44_SCHEDULING_INFRA_REPAIR_RETURN_20260802_190019/github_source_clone'...
+Updating files:  11% (310/2613)
+Updating files:  12% (314/2613)
+Updating files:  13% (340/2613)
+Updating files:  14% (366/2613)
+Updating files:  15% (392/2613)
+Updating files:  16% (419/2613)
+Updating files:  17% (445/2613)
+Updating files:  18% (471/2613)
+Updating files:  19% (497/2613)
+Updating files:  19% (514/2613)
+Updating files:  20% (523/2613)
+Updating files:  21% (549/2613)
+Updating files:  22% (575/2613)
+Updating files:  22% (588/2613)
+Updating files:  23% (601/2613)
+Updating files:  23% (606/2613)
+Updating files:  24% (628/2613)
+Updating files:  25% (654/2613)
+Updating files:  26% (680/2613)
+Updating files:  27% (706/2613)
+Updating files:  28% (732/2613)
+Updating files:  29% (758/2613)
+Updating files:  30% (784/2613)
+Updating files:  30% (804/2613)
+Updating files:  31% (811/2613)
+Updating files:  32% (837/2613)
+Updating files:  33% (863/2613)
+Updating files:  34% (889/2613)
+Updating files:  35% (915/2613)
+Updating files:  36% (941/2613)
+Updating files:  37% (967/2613)
+Updating files:  37% (989/2613)
+Updating files:  38% (993/2613)
+Updating files:  39% (1020/2613)
+Updating files:  40% (1046/2613)
+Updating files:  41% (1072/2613)
+Updating files:  42% (1098/2613)
+Updating files:  43% (1124/2613)
+Updating files:  44% (1150/2613)
+Updating files:  45% (1176/2613)
+Updating files:  46% (1202/2613)
+Updating files:  47% (1229/2613)
+Updating files:  47% (1238/2613)
+Updating files:  48% (1255/2613)
+Updating files:  49% (1281/2613)
+Updating files:  50% (1307/2613)
+Updating files:  51% (1333/2613)
+Updating files:  52% (1359/2613)
+Updating files:  53% (1385/2613)
+Updating files:  54% (1412/2613)
+Updating files:  55% (1438/2613)
+Updating files:  55% (1441/2613)
+Updating files:  56% (1464/2613)
+Updating files:  57% (1490/2613)
+Updating files:  58% (1516/2613)
+Updating files:  59% (1542/2613)
+Updating files:  60% (1568/2613)
+Updating files:  61% (1594/2613)
+Updating files:  62% (1621/2613)
+Updating files:  63% (1647/2613)
+Updating files:  64% (1673/2613)
+Updating files:  65% (1699/2613)
+Updating files:  66% (1725/2613)
+Updating files:  67% (1751/2613)
+Updating files:  68% (1777/2613)
+Updating files:  68% (1782/2613)
+Updating files:  69% (1803/2613)
+Updating files:  70% (1830/2613)
+Updating files:  71% (1856/2613)
+Updating files:  72% (1882/2613)
+Updating files:  73% (1908/2613)
+Updating files:  74% (1934/2613)
+Updating files:  75% (1960/2613)
+Updating files:  76% (1986/2613)
+Updating files:  76% (2001/2613)
+Updating files:  77% (2013/2613)
+Updating files:  78% (2039/2613)
+Updating files:  79% (2065/2613)
+Updating files:  80% (2091/2613)
+Updating files:  81% (2117/2613)
+Updating files:  82% (2143/2613)
+Updating files:  83% (2169/2613)
+Updating files:  83% (2182/2613)
+Updating files:  84% (2195/2613)
+Updating files:  85% (2222/2613)
+Updating files:  86% (2248/2613)
+Updating files:  87% (2274/2613)
+Updating files:  88% (2300/2613)
+Updating files:  89% (2326/2613)
+Updating files:  90% (2352/2613)
+Updating files:  91% (2378/2613)
+Updating files:  91% (2387/2613)
+Updating files:  92% (2404/2613)
+Updating files:  93% (2431/2613)
+Updating files:  94% (2457/2613)
+Updating files:  95% (2483/2613)
+Updating files:  96% (2509/2613)
+Updating files:  97% (2535/2613)
+Updating files:  98% (2561/2613)
+Updating files:  99% (2587/2613)
+Updating files: 100% (2613/2613)
+Updating files: 100% (2613/2613), done.
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+GITHUB_REQUIRED_ANCESTOR_GATE=PASS
+GIT_HEAD_BEFORE=76a62cda5d649cad25a6a45ccb5f0f757a99a269
+GIT_REMOTE_HEAD_BEFORE=74f93301c56b97cd0db99004195890d02f2c48d7
+GITHUB_NEWER_WORK_OVERWRITTEN=NO
+[e3-first-sector-p452 1051048] Repair candidate-v4.4 scheduling replay infrastructure
+ 65 files changed, 11643 insertions(+)
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/PACKAGE_VERSION.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/README.md
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/README_GITHUB_SOURCE.md
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/SOURCE_PAYLOAD_MANIFEST.sha256
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/cluster_diagnostics/NOT_EXECUTED_IN_BUILD_ENVIRONMENT.md
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/config/V44_INFRASTRUCTURE_REPAIR_CONTRACT.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/config/V44_SCHEDULING_DEVELOPMENT_CONTRACT.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/docs/BUILD_VALIDATION.md
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/docs/CLAIM_BOUNDARIES.md
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/docs/EXPECTED_SUCCESS_MARKERS.md
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/docs/RETURN_CONTRACT.md
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/docs/SCIENTIFIC_STATUS_AND_METHOD.md
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/docs/TWC_MAJOR_STEPS_REMAINING.md
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/docs/WSL_RORQUAL_WORKFLOW.md
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/immutable_bindings/FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_3_R2.zip.sha256
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/immutable_bindings/FR3_RORQUAL_V4_3_FAILED_SEED_DIAGNOSIS_18150465.zip.sha256
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/immutable_bindings/FR3_RORQUAL_V4_3_R2_30SEED_CAMPAIGN_18145937.zip.sha256
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/immutable_bindings/FR3_RORQUAL_V4_4_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_18153316.zip.sha256
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/BASH_SYNTAX_CHECK.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/BASH_SYNTAX_CHECK.txt
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/FINAL_LOCAL_QUALITY_GATE.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/FINAL_LOCAL_QUALITY_GATE.txt
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/FORBIDDEN_ARTIFACT_SCAN.txt
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/GIT_WORKFLOW_SIMULATION.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/GIT_WORKFLOW_SIMULATION.log
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/IMMUTABLE_FAILED_SEED_DIAGNOSIS_AUDIT.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/IMMUTABLE_FAILED_SEED_DIAGNOSIS_AUDIT.log
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/PRIOR_V44_INFRASTRUCTURE_FAILURE_AUDIT.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/PRIOR_V44_INFRASTRUCTURE_FAILURE_AUDIT.log
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/PYTEST.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/PYTEST.txt
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/PYTHON_SYNTAX_CHECK.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/PYTHON_SYNTAX_CHECK.txt
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/RESOURCE_POLICY_AUDIT.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/RESOURCE_POLICY_AUDIT.log
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/SCHEDULING_NECESSITY_AND_PLAUSIBILITY_AUDIT.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/SCHEDULING_NECESSITY_AND_PLAUSIBILITY_AUDIT.log
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/SCIENTIFIC_SOURCE_IDENTITY.json
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/local_diagnostics/SCIENTIFIC_SOURCE_IDENTITY.txt
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/requirements.txt
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/scripts/audit_failed_seed_diagnosis.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/scripts/audit_scheduling_necessity.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/scripts/audit_v44_infrastructure_failure.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/scripts/merge_v44_scheduling_development.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/scripts/package_v44_scheduling_return.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/scripts/replay_v44_scheduling_seed.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/scripts/verify_v44_scheduling_return.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/__init__.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/candidate_v4_3_campaign.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/candidate_v4_4_scheduling_campaign.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/constrained_pf_safety.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/dual_criterion_controller.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/floor_feasibility_repair.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/null_floor_aware_sector_backoff.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/online_pf_load_transition.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/phase1_job_runtime.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/physical_impairment_sensitivity.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/practical_architecture_mapping.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/protected_subband_scheduler.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/src/fr3_cbf/robust_delayed_safety.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/tests/conftest.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/tests/test_protected_subband_scheduler.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/tests/test_v44_infrastructure_repair.py
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/wrappers/REMOTE_ORCHESTRATE_V44_SCHEDULING_INFRA_REPAIR_RERUN.sh
+ create mode 100644 tools/phase1_v4_4_scheduling_infrastructure_repair_rerun_v1/wrappers/RUN_V44_SCHEDULING_INFRA_REPAIR_RERUN_FROM_WSL.sh
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+To github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1.git
+   74f9330..1051048  HEAD -> e3-first-sector-p452
+V44_INFRA_REPAIR_SOURCE_COMMIT=1051048c7df42888a6bdb8f7eb467674e4426eef
+Multifactor authentication is now mandatory to connect to this cluster.
+You can enroll your account into multifactor authentication on this page:
+https://ccdb.alliancecan.ca/multi_factor_authentications
+by following the instructions available here:
+https://docs.alliancecan.ca/wiki/Multifactor_authentication
+
+=============================================================================
+
+L'authentification multifacteur est maintenant obligatoire pour vous connecter
+à cette grappe. Configurez votre compte sur
+https://ccdb.alliancecan.ca/multi_factor_authentications
+et suivez les directives dans
+https://docs.alliancecan.ca/wiki/Multifactor_authentication/fr.
+Success. Logging you in...
+REMOTE_HOST=rorqual2.rorqual.calcul.quebec
+REMOTE_SCRATCH=/scratch/rsadve1
+EXECUTION_STAGE=V4_4_SCHEDULING_INFRASTRUCTURE_REPAIR_RERUN
+FAILED_SEEDS=44001,44007,44008,44013,44017,44018,44024,44025,44026,44027,44028
+CHANNEL_REGENERATION=NO
+GPU_REQUESTED=NO
+WORKER_ARRAY=0-10%4
+WORKER_WALLTIME=00:06:00
+WORKER_MEMORY=8G
+MERGE_WALLTIME=00:03:00
+MERGE_MEMORY=4G
+CAMPAIGN_RERUN_AUTHORIZED=NO
+REMOTE_V44_PACKAGE_SHA256_GATE=PASS
+EXISTING_V44_SCHEDULING_RUN_ATTACHED=NO
+REMOTE_PACKAGE_MANIFEST_VERIFICATION=PASS
+REMOTE_JOB_PACKAGE_MANIFEST_VERIFICATION=PASS
+REMOTE_V44_OVERLAY_MANIFEST_VERIFICATION=PASS
+CANDIDATE_V4_3_IMMUTABLE_ARCHIVE_MODIFIED=NO
+RUN_SPECIFIC_V4_4_MODULE_OVERLAY=PASS
+IMMUTABLE_FAILED_SEED_DIAGNOSIS_AUDIT=PASS
+DIAGNOSED_UNRESOLVED_INTERVAL_COUNT=1736
+FIXED_BEAM_JOINT_GLOBAL_INFEASIBLE_INTERVAL_COUNT=1284
+FIXED_BEAM_SINGLE_USER_INFEASIBLE_INTERVAL_COUNT=0
+NEXT_REPAIR_DECISION=PROTECTED_SUBBAND_SCHEDULING_REASSIGNMENT_REQUIRED
+SCHEDULING_NECESSITY_AND_PLAUSIBILITY_AUDIT=PASS
+AFFECTED_INTERVAL_COUNT=1736
+MAXIMUM_CONSERVATIVE_SINGLE_USER_DEDICATED_FRACTION=0.31954502137142188
+MAXIMUM_CONSERVATIVE_GLOBAL_DEDICATED_FRACTION_SUM=0.41450107427104349
+MAXIMUM_CONSERVATIVE_PER_SECTOR_DEDICATED_FRACTION_SUM=0.31954502137142188
+PRIOR_V44_INFRASTRUCTURE_FAILURE_AUDIT=PASS
+PRIOR_V44_ROOT_CAUSE=NUMPY_NDARRAY_JSON_SERIALIZATION
+PRIOR_V44_WORKER_ERROR_COUNT=11
+PRIOR_V44_COMPLETED_TRACE_FILE_COUNT=110
+PRELIMINARY_COMPARATOR_MAXIMUM_ABSOLUTE_ERROR=0
+PRELIMINARY_V44_FLOOR_VIOLATION_USER_SECONDS=6540
+PRELIMINARY_V44_UNRESOLVED_INTERVALS=523
+PRELIMINARY_HARD_GATE_PASS_SEEDS=44013,44018,44026,44027
+PRELIMINARY_FAILED_SEEDS=44001,44007,44008,44017,44024,44025,44028
+SCIENTIFIC_CANDIDATE_SOURCE_IDENTITY=PASS
+No broken requirements found.
+RORQUAL_REFERENCE_VENV_GATE=PASS
+RORQUAL_PRESERVED_CHANNEL_BINDING=PASS
+AUTHORIZATION_TOKEN_PRESENT=NO
+V44_SCHEDULING_CONCURRENT_RUN_GUARD=PASS
+sbatch: NOTE: Your memory request of 8192.0M was likely submitted as 8.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+sbatch: NOTE: Your memory request of 4096.0M was likely submitted as 4.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+V44_INFRA_REPAIR_RERUN_SUBMISSION=PASS
+ARRAY_JOB_ID=18154672
+MERGE_JOB_ID=18154673
+WORKER_ARRAY=0-10%4
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18154672_[0-10%4]         fr3-v44-r1-sched      PENDING         0:00                       (None)
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18154672_[0-10%4]         fr3-v44-r1-sched      PENDING         0:00                   (Priority)
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18154672_[0-10%4]         fr3-v44-r1-sched      PENDING         0:00                   (Priority)
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18154672_[0-10%4]         fr3-v44-r1-sched      PENDING         0:00                   (Priority)
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_0         fr3-v44-r1-sched      RUNNING         0:03                      rc32620
+              18154672_1         fr3-v44-r1-sched      RUNNING         0:03                      rc32210
+              18154672_2         fr3-v44-r1-sched      RUNNING         0:03                      rc32210
+              18154672_3         fr3-v44-r1-sched      RUNNING         0:03                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[4-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_0         fr3-v44-r1-sched      RUNNING         0:23                      rc32620
+              18154672_1         fr3-v44-r1-sched      RUNNING         0:23                      rc32210
+              18154672_2         fr3-v44-r1-sched      RUNNING         0:23                      rc32210
+              18154672_3         fr3-v44-r1-sched      RUNNING         0:23                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[4-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_0         fr3-v44-r1-sched      RUNNING         0:43                      rc32620
+              18154672_1         fr3-v44-r1-sched      RUNNING         0:43                      rc32210
+              18154672_2         fr3-v44-r1-sched      RUNNING         0:43                      rc32210
+              18154672_3         fr3-v44-r1-sched      RUNNING         0:43                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[4-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_0         fr3-v44-r1-sched      RUNNING         1:03                      rc32620
+              18154672_1         fr3-v44-r1-sched      RUNNING         1:03                      rc32210
+              18154672_2         fr3-v44-r1-sched      RUNNING         1:03                      rc32210
+              18154672_3         fr3-v44-r1-sched      RUNNING         1:03                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[4-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_0         fr3-v44-r1-sched      RUNNING         1:24                      rc32620
+              18154672_1         fr3-v44-r1-sched      RUNNING         1:24                      rc32210
+              18154672_2         fr3-v44-r1-sched      RUNNING         1:24                      rc32210
+              18154672_3         fr3-v44-r1-sched      RUNNING         1:24                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[4-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_0         fr3-v44-r1-sched      RUNNING         1:44                      rc32620
+              18154672_1         fr3-v44-r1-sched      RUNNING         1:44                      rc32210
+              18154672_2         fr3-v44-r1-sched      RUNNING         1:44                      rc32210
+              18154672_3         fr3-v44-r1-sched      RUNNING         1:44                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[4-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_0         fr3-v44-r1-sched      RUNNING         2:04                      rc32620
+              18154672_1         fr3-v44-r1-sched      RUNNING         2:04                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[4-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_0         fr3-v44-r1-sched      RUNNING         2:24                      rc32620
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[4-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_0         fr3-v44-r1-sched      RUNNING         2:44                      rc32620
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[4-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_0         fr3-v44-r1-sched      RUNNING         3:04                      rc32620
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[4-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_4         fr3-v44-r1-sched      RUNNING         0:16                      rc32210
+              18154672_5         fr3-v44-r1-sched      RUNNING         0:16                      rc32210
+              18154672_6         fr3-v44-r1-sched      RUNNING         0:16                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[7-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_4         fr3-v44-r1-sched      RUNNING         0:36                      rc32210
+              18154672_5         fr3-v44-r1-sched      RUNNING         0:36                      rc32210
+              18154672_6         fr3-v44-r1-sched      RUNNING         0:36                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[7-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_4         fr3-v44-r1-sched      RUNNING         0:56                      rc32210
+              18154672_5         fr3-v44-r1-sched      RUNNING         0:56                      rc32210
+              18154672_6         fr3-v44-r1-sched      RUNNING         0:56                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[7-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_4         fr3-v44-r1-sched      RUNNING         1:16                      rc32210
+              18154672_5         fr3-v44-r1-sched      RUNNING         1:16                      rc32210
+              18154672_6         fr3-v44-r1-sched      RUNNING         1:16                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[7-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_4         fr3-v44-r1-sched      RUNNING         1:36                      rc32210
+              18154672_5         fr3-v44-r1-sched      RUNNING         1:36                      rc32210
+              18154672_6         fr3-v44-r1-sched      RUNNING         1:36                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[7-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_4         fr3-v44-r1-sched      RUNNING         1:57                      rc32210
+              18154672_5         fr3-v44-r1-sched      RUNNING         1:57                      rc32210
+              18154672_6         fr3-v44-r1-sched      RUNNING         1:57                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[7-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[7-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[7-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+       18154672_[7-10%4]         fr3-v44-r1-sched      PENDING         0:00          (JobArrayTaskLimit)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_7         fr3-v44-r1-sched      RUNNING         0:09                      rc32401
+              18154672_8         fr3-v44-r1-sched      RUNNING         0:09                      rc32418
+              18154672_9         fr3-v44-r1-sched      RUNNING         0:09                      rc32210
+             18154672_10         fr3-v44-r1-sched      RUNNING         0:09                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_7         fr3-v44-r1-sched      RUNNING         0:29                      rc32401
+              18154672_8         fr3-v44-r1-sched      RUNNING         0:29                      rc32418
+              18154672_9         fr3-v44-r1-sched      RUNNING         0:29                      rc32210
+             18154672_10         fr3-v44-r1-sched      RUNNING         0:29                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_7         fr3-v44-r1-sched      RUNNING         0:49                      rc32401
+              18154672_8         fr3-v44-r1-sched      RUNNING         0:49                      rc32418
+              18154672_9         fr3-v44-r1-sched      RUNNING         0:49                      rc32210
+             18154672_10         fr3-v44-r1-sched      RUNNING         0:49                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_7         fr3-v44-r1-sched      RUNNING         1:09                      rc32401
+              18154672_8         fr3-v44-r1-sched      RUNNING         1:09                      rc32418
+              18154672_9         fr3-v44-r1-sched      RUNNING         1:09                      rc32210
+             18154672_10         fr3-v44-r1-sched      RUNNING         1:09                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_7         fr3-v44-r1-sched      RUNNING         1:29                      rc32401
+              18154672_8         fr3-v44-r1-sched      RUNNING         1:29                      rc32418
+              18154672_9         fr3-v44-r1-sched      RUNNING         1:29                      rc32210
+             18154672_10         fr3-v44-r1-sched      RUNNING         1:29                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_7         fr3-v44-r1-sched      RUNNING         1:49                      rc32401
+              18154672_8         fr3-v44-r1-sched      RUNNING         1:49                      rc32418
+              18154672_9         fr3-v44-r1-sched      RUNNING         1:49                      rc32210
+             18154672_10         fr3-v44-r1-sched      RUNNING         1:49                      rc32210
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18154672_8         fr3-v44-r1-sched      RUNNING         2:09                      rc32418
+                18154673         fr3-v44-r1-merge      PENDING         0:00                 (Dependency)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18154673         fr3-v44-r1-merge      PENDING         0:00                   (Priority)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18154673         fr3-v44-r1-merge      PENDING         0:00                   (Priority)
+V44_SCHEDULING_PROGRESS_END
+V44_SCHEDULING_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18154673         fr3-v44-r1-merge      RUNNING         0:02                      rc32413
+V44_SCHEDULING_PROGRESS_END
+JobIDRaw|JobName|Account|State|ExitCode|Elapsed|MaxRSS|ReqMem|AllocTRES|NodeList
+18154673|fr3-v44-r1-merge|def-rsadve_cpu|FAILED|42:0|00:00:02||4G|billing=4000,cpu=4,mem=4G,node=1|rc32413
+18154694|fr3-v44-r1-sched|def-rsadve_cpu|FAILED|42:0|00:03:09||8G|billing=8000,cpu=8,mem=8G,node=1|rc32620
+18154695|fr3-v44-r1-sched|def-rsadve_cpu|FAILED|42:0|00:02:06||8G|billing=8000,cpu=8,mem=8G,node=1|rc32210
+18154696|fr3-v44-r1-sched|def-rsadve_cpu|FAILED|42:0|00:01:58||8G|billing=8000,cpu=8,mem=8G,node=1|rc32210
+18154697|fr3-v44-r1-sched|def-rsadve_cpu|COMPLETED|0:0|00:02:00||8G|billing=8000,cpu=8,mem=8G,node=1|rc32210
+18154744|fr3-v44-r1-sched|def-rsadve_cpu|FAILED|42:0|00:01:57||8G|billing=8000,cpu=8,mem=8G,node=1|rc32210
+18154745|fr3-v44-r1-sched|def-rsadve_cpu|COMPLETED|0:0|00:01:59||8G|billing=8000,cpu=8,mem=8G,node=1|rc32210
+18154746|fr3-v44-r1-sched|def-rsadve_cpu|FAILED|42:0|00:01:57||8G|billing=8000,cpu=8,mem=8G,node=1|rc32210
+18154796|fr3-v44-r1-sched|def-rsadve_cpu|FAILED|42:0|00:02:02||8G|billing=8000,cpu=8,mem=8G,node=1|rc32401
+18154797|fr3-v44-r1-sched|def-rsadve_cpu|COMPLETED|0:0|00:02:17||8G|billing=8000,cpu=8,mem=8G,node=1|rc32418
+18154798|fr3-v44-r1-sched|def-rsadve_cpu|COMPLETED|0:0|00:01:54||8G|billing=8000,cpu=8,mem=8G,node=1|rc32210
+18154672|fr3-v44-r1-sched|def-rsadve_cpu|FAILED|42:0|00:01:53||8G|billing=8000,cpu=8,mem=8G,node=1|rc32210
+V44_SCHEDULING_RETURN_PACKAGING=PASS
+REMOTE_RETURN_ZIP=/scratch/rsadve1/FR3_V44_SCHEDULING_INFRA_REPAIR_R1_ea5a21b4b96e/return/FR3_RORQUAL_V4_4_SCHEDULING_INFRA_REPAIR_R1_18154672.zip
+REMOTE_RETURN_ZIP_SHA256=b3ebce19ade5379313f76d4e5d4ddb265b1c983cf4f9d83e3e79035657ae113c
+DIAGNOSTIC_SEED_RETURN_COUNT=11
+V44_SCHEDULING_DEVELOPMENT_STATUS=V4_4_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_INCOMPLETE
+NEXT_GATE=DESIGN_USER_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_FALLBACK
+status=V4_4_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_INCOMPLETE
+failed_seed_hard_gate_pass_count=4
+failed_seed_bounded_scope_pass_count=9
+original_v4_3_unresolved_interval_count=1736
+scheduling_success_interval_count=1213
+scheduling_failure_interval_count=523
+candidate_floor_violation_user_seconds=6540
+candidate_long_eess_violation_seconds=0
+candidate_short_eess_violation_seconds=0
+maximum_protected_subband_scheduled_fraction=0.919
+maximum_schedule_mutable_sector_count=10
+all30_development_primary_candidate_minus_static={'bootstrap_resamples': 10000, 'bootstrap_seed': 20260805, 'lower_95': 0.24020277718481348, 'median_bootstrap_mean': 0.2884303536154807, 'point_estimate': 0.2883226657791487, 'seed_cluster_standard_deviation': 0.1397478048266683, 'upper_95': 0.33817006064615335}
+next_repair_decision=PROTECTED_SUBBAND_REASSIGNMENT_OR_ADMISSION_REQUIRED
+next_gate=DESIGN_USER_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_FALLBACK
+REMOTE_RETURN_ZIP=/scratch/rsadve1/FR3_V44_SCHEDULING_INFRA_REPAIR_R1_ea5a21b4b96e/return/FR3_RORQUAL_V4_4_SCHEDULING_INFRA_REPAIR_R1_18154672.zip
+REMOTE_RETURN_ZIP_SHA256=b3ebce19ade5379313f76d4e5d4ddb265b1c983cf4f9d83e3e79035657ae113c
+ARRAY_JOB_ID=18154672
+MERGE_JOB_ID=18154673
+MERGE_STATE=FAILED
+MERGE_EXIT_CODE=42:0
+CHANNEL_REGENERATION=NO
+GPU_REQUESTED=NO
+WORKER_WALLTIME=00:06:00
+WORKER_MEMORY=8G
+MERGE_WALLTIME=00:03:00
+MERGE_MEMORY=4G
+REMOTE_WRAPPER_EXIT_CODE=42
+REMOTE_WRAPPER_EXIT_CODE=42
+DIAGNOSTIC_RETRIEVAL_EXIT_CODE=0
+RETURN_SIDECAR_BASENAME_GATE=PASS
+V44_SCHEDULING_RETURN_SHA256_GATE=PASS
+V44_SCHEDULING_RETURN_ZIP_CRC=PASS
+V44_SCHEDULING_RETURN_MANIFEST=PASS
+V44_SCHEDULING_RETURN_COMPLETENESS=COMPLETE
+FAILED_SEED_RETURN_COUNT=11
+MISSING_FAILED_SEEDS=
+V44_SCHEDULING_DEVELOPMENT_STATUS=V4_4_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_INCOMPLETE
+NEXT_REPAIR_DECISION=PROTECTED_SUBBAND_REASSIGNMENT_OR_ADMISSION_REQUIRED
+NEXT_GATE=DESIGN_USER_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_FALLBACK
+Cloning into '/mnt/c/Users/alifa/Downloads/FR3_V44_SCHEDULING_INFRA_REPAIR_RETURN_20260802_190019/github_evidence_clone'...
+Updating files:  14% (390/2678)
+Updating files:  15% (402/2678)
+Updating files:  16% (429/2678)
+Updating files:  17% (456/2678)
+Updating files:  18% (483/2678)
+Updating files:  19% (509/2678)
+Updating files:  20% (536/2678)
+Updating files:  21% (563/2678)
+Updating files:  21% (583/2678)
+Updating files:  22% (590/2678)
+Updating files:  22% (603/2678)
+Updating files:  23% (616/2678)
+Updating files:  24% (643/2678)
+Updating files:  25% (670/2678)
+Updating files:  25% (679/2678)
+Updating files:  26% (697/2678)
+Updating files:  27% (724/2678)
+Updating files:  28% (750/2678)
+Updating files:  29% (777/2678)
+Updating files:  30% (804/2678)
+Updating files:  31% (831/2678)
+Updating files:  32% (857/2678)
+Updating files:  33% (884/2678)
+Updating files:  34% (911/2678)
+Updating files:  34% (934/2678)
+Updating files:  35% (938/2678)
+Updating files:  36% (965/2678)
+Updating files:  37% (991/2678)
+Updating files:  38% (1018/2678)
+Updating files:  39% (1045/2678)
+Updating files:  40% (1072/2678)
+Updating files:  41% (1098/2678)
+Updating files:  42% (1125/2678)
+Updating files:  43% (1152/2678)
+Updating files:  44% (1179/2678)
+Updating files:  45% (1206/2678)
+Updating files:  45% (1224/2678)
+Updating files:  46% (1232/2678)
+Updating files:  47% (1259/2678)
+Updating files:  48% (1286/2678)
+Updating files:  49% (1313/2678)
+Updating files:  50% (1339/2678)
+Updating files:  51% (1366/2678)
+Updating files:  52% (1393/2678)
+Updating files:  53% (1420/2678)
+Updating files:  54% (1447/2678)
+Updating files:  55% (1473/2678)
+Updating files:  56% (1500/2678)
+Updating files:  57% (1527/2678)
+Updating files:  57% (1552/2678)
+Updating files:  58% (1554/2678)
+Updating files:  59% (1581/2678)
+Updating files:  60% (1607/2678)
+Updating files:  61% (1634/2678)
+Updating files:  62% (1661/2678)
+Updating files:  63% (1688/2678)
+Updating files:  64% (1714/2678)
+Updating files:  65% (1741/2678)
+Updating files:  66% (1768/2678)
+Updating files:  67% (1795/2678)
+Updating files:  68% (1822/2678)
+Updating files:  69% (1848/2678)
+Updating files:  70% (1875/2678)
+Updating files:  71% (1902/2678)
+Updating files:  71% (1907/2678)
+Updating files:  72% (1929/2678)
+Updating files:  73% (1955/2678)
+Updating files:  74% (1982/2678)
+Updating files:  75% (2009/2678)
+Updating files:  76% (2036/2678)
+Updating files:  77% (2063/2678)
+Updating files:  78% (2089/2678)
+Updating files:  79% (2116/2678)
+Updating files:  80% (2143/2678)
+Updating files:  80% (2158/2678)
+Updating files:  81% (2170/2678)
+Updating files:  82% (2196/2678)
+Updating files:  83% (2223/2678)
+Updating files:  84% (2250/2678)
+Updating files:  85% (2277/2678)
+Updating files:  86% (2304/2678)
+Updating files:  87% (2330/2678)
+Updating files:  88% (2357/2678)
+Updating files:  89% (2384/2678)
+Updating files:  90% (2411/2678)
+Updating files:  90% (2417/2678)
+Updating files:  91% (2437/2678)
+Updating files:  92% (2464/2678)
+Updating files:  93% (2491/2678)
+Updating files:  94% (2518/2678)
+Updating files:  95% (2545/2678)
+Updating files:  96% (2571/2678)
+Updating files:  97% (2598/2678)
+Updating files:  98% (2625/2678)
+Updating files:  99% (2652/2678)
+Updating files: 100% (2678/2678)
+Updating files: 100% (2678/2678), done.

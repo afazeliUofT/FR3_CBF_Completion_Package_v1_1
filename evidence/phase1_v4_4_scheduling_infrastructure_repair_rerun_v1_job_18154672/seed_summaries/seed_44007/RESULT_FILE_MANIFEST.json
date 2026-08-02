@@ -1,0 +1,62 @@
+{
+  "CELL_SUMMARY.csv": {
+    "bytes": 40928,
+    "sha256": "73fb1f491f5c7b66eb0f18c6d4f2994979237c2d25ab519ab54d6eb45bdf6479"
+  },
+  "PASS_0_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 7067,
+    "sha256": "df645111702e67bfd232ad71dc4c05a21db301e5237fe7c9d3c1af8ec245982e"
+  },
+  "PASS_0_METHOD_TRACES.npz": {
+    "bytes": 65397,
+    "sha256": "44a31ec253ad47549a8275b5b818977853ee81c4546dfe63bb7f0fc9ab3d583c"
+  },
+  "PASS_1_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 6617,
+    "sha256": "2ced062d6ca05c804276b4d78054166a4f4778b1c68050cca8b6a4b2008f85ad"
+  },
+  "PASS_1_METHOD_TRACES.npz": {
+    "bytes": 64229,
+    "sha256": "177245cd427c51b48780c5879d6d8ec709deaaf3c5fd52b7c6fe574ea1e60b79"
+  },
+  "PASS_2_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 6795,
+    "sha256": "d0c33a25afe0a7792638223cf8cc131a43d613dc29312f01a2ff495e2dd0d38f"
+  },
+  "PASS_2_METHOD_TRACES.npz": {
+    "bytes": 65091,
+    "sha256": "69835a4c3d96da817a6482a47e8197633b08d4cc3feb25b08770a5fced596498"
+  },
+  "PASS_3_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 6860,
+    "sha256": "70eef8cedfce8a5e9855a133443e15e9be69a4241465d789d718035a66a49584"
+  },
+  "PASS_3_METHOD_TRACES.npz": {
+    "bytes": 66301,
+    "sha256": "1e471e36060e423797026a1d6cddc97da7ff734a4f96fc064495d5017f159a25"
+  },
+  "PASS_4_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 7016,
+    "sha256": "bd49041b2fc5b59309586ffe11cc56a0d903a1846eb1c3ae3833c61915513882"
+  },
+  "PASS_4_METHOD_TRACES.npz": {
+    "bytes": 67139,
+    "sha256": "e0fc82f14363f7905f7c00bc1a1c16f28af17f623fa7854af21fa9df61fcdeb0"
+  },
+  "PASS_AUDITS.json": {
+    "bytes": 1086446,
+    "sha256": "7bf3d9d787aca97424eb4ade480c42a50281d5fa258d4470c42190b352ff42a4"
+  },
+  "PRIMARY_PAIRED_EFFECTS.csv": {
+    "bytes": 610,
+    "sha256": "0fdd8c9312a776ea8e0d5da8d6c42327103d9039831d98c720bcd88b4ac54d44"
+  },
+  "SCHEDULING_PASS_SUMMARY.csv": {
+    "bytes": 448,
+    "sha256": "77c99415943742b58b87b0164d0eb5ab57a3679331a3b9e6c2d8066a673b44f4"
+  },
+  "V44_SCHEDULING_SEED_RESULT.json": {
+    "bytes": 1945,
+    "sha256": "75d59cda461fe6aa9b783bc98369f36d33e1e975ee54a26722cc4a4a17e5cad1"
+  }
+}

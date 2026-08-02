@@ -1,0 +1,91 @@
+{
+  "branch": "e3-first-sector-p452",
+  "campaign_rerun_authorized": false,
+  "candidate_method_id": "candidate_v4_4_floor_first_protected_subband_scheduling",
+  "candidate_scientific_source_changed": false,
+  "candidate_scientific_source_sha256": {
+    "src/fr3_cbf/candidate_v4_4_scheduling_campaign.py": "4c81e7cd77458064b59e17f7998131a018e87e107c40309527177afc34ce8311",
+    "src/fr3_cbf/protected_subband_scheduler.py": "4dceabf6a3747310c653931df0b18a688dc5942a64103828f0b21a614d537775"
+  },
+  "fresh_holdout_authorized": false,
+  "next_gate": "RERUN_11_PRESERVED_FAILED_SEEDS_WITH_JSON_SERIALIZATION_REPAIR",
+  "package_id": "FR3_CBF_V4_4_SCHEDULING_INFRASTRUCTURE_REPAIR_RERUN_V1",
+  "preliminary_salvage_audit": {
+    "all_eight_comparator_maximum_absolute_error": 0.0,
+    "claim_boundary": "PRELIMINARY_UNMERGED_DATA_NOT_FINAL_V4_4_EVIDENCE",
+    "preliminary_failed_seeds": [
+      44001,
+      44007,
+      44008,
+      44017,
+      44024,
+      44025,
+      44028
+    ],
+    "preliminary_hard_gate_pass_seeds": [
+      44013,
+      44018,
+      44026,
+      44027
+    ],
+    "preliminary_long_eess_violation_seconds": 0,
+    "preliminary_q0_headroom_actions": 0,
+    "preliminary_short_eess_violation_seconds": 0,
+    "preliminary_strict_local_scope": "PASS",
+    "preliminary_strict_post_mode_power": "PASS",
+    "preliminary_v4_4_floor_violation_user_seconds": 6540,
+    "preliminary_v4_4_unresolved_intervals": 523,
+    "reduction_percent": 67.29018705611684,
+    "reduction_percent_unresolved": 69.87327188940093,
+    "v4_3_floor_violation_user_seconds": 19994,
+    "v4_3_unresolved_intervals": 1736
+  },
+  "prior_failure_binding": {
+    "array_job_id": "18153316",
+    "classification": "INFRASTRUCTURE_ONLY_AFTER_PASS_EVALUATION",
+    "failure_point": "write_json(result_root / 'PASS_AUDITS.json', pass_audits)",
+    "merge_failure": "all 11 V44_SCHEDULING_SEED_RESULT.json files were absent",
+    "merge_job_id": "18153317",
+    "return_zip": "immutable_bindings/FR3_RORQUAL_V4_4_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_18153316.zip",
+    "return_zip_sha256": "8001c6dd16e10b92b4d3cce5a59a1b5e4eed641dc022b1449b51e72ec5a6606b",
+    "root_exception": "TypeError: Object of type ndarray is not JSON serializable",
+    "worker_exit_codes": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "repair_scope": {
+    "changed_behavior": "JSON writer converts numpy.ndarray to lists and numpy scalar values to Python scalars.",
+    "changed_file": "scripts/replay_v44_scheduling_seed.py",
+    "unchanged": [
+      "floor definition and comparison tolerance",
+      "long- and short-term EESS constraints and tolerance",
+      "predictive q trajectories",
+      "fixed RZF directions",
+      "protected-subband scheduling modes and guard limits",
+      "objective hierarchy",
+      "all candidate-v4.4 scientific modules"
+    ]
+  },
+  "required_github_ancestor": "639c78fd52b3d86597d6f19fc05d1478e4fd8d72",
+  "resource_policy": {
+    "merge_cpus_per_task": 4,
+    "merge_memory_gib": 4,
+    "merge_walltime": "00:03:00",
+    "rationale": "The failed workers reached the serialization point in 1:48-2:40. Six minutes gives more than twice the observed maximum while improving backfill eligibility. Eight GiB is conservative relative to prior measured CPU/H100 resident memory.",
+    "worker_array": "0-10%4",
+    "worker_cpus_per_task": 8,
+    "worker_memory_gib": 8,
+    "worker_walltime": "00:06:00"
+  },
+  "schema_version": 1
+}

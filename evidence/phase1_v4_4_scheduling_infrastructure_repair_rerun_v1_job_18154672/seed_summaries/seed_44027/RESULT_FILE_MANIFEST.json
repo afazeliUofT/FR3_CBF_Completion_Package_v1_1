@@ -1,0 +1,62 @@
+{
+  "CELL_SUMMARY.csv": {
+    "bytes": 39760,
+    "sha256": "dee3709338df03a00d7ca09d98fa604fe46482b0e120671163059a700b41afc9"
+  },
+  "PASS_0_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 5808,
+    "sha256": "8d3398c46131893709405590d98fc57782dcf075ab837d8a453564daeea3847c"
+  },
+  "PASS_0_METHOD_TRACES.npz": {
+    "bytes": 63466,
+    "sha256": "510a3c173dc6642f714ba671996c5bc00bf8e6a50b4554e1b8ae933733e318f4"
+  },
+  "PASS_1_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 5367,
+    "sha256": "d3095f4bdc19022859b25917ca9287a0cc653a5e6cf72eccf91dfe0314afdeca"
+  },
+  "PASS_1_METHOD_TRACES.npz": {
+    "bytes": 62029,
+    "sha256": "3c5715bd07a0907f1ad1177cd7dbecae403d7bbb840db336dab7f5c3b2c5c891"
+  },
+  "PASS_2_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 5809,
+    "sha256": "85da564943d2cfd1c529519f5c7981c66392acac2bed55018c45a7cd7a3a22f0"
+  },
+  "PASS_2_METHOD_TRACES.npz": {
+    "bytes": 62149,
+    "sha256": "05721aef87408496f579c4567b12dedb8e949ca408d302dc196536db008c171d"
+  },
+  "PASS_3_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 6058,
+    "sha256": "5f7fe226583948ad47d263845b28e4405b2b0cfe216279c5e2c83c26862fb6ce"
+  },
+  "PASS_3_METHOD_TRACES.npz": {
+    "bytes": 63210,
+    "sha256": "bf906e0b9bd405908f02c98677602f2be332e78845f2f3c3f483b1e58d4eacae"
+  },
+  "PASS_4_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 6088,
+    "sha256": "1c717a3cb75f5ee51ad8d6bd47259ce2174b8bdb59900efb302f47ce9e940786"
+  },
+  "PASS_4_METHOD_TRACES.npz": {
+    "bytes": 64110,
+    "sha256": "4caa06899896f3f3e6ff850a03ba2bbc4f04a24d1adcf6304a99df2f2ce1df20"
+  },
+  "PASS_AUDITS.json": {
+    "bytes": 562542,
+    "sha256": "8a8ae45600f40bc1fd529eb96a3edaecafb24221343509f65e0fe4f7470f31fc"
+  },
+  "PRIMARY_PAIRED_EFFECTS.csv": {
+    "bytes": 623,
+    "sha256": "ff740cc91c5d6bb83aa05082c43cef4bcba2874b3f43772543057233737f9ed9"
+  },
+  "SCHEDULING_PASS_SUMMARY.csv": {
+    "bytes": 382,
+    "sha256": "39efdfd4ef9322eeeabcbf39e4a1c846fbd0a709f9cc7823321d71c33ecb52b4"
+  },
+  "V44_SCHEDULING_SEED_RESULT.json": {
+    "bytes": 1909,
+    "sha256": "40f6c65738d30e925278bfe44fa431410f294c2527f1e849cfb6ff6f1b7a1820"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "array_job_id": "18154672",
+  "campaign_rerun_authorized": false,
+  "channel_regenerated": false,
+  "created_utc": "2026-08-02T19:12:22.100708+00:00",
+  "expected_failed_seed_return_count": 11,
+  "failed_seed_return_count": 11,
+  "fresh_confirmation": false,
+  "gpu_requested": false,
+  "merge_job_id": "18154673",
+  "next_gate": "DESIGN_USER_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_FALLBACK",
+  "raw_channels_included": false,
+  "schema_version": 1,
+  "status": "V4_4_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_INCOMPLETE"
+}
