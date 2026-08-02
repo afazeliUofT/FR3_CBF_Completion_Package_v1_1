@@ -1,0 +1,949 @@
+=================================================================
+FR3 V4.5 — FREEZE, TWC DRAFT START, AND FRESH HOLDOUT
+=================================================================
+PACKAGE_ROOT=/home/afazeli2006/fr3_v45_freeze_twc_holdout_outer_runs/20260802_214737/extracted/FR3_CBF_v1_1_Candidate_v4_5_Freeze_TWC_Draft_Fresh_Holdout_DropIn_v1_2026-08-02
+REPO=/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1
+RORQUAL_HOST=rsadve1@rorqual.alliancecan.ca
+DEVELOPMENT_TUNING_STOPPED=YES
+FRESH_HOLDOUT_SEEDS=44030-44059
+WORKER_WALLTIME=00:10:00
+WORKER_MEMORY=16G
+AUTOMATIC_EXTRA_PROBES_AUTHORIZED=NO
+WSL_TERMINAL_CLOSE_REQUESTED=NO
+INTERNAL_MANIFEST_VERIFICATION=PASS
+SOURCE_PAYLOAD_MANIFEST_VERIFICATION=PASS
+EXECUTION_ARCHIVE_SHA256_GATE=PASS
+REPO_VENV_ACTIVATED=YES
+No broken requirements found.
+LOCAL_VENV_DEPENDENCY_GATE=PASS
+PYTHON_IN_MEMORY_SYNTAX_CHECK=PASS
+PYTHON_SYNTAX_FILE_COUNT=6
+BASH_SYNTAX_CHECK=PASS
+......                                                                   [100%]
+6 passed in 1.19s
+V45_DEVELOPMENT_RETURN_BINDING=PASS
+V45_DEVELOPMENT_SUMMARY_AUDIT=PASS
+V45_HOLDOUT_JOB_PACKAGE_BINDING=PASS
+V45_FREEZE_DECISION=PASS_STOP_ALGORITHM_TUNING
+V45_MARGINAL_INTERVALS_CLOSED_OVER_V44=4
+V45_MARGINAL_INTERVAL_CLOSURE_PERCENT=0.764818356
+MAJOR_REMAINING_ISSUE=FIXED_ASSOCIATION_BOUNDED_ACTION_SERVICEABILITY
+TWC_MANUSCRIPT_START_AUTHORIZED=YES
+FRESH_HOLDOUT_AUTHORIZED=YES_EXACT_SEEDS_44030_44059_ONLY
+AUTOMATIC_EXTRA_PROBES_AUTHORIZED=NO
+NEXT_GATE=FRESH_V4_5_HOLDOUT_AND_13_PAGE_TWC_RESULTS_INTEGRATION
+LOCAL_QUALITY_GATE=PASS
+Cloning into '/home/afazeli2006/fr3_v45_freeze_twc_holdout_runs/20260802_214738/github_source_clone'...
+Updating files:  20% (607/2968)Updating files:  21% (624/2968)Updating files:  22% (653/2968)Updating files:  23% (683/2968)Updating files:  24% (713/2968)Updating files:  25% (742/2968)Updating files:  26% (772/2968)Updating files:  27% (802/2968)Updating files:  28% (832/2968)Updating files:  29% (861/2968)Updating files:  30% (891/2968)Updating files:  31% (921/2968)Updating files:  32% (950/2968)Updating files:  33% (980/2968)Updating files:  34% (1010/2968)Updating files:  35% (1039/2968)Updating files:  36% (1069/2968)Updating files:  37% (1099/2968)Updating files:  38% (1128/2968)Updating files:  39% (1158/2968)Updating files:  40% (1188/2968)Updating files:  41% (1217/2968)Updating files:  42% (1247/2968)Updating files:  43% (1277/2968)Updating files:  44% (1306/2968)Updating files:  45% (1336/2968)Updating files:  46% (1366/2968)Updating files:  47% (1395/2968)Updating files:  48% (1425/2968)Updating files:  49% (1455/2968)Updating files:  50% (1484/2968)Updating files:  51% (1514/2968)Updating files:  52% (1544/2968)Updating files:  53% (1574/2968)Updating files:  54% (1603/2968)Updating files:  55% (1633/2968)Updating files:  56% (1663/2968)Updating files:  57% (1692/2968)Updating files:  58% (1722/2968)Updating files:  59% (1752/2968)Updating files:  60% (1781/2968)Updating files:  61% (1811/2968)Updating files:  62% (1841/2968)Updating files:  63% (1870/2968)Updating files:  64% (1900/2968)Updating files:  65% (1930/2968)Updating files:  66% (1959/2968)Updating files:  67% (1989/2968)Updating files:  68% (2019/2968)Updating files:  69% (2048/2968)Updating files:  70% (2078/2968)Updating files:  71% (2108/2968)Updating files:  72% (2137/2968)Updating files:  73% (2167/2968)Updating files:  74% (2197/2968)Updating files:  75% (2226/2968)Updating files:  76% (2256/2968)Updating files:  77% (2286/2968)Updating files:  78% (2316/2968)Updating files:  79% (2345/2968)Updating files:  80% (2375/2968)Updating files:  81% (2405/2968)Updating files:  82% (2434/2968)Updating files:  82% (2445/2968)Updating files:  83% (2464/2968)Updating files:  84% (2494/2968)Updating files:  85% (2523/2968)Updating files:  86% (2553/2968)Updating files:  87% (2583/2968)Updating files:  88% (2612/2968)Updating files:  89% (2642/2968)Updating files:  90% (2672/2968)Updating files:  91% (2701/2968)Updating files:  92% (2731/2968)Updating files:  93% (2761/2968)Updating files:  94% (2790/2968)Updating files:  95% (2820/2968)Updating files:  96% (2850/2968)Updating files:  97% (2879/2968)Updating files:  98% (2909/2968)Updating files:  99% (2939/2968)Updating files: 100% (2968/2968)Updating files: 100% (2968/2968), done.
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+GITHUB_REQUIRED_ANCESTOR_GATE=PASS
+GIT_HEAD_BEFORE=76a62cda5d649cad25a6a45ccb5f0f757a99a269
+GIT_REMOTE_HEAD_BEFORE=66daf6ba3b924090e451b3bb08045a6814a7f889
+[e3-first-sector-p452 0d80022] Freeze candidate-v4.5, start TWC draft, and authorize fresh holdout
+ 35 files changed, 3244 insertions(+)
+ create mode 100644 campaign/phase1_rorqual_v4_5_fresh_holdout_v1/FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_5_HOLDOUT_v1.zip
+ create mode 100644 campaign/phase1_rorqual_v4_5_fresh_holdout_v1/FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_5_HOLDOUT_v1.zip.sha256
+ create mode 100644 campaign/phase1_rorqual_v4_5_fresh_holdout_v1/FREEZE_HOLDOUT_CONTRACT.json
+ create mode 100644 paper/twc_v4_5_draft_start/FR3_TWC_v4_5_manuscript_start.tex
+ create mode 100644 paper/twc_v4_5_draft_start/data/V45_COMPANION_AWARE_DEVELOPMENT_SUMMARY.json
+ create mode 100644 paper/twc_v4_5_draft_start/data/V45_FAILED_SEED_HARD_GATE_SUMMARY.csv
+ create mode 100644 paper/twc_v4_5_draft_start/references.bib
+ create mode 100644 paper/twc_v4_5_draft_start/tables/development_key_results.tex
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/PACKAGE_VERSION.json
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/README.md
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/SOURCE_PAYLOAD_MANIFEST.sha256
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/config/FREEZE_HOLDOUT_CONTRACT.json
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/docs/BUILD_VALIDATION.md
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/docs/EXPECTED_SUCCESS_MARKERS.md
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/docs/RETURN_CONTRACT.md
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/docs/SCIENTIFIC_VERDICT_AND_CLAIM_POLICY.md
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/docs/TWC_PROGRESS_AND_REMAINING.md
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/docs/WSL_RORQUAL_WORKFLOW.md
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/immutable_bindings/FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_5_HOLDOUT_v1.zip.sha256
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/immutable_bindings/FR3_RORQUAL_V4_5_COMPANION_AWARE_DEVELOPMENT_18159228.zip.sha256
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/immutable_bindings/V43_ACTION_AND_RUNTIME_SUMMARY.json
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/immutable_bindings/V43_DEVELOPMENT_ALL_CELL_SUMMARY.csv
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/immutable_bindings/V43_DEVELOPMENT_BOOTSTRAP_SUMMARY.json
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/immutable_bindings/V45_COMPANION_AWARE_DEVELOPMENT_SUMMARY.json
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/immutable_bindings/V45_FAILED_SEED_HARD_GATE_SUMMARY.csv
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/requirements.txt
+ create mode 100755 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/scripts/audit_and_freeze_v45.py
+ create mode 100755 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/scripts/audit_fresh_holdout_return.py
+ create mode 100755 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/scripts/issue_fresh_holdout_authorization.py
+ create mode 100755 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/scripts/package_fresh_holdout_return.py
+ create mode 100755 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/scripts/package_local_failure.py
+ create mode 100644 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/tests/test_freeze_holdout_package.py
+ create mode 100755 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/wrappers/REMOTE_ORCHESTRATE_V45_FRESH_HOLDOUT.sh
+ create mode 100755 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/wrappers/RORQUAL_FINALIZE_V45_FRESH_HOLDOUT.sh
+ create mode 100755 tools/phase1_v4_5_freeze_twc_fresh_holdout_v1/wrappers/RUN_V45_FREEZE_TWC_HOLDOUT_FROM_WSL.sh
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+To github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1.git
+   66daf6b..0d80022  HEAD -> e3-first-sector-p452
+HOLDOUT_SOURCE_COMMIT=0d800223950fcfbd034de23eae74be4af1fa638f
+GITHUB_NEWER_WORK_OVERWRITTEN=NO
+Multifactor authentication is now mandatory to connect to this cluster.
+You can enroll your account into multifactor authentication on this page:
+https://ccdb.alliancecan.ca/multi_factor_authentications
+by following the instructions available here:
+https://docs.alliancecan.ca/wiki/Multifactor_authentication
+
+=============================================================================
+
+L'authentification multifacteur est maintenant obligatoire pour vous connecter
+à cette grappe. Configurez votre compte sur
+https://ccdb.alliancecan.ca/multi_factor_authentications
+et suivez les directives dans
+https://docs.alliancecan.ca/wiki/Multifactor_authentication/fr.
+Success. Logging you in...
+REMOTE_HOST=rorqual2.rorqual.calcul.quebec
+REMOTE_SCRATCH=/lustre10/scratch/rsadve1
+EXECUTION_CLUSTER=rorqual
+EXECUTION_STAGE=FRESH_V4_5_HOLDOUT_30_SEED
+HOLDOUT_SEEDS=44030-44059
+SLURM_ARRAY=0-29%8
+WORKER_WALLTIME=00:10:00
+WORKER_MEMORY=16G
+MERGE_WALLTIME=00:05:00
+MERGE_MEMORY=8G
+AUTOMATIC_EXTRA_PROBES_AUTHORIZED=NO
+EXPECTED_EXECUTION_PACKAGE_SHA256=9ff92c65e5d870940eaf64310bbded8f606256be7c73a5771381f523e8caa729
+ACTUAL_EXECUTION_PACKAGE_SHA256=9ff92c65e5d870940eaf64310bbded8f606256be7c73a5771381f523e8caa729
+REMOTE_EXECUTION_PACKAGE_SHA256_GATE=PASS
+EXISTING_HOLDOUT_RUN_ATTACHED=NO
+HOLDOUT_RUN_ROOT=/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_V45_FRESH_HOLDOUT_00a3561864f8_20260802_214813
+REMOTE_EXECUTION_PACKAGE_MANIFEST_VERIFICATION=PASS
+V45_DEVELOPMENT_RETURN_BINDING=PASS
+V45_DEVELOPMENT_SUMMARY_AUDIT=PASS
+V45_HOLDOUT_JOB_PACKAGE_BINDING=PASS
+V45_FREEZE_DECISION=PASS_STOP_ALGORITHM_TUNING
+V45_MARGINAL_INTERVALS_CLOSED_OVER_V44=4
+V45_MARGINAL_INTERVAL_CLOSURE_PERCENT=0.764818356
+MAJOR_REMAINING_ISSUE=FIXED_ASSOCIATION_BOUNDED_ACTION_SERVICEABILITY
+TWC_MANUSCRIPT_START_AUTHORIZED=YES
+FRESH_HOLDOUT_AUTHORIZED=YES_EXACT_SEEDS_44030_44059_ONLY
+AUTOMATIC_EXTRA_PROBES_AUTHORIZED=NO
+NEXT_GATE=FRESH_V4_5_HOLDOUT_AND_13_PAGE_TWC_RESULTS_INTEGRATION
+REMOTE_HOLDOUT_JOB_PACKAGE_MANIFEST_VERIFICATION=PASS
+RORQUAL_CONCURRENT_HOLDOUT_GUARD=PASS
+PHASE-1 EXISTING SCRATCH ENVIRONMENT REUSE: PASS
+No broken requirements found.
+No broken requirements found.
+RORQUAL_EXACT_REFERENCE_ENVIRONMENT_GATE=PASS
+FRESH_HOLDOUT_AUTHORIZATION_ISSUED=PASS
+NATIVE_AUTHORIZATION_GUARD=PASS
+AUTHORIZATION_TOKEN_SHA256=dd867b2e7c4b56209613fefb65ba5724665dcb3f09be855e1c6dc879c6159a55
+AUTHORIZATION_EXPIRES_UTC=2026-08-09T21:48:26.072275+00:00
+AUTHORIZED_SEED_COUNT=30
+AUTHORIZED_SEED_FIRST=44030
+AUTHORIZED_SEED_LAST=44059
+EXECUTION_STAGE=FRESH_V4_5_HOLDOUT_30_SEED
+AUTOMATIC_EXTRA_PROBES_AUTHORIZED=NO
+sbatch: NOTE: Your memory request of 16384.0M was likely submitted as 16.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+sbatch: NOTE: Your memory request of 8192.0M was likely submitted as 8.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+sbatch: NOTE: Your memory request of 8192.0M was likely submitted as 8.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+FRESH_V45_HOLDOUT_SUBMISSION=PASS
+ARRAY_JOB_ID=18163102
+MERGE_JOB_ID=18163103
+FINALIZER_JOB_ID=18163104
+SLURM_ARRAY=0-29%8
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (None)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+     18163102_[0-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_0                fr3-v45-holdout    RUNNING         0:26 rg32501
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_0                fr3-v45-holdout    RUNNING         0:56 rg32501
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_0                fr3-v45-holdout    RUNNING         1:26 rg32501
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_0                fr3-v45-holdout    RUNNING         1:56 rg32501
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_0                fr3-v45-holdout    RUNNING         2:26 rg32501
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_0                fr3-v45-holdout    RUNNING         2:56 rg32501
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_0                fr3-v45-holdout    RUNNING         3:26 rg32501
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[1-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_1                fr3-v45-holdout    RUNNING         0:08 rg31703
+            18163102_2                fr3-v45-holdout    RUNNING         0:04 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[3-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_1                fr3-v45-holdout    RUNNING         0:38 rg31703
+            18163102_2                fr3-v45-holdout    RUNNING         0:34 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[3-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_1                fr3-v45-holdout    RUNNING         1:08 rg31703
+            18163102_2                fr3-v45-holdout    RUNNING         1:04 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[3-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_1                fr3-v45-holdout    RUNNING         1:38 rg31703
+            18163102_2                fr3-v45-holdout    RUNNING         1:34 rg21802
+            18163102_3                fr3-v45-holdout    RUNNING         0:05 rg31701
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[4-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_1                fr3-v45-holdout    RUNNING         2:08 rg31703
+            18163102_2                fr3-v45-holdout    RUNNING         2:04 rg21802
+            18163102_3                fr3-v45-holdout    RUNNING         0:35 rg31701
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[4-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_1                fr3-v45-holdout    RUNNING         2:38 rg31703
+            18163102_2                fr3-v45-holdout    RUNNING         2:34 rg21802
+            18163102_3                fr3-v45-holdout    RUNNING         1:05 rg31701
+            18163102_4                fr3-v45-holdout    RUNNING         0:03 rg31501
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[5-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_1                fr3-v45-holdout    RUNNING         3:08 rg31703
+            18163102_2                fr3-v45-holdout    RUNNING         3:04 rg21802
+            18163102_3                fr3-v45-holdout    RUNNING         1:35 rg31701
+            18163102_4                fr3-v45-holdout    RUNNING         0:33 rg31501
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[5-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_1                fr3-v45-holdout    RUNNING         3:38 rg31703
+            18163102_3                fr3-v45-holdout    RUNNING         2:05 rg31701
+            18163102_4                fr3-v45-holdout    RUNNING         1:03 rg31501
+            18163102_5                fr3-v45-holdout    RUNNING         0:23 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[6-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_3                fr3-v45-holdout    RUNNING         2:35 rg31701
+            18163102_4                fr3-v45-holdout    RUNNING         1:33 rg31501
+            18163102_5                fr3-v45-holdout    RUNNING         0:53 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[6-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_3                fr3-v45-holdout    RUNNING         3:05 rg31701
+            18163102_4                fr3-v45-holdout    RUNNING         2:03 rg31501
+            18163102_5                fr3-v45-holdout    RUNNING         1:23 rg21802
+            18163102_6                fr3-v45-holdout    RUNNING         0:08 rg31703
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[7-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_3                fr3-v45-holdout    RUNNING         3:35 rg31701
+            18163102_4                fr3-v45-holdout    RUNNING         2:33 rg31501
+            18163102_5                fr3-v45-holdout    RUNNING         1:53 rg21802
+            18163102_6                fr3-v45-holdout    RUNNING         0:38 rg31703
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[7-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_5                fr3-v45-holdout    RUNNING         2:24 rg21802
+            18163102_6                fr3-v45-holdout    RUNNING         1:09 rg31703
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[7-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_5                fr3-v45-holdout    RUNNING         2:54 rg21802
+            18163102_6                fr3-v45-holdout    RUNNING         1:39 rg31703
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[7-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_5                fr3-v45-holdout    RUNNING         3:24 rg21802
+            18163102_6                fr3-v45-holdout    RUNNING         2:09 rg31703
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[7-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_5                fr3-v45-holdout    RUNNING         3:54 rg21802
+            18163102_6                fr3-v45-holdout    RUNNING         2:39 rg31703
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+     18163102_[7-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         0:24 rg31801
+            18163102_8                fr3-v45-holdout    RUNNING         0:24 rg31501
+            18163102_9                fr3-v45-holdout    RUNNING         0:15 rg31703
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[10-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         0:54 rg31801
+            18163102_8                fr3-v45-holdout    RUNNING         0:54 rg31501
+            18163102_9                fr3-v45-holdout    RUNNING         0:45 rg31703
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[10-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         1:24 rg31801
+            18163102_8                fr3-v45-holdout    RUNNING         1:24 rg31501
+            18163102_9                fr3-v45-holdout    RUNNING         1:15 rg31703
+           18163102_10                fr3-v45-holdout    RUNNING         0:12 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[11-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         1:54 rg31801
+            18163102_8                fr3-v45-holdout    RUNNING         1:54 rg31501
+            18163102_9                fr3-v45-holdout    RUNNING         1:45 rg31703
+           18163102_10                fr3-v45-holdout    RUNNING         0:42 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[11-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         2:24 rg31801
+            18163102_8                fr3-v45-holdout    RUNNING         2:24 rg31501
+            18163102_9                fr3-v45-holdout    RUNNING         2:15 rg31703
+           18163102_10                fr3-v45-holdout    RUNNING         1:12 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[11-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         2:54 rg31801
+            18163102_8                fr3-v45-holdout    RUNNING         2:54 rg31501
+           18163102_10                fr3-v45-holdout    RUNNING         1:42 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[11-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         3:25 rg31801
+           18163102_10                fr3-v45-holdout    RUNNING         2:13 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[11-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         3:55 rg31801
+           18163102_10                fr3-v45-holdout    RUNNING         2:43 rg21802
+           18163102_11                fr3-v45-holdout    RUNNING         0:03 rg31803
+           18163102_12                fr3-v45-holdout    RUNNING         0:03 rg31501
+           18163102_13                fr3-v45-holdout    RUNNING         0:03 rg31702
+           18163102_14                fr3-v45-holdout    RUNNING         0:03 rg31703
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[15-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         4:26 rg31801
+           18163102_11                fr3-v45-holdout    RUNNING         0:34 rg31803
+           18163102_12                fr3-v45-holdout    RUNNING         0:34 rg31501
+           18163102_13                fr3-v45-holdout    RUNNING         0:34 rg31702
+           18163102_14                fr3-v45-holdout    RUNNING         0:34 rg31703
+           18163102_15                fr3-v45-holdout    RUNNING         0:28 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[16-29%8]                fr3-v45-holdout    PENDING         0:00 (Priority)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         4:56 rg31801
+           18163102_11                fr3-v45-holdout    RUNNING         1:04 rg31803
+           18163102_12                fr3-v45-holdout    RUNNING         1:04 rg31501
+           18163102_13                fr3-v45-holdout    RUNNING         1:04 rg31702
+           18163102_14                fr3-v45-holdout    RUNNING         1:04 rg31703
+           18163102_15                fr3-v45-holdout    RUNNING         0:58 rg21802
+           18163102_16                fr3-v45-holdout    RUNNING         0:28 rg32501
+           18163102_17                fr3-v45-holdout    RUNNING         0:06 rg31701
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[18-29%8]                fr3-v45-holdout    PENDING         0:00 (JobArrayTaskLimit)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         5:26 rg31801
+           18163102_11                fr3-v45-holdout    RUNNING         1:34 rg31803
+           18163102_12                fr3-v45-holdout    RUNNING         1:34 rg31501
+           18163102_13                fr3-v45-holdout    RUNNING         1:34 rg31702
+           18163102_14                fr3-v45-holdout    RUNNING         1:34 rg31703
+           18163102_15                fr3-v45-holdout    RUNNING         1:28 rg21802
+           18163102_16                fr3-v45-holdout    RUNNING         0:58 rg32501
+           18163102_17                fr3-v45-holdout    RUNNING         0:36 rg31701
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[18-29%8]                fr3-v45-holdout    PENDING         0:00 (JobArrayTaskLimit)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         5:56 rg31801
+           18163102_11                fr3-v45-holdout    RUNNING         2:04 rg31803
+           18163102_12                fr3-v45-holdout    RUNNING         2:04 rg31501
+           18163102_13                fr3-v45-holdout    RUNNING         2:04 rg31702
+           18163102_14                fr3-v45-holdout    RUNNING         2:04 rg31703
+           18163102_15                fr3-v45-holdout    RUNNING         1:58 rg21802
+           18163102_16                fr3-v45-holdout    RUNNING         1:28 rg32501
+           18163102_17                fr3-v45-holdout    RUNNING         1:06 rg31701
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[18-29%8]                fr3-v45-holdout    PENDING         0:00 (JobArrayTaskLimit)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         6:26 rg31801
+           18163102_11                fr3-v45-holdout    RUNNING         2:34 rg31803
+           18163102_12                fr3-v45-holdout    RUNNING         2:34 rg31501
+           18163102_13                fr3-v45-holdout    RUNNING         2:34 rg31702
+           18163102_14                fr3-v45-holdout    RUNNING         2:34 rg31703
+           18163102_15                fr3-v45-holdout    RUNNING         2:28 rg21802
+           18163102_16                fr3-v45-holdout    RUNNING         1:58 rg32501
+           18163102_17                fr3-v45-holdout    RUNNING         1:36 rg31701
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[18-29%8]                fr3-v45-holdout    PENDING         0:00 (JobArrayTaskLimit)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         6:57 rg31801
+           18163102_11                fr3-v45-holdout    RUNNING         3:05 rg31803
+           18163102_13                fr3-v45-holdout    RUNNING         3:05 rg31702
+           18163102_16                fr3-v45-holdout    RUNNING         2:29 rg32501
+           18163102_17                fr3-v45-holdout    RUNNING         2:07 rg31701
+           18163102_18                fr3-v45-holdout    RUNNING         0:15 rg31703
+           18163102_19                fr3-v45-holdout    RUNNING         0:09 rg31801
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[20-29%8]                fr3-v45-holdout    PENDING         0:00 (JobArrayTaskLimit)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+            18163102_7                fr3-v45-holdout    RUNNING         7:27 rg31801
+           18163102_17                fr3-v45-holdout    RUNNING         2:37 rg31701
+           18163102_18                fr3-v45-holdout    RUNNING         0:45 rg31703
+           18163102_19                fr3-v45-holdout    RUNNING         0:39 rg31801
+           18163102_20                fr3-v45-holdout    RUNNING         0:30 rg31903
+           18163102_21                fr3-v45-holdout    RUNNING         0:12 rg31803
+           18163102_22                fr3-v45-holdout    RUNNING         0:09 rg31702
+           18163102_23                fr3-v45-holdout    RUNNING         0:06 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[24-29%8]                fr3-v45-holdout    PENDING         0:00 (JobArrayTaskLimit)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+           18163102_17                fr3-v45-holdout    RUNNING         3:07 rg31701
+           18163102_18                fr3-v45-holdout    RUNNING         1:15 rg31703
+           18163102_19                fr3-v45-holdout    RUNNING         1:09 rg31801
+           18163102_20                fr3-v45-holdout    RUNNING         1:00 rg31903
+           18163102_21                fr3-v45-holdout    RUNNING         0:42 rg31803
+           18163102_22                fr3-v45-holdout    RUNNING         0:39 rg31702
+           18163102_23                fr3-v45-holdout    RUNNING         0:36 rg21802
+           18163102_24                fr3-v45-holdout    RUNNING         0:07 rg31703
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[25-29%8]                fr3-v45-holdout    PENDING         0:00 (JobArrayTaskLimit)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+           18163102_18                fr3-v45-holdout    RUNNING         1:45 rg31703
+           18163102_19                fr3-v45-holdout    RUNNING         1:39 rg31801
+           18163102_20                fr3-v45-holdout    RUNNING         1:30 rg31903
+           18163102_21                fr3-v45-holdout    RUNNING         1:12 rg31803
+           18163102_23                fr3-v45-holdout    RUNNING         1:06 rg21802
+           18163102_24                fr3-v45-holdout    RUNNING         0:37 rg31703
+           18163102_25                fr3-v45-holdout    RUNNING         0:25 rg31701
+           18163102_26                fr3-v45-holdout    RUNNING         0:19 rg31702
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[27-29%8]                fr3-v45-holdout    PENDING         0:00 (JobArrayTaskLimit)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+           18163102_18                fr3-v45-holdout    RUNNING         2:15 rg31703
+           18163102_19                fr3-v45-holdout    RUNNING         2:09 rg31801
+           18163102_20                fr3-v45-holdout    RUNNING         2:00 rg31903
+           18163102_21                fr3-v45-holdout    RUNNING         1:42 rg31803
+           18163102_23                fr3-v45-holdout    RUNNING         1:36 rg21802
+           18163102_24                fr3-v45-holdout    RUNNING         1:07 rg31703
+           18163102_25                fr3-v45-holdout    RUNNING         0:55 rg31701
+           18163102_26                fr3-v45-holdout    RUNNING         0:49 rg31702
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[27-29%8]                fr3-v45-holdout    PENDING         0:00 (JobArrayTaskLimit)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+           18163102_18                fr3-v45-holdout    RUNNING         2:45 rg31703
+           18163102_19                fr3-v45-holdout    RUNNING         2:39 rg31801
+           18163102_20                fr3-v45-holdout    RUNNING         2:30 rg31903
+           18163102_21                fr3-v45-holdout    RUNNING         2:12 rg31803
+           18163102_23                fr3-v45-holdout    RUNNING         2:06 rg21802
+           18163102_24                fr3-v45-holdout    RUNNING         1:37 rg31703
+           18163102_25                fr3-v45-holdout    RUNNING         1:25 rg31701
+           18163102_26                fr3-v45-holdout    RUNNING         1:19 rg31702
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+    18163102_[27-29%8]                fr3-v45-holdout    PENDING         0:00 (JobArrayTaskLimit)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+           18163102_20                fr3-v45-holdout    RUNNING         3:00 rg31903
+           18163102_21                fr3-v45-holdout    RUNNING         2:42 rg31803
+           18163102_23                fr3-v45-holdout    RUNNING         2:36 rg21802
+           18163102_24                fr3-v45-holdout    RUNNING         2:07 rg31703
+           18163102_25                fr3-v45-holdout    RUNNING         1:55 rg31701
+           18163102_26                fr3-v45-holdout    RUNNING         1:49 rg31702
+           18163102_27                fr3-v45-holdout    RUNNING         0:21 rg31703
+           18163102_28                fr3-v45-holdout    RUNNING         0:02 rg31801
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+       18163102_[29%8]                fr3-v45-holdout    PENDING         0:00 (JobArrayTaskLimit)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+           18163102_20                fr3-v45-holdout    RUNNING         3:30 rg31903
+           18163102_21                fr3-v45-holdout    RUNNING         3:12 rg31803
+           18163102_24                fr3-v45-holdout    RUNNING         2:37 rg31703
+           18163102_25                fr3-v45-holdout    RUNNING         2:25 rg31701
+           18163102_26                fr3-v45-holdout    RUNNING         2:19 rg31702
+           18163102_27                fr3-v45-holdout    RUNNING         0:51 rg31703
+           18163102_28                fr3-v45-holdout    RUNNING         0:32 rg31801
+           18163102_29                fr3-v45-holdout    RUNNING         0:20 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+           18163102_21                fr3-v45-holdout    RUNNING         3:42 rg31803
+           18163102_26                fr3-v45-holdout    RUNNING         2:49 rg31702
+           18163102_27                fr3-v45-holdout    RUNNING         1:21 rg31703
+           18163102_28                fr3-v45-holdout    RUNNING         1:02 rg31801
+           18163102_29                fr3-v45-holdout    RUNNING         0:50 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+           18163102_21                fr3-v45-holdout    RUNNING         4:12 rg31803
+           18163102_27                fr3-v45-holdout    RUNNING         1:51 rg31703
+           18163102_28                fr3-v45-holdout    RUNNING         1:32 rg31801
+           18163102_29                fr3-v45-holdout    RUNNING         1:20 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+           18163102_21                fr3-v45-holdout    RUNNING         4:42 rg31803
+           18163102_27                fr3-v45-holdout    RUNNING         2:21 rg31703
+           18163102_28                fr3-v45-holdout    RUNNING         2:03 rg31801
+           18163102_29                fr3-v45-holdout    RUNNING         1:51 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+           18163102_21                fr3-v45-holdout    RUNNING         5:13 rg31803
+           18163102_27                fr3-v45-holdout    RUNNING         2:52 rg31703
+           18163102_28                fr3-v45-holdout    RUNNING         2:33 rg31801
+           18163102_29                fr3-v45-holdout    RUNNING         2:21 rg21802
+              18163103          fr3-v45-holdout-merge    PENDING         0:00 (Dependency)
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+FRESH_HOLDOUT_PROGRESS_BEGIN
+                 JOBID                           NAME      STATE         TIME NODELIST(REASON)
+              18163103          fr3-v45-holdout-merge    RUNNING         0:02 rc32413
+              18163104       fr3-v45-holdout-finalize    PENDING         0:00 (Dependency)
+FRESH_HOLDOUT_PROGRESS_END
+JobIDRaw|JobName|Account|State|ExitCode|Elapsed|MaxRSS|ReqMem|AllocTRES|NodeList
+18163103|fr3-v45-holdout-merge|def-rsadve_cpu|FAILED|42:0|00:00:15||8G|billing=4000,cpu=4,mem=8G,node=1|rc32413
+18163103.batch|batch|def-rsadve_cpu|FAILED|42:0|00:00:15|204192K||cpu=4,mem=8G,node=1|rc32413
+18163103.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:00:15|||billing=4000,cpu=4,mem=8G,node=1|rc32413
+18163104|fr3-v45-holdout-finalize|def-rsadve_cpu|RUNNING|0:0|00:00:01||8G|billing=4000,cpu=4,mem=8G,node=1|rc32413
+18163104.batch|batch|def-rsadve_cpu|RUNNING|0:0|00:00:01|||cpu=4,mem=8G,node=1|rc32413
+18163104.extern|extern|def-rsadve_cpu|RUNNING|0:0|00:00:01|||billing=4000,cpu=4,mem=8G,node=1|rc32413
+18163246|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:03:33||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg32501
+18163246.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:03:33|2336672K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg32501
+18163246.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:33|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg32501
+18163465|fr3-v45-holdout|def-rsadve_gpu|FAILED|1:0|00:03:39||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18163465.batch|batch|def-rsadve_gpu|FAILED|1:0|00:03:39|2262908K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18163465.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:39|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18163466|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:03:09||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18163466.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:03:09|2281048K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18163466.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:09|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18163487|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:03:54||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31701
+18163487.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:03:54|2255452K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31701
+18163487.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:54|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31701
+18163515|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:02:58||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31501
+18163515.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:58|2249012K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31501
+18163515.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:58|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31501
+18163572|fr3-v45-holdout|def-rsadve_gpu|FAILED|1:0|00:04:14||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18163572.batch|batch|def-rsadve_gpu|FAILED|1:0|00:04:14|1988540K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18163572.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:04:14|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18163681|fr3-v45-holdout|def-rsadve_gpu|FAILED|1:0|00:02:51||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18163681.batch|batch|def-rsadve_gpu|FAILED|1:0|00:02:51|1985504K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18163681.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:51|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18163944|fr3-v45-holdout|def-rsadve_gpu|FAILED|1:0|00:07:49||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31801
+18163944.batch|batch|def-rsadve_gpu|FAILED|1:0|00:07:49|2265096K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31801
+18163944.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:07:49|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31801
+18163945|fr3-v45-holdout|def-rsadve_gpu|FAILED|1:0|00:02:58||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31501
+18163945.batch|batch|def-rsadve_gpu|FAILED|1:0|00:02:58|1984740K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31501
+18163945.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:58|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31501
+18163958|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:02:45||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18163958.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:45|1987304K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18163958.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:45|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164047|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:02:44||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18164047.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:44|1987276K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18164047.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:44|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18164349|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:03:20||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31803
+18164349.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:03:20|2248188K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31803
+18164349.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:20|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31803
+18164350|fr3-v45-holdout|def-rsadve_gpu|FAILED|1:0|00:03:03||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31501
+18164350.batch|batch|def-rsadve_gpu|FAILED|1:0|00:03:03|1986768K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31501
+18164350.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:03|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31501
+18164351|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:03:23||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31702
+18164351.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:03:23|2277740K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31702
+18164351.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:23|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31702
+18164352|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:02:47||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164352.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:47|1984956K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164352.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:47|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164361|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:02:48||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18164361.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:48|1986448K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18164361.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:48|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18164422|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:02:50||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg32501
+18164422.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:50|1988336K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg32501
+18164422.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:50|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg32501
+18164456|fr3-v45-holdout|def-rsadve_gpu|FAILED|42:0|00:03:09||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31701
+18164456.batch|batch|def-rsadve_gpu|FAILED|42:0|00:03:09|2028380K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31701
+18164456.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:09|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31701
+18164617|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:02:53||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164617.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:53|1985096K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164617.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:53|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164626|fr3-v45-holdout|def-rsadve_gpu|FAILED|1:0|00:03:05||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31801
+18164626.batch|batch|def-rsadve_gpu|FAILED|1:0|00:03:05|1985188K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31801
+18164626.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:05|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31801
+18164639|fr3-v45-holdout|def-rsadve_gpu|FAILED|1:0|00:03:49||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31903
+18164639.batch|batch|def-rsadve_gpu|FAILED|1:0|00:03:49|2278212K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31903
+18164639.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:49|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31903
+18164677|fr3-v45-holdout|def-rsadve_gpu|FAILED|42:0|00:05:35||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31803
+18164677.batch|batch|def-rsadve_gpu|FAILED|42:0|00:05:35|1985284K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31803
+18164677.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:05:35|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31803
+18164682|fr3-v45-holdout|def-rsadve_gpu|FAILED|1:0|00:00:47||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31702
+18164682.batch|batch|def-rsadve_gpu|FAILED|1:0|00:00:47|1985176K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31702
+18164682.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:00:47|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31702
+18164687|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:02:44||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18164687.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:44|1985708K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18164687.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:44|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18164735|fr3-v45-holdout|def-rsadve_gpu|FAILED|1:0|00:02:56||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164735.batch|batch|def-rsadve_gpu|FAILED|1:0|00:02:56|1989912K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164735.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:56|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164753|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:02:50||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31701
+18164753.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:50|1984476K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31701
+18164753.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:50|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31701
+18164762|fr3-v45-holdout|def-rsadve_gpu|FAILED|1:0|00:02:57||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31702
+18164762.batch|batch|def-rsadve_gpu|FAILED|1:0|00:02:57|1985768K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31702
+18164762.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:57|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31702
+18164887|fr3-v45-holdout|def-rsadve_gpu|FAILED|42:0|00:02:58||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164887.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:58|1984284K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164887.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:58|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31703
+18164918|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:02:47||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31801
+18164918.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:47|1984496K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31801
+18164918.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:47|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg31801
+18163102|fr3-v45-holdout|def-rsadve_gpu|COMPLETED|0:0|00:02:45||16G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18163102.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:45|1986004K||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+18163102.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:45|||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=16G,node=1|rg21802
+HOLDOUT_RETURN_ZIP=/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_V45_FRESH_HOLDOUT_00a3561864f8_20260802_214813/return/FR3_RORQUAL_V4_5_FRESH_HOLDOUT_18163102.zip
+HOLDOUT_RETURN_ZIP_SHA256=066bd2190788f5dd8549b7fe1203070d091875e0a33e61762df4c21da6f587a7
+HOLDOUT_RETURN_STATUS=INCOMPLETE_FRESH_V4_5_HOLDOUT_REVIEW_REQUIRED
+HOLDOUT_RETURN_PACKAGE_EXIT_CODE=42
+AUTHORIZATION_TOKEN_PRESENT_AFTER_FINALIZER=NO
+ARRAY_JOB_ID=18163102
+MERGE_JOB_ID=18163103
+FINALIZER_JOB_ID=18163104
+AUTOMATIC_EXTRA_PROBES_AUTHORIZED=NO
+REMOTE_WRAPPER_EXIT_CODE=42
+DIAGNOSTIC_RETRIEVAL_EXIT_CODE=0
+LOCAL_HOLDOUT_RETURN_SHA256=066bd2190788f5dd8549b7fe1203070d091875e0a33e61762df4c21da6f587a7
+LOCAL_HOLDOUT_RETURN_ZIP_CRC=PASS
+HOLDOUT_RETURN_SHA256_GATE=PASS
+HOLDOUT_RETURN_ZIP_CRC=PASS
+HOLDOUT_RETURN_MANIFEST=PASS
+HOLDOUT_RETURN_STATUS=INCOMPLETE_FRESH_V4_5_HOLDOUT_REVIEW_REQUIRED
+HOLDOUT_SCIENTIFIC_EXIT_CODE=42
+HOLDOUT_SEED_RETURN_COUNT=30
+HOLDOUT_SEED_SAFETY_PASS_COUNT=29
+HOLDOUT_SEED_ZERO_FLOOR_PASS_COUNT=17
+HOLDOUT_VALID_RESULT=False
+HOLDOUT_PRIMARY_SUPERIORITY_MET=False
+HOLDOUT_FLOOR_ZERO=False
+PRIMARY_POINT_ESTIMATE=None
+PRIMARY_LOWER_95=None
+PRIMARY_UPPER_95=None
+AUTOMATIC_EXTRA_PROBES_AUTHORIZED=NO
+NEXT_GATE=REVIEW_HOLDOUT_WITHOUT_AUTOMATIC_EXTRA_PROBES
+LOCAL_RETURN_AUDIT_EXIT_CODE=42
+Cloning into '/home/afazeli2006/fr3_v45_freeze_twc_holdout_runs/20260802_214738/github_evidence_clone'...
