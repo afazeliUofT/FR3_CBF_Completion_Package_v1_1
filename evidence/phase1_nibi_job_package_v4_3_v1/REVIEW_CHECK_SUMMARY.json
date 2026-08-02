@@ -1,0 +1,15 @@
+{
+  "authorization_guard_exact_manifest_expiry_negative_and_temporary_positive_tests": "PASS",
+  "bash_syntax_file_count": 8,
+  "candidate_manifest_entries": 5,
+  "exact_source_bindings": "PASS",
+  "failure_preserving_array_and_afterany_merge": "PASS",
+  "five_protected_pass_archives": "PASS",
+  "forbidden_artifact_scan": "PASS",
+  "legacy_substrate_required_components": "PASS",
+  "locked_launcher_negative_tests": "PASS",
+  "package_manifest_entries": 65,
+  "python_syntax_file_count": 18,
+  "synthetic_30_seed_merge_and_bootstrap": "PASS",
+  "synthetic_seed_pass_and_scientific_failure_validation": "PASS"
+}

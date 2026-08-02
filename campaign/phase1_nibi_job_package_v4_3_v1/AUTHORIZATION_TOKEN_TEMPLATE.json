@@ -1,0 +1,13 @@
+{
+  "allowed_seeds": [],
+  "authorization": "NOT_AUTHORIZED",
+  "authorization_expires_utc": "NOT_AUTHORIZED",
+  "candidate_source_manifest_sha256": "a2e67130c91577b83be6e14f400d0934aa6d94ac0f974956594df35eec0cb93c",
+  "execution_authorized": false,
+  "execution_stage": "NOT_AUTHORIZED",
+  "freeze_commit": "ee6708ba204c2acfe8479aeea5dd444f2cc1be04",
+  "note": "A future independently issued token is required; this file cannot authorize execution.",
+  "package_id": "77bec1efa2ea151a64481d6993399b82585eac3c1343d51adb0fc37da294e015",
+  "package_manifest_sha256": "NOT_AUTHORIZED",
+  "schema_version": 1
+}

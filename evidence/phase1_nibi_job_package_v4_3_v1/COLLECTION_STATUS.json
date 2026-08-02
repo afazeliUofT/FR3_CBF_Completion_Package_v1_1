@@ -1,0 +1,7 @@
+{
+  "campaign_execution_authorized": false,
+  "cluster_contacted": false,
+  "next_gate": "BUILD_REVIEW_AND_RUN_EXCLUDED_NIBI_FINAL_CAMPAIGN_WORKER_SMOKE_SEED43999",
+  "schema_version": 1,
+  "status": "COLLECTED_LOCKED_PACKAGE_AND_INDEPENDENT_REVIEW"
+}

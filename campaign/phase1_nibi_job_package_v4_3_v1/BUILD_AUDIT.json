@@ -1,0 +1,23 @@
+{
+  "authorization_token_included": false,
+  "campaign_execution_authorized": false,
+  "candidate_source_manifest_sha256": "a2e67130c91577b83be6e14f400d0934aa6d94ac0f974956594df35eec0cb93c",
+  "cell_count": 1350,
+  "cluster_contacted": false,
+  "created_utc": "2026-08-02T01:13:23.411546+00:00",
+  "fixed_pass_count": 5,
+  "freeze_manifest": "PASS",
+  "freeze_return_zip_sha256": "e4df110eeeb97630e0cb522c35a15e8f8edcf196d6365746599e62ec1f65707e",
+  "job_zip": "/home/afazeli2006/fr3_v4_3_locked_campaign_build_review_runs/20260802_011308/build/FR3_PHASE1_NIBI_JOB_PACKAGE_V4_3_v1.zip",
+  "job_zip_sha256": "76a4aa701639a00913c5412c8ba54b86855a55ed97cb16e254ed6a7173356bd5",
+  "legacy_job_zip_path": "/home/afazeli2006/fr3_v4_3_locked_campaign_build_review_runs/20260802_011308/github_working_clone/campaign/phase1_nibi_job_package_v1/FR3_PHASE1_NIBI_JOB_PACKAGE_v1.zip",
+  "legacy_job_zip_sha256": "a81f1808f75119e64a0f7f631a54230f3e722efa8d17dcf032ee1296f2bb76be",
+  "method_count": 9,
+  "next_gate": "BUILD_REVIEW_AND_RUN_EXCLUDED_NIBI_FINAL_CAMPAIGN_WORKER_SMOKE_SEED43999",
+  "package_id": "77bec1efa2ea151a64481d6993399b82585eac3c1343d51adb0fc37da294e015",
+  "repository_head": "ee6708ba204c2acfe8479aeea5dd444f2cc1be04",
+  "required_ancestor": "ee6708ba204c2acfe8479aeea5dd444f2cc1be04",
+  "schema_version": 1,
+  "seed_count": 30,
+  "status": "PASS_V4_3_LOCKED_CAMPAIGN_PACKAGE_BUILD_REVIEW_REQUIRED_NOT_EXECUTION"
+}
