@@ -1,0 +1,13 @@
+{
+  "affected_intervals": 1736,
+  "affected_user_rows": 4016,
+  "all_affected_users_individually_serviceable": true,
+  "claim_boundary": "DIAGNOSIS_DERIVED_PLAUSIBILITY_BOUND_NOT_AN_EXACT_V4_4_CHANNEL_RESULT",
+  "intervals_exceeding_unit_resource_under_conservative_bound": 0,
+  "maximum_conservative_global_dedicated_fraction_sum": 0.4145010742710435,
+  "maximum_conservative_per_sector_dedicated_fraction_sum": 0.3195450213714219,
+  "maximum_conservative_single_user_dedicated_fraction": 0.3195450213714219,
+  "schema_version": 1,
+  "scientific_interpretation": "fixed-beam simultaneous service is frequently jointly infeasible, but every affected user is individually serviceable and the summed optimistic isolated protected-resource demand remains below one in every diagnosed interval; this does not prove a feasible guarded schedule, but it supports protected-resource scheduling as the minimal scientifically justified next degree of freedom",
+  "status": "PASS_SCHEDULING_NECESSITY_AND_PLAUSIBILITY_AUDIT"
+}

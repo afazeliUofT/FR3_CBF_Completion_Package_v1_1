@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "/scratch/rsadve1/FR3_V44_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_4b2a6bf17ebf/package/scripts/replay_v44_scheduling_seed.py", line 452, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/scratch/rsadve1/FR3_V44_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_4b2a6bf17ebf/package/scripts/replay_v44_scheduling_seed.py", line 194, in main
+    write_json(result_root / "PASS_AUDITS.json", pass_audits)
+  File "/scratch/rsadve1/FR3_V44_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_4b2a6bf17ebf/package/scripts/replay_v44_scheduling_seed.py", line 49, in write_json
+    json.dumps(value, indent=2, sort_keys=True) + "\n",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/python/3.12.4/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/python/3.12.4/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/python/3.12.4/lib/python3.12/json/encoder.py", line 430, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/python/3.12.4/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/python/3.12.4/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/python/3.12.4/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/python/3.12.4/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/python/3.12.4/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ndarray is not JSON serializable

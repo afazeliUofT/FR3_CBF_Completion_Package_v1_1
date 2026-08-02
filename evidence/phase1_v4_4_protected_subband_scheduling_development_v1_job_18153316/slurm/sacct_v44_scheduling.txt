@@ -1,0 +1,13 @@
+JobIDRaw|JobName|Account|State|ExitCode|Elapsed|MaxRSS|ReqMem|AllocTRES|NodeList
+18153317|fr3-v44-sched-merge|def-rsadve_cpu|FAILED|1:0|00:00:01||8G|billing=4000,cpu=4,mem=8G,node=1|rc32605
+18153387|fr3-v44-sched|def-rsadve_cpu|FAILED|1:0|00:02:01||16G|billing=8000,cpu=8,mem=16G,node=1|rc32401
+18153388|fr3-v44-sched|def-rsadve_cpu|FAILED|1:0|00:01:58||16G|billing=8000,cpu=8,mem=16G,node=1|rc32401
+18153389|fr3-v44-sched|def-rsadve_cpu|FAILED|1:0|00:02:09||16G|billing=8000,cpu=8,mem=16G,node=1|rc32418
+18153390|fr3-v44-sched|def-rsadve_cpu|FAILED|1:0|00:02:40||16G|billing=8000,cpu=8,mem=16G,node=1|rc32419
+18153495|fr3-v44-sched|def-rsadve_cpu|FAILED|1:0|00:01:54||16G|billing=8000,cpu=8,mem=16G,node=1|rc32401
+18153496|fr3-v44-sched|def-rsadve_cpu|FAILED|1:0|00:01:57||16G|billing=8000,cpu=8,mem=16G,node=1|rc32401
+18153497|fr3-v44-sched|def-rsadve_cpu|FAILED|1:0|00:01:56||16G|billing=8000,cpu=8,mem=16G,node=1|rc32401
+18153513|fr3-v44-sched|def-rsadve_cpu|FAILED|1:0|00:02:24||16G|billing=8000,cpu=8,mem=16G,node=1|rc32418
+18153562|fr3-v44-sched|def-rsadve_cpu|FAILED|1:0|00:01:56||16G|billing=8000,cpu=8,mem=16G,node=1|rc32401
+18153570|fr3-v44-sched|def-rsadve_cpu|FAILED|1:0|00:01:53||16G|billing=8000,cpu=8,mem=16G,node=1|rc32401
+18153316|fr3-v44-sched|def-rsadve_cpu|FAILED|1:0|00:01:48||16G|billing=8000,cpu=8,mem=16G,node=1|rc32401

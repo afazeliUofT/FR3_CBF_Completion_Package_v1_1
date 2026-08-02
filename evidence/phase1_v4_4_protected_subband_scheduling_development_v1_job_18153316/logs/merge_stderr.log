@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/scratch/rsadve1/FR3_V44_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_4b2a6bf17ebf/package/scripts/merge_v44_scheduling_development.py", line 365, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/scratch/rsadve1/FR3_V44_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_4b2a6bf17ebf/package/scripts/merge_v44_scheduling_development.py", line 95, in main
+    raise RuntimeError(f"missing v4.4 seed returns: {missing}")
+RuntimeError: missing v4.4 seed returns: [44001, 44007, 44008, 44013, 44017, 44018, 44024, 44025, 44026, 44027, 44028]

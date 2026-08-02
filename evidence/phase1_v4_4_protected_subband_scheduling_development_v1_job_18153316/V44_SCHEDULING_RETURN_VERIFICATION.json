@@ -1,0 +1,30 @@
+{
+  "campaign_rerun_authorized": false,
+  "emergency_return": false,
+  "failed_seed_return_count": 0,
+  "fresh_confirmation": false,
+  "metadata_status": "FAIL_INFRASTRUCTURE_NO_V44_SCHEDULING_SUMMARY",
+  "missing_failed_seeds": [
+    44001,
+    44007,
+    44008,
+    44013,
+    44017,
+    44018,
+    44024,
+    44025,
+    44026,
+    44027,
+    44028
+  ],
+  "next_gate": "DIAGNOSE_V44_SCHEDULING_INFRASTRUCTURE",
+  "next_repair_decision": null,
+  "return_completeness": "PARTIAL",
+  "return_manifest": "PASS",
+  "return_zip_crc": "PASS",
+  "return_zip_sha256": "8001c6dd16e10b92b4d3cce5a59a1b5e4eed641dc022b1449b51e72ec5a6606b",
+  "schema_version": 1,
+  "scientific_pass": false,
+  "status": "PASS_VALID_PARTIAL_V44_SCHEDULING_DEVELOPMENT_RETURN",
+  "v44_scheduling_development_status": "FAIL_INFRASTRUCTURE_NO_V44_SCHEDULING_SUMMARY"
+}

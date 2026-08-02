@@ -1,0 +1,15 @@
+{
+  "array_job_id": "18153316",
+  "campaign_rerun_authorized": false,
+  "channel_regenerated": false,
+  "created_utc": "2026-08-02T18:11:49.043463+00:00",
+  "expected_failed_seed_return_count": 11,
+  "failed_seed_return_count": 11,
+  "fresh_confirmation": false,
+  "gpu_requested": false,
+  "merge_job_id": "18153317",
+  "next_gate": "DIAGNOSE_V44_SCHEDULING_INFRASTRUCTURE",
+  "raw_channels_included": false,
+  "schema_version": 1,
+  "status": "FAIL_INFRASTRUCTURE_NO_V44_SCHEDULING_SUMMARY"
+}
