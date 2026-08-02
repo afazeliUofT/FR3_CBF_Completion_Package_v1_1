@@ -1,0 +1,20 @@
+{
+  "cache_directories": [],
+  "checks": {
+    "campaign_rerun_unauthorized": true,
+    "channel_reuse": true,
+    "eleven_seed_scope": true,
+    "fair_walltime": true,
+    "fresh_confirmation_false": true,
+    "no_cache_directories": true,
+    "no_compiled_artifacts": true,
+    "no_usable_authorization_token": true,
+    "required_files_present": true,
+    "rorqual_cpu_only": true
+  },
+  "file_count": 127,
+  "forbidden": [],
+  "missing": [],
+  "schema_version": 1,
+  "status": "PASS"
+}

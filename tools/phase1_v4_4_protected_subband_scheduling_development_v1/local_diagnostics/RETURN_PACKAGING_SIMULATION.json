@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "complete_return_packaging_and_verification": true,
+  "partial_return_packaging_and_verification": true,
+  "emergency_primary_packager_failure_return_verification": true,
+  "portable_basename_only_sidecars": true,
+  "zip_crc_verified": true,
+  "internal_return_manifests_verified": true,
+  "test_source": "tests/test_protected_subband_scheduler.py"
+}

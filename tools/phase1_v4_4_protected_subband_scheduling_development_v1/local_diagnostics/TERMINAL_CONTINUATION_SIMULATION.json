@@ -1,0 +1,8 @@
+{
+  "child_exit_code": 42,
+  "returned_to_original_prompt": true,
+  "schema_version": 1,
+  "status": "PASS",
+  "terminal_close_requested": false,
+  "terminal_remains_open": true
+}

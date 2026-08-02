@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "observed_prior_cached_channel_worker_elapsed_range": "00:01:53-00:02:30",
+  "observed_prior_cached_channel_worker_max_rss_gib": 0.41,
+  "v44_worker_walltime": "00:10:00",
+  "v44_worker_memory_gib": 16,
+  "v44_worker_cpus": 8,
+  "v44_merge_walltime": "00:05:00",
+  "v44_merge_memory_gib": 8,
+  "v44_merge_cpus": 4,
+  "gpu_requested": false,
+  "channel_regenerated": false,
+  "rationale": "The scheduling replay adds multiple LP attempts and a bounded integer fallback per unresolved interval; ten minutes is a measured conservative upper bound rather than the obsolete four-hour reservation."
+}

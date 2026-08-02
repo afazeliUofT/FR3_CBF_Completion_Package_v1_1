@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "expected_nonzero_scientific_exit_captured": true,
+  "primary_packaging_failure_emergency_archive_supported": true,
+  "partial_seed_return_supported": true,
+  "channel_regeneration": false,
+  "gpu_requested": false,
+  "campaign_rerun_authorized": false
+}

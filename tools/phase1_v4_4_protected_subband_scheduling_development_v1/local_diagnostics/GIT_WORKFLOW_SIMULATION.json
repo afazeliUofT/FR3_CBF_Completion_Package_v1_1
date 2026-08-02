@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "actual_github_payload_staged": true,
+  "source_normal_push": true,
+  "evidence_normal_push": true,
+  "stale_non_force_push_rejected": true,
+  "source_commit": "8c2bf731d420a46a7e37f4d75c0804a0608f157a",
+  "evidence_commit": "319fe36b528a033587a2f816bc8f9562748572f9",
+  "remote_final_commit": "319fe36b528a033587a2f816bc8f9562748572f9",
+  "force_push_used": false
+}

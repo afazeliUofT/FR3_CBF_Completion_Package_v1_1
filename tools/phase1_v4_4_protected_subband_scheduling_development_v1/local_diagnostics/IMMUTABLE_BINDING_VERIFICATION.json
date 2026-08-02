@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "actual_sha256": "c106fa6441b15873d0d2d9b29d636434625edcd58f4033a4700589cb91e19e82",
+      "expected_sha256": "c106fa6441b15873d0d2d9b29d636434625edcd58f4033a4700589cb91e19e82",
+      "file": "FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_3_R2.zip",
+      "sha256_pass": true,
+      "sidecar_basename_pass": true,
+      "zip_crc_pass": true
+    },
+    {
+      "actual_sha256": "4d8181b7b328d12dad0070e2e531bb4661e87e8aaf1c6a8e59184bf66ae0e62e",
+      "expected_sha256": "4d8181b7b328d12dad0070e2e531bb4661e87e8aaf1c6a8e59184bf66ae0e62e",
+      "file": "FR3_RORQUAL_V4_3_FAILED_SEED_DIAGNOSIS_18150465.zip",
+      "sha256_pass": true,
+      "sidecar_basename_pass": true,
+      "zip_crc_pass": true
+    },
+    {
+      "expected_sha256": "cd2975e316bbd3d20469559a28e10113b2d8a9c1942cc2cdfe01ad33253653c9",
+      "file": "FR3_RORQUAL_V4_3_R2_30SEED_CAMPAIGN_18145937.zip.sha256",
+      "sidecar_basename_pass": true
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS"
+}

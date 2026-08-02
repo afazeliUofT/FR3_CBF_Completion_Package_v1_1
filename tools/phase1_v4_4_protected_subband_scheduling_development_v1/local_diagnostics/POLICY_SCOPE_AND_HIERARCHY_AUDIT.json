@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "campaign_rerun_authorized_false": true,
+    "centralized_wmmse_not_used": true,
+    "channel_regeneration_false": true,
+    "deployable_guard_bound_four": true,
+    "diagnostic_g8_not_deployable": true,
+    "fresh_confirmation_false": true,
+    "gpu_requested_false": true,
+    "mode_commands_frozen": true,
+    "rzf_directions_frozen": true,
+    "scheduler_only_after_v43_unresolved": true,
+    "signature_preserved": true,
+    "solver_reserves_tighten": true,
+    "sum_rate_not_primary": true,
+    "unchanged_eess_acceptance": true,
+    "unchanged_floor_tolerance": true,
+    "v43_repair_precedes_scheduler": true,
+    "walltime_measured_bound": true
+  },
+  "claim_boundary": "POST_CAMPAIGN_FAILED_SEED_DEVELOPMENT_NOT_FRESH_CONFIRMATION_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE",
+  "schema_version": 1,
+  "status": "PASS"
+}
