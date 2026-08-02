@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "package_version": "v1",
+  "candidate_version": "v4.5-frozen",
+  "created_utc": "2026-08-02T00:00:00+00:00",
+  "purpose": "freeze v4.5, start the TWC draft, and run one fresh 30-seed Rorqual holdout without further algorithm tuning"
+}

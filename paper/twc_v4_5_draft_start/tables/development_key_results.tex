@@ -1,0 +1,25 @@
+\begin{table}[t]
+\caption{Frozen 30-seed development results. The v4.5 candidate was adapted using these seeds; fresh confirmation is reported separately.}
+\label{tab:development-key}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Metric & Result\\
+\midrule
+Candidate $-$ safe-static final PF utility & $0.2883$\\
+Seed-cluster bootstrap 95\% CI & $[0.2402,0.3382]$\\
+Candidate $-$ predictive final PF utility & $0.0610$\\
+Seed-cluster bootstrap 95\% CI & $[0.0244,0.1010]$\\
+Long-/short-horizon EESS violations & $0/0$\\
+Hard-floor passing seeds & $23/30$\\
+Bounded-action-scope passing seeds & $30/30$\\
+Residual scheduling-infeasible intervals & $519$\\
+Floor-violation user-seconds & $6505$\\
+Floor reduction vs. predictive & $92.82\%$\\
+Floor reduction vs. safe static & $93.86\%$\\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,72 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{amsmath,amssymb,booktabs,array,multirow}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\EESS}{\mathrm{EESS}}
+\newcommand{\floor}{\mathrm{floor}}
+\title{Predictive Distributed FR3 Spectrum Sharing with Feasibility-Conditioned User-Floor Protection}
+\author{Ali Fazeli and Raviraj S. Adve}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study distributed downlink resource management for FR3 cellular coexistence with a protected fixed-service receiver under simultaneous long- and short-horizon equivalent isotropically radiated spectral-density constraints. The controller combines predictive proportional-fair control, incumbent-priced sector actions, fixed-RZF stream-power redistribution, and floor-first protected-subband scheduling. The design preserves frozen beam directions and practical bounded local actions. In a 30-seed development campaign, the proposed hierarchy improves final moving proportional-fair utility over the safe-static controller by $0.2883$ with a seed-cluster bootstrap 95\% confidence interval $[0.2402,0.3382]$, while maintaining zero long- and short-term incumbent-protection violations. Relative to the predictive controller before the floor-feasibility extensions, the scheduling hierarchy reduces user-floor violation seconds by about 92.8\%. The remaining user-floor failures are explicitly classified as bounded-action infeasibility under fixed association; therefore, the paper claims a hard floor only when the declared local action set is feasible and reports certified shortfall otherwise. Fresh holdout results are inserted after the frozen 30-seed run included with this package.
+\end{abstract}
+\begin{IEEEkeywords}
+FR3, spectrum sharing, fixed service, predictive control, distributed resource management, proportional fairness, massive MIMO, robust optimization.
+\end{IEEEkeywords}
+
+\section{Introduction}
+FR3 cellular deployments must reconcile spatially distributed user service with stringent protection of incumbent fixed-service receivers. The central challenge is not only to satisfy an instantaneous interference limit, but also to remain safe under multiple averaging horizons while retaining useful network utility and avoiding centralized beam optimization. This paper develops a predictive, distributed hierarchy whose primary objective is incumbent and user-floor feasibility, with proportional-fair utility optimized only after these hard requirements are addressed.
+
+The paper makes four contributions. First, it formulates a predictive dual-criterion incumbent-protection controller with a practical 64-RF/128-port architecture and bounded sector actions. Second, it identifies why scalar sector backoff cannot generally enforce user floors and introduces fixed-RZF stream-power redistribution. Third, it derives a protected-subband scheduling fallback that convexifies the average-rate region while preserving fixed beams and bounded local coordination. Fourth, it reports paired seed-cluster statistics and explicit infeasibility certificates rather than silently weakening the fairness floor.
+
+\section{System and Protection Model}
+\subsection{Cellular and incumbent geometry}
+% Insert the frozen topology, array, channel, and pass definitions from the repository manuscript source.
+\subsection{Long- and short-horizon EESS constraints}
+Let $I_t$ denote the aggregate incumbent leakage during physical second $t$. The controller enforces both the long-horizon and sliding short-horizon criteria defined in the frozen regulatory/statistical contract. The simulations are engineering scenarios and are not claimed as calibration or regulatory compliance.
+\subsection{User eligibility and floor}
+For every active user eligible under the frozen full-load rule, the unchanged floor is
+\begin{equation}
+ R^{\floor}_{u,t}=\max\{0.1,\,0.9R^{\mathrm{nom,current}}_{u,t}\}.
+\end{equation}
+The final claim is feasibility-conditioned: the floor is hard whenever the declared bounded action class is feasible; otherwise the controller returns an explicit infeasibility certificate and measured shortfall.
+
+\section{Predictive Distributed Controller}
+\subsection{Predictive proportional-fair action selection}
+% Integrate the frozen predictive controller equations and incumbent-price update.
+\subsection{Floor-aware fixed-RZF stream-power repair}
+With fixed RZF columns $\mathbf w_{b,k}$, protected-subband covariance is reweighted as
+\begin{equation}
+ \mathbf Q_b=\rho_b\sum_k \eta_{b,k}\mathbf w_{b,k}\mathbf w_{b,k}^{H},
+\end{equation}
+subject to per-sector post-mode power, incumbent-protection, locality, and user-floor inequalities. Feasibility is primary and action deviation is secondary.
+\subsection{Protected-subband scheduling fallback}
+When no static fixed-beam action satisfies the joint floors, the controller time-shares a finite mode library over 0.5-ms slots. The mode set includes critical-sector singleton service and bounded mute-only guard sectors. The optimization enforces average user floors and both incumbent criteria without changing $q$, RZF directions, or the floor definition.
+\subsection{Failure certificate and claim boundary}
+A residual is reported rather than hidden when no mode mixture in the declared action set is feasible. Information-exchange locality is not yet certified; only the action-scope locality is verified.
+
+\section{Simulation Methodology}
+The frozen development campaign uses 30 channel seeds, five protected-pass records per seed, nine methods, common random numbers, and seed-cluster bootstrap confidence intervals. The fresh holdout uses seeds 44030--44059 and the exact frozen candidate-v4.5 source. No algorithmic adaptation is permitted after observing the holdout.
+
+\section{Development Results}
+\input{tables/development_key_results.tex}
+Candidate v4.5 preserves zero long- and short-term EESS violations and a statistically significant proportional-fair utility advantage. The scheduling extensions reduce the v4.3 unresolved intervals from 1736 to 519 and floor-violation user-seconds from 19994 to 6505. Companion-aware completion closes only four additional intervals relative to v4.4; this establishes a stopping point for mode-library tuning and identifies fixed-association serviceability as the remaining limitation.
+
+\section{Fresh Holdout Results}
+% AUTO-INSERT-HOLDOUT: The wrapper writes twc_draft/generated_holdout_results.tex after the holdout returns.
+\IfFileExists{generated_holdout_results.tex}{\input{generated_holdout_results.tex}}{Fresh holdout results are pending.}
+
+\section{Complexity and Practicality}
+The development replay records a maximum scheduling solve time of 1.152~s in offline Python/HiGHS execution, a maximum of 625 candidate scheduling modes, and at most 12 nonzero modes in an accepted mixture. The final paper must separate algorithmic action locality from unmeasured signalling-protocol overhead. A compact practicality table will report runtime, changed sectors/streams, and a lower bound on control payload.
+
+\section{Limitations}
+The study does not claim hardware calibration or regulatory compliance. The fixed-association bounded action class can be infeasible for some user sets. User reassignment, multi-connectivity, or a preregistered serviceability-aware admission rule are valid extensions, but they are not silently introduced into the present results.
+
+\section{Conclusion}
+The proposed hierarchy demonstrates that predictive incumbent protection and distributed floor-aware control can coexist with strong utility gains. Explicit feasibility conditioning prevents an overstatement of universal user-floor guarantees and exposes the precise operating regimes that require association or admission control.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}
