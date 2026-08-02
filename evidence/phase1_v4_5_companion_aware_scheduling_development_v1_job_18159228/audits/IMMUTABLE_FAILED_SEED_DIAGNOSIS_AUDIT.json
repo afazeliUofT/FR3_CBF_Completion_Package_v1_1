@@ -1,0 +1,29 @@
+{
+  "claim_boundary": "POST_CAMPAIGN_DEVELOPMENT_DIAGNOSIS_NOT_FRESH_CONFIRMATION",
+  "current_load_serviceability_mismatch_interval_count": 638,
+  "diagnosed_unresolved_interval_count": 1736,
+  "diagnosis_zip_sha256": "4d8181b7b328d12dad0070e2e531bb4661e87e8aaf1c6a8e59184bf66ae0e62e",
+  "expanded_local_certified_interval_count": 162,
+  "failed_seeds": [
+    44001,
+    44007,
+    44008,
+    44013,
+    44017,
+    44018,
+    44024,
+    44025,
+    44026,
+    44027,
+    44028
+  ],
+  "fixed_beam_joint_global_infeasible_interval_count": 1284,
+  "fixed_beam_single_user_infeasible_interval_count": 0,
+  "next_repair_decision": "PROTECTED_SUBBAND_SCHEDULING_REASSIGNMENT_REQUIRED",
+  "required_github_head": "b6caac8ec0ca61e8e397959b169cc473a11ffa87",
+  "schema_version": 1,
+  "scientific_inference": "simultaneous fixed-beam service is the blocker; every diagnosed floor-deficit user remains individually serviceable, so protected-resource scheduling is the next justified degree of freedom",
+  "solver_uncertified_interval_count": 108,
+  "status": "PASS_IMMUTABLE_FAILED_SEED_DIAGNOSIS_AUDIT",
+  "strict_global_only_interval_count": 182
+}

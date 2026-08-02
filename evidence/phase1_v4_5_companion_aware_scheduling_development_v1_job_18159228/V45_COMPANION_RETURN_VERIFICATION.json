@@ -1,0 +1,18 @@
+{
+  "campaign_rerun_authorized": false,
+  "emergency_return": false,
+  "failed_seed_return_count": 11,
+  "fresh_confirmation": false,
+  "metadata_status": "V4_5_COMPANION_AWARE_SCHEDULING_DEVELOPMENT_INCOMPLETE",
+  "missing_failed_seeds": [],
+  "next_gate": "FREEZE_DEVELOPMENT_EVIDENCE_AND_CHOOSE_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_WHILE_STARTING_METHODS_DRAFT",
+  "next_repair_decision": "USER_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_REQUIRED",
+  "return_completeness": "COMPLETE",
+  "return_manifest": "PASS",
+  "return_zip_crc": "PASS",
+  "return_zip_sha256": "0e748afbaaad2b5eeedc14855230f5df8230698974e51a1ee9f46fa7880c3354",
+  "schema_version": 1,
+  "scientific_pass": false,
+  "status": "PASS_COMPLETE_V45_SCHEDULING_DEVELOPMENT_RETURN",
+  "v45_scheduling_development_status": "V4_5_COMPANION_AWARE_SCHEDULING_DEVELOPMENT_INCOMPLETE"
+}

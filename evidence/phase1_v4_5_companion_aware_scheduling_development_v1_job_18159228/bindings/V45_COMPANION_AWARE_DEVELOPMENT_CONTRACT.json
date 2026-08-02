@@ -1,0 +1,26 @@
+{
+  "candidate_version": "v4.5",
+  "centralized_wmmse": false,
+  "fresh_confirmation": false,
+  "hierarchy": [
+    "candidate_v4_3_power_repair",
+    "candidate_v4_4_target_only_scheduling",
+    "candidate_v4_5_companion_aware_scheduling",
+    "diagnostic_only_top8_guard_oracle"
+  ],
+  "new_degree_of_freedom": "Complete singleton scheduling basis for every active companion stream in each critical sector; exact bounded guard-subset rescue over the ranked top-eight pool with guard union at most four.",
+  "next_gate_on_fail": "USER_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_POLICY_WITHOUT_FURTHER_MINOR_MODE_TUNING",
+  "next_gate_on_pass": "FREEZE_V4_5_START_13_PAGE_TWC_DRAFT_AND_RUN_FRESH_HOLDOUT_44030_44059_IN_PARALLEL",
+  "primary_objective": "hard floor and EESS feasibility",
+  "schema_version": 1,
+  "sum_rate_primary": false,
+  "unchanged_constraints": [
+    "fairness_floor",
+    "long_eess",
+    "short_eess",
+    "q_modes",
+    "fixed_rzf_directions",
+    "strict_post_mode_power",
+    "no_q0_headroom"
+  ]
+}

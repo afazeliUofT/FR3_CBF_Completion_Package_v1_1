@@ -1,0 +1,15 @@
+{
+  "array_job_id": "18159228",
+  "campaign_rerun_authorized": false,
+  "channel_regenerated": false,
+  "created_utc": "2026-08-02T20:50:24.093120+00:00",
+  "expected_failed_seed_return_count": 11,
+  "failed_seed_return_count": 11,
+  "fresh_confirmation": false,
+  "gpu_requested": false,
+  "merge_job_id": "18159229",
+  "next_gate": "FREEZE_DEVELOPMENT_EVIDENCE_AND_CHOOSE_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_WHILE_STARTING_METHODS_DRAFT",
+  "raw_channels_included": false,
+  "schema_version": 1,
+  "status": "V4_5_COMPANION_AWARE_SCHEDULING_DEVELOPMENT_INCOMPLETE"
+}

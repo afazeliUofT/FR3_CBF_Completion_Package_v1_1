@@ -1,0 +1,713 @@
+=================================================================
+FR3 CANDIDATE V4.5 — COMPANION-AWARE SCHEDULING DEVELOPMENT
+=================================================================
+PACKAGE_ROOT=/home/afazeli2006/fr3_v45_companion_aware_outer_runs/20260802_203416/extracted/FR3_CBF_v1_1_Candidate_v4_5_Companion_Aware_Protected_Subband_Scheduling_Development_DropIn_v1_2026-08-02
+REPO=/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1
+RORQUAL_HOST=rsadve1@rorqual.alliancecan.ca
+FAILED_SEED_COUNT=11
+CHANNEL_REGENERATION=NO
+GPU_REQUESTED=NO
+WORKER_WALLTIME=00:06:00
+WORKER_MEMORY=8G
+MERGE_WALLTIME=00:03:00
+MERGE_MEMORY=4G
+CAMPAIGN_RERUN_AUTHORIZED=NO
+WSL_TERMINAL_CLOSE_REQUESTED=NO
+INTERNAL_MANIFEST_VERIFICATION=PASS
+SOURCE_PAYLOAD_MANIFEST_VERIFICATION=PASS
+REPO_VENV_ACTIVATED=YES
+
+[notice] A new release of pip is available: 26.1.2 -> 26.2
+[notice] To update, run: pip install --upgrade pip
+No broken requirements found.
+LOCAL_VENV_DEPENDENCY_GATE=PASS
+PYTHON_IN_MEMORY_SYNTAX_CHECK=PASS
+PYTHON_SYNTAX_FILE_COUNT=62
+BASH_SYNTAX_CHECK=PASS
+.........................                                                [100%]
+25 passed in 2.37s
+IMMUTABLE_FAILED_SEED_DIAGNOSIS_AUDIT=PASS
+DIAGNOSED_UNRESOLVED_INTERVAL_COUNT=1736
+FIXED_BEAM_JOINT_GLOBAL_INFEASIBLE_INTERVAL_COUNT=1284
+FIXED_BEAM_SINGLE_USER_INFEASIBLE_INTERVAL_COUNT=0
+NEXT_REPAIR_DECISION=PROTECTED_SUBBAND_SCHEDULING_REASSIGNMENT_REQUIRED
+SCHEDULING_NECESSITY_AND_PLAUSIBILITY_AUDIT=PASS
+AFFECTED_INTERVAL_COUNT=1736
+MAXIMUM_CONSERVATIVE_SINGLE_USER_DEDICATED_FRACTION=0.31954502137142188
+MAXIMUM_CONSERVATIVE_GLOBAL_DEDICATED_FRACTION_SUM=0.41450107427104349
+MAXIMUM_CONSERVATIVE_PER_SECTOR_DEDICATED_FRACTION_SUM=0.31954502137142188
+CERTIFIED_V44_COMPANION_MODE_GAP_AUDIT=PASS
+CERTIFIED_V44_RESIDUAL_INTERVALS=523
+RESIDUAL_INTERVALS_WITH_OMITTED_COMPANION_SINGLETONS=523
+MAXIMUM_COMPANION_COMPLETED_MODE_COUNT=625
+NUMPY_JSON_SERIALIZATION_REGRESSION=PASS
+LOCAL_QUALITY_GATE=PASS
+Cloning into '/mnt/c/Users/alifa/Downloads/FR3_V45_COMPANION_AWARE_RETURN_20260802_203417/github_source_clone'...
+Updating files:  12% (354/2791)
+Updating files:  13% (363/2791)
+Updating files:  14% (391/2791)
+Updating files:  15% (419/2791)
+Updating files:  16% (447/2791)
+Updating files:  17% (475/2791)
+Updating files:  18% (503/2791)
+Updating files:  18% (516/2791)
+Updating files:  19% (531/2791)
+Updating files:  20% (559/2791)
+Updating files:  20% (583/2791)
+Updating files:  21% (587/2791)
+Updating files:  21% (606/2791)
+Updating files:  22% (615/2791)
+Updating files:  23% (642/2791)
+Updating files:  24% (670/2791)
+Updating files:  25% (698/2791)
+Updating files:  26% (726/2791)
+Updating files:  27% (754/2791)
+Updating files:  27% (759/2791)
+Updating files:  28% (782/2791)
+Updating files:  29% (810/2791)
+Updating files:  30% (838/2791)
+Updating files:  31% (866/2791)
+Updating files:  32% (894/2791)
+Updating files:  33% (922/2791)
+Updating files:  34% (949/2791)
+Updating files:  34% (953/2791)
+Updating files:  35% (977/2791)
+Updating files:  36% (1005/2791)
+Updating files:  37% (1033/2791)
+Updating files:  38% (1061/2791)
+Updating files:  39% (1089/2791)
+Updating files:  40% (1117/2791)
+Updating files:  41% (1145/2791)
+Updating files:  42% (1173/2791)
+Updating files:  43% (1201/2791)
+Updating files:  44% (1229/2791)
+Updating files:  45% (1256/2791)
+Updating files:  46% (1284/2791)
+Updating files:  47% (1312/2791)
+Updating files:  48% (1340/2791)
+Updating files:  49% (1368/2791)
+Updating files:  50% (1396/2791)
+Updating files:  51% (1424/2791)
+Updating files:  51% (1427/2791)
+Updating files:  52% (1452/2791)
+Updating files:  53% (1480/2791)
+Updating files:  54% (1508/2791)
+Updating files:  55% (1536/2791)
+Updating files:  56% (1563/2791)
+Updating files:  57% (1591/2791)
+Updating files:  58% (1619/2791)
+Updating files:  59% (1647/2791)
+Updating files:  60% (1675/2791)
+Updating files:  61% (1703/2791)
+Updating files:  62% (1731/2791)
+Updating files:  62% (1735/2791)
+Updating files:  63% (1759/2791)
+Updating files:  64% (1787/2791)
+Updating files:  65% (1815/2791)
+Updating files:  66% (1843/2791)
+Updating files:  67% (1870/2791)
+Updating files:  68% (1898/2791)
+Updating files:  69% (1926/2791)
+Updating files:  70% (1954/2791)
+Updating files:  71% (1982/2791)
+Updating files:  72% (2010/2791)
+Updating files:  73% (2038/2791)
+Updating files:  74% (2066/2791)
+Updating files:  74% (2088/2791)
+Updating files:  75% (2094/2791)
+Updating files:  76% (2122/2791)
+Updating files:  77% (2150/2791)
+Updating files:  78% (2177/2791)
+Updating files:  79% (2205/2791)
+Updating files:  80% (2233/2791)
+Updating files:  81% (2261/2791)
+Updating files:  82% (2289/2791)
+Updating files:  83% (2317/2791)
+Updating files:  83% (2329/2791)
+Updating files:  84% (2345/2791)
+Updating files:  85% (2373/2791)
+Updating files:  86% (2401/2791)
+Updating files:  87% (2429/2791)
+Updating files:  88% (2457/2791)
+Updating files:  89% (2484/2791)
+Updating files:  90% (2512/2791)
+Updating files:  91% (2540/2791)
+Updating files:  91% (2545/2791)
+Updating files:  92% (2568/2791)
+Updating files:  93% (2596/2791)
+Updating files:  94% (2624/2791)
+Updating files:  95% (2652/2791)
+Updating files:  96% (2680/2791)
+Updating files:  97% (2708/2791)
+Updating files:  98% (2736/2791)
+Updating files:  99% (2764/2791)
+Updating files: 100% (2791/2791)
+Updating files: 100% (2791/2791), done.
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+GITHUB_REQUIRED_ANCESTOR_GATE=PASS
+GIT_HEAD_BEFORE=76a62cda5d649cad25a6a45ccb5f0f757a99a269
+GIT_REMOTE_HEAD_BEFORE=c88ecac477e085dbac533cd8117adaae83ae87a4
+GITHUB_NEWER_WORK_OVERWRITTEN=NO
+[e3-first-sector-p452 fff8d82] Add candidate-v4.5 companion-aware scheduling development
+ 64 files changed, 15409 insertions(+)
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/PACKAGE_VERSION.json
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/README.md
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/README_GITHUB_SOURCE.md
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/SOURCE_PAYLOAD_MANIFEST.sha256
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/cluster_diagnostics/NOT_EXECUTED_IN_BUILD_ENVIRONMENT.md
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/config/V44_INFRASTRUCTURE_REPAIR_CONTRACT.json
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/config/V44_SCHEDULING_DEVELOPMENT_CONTRACT.json
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/config/V45_COMPANION_AWARE_DEVELOPMENT_CONTRACT.json
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/docs/BUILD_VALIDATION.md
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/docs/CLAIM_BOUNDARIES.md
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/docs/EXPECTED_SUCCESS_MARKERS.md
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/docs/RETURN_CONTRACT.md
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/docs/SCIENTIFIC_STATUS_AND_METHOD.md
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/docs/TWC_MAJOR_STEPS_REMAINING.md
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/docs/WSL_RORQUAL_WORKFLOW.md
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/immutable_bindings/FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_3_R2.zip.sha256
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/immutable_bindings/FR3_RORQUAL_V4_3_FAILED_SEED_DIAGNOSIS_18150465.zip.sha256
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/immutable_bindings/FR3_RORQUAL_V4_3_R2_30SEED_CAMPAIGN_18145937.zip.sha256
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/immutable_bindings/FR3_RORQUAL_V4_4_PROTECTED_SUBBAND_SCHEDULING_DEVELOPMENT_18153316.zip.sha256
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/immutable_bindings/FR3_RORQUAL_V4_4_SCHEDULING_INFRA_REPAIR_R1_18154672.zip.sha256
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/local_diagnostics/BASH_SYNTAX_CHECK.txt
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/local_diagnostics/CERTIFIED_V44_COMPANION_MODE_GAP_AUDIT.json
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/local_diagnostics/CERTIFIED_V44_COMPANION_MODE_GAP_AUDIT.log
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/local_diagnostics/FINAL_LOCAL_QUALITY_GATE.json
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/local_diagnostics/FINAL_LOCAL_QUALITY_GATE.txt
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/local_diagnostics/FORBIDDEN_ARTIFACT_SCAN.txt
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/local_diagnostics/PYTEST.txt
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/local_diagnostics/PYTHON_SYNTAX_CHECK.txt
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/requirements.txt
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/audit_failed_seed_diagnosis.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/audit_scheduling_necessity.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/audit_v44_companion_mode_gap.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/audit_v44_infrastructure_failure.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/merge_v44_scheduling_development.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/merge_v45_companion_aware_development.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/package_v44_scheduling_return.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/package_v45_companion_aware_return.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/replay_v44_scheduling_seed.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/replay_v45_companion_aware_seed.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/verify_v44_scheduling_return.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/scripts/verify_v45_companion_aware_return.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/__init__.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/candidate_v4_3_campaign.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/candidate_v4_4_scheduling_campaign.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/candidate_v4_5_companion_aware_campaign.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/companion_aware_scheduler.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/constrained_pf_safety.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/dual_criterion_controller.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/floor_feasibility_repair.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/null_floor_aware_sector_backoff.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/online_pf_load_transition.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/phase1_job_runtime.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/physical_impairment_sensitivity.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/practical_architecture_mapping.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/protected_subband_scheduler.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/src/fr3_cbf/robust_delayed_safety.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/tests/conftest.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/tests/test_companion_aware_scheduler.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/tests/test_protected_subband_scheduler.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/tests/test_v44_infrastructure_repair.py
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/wrappers/REMOTE_ORCHESTRATE_V44_SCHEDULING_INFRA_REPAIR_RERUN.sh
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/wrappers/REMOTE_ORCHESTRATE_V45_COMPANION_AWARE_DEVELOPMENT.sh
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/wrappers/RUN_V44_SCHEDULING_INFRA_REPAIR_RERUN_FROM_WSL.sh
+ create mode 100644 tools/phase1_v4_5_companion_aware_scheduling_development_v1/wrappers/RUN_V45_COMPANION_AWARE_DEVELOPMENT_FROM_WSL.sh
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+To github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1.git
+   c88ecac..fff8d82  HEAD -> e3-first-sector-p452
+V45_COMPANION_SOURCE_COMMIT=fff8d828bbf65d7a30a342fec7feee21332c622d
+Multifactor authentication is now mandatory to connect to this cluster.
+You can enroll your account into multifactor authentication on this page:
+https://ccdb.alliancecan.ca/multi_factor_authentications
+by following the instructions available here:
+https://docs.alliancecan.ca/wiki/Multifactor_authentication
+
+=============================================================================
+
+L'authentification multifacteur est maintenant obligatoire pour vous connecter
+à cette grappe. Configurez votre compte sur
+https://ccdb.alliancecan.ca/multi_factor_authentications
+et suivez les directives dans
+https://docs.alliancecan.ca/wiki/Multifactor_authentication/fr.
+Success. Logging you in...
+REMOTE_HOST=rorqual3.rorqual.calcul.quebec
+REMOTE_SCRATCH=/scratch/rsadve1
+EXECUTION_STAGE=V4_5_COMPANION_AWARE_SCHEDULING_DEVELOPMENT
+FAILED_SEEDS=44001,44007,44008,44013,44017,44018,44024,44025,44026,44027,44028
+CHANNEL_REGENERATION=NO
+GPU_REQUESTED=NO
+WORKER_ARRAY=0-10%4
+WORKER_WALLTIME=00:06:00
+WORKER_MEMORY=8G
+MERGE_WALLTIME=00:03:00
+MERGE_MEMORY=4G
+CAMPAIGN_RERUN_AUTHORIZED=NO
+REMOTE_V45_PACKAGE_SHA256_GATE=PASS
+EXISTING_V45_COMPANION_RUN_ATTACHED=NO
+REMOTE_PACKAGE_MANIFEST_VERIFICATION=PASS
+REMOTE_JOB_PACKAGE_MANIFEST_VERIFICATION=PASS
+REMOTE_V45_OVERLAY_MANIFEST_VERIFICATION=PASS
+CANDIDATE_V4_3_IMMUTABLE_ARCHIVE_MODIFIED=NO
+RUN_SPECIFIC_V4_5_MODULE_OVERLAY=PASS
+IMMUTABLE_FAILED_SEED_DIAGNOSIS_AUDIT=PASS
+DIAGNOSED_UNRESOLVED_INTERVAL_COUNT=1736
+FIXED_BEAM_JOINT_GLOBAL_INFEASIBLE_INTERVAL_COUNT=1284
+FIXED_BEAM_SINGLE_USER_INFEASIBLE_INTERVAL_COUNT=0
+NEXT_REPAIR_DECISION=PROTECTED_SUBBAND_SCHEDULING_REASSIGNMENT_REQUIRED
+SCHEDULING_NECESSITY_AND_PLAUSIBILITY_AUDIT=PASS
+AFFECTED_INTERVAL_COUNT=1736
+MAXIMUM_CONSERVATIVE_SINGLE_USER_DEDICATED_FRACTION=0.31954502137142188
+MAXIMUM_CONSERVATIVE_GLOBAL_DEDICATED_FRACTION_SUM=0.41450107427104349
+MAXIMUM_CONSERVATIVE_PER_SECTOR_DEDICATED_FRACTION_SUM=0.31954502137142188
+CERTIFIED_V44_COMPANION_MODE_GAP_AUDIT=PASS
+CERTIFIED_V44_RESIDUAL_INTERVALS=523
+RESIDUAL_INTERVALS_WITH_OMITTED_COMPANION_SINGLETONS=523
+MAXIMUM_COMPANION_COMPLETED_MODE_COUNT=625
+No broken requirements found.
+RORQUAL_REFERENCE_VENV_GATE=PASS
+RORQUAL_PRESERVED_CHANNEL_BINDING=PASS
+AUTHORIZATION_TOKEN_PRESENT=NO
+V45_COMPANION_CONCURRENT_RUN_GUARD=PASS
+sbatch: NOTE: Your memory request of 8192.0M was likely submitted as 8.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+sbatch: NOTE: Your memory request of 4096.0M was likely submitted as 4.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+V45_COMPANION_AWARE_SUBMISSION=PASS
+ARRAY_JOB_ID=18159228
+MERGE_JOB_ID=18159229
+WORKER_ARRAY=0-10%4
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18159228_[0-10%4]             fr3-v45-comp      PENDING         0:00                       (None)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18159228_[0-10%4]             fr3-v45-comp      PENDING         0:00                   (Priority)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18159228_[0-10%4]             fr3-v45-comp      PENDING         0:00                   (Priority)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18159228_[0-10%4]             fr3-v45-comp      PENDING         0:00                   (Priority)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18159228_[0-10%4]             fr3-v45-comp      PENDING         0:00                   (Priority)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18159228_[0-10%4]             fr3-v45-comp      PENDING         0:00                   (Priority)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18159228_[0-10%4]             fr3-v45-comp      PENDING         0:00                   (Priority)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+       18159228_[0-10%4]             fr3-v45-comp      PENDING         0:00                   (Priority)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_0             fr3-v45-comp      RUNNING         0:10                      rc32505
+              18159228_1             fr3-v45-comp      RUNNING         0:10                      rc32505
+              18159228_2             fr3-v45-comp      RUNNING         0:10                      rc32215
+              18159228_3             fr3-v45-comp      RUNNING         0:10                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[4-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_0             fr3-v45-comp      RUNNING         0:30                      rc32505
+              18159228_1             fr3-v45-comp      RUNNING         0:30                      rc32505
+              18159228_2             fr3-v45-comp      RUNNING         0:30                      rc32215
+              18159228_3             fr3-v45-comp      RUNNING         0:30                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[4-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_0             fr3-v45-comp      RUNNING         0:50                      rc32505
+              18159228_1             fr3-v45-comp      RUNNING         0:50                      rc32505
+              18159228_2             fr3-v45-comp      RUNNING         0:50                      rc32215
+              18159228_3             fr3-v45-comp      RUNNING         0:50                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[4-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_0             fr3-v45-comp      RUNNING         1:10                      rc32505
+              18159228_1             fr3-v45-comp      RUNNING         1:10                      rc32505
+              18159228_2             fr3-v45-comp      RUNNING         1:10                      rc32215
+              18159228_3             fr3-v45-comp      RUNNING         1:10                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[4-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_0             fr3-v45-comp      RUNNING         1:30                      rc32505
+              18159228_1             fr3-v45-comp      RUNNING         1:30                      rc32505
+              18159228_2             fr3-v45-comp      RUNNING         1:30                      rc32215
+              18159228_3             fr3-v45-comp      RUNNING         1:30                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[4-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_0             fr3-v45-comp      RUNNING         1:50                      rc32505
+              18159228_1             fr3-v45-comp      RUNNING         1:50                      rc32505
+              18159228_2             fr3-v45-comp      RUNNING         1:50                      rc32215
+              18159228_3             fr3-v45-comp      RUNNING         1:50                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[4-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[4-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[4-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[4-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_4             fr3-v45-comp      RUNNING         0:03                      rc32505
+              18159228_5             fr3-v45-comp      RUNNING         0:03                      rc32505
+              18159228_6             fr3-v45-comp      RUNNING         0:03                      rc32215
+              18159228_7             fr3-v45-comp      RUNNING         0:03                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[8-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_4             fr3-v45-comp      RUNNING         0:23                      rc32505
+              18159228_5             fr3-v45-comp      RUNNING         0:23                      rc32505
+              18159228_6             fr3-v45-comp      RUNNING         0:23                      rc32215
+              18159228_7             fr3-v45-comp      RUNNING         0:23                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[8-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_4             fr3-v45-comp      RUNNING         0:43                      rc32505
+              18159228_5             fr3-v45-comp      RUNNING         0:43                      rc32505
+              18159228_6             fr3-v45-comp      RUNNING         0:43                      rc32215
+              18159228_7             fr3-v45-comp      RUNNING         0:43                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[8-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_4             fr3-v45-comp      RUNNING         1:03                      rc32505
+              18159228_5             fr3-v45-comp      RUNNING         1:03                      rc32505
+              18159228_6             fr3-v45-comp      RUNNING         1:03                      rc32215
+              18159228_7             fr3-v45-comp      RUNNING         1:03                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[8-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_4             fr3-v45-comp      RUNNING         1:23                      rc32505
+              18159228_5             fr3-v45-comp      RUNNING         1:23                      rc32505
+              18159228_6             fr3-v45-comp      RUNNING         1:23                      rc32215
+              18159228_7             fr3-v45-comp      RUNNING         1:23                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[8-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_4             fr3-v45-comp      RUNNING         1:43                      rc32505
+              18159228_5             fr3-v45-comp      RUNNING         1:43                      rc32505
+              18159228_6             fr3-v45-comp      RUNNING         1:43                      rc32215
+              18159228_7             fr3-v45-comp      RUNNING         1:43                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[8-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_4             fr3-v45-comp      RUNNING         2:03                      rc32505
+              18159228_7             fr3-v45-comp      RUNNING         2:03                      rc32215
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[8-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[8-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[8-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+       18159228_[8-10%4]             fr3-v45-comp      PENDING         0:00          (JobArrayTaskLimit)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         0:16                      rc32505
+              18159228_9             fr3-v45-comp      RUNNING         0:16                      rc32505
+             18159228_10             fr3-v45-comp      RUNNING         0:16                      rc32623
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         0:36                      rc32505
+              18159228_9             fr3-v45-comp      RUNNING         0:36                      rc32505
+             18159228_10             fr3-v45-comp      RUNNING         0:36                      rc32623
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         0:57                      rc32505
+              18159228_9             fr3-v45-comp      RUNNING         0:57                      rc32505
+             18159228_10             fr3-v45-comp      RUNNING         0:57                      rc32623
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         1:17                      rc32505
+              18159228_9             fr3-v45-comp      RUNNING         1:17                      rc32505
+             18159228_10             fr3-v45-comp      RUNNING         1:17                      rc32623
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         1:37                      rc32505
+              18159228_9             fr3-v45-comp      RUNNING         1:37                      rc32505
+             18159228_10             fr3-v45-comp      RUNNING         1:37                      rc32623
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         1:57                      rc32505
+              18159228_9             fr3-v45-comp      RUNNING         1:57                      rc32505
+             18159228_10             fr3-v45-comp      RUNNING         1:57                      rc32623
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         2:17                      rc32505
+              18159228_9             fr3-v45-comp      RUNNING         2:17                      rc32505
+             18159228_10             fr3-v45-comp      RUNNING         2:17                      rc32623
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         2:37                      rc32505
+              18159228_9             fr3-v45-comp      RUNNING         2:37                      rc32505
+             18159228_10             fr3-v45-comp      RUNNING         2:37                      rc32623
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         2:57                      rc32505
+              18159228_9             fr3-v45-comp      RUNNING         2:57                      rc32505
+             18159228_10             fr3-v45-comp      RUNNING         2:57                      rc32623
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         3:17                      rc32505
+              18159228_9             fr3-v45-comp      RUNNING         3:17                      rc32505
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         3:37                      rc32505
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         3:57                      rc32505
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         4:17                      rc32505
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+V45_COMPANION_PROGRESS_BEGIN
+                   JOBID                     NAME        STATE         TIME             NODELIST(REASON)
+              18159228_8             fr3-v45-comp      RUNNING         4:38                      rc32505
+                18159229       fr3-v45-comp-merge      PENDING         0:00                 (Dependency)
+V45_COMPANION_PROGRESS_END
+JobIDRaw|JobName|Account|State|ExitCode|Elapsed|MaxRSS|ReqMem|AllocTRES|NodeList
+18159229|fr3-v45-comp-merge|def-rsadve_cpu|FAILED|42:0|00:00:02||4G|billing=4000,cpu=4,mem=4G,node=1|rc32407
+18159470|fr3-v45-comp|def-rsadve_cpu|FAILED|42:0|00:02:01||8G|billing=8000,cpu=8,mem=8G,node=1|rc32505
+18159471|fr3-v45-comp|def-rsadve_cpu|FAILED|42:0|00:02:06||8G|billing=8000,cpu=8,mem=8G,node=1|rc32505
+18159472|fr3-v45-comp|def-rsadve_cpu|FAILED|42:0|00:02:02||8G|billing=8000,cpu=8,mem=8G,node=1|rc32215
+18159473|fr3-v45-comp|def-rsadve_cpu|COMPLETED|0:0|00:01:57||8G|billing=8000,cpu=8,mem=8G,node=1|rc32215
+18159801|fr3-v45-comp|def-rsadve_cpu|FAILED|42:0|00:02:11||8G|billing=8000,cpu=8,mem=8G,node=1|rc32505
+18159802|fr3-v45-comp|def-rsadve_cpu|COMPLETED|0:0|00:02:01||8G|billing=8000,cpu=8,mem=8G,node=1|rc32505
+18159803|fr3-v45-comp|def-rsadve_cpu|FAILED|42:0|00:01:54||8G|billing=8000,cpu=8,mem=8G,node=1|rc32215
+18159804|fr3-v45-comp|def-rsadve_cpu|FAILED|42:0|00:02:08||8G|billing=8000,cpu=8,mem=8G,node=1|rc32215
+18159850|fr3-v45-comp|def-rsadve_cpu|COMPLETED|0:0|00:04:47||8G|billing=8000,cpu=8,mem=8G,node=1|rc32505
+18159851|fr3-v45-comp|def-rsadve_cpu|COMPLETED|0:0|00:03:29||8G|billing=8000,cpu=8,mem=8G,node=1|rc32505
+18159228|fr3-v45-comp|def-rsadve_cpu|FAILED|42:0|00:03:09||8G|billing=8000,cpu=8,mem=8G,node=1|rc32623
+V45_COMPANION_AWARE_RETURN_PACKAGING=PASS
+REMOTE_RETURN_ZIP=/scratch/rsadve1/FR3_V45_COMPANION_AWARE_DEVELOPMENT_aa5951ced02c/return/FR3_RORQUAL_V4_5_COMPANION_AWARE_DEVELOPMENT_18159228.zip
+REMOTE_RETURN_ZIP_SHA256=0e748afbaaad2b5eeedc14855230f5df8230698974e51a1ee9f46fa7880c3354
+DIAGNOSTIC_SEED_RETURN_COUNT=11
+V45_COMPANION_AWARE_DEVELOPMENT_STATUS=V4_5_COMPANION_AWARE_SCHEDULING_DEVELOPMENT_INCOMPLETE
+NEXT_GATE=FREEZE_DEVELOPMENT_EVIDENCE_AND_CHOOSE_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_WHILE_STARTING_METHODS_DRAFT
+status=V4_5_COMPANION_AWARE_SCHEDULING_DEVELOPMENT_INCOMPLETE
+failed_seed_hard_gate_pass_count=4
+failed_seed_bounded_scope_pass_count=11
+original_v4_3_unresolved_interval_count=1736
+scheduling_success_interval_count=1217
+scheduling_failure_interval_count=519
+candidate_floor_violation_user_seconds=6505
+candidate_long_eess_violation_seconds=0
+candidate_short_eess_violation_seconds=0
+maximum_protected_subband_scheduled_fraction=0.919
+maximum_schedule_mutable_sector_count=6
+all30_development_primary_candidate_minus_static={'bootstrap_resamples': 10000, 'bootstrap_seed': 20260805, 'lower_95': 0.2402031324343159, 'median_bootstrap_mean': 0.28846675493484125, 'point_estimate': 0.2883463712824363, 'seed_cluster_standard_deviation': 0.1397987615325569, 'upper_95': 0.33823879824201364}
+next_repair_decision=USER_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_REQUIRED
+next_gate=FREEZE_DEVELOPMENT_EVIDENCE_AND_CHOOSE_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_WHILE_STARTING_METHODS_DRAFT
+REMOTE_RETURN_ZIP=/scratch/rsadve1/FR3_V45_COMPANION_AWARE_DEVELOPMENT_aa5951ced02c/return/FR3_RORQUAL_V4_5_COMPANION_AWARE_DEVELOPMENT_18159228.zip
+REMOTE_RETURN_ZIP_SHA256=0e748afbaaad2b5eeedc14855230f5df8230698974e51a1ee9f46fa7880c3354
+ARRAY_JOB_ID=18159228
+MERGE_JOB_ID=18159229
+MERGE_STATE=FAILED
+MERGE_EXIT_CODE=42:0
+CHANNEL_REGENERATION=NO
+GPU_REQUESTED=NO
+WORKER_WALLTIME=00:06:00
+WORKER_MEMORY=8G
+MERGE_WALLTIME=00:03:00
+MERGE_MEMORY=4G
+REMOTE_WRAPPER_EXIT_CODE=42
+REMOTE_WRAPPER_EXIT_CODE=42
+DIAGNOSTIC_RETRIEVAL_EXIT_CODE=0
+RETURN_SIDECAR_BASENAME_GATE=PASS
+V45_COMPANION_AWARE_RETURN_SHA256_GATE=PASS
+V45_COMPANION_AWARE_RETURN_ZIP_CRC=PASS
+V45_COMPANION_AWARE_RETURN_MANIFEST=PASS
+V45_COMPANION_AWARE_RETURN_COMPLETENESS=COMPLETE
+FAILED_SEED_RETURN_COUNT=11
+MISSING_FAILED_SEEDS=
+V45_COMPANION_AWARE_DEVELOPMENT_STATUS=V4_5_COMPANION_AWARE_SCHEDULING_DEVELOPMENT_INCOMPLETE
+NEXT_REPAIR_DECISION=USER_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_REQUIRED
+NEXT_GATE=FREEZE_DEVELOPMENT_EVIDENCE_AND_CHOOSE_REASSIGNMENT_OR_PREREGISTERED_ADMISSION_WHILE_STARTING_METHODS_DRAFT
+Cloning into '/mnt/c/Users/alifa/Downloads/FR3_V45_COMPANION_AWARE_RETURN_20260802_203417/github_evidence_clone'...
+Updating files:  12% (366/2855)
+Updating files:  13% (372/2855)
+Updating files:  14% (400/2855)
+Updating files:  15% (429/2855)
+Updating files:  16% (457/2855)
+Updating files:  17% (486/2855)
+Updating files:  18% (514/2855)
+Updating files:  19% (543/2855)
+Updating files:  20% (571/2855)
+Updating files:  20% (583/2855)
+Updating files:  21% (600/2855)
+Updating files:  21% (606/2855)
+Updating files:  22% (629/2855)
+Updating files:  23% (657/2855)
+Updating files:  24% (686/2855)
+Updating files:  25% (714/2855)
+Updating files:  25% (738/2855)
+Updating files:  26% (743/2855)
+Updating files:  27% (771/2855)
+Updating files:  28% (800/2855)
+Updating files:  29% (828/2855)
+Updating files:  30% (857/2855)
+Updating files:  31% (886/2855)
+Updating files:  32% (914/2855)
+Updating files:  33% (943/2855)
+Updating files:  34% (971/2855)
+Updating files:  34% (977/2855)
+Updating files:  35% (1000/2855)
+Updating files:  36% (1028/2855)
+Updating files:  37% (1057/2855)
+Updating files:  38% (1085/2855)
+Updating files:  39% (1114/2855)
+Updating files:  40% (1142/2855)
+Updating files:  41% (1171/2855)
+Updating files:  42% (1200/2855)
+Updating files:  42% (1204/2855)
+Updating files:  43% (1228/2855)
+Updating files:  44% (1257/2855)
+Updating files:  45% (1285/2855)
+Updating files:  46% (1314/2855)
+Updating files:  47% (1342/2855)
+Updating files:  48% (1371/2855)
+Updating files:  49% (1399/2855)
+Updating files:  50% (1428/2855)
+Updating files:  51% (1457/2855)
+Updating files:  51% (1479/2855)
+Updating files:  52% (1485/2855)
+Updating files:  53% (1514/2855)
+Updating files:  54% (1542/2855)
+Updating files:  55% (1571/2855)
+Updating files:  56% (1599/2855)
+Updating files:  57% (1628/2855)
+Updating files:  58% (1656/2855)
+Updating files:  59% (1685/2855)
+Updating files:  60% (1713/2855)
+Updating files:  61% (1742/2855)
+Updating files:  61% (1766/2855)
+Updating files:  62% (1771/2855)
+Updating files:  63% (1799/2855)
+Updating files:  64% (1828/2855)
+Updating files:  65% (1856/2855)
+Updating files:  66% (1885/2855)
+Updating files:  67% (1913/2855)
+Updating files:  68% (1942/2855)
+Updating files:  69% (1970/2855)
+Updating files:  70% (1999/2855)
+Updating files:  71% (2028/2855)
+Updating files:  72% (2056/2855)
+Updating files:  73% (2085/2855)
+Updating files:  73% (2091/2855)
+Updating files:  74% (2113/2855)
+Updating files:  75% (2142/2855)
+Updating files:  76% (2170/2855)
+Updating files:  77% (2199/2855)
+Updating files:  78% (2227/2855)
+Updating files:  79% (2256/2855)
+Updating files:  80% (2284/2855)
+Updating files:  81% (2313/2855)
+Updating files:  81% (2336/2855)
+Updating files:  82% (2342/2855)
+Updating files:  83% (2370/2855)
+Updating files:  84% (2399/2855)
+Updating files:  85% (2427/2855)
+Updating files:  86% (2456/2855)
+Updating files:  87% (2484/2855)
+Updating files:  88% (2513/2855)
+Updating files:  89% (2541/2855)
+Updating files:  90% (2570/2855)
+Updating files:  90% (2589/2855)
+Updating files:  91% (2599/2855)
+Updating files:  92% (2627/2855)
+Updating files:  93% (2656/2855)
+Updating files:  94% (2684/2855)
+Updating files:  95% (2713/2855)
+Updating files:  96% (2741/2855)
+Updating files:  97% (2770/2855)
+Updating files:  98% (2798/2855)
+Updating files:  99% (2827/2855)
+Updating files: 100% (2855/2855)
+Updating files: 100% (2855/2855), done.

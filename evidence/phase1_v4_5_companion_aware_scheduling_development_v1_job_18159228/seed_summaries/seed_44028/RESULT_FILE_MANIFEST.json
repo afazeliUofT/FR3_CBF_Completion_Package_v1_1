@@ -1,0 +1,62 @@
+{
+  "CELL_SUMMARY.csv": {
+    "bytes": 39971,
+    "sha256": "6cf4c53f5ac2198c3c2be8693387cd0ebe262baed88daf6472bb17e255d7824f"
+  },
+  "PASS_0_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 5755,
+    "sha256": "9b303e632951366acf3c78ea0b42fa30156910ec59fac6255c1052f74877125f"
+  },
+  "PASS_0_METHOD_TRACES.npz": {
+    "bytes": 63654,
+    "sha256": "731d6f16795e26a94e06bcdeb63560f79c5cac61893b81207bc287fc62853249"
+  },
+  "PASS_1_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 5524,
+    "sha256": "748e87d42bd4be365e8d9106aaa7d09564997dae71ac1b2c42fd04eafbfc7275"
+  },
+  "PASS_1_METHOD_TRACES.npz": {
+    "bytes": 62180,
+    "sha256": "77741f531344023afc3211936c971b9676a8cf5608399d29f1fdc5613182da2e"
+  },
+  "PASS_2_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 5102,
+    "sha256": "828a99979c18dabdd5f53a5c19a22dde1ba3250d363b15a0d6242f37b594b5b5"
+  },
+  "PASS_2_METHOD_TRACES.npz": {
+    "bytes": 62131,
+    "sha256": "c5817b5a90bdde7e1b58f2547b55ba737b5ce62a147de46ad980c7876d3f0459"
+  },
+  "PASS_3_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 5335,
+    "sha256": "f963040d314083da34658030709052c90b36bd083bcded38a3dd5c05f30e7480"
+  },
+  "PASS_3_METHOD_TRACES.npz": {
+    "bytes": 63261,
+    "sha256": "cee39619c61b8a16812b6cf310d020db483e77872691e0ea5cef827c463e1e93"
+  },
+  "PASS_4_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 5372,
+    "sha256": "0ac645ff757827f8b8e7d1398e202d27d4c83606b6d9b12bbd8a4f5cf2917b03"
+  },
+  "PASS_4_METHOD_TRACES.npz": {
+    "bytes": 64203,
+    "sha256": "a1dded3ae55365f60a0cea3e7fb88f702d934668f18299b014c0798dff70b4ad"
+  },
+  "PASS_AUDITS.json": {
+    "bytes": 547662,
+    "sha256": "4f8a35c3a4c2ee5115d6dbaf01428e01d19e1d7bf0c600263f5f93ba84cd3de1"
+  },
+  "PRIMARY_PAIRED_EFFECTS.csv": {
+    "bytes": 631,
+    "sha256": "58333752ac166e853ead7d633fbe1539e89281c538f0da3d450aa8d45df294d9"
+  },
+  "SCHEDULING_PASS_SUMMARY.csv": {
+    "bytes": 375,
+    "sha256": "e4972036586185db0086f4a5de129f00ee117992d55e6f4a8f987f5e2ed3ae16"
+  },
+  "V45_COMPANION_AWARE_SEED_RESULT.json": {
+    "bytes": 1902,
+    "sha256": "62dd041d38d0994e70c23a9cae1d066930e5ab79bd570b359be6754abf99e3a6"
+  }
+}
