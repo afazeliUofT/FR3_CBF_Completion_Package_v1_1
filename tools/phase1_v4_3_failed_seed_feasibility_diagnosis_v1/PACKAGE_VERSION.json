@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "package_id": "FR3_CBF_v1_1_Candidate_v4_3_FailedSeed_Feasibility_Diagnosis_DropIn_v1_2026-08-02",
+  "candidate_version": "v4.3-frozen-diagnostic-only",
+  "created_date": "2026-08-02",
+  "execution_cluster": "rorqual",
+  "execution_mode": "CPU-only reuse of preserved campaign channels",
+  "campaign_seed_scope": [44001, 44007, 44008, 44013, 44017, 44018, 44024, 44025, 44026, 44027, 44028],
+  "candidate_source_changed": false,
+  "confirmatory_campaign_rerun_authorized": false,
+  "claim_boundary": "POST_CAMPAIGN_DIAGNOSIS_NOT_NEW_CONFIRMATORY_SAMPLE_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE"
+}
