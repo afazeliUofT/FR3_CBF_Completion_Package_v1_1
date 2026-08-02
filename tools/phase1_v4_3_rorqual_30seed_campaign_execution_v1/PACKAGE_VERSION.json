@@ -1,0 +1,12 @@
+{
+  "authorization_decision_id": "ff49c7acbbbac118048b6a29a5d6f7d53ac8ab28c898a727dcf8cf8a83318d75",
+  "campaign_execution_authorized": true,
+  "campaign_package_revision": "V4_3_RORQUAL_R2",
+  "campaign_seed_count": 30,
+  "candidate_version": "v4.3",
+  "created_date": "2026-08-02",
+  "execution_cluster": "rorqual",
+  "package_name": "FR3_CBF_v1_1_Candidate_v4_3_Rorqual_30Seed_Campaign_Authorization_Execution_DropIn_v1_2026-08-02",
+  "package_version": "v1",
+  "schema_version": 1
+}
