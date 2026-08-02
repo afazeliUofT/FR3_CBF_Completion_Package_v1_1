@@ -1,0 +1,31 @@
+{
+  "action_summary": {
+    "baseline_noop_intervals": 7291,
+    "changed_sector_interval_count_sum": 16165,
+    "changed_stream_coefficient_count_sum": 33514,
+    "incremental_float32_payload_lower_bound_bytes_sum": 134056,
+    "local_grid_repair_intervals": 1251,
+    "local_stream_repair_intervals": 7422,
+    "maximum_changed_sectors_per_interval": 8,
+    "maximum_changed_stream_coefficients_per_interval": 20,
+    "maximum_eess_backoff_sectors": 2,
+    "maximum_external_interferers_per_violating_user": 2,
+    "maximum_mutable_sector_count": 21,
+    "maximum_normalized_floor_shortfall": 0.4149722479553188,
+    "maximum_strict_post_mode_power_ratio": 0.9999999900000002,
+    "payload_claim_boundary": "FLOAT32_COEFFICIENT_VALUE_LOWER_BOUND_ONLY_EXCLUDES_IDS_HEADERS_RELIABILITY_AND_TRANSPORT_OVERHEAD"
+  },
+  "information_exchange_claim_boundary": "ACTION_SCOPE_LOCALITY_VERIFIED_INFORMATION_EXCHANGE_LOCALITY_NOT_YET_CERTIFIED",
+  "information_exchange_locality_certified": false,
+  "runtime_summary": {
+    "candidate_end_to_end_seconds_mean_per_pass_cell": 1.8720354518694027,
+    "candidate_end_to_end_seconds_sum": 280.8053177804104,
+    "candidate_local_table_build_seconds_max": 0.0085687299724668,
+    "candidate_local_table_build_seconds_sum": 71.09821725293295,
+    "candidate_repair_solver_seconds_max": 0.3121656777802855,
+    "candidate_repair_solver_seconds_p95_nonzero_max_across_cells": 0.1259158259723335,
+    "candidate_repair_solver_seconds_sum": 171.9748507135664,
+    "legacy_method_runtime_comparability": "NOT_CLAIMED_METHOD_SPECIFIC_SCOPES_DIFFER",
+    "runtime_claim_boundary": "SOFTWARE_RUNTIME_ON_CAMPAIGN_COMPUTE_NOT_DEPLOYMENT_LATENCY_OR_NORMALIZED_CROSS_METHOD_BENCHMARK"
+  }
+}

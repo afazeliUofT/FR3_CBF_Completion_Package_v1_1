@@ -1,0 +1,8 @@
+{
+  "campaign_execution_source_commit": "fd6d2f8e848128b7315d70ebda5a07431f4e25b4",
+  "campaign_return_sha256": "cd2975e316bbd3d20469559a28e10113b2d8a9c1942cc2cdfe01ad33253653c9",
+  "next_gate": "INDEPENDENT_SCIENTIFIC_REVIEW_AND_TWC_RESULTS_MANUSCRIPT_INTEGRATION",
+  "schema_version": 1,
+  "scientific_status": "FAIL_RORQUAL_V4_3_R2_30SEED_SCIENTIFIC_OR_VALIDATION_GATES_REVIEW_REQUIRED",
+  "status": "COLLECTED_FOR_INDEPENDENT_REVIEW"
+}

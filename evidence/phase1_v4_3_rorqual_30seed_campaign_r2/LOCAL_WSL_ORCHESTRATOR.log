@@ -1,0 +1,552 @@
+=================================================================
+FR3 V4.3 — RORQUAL 30-SEED CAMPAIGN AUTHORIZATION AND EXECUTION
+=================================================================
+PACKAGE_ROOT=/home/afazeli2006/fr3_v4_3_rorqual_30seed_campaign_outer_runs/20260802_135809/extracted/FR3_CBF_v1_1_Candidate_v4_3_Rorqual_30Seed_Campaign_Authorization_Execution_DropIn_v1_2026-08-02
+REPO=/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1
+RORQUAL_HOST=rsadve1@rorqual.alliancecan.ca
+RORQUAL_SCRATCH_LINK=/home/rsadve1/links/scratch
+CAMPAIGN_SEEDS=44000-44029
+SLURM_ARRAY=0-29%8
+CAMPAIGN_EXECUTION_AUTHORIZED=YES_EXACT_PACKAGE_AND_SEEDS_ONLY
+WSL_TERMINAL_CLOSE_REQUESTED=NO
+INTERNAL_MANIFEST_VERIFICATION=PASS
+SOURCE_PAYLOAD_MANIFEST_VERIFICATION=PASS
+EXECUTION_ARCHIVE_SHA256_GATE=PASS
+REPO_VENV_ACTIVATED=YES
+No broken requirements found.
+LOCAL_VENV_DEPENDENCY_GATE=PASS
+PYTHON_IN_MEMORY_SYNTAX_CHECK=PASS
+PYTHON_SYNTAX_FILE_COUNT=6
+BASH_SYNTAX_CHECK=PASS
+......                                                                   [100%]
+6 passed in 0.27s
+FULL_CAMPAIGN_AUTHORIZATION_PREREQUISITE_AUDIT=PASS
+EXCLUDED_RORQUAL_FINAL_WORKER_SMOKE=PASS_AFTER_VALIDATOR_CONTRACT_REPAIR
+RORQUAL_R2_LOCKED_CAMPAIGN_INDEPENDENT_REVIEW=PASS
+CANDIDATE_SOURCE_CHANGED=NO
+CAMPAIGN_SEED_COUNT=30
+FIXED_PASS_COUNT=5
+METHOD_COUNT=9
+TOTAL_CELLS=1350
+EXECUTION_CLUSTER=rorqual
+CAMPAIGN_EXECUTION_AUTHORIZED=YES_EXACT_PACKAGE_AND_SEEDS_ONLY
+AUTHORIZATION_DECISION_ID=ff49c7acbbbac118048b6a29a5d6f7d53ac8ab28c898a727dcf8cf8a83318d75
+LOCAL_QUALITY_GATE=PASS
+Cloning into '/home/afazeli2006/fr3_v4_3_rorqual_30seed_campaign_runs/20260802_135809/github_source_clone'...
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+GITHUB_REQUIRED_ANCESTOR_GATE=PASS
+GIT_HEAD_BEFORE=76a62cda5d649cad25a6a45ccb5f0f757a99a269
+GIT_REMOTE_HEAD_BEFORE=0bfcd810717a117142fcf95ca7c00a982d473394
+[e3-first-sector-p452 fd6d2f8] Authorize and orchestrate candidate-v4.3 Rorqual 30-seed campaign
+ 26 files changed, 2067 insertions(+)
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/PACKAGE_VERSION.json
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/README.md
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/SOURCE_PAYLOAD_MANIFEST.sha256
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/config/FULL_CAMPAIGN_AUTHORIZATION_CONTRACT.json
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/docs/BUILD_VALIDATION.md
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/docs/CLAIM_BOUNDARIES.md
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/docs/EXPECTED_SUCCESS_MARKERS.md
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/docs/RETURN_CONTRACT.md
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/docs/SCIENTIFIC_STATUS_AND_NEXT_GATE.md
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/docs/WSL_WORKFLOW.md
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/immutable_bindings/BUILD_AUDIT.json
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/immutable_bindings/FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_3_R2.zip.sha256
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/immutable_bindings/FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_3_R2_INDEPENDENT_REVIEW.zip.sha256
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/immutable_bindings/INDEPENDENT_REVIEW_VERDICT.json
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/immutable_bindings/REVIEW_CHECK_SUMMARY.json
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/immutable_bindings/SMOKE_RECLASSIFICATION_VERDICT.json
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/requirements.txt
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/scripts/audit_authorization_prerequisites.py
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/scripts/audit_campaign_return.py
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/scripts/issue_full_campaign_authorization.py
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/scripts/package_campaign_return.py
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/scripts/package_local_failure.py
+ create mode 100644 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/tests/test_campaign_execution_package.py
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/wrappers/REMOTE_ORCHESTRATE_V4_3_RORQUAL_30SEED_CAMPAIGN.sh
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/wrappers/RORQUAL_FINALIZE_V4_3_R2_CAMPAIGN.sh
+ create mode 100755 tools/phase1_v4_3_rorqual_30seed_campaign_execution_v1/wrappers/RUN_V4_3_RORQUAL_30SEED_CAMPAIGN_FROM_WSL.sh
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+To github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1.git
+   0bfcd81..fd6d2f8  HEAD -> e3-first-sector-p452
+CAMPAIGN_EXECUTION_SOURCE_COMMIT=fd6d2f8e848128b7315d70ebda5a07431f4e25b4
+GITHUB_NEWER_WORK_OVERWRITTEN=NO
+Multifactor authentication is now mandatory to connect to this cluster.
+You can enroll your account into multifactor authentication on this page:
+https://ccdb.alliancecan.ca/multi_factor_authentications
+by following the instructions available here:
+https://docs.alliancecan.ca/wiki/Multifactor_authentication
+
+=============================================================================
+
+L'authentification multifacteur est maintenant obligatoire pour vous connecter
+à cette grappe. Configurez votre compte sur
+https://ccdb.alliancecan.ca/multi_factor_authentications
+et suivez les directives dans
+https://docs.alliancecan.ca/wiki/Multifactor_authentication/fr.
+Success. Logging you in...
+REMOTE_HOST=rorqual4.rorqual.calcul.quebec
+REMOTE_SCRATCH=/lustre10/scratch/rsadve1
+EXECUTION_CLUSTER=rorqual
+EXECUTION_STAGE=FULL_30_SEED_CONFIRMATORY_CAMPAIGN
+CAMPAIGN_SEEDS=44000-44029
+SLURM_ARRAY=0-29%8
+FULL_CAMPAIGN_EXECUTION_AUTHORIZED=YES_EXACT_R2_PACKAGE_ONLY
+EXPECTED_AUTHORIZATION_PACKAGE_SHA256=4efe3277ef24d25e7aa406b25d5fe2f97f5ec30b556a6d09023afaf734d4391a
+ACTUAL_AUTHORIZATION_PACKAGE_SHA256=4efe3277ef24d25e7aa406b25d5fe2f97f5ec30b556a6d09023afaf734d4391a
+REMOTE_AUTHORIZATION_PACKAGE_SHA256_GATE=PASS
+EXISTING_CAMPAIGN_RUN_ATTACHED=NO
+CAMPAIGN_RUN_ROOT=/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_CAMPAIGN_V4_3_R2_8473d5504e69_20260802_135838
+REMOTE_EXECUTION_PACKAGE_MANIFEST_VERIFICATION=PASS
+FULL_CAMPAIGN_AUTHORIZATION_PREREQUISITE_AUDIT=PASS
+EXCLUDED_RORQUAL_FINAL_WORKER_SMOKE=PASS_AFTER_VALIDATOR_CONTRACT_REPAIR
+RORQUAL_R2_LOCKED_CAMPAIGN_INDEPENDENT_REVIEW=PASS
+CANDIDATE_SOURCE_CHANGED=NO
+CAMPAIGN_SEED_COUNT=30
+FIXED_PASS_COUNT=5
+METHOD_COUNT=9
+TOTAL_CELLS=1350
+EXECUTION_CLUSTER=rorqual
+CAMPAIGN_EXECUTION_AUTHORIZED=YES_EXACT_PACKAGE_AND_SEEDS_ONLY
+AUTHORIZATION_DECISION_ID=ff49c7acbbbac118048b6a29a5d6f7d53ac8ab28c898a727dcf8cf8a83318d75
+REMOTE_RORQUAL_R2_JOB_PACKAGE_MANIFEST_VERIFICATION=PASS
+RORQUAL_CONCURRENT_CAMPAIGN_GUARD=PASS
+PHASE-1 EXISTING SCRATCH ENVIRONMENT REUSE: PASS
+No broken requirements found.
+No broken requirements found.
+RORQUAL_EXACT_REFERENCE_ENVIRONMENT_GATE=PASS
+FULL_CAMPAIGN_AUTHORIZATION_ISSUED=PASS
+NATIVE_AUTHORIZATION_GUARD=PASS
+AUTHORIZATION_DECISION_ID=ff49c7acbbbac118048b6a29a5d6f7d53ac8ab28c898a727dcf8cf8a83318d75
+AUTHORIZATION_TOKEN_SHA256=16ec127cca90eb3e6a2ef955e15e00a9af48371920bd3773c8096e1be8dfeac5
+AUTHORIZATION_EXPIRES_UTC=2026-08-16T13:58:48.529879+00:00
+AUTHORIZED_SEED_COUNT=30
+AUTHORIZED_SEED_FIRST=44000
+AUTHORIZED_SEED_LAST=44029
+EXECUTION_STAGE=FULL_30_SEED_CONFIRMATORY_CAMPAIGN
+sbatch: NOTE: Your memory request of 65536.0M was likely submitted as 64.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+sbatch: NOTE: Your memory request of 16384.0M was likely submitted as 16.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+RORQUAL_30SEED_CAMPAIGN_SUBMISSION=PASS
+ARRAY_JOB_ID=18145937
+MERGE_JOB_ID=18145938
+FINALIZER_JOB_ID=18145939
+SLURM_ARRAY=0-29%8
+FULL_CAMPAIGN_EXECUTION_AUTHORIZED=YES_EXACT_PACKAGE_AND_SEEDS_ONLY
+ACTIVE_RUN_AUTHORIZATION_PACKAGE_BINDING=PASS
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+       18145937_[0-29%8]                fr3-v43-r2-p1    PENDING         0:00                   (None)
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+       18145937_[0-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[0-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[0-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[0-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_0                fr3-v43-r2-p1    RUNNING         0:52                  rg31501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[1-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_0                fr3-v43-r2-p1    RUNNING         1:52                  rg31501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[1-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_0                fr3-v43-r2-p1    RUNNING         2:52                  rg31501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[1-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_1                fr3-v43-r2-p1    RUNNING         0:46                  rg31501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[2-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_1                fr3-v43-r2-p1    RUNNING         1:46                  rg31501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[2-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_1                fr3-v43-r2-p1    RUNNING         2:46                  rg31501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[2-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_2                fr3-v43-r2-p1    RUNNING         0:39                  rg31501
+              18145937_3                fr3-v43-r2-p1    RUNNING         0:14                  rg21708
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[4-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_2                fr3-v43-r2-p1    RUNNING         1:40                  rg31501
+              18145937_3                fr3-v43-r2-p1    RUNNING         1:15                  rg21708
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[4-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_2                fr3-v43-r2-p1    RUNNING         2:40                  rg31501
+              18145937_3                fr3-v43-r2-p1    RUNNING         2:15                  rg21708
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[4-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_4                fr3-v43-r2-p1    RUNNING         0:52                  rg31501
+              18145937_5                fr3-v43-r2-p1    RUNNING         0:22                  rg21708
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[6-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_4                fr3-v43-r2-p1    RUNNING         1:52                  rg31501
+              18145937_5                fr3-v43-r2-p1    RUNNING         1:22                  rg21708
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[6-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_5                fr3-v43-r2-p1    RUNNING         2:23                  rg21708
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[6-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_6                fr3-v43-r2-p1    RUNNING         0:28                  rg31803
+              18145937_7                fr3-v43-r2-p1    RUNNING         0:28                  rg21708
+              18145937_8                fr3-v43-r2-p1    RUNNING         0:28                  rg31501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[9-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_6                fr3-v43-r2-p1    RUNNING         1:28                  rg31803
+              18145937_7                fr3-v43-r2-p1    RUNNING         1:28                  rg21708
+              18145937_8                fr3-v43-r2-p1    RUNNING         1:28                  rg31501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[9-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_6                fr3-v43-r2-p1    RUNNING         2:28                  rg31803
+              18145937_7                fr3-v43-r2-p1    RUNNING         2:28                  rg21708
+              18145937_8                fr3-v43-r2-p1    RUNNING         2:28                  rg31501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+       18145937_[9-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_9                fr3-v43-r2-p1    RUNNING         0:38                  rg31501
+             18145937_10                fr3-v43-r2-p1    RUNNING         0:32                  rg31803
+             18145937_11                fr3-v43-r2-p1    RUNNING         0:32                  rg21708
+             18145937_12                fr3-v43-r2-p1    RUNNING         0:13                  rg32501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+      18145937_[13-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_9                fr3-v43-r2-p1    RUNNING         1:38                  rg31501
+             18145937_10                fr3-v43-r2-p1    RUNNING         1:32                  rg31803
+             18145937_11                fr3-v43-r2-p1    RUNNING         1:32                  rg21708
+             18145937_12                fr3-v43-r2-p1    RUNNING         1:13                  rg32501
+             18145937_13                fr3-v43-r2-p1    RUNNING         0:59                  rg31803
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+      18145937_[14-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+              18145937_9                fr3-v43-r2-p1    RUNNING         2:38                  rg31501
+             18145937_10                fr3-v43-r2-p1    RUNNING         2:32                  rg31803
+             18145937_11                fr3-v43-r2-p1    RUNNING         2:32                  rg21708
+             18145937_12                fr3-v43-r2-p1    RUNNING         2:13                  rg32501
+             18145937_13                fr3-v43-r2-p1    RUNNING         1:59                  rg31803
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+      18145937_[14-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+             18145937_14                fr3-v43-r2-p1    RUNNING         0:50                  rg31501
+             18145937_15                fr3-v43-r2-p1    RUNNING         0:46                  rg31803
+             18145937_16                fr3-v43-r2-p1    RUNNING         0:44                  rg21708
+             18145937_17                fr3-v43-r2-p1    RUNNING         0:04                  rg32501
+             18145937_18                fr3-v43-r2-p1    RUNNING         0:03                  rg31803
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+      18145937_[19-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+             18145937_14                fr3-v43-r2-p1    RUNNING         1:50                  rg31501
+             18145937_15                fr3-v43-r2-p1    RUNNING         1:46                  rg31803
+             18145937_16                fr3-v43-r2-p1    RUNNING         1:44                  rg21708
+             18145937_17                fr3-v43-r2-p1    RUNNING         1:04                  rg32501
+             18145937_18                fr3-v43-r2-p1    RUNNING         1:03                  rg31803
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+      18145937_[19-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+             18145937_15                fr3-v43-r2-p1    RUNNING         2:47                  rg31803
+             18145937_17                fr3-v43-r2-p1    RUNNING         2:05                  rg32501
+             18145937_18                fr3-v43-r2-p1    RUNNING         2:04                  rg31803
+             18145937_19                fr3-v43-r2-p1    RUNNING         0:03                  rg31501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+      18145937_[20-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+             18145937_19                fr3-v43-r2-p1    RUNNING         1:03                  rg31501
+             18145937_20                fr3-v43-r2-p1    RUNNING         1:00                  rg21708
+             18145937_21                fr3-v43-r2-p1    RUNNING         0:56                  rg31803
+             18145937_22                fr3-v43-r2-p1    RUNNING         0:15                  rg31803
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+      18145937_[23-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+             18145937_19                fr3-v43-r2-p1    RUNNING         2:03                  rg31501
+             18145937_20                fr3-v43-r2-p1    RUNNING         2:00                  rg21708
+             18145937_21                fr3-v43-r2-p1    RUNNING         1:56                  rg31803
+             18145937_22                fr3-v43-r2-p1    RUNNING         1:15                  rg31803
+             18145937_23                fr3-v43-r2-p1    RUNNING         0:54                  rg32501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+      18145937_[24-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+             18145937_22                fr3-v43-r2-p1    RUNNING         2:15                  rg31803
+             18145937_23                fr3-v43-r2-p1    RUNNING         1:54                  rg32501
+             18145937_24                fr3-v43-r2-p1    RUNNING         0:11                  rg21708
+             18145937_25                fr3-v43-r2-p1    RUNNING         0:11                  rg31501
+             18145937_26                fr3-v43-r2-p1    RUNNING         0:08                  rg31803
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+      18145937_[27-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+             18145937_24                fr3-v43-r2-p1    RUNNING         1:11                  rg21708
+             18145937_25                fr3-v43-r2-p1    RUNNING         1:11                  rg31501
+             18145937_26                fr3-v43-r2-p1    RUNNING         1:08                  rg31803
+             18145937_27                fr3-v43-r2-p1    RUNNING         0:26                  rg31803
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+      18145937_[28-29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+             18145937_24                fr3-v43-r2-p1    RUNNING         2:11                  rg21708
+             18145937_25                fr3-v43-r2-p1    RUNNING         2:11                  rg31501
+             18145937_26                fr3-v43-r2-p1    RUNNING         2:08                  rg31803
+             18145937_27                fr3-v43-r2-p1    RUNNING         1:26                  rg31803
+             18145937_28                fr3-v43-r2-p1    RUNNING         0:45                  rg32501
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+         18145937_[29%8]                fr3-v43-r2-p1    PENDING         0:00               (Priority)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+             18145937_27                fr3-v43-r2-p1    RUNNING         2:26                  rg31803
+             18145937_28                fr3-v43-r2-p1    RUNNING         1:45                  rg32501
+             18145937_29                fr3-v43-r2-p1    RUNNING         0:20                  rg31803
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+             18145937_28                fr3-v43-r2-p1    RUNNING         2:45                  rg32501
+             18145937_29                fr3-v43-r2-p1    RUNNING         1:20                  rg31803
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+             18145937_29                fr3-v43-r2-p1    RUNNING         2:20                  rg31803
+                18145938             fr3-v43-r2-merge    PENDING         0:00             (Dependency)
+                18145939          fr3-v43-r2-finalize    PENDING         0:00             (Dependency)
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+                18145939          fr3-v43-r2-finalize    RUNNING         0:14                  rc32516
+RORQUAL_CAMPAIGN_PROGRESS_END
+RORQUAL_CAMPAIGN_PROGRESS_BEGIN
+                   JOBID                         NAME      STATE         TIME         NODELIST(REASON)
+                18145939          fr3-v43-r2-finalize    RUNNING         1:15                  rc32516
+RORQUAL_CAMPAIGN_PROGRESS_END
+JobIDRaw|JobName|Account|State|ExitCode|Elapsed|MaxRSS|MaxVMSize|ReqMem|AllocTRES|NodeList
+18145938|fr3-v43-r2-merge|def-rsadve_cpu|FAILED|42:0|00:00:16|||64G|billing=16000,cpu=16,mem=64G,node=1|rc32423
+18145938.batch|batch|def-rsadve_cpu|FAILED|42:0|00:00:16|192752K|0||cpu=16,mem=64G,node=1|rc32423
+18145938.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:00:16||||billing=16000,cpu=16,mem=64G,node=1|rc32423
+18145939|fr3-v43-r2-finalize|def-rsadve_cpu|FAILED|42:0|00:02:03|||16G|billing=4000,cpu=4,mem=16G,node=1|rc32516
+18145939.batch|batch|def-rsadve_cpu|FAILED|42:0|00:02:03|136600K|0||cpu=4,mem=16G,node=1|rc32516
+18145939.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:02:03||||billing=4000,cpu=4,mem=16G,node=1|rc32516
+18146059|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:56|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146059.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:56|2372892K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146059.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:56||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146097|fr3-v43-r2-p1|def-rsadve_gpu|FAILED|42:0|00:02:52|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146097.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:52|1986956K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146097.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:52||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146145|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:45|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146145.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:45|2033468K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146145.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:45||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146153|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:52|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146153.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:52|2277648K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146153.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:52||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146201|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:48|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146201.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:48|1986036K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146201.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:48||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146211|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:49|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146211.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:49|1988904K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146211.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:49||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146331|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:54|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146331.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:54|2264924K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146331.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:54||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146332|fr3-v43-r2-p1|def-rsadve_gpu|FAILED|42:0|00:02:54|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146332.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:54|1985064K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146332.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:54||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146333|fr3-v43-r2-p1|def-rsadve_gpu|FAILED|42:0|00:02:49|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146333.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:49|1984468K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146333.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:49||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146413|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:47|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146413.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:47|1989020K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146413.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:47||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146416|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:42|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146416.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:42|1985592K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146416.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:42||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146417|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:46|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146417.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:46|1985376K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146417.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:46||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146432|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:03:00|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18146432.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:03:00|2269500K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18146432.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:03:00||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18146442|fr3-v43-r2-p1|def-rsadve_gpu|FAILED|42:0|00:02:51|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146442.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:51|1985548K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146442.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:51||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146492|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:47|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146492.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:47|1984364K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146492.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:47||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146493|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:49|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146493.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:49|1985672K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146493.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:49||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146494|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:44|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146494.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:44|1986644K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146494.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:44||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146508|fr3-v43-r2-p1|def-rsadve_gpu|FAILED|42:0|00:02:48|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18146508.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:48|1986340K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18146508.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:48||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18146509|fr3-v43-r2-p1|def-rsadve_gpu|FAILED|42:0|00:02:48|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146509.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:48|1985376K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146509.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:48||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146579|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:49|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146579.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:49|1985192K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146579.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:49||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146580|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:48|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146580.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:48|2005236K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146580.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:48||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146581|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:47|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146581.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:47|1985244K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146581.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:47||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146584|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:48|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146584.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:48|1982984K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146584.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:48||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146597|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:46|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18146597.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:46|1986372K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18146597.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:46||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18146640|fr3-v43-r2-p1|def-rsadve_gpu|FAILED|42:0|00:02:48|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146640.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:48|1984412K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146640.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:48||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg21708
+18146641|fr3-v43-r2-p1|def-rsadve_gpu|FAILED|42:0|00:02:53|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146641.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:53|1985080K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146641.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:53||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31501
+18146642|fr3-v43-r2-p1|def-rsadve_gpu|FAILED|42:0|00:02:47|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146642.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:47|1985352K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146642.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:47||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146649|fr3-v43-r2-p1|def-rsadve_gpu|FAILED|42:0|00:02:45|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146649.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:45|1983992K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146649.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:45||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18146671|fr3-v43-r2-p1|def-rsadve_gpu|FAILED|42:0|00:02:46|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18146671.batch|batch|def-rsadve_gpu|FAILED|42:0|00:02:46|1986424K|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18146671.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:46||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg32501
+18145937|fr3-v43-r2-p1|def-rsadve_gpu|COMPLETED|0:0|00:02:46|||124G|billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18145937.batch|batch|def-rsadve_gpu|COMPLETED|0:0|00:02:46|1939M|0||cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+18145937.extern|extern|def-rsadve_gpu|COMPLETED|0:0|00:02:46||||billing=12200,cpu=16,gres/gpu:h100=1,gres/gpu=1,mem=124G,node=1|rg31803
+CAMPAIGN_RETURN_RETRIEVABLE=YES
+CAMPAIGN_RETURN_ZIP=/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_CAMPAIGN_V4_3_R2_8473d5504e69_20260802_135838/return/FR3_RORQUAL_V4_3_R2_30SEED_CAMPAIGN_18145937.zip
+CAMPAIGN_RETURN_ZIP_SHA256=cd2975e316bbd3d20469559a28e10113b2d8a9c1942cc2cdfe01ad33253653c9
+CAMPAIGN_RETURN_STATUS=FAIL_RORQUAL_V4_3_R2_30SEED_SCIENTIFIC_OR_VALIDATION_GATES_REVIEW_REQUIRED
+CAMPAIGN_SCIENTIFIC_EXIT_CODE=42
+AUTHORIZATION_TOKEN_PRESENT_AFTER_FINALIZER=NO
+NEXT_GATE=INDEPENDENT_SCIENTIFIC_REVIEW_AND_TWC_RESULTS_MANUSCRIPT_INTEGRATION
+REMOTE_WRAPPER_EXIT_CODE=42
+DIAGNOSTIC_RETRIEVAL_EXIT_CODE=0
+LOCAL_CAMPAIGN_RETURN_SHA256=cd2975e316bbd3d20469559a28e10113b2d8a9c1942cc2cdfe01ad33253653c9
+LOCAL_CAMPAIGN_RETURN_ZIP_CRC=PASS
+CAMPAIGN_RETURN_SHA256_GATE=PASS
+CAMPAIGN_RETURN_ZIP_CRC=PASS
+CAMPAIGN_RETURN_MANIFEST=PASS
+CAMPAIGN_RETURN_STATUS=FAIL_RORQUAL_V4_3_R2_30SEED_SCIENTIFIC_OR_VALIDATION_GATES_REVIEW_REQUIRED
+CAMPAIGN_SCIENTIFIC_EXIT_CODE=42
+SEED_RETURN_COUNT=30
+SEED_HARD_GATE_PASS_COUNT=19
+MERGED_ALL_HARD_GATES_PASS=False
+GO_CONDITION_MET=False
+PRIMARY_POINT_ESTIMATE=0.2884971600268707
+PRIMARY_LOWER_95=0.2416354768059766
+PRIMARY_UPPER_95=0.33857966324990685
+INFORMATION_EXCHANGE_LOCALITY_CERTIFIED=NO
+NEXT_GATE=INDEPENDENT_SCIENTIFIC_REVIEW_AND_TWC_RESULTS_MANUSCRIPT_INTEGRATION
+LOCAL_RETURN_AUDIT_EXIT_CODE=42
+Cloning into '/home/afazeli2006/fr3_v4_3_rorqual_30seed_campaign_runs/20260802_135809/github_evidence_clone'...
