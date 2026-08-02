@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "campaign_return": {
+    "filename": "FR3_RORQUAL_V4_3_R2_30SEED_CAMPAIGN_18145937.zip",
+    "sha256": "cd2975e316bbd3d20469559a28e10113b2d8a9c1942cc2cdfe01ad33253653c9",
+    "array_job_id": "18145937",
+    "campaign_run_root": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_CAMPAIGN_V4_3_R2_8473d5504e69_20260802_135838",
+    "github_evidence_commit": "0e2634d084849d4db36b951574bed2162761e92d"
+  },
+  "job_package": {
+    "filename": "FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_3_R2.zip",
+    "sha256": "c106fa6441b15873d0d2d9b29d636434625edcd58f4033a4700589cb91e19e82",
+    "package_id": "8473d5504e69347a69a536c43dcae35bec9519a90bc55de3a0712f9e0fb97889"
+  },
+  "failed_seeds": [44001, 44007, 44008, 44013, 44017, 44018, 44024, 44025, 44026, 44027, 44028],
+  "diagnostic_action_classes": {
+    "frozen_candidate_v4_3": true,
+    "strict_global_fixed_beam_stream_lp": true,
+    "expanded_hybrid_external_per_user": [4, 8],
+    "expanded_all_stream_external_per_user": [4, 8],
+    "expanded_eess_neighbourhood": [4],
+    "optimistic_single_user_fixed_beam_bound": true,
+    "policy_or_floor_change": false
+  },
+  "resource_contract": {
+    "worker_array": "0-10%4",
+    "worker_cpus_per_task": 8,
+    "worker_memory_gib": 16,
+    "worker_walltime": "00:15:00",
+    "merge_cpus_per_task": 4,
+    "merge_memory_gib": 8,
+    "merge_walltime": "00:05:00",
+    "gpu_requested": false,
+    "channel_regeneration": false
+  },
+  "decision_rule": {
+    "adaptive_local_repair_preferred_if_all_failed_intervals_close": true,
+    "scheduling_or_reassignment_required_if_any_strict_global_fixed_beam_interval_is_infeasible": true,
+    "policy_revision_considered_only_after_scheduling_infeasibility": true
+  }
+}

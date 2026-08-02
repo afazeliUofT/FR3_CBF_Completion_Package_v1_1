@@ -1,0 +1,38 @@
+{
+  "boundary_only_interval_count": 0,
+  "campaign_rerun_performed": false,
+  "candidate_v4_3_source_changed": false,
+  "channel_regeneration_performed": false,
+  "classification_counts": {
+    "EXPANDED_LOCAL_ALL_STREAM_K4_FEASIBLE": 7,
+    "EXPANDED_LOCAL_HYBRID_K4_FEASIBLE": 151,
+    "EXPANDED_LOCAL_HYBRID_K8_FEASIBLE": 4,
+    "FIXED_Q_FIXED_BEAM_JOINT_GLOBAL_INFEASIBLE": 1284,
+    "STRICT_GLOBAL_FIXED_BEAM_FEASIBLE_BUT_EXPANDED_LOCAL_K8_INFEASIBLE": 182,
+    "STRICT_GLOBAL_FIXED_BEAM_SOLVER_UNCERTIFIED": 108
+  },
+  "current_30_seed_campaign_role_after_adaptation": "DEVELOPMENT_AND_STRESS_TEST_NOT_CLEAN_V4_4_CONFIRMATION",
+  "current_load_serviceability_mismatch_interval_count": 638,
+  "diagnosed_unresolved_interval_count": 1736,
+  "expanded_local_boundary_interval_count": 0,
+  "expanded_local_certified_interval_count": 162,
+  "failed_seed_count": 11,
+  "fixed_beam_joint_global_infeasible_interval_count": 1284,
+  "fixed_beam_single_user_infeasible_interval_count": 0,
+  "fresh_holdout_required_after_any_v4_4_source_change": true,
+  "next_gate": "DESIGN_AND_TEST_FLOOR_FIRST_PROTECTED_SUBBAND_SCHEDULING_ON_11_FAILED_SEEDS_AS_DEVELOPMENT",
+  "next_repair_decision": "PROTECTED_SUBBAND_SCHEDULING_REASSIGNMENT_REQUIRED",
+  "paper_use_boundary": "DIAGNOSTIC_RESULT_REQUIRES_INDEPENDENT_REVIEW_BEFORE_METHOD_REVISION",
+  "policy_note": "Some intervals contain users admitted by full-load eligibility whose current-load nominal rate is below the absolute 0.1 floor. This is a policy-consistency risk, but policy revision remains a last resort after the scheduling/reassignment test.",
+  "rationale": "At least one interval is solver-certified infeasible for the strict global fixed-q/fixed-beam stream-power LP. Power redistribution alone cannot certify the unchanged floor; the next candidate must add a preregistered protected-subband scheduling or reassignment degree of freedom. A fairness-policy revision remains unjustified at this stage.",
+  "schema_version": 1,
+  "solver_uncertified_interval_count": 108,
+  "status": "PASS_COMPLETE_FAILED_SEED_FEASIBILITY_DIAGNOSIS",
+  "strict_global_only_interval_count": 182,
+  "walltime_policy": {
+    "diagnostic_worker_walltime": "00:15:00",
+    "future_equivalent_worker_walltime": "00:10:00",
+    "merge_walltime": "00:05:00",
+    "observed_original_worker_max": 180.0
+  }
+}

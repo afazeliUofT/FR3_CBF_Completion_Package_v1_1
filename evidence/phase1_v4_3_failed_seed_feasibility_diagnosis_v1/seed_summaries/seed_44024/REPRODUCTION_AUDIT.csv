@@ -1,0 +1,6 @@
+pass_slot,status,floor_violation_user_seconds,unresolved_deployable_intervals,captured_repair_intervals
+0,PASS,0,0,98
+1,PASS,0,0,95
+2,PASS,0,0,97
+3,PASS,16,1,99
+4,PASS,60,3,101

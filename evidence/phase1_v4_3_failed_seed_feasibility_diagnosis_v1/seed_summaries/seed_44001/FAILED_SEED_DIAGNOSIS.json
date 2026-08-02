@@ -1,0 +1,64 @@
+{
+  "boundary_only_interval_count": 0,
+  "campaign_run_root": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_CAMPAIGN_V4_3_R2_8473d5504e69_20260802_135838",
+  "campaign_seed": 44001,
+  "candidate_source_changed": false,
+  "channel_record_sha256": "c84adadfa9e9d2e3551109f7ea3cf6ecf900eafddf13b89cba8f7606e7fa287a",
+  "channel_regenerated": false,
+  "channel_reused": true,
+  "claim_boundary": "POST_CAMPAIGN_DIAGNOSIS_REUSING_PRESERVED_CHANNEL_NOT_NEW_CONFIRMATORY_SAMPLE",
+  "classification_counts": {
+    "FIXED_Q_FIXED_BEAM_JOINT_GLOBAL_INFEASIBLE": 200
+  },
+  "current_load_serviceability_mismatch_interval_count": 0,
+  "expanded_local_boundary_interval_count": 0,
+  "expanded_local_certified_interval_count": 0,
+  "fixed_beam_joint_infeasible_interval_count": 200,
+  "fixed_beam_single_user_infeasible_interval_count": 0,
+  "gpu_requested": false,
+  "original_floor_violation_user_seconds": 1600,
+  "original_seed_result_sha256": "1762c22bd2cf4493e90d156607c0bc3c7c0c3e40d4b7d3945f855c9d2c87a426",
+  "original_unresolved_interval_count": 200,
+  "reproduction_passes": [
+    {
+      "captured_repair_intervals": 98,
+      "floor_violation_user_seconds": 420,
+      "pass_slot": 0,
+      "status": "PASS",
+      "unresolved_deployable_intervals": 40
+    },
+    {
+      "captured_repair_intervals": 95,
+      "floor_violation_user_seconds": 335,
+      "pass_slot": 1,
+      "status": "PASS",
+      "unresolved_deployable_intervals": 40
+    },
+    {
+      "captured_repair_intervals": 97,
+      "floor_violation_user_seconds": 300,
+      "pass_slot": 2,
+      "status": "PASS",
+      "unresolved_deployable_intervals": 40
+    },
+    {
+      "captured_repair_intervals": 98,
+      "floor_violation_user_seconds": 280,
+      "pass_slot": 3,
+      "status": "PASS",
+      "unresolved_deployable_intervals": 40
+    },
+    {
+      "captured_repair_intervals": 101,
+      "floor_violation_user_seconds": 265,
+      "pass_slot": 4,
+      "status": "PASS",
+      "unresolved_deployable_intervals": 40
+    }
+  ],
+  "runtime_seconds": 127.50654988101451,
+  "schema_version": 1,
+  "solver_uncertified_interval_count": 0,
+  "status": "VALID_DIAGNOSIS_FIXED_BEAM_INFEASIBILITY_REQUIRES_SCHEDULING_REASSIGNMENT",
+  "strict_global_only_interval_count": 0
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_source_changed": false,
+  "channel_regenerated": false,
+  "complete_scientific_decision_available": true,
+  "diagnostic_source_commit": "b876cfc40deaf2182727b27ded93800fbcd495da",
+  "next_gate": "DESIGN_AND_TEST_FLOOR_FIRST_PROTECTED_SUBBAND_SCHEDULING_ON_11_FAILED_SEEDS_AS_DEVELOPMENT",
+  "next_repair_decision": "PROTECTED_SUBBAND_SCHEDULING_REASSIGNMENT_REQUIRED",
+  "return_zip_sha256": "4d8181b7b328d12dad0070e2e531bb4661e87e8aaf1c6a8e59184bf66ae0e62e",
+  "schema_version": 1,
+  "status": "COLLECTED_FOR_INDEPENDENT_REVIEW"
+}

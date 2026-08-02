@@ -1,0 +1,65 @@
+{
+  "boundary_only_interval_count": 0,
+  "campaign_run_root": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_CAMPAIGN_V4_3_R2_8473d5504e69_20260802_135838",
+  "campaign_seed": 44013,
+  "candidate_source_changed": false,
+  "channel_record_sha256": "96713ac1fc8d36a33d6f22b5af37a320289c9c28478b308afc6b5b8038f9a1a7",
+  "channel_regenerated": false,
+  "channel_reused": true,
+  "claim_boundary": "POST_CAMPAIGN_DIAGNOSIS_REUSING_PRESERVED_CHANNEL_NOT_NEW_CONFIRMATORY_SAMPLE",
+  "classification_counts": {
+    "STRICT_GLOBAL_FIXED_BEAM_FEASIBLE_BUT_EXPANDED_LOCAL_K8_INFEASIBLE": 182,
+    "STRICT_GLOBAL_FIXED_BEAM_SOLVER_UNCERTIFIED": 4
+  },
+  "current_load_serviceability_mismatch_interval_count": 0,
+  "expanded_local_boundary_interval_count": 0,
+  "expanded_local_certified_interval_count": 0,
+  "fixed_beam_joint_infeasible_interval_count": 0,
+  "fixed_beam_single_user_infeasible_interval_count": 0,
+  "gpu_requested": false,
+  "original_floor_violation_user_seconds": 919,
+  "original_seed_result_sha256": "c6faf80254117c46a49dc85460e49cd0024ffcdc41bd5bd0d299a0eb8b393f7a",
+  "original_unresolved_interval_count": 186,
+  "reproduction_passes": [
+    {
+      "captured_repair_intervals": 98,
+      "floor_violation_user_seconds": 187,
+      "pass_slot": 0,
+      "status": "PASS",
+      "unresolved_deployable_intervals": 38
+    },
+    {
+      "captured_repair_intervals": 95,
+      "floor_violation_user_seconds": 171,
+      "pass_slot": 1,
+      "status": "PASS",
+      "unresolved_deployable_intervals": 35
+    },
+    {
+      "captured_repair_intervals": 97,
+      "floor_violation_user_seconds": 181,
+      "pass_slot": 2,
+      "status": "PASS",
+      "unresolved_deployable_intervals": 37
+    },
+    {
+      "captured_repair_intervals": 99,
+      "floor_violation_user_seconds": 190,
+      "pass_slot": 3,
+      "status": "PASS",
+      "unresolved_deployable_intervals": 38
+    },
+    {
+      "captured_repair_intervals": 101,
+      "floor_violation_user_seconds": 190,
+      "pass_slot": 4,
+      "status": "PASS",
+      "unresolved_deployable_intervals": 38
+    }
+  ],
+  "runtime_seconds": 115.01342409104109,
+  "schema_version": 1,
+  "solver_uncertified_interval_count": 4,
+  "status": "VALID_DIAGNOSIS_SOLVER_UNCERTIFIED_INTERVALS_REQUIRE_REVIEW",
+  "strict_global_only_interval_count": 182
+}

@@ -1,0 +1,113 @@
+{
+  "campaign_status_as_returned": "FAIL_RORQUAL_V4_3_R2_30SEED_SCIENTIFIC_OR_VALIDATION_GATES_REVIEW_REQUIRED",
+  "campaign_zip_sha256": "cd2975e316bbd3d20469559a28e10113b2d8a9c1942cc2cdfe01ad33253653c9",
+  "candidate_source_changed": false,
+  "claim_boundary": "POST_CAMPAIGN_INDEPENDENT_AUDIT_NOT_NEW_CONFIRMATORY_SAMPLE",
+  "resource_audit": {
+    "current_diagnostic_worker_memory_gib": 16,
+    "current_diagnostic_worker_walltime": "00:15:00",
+    "future_equivalent_worker_memory_gib": 16,
+    "future_equivalent_worker_walltime": "00:10:00",
+    "observed_worker_elapsed_seconds_max": 180.0,
+    "observed_worker_elapsed_seconds_median": 168.0,
+    "observed_worker_elapsed_seconds_min": 162.0,
+    "observed_worker_host_maxrss_gib_max": 2.2629661560058594,
+    "prior_worker_memory_request_gib": 124,
+    "prior_worker_walltime_request": "04:00:00",
+    "reason": "diagnostic solves several additional LP classes on every unresolved interval"
+  },
+  "schema_version": 1,
+  "scientific_inference": {
+    "candidate_hard_floor_claim_is_not_supported_for_all_30_seeds": true,
+    "failed_seed_results_are_scientific_action_space_failures_not_infrastructure_failures": true,
+    "next_step": "REUSE_PRESERVED_FAILED_SEED_CHANNELS_FOR_FIXED_BEAM_AND_EXPANDED_LOCAL_FEASIBILITY_DIAGNOSIS",
+    "primary_utility_superiority_is_statistically_supported": true
+  },
+  "source_supported_facts": {
+    "action_class_counts": {
+      "BASELINE_NOOP": 7291,
+      "NO_FEASIBLE_DEPLOYABLE_ACTION_FOUND": 1736,
+      "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR": 1251,
+      "SPARSE_LOCAL_STREAM_POWER_REPAIR": 7422
+    },
+    "action_class_fractions": {
+      "BASELINE_NOOP": 0.41192090395480224,
+      "NO_FEASIBLE_DEPLOYABLE_ACTION_FOUND": 0.09807909604519774,
+      "SPARSE_LOCAL_FROZEN_GRID_SECTOR_REPAIR": 0.07067796610169491,
+      "SPARSE_LOCAL_STREAM_POWER_REPAIR": 0.4193220338983051
+    },
+    "candidate_floor_violation_user_intervals": 4016,
+    "candidate_floor_violation_user_seconds": 19994,
+    "candidate_long_eess_violations": 0,
+    "candidate_maximum_normalized_floor_shortfall": 0.4149722479553188,
+    "candidate_minus_predictive_duration": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260804,
+      "lower_95": 0.03101575143064293,
+      "median_bootstrap_mean": 0.06544790475845047,
+      "point_estimate": 0.06720640015755193,
+      "seed_cluster_standard_deviation": 0.12157435263863828,
+      "upper_95": 0.11519147378773378
+    },
+    "candidate_minus_predictive_final": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260803,
+      "lower_95": 0.024293951084082374,
+      "median_bootstrap_mean": 0.060030902750492894,
+      "point_estimate": 0.06111607524877581,
+      "seed_cluster_standard_deviation": 0.11036398658094465,
+      "upper_95": 0.10161017391448265
+    },
+    "candidate_short_eess_violations": 0,
+    "candidate_unresolved_intervals": 1736,
+    "cell_count": 1350,
+    "failed_seeds": [
+      44001,
+      44007,
+      44008,
+      44013,
+      44017,
+      44018,
+      44024,
+      44025,
+      44026,
+      44027,
+      44028
+    ],
+    "floor_violation_reduction_vs_predictive_fraction": 0.779344899130358,
+    "floor_violation_reduction_vs_static_fraction": 0.811127904779898,
+    "hard_gate_fail_seed_count": 11,
+    "hard_gate_pass_seed_count": 19,
+    "information_exchange_locality_certified": false,
+    "method_count": 9,
+    "network_wide_shutdown_intervals": 0,
+    "pass_count": 5,
+    "primary_candidate_minus_static": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260801,
+      "lower_95": 0.2416354768059766,
+      "median_bootstrap_mean": 0.28809140498870633,
+      "point_estimate": 0.2884971600268707,
+      "seed_cluster_standard_deviation": 0.13639647257935145,
+      "upper_95": 0.33857966324990685
+    },
+    "q0_headroom_actions": 0,
+    "secondary_candidate_minus_static": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260802,
+      "lower_95": 0.20710673875160251,
+      "median_bootstrap_mean": 0.24855189975641057,
+      "point_estimate": 0.2502774924075561,
+      "seed_cluster_standard_deviation": 0.14157494171667648,
+      "upper_95": 0.30561714250535643
+    },
+    "seed_count": 30,
+    "seed_return_count": 30,
+    "strict_local_scope_all_pass": true,
+    "strict_post_mode_power_all_pass": true,
+    "top_eight_failed_seed_share_of_candidate_floor_user_seconds": 0.9942982894868461,
+    "total_pass_cell_count": 150,
+    "violating_pass_cell_count": 46
+  },
+  "status": "PASS_INDEPENDENT_CAMPAIGN_RETURN_AUDIT"
+}

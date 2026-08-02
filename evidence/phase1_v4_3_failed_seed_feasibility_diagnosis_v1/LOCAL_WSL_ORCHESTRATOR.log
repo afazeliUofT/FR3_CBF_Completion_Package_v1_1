@@ -1,0 +1,283 @@
+=================================================================
+FR3 V4.3 — FAILED-SEED FEASIBILITY DIAGNOSIS
+=================================================================
+PACKAGE_ROOT=/home/afazeli2006/fr3_v4_3_failed_seed_diagnosis_outer_runs/20260802_154145/extracted/FR3_CBF_v1_1_Candidate_v4_3_FailedSeed_Feasibility_Diagnosis_DropIn_v1_2026-08-02
+REPO=/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1
+RORQUAL_HOST=rsadve1@rorqual.alliancecan.ca
+FAILED_SEEDS=44001,44007,44008,44013,44017,44018,44024,44025,44026,44027,44028
+CHANNEL_REGENERATION=NO
+GPU_REQUESTED=NO
+WORKER_WALLTIME=00:15:00
+MERGE_WALLTIME=00:05:00
+CAMPAIGN_RERUN_AUTHORIZED=NO
+WSL_TERMINAL_CLOSE_REQUESTED=NO
+INTERNAL_MANIFEST_VERIFICATION=PASS
+SOURCE_PAYLOAD_MANIFEST_VERIFICATION=PASS
+DIAGNOSTIC_ARCHIVE_SHA256_GATE=PASS
+REPO_VENV_ACTIVATED=YES
+No broken requirements found.
+LOCAL_VENV_DEPENDENCY_GATE=PASS
+PYTHON_IN_MEMORY_SYNTAX_CHECK=PASS
+PYTHON_SYNTAX_FILE_COUNT=5
+BASH_SYNTAX_CHECK=PASS
+........                                                                 [100%]
+8 passed in 1.45s
+LOCAL_CAMPAIGN_AUDIT=PASS
+CAMPAIGN_RETURN_SHA256=cd2975e316bbd3d20469559a28e10113b2d8a9c1942cc2cdfe01ad33253653c9
+CAMPAIGN_RETURN_SHA256_GATE=PASS
+FAILED_SEED_COUNT=11
+FAILED_SEEDS=44001,44007,44008,44013,44017,44018,44024,44025,44026,44027,44028
+HARD_GATE_PASS_SEED_COUNT=19
+VIOLATING_PASS_CELL_COUNT=46
+CANDIDATE_FLOOR_VIOLATION_USER_SECONDS=19994
+CANDIDATE_UNRESOLVED_INTERVALS=1736
+PRIMARY_POINT_ESTIMATE=0.2884971600268707
+PRIMARY_LOWER_95=0.2416354768059766
+PRIMARY_UPPER_95=0.33857966324990685
+FLOOR_REDUCTION_VS_PREDICTIVE_PERCENT=77.934490
+FLOOR_REDUCTION_VS_STATIC_PERCENT=81.112790
+PRIOR_WORKER_WALLTIME=04:00:00
+FUTURE_EQUIVALENT_WORKER_WALLTIME=00:10:00
+CURRENT_DIAGNOSTIC_WORKER_WALLTIME=00:15:00
+LOCAL_QUALITY_GATE=PASS
+Cloning into '/home/afazeli2006/fr3_v4_3_failed_seed_diagnosis_runs/20260802_154145/github_source_clone'...
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+GITHUB_REQUIRED_ANCESTOR_GATE=PASS
+GIT_HEAD_BEFORE=76a62cda5d649cad25a6a45ccb5f0f757a99a269
+GIT_REMOTE_HEAD_BEFORE=0e2634d084849d4db36b951574bed2162761e92d
+[e3-first-sector-p452 b876cfc] Add candidate-v4.3 failed-seed feasibility diagnosis
+ 19 files changed, 2759 insertions(+)
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/PACKAGE_VERSION.json
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/README.md
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/SOURCE_PAYLOAD_MANIFEST.sha256
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/config/DIAGNOSTIC_CONTRACT.json
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/docs/EXPECTED_SUCCESS_MARKERS.md
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/docs/RETURN_CONTRACT.md
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/docs/SCIENTIFIC_STATUS_AND_NEXT_GATE.md
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/docs/WALLTIME_AND_RESOURCE_POLICY.md
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/docs/WSL_WORKFLOW.md
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/immutable_bindings/FR3_PHASE1_RORQUAL_JOB_PACKAGE_V4_3_R2.zip.sha256
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/immutable_bindings/FR3_RORQUAL_V4_3_R2_30SEED_CAMPAIGN_18145937.zip.sha256
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/requirements.txt
+ create mode 100755 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/scripts/audit_campaign_return.py
+ create mode 100755 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/scripts/diagnose_failed_seed.py
+ create mode 100755 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/scripts/merge_failed_seed_diagnostics.py
+ create mode 100755 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/scripts/verify_diagnostic_return.py
+ create mode 100644 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/tests/test_failed_seed_diagnostic_package.py
+ create mode 100755 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/wrappers/REMOTE_ORCHESTRATE_FAILED_SEED_DIAGNOSIS.sh
+ create mode 100755 tools/phase1_v4_3_failed_seed_feasibility_diagnosis_v1/wrappers/RUN_FAILED_SEED_FEASIBILITY_DIAGNOSIS_FROM_WSL.sh
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+To github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1.git
+   0e2634d..b876cfc  HEAD -> e3-first-sector-p452
+DIAGNOSTIC_SOURCE_COMMIT=b876cfc40deaf2182727b27ded93800fbcd495da
+GITHUB_NEWER_WORK_OVERWRITTEN=NO
+Multifactor authentication is now mandatory to connect to this cluster.
+You can enroll your account into multifactor authentication on this page:
+https://ccdb.alliancecan.ca/multi_factor_authentications
+by following the instructions available here:
+https://docs.alliancecan.ca/wiki/Multifactor_authentication
+
+=============================================================================
+
+L'authentification multifacteur est maintenant obligatoire pour vous connecter
+à cette grappe. Configurez votre compte sur
+https://ccdb.alliancecan.ca/multi_factor_authentications
+et suivez les directives dans
+https://docs.alliancecan.ca/wiki/Multifactor_authentication/fr.
+Success. Logging you in...
+REMOTE_DIAGNOSTIC_PACKAGE_SHA256_GATE=PASS
+REMOTE_PACKAGE_MANIFEST_VERIFICATION=PASS
+REMOTE_JOB_PACKAGE_MANIFEST_VERIFICATION=PASS
+RORQUAL_PRESERVED_CHANNEL_BINDING=PASS
+CHANNEL_REGENERATION=NO
+GPU_REQUESTED=NO
+WORKER_WALLTIME=00:15:00
+MERGE_WALLTIME=00:05:00
+No broken requirements found.
+AUTHORIZATION_TOKEN_PRESENT=NO
+sbatch: NOTE: Your memory request of 16384.0M was likely submitted as 16.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+FAILED_SEED_DIAGNOSTIC_SUBMISSION=PASS
+ARRAY_JOB_ID=18150465
+MERGE_JOB_ID=18150466
+WORKER_ARRAY=0-10%4
+WORKER_CPUS_PER_TASK=8
+WORKER_MEMORY=16G
+WORKER_WALLTIME=00:15:00
+MERGE_CPUS_PER_TASK=4
+MERGE_MEMORY=8G
+MERGE_WALLTIME=00:05:00
+sbatch: NOTE: Your memory request of 8192.0M was likely submitted as 8.0G. Please note that Slurm interprets memory requests denominated in G as multiples of 1024M, not 1000M.
+18150465_[0-10%4]  fr3-v43-faildiag               PENDING    0:00       (None)
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[0-10%4]  fr3-v43-faildiag               PENDING    0:00       (Priority)
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_0         fr3-v43-faildiag               RUNNING    0:00       rc32425
+18150465_1         fr3-v43-faildiag               RUNNING    0:00       rc32505
+18150465_2         fr3-v43-faildiag               RUNNING    0:00       rc31708
+18150465_3         fr3-v43-faildiag               RUNNING    0:00       rc31708
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[4-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_0         fr3-v43-faildiag               RUNNING    0:21       rc32425
+18150465_1         fr3-v43-faildiag               RUNNING    0:21       rc32505
+18150465_2         fr3-v43-faildiag               RUNNING    0:21       rc31708
+18150465_3         fr3-v43-faildiag               RUNNING    0:21       rc31708
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[4-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_0         fr3-v43-faildiag               RUNNING    0:41       rc32425
+18150465_1         fr3-v43-faildiag               RUNNING    0:41       rc32505
+18150465_2         fr3-v43-faildiag               RUNNING    0:41       rc31708
+18150465_3         fr3-v43-faildiag               RUNNING    0:41       rc31708
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[4-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_0         fr3-v43-faildiag               RUNNING    1:01       rc32425
+18150465_1         fr3-v43-faildiag               RUNNING    1:01       rc32505
+18150465_2         fr3-v43-faildiag               RUNNING    1:01       rc31708
+18150465_3         fr3-v43-faildiag               RUNNING    1:01       rc31708
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[4-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_0         fr3-v43-faildiag               RUNNING    1:21       rc32425
+18150465_1         fr3-v43-faildiag               RUNNING    1:21       rc32505
+18150465_2         fr3-v43-faildiag               RUNNING    1:21       rc31708
+18150465_3         fr3-v43-faildiag               RUNNING    1:21       rc31708
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[4-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_0         fr3-v43-faildiag               RUNNING    1:41       rc32425
+18150465_1         fr3-v43-faildiag               RUNNING    1:41       rc32505
+18150465_2         fr3-v43-faildiag               RUNNING    1:41       rc31708
+18150465_3         fr3-v43-faildiag               RUNNING    1:41       rc31708
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[4-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_0         fr3-v43-faildiag               RUNNING    2:01       rc32425
+18150465_1         fr3-v43-faildiag               RUNNING    2:01       rc32505
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[4-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_1         fr3-v43-faildiag               RUNNING    2:21       rc32505
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[4-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[4-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[4-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_4         fr3-v43-faildiag               RUNNING    0:14       rc32425
+18150465_5         fr3-v43-faildiag               RUNNING    0:14       rc31720
+18150465_6         fr3-v43-faildiag               RUNNING    0:14       rc31720
+18150465_7         fr3-v43-faildiag               RUNNING    0:14       rc31720
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[8-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_4         fr3-v43-faildiag               RUNNING    0:35       rc32425
+18150465_5         fr3-v43-faildiag               RUNNING    0:35       rc31720
+18150465_6         fr3-v43-faildiag               RUNNING    0:35       rc31720
+18150465_7         fr3-v43-faildiag               RUNNING    0:35       rc31720
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[8-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_4         fr3-v43-faildiag               RUNNING    0:55       rc32425
+18150465_5         fr3-v43-faildiag               RUNNING    0:55       rc31720
+18150465_6         fr3-v43-faildiag               RUNNING    0:55       rc31720
+18150465_7         fr3-v43-faildiag               RUNNING    0:55       rc31720
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[8-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_4         fr3-v43-faildiag               RUNNING    1:15       rc32425
+18150465_5         fr3-v43-faildiag               RUNNING    1:15       rc31720
+18150465_6         fr3-v43-faildiag               RUNNING    1:15       rc31720
+18150465_7         fr3-v43-faildiag               RUNNING    1:15       rc31720
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[8-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_4         fr3-v43-faildiag               RUNNING    1:35       rc32425
+18150465_5         fr3-v43-faildiag               RUNNING    1:35       rc31720
+18150465_6         fr3-v43-faildiag               RUNNING    1:35       rc31720
+18150465_7         fr3-v43-faildiag               RUNNING    1:35       rc31720
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[8-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_4         fr3-v43-faildiag               RUNNING    1:55       rc32425
+18150465_5         fr3-v43-faildiag               RUNNING    1:55       rc31720
+18150465_7         fr3-v43-faildiag               RUNNING    1:55       rc31720
+18150465_8         fr3-v43-faildiag               RUNNING    0:01       rc32505
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_[9-10%4]  fr3-v43-faildiag               PENDING    0:00       (JobArrayTaskLimit)
+18150465_8         fr3-v43-faildiag               RUNNING    0:21       rc32505
+18150465_9         fr3-v43-faildiag               RUNNING    0:17       rc32425
+18150465_10        fr3-v43-faildiag               RUNNING    0:15       rc32505
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_8         fr3-v43-faildiag               RUNNING    0:41       rc32505
+18150465_9         fr3-v43-faildiag               RUNNING    0:37       rc32425
+18150465_10        fr3-v43-faildiag               RUNNING    0:35       rc32505
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_8         fr3-v43-faildiag               RUNNING    1:01       rc32505
+18150465_9         fr3-v43-faildiag               RUNNING    0:57       rc32425
+18150465_10        fr3-v43-faildiag               RUNNING    0:55       rc32505
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_8         fr3-v43-faildiag               RUNNING    1:21       rc32505
+18150465_9         fr3-v43-faildiag               RUNNING    1:17       rc32425
+18150465_10        fr3-v43-faildiag               RUNNING    1:15       rc32505
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_8         fr3-v43-faildiag               RUNNING    1:41       rc32505
+18150465_9         fr3-v43-faildiag               RUNNING    1:37       rc32425
+18150465_10        fr3-v43-faildiag               RUNNING    1:35       rc32505
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+18150465_8         fr3-v43-faildiag               RUNNING    2:01       rc32505
+18150465_10        fr3-v43-faildiag               RUNNING    1:55       rc32505
+18150466           fr3-v43-faildiag-merge         PENDING    0:00       (Dependency)
+JobIDRaw|JobName|Account|State|ExitCode|Elapsed|MaxRSS|ReqMem|AllocTRES|NodeList
+18150466|fr3-v43-faildiag-merge|def-rsadve_cpu|COMPLETED|0:0|00:00:02||8G|billing=4000,cpu=4,mem=8G,node=1|rc32425
+18150466.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:00:02|77976K||cpu=4,mem=8G,node=1|rc32425
+18150466.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:00:02|||billing=4000,cpu=4,mem=8G,node=1|rc32425
+18150488|fr3-v43-faildiag|def-rsadve_cpu|COMPLETED|0:0|00:02:11||16G|billing=8000,cpu=8,mem=16G,node=1|rc32425
+18150488.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:02:11|403616K||cpu=8,mem=16G,node=1|rc32425
+18150488.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:02:11|||billing=8000,cpu=8,mem=16G,node=1|rc32425
+18150489|fr3-v43-faildiag|def-rsadve_cpu|COMPLETED|0:0|00:02:30||16G|billing=8000,cpu=8,mem=16G,node=1|rc32505
+18150489.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:02:30|419360K||cpu=8,mem=16G,node=1|rc32505
+18150489.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:02:30|||billing=8000,cpu=8,mem=16G,node=1|rc32505
+18150490|fr3-v43-faildiag|def-rsadve_cpu|COMPLETED|0:0|00:01:55||16G|billing=8000,cpu=8,mem=16G,node=1|rc31708
+18150490.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:01:55|371996K||cpu=8,mem=16G,node=1|rc31708
+18150490.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:01:55|||billing=8000,cpu=8,mem=16G,node=1|rc31708
+18150491|fr3-v43-faildiag|def-rsadve_cpu|COMPLETED|0:0|00:01:59||16G|billing=8000,cpu=8,mem=16G,node=1|rc31708
+18150491.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:01:59|385664K||cpu=8,mem=16G,node=1|rc31708
+18150491.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:01:59|||billing=8000,cpu=8,mem=16G,node=1|rc31708
+18150530|fr3-v43-faildiag|def-rsadve_cpu|COMPLETED|0:0|00:01:57||16G|billing=8000,cpu=8,mem=16G,node=1|rc32425
+18150530.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:01:57|340612K||cpu=8,mem=16G,node=1|rc32425
+18150530.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:01:57|||billing=8000,cpu=8,mem=16G,node=1|rc32425
+18150531|fr3-v43-faildiag|def-rsadve_cpu|COMPLETED|0:0|00:02:00||16G|billing=8000,cpu=8,mem=16G,node=1|rc31720
+18150531.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:02:00|365608K||cpu=8,mem=16G,node=1|rc31720
+18150531.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:02:00|||billing=8000,cpu=8,mem=16G,node=1|rc31720
+18150532|fr3-v43-faildiag|def-rsadve_cpu|COMPLETED|0:0|00:01:53||16G|billing=8000,cpu=8,mem=16G,node=1|rc31720
+18150532.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:01:53|366336K||cpu=8,mem=16G,node=1|rc31720
+18150532.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:01:53|||billing=8000,cpu=8,mem=16G,node=1|rc31720
+18150533|fr3-v43-faildiag|def-rsadve_cpu|COMPLETED|0:0|00:01:58||16G|billing=8000,cpu=8,mem=16G,node=1|rc31720
+18150533.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:01:58|369792K||cpu=8,mem=16G,node=1|rc31720
+18150533.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:01:58|||billing=8000,cpu=8,mem=16G,node=1|rc31720
+18150553|fr3-v43-faildiag|def-rsadve_cpu|COMPLETED|0:0|00:02:10||16G|billing=8000,cpu=8,mem=16G,node=1|rc32505
+18150553.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:02:10|342156K||cpu=8,mem=16G,node=1|rc32505
+18150553.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:02:10|||billing=8000,cpu=8,mem=16G,node=1|rc32505
+18150554|fr3-v43-faildiag|def-rsadve_cpu|COMPLETED|0:0|00:01:53||16G|billing=8000,cpu=8,mem=16G,node=1|rc32425
+18150554.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:01:53|342232K||cpu=8,mem=16G,node=1|rc32425
+18150554.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:01:53|||billing=8000,cpu=8,mem=16G,node=1|rc32425
+18150465|fr3-v43-faildiag|def-rsadve_cpu|COMPLETED|0:0|00:01:58||16G|billing=8000,cpu=8,mem=16G,node=1|rc32505
+18150465.batch|batch|def-rsadve_cpu|COMPLETED|0:0|00:01:58|340344K||cpu=8,mem=16G,node=1|rc32505
+18150465.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:01:58|||billing=8000,cpu=8,mem=16G,node=1|rc32505
+REMOTE_RETURN_ZIP=/scratch/rsadve1/FR3_V4_3_FAILED_SEED_DIAGNOSIS_d786da62fc87_20260802_154145/return/FR3_RORQUAL_V4_3_FAILED_SEED_DIAGNOSIS_18150465.zip
+REMOTE_RETURN_ZIP_SHA256=4d8181b7b328d12dad0070e2e531bb4661e87e8aaf1c6a8e59184bf66ae0e62e
+ARRAY_JOB_ID=18150465
+MERGE_JOB_ID=18150466
+MERGE_STATE=COMPLETED
+MERGE_EXIT_CODE=0:0
+REMOTE_SCIENTIFIC_EXIT_CODE=0
+DIAGNOSTIC_SEED_RETURN_COUNT=11
+NEXT_REPAIR_DECISION=PROTECTED_SUBBAND_SCHEDULING_REASSIGNMENT_REQUIRED
+NEXT_GATE=DESIGN_AND_TEST_FLOOR_FIRST_PROTECTED_SUBBAND_SCHEDULING_ON_11_FAILED_SEEDS_AS_DEVELOPMENT
+CHANNEL_REGENERATION=NO
+GPU_REQUESTED=NO
+REMOTE_WRAPPER_EXIT_CODE=0
+DIAGNOSTIC_RETRIEVAL_EXIT_CODE=0
+RETURN_SIDECAR_BASENAME_GATE=PASS
+DIAGNOSTIC_RETURN_SHA256_GATE=PASS
+DIAGNOSTIC_RETURN_ZIP_CRC=PASS
+DIAGNOSTIC_RETURN_MANIFEST=PASS
+DIAGNOSTIC_RETURN_MANIFEST_ENTRIES=102
+DIAGNOSTIC_SEED_RETURN_COUNT=11
+DIAGNOSTIC_RETURN_COMPLETENESS=COMPLETE
+NEXT_REPAIR_DECISION=PROTECTED_SUBBAND_SCHEDULING_REASSIGNMENT_REQUIRED
+NEXT_GATE=DESIGN_AND_TEST_FLOOR_FIRST_PROTECTED_SUBBAND_SCHEDULING_ON_11_FAILED_SEEDS_AS_DEVELOPMENT
+RETURN_VERIFICATION_EXIT_CODE=0
+Cloning into '/home/afazeli2006/fr3_v4_3_failed_seed_diagnosis_runs/20260802_154145/github_evidence_clone'...
