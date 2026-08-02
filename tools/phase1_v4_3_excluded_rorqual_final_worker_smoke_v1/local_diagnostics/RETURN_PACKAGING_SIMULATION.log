@@ -1,0 +1,22 @@
+{
+  "authorization_token_included": false,
+  "raw_frequency_response_included": false,
+  "records": {
+    "diagnostic": {
+      "packager_exit_code": 0,
+      "status": "PASS_DIAGNOSTIC_RETRIEVABLE",
+      "validator_exit_code": 20,
+      "zip_sha256": "9af308947f34a226df4ad59afb86c6349f4069457cd5bef363424f74f6e00690"
+    },
+    "success": {
+      "packager_exit_code": 0,
+      "raw_channel_included": false,
+      "status": "PASS",
+      "token_included": false,
+      "validator_exit_code": 0,
+      "zip_sha256": "dd1718a05da3f39346cf4f847e63d4f62f0484cdad251716551da38f1b74df48"
+    }
+  },
+  "schema_version": 1,
+  "status": "PASS_SUCCESS_AND_DIAGNOSTIC_RETURN_PACKAGING_SIMULATION"
+}

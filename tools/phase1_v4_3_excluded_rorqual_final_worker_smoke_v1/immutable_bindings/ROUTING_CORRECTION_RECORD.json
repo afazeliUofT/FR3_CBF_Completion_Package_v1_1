@@ -1,0 +1,16 @@
+{
+  "cancel_if_active": true,
+  "correct_cluster": "rorqual",
+  "created_utc": "2026-08-02T03:50:18.350566+00:00",
+  "delete_ephemeral_authorization_token": true,
+  "full_campaign_execution_authorized": false,
+  "next_gate_on_pass": "BUILD_AND_INDEPENDENTLY_REVIEW_RORQUAL_NATIVE_LOCKED_30_SEED_CAMPAIGN_PACKAGE",
+  "rorqual_login": "rsadve1@rorqual.alliancecan.ca",
+  "rorqual_scratch_link": "/home/rsadve1/links/scratch",
+  "schema_version": 1,
+  "seed": 43999,
+  "status": "ROUTING_CORRECTION_REQUIRED_BEFORE_RORQUAL_SMOKE",
+  "superseded_nibi_job_id": "18953376",
+  "superseded_nibi_job_observed_state": "PENDING_PRIORITY_IN_USER_RETURN",
+  "superseded_nibi_result_use": "FORBIDDEN_AS_CONFIRMATORY_EVIDENCE"
+}

@@ -1,0 +1,18 @@
+{
+  "base_commit": "31f1ef70da2cde5cb33a7bf18b081903cc20db8f",
+  "checks": {
+    "concurrent_first_push_rejected": true,
+    "concurrent_update_preserved": true,
+    "evidence_rebase_and_push": true,
+    "normal_source_push": true,
+    "source_preserved": true,
+    "stale_non_force_push_rejected": true
+  },
+  "concurrent_commit": "342b38a328975fb3349e617dcd9a47eac8378adc",
+  "evidence_commit_before_rebase": "dd9b9b815527c000ffb2ab84c663ea705c5c35bf",
+  "final_remote_commit": "a5d977d058370af6862e30dece449947a924f2f1",
+  "newer_work_overwritten": false,
+  "schema_version": 1,
+  "source_commit": "7adcf1f86facec32d55a311a9d1dfb24f8a15034",
+  "status": "PASS_ACTUAL_REPO_PAYLOAD_NORMAL_CONCURRENT_AND_STALE_NON_FORCE_PUSH_SIMULATION"
+}

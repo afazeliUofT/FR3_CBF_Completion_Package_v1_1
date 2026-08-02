@@ -1,0 +1,54 @@
+{
+  "build_review_commit": "cc1c911ef5592a2c22834d7fb3e6550bbd4ab2ab",
+  "created_utc": "2026-08-02T03:50:18.350566+00:00",
+  "freeze_commit": "ee6708ba204c2acfe8479aeea5dd444f2cc1be04",
+  "locked_job_zip": {
+    "filename": "FR3_PHASE1_NIBI_JOB_PACKAGE_V4_3_v1.zip",
+    "sha256": "76a4aa701639a00913c5412c8ba54b86855a55ed97cb16e254ed6a7173356bd5"
+  },
+  "locked_package_id": "77bec1efa2ea151a64481d6993399b82585eac3c1343d51adb0fc37da294e015",
+  "locked_review_zip": {
+    "filename": "FR3_PHASE1_NIBI_JOB_PACKAGE_V4_3_INDEPENDENT_REVIEW_v1.zip",
+    "sha256": "17e58beb67ca74ce5420d87580d4dc72b74475462a78ca99169fe7f342a1ffec"
+  },
+  "reference_channel_record_sha256": "bf55f7a071bc00fdc9e73075bcf2b3f9da3bd07843e3795e134d4bdb3c4fa0d9",
+  "reference_cpu_job_id": "18112817",
+  "reference_environment": {
+    "numpy": "2.4.2",
+    "pandas": "2.3.3",
+    "python": "3.12.4",
+    "scipy": "1.17.0",
+    "sionna_no_rt": "2.0.1",
+    "torch": "2.9.1",
+    "torch_cuda_build": "12.6"
+  },
+  "reference_files": {
+    "REFERENCE_ALL_METHOD_CELL_SUMMARY.csv": "3d1a5ab3f2a1e98bd9f3745c94cb5e1ba8f95260353404fc7fb4353d8982e2e0",
+    "REFERENCE_CANDIDATE_CELL_SUMMARY.csv": "ece624d9def5850d522e24424077eefb75ac458d10a6c4ad48493121f6c9c5f6",
+    "REFERENCE_CANDIDATE_PASS_0_TRACE.npz": "4fa5f9e9c9e5496599ea245d29bf8cdefd4ce880ae8f20654d644943f092fa1c",
+    "REFERENCE_CANDIDATE_PASS_1_TRACE.npz": "2d54e87f0eb0c39677daaa1603e0b5c7072f9400c01e4c7e441686d91a6069f5",
+    "REFERENCE_CANDIDATE_PASS_2_TRACE.npz": "cbade4e7ff4166bbacf7ec8d7a2d435da05afafe81900ea9973657979420e7d2",
+    "REFERENCE_CANDIDATE_PASS_3_TRACE.npz": "56ec1f6b16bce4aab1ddac4da24dfb9441887f2cad27e7c29fc52a9b87778055",
+    "REFERENCE_CANDIDATE_PASS_4_TRACE.npz": "dc8a263a2223a3b839a9843bdda72604860edf8381f0f81b21d9f41d0006bf94",
+    "REFERENCE_CANDIDATE_UTILITY_SUMMARY.csv": "b7b248cee593bfe59562154073615b032cdd30fb7d74acedb615490e652d13e0",
+    "REFERENCE_CHANNEL_RECORD.json": "bf55f7a071bc00fdc9e73075bcf2b3f9da3bd07843e3795e134d4bdb3c4fa0d9",
+    "REFERENCE_H100_DEPLOYMENT_SMOKE_AUDIT.json": "2702eb4ed2b2472ff29e92b4537462fce1e6b8df4b490f3d5a3937a506b966ce",
+    "REFERENCE_PIP_FREEZE_EXACT.txt": "90462e9c48487daf14cb5226b13c1e071d8cffa3468cb8ba0ba81c7110a9d433",
+    "REFERENCE_PYTHON_ENVIRONMENT.txt": "b1c98f4e70a51edf2ffb1c6866e30cc0dd1735898a032d67e43ec5f192006397",
+    "REFERENCE_RUN_STATUS.env": "422b5385a03943ecae22a9c734a2db8d826576f52b2c3b8fc05baecadac1170c"
+  },
+  "reference_h100_smoke_job_id": "18115499",
+  "routing_correction": {
+    "correct_execution_cluster": "rorqual",
+    "immutable_nibi_labeled_job_package_retained_without_modification": true,
+    "rorqual_environment_root_link": "/home/rsadve1/links/scratch/FR3_PHASE1_RORQUAL_ENV_5037b4e33448",
+    "rorqual_scratch_link": "/home/rsadve1/links/scratch",
+    "superseded_nibi_job_id": "18953376",
+    "superseded_nibi_source_commit": "76603de75d9a1c45555d94443b5494a41275b7bb"
+  },
+  "schema_version": 1,
+  "source_return_zip": {
+    "filename": "FR3_V4_3_LOCKED_CAMPAIGN_BUILD_REVIEW_20260802_011349.zip",
+    "sha256": "25c683f14b301263ff1b4e035e13ea0a7e30c7965b81e6417adede8356bac466"
+  }
+}

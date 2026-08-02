@@ -1,0 +1,9 @@
+{
+  "child_nonzero_case": 42,
+  "child_success_case": true,
+  "schema_version": 1,
+  "status": "PASS_CHILD_SUCCESS_AND_NONZERO_RETURN_TO_ORIGINAL_WSL_PROMPT",
+  "top_level_exit_propagated": false,
+  "wsl_terminal_close_requested": false,
+  "wsl_terminal_remains_open": true
+}

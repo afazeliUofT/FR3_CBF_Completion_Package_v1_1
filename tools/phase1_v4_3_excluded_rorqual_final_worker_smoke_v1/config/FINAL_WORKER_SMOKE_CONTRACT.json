@@ -1,0 +1,147 @@
+{
+  "authorization": {
+    "allowed_seeds": [
+      43999
+    ],
+    "authorization_string": "EXECUTE_PHASE1_NIBI_V4_3_V1",
+    "confirmatory_seeds": [
+      44000,
+      44001,
+      44002,
+      44003,
+      44004,
+      44005,
+      44006,
+      44007,
+      44008,
+      44009,
+      44010,
+      44011,
+      44012,
+      44013,
+      44014,
+      44015,
+      44016,
+      44017,
+      44018,
+      44019,
+      44020,
+      44021,
+      44022,
+      44023,
+      44024,
+      44025,
+      44026,
+      44027,
+      44028,
+      44029
+    ],
+    "execution_stage": "EXCLUDED_FINAL_WORKER_SMOKE_SEED43999",
+    "full_campaign_authorized": false,
+    "merge_authorized": false,
+    "slurm_array_authorized": false,
+    "token_generated_only_after_remote_manifest_verification": true,
+    "token_included": false,
+    "token_ttl_hours": 168
+  },
+  "campaign_execution_authorized": false,
+  "claim_boundary": "EXCLUDED_FINAL_CAMPAIGN_WORKER_SMOKE_NOT_CONFIRMATORY_NOT_PAPER_RESULT_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE",
+  "created_utc": "2026-08-02T03:50:18.350566+00:00",
+  "execution": {
+    "channel_generation_required": true,
+    "channel_seed": 87999,
+    "cluster": "rorqual",
+    "environment_root_link": "/home/rsadve1/links/scratch/FR3_PHASE1_RORQUAL_ENV_5037b4e33448",
+    "environment_venv_relative_path": ".venv",
+    "exact_reference_environment": {
+      "numpy": "2.4.2",
+      "pandas": "2.3.3",
+      "python": "3.12.4",
+      "scipy": "1.17.0",
+      "sionna_no_rt": "2.0.1",
+      "torch": "2.9.1",
+      "torch_cuda_build": "12.6"
+    },
+    "final_worker": "phase1_seed_worker.py",
+    "login": "rsadve1@rorqual.alliancecan.ca",
+    "merge_job": false,
+    "one_job_only": true,
+    "resources": {
+      "account_preferences": [
+        "def-rsadve_gpu",
+        "def-rsadve",
+        "def-rsadve_cpu"
+      ],
+      "cpus_per_task": 16,
+      "gpu": "h100:1",
+      "memory_gib": 124,
+      "time_limit": "04:00:00"
+    },
+    "reuse_preserved_channel": false,
+    "scratch": "RESOLVE_FROM_/home/rsadve1/links/scratch",
+    "scratch_link": "/home/rsadve1/links/scratch",
+    "seed": 43999,
+    "slurm_array": false,
+    "user_seed": 87998,
+    "worker_arguments": [
+      "--seed",
+      "43999",
+      "--output-root",
+      "<RUN_ROOT>/results"
+    ]
+  },
+  "github_branch": "e3-first-sector-p452",
+  "github_repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1",
+  "hard_success_gates": {
+    "campaign_execution_authorized": false,
+    "candidate_hard_gates": "PASS",
+    "candidate_reference_trace_gate": "PASS",
+    "channel_exact_reference_gate": "PASS",
+    "comparator_reference_summary_gate": "PASS",
+    "final_worker_exit_code": 0,
+    "independent_audit_exit_code": 0,
+    "job_exit_code": "0:0",
+    "job_state": "COMPLETED",
+    "scientific_pass_validator_exit_code": 0,
+    "structural_validator_exit_code": 0
+  },
+  "independent_review": {
+    "filename": "FR3_PHASE1_NIBI_JOB_PACKAGE_V4_3_INDEPENDENT_REVIEW_v1.zip",
+    "sha256": "17e58beb67ca74ce5420d87580d4dc72b74475462a78ca99169fe7f342a1ffec",
+    "verdict": "PASS_V4_3_LOCKED_30_SEED_CAMPAIGN_PACKAGE_FOR_EXCLUDED_FINAL_WORKER_SMOKE_PREPARATION_NOT_EXECUTION"
+  },
+  "information_exchange_locality_certified": false,
+  "locked_job_package": {
+    "candidate_source_manifest_sha256": "a2e67130c91577b83be6e14f400d0934aa6d94ac0f974956594df35eec0cb93c",
+    "filename": "FR3_PHASE1_NIBI_JOB_PACKAGE_V4_3_v1.zip",
+    "freeze_commit": "ee6708ba204c2acfe8479aeea5dd444f2cc1be04",
+    "label_boundary": "The immutable filename and authorization string retain NIBI as historical identifiers; the scientific worker is executed directly under a separately reviewed Rorqual smoke wrapper. No Nibi campaign is authorized.",
+    "package_id": "77bec1efa2ea151a64481d6993399b82585eac3c1343d51adb0fc37da294e015",
+    "sha256": "76a4aa701639a00913c5412c8ba54b86855a55ed97cb16e254ed6a7173356bd5"
+  },
+  "next_gate_on_failure": "DIAGNOSE_FINAL_CAMPAIGN_WORKER_OR_RORQUAL_CHANNEL_REPRODUCTION_BEFORE_ANY_CAMPAIGN_AUTHORIZATION",
+  "next_gate_on_pass": "BUILD_AND_INDEPENDENTLY_REVIEW_RORQUAL_NATIVE_LOCKED_30_SEED_CAMPAIGN_PACKAGE",
+  "package_name": "FR3_CBF_v1_1_Candidate_v4_3_Excluded_Rorqual_Final_Worker_Smoke_DropIn_v1_2026-08-02",
+  "purpose": "Cancel the superseded queued Nibi seed-43999 smoke, then execute exactly one excluded seed-43999 Rorqual H100 smoke through the unchanged immutable campaign worker and independently audit the result.",
+  "reference_seed43999": {
+    "candidate_floor_violation_user_intervals": 0,
+    "candidate_floor_violation_user_seconds": 0,
+    "candidate_long_eess_violation_seconds": 0,
+    "candidate_repair_intervals": 104,
+    "candidate_short_eess_violation_seconds": 0,
+    "channel_record_sha256": "bf55f7a071bc00fdc9e73075bcf2b3f9da3bd07843e3795e134d4bdb3c4fa0d9",
+    "frequency_response_array_sha256": "c4ac7fb56da5d3f8182836e2a99ab2ef1dd7b17bf76332abbc198d1ae6b6a093",
+    "frequency_response_file_sha256": "d593817030292e86397e6a8cdb97e0da58f6e4633638aa7474bb252f769904f0"
+  },
+  "required_git_ancestor": "76603de75d9a1c45555d94443b5494a41275b7bb",
+  "routing_correction": {
+    "correct_cluster": "rorqual",
+    "reason": "User-specified execution site and materially shorter queue; the immutable scientific worker is cluster-portable under the exact environment contract.",
+    "required_action": "CANCEL_IF_ACTIVE_AND_DELETE_EPHEMERAL_AUTHORIZATION_TOKEN",
+    "superseded_cluster": "nibi",
+    "superseded_job_id": "18953376",
+    "superseded_job_scientific_status": "NOT_EVIDENCE_PENDING_JOB_TO_CANCEL",
+    "superseded_remote_run_root": "/scratch/rsadve1/FR3_V4_3_FINAL_WORKER_SMOKE_RUN_76603de75d9a_43999_20260802_032341"
+  },
+  "schema_version": 1
+}

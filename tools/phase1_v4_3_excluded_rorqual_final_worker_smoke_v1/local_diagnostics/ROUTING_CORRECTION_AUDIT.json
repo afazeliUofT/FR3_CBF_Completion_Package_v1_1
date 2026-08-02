@@ -1,0 +1,21 @@
+{
+  "authorization_token_deletion_required": true,
+  "cancel_if_active": true,
+  "checks": {
+    "full_campaign_locked": true,
+    "nibi_result_classified_non_evidence": true,
+    "nibi_scancel_present": true,
+    "nibi_token_delete_present": true,
+    "rorqual_cluster_bound": true,
+    "single_seed_only": true
+  },
+  "correct_cluster": "rorqual",
+  "created_utc": "2026-08-02T04:02:17.383976+00:00",
+  "full_campaign_execution_authorized": false,
+  "rorqual_login": "rsadve1@rorqual.alliancecan.ca",
+  "rorqual_scratch_link": "/home/rsadve1/links/scratch",
+  "schema_version": 1,
+  "status": "PASS_RORQUAL_ROUTING_CORRECTION_PREEXECUTION_AUDIT",
+  "superseded_nibi_job_id": "18953376",
+  "superseded_nibi_observed_state": "PENDING_PRIORITY_IN_USER_RETURN"
+}

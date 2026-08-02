@@ -1,0 +1,9 @@
+{
+  "archive": "FR3_V4_3_LOCKED_CAMPAIGN_BUILD_REVIEW_20260802_011349.zip",
+  "manifest_entries": 9,
+  "schema_version": 1,
+  "sha256": "25c683f14b301263ff1b4e035e13ea0a7e30c7965b81e6417adede8356bac466",
+  "sidecar_basename_only": true,
+  "single_root": "FR3_V4_3_LOCKED_CAMPAIGN_BUILD_REVIEW_RETURN",
+  "status": "PASS_SOURCE_RETURN_ARCHIVE_SIDECAR_CRC_AND_MANIFEST"
+}
