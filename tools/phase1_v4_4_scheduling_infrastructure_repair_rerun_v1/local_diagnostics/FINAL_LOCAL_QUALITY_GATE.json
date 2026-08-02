@@ -1,0 +1,22 @@
+{
+  "bash_syntax": "PASS",
+  "campaign_rerun_authorized": false,
+  "channel_regeneration": false,
+  "focused_tests_passed": 19,
+  "gpu_requested": false,
+  "json_serialization_repair": "PASS",
+  "merge_memory_gib": 4,
+  "merge_walltime": "00:03:00",
+  "preliminary_not_paper_evidence": true,
+  "preliminary_v44_floor_violation_user_seconds": 6540,
+  "preliminary_v44_unresolved_intervals": 523,
+  "prior_failure_root_cause": "NUMPY_NDARRAY_JSON_SERIALIZATION",
+  "prior_worker_error_count": 11,
+  "python_syntax": "PASS",
+  "resource_policy": "FAIR_MEASURED_UPPER_BOUND",
+  "schema_version": 1,
+  "scientific_candidate_source_identity": "PASS",
+  "status": "PASS",
+  "worker_memory_gib": 8,
+  "worker_walltime": "00:06:00"
+}

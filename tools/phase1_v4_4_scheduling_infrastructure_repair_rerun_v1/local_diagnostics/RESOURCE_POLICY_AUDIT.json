@@ -1,0 +1,12 @@
+{
+  "classification": "FAIR_MEASURED_UPPER_BOUND",
+  "merge_memory_gib": 4,
+  "merge_walltime_seconds": 180,
+  "prior_worker_elapsed_range_seconds": [
+    108,
+    160
+  ],
+  "rerun_worker_memory_gib": 8,
+  "rerun_worker_walltime_seconds": 360,
+  "schema_version": 1
+}
