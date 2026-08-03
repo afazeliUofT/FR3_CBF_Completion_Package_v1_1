@@ -1,0 +1,40 @@
+{
+  "automatic_algorithm_tuning_authorized": false,
+  "automatic_extra_seeds_authorized": false,
+  "claim_boundary": "FRESH_HOLDOUT_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE; USER_FLOOR_GUARANTEE_IS_CONDITIONAL_ON_BOUNDED_ACTION_FEASIBILITY",
+  "implementation_repair_sensitivity": {
+    "absolute_mean_shift_due_to_seed_44052": 0.00015971728218694414,
+    "action_library_definition_changed": false,
+    "full_30_seed_primary_mean": 0.2504676932746432,
+    "new_seed_generated": false,
+    "other_29_seed_primary_mean": 0.25030797599245624,
+    "repair_classification": "IMPLEMENTATION_CAPACITY_REPAIR_NOT_ALGORITHM_TUNING",
+    "scientific_source_files_modified": false,
+    "seed_44052_primary_effect": 0.2550994944580637
+  },
+  "next_gate": "FINALIZE_13_PAGE_TWC_MANUSCRIPT_AND_ONE_COMPACT_PRACTICALITY_SECTION",
+  "paper_writing_authorized": true,
+  "schema_version": 1,
+  "source_supported_facts": {
+    "cell_count": 1350,
+    "floor_reduction_versus_predictive_percent": 81.46799817418702,
+    "floor_reduction_versus_static_percent": 84.75780606171595,
+    "floor_violation_user_intervals": 3340,
+    "floor_violation_user_seconds": 16646,
+    "floor_zero": false,
+    "long_eess_violation_seconds": 0,
+    "maximum_normalized_floor_shortfall": 0.5726402828574296,
+    "network_wide_shutdown_intervals": 0,
+    "primary_lower_95": 0.20132723612261208,
+    "primary_point_estimate": 0.2504676932746432,
+    "primary_superiority_met": true,
+    "primary_upper_95": 0.31024908237228865,
+    "q0_envelope_deployable_actions": 0,
+    "safety_gates_pass": true,
+    "seed_count": 30,
+    "seed_hard_gate_pass_count": 17,
+    "short_eess_violation_seconds": 0,
+    "unresolved_intervals": 1328
+  },
+  "status": "PASS_COMPLETED_FRESH_V4_5_HOLDOUT_AFTER_NONSCIENTIFIC_REPAIR"
+}

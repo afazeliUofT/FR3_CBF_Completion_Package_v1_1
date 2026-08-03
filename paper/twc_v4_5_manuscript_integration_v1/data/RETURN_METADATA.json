@@ -1,0 +1,27 @@
+{
+  "action_library_definition_changed": false,
+  "assembly_job_id": "18232439",
+  "authorization_token_included": false,
+  "automatic_extra_seeds_authorized": false,
+  "channel_regenerated": false,
+  "created_utc": "2026-08-03T07:49:24.451105+00:00",
+  "existing_holdout_array_job_id": "18163102",
+  "gpu_requested": false,
+  "implementation_capacity_repair_applied": true,
+  "pass_array_job_id": "18232438",
+  "pass_parallelization_applied": true,
+  "pass_slots": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "prior_completion_seed_job_id": "18207112",
+  "schema_version": 1,
+  "scientific_source_files_modified": false,
+  "seed_rerun_list": [
+    44052
+  ],
+  "validator_repair_applied": true
+}

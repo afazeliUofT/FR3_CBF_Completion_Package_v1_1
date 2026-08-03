@@ -1,0 +1,22 @@
+{
+  "practicality": {
+    "action_scope_locality_verified": true,
+    "candidate_end_to_end_seconds_max_per_pass": 794.8052372271195,
+    "candidate_end_to_end_seconds_mean_per_pass": 22.459776537139163,
+    "changed_sector_intervals_sum": 18593,
+    "changed_stream_coefficients_sum": 45149,
+    "incremental_payload_lower_bound_bytes_sum": 191540,
+    "information_exchange_locality_certified": false,
+    "payload_claim_boundary": "LOWER_BOUND_ONLY_NOT_SERIALIZED_PROTOCOL_MEASUREMENT",
+    "repair_solver_seconds_max": 0.2260254248976707
+  },
+  "scheduling": {
+    "failure_intervals": 1328,
+    "maximum_guard_sector_count": 8,
+    "maximum_mode_count": 7776,
+    "maximum_mutable_sector_count": 9,
+    "maximum_schedule_solver_seconds": 159.1023975238204,
+    "maximum_scheduled_fraction": 0.871,
+    "success_intervals": 506
+  }
+}

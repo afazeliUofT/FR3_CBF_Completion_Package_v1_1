@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "PASS_LOCAL_TWC_MANUSCRIPT_INTEGRATION_V1",
+  "final_holdout_commit": "9a3f267629ee2b6f11809f4c235fc01ead057490",
+  "new_simulation_execution": false,
+  "cluster_contacted": false,
+  "next_gate": "INDEPENDENT_SCIENTIFIC_REVIEW_AND_FINAL_13_PAGE_TWC_EDIT"
+}

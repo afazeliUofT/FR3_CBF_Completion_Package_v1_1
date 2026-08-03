@@ -1,0 +1,26 @@
+\begin{table}[t]
+\caption{Fresh 30-seed holdout: candidate-v4.5 headline results.}
+\label{tab:holdout-key}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.1pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Metric & Result\\
+\midrule
+Candidate $-$ safe-static final PF & $0.2505$\\
+Seed-cluster bootstrap 95\% CI & $[0.2013,0.3102]$\\
+Candidate $-$ predictive final PF & $0.0563$\\
+Seed-cluster bootstrap 95\% CI & $[0.0205,0.0967]$\\
+Long-/short-horizon EESS violations & $0/0$\\
+Safety-passing seeds & $30/30$\\
+Zero-floor seeds & $17/30$\\
+Floor-violation user-seconds & $16{,}646$\\
+Floor reduction vs. predictive & $81.47\%$\\
+Floor reduction vs. safe static & $84.76\%$\\
+Residual scheduling intervals & $1{,}328$\\
+Maximum normalized floor shortfall & $57.26\%$\\
+\bottomrule
+\end{tabular}
+\end{table}

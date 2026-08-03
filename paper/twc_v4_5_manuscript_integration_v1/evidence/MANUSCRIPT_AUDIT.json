@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "latex_log_clean_of_unresolved_refs": true,
+    "page_count_range": true,
+    "pdf_exists": true,
+    "placeholder_scan": true,
+    "required_results_present": true
+  },
+  "forbidden_hits": {},
+  "missing_required_phrases": [],
+  "page_count": 9,
+  "pdf_bytes": 336909,
+  "schema_version": 1,
+  "status": "PASS"
+}

@@ -1,0 +1,25 @@
+\begin{table}[t]
+\caption{Reference-implementation practicality evidence. Values are measurements of the archived Python/HiGHS workflow, not a hardware or protocol certification.}
+\label{tab:practicality}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.0pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Metric & Fresh-holdout value\\
+\midrule
+Fixed-beam repair solve, maximum & 0.226 s\\
+Schedule solve, maximum & 159.1 s\\
+End-to-end compute per pass, mean & 22.5 s\\
+End-to-end compute per pass, maximum & 794.8 s\\
+Maximum schedule-mode count & 7,776\\
+Maximum nonbaseline scheduled fraction & 0.871\\
+Maximum guard-sector count & 8\\
+Maximum mutable-sector count & 9\\
+Changed sector-intervals, aggregate & 18,593\\
+Changed stream coefficients, aggregate & 45,149\\
+Payload lower bound, aggregate & 191,540 bytes\\
+\bottomrule
+\end{tabular}
+\end{table}

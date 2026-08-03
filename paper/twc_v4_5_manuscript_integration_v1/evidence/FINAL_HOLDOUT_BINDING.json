@@ -1,0 +1,8 @@
+{
+  "github_branch": "e3-first-sector-p452",
+  "github_evidence_commit": "9a3f267629ee2b6f11809f4c235fc01ead057490",
+  "holdout_return_basename": "FR3_RORQUAL_V4_5_HOLDOUT_COMPLETION_R2_18232438.zip",
+  "holdout_return_sha256": "69d98ac674e364c1d3d2a17251de26516ec51ed52b896b3658f60fcbfbf1326d",
+  "retrieved_holdout_status": "PASS_FRESH_V4_5_HOLDOUT_SAFETY_AND_UTILITY_FEASIBILITY_CONDITIONED_FLOOR",
+  "schema_version": 1
+}

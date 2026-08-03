@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\caption{Fresh-holdout method comparison over 150 pass cells. Floor burden is the mean number of active-eligible user-seconds below the unchanged floor per seed-pass cell.}
+\label{tab:method-comparison}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5.0pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Method & Final PF & Long EESS sec. & Short EESS sec. & Floor user-sec.\\
+\midrule
+Candidate v4.5 & 46.4043 & 0.00 & 0.00 & 111.0\\
+Predictive & 46.3480 & 0.00 & 0.00 & 598.8\\
+Safe static & 46.1538 & 0.00 & 0.00 & 728.1\\
+Reactive & 46.3286 & 0.00 & 0.00 & 604.3\\
+Uniform & 45.7934 & 0.00 & 0.00 & 606.7\\
+Noncausal scale & 46.1341 & 0.00 & 0.00 & 797.3\\
+Hard null/mute & 43.3730 & 0.00 & 0.00 & 2433.7\\
+\bottomrule
+\end{tabular}
+\end{table*}
