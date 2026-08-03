@@ -1,0 +1,71 @@
+{
+  "array_index": 22,
+  "created_utc": "2026-08-03T00:00:00+00:00",
+  "execution_strategy": {
+    "assembly_cpus": 4,
+    "assembly_memory": "4G",
+    "assembly_walltime": "00:05:00",
+    "channel_reused": true,
+    "classification": "PASS_PARALLEL_ORCHESTRATION_ONLY",
+    "gpu_requested": false,
+    "pass_array": "0-4%5",
+    "pass_worker_cpus": 8,
+    "pass_worker_memory": "4G",
+    "pass_worker_walltime": "00:20:00",
+    "reason": "The five protected-pass evaluations are independent and each initializes from the same full-load nominal moving-average state."
+  },
+  "existing_holdout_package_id": "00a3561864f8adb8ad22cf1bd866ec0234043c16acbb25634d1d3502defc2cc6",
+  "existing_holdout_return_sha256": "066bd2190788f5dd8549b7fe1203070d091875e0a33e61762df4c21da6f587a7",
+  "existing_holdout_run_root": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_V45_FRESH_HOLDOUT_00a3561864f8_20260802_214813",
+  "existing_job_package_sha256": "3b392d71812e14239ccad89e887e3af18f490f39305a0628614b13f9097d5ef9",
+  "github_branch": "e3-first-sector-p452",
+  "github_repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1",
+  "mode_capacity": {
+    "classification": "IMPLEMENTATION_CAPACITY_REPAIR_NOT_ALGORITHM_TUNING",
+    "original_guard": 4096,
+    "required_count": 7776,
+    "runtime_guard": 8192
+  },
+  "next_gate_on_complete_result": "FINALIZE_13_PAGE_TWC_MANUSCRIPT_AND_ONE_COMPACT_PRACTICALITY_SECTION",
+  "next_gate_on_infrastructure_failure": "REVIEW_ONLY_FAILED_PASS_WITHOUT_NEW_SEEDS_OR_ALGORITHM_TUNING",
+  "package_id": "FR3_V45_HOLDOUT_COMPLETION_R2_PASS_PARALLEL_V1",
+  "pass_slots": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "prior_completion_r1_merge_job_id": "18207113",
+  "prior_completion_r1_return_sha256": "9ec84a25c4d62e60d26ae91ac85aba7e27210d7ec6021259ea803785cf0988bf",
+  "prior_completion_r1_seed_job_id": "18207112",
+  "required_github_ancestor": "dc360843fcbbe1ef0c4a6420d7a94414ecb0a9bd",
+  "resource_basis": {
+    "r1_elapsed_seconds": 724,
+    "r1_maxrss_kib": 764704,
+    "r1_state": "TIMEOUT",
+    "reference_max_mode_count": 1296,
+    "reference_schedule_solver_seconds_sum": 154.195109,
+    "reference_seed": 44051,
+    "required_to_reference_mode_ratio": 6.0,
+    "walltime_rationale": "20 minutes per pass is a fair censored-runtime upper bound: the prior 12-minute five-pass job produced no completed pass, while splitting preserves exact science and provides a 67% per-pass margin without returning to multi-hour requests."
+  },
+  "schema_version": 1,
+  "scientific_invariants": {
+    "action_library_definition_changed": false,
+    "automatic_algorithm_tuning_authorized": false,
+    "automatic_extra_probes_authorized": false,
+    "candidate_source_files_modified": false,
+    "channel_regeneration_authorized": false,
+    "constraints_changed": false,
+    "floor_changed": false,
+    "new_seeds_authorized": false,
+    "objective_changed": false,
+    "tolerances_changed": false
+  },
+  "seed": 44052,
+  "seed44052_channel_binding": {
+    "channel_record_file_sha256": "0450cecf2e38053800347ae997113307d5e6e3e04967608c28afecf04887e708",
+    "frequency_response_array_sha256": "d010d545576a7177077e2b0314aedf5bc76cd1e4122be8241b9dfe4e50c684ca"
+  }
+}

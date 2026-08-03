@@ -1,0 +1,15 @@
+{
+  "candidate_version": "v4.5",
+  "cluster": "rorqual",
+  "delivery_type": "standalone_dropin",
+  "execution_change": "split one seed into five independent pass jobs",
+  "gpu_requested": false,
+  "new_seeds_authorized": false,
+  "package_name": "FR3_CBF_v1_1_Candidate_v4_5_Holdout_Completion_R2_PassParallel_DropIn_v1_2026-08-02",
+  "schema_version": 1,
+  "scientific_change": false,
+  "seed_scope": [
+    44052
+  ],
+  "terminal_close_requested": false
+}
