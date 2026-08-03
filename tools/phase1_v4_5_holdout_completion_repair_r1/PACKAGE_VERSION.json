@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "package_name": "FR3_CBF_v1_1_Candidate_v4_5_Holdout_Completion_Repair_DropIn_v1_2026-08-02",
+  "candidate": "v4.5",
+  "repair_revision": "holdout_completion_r1",
+  "classification": "VALIDATOR_CONTRACT_AND_IMPLEMENTATION_CAPACITY_REPAIR_ONLY",
+  "rerun_seed_list": [44052],
+  "new_seed_count": 0,
+  "algorithm_tuning": false,
+  "channel_regeneration": false,
+  "gpu_requested": false,
+  "created_date": "2026-08-02"
+}

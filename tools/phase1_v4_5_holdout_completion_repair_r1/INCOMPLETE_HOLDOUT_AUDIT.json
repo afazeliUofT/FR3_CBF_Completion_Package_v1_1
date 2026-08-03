@@ -1,0 +1,80 @@
+{
+  "automatic_algorithm_tuning_authorized": false,
+  "automatic_extra_seeds_authorized": false,
+  "next_gate": "RERUN_ONLY_SEED_44052_WITH_MODE_CAP_8192_THEN_REVALIDATE_AND_MERGE_ALL_30",
+  "provisional_29_seed_statistics_not_paper_result": {
+    "candidate_minus_predictive_duration_mean_pf": {
+      "lower_95": 0.008385248588145445,
+      "point_estimate": 0.03759311941319974,
+      "scope": "PROVISIONAL_29_OF_30_NOT_PAPER_RESULT",
+      "seed_cluster_standard_deviation": 0.08288976686002575,
+      "upper_95": 0.06855757789722877
+    },
+    "candidate_minus_predictive_final_pf": {
+      "lower_95": 0.022139118906309686,
+      "point_estimate": 0.058635376511649955,
+      "scope": "PROVISIONAL_29_OF_30_NOT_PAPER_RESULT",
+      "seed_cluster_standard_deviation": 0.10779136028248629,
+      "upper_95": 0.09964609725358452
+    },
+    "candidate_minus_static_duration_mean_pf": {
+      "lower_95": 0.1748722073710293,
+      "point_estimate": 0.20807391806039593,
+      "scope": "PROVISIONAL_29_OF_30_NOT_PAPER_RESULT",
+      "seed_cluster_standard_deviation": 0.09444325110860438,
+      "upper_95": 0.24215826318220882
+    },
+    "candidate_minus_static_final_pf": {
+      "lower_95": 0.19937600223431895,
+      "point_estimate": 0.25030797599245624,
+      "scope": "PROVISIONAL_29_OF_30_NOT_PAPER_RESULT",
+      "seed_cluster_standard_deviation": 0.15834352016251496,
+      "upper_95": 0.31119563877599704
+    }
+  },
+  "schema_version": 1,
+  "scientific_inference": {
+    "repair_changes_action_space": false,
+    "repair_changes_floor_or_tolerances": false,
+    "repair_changes_objective_or_constraints": false,
+    "repair_requires_new_seed": false,
+    "required_rerun_seeds": [
+      44052
+    ],
+    "seed_44052_defect": "implementation enumeration guard rejected an already-declared 7776-mode companion-aware library before scientific evaluation",
+    "validator_defect": "validator omitted schedule-mode and mutable-sector terms from the declared payload lower bound"
+  },
+  "source_supported_facts": {
+    "candidate_floor_violation_user_intervals_29": 2959,
+    "candidate_floor_violation_user_seconds_29": 14741,
+    "candidate_hard_gate_pass_seed_count": 17,
+    "candidate_long_eess_violation_seconds_29": 0,
+    "candidate_safety_pass_seed_count": 29,
+    "candidate_short_eess_violation_seconds_29": 0,
+    "candidate_unresolved_intervals_29": 1234,
+    "complete_seed_result_count": 29,
+    "expected_seed_count": 30,
+    "missing_seed_result": 44052,
+    "mode_count_observed": 7776,
+    "original_mode_count_guard": 4096,
+    "payload_formula_verified_on_all_29_complete_seed_results": true,
+    "payload_validator_false_alarm_seed_count": 10,
+    "payload_validator_false_alarm_seeds": [
+      44031,
+      44035,
+      44036,
+      44037,
+      44038,
+      44042,
+      44049,
+      44050,
+      44054,
+      44056
+    ],
+    "predictive_floor_violation_user_seconds_29": 84286,
+    "return_sha256": "066bd2190788f5dd8549b7fe1203070d091875e0a33e61762df4c21da6f587a7",
+    "seed_count_with_nonzero_scheduling_payload": 10,
+    "static_floor_violation_user_seconds_29": 101953
+  },
+  "status": "PASS_HOLDOUT_COMPLETION_REPAIR_REQUIRED_AND_WELL_SCOPED"
+}
