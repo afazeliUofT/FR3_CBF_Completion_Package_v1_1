@@ -1,0 +1,17 @@
+{
+  "authorization_token_included": false,
+  "automatic_extra_seeds_authorized": false,
+  "channel_regenerated": false,
+  "created_utc": "2026-08-03T02:49:55.832476+00:00",
+  "existing_holdout_array_job_id": "18163102",
+  "gpu_requested": false,
+  "implementation_capacity_repair_applied": true,
+  "merge_job_id": "18207113",
+  "schema_version": 1,
+  "scientific_source_files_modified": false,
+  "seed_job_id": "18207112",
+  "seed_rerun_list": [
+    44052
+  ],
+  "validator_repair_applied": true
+}

@@ -1,0 +1,7 @@
+{
+  "automatic_extra_seeds_authorized": false,
+  "merge_exit_code": 42,
+  "next_gate": "REVIEW_COMPLETION_FAILURE_WITHOUT_AUTOMATIC_EXTRA_PROBES",
+  "schema_version": 1,
+  "status": "INCOMPLETE_HOLDOUT_COMPLETION_REVIEW_REQUIRED"
+}

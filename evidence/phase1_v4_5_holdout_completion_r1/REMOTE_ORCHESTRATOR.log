@@ -1,0 +1,213 @@
+REMOTE_COMPLETION_PACKAGE_SHA256_GATE=PASS
+REMOTE_COMPLETION_PACKAGE_MANIFEST_VERIFICATION=PASS
+ORIGINAL_HOLDOUT_JOB_PACKAGE_MANIFEST=PASS
+SEED44052_PRESERVED_CHANNEL_BINDING=PASS
+CHANNEL_REGENERATION=NO
+GPU_REQUESTED=NO
+RORQUAL_CONCURRENT_COMPLETION_GUARD=PASS
+SEED44052_COMPLETION_AUTHORIZATION_ISSUED=PASS
+NATIVE_AUTHORIZATION_GUARD=PASS
+AUTHORIZED_EXECUTION_WRAPPER_SCOPE=SEED_44052_ONLY
+AUTHORIZATION_TOKEN_SHA256=16540f0066d9385174db6a4f362789be3718df819d3c9b66404d48f2e75d7294
+AUTHORIZATION_EXPIRES_UTC=2026-08-03T14:35:12.928059+00:00
+AUTOMATIC_EXTRA_SEEDS_AUTHORIZED=NO
+HOLDOUT_COMPLETION_SUBMISSION=PASS
+SEED44052_JOB_ID=18207112
+MERGE_JOB_ID=18207113
+EXISTING_HOLDOUT_COMPLETION_RUN_ATTACHED=NO
+SEED_WORKER_WALLTIME=00:12:00
+SEED_WORKER_MEMORY=16G
+MERGE_WALLTIME=00:05:00
+MERGE_MEMORY=8G
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    PENDING       0:00 (None)
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    PENDING       0:00 (Priority)
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    PENDING       0:00 (Priority)
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    PENDING       0:00 (Priority)
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    PENDING       0:00 (Priority)
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    PENDING       0:00 (Priority)
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    PENDING       0:00 (Priority)
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    PENDING       0:00 (Priority)
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       0:00 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       0:15 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       0:30 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       0:46 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       1:01 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       1:16 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       1:31 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       1:46 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       2:01 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       2:16 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       2:31 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       2:46 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       3:02 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       3:17 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       3:32 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       3:47 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       4:02 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       4:17 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       4:32 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       4:47 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       5:02 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       5:17 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       5:33 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       5:48 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       6:03 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       6:18 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       6:33 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       6:48 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       7:03 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       7:19 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       7:34 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       7:49 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       8:04 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       8:19 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       8:34 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       8:49 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       9:04 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       9:19 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       9:34 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING       9:50 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING      10:05 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING      10:20 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING      10:35 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING      10:50 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING      11:05 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING      11:20 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING      11:35 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207112            fr3-v45-s44052-r1    RUNNING      11:50 rc32623
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207113       fr3-v45-complete-merge    PENDING       0:00 (Dependency)
+          18207112            fr3-v45-s44052-r1 COMPLETING      12:04 rc32623
+             JOBID                         NAME      STATE       TIME NODELIST(REASON)
+          18207113       fr3-v45-complete-merge    RUNNING       0:13 rc32411
+JobID|JobName|Account|State|ExitCode|Elapsed|MaxRSS|ReqMem|AllocTRES
+18207112|fr3-v45-s44052-r1|def-rsadve_cpu|TIMEOUT|0:0|00:12:04||16G|billing=8000,cpu=8,mem=16G,node=1
+18207112.batch|batch|def-rsadve_cpu|CANCELLED|0:15|00:12:05|764704K||cpu=8,mem=16G,node=1
+18207112.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:12:05|||billing=8000,cpu=8,mem=16G,node=1
+18207113|fr3-v45-complete-merge|def-rsadve_cpu|FAILED|42:0|00:00:17||8G|billing=4000,cpu=4,mem=8G,node=1
+18207113.batch|batch|def-rsadve_cpu|FAILED|42:0|00:00:17|201828K||cpu=4,mem=8G,node=1
+18207113.extern|extern|def-rsadve_cpu|COMPLETED|0:0|00:00:17|||billing=4000,cpu=4,mem=8G,node=1
+AUTHORIZATION_TOKEN_PRESENT_AFTER_COMPLETION=NO
+HOLDOUT_COMPLETION_RETURN_PACKAGING=PASS
+HOLDOUT_COMPLETION_RETURN_ZIP=/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_V45_FRESH_HOLDOUT_00a3561864f8_20260802_214813/holdout_completion_r1/return/FR3_RORQUAL_V4_5_HOLDOUT_COMPLETION_R1_18207112.zip
+HOLDOUT_COMPLETION_RETURN_ZIP_SHA256=9ec84a25c4d62e60d26ae91ac85aba7e27210d7ec6021259ea803785cf0988bf
+REMOTE_HOLDOUT_COMPLETION_RETURN_ZIP=/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_V45_FRESH_HOLDOUT_00a3561864f8_20260802_214813/holdout_completion_r1/return/FR3_RORQUAL_V4_5_HOLDOUT_COMPLETION_R1_18207112.zip
+REMOTE_HOLDOUT_COMPLETION_RETURN_ZIP_SHA256=9ec84a25c4d62e60d26ae91ac85aba7e27210d7ec6021259ea803785cf0988bf
+SEED44052_STATE=TIMEOUT
+SEED44052_SLURM_EXIT_CODE=0:0
+MERGE_STATE=FAILED
+MERGE_SLURM_EXIT_CODE=42:0
+AUTOMATIC_EXTRA_SEEDS_AUTHORIZED=NO
+NEXT_GATE=FINALIZE_13_PAGE_TWC_MANUSCRIPT_AND_ONE_COMPACT_PRACTICALITY_SECTION
