@@ -1,0 +1,20 @@
+Multifactor authentication is now mandatory to connect to this cluster.
+You can enroll your account into multifactor authentication on this page:
+https://ccdb.alliancecan.ca/multi_factor_authentications
+by following the instructions available here:
+https://docs.alliancecan.ca/wiki/Multifactor_authentication
+
+=============================================================================
+
+L'authentification multifacteur est maintenant obligatoire pour vous connecter
+à cette grappe. Configurez votre compte sur
+https://ccdb.alliancecan.ca/multi_factor_authentications
+et suivez les directives dans
+https://docs.alliancecan.ca/wiki/Multifactor_authentication/fr.
+Success. Logging you in...
+REMOTE_EXISTING_RETURN_BINDING=PASS
+REMOTE_RETURN_ZIP=/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_V45_FRESH_HOLDOUT_00a3561864f8_20260802_214813/holdout_completion_r2_pass_parallel/return/FR3_RORQUAL_V4_5_HOLDOUT_COMPLETION_R2_18232438.zip
+REMOTE_RETURN_ZIP_SHA256=69d98ac674e364c1d3d2a17251de26516ec51ed52b896b3658f60fcbfbf1326d
+REMOTE_RETURN_SIDECAR_BASENAME_GATE=PASS
+REMOTE_RETURN_ZIP_CRC=PASS
+REMOTE_COMPUTATION_RERUN=NO

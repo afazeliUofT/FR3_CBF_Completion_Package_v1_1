@@ -1,0 +1,199 @@
+=================================================================
+FR3 V4.5 — HOLDOUT COMPLETION R2 RETRIEVAL-ONLY RECOVERY
+=================================================================
+PACKAGE_ROOT=/home/afazeli2006/fr3_v45_holdout_r2_retrieval_outer_runs/20260803_082620/extracted/FR3_CBF_v1_1_Candidate_v4_5_Holdout_Completion_R2_Retrieval_Only_DropIn_v1_2026-08-03
+REPO=/home/afazeli2006/FR3_CBF_Completion_Package_v1_1/FR3_CBF_Completion_Package_v1_1
+RORQUAL_HOST=rsadve1@rorqual.alliancecan.ca
+REMOTE_COMPUTATION_RERUN=NO
+SLURM_SUBMISSION=NO
+CHANNEL_REGENERATION=NO
+GPU_REQUESTED=NO
+NEW_SEED_EXECUTION=NO
+AUTOMATIC_ALGORITHM_TUNING_AUTHORIZED=NO
+WSL_TERMINAL_CLOSE_REQUESTED=NO
+INTERNAL_MANIFEST_VERIFICATION=PASS
+SOURCE_PAYLOAD_MANIFEST_VERIFICATION=PASS
+REPO_VENV_ACTIVATED=YES
+PYTHON_SYNTAX_CHECK=PASS
+BASH_SYNTAX_CHECK=PASS
+...                                                                      [100%]
+3 passed in 0.07s
+FOCUSED_TESTS=PASS
+Cloning into '/mnt/c/Users/alifa/Downloads/FR3_V45_HOLDOUT_COMPLETION_R2_RETRIEVAL_RETURN_20260803_082620/github_working_clone'...
+Updating files:  11% (356/3071)
+Updating files:  12% (369/3071)
+Updating files:  13% (400/3071)
+Updating files:  14% (430/3071)
+Updating files:  15% (461/3071)
+Updating files:  16% (492/3071)
+Updating files:  17% (523/3071)
+Updating files:  18% (553/3071)
+Updating files:  18% (580/3071)
+Updating files:  19% (584/3071)
+Updating files:  19% (586/3071)
+Updating files:  19% (609/3071)
+Updating files:  20% (615/3071)
+Updating files:  21% (645/3071)
+Updating files:  22% (676/3071)
+Updating files:  23% (707/3071)
+Updating files:  24% (738/3071)
+Updating files:  25% (768/3071)
+Updating files:  25% (773/3071)
+Updating files:  26% (799/3071)
+Updating files:  27% (830/3071)
+Updating files:  28% (860/3071)
+Updating files:  29% (891/3071)
+Updating files:  30% (922/3071)
+Updating files:  30% (946/3071)
+Updating files:  31% (953/3071)
+Updating files:  32% (983/3071)
+Updating files:  33% (1014/3071)
+Updating files:  34% (1045/3071)
+Updating files:  35% (1075/3071)
+Updating files:  36% (1106/3071)
+Updating files:  37% (1137/3071)
+Updating files:  38% (1167/3071)
+Updating files:  38% (1175/3071)
+Updating files:  39% (1198/3071)
+Updating files:  40% (1229/3071)
+Updating files:  41% (1260/3071)
+Updating files:  42% (1290/3071)
+Updating files:  43% (1321/3071)
+Updating files:  44% (1352/3071)
+Updating files:  44% (1381/3071)
+Updating files:  45% (1382/3071)
+Updating files:  46% (1413/3071)
+Updating files:  47% (1444/3071)
+Updating files:  48% (1475/3071)
+Updating files:  49% (1505/3071)
+Updating files:  50% (1536/3071)
+Updating files:  51% (1567/3071)
+Updating files:  52% (1597/3071)
+Updating files:  53% (1628/3071)
+Updating files:  53% (1640/3071)
+Updating files:  54% (1659/3071)
+Updating files:  55% (1690/3071)
+Updating files:  56% (1720/3071)
+Updating files:  57% (1751/3071)
+Updating files:  58% (1782/3071)
+Updating files:  59% (1812/3071)
+Updating files:  60% (1843/3071)
+Updating files:  61% (1874/3071)
+Updating files:  62% (1905/3071)
+Updating files:  63% (1935/3071)
+Updating files:  63% (1951/3071)
+Updating files:  64% (1966/3071)
+Updating files:  65% (1997/3071)
+Updating files:  66% (2027/3071)
+Updating files:  67% (2058/3071)
+Updating files:  68% (2089/3071)
+Updating files:  69% (2119/3071)
+Updating files:  70% (2150/3071)
+Updating files:  71% (2181/3071)
+Updating files:  71% (2201/3071)
+Updating files:  72% (2212/3071)
+Updating files:  73% (2242/3071)
+Updating files:  74% (2273/3071)
+Updating files:  75% (2304/3071)
+Updating files:  76% (2334/3071)
+Updating files:  77% (2365/3071)
+Updating files:  78% (2396/3071)
+Updating files:  78% (2423/3071)
+Updating files:  79% (2427/3071)
+Updating files:  80% (2457/3071)
+Updating files:  81% (2488/3071)
+Updating files:  82% (2519/3071)
+Updating files:  83% (2549/3071)
+Updating files:  84% (2580/3071)
+Updating files:  85% (2611/3071)
+Updating files:  86% (2642/3071)
+Updating files:  87% (2672/3071)
+Updating files:  87% (2699/3071)
+Updating files:  88% (2703/3071)
+Updating files:  89% (2734/3071)
+Updating files:  90% (2764/3071)
+Updating files:  91% (2795/3071)
+Updating files:  92% (2826/3071)
+Updating files:  93% (2857/3071)
+Updating files:  94% (2887/3071)
+Updating files:  95% (2918/3071)
+Updating files:  96% (2949/3071)
+Updating files:  97% (2979/3071)
+Updating files:  97% (3000/3071)
+Updating files:  98% (3010/3071)
+Updating files:  99% (3041/3071)
+Updating files: 100% (3071/3071)
+Updating files: 100% (3071/3071), done.
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+GITHUB_REQUIRED_ANCESTOR_GATE=PASS
+GIT_REMOTE_HEAD_BEFORE=efd92ed9ab474b9f1f7a7bc8fc4f17f516a78d17
+GITHUB_NEWER_WORK_OVERWRITTEN=NO
+GITHUB_RETRIEVAL_SOURCE_SUBSET_COPY=PASS
+[e3-first-sector-p452 769bb28] Add retrieval-only recovery for completed v4.5 holdout
+ 13 files changed, 751 insertions(+)
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/PACKAGE_VERSION.json
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/README.md
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/SOURCE_PAYLOAD_MANIFEST.sha256
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/config/RETRIEVAL_CONTRACT.json
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/docs/EXPECTED_SUCCESS_MARKERS.md
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/docs/RETURN_CONTRACT.md
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/docs/SCIENTIFIC_STATUS_AND_NEXT_GATE.md
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/docs/WSL_WORKFLOW.md
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/requirements.txt
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/scripts/audit_retrieved_return.py
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/scripts/package_local_failure.py
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/tests/test_retrieval_package.py
+ create mode 100644 tools/phase1_v4_5_holdout_completion_r2_retrieval_only_v1/wrappers/RUN_V45_HOLDOUT_COMPLETION_R2_RETRIEVAL_FROM_WSL.sh
+From github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1
+ * branch            e3-first-sector-p452 -> FETCH_HEAD
+Current branch e3-first-sector-p452 is up to date.
+To github.com:afazeliUofT/FR3_CBF_Completion_Package_v1_1.git
+   efd92ed..769bb28  HEAD -> e3-first-sector-p452
+RETRIEVAL_SOURCE_COMMIT=769bb28dcca8b4e750eda6ca0791ef8da8d76e77
+Multifactor authentication is now mandatory to connect to this cluster.
+You can enroll your account into multifactor authentication on this page:
+https://ccdb.alliancecan.ca/multi_factor_authentications
+by following the instructions available here:
+https://docs.alliancecan.ca/wiki/Multifactor_authentication
+
+=============================================================================
+
+L'authentification multifacteur est maintenant obligatoire pour vous connecter
+à cette grappe. Configurez votre compte sur
+https://ccdb.alliancecan.ca/multi_factor_authentications
+et suivez les directives dans
+https://docs.alliancecan.ca/wiki/Multifactor_authentication/fr.
+Success. Logging you in...
+REMOTE_EXISTING_RETURN_BINDING=PASS
+REMOTE_RETURN_ZIP=/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_V45_FRESH_HOLDOUT_00a3561864f8_20260802_214813/holdout_completion_r2_pass_parallel/return/FR3_RORQUAL_V4_5_HOLDOUT_COMPLETION_R2_18232438.zip
+REMOTE_RETURN_ZIP_SHA256=69d98ac674e364c1d3d2a17251de26516ec51ed52b896b3658f60fcbfbf1326d
+REMOTE_RETURN_SIDECAR_BASENAME_GATE=PASS
+REMOTE_RETURN_ZIP_CRC=PASS
+REMOTE_COMPUTATION_RERUN=NO
+SINGLE_SSH_TRANSFER_SESSION=PASS
+HOLDOUT_COMPLETION_R2_RETURN_SHA256_GATE=PASS
+HOLDOUT_COMPLETION_R2_RETURN_SIDECAR_BASENAME_GATE=PASS
+HOLDOUT_COMPLETION_R2_RETURN_ZIP_CRC=PASS
+HOLDOUT_COMPLETION_R2_RETURN_MANIFEST=PASS
+RETRIEVED_HOLDOUT_INDEPENDENT_AUDIT=PASS
+HOLDOUT_RETURN_STATUS=PASS_FRESH_V4_5_HOLDOUT_SAFETY_AND_UTILITY_FEASIBILITY_CONDITIONED_FLOOR
+HOLDOUT_VALID_RESULT=True
+HOLDOUT_SEED_RETURN_COUNT=30
+HOLDOUT_SEED_SAFETY_PASS_COUNT=30
+HOLDOUT_SEED_ZERO_FLOOR_PASS_COUNT=17
+HOLDOUT_PRIMARY_SUPERIORITY_MET=True
+HOLDOUT_FLOOR_ZERO=False
+PRIMARY_POINT_ESTIMATE=0.2504676932746432
+PRIMARY_LOWER_95=0.20132723612261208
+PRIMARY_UPPER_95=0.31024908237228865
+FLOOR_VIOLATION_USER_SECONDS=16646
+FLOOR_VIOLATION_USER_INTERVALS=3340
+MAXIMUM_NORMALIZED_FLOOR_SHORTFALL=0.5726402828574296
+FLOOR_REDUCTION_VS_PREDICTIVE_PERCENT=81.46799817418702
+FLOOR_REDUCTION_VS_STATIC_PERCENT=84.75780606171595
+UNRESOLVED_INTERVALS=1328
+PAPER_WRITING_AUTHORIZED=True
+AUTOMATIC_EXTRA_SEEDS_AUTHORIZED=NO
+AUTOMATIC_ALGORITHM_TUNING_AUTHORIZED=NO
+NEXT_GATE=FINALIZE_13_PAGE_TWC_MANUSCRIPT_AND_ONE_COMPACT_PRACTICALITY_SECTION

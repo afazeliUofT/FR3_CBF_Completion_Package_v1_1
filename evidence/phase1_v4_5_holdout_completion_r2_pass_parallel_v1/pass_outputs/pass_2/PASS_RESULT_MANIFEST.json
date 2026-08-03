@@ -1,0 +1,22 @@
+{
+  "PASS_2_CANDIDATE_ACTION_TRACE.npz": {
+    "bytes": 7213,
+    "sha256": "00b6dd58d8d8d120091056736203b55481d50343e753f059e71734f7d64a1112"
+  },
+  "PASS_2_METHOD_TRACES.npz": {
+    "bytes": 62366,
+    "sha256": "fd5d08fe8e45d6f6c38e759239a1e6ad393b98657cbd047bae1186d7b9bed595"
+  },
+  "PASS_AUDIT.json": {
+    "bytes": 114567,
+    "sha256": "6cc1fbd4b28fa632f86618405dc213d1f610b953f857c0a1725181252790aa36"
+  },
+  "PASS_CELL_SUMMARY.csv": {
+    "bytes": 10288,
+    "sha256": "46c330737e161b7816dd5b9112bec72edb64a5f2175cbded168936ca8572502c"
+  },
+  "PASS_RESULT_METADATA.json": {
+    "bytes": 1305,
+    "sha256": "64aecdb02e51cbee961cd3c27ca3e7b2bd6e29229f6f1b29912ac05805ed1c56"
+  }
+}

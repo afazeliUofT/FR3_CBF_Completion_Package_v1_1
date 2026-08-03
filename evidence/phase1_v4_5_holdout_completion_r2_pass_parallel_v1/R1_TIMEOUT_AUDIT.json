@@ -1,0 +1,26 @@
+{
+  "assumptions_requiring_validation": {
+    "each_pass_completes_within_15_minutes": true
+  },
+  "schema_version": 1,
+  "scientific_inference": {
+    "memory_is_not_limiting": true,
+    "pass_parallelization_basis": "Each pass is evaluated independently from the same full-load nominal moving-average initialization; no state is propagated across passes.",
+    "pass_parallelization_is_scientifically_exact": true,
+    "selected_pass_walltime": "00:20:00",
+    "single_12_minute_five_pass_job_is_underprovisioned": true
+  },
+  "source_supported_facts": {
+    "original_mode_capacity_error": "7776 exceeds 4096",
+    "r1_batch_maxrss_kib": 764704,
+    "r1_merge_status": "INCOMPLETE_HOLDOUT_COMPLETION_REVIEW_REQUIRED",
+    "r1_seed_job_elapsed": "00:12:04",
+    "r1_seed_job_state": "TIMEOUT",
+    "reference_maximum_mode_count": 1296,
+    "reference_schedule_solver_seconds_sum": 154.19511047296692,
+    "reference_seed": 44051,
+    "required_to_reference_mode_ratio": 6.0,
+    "seed": 44052
+  },
+  "status": "PASS_R1_TRUE_WALLTIME_TIMEOUT_NOT_MEMORY_FAILURE"
+}

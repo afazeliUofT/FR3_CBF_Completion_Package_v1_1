@@ -1,0 +1,31 @@
+{
+  "action_library_definition_changed": false,
+  "analog_phase_bits": 6,
+  "architecture_audit": {
+    "local_channel_rank_failure_count": 0,
+    "maximum_local_channel_condition_number": 6063.00390625,
+    "maximum_protected_mode_condition_number": 1.0000000000000002,
+    "minimum_available_digital_nullspace_dimension": 58
+  },
+  "architecture_id": "practical_64rf_128port_subarray_hybrid",
+  "array_index": 22,
+  "authorization_token_sha256": "5216c89b502c75d72878ac77829bf4f5d8026f5853843903af32a648ee56ad1b",
+  "candidate_source_manifest_sha256": "55458abdc070c31bda532110c905ffc3ae73625f7a1a910b8f227757b999751d",
+  "channel_record_sha256": "0450cecf2e38053800347ae997113307d5e6e3e04967608c28afecf04887e708",
+  "channel_regenerated": false,
+  "channel_reused": true,
+  "created_utc": "2026-08-03T07:47:57.880569+00:00",
+  "elapsed_seconds": 764.7425960229593,
+  "gpu_requested": false,
+  "mode_capacity_original": 4096,
+  "mode_capacity_runtime": 8192,
+  "nominal_total_sum_se_bps_hz": 556.6534038618148,
+  "package_id": "00a3561864f8adb8ad22cf1bd866ec0234043c16acbb25634d1d3502defc2cc6",
+  "pass_slot": 2,
+  "required_mode_count": 7776,
+  "rf_chains": 64,
+  "schema_version": 1,
+  "scientific_source_files_modified": false,
+  "seed": 44052,
+  "status": "PASS_SEED44052_PROTECTED_PASS_COMPLETE"
+}

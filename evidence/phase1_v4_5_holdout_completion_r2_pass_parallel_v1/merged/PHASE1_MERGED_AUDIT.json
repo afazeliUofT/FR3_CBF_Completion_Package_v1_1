@@ -1,0 +1,111 @@
+{
+  "bootstrap_all_endpoints": {
+    "candidate_minus_predictive_duration_mean_pf": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260804,
+      "lower_95": 0.007801335753958701,
+      "median_bootstrap_mean": 0.035726628579408254,
+      "point_estimate": 0.03597539335078692,
+      "seed_cluster_standard_deviation": 0.0819286483780104,
+      "upper_95": 0.06516216817109971
+    },
+    "candidate_minus_predictive_final_pf": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260803,
+      "lower_95": 0.020532726282821358,
+      "median_bootstrap_mean": 0.05535435171492671,
+      "point_estimate": 0.05626276521102252,
+      "seed_cluster_standard_deviation": 0.1067108311823687,
+      "upper_95": 0.09672653574563339
+    },
+    "candidate_minus_static_duration_mean_pf": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260802,
+      "lower_95": 0.17671933208227483,
+      "median_bootstrap_mean": 0.20843200375918974,
+      "point_estimate": 0.20876318167574417,
+      "seed_cluster_standard_deviation": 0.09287739385828755,
+      "upper_95": 0.24151818269681125
+    },
+    "candidate_minus_static_final_pf": {
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260801,
+      "lower_95": 0.20132723612261208,
+      "median_bootstrap_mean": 0.24879406997928136,
+      "point_estimate": 0.2504676932746432,
+      "seed_cluster_standard_deviation": 0.1555919690252736,
+      "upper_95": 0.31024908237228865
+    }
+  },
+  "candidate_method_id": "candidate_v4_5_companion_aware_protected_subband_scheduling",
+  "candidate_source_manifest_sha256": "55458abdc070c31bda532110c905ffc3ae73625f7a1a910b8f227757b999751d",
+  "cell_count": 1350,
+  "claim_boundary": "FRESH_HOLDOUT_NOT_CALIBRATION_NOT_REGULATORY_COMPLIANCE; USER_FLOOR_GUARANTEE_IS_CONDITIONAL_ON_BOUNDED_ACTION_FEASIBILITY",
+  "created_utc": "2026-08-03T07:49:10.300019+00:00",
+  "fixed_pass_count": 5,
+  "floor_metrics": {
+    "floor_violation_user_intervals": 3340,
+    "floor_violation_user_seconds": 16646,
+    "maximum_normalized_floor_shortfall": 0.5726402828574296,
+    "zero_floor_violation_user_intervals": false,
+    "zero_floor_violation_user_seconds": false
+  },
+  "floor_reduction": {
+    "versus_predictive_percent": 81.46799817418702,
+    "versus_static_percent": 84.75780606171595
+  },
+  "floor_zero": false,
+  "mandatory_secondary_endpoint": "duration_weighted_mean_moving_pf_utility",
+  "method_count": 9,
+  "next_gate": "FINALIZE_13_PAGE_TWC_MANUSCRIPT_AND_ONE_COMPACT_LIMITATION_SECTION",
+  "paper_writing_authorized": true,
+  "practicality_summary": {
+    "action_scope_locality_verified": true,
+    "candidate_end_to_end_seconds_max_per_pass": 794.8052372271195,
+    "candidate_end_to_end_seconds_mean_per_pass": 22.459776537139163,
+    "changed_sector_intervals_sum": 18593,
+    "changed_stream_coefficients_sum": 45149,
+    "incremental_payload_lower_bound_bytes_sum": 191540,
+    "information_exchange_locality_certified": false,
+    "payload_claim_boundary": "LOWER_BOUND_ONLY_NOT_SERIALIZED_PROTOCOL_MEASUREMENT",
+    "repair_solver_seconds_max": 0.2260254248976707
+  },
+  "primary_bootstrap": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260801,
+    "lower_95": 0.20132723612261208,
+    "median_bootstrap_mean": 0.24879406997928136,
+    "point_estimate": 0.2504676932746432,
+    "seed_cluster_standard_deviation": 0.1555919690252736,
+    "upper_95": 0.31024908237228865
+  },
+  "primary_comparator": "static_robust_constrained_pf_with_sector_selective_fallback",
+  "primary_endpoint": "final_moving_average_sum_log_utility",
+  "primary_superiority_met": true,
+  "safety_gates": {
+    "all_150_candidate_cells_present": true,
+    "all_30_seed_results_present": true,
+    "strict_local_scope_all_pass": true,
+    "strict_post_mode_power_all_pass": true,
+    "strict_post_mode_ratio_bounded": true,
+    "zero_long_eess_violation_seconds": true,
+    "zero_network_wide_shutdown_intervals": true,
+    "zero_q0_envelope_deployable_actions": true,
+    "zero_short_eess_violation_seconds": true
+  },
+  "safety_gates_pass": true,
+  "scheduling_summary": {
+    "failure_intervals": 1328,
+    "maximum_guard_sector_count": 8,
+    "maximum_mode_count": 7776,
+    "maximum_mutable_sector_count": 9,
+    "maximum_schedule_solver_seconds": 159.1023975238204,
+    "maximum_scheduled_fraction": 0.871,
+    "success_intervals": 506
+  },
+  "schema_version": 1,
+  "seed_count": 30,
+  "seed_hard_gate_pass_count": 17,
+  "status": "PASS_FRESH_V4_5_HOLDOUT_SAFETY_AND_UTILITY_FEASIBILITY_CONDITIONED_FLOOR",
+  "valid_holdout_result": true
+}
