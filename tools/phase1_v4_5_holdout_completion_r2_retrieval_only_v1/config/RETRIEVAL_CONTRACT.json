@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "package_id": "FR3_V45_HOLDOUT_COMPLETION_R2_RETRIEVAL_ONLY_V1",
+  "github": {
+    "repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1",
+    "branch": "e3-first-sector-p452",
+    "required_ancestor": "efd92ed9ab474b9f1f7a7bc8fc4f17f516a78d17"
+  },
+  "remote": {
+    "host": "rsadve1@rorqual.alliancecan.ca",
+    "return_zip": "/lustre10/scratch/rsadve1/FR3_PHASE1_RORQUAL_V45_FRESH_HOLDOUT_00a3561864f8_20260802_214813/holdout_completion_r2_pass_parallel/return/FR3_RORQUAL_V4_5_HOLDOUT_COMPLETION_R2_18232438.zip",
+    "return_zip_sha256": "69d98ac674e364c1d3d2a17251de26516ec51ed52b896b3658f60fcbfbf1326d",
+    "pass_array_job_id": "18232438",
+    "assembly_job_id": "18232439"
+  },
+  "expected_scientific_result": {
+    "status": "PASS_FRESH_V4_5_HOLDOUT_SAFETY_AND_UTILITY_FEASIBILITY_CONDITIONED_FLOOR",
+    "holdout_valid_result": true,
+    "seed_return_count": 30,
+    "seed_safety_pass_count": 30,
+    "seed_zero_floor_pass_count": 17,
+    "primary_superiority_met": true,
+    "floor_zero": false,
+    "primary_point_estimate": 0.2504676932746432,
+    "primary_lower_95": 0.20132723612261208,
+    "primary_upper_95": 0.31024908237228865,
+    "paper_writing_authorized": true,
+    "next_gate": "FINALIZE_13_PAGE_TWC_MANUSCRIPT_AND_ONE_COMPACT_PRACTICALITY_SECTION"
+  },
+  "execution_policy": {
+    "remote_computation_authorized": false,
+    "slurm_submission_authorized": false,
+    "channel_regeneration_authorized": false,
+    "gpu_request_authorized": false,
+    "new_seed_execution_authorized": false,
+    "algorithm_tuning_authorized": false,
+    "retrieval_only": true,
+    "single_ssh_transfer_session": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "package_id": "FR3_V45_HOLDOUT_COMPLETION_R2_RETRIEVAL_ONLY_V1",
+  "version": "v1",
+  "created_utc": "2026-08-03T00:00:00+00:00",
+  "purpose": "Retrieve, independently verify, and archive the already-completed v4.5 holdout-completion R2 return; no computation, channel generation, seed execution, or algorithm tuning.",
+  "scientific_source_changed": false,
+  "new_seed_execution_authorized": false,
+  "automatic_algorithm_tuning_authorized": false,
+  "terminal_close_requested": false
+}
