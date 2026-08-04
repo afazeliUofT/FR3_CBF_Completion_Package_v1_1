@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "package_id": "FR3_TWC_v4_5_Reviewer_Mandatory_Revision_Standalone_v1_2026-08-03",
+  "candidate_version": "v4.5 manuscript candidate v3",
+  "base_git_commit": "be46d6f13d62105da06d612c9129fd48e0773eab",
+  "branch": "e3-first-sector-p452",
+  "scientific_source_changed": false,
+  "new_simulation_executed": false,
+  "new_seed_executed": false,
+  "cluster_required": false,
+  "revision_scope": "reviewer-mandatory provenance, consistency, sensitivity, and claim-scoping repair",
+  "target_git_path": "paper/twc_v4_5_reviewer_mandatory_revision_v1"
+}

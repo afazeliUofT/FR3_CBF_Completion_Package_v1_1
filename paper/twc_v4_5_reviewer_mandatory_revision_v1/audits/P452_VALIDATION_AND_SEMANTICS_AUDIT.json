@@ -1,0 +1,25 @@
+{
+  "clutter_treatment": "g_equals_h_no_separate_p2108",
+  "maximum_relative_path_gain_error": 1.14286422945594e-13,
+  "no_double_count_statement": "Terrain heights are used as both terrain and representative clutter heights (g=h); no separate P.2108 clutter loss is added.",
+  "official_reference_commit": "86f8026ce39635fa2b599e50d6d01fe5b0d6bbfe",
+  "official_validation_example_result": "17 of 17 tests passed; maximum deviation below 1e-6 dB",
+  "provenance_text_sha256": "f63ffe423469d1239d31c1209b787620cff541eca237beb6933f5c8aa837e237",
+  "recommendation": "ITU-R P.452-18",
+  "regulatory_compliance_claim": false,
+  "separate_p2108_applied": false,
+  "site_count": 19,
+  "status": "PASS_IMPLEMENTATION_AND_CONFIGURATION_PROVENANCE",
+  "terrain_source": "NRCan MRDEM terrain profile",
+  "time_percentage_semantics": "P.452 p values are used directly as annual percentages for an average year. No worst-month-to-annual conversion is applied.",
+  "time_percentages_evaluated": [
+    50,
+    20,
+    10,
+    1,
+    0.1,
+    0.01,
+    0.005
+  ],
+  "validated_row_count": 798
+}

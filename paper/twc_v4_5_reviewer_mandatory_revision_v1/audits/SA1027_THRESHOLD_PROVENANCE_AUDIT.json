@@ -1,0 +1,23 @@
+{
+  "authoritative_origin": "Recommendation ITU-R SA.1027-6 (08/2019), Table 1",
+  "band_mhz": [
+    8025,
+    8400
+  ],
+  "both_criteria_required": true,
+  "evaluated_first_satellite_elevation_deg": 5.012017045000199,
+  "evaluated_minimum_satellite_elevation_deg": 5.012017045000199,
+  "long_criterion": {
+    "p_percent": 20.0,
+    "threshold_dbw_per_10mhz": -150.0
+  },
+  "minimum_satellite_elevation_required_deg": 5.0,
+  "network_aggregation_interpretation": "The aggregate 57-sector cellular network is deliberately tested as one engineered interference entry. Algebraically this corresponds to n=1 in the SA.1023 apportionment formulas, but it is a conservative study convention rather than a normative statement that the network is physically a single transmitter.",
+  "reference_bandwidth_mhz": 10,
+  "regulatory_compliance_claim": false,
+  "short_criterion": {
+    "p_percent": 0.005,
+    "threshold_dbw_per_10mhz": -133.0
+  },
+  "status": "PASS_WITH_MODEL_INTERPRETATION_CAVEAT"
+}
