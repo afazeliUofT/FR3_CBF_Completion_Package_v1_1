@@ -1,0 +1,8 @@
+item,reviewer_request,disposition,manuscript_location,action_taken,evidence,new_simulation_required
+1,SA.1027 threshold provenance,ACCEPT_WITH_QUALIFICATION,Section III-C; bibliography,"Exact thresholds/elevation/both criteria added; aggregate network-as-one-entry described as study convention, not normative",audits/SA1027_THRESHOLD_PROVENANCE_AUDIT.json,NO
+2,SA.509 scope and single-entry sensitivity,ACCEPT_WITH_CORRECTION,Section III-C; Table III; limitations,D/lambda and G0 stated; measured pattern unavailable; exact frozen-action +3 dB stress reported; certified-bound wording rejected,audits/SA509_SCOPE_AND_GEOMETRY_AUDIT.json; audits/SA509_SINGLE_ENTRY_FROZEN_ACTION_SENSITIVITY.json,NO
+3,Array-description inconsistency,ACCEPT,Section III-A; reproducibility,Patched stale 16x16 metadata to executed 8x8 dual-pol/128-port; primary fields unchanged,audits/ARRAY_CONSISTENCY_REPAIR_AUDIT.json; patched_inputs/,NO
+4,TR 38.901 V19.4 gate,ACCEPT_SCOPING_ALTERNATIVE,Sections II and V; limitations,Claim scoped to pinned Sionna 2.0.1 UMa; no independent V19.4 certification claimed,audits/TR38901_CLAIM_SCOPE_AUDIT.json,NO
+5,P.452 implementation validation/configuration,ACCEPT,Section III-C,"17/17 SG3 examples, MRDEM, g=h clutter, no P.2108 double count, annual semantics reported",audits/P452_VALIDATION_AND_SEMANTICS_AUDIT.json,NO
+6,Fixed-service scope,ACCEPT,Section III-C,SRSP-307.7 retained as occupancy context; FS receivers explicitly outside protected-service set,02_RESPONSE_TO_REVIEWER.md,NO
+7,Utility-effect per-user interpretation,ACCEPT_WITH_QUALIFICATION,Section VI-A,+0.1099% epsilon-shifted geometric-mean interpretation; not raw-rate GM,audits/UTILITY_EFFECT_INTERPRETATION_AUDIT.json,NO

@@ -1,0 +1,22 @@
+Subject: Coauthor approval request - final FR3 TWC manuscript candidate
+
+Dear Professor Adve,
+
+The FR3 coexistence manuscript has completed two rounds of independent scientific review. The first review identified seven mandatory provenance, consistency, sensitivity, and claim-scoping revisions. All seven were addressed. The second-round reviewer classified every item as closed and gave the overall recommendation READY_FOR_COAUTHOR_APPROVAL_AND_SUBMISSION_FREEZE, with no mandatory scientific correction remaining.
+
+The attached compact package contains the final 13-page manuscript candidate, both reviewer verdicts, the response and closure records, the key audits, and the frozen 30-seed holdout evidence. I also applied the reviewer's recommended wording polish to distinguish the 3-dB SA.509 pattern offset from the separate 3-dB coupling uplift already used in the model, and added three short clarifications on clutter direction, annual time-percentage semantics, and the 95.1% frozen-action stress fraction. No controller, model, threshold, tolerance, seed, endpoint, or simulation result was changed.
+
+I would appreciate your review and approval of:
+
+1. the scientific claims and limitations;
+2. the feasibility-conditioned user-floor wording;
+3. the SA.509 proxy and sensitivity presentation;
+4. the title, abstract, figures, tables, and overall TWC positioning; and
+5. the author metadata, acknowledgments, and submission details.
+
+The recommended reading order is in 00_START_HERE.md, and a concise checklist is in docs/03_COAUTHOR_APPROVAL_CHECKLIST.md. Please distinguish any submission-blocking correction from optional editorial preferences.
+
+After your approval, I will freeze the exact 13-page source/PDF and prepare the final TWC submission files and cover letter. No additional simulation campaign is planned.
+
+Best regards,
+Ali

@@ -1,0 +1,11 @@
+{
+  "epsilon_shifted_geometric_mean_factor_candidate_minus_safe_static": 1.0010991461332037,
+  "epsilon_shifted_geometric_mean_percent_candidate_minus_predictive": 0.024679711606512278,
+  "epsilon_shifted_geometric_mean_percent_candidate_minus_safe_static": 0.10991461332037211,
+  "headline_interpretation": "The raw aggregate-capacity effect is modest; the paper's main performance result is the combination of statistically significant moving-PF improvement, zero simulated EESS violations, and more than 80% floor-burden reduction.",
+  "qualification": "Because the objective is sum log(Rbar+epsilon), this is an interpretation of the epsilon-shifted geometric mean of final moving rates, not an exact raw-rate geometric mean.",
+  "status": "PASS_WITH_EPSILON_SHIFT_QUALIFICATION",
+  "sum_log_effect_candidate_minus_predictive": 0.0562628,
+  "sum_log_effect_candidate_minus_safe_static": 0.2504676932746432,
+  "user_count": 228
+}

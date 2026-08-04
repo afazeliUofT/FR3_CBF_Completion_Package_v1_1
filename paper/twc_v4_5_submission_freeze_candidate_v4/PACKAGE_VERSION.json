@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "package_id": "FR3_TWC_v4_5_Coauthor_Approval_Submission_Freeze_DropIn_v1_2026-08-04",
+  "candidate": "FR3 TWC v4.5 submission-freeze candidate v4",
+  "required_git_ancestor": "da71f008e90d4221df8208be7bbe76188bd7091f",
+  "branch": "e3-first-sector-p452",
+  "manuscript_pages": 13,
+  "first_round_mandatory_items": 7,
+  "first_round_items_closed": 7,
+  "second_round_recommendation": "READY_FOR_COAUTHOR_APPROVAL_AND_SUBMISSION_FREEZE",
+  "scientific_controller_source_changed": false,
+  "new_simulation_executed": false,
+  "next_gate": "COAUTHOR_APPROVAL_THEN_FINAL_SUBMISSION_FREEZE"
+}

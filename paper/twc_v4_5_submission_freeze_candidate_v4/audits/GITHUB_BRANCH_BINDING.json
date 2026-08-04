@@ -1,0 +1,7 @@
+{
+  "repository": "afazeliUofT/FR3_CBF_Completion_Package_v1_1",
+  "branch": "e3-first-sector-p452",
+  "verified_head_before_package_release": "da71f008e90d4221df8208be7bbe76188bd7091f",
+  "status": "IDENTICAL_TO_REQUIRED_ANCESTOR_AT_BUILD_TIME",
+  "newer_work_overwrite_policy": "FORBIDDEN_NON_FORCE_PUSH_ONLY"
+}

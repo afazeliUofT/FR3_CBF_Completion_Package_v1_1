@@ -1,0 +1,22 @@
+\begin{table}[t]
+\caption{Reference-computation distribution and fallback incidence.}
+\label{tab:runtime-v2}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.0pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Metric & Value\\
+\midrule
+End-to-end per pass, median & $2.09$ s\\
+End-to-end per pass, 95th percentile & $49.01$ s\\
+End-to-end per pass, maximum & $794.8$ s\\
+Fixed-beam LP maximum & $0.226$ s\\
+Scheduling attempts / all intervals & $1,834/17,700$ ($10.4\%$)\\
+Feasible schedules / attempts & $506/1,834$ ($27.6\%$)\\
+Maximum scheduling modes & $7,776$\\
+Maximum mutable sectors & $9$\\
+\bottomrule
+\end{tabular}
+\end{table}

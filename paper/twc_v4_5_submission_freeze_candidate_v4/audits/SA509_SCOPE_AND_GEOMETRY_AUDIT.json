@@ -1,0 +1,22 @@
+{
+  "EESS_named_in_title": false,
+  "aperture_efficiency": 0.65,
+  "boresight_gain_dbi": 59.03773618268895,
+  "certified_real_station_bound": false,
+  "condition_satisfied": true,
+  "d_over_lambda": 353.4111588624421,
+  "d_over_lambda_requirement": 100.0,
+  "dish_diameter_m": 12.999999999999993,
+  "interpretation": "The single-entry curve is reported as a conservative peak-envelope stress, not as a certified bound for the actual EESS antenna.",
+  "maximum_transition_angle_deg": 0.4241415503913911,
+  "measured_station_pattern_available": false,
+  "minimum_protected_off_axis_deg": 8.035691596201232,
+  "primary_pattern": "multiple-entry",
+  "primary_pattern_rationale": "aggregate power from 57 physical sectors; SA.509 notes that single-entry peak envelopes can overestimate aggregate multiple-source interference",
+  "recommendation": "ITU-R SA.509-3",
+  "recommendation_title_scope": "space-research earth stations and radio astronomy below 30 GHz",
+  "single_minus_multiple_db_over_protected_window": 3.0,
+  "source_use_boundary": "Reference large-parabolic-antenna pattern used because measured station pattern is unavailable; this workflow does not claim SA.509 is an EESS-specific mandatory pattern.",
+  "status": "PASS_AS_ENGINEERING_PROXY_WITH_EXPLICIT_SCOPE",
+  "wavelength_m": 0.0367843506748466
+}

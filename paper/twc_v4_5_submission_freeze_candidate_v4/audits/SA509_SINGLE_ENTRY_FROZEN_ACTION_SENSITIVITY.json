@@ -1,0 +1,21 @@
+{
+  "derivation": "single-entry gain is exactly 3 dB above multiple-entry for all protected-window off-axis angles",
+  "fresh_holdout_seed_count": 30,
+  "interpretation": "The paper's zero-violation result is conditional on the aggregate multiple-entry proxy. Applying the SA.509 single-entry peak envelope to the frozen actions violates the long criterion in every pass cell; no claim is made that the primary result is robust to this peak envelope without reoptimization.",
+  "maximum_additional_attenuation_db_to_restore_same_action_long_safety": 3.0102999311176957,
+  "pass_cell_count": 150,
+  "physical_second_count": 88140,
+  "primary_multiple_entry_long_violation_seconds": 0,
+  "primary_multiple_entry_short_violation_seconds": 0,
+  "scope": "frozen-action stress only; no controller reoptimization",
+  "single_entry_frozen_action_long_violating_cells": 150,
+  "single_entry_frozen_action_long_violating_seeds": 30,
+  "single_entry_frozen_action_long_violation_fraction": 0.95142954390742,
+  "single_entry_frozen_action_long_violation_seconds": 83859,
+  "single_entry_frozen_action_max_long_ratio": 1.9999999882466313,
+  "single_entry_frozen_action_max_short_ratio": 0.08054019825608683,
+  "single_entry_frozen_action_short_violating_cells": 0,
+  "single_entry_frozen_action_short_violating_seeds": 0,
+  "single_entry_frozen_action_short_violation_seconds": 0,
+  "status": "PASS_SENSITIVITY_DERIVATION_PRIMARY_CLAIM_NOT_ROBUST_TO_PEAK_PATTERN_WITHOUT_REOPTIMIZATION"
+}

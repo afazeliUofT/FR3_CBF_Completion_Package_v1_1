@@ -1,0 +1,39 @@
+{
+  "etsi_v19_4_source": {
+    "bytes": 2788641,
+    "document": "ETSI TR 138 901 V19.4.0 Release 19",
+    "sha256": "b0cbf2b55c91c6c10a2086f642194ebf26cdd27f48b88ee3f5bd40ad184f3701"
+  },
+  "executed_parameters": {
+    "array": "8x8 dual-polarized cross, 128 ports",
+    "bandwidth_mhz": 100,
+    "carrier_frequency_ghz": 8.15,
+    "frequency_samples": 9,
+    "indoor_probability": 0.8,
+    "o2i_model": "low",
+    "pathloss_enabled": true,
+    "scenario": "UMa",
+    "shadow_fading_enabled": true,
+    "sionna_version": "2.0.1"
+  },
+  "full_v19_4_certification": false,
+  "not_claimed": [
+    "independent full V19.4.0 pathloss/O2I/LSP certification",
+    "3GPP calibration campaign",
+    "mobility/spatial-consistency validation",
+    "universal larger-array or wraparound sensitivity"
+  ],
+  "original_decision_sha256": "2aa67ca92e96077a242d15b1c95f07eb327a4aedb273507ad20200b6bb51f528",
+  "paper_claim": "The simulation uses the pinned Sionna 2.0.1 UMa implementation, documented by Sionna as based on 3GPP TR 38.901, at 8.15 GHz. No independent clause-by-clause certification to TR 38.901 V19.4.0 is claimed.",
+  "paper_claim_allowed": true,
+  "resolved_since_original_pilot_decision": [
+    "multi-seed development campaign completed",
+    "fresh 30-seed holdout completed",
+    "five fixed pass blocks and nine methods evaluated with common random numbers",
+    "dual-polarization port order audited",
+    "H100 and final-worker reproduction completed"
+  ],
+  "review_disposition": "The reviewer's alternative of explicit scoping is adopted. No post-hoc channel patch or new seed run is required.",
+  "schema_version": 1,
+  "status": "PAPER_CLAIM_ALLOWED_ONLY_WITH_PINNED_SIONNA_IMPLEMENTATION_SCOPE"
+}

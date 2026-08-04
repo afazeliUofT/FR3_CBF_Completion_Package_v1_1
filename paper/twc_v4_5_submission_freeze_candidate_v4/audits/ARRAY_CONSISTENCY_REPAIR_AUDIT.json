@@ -1,0 +1,32 @@
+{
+  "co_polarized_ports_for_screening_envelope": 64,
+  "element_pattern_reference_scientific_fields_equal_after_patch": true,
+  "executed_config_cols": 8,
+  "executed_config_rows": 8,
+  "executed_port_count": 128,
+  "generator_primary_kappa_uses_coherent_array_upper_gain_column": false,
+  "generator_primary_kappa_uses_element_pattern_rows": true,
+  "generator_uses_bs_sector_csv_array_size_fields": false,
+  "generator_uses_config_array_size_fields": true,
+  "original_bs_sector_array_cols": [
+    16
+  ],
+  "original_bs_sector_array_rows": [
+    16
+  ],
+  "patched_bs_sector_array_cols": [
+    8
+  ],
+  "patched_bs_sector_array_rows": [
+    8
+  ],
+  "patched_files": {
+    "bs_sectors.csv": "3e0dee06180f1607690fadcb1acd1c64a1e12f0d8119fca691a0c2d198f8ff00",
+    "sector_static_reference_accounting.csv": "28f31ec5ba7f290c23241007cb71012785bb0dd3131c30cdeb7c4833d7371f1a"
+  },
+  "port_audit_cols": 8,
+  "port_audit_ports": 128,
+  "port_audit_rows": 8,
+  "scientific_result_effect": "NONE; corrected fields were unused metadata or unused sensitivity rows",
+  "status": "PASS_METADATA_CONSISTENCY_REPAIR_NO_SCIENTIFIC_RERUN_REQUIRED"
+}
